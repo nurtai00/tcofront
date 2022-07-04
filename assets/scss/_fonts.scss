@@ -1,0 +1,18 @@
+@import 'variables';
+
+$fontLinks: ExtraLight 100 normal, Light 300 normal, Regular 400 normal,
+  Medium 500 normal, SemiBold 600 normal, Bold 700 normal, ExtraBold 800 normal,
+  Black 900 normal, ExtraLightItalic 100 italic, LightItalic 300 italic,
+  Italic 400 italic, MediumItalic 500 italic, SemiBoldItalic 600 italic,
+  BoldItalic 700 italic, ExtraBoldItalic 800 italic, BlackItalic 900 italic;
+
+@each $font in $fontLinks {
+  @font-face {
+    font-family: $font-family;
+    font-weight: #{nth($font, 2)};
+    font-style: #{nth($font, 3)};
+    src: local($font-family), local(#{$font-family}-#{nth($font, 1)}),
+      url('~/assets/fonts/#{$font-family}-#{nth($font, 1)}.ttf')
+        format('truetype');
+  }
+}

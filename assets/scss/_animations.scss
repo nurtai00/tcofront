@@ -1,0 +1,21 @@
+.fade-enter-active,
+.fade-leave-active {
+  opacity: 0;
+  transition: transform 250ms, opacity 250ms;
+}
+.fade-enter-to,
+.fade-leave {
+  opacity: 1;
+  transition: transform 250ms, opacity 250ms;
+}
+
+.notification-enter-active,
+.notification-leave-active {
+  transition: all 0.5s ease;
+}
+
+.notification-enter,
+.notification-leave-to {
+  opacity: 0;
+  transform: translateX(-30px);
+}

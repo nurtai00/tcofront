@@ -1,0 +1,32 @@
+$fontIcons: arrow-bottom-blue '\EA01', arrow-left '\EA02',
+  arrow-right-grey '\EA03', arrow-right '\EA04', arrowDown '\EA05',
+  close_popup '\EA06', delete '\EA07', error '\EA08', error_input '\EA09',
+  hide-password '\EA0a', open-password '\EA0b', success '\EA0c';
+
+[class^='icon-'],
+[class*=' icon-'] {
+  font-family: 'iconsfont';
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'iconsfont';
+  font-weight: normal;
+  font-style: normal;
+  src: url('~/assets/icons/formatted/iconsfont.ttf') format('truetype');
+}
+
+@each $font in $fontIcons {
+  .icon-#{nth($font, 1)} {
+    &:before {
+      content: nth($font, 2);
+    }
+  }
+}
