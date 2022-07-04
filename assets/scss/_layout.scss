@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: #{($browser-context) + px};
+  @media (max-width: $small) {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: $f-text;
+  color: $c-dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol {
+  margin: 0;
+}
+
+a {
+  transition: 0.25s;
+  &:hover {
+    transform: translateY(-3%);
+  }
+  &:active {
+    transform: translateY(3%);
+  }
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: $lg;
+  width: 100%;
+  margin: 0 auto;
+  @include laptop {
+    max-width: $laptop;
+  }
+  @include middle-laptop {
+    max-width: 1080px;
+  }
+  @include small-laptop {
+    max-width: $slg;
+  }
+  @include wide-tablet {
+    max-width: $smd;
+  }
+  @include tablet {
+    max-width: $sm;
+  }
+  @include phone {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+
+.container--full {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+
+.mb20{
+  margin-bottom: 20px;
+}
+.mb30{
+  margin-bottom: 30px;
+}
+
+*::-webkit-scrollbar {
+  height: 4px;
+  width: 4px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(160, 180, 195, 0.2); /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #a0b4c3;
+  width: 6px;
+  height: 6px; /* color of the scroll thumb */
+  border-radius: 5px; /* creates padding around scroll thumb */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

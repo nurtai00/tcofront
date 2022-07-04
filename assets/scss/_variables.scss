@@ -1,0 +1,54 @@
+$browser-context: 16;
+
+// fonts
+$f-text: 'Gilroy';
+
+// colors
+$c-main: #0084f4;
+$c-base: #03b760;
+$c-primary: #00c48c;
+$c-success: #01bf89;
+$c-text: #262728;
+$c-yellow: #fecb4d;
+$c-background: #f3f5f8;
+$c-grey: #e4e4e4;
+$c-back: #fbfbfb;
+$c-grey2: #999999;
+$c-pink: #ff647c;
+$c-white: #fff;
+$c-error: #ec3920;
+$c-dark: #262728;
+
+// outline
+$card-shadow: 0px 10px 30px rgba(138, 149, 158, 0.1);
+$btn-shadow: 0px 10px 30px rgba(0, 196, 140, 0.15);
+$text-shadow: inset 0px 0.5px 4px rgba(0, 196, 140, 0.62);
+
+// transitions
+$t-primary: 0.3s;
+$t-secondary: 0.2s;
+
+$imgBase: '@/assets/';
+
+$small: 560px;
+$middle: 760px;
+$tablet: 1000px;
+$laptop: 1170px;
+$desktop: 1300px;
+$wide: 1400px;
+$large: 1800px;
+
+// breakpoints
+$xs: 380px;
+$sm: 560px;
+$smd: 780px;
+$md: 1000px;
+$slg: 1025px;
+$lg: 1280px;
+$xlg: 1360px;
+$xxlg: 1445px;
+$xxxlg: 1925px;
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{calc($pixels/$context)}rem;
+}
