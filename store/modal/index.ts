@@ -18,8 +18,13 @@ export const mutations: MutationTree<ModalStateT> = {
     data.id = state.modals.length + 1
     state.modals.push(data)
   },
+  // удаление последней модалки из массива
   close(state) {
     state.modals.pop()
+  },
+  // удаление всех модалок из массива
+  clear(state) {
+    state.modals = []
   },
 }
 

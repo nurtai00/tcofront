@@ -94,7 +94,7 @@ $checkbox-disabled: #3c474c;
       content: '';
       opacity: 0;
       position: absolute;
-      top: 2px;
+      top: 3px;
       left: 50%;
       width: 5px;
       height: 10px;

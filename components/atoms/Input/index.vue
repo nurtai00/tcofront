@@ -320,7 +320,7 @@ export default {
       })
 
       // If there is confirmed, setting watch for confirmed
-      if (this.confirmed) {
+      if (this.confirmed !== null) {
         this.confirmedInit()
       }
 
@@ -348,7 +348,7 @@ export default {
     // Validate value with rules
     validate(value) {
       // Update confirmed value
-      if (this.confirmed) {
+      if (this.confirmed !== null) {
         this.formatRules.pop()
         this.formatRules.push({
           name: 'confirmed',
@@ -422,7 +422,7 @@ $border-error: 1px solid #ffd8d8;
 $background: #fff;
 $background-error: #ffd8d8;
 $background-hover: #f5f5f5;
-$background-focus: #adadad;
+$background-focus: #eeeeee;
 
 $border-radius: 4px;
 

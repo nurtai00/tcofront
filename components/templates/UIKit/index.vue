@@ -16,12 +16,6 @@
       :tab="activeTab"
       @change="(val) => (activeTab = val)"
     />
-    <AtomsHeading type="h2"> LazyLoadImage</AtomsHeading>
-    <AtomsLazyLoadImage
-      :url="require('~/assets/img/result3.png')"
-      caption="Aizhan"
-      variant="half"
-    />
     <AtomsAccordion :isOpen="isOpen" class="mb20" @click="isOpen = !isOpen">
       Accordion
     </AtomsAccordion>
@@ -53,6 +47,12 @@
         <button class="slider-next">Next</button>
       </div>
     </div>
+    <AtomsHeading type="h2"> LazyLoadImage</AtomsHeading>
+    <AtomsLazyLoadImage
+      :url="require('~/assets/img/result3.png')"
+      caption="Aizhan"
+      variant="half"
+    />
     <AtomsHeading type="h2" class="mb20"> Toggle</AtomsHeading>
 
     <MoleculesToggle
@@ -128,6 +128,7 @@ export default {
         loop: true,
         slidesPerView: 1,
         id: 'main-slider',
+        slide: this.slideTo,
       },
       slides: [
         require('~/assets/img/result3.png'),
@@ -139,6 +140,9 @@ export default {
   methods: {
     showMod() {
       this.$modal.add({ title: 'Delete' })
+    },
+    slideTo(index) {
+      console.log('has slidet', index)
     },
   },
 }
@@ -205,7 +209,6 @@ img {
 .slider-nav button.slider-previous {
   float: left;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjM4NTJGMDczOUNDMTFFNDg4ODNGQTA5MzIxODc0RTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjM4NTJGMDgzOUNDMTFFNDg4ODNGQTA5MzIxODc0RTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMzg1MkYwNTM5Q0MxMUU0ODg4M0ZBMDkzMjE4NzRFNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyMzg1MkYwNjM5Q0MxMUU0ODg4M0ZBMDkzMjE4NzRFNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pt7VlVAAAANnSURBVHja7JvPaxpBFMc3WRFxQQSLaCrScy9C8CAYcgikStFWF/yx5uA/kVtPpfTUY889eDBChIReCu05olANlJ5K6Y9DokUqSA5BTGQ7T1jZurpq3Jndzc7AY9GQfe/zdX7Pmw1RFBkrl03G4sVGwgnP8wGn07k9Go22BoPBw6urq61erxfodDpb8He/39/2eDwXLper7XA4LlmWbV9fX5+fnJxc4I5tA1cTEARhezgcPm82m0+73e4DBP5olf9HQvz2er1/w+HwB7vd/r5SqZwbXoB0Ou1DoC8ajcYT9LSvCq0mBrJhJBL5hJ6vT09P/2gWNAiwru3v79uSyeQbFNwveCVOAx/gC3xqEfvaL8hms4eo7X7HDT5t4BN86yYAcv7Y5/N9IfGrq9UGiAFiISrAwcFBluO4H3qBTxvEAjERESCVSr3S81dXqw0QG1YBdnZ2KkaEl4sAMWIRwOjwdxXB1NVei+awVIdnJni5CMt0jAuHOiP19ncZHRYNkaoCwBhrVnjJgEGNce5yOJfLHfb7fZfZl7vAACwrrQVgnq3H9DaRSIi1Wk08OzsTo9GoptPmeWuHmQLAYoM0fKFQEG9vb0Wp1Ot1Td8PTEsJgIYPH+lefxoeSqvVwjE0+hYKEI/H35KEFwRBAQ+foTlo7QvYFgrgdru/6Q2Pxm8s/oBNVYB8Pr9NqvojX0ThpWYAjHMF4Hn+5X2FlwwY5woQDAY/4w4Ajcm6wYMB40wB0ul0AHf11xteagbAqhAABfEMp2M0J9cdXjJgVUyF4dAC13QUwTPlcplhWZaR+WOKxeL4e9JFzjoRAE5scDjLZDJjSJvNZgh4BatUFfb29t5pXdUQvHhzc2OIai83YFX0AaFQ6KOWTmKxmCHhwYBVIYDX6/2qpRNY0RkRHgxYF+4HWKbQJmDxTnDSBCA5QevaVa1WGbTWZxD05DuYC5RKJZh46Vbr5aybsjP4SxzOQASANZIIclabLKg2LofHx8fj59HR0WQ2KIkAhfSE6D9Wuhiiy2G6IUK3xOimKN0Wpwcj9GiMHo7OSIA0Y2bIrKqvllBJEyTU5sy7u7sCx3E/zbrXAbEDw1rJ0pZOkqJpcjRRkqbK0mRpmi5PL0zQKzP3+tKU5a/N0YuTJC5PW/LqrFmK5Y/H/wkwAIMW95o8rPwPAAAAAElFTkSuQmCC');
-  display: none;
   margin-left: 1em;
 }
 

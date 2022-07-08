@@ -168,13 +168,14 @@ export default {
 $select-main: #0084f4;
 $select-text: #262728;
 $select-grey: #e4e4e4;
-$select-error: #ff647c;
+$select-error: 1px solid rgba(255, 87, 110, 0.5);
+$select-border: 1px solid blue;
 .select {
   width: 100%;
   position: relative;
 
-  &.has-error.show-error {
-    background: $select-error;
+  &.has-error.show-error &__head {
+    border: $select-error;
   }
 
   .label {
@@ -201,9 +202,10 @@ $select-error: #ff647c;
     align-items: center;
     font-size: rem(16);
     cursor: pointer;
+    border-radius: 4px;
     text-overflow: ellipsis;
     word-wrap: break-word;
-    border: none;
+    border: $select-border;
     color: #999999;
 
     &--active {

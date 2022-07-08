@@ -10,6 +10,21 @@
 import Slide from './slide'
 export default {
   props: {
+    /**
+     * Настройки слайдера
+     * @type {Object}
+     * @format {
+     *   pagination: String (element selector),
+     *   navigation: {
+     *     previous: String (element selector),
+     *     next: String (element selector),
+     *   },
+     *   loop: Boolean (default: false),
+     *   slidesPerView: Number (default: 1),
+     *   id: String,
+     *   slide: Function (returns index of slide),
+     * }
+     */
     options: {
       type: Object,
       default: () => {},
