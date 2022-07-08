@@ -1,5 +1,5 @@
 <template>
-  <form ref="form" @submit.prevent="submit">
+  <form ref="form" :class="$attrs.class" @submit.prevent="submit">
     <slot />
   </form>
 </template>

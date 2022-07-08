@@ -29,7 +29,7 @@
     "create-component": "node index.cli.js component",
     "create-page": "node index.cli.js page",
     "create-store": "node index.cli.js store",
-    "svg-font": "yarn add svgicons2svgfont svg2ttf && node bin/svg2ttf && svgicons2svgfont --fontname=iconsfont --prependUnicode --preserveAspectRatio --height=1024 --normalize assets/icons/*.svg > assets/icons/formatted/iconsfont.svg && svg2ttf assets/icons/formatted/iconsfont.svg assets/icons/formatted/iconsfont.ttf"
+    "svg-font": "yarn add svgicons2svgfont svg2ttf && node bin/svg2ttf && svgicons2svgfont --fontname=iconsfont --prependUnicode --preserveAspectRatio --height=1024 --normalize assets/icons/*.svg > assets/icons/formatted/iconsfont.svg && svg2ttf assets/icons/formatted/iconsfont.svg assets/icons/formatted/iconsfont.ttf && yarn remove svgicons2svgfont svg2ttf"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint, prettier",

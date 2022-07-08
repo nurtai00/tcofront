@@ -17,6 +17,7 @@
         v-model="text"
         type="text"
         :name="name"
+        autocomplete="off"
         @click="contentHandler"
       />
       {{ text }}

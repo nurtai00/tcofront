@@ -19,7 +19,7 @@ export const mutations: MutationTree<StateT> = {
    * @param data
    * @type {INotification}
    */
-  addNotification(state:StateT, data: INotification) {
+  addNotification(state: StateT, data: INotification) {
     data.id = Math.floor(Math.random() * (10000 - 1)) + 1
     state.notifications.push(data)
   },
@@ -29,7 +29,7 @@ export const mutations: MutationTree<StateT> = {
    * @param indexByArray
    * @type {number}
    */
-  deleteNotification(state:StateT, indexByArray: number) {
+  deleteNotification(state: StateT, indexByArray: number) {
     state.notifications.splice(
       state.notifications.findIndex((item) => indexByArray === item.id),
       1

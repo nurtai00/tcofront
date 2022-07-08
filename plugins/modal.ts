@@ -12,6 +12,9 @@ const plugin: Plugin = (ctx: Context, inject) => {
     close() {
       ctx.store.commit('modal/close')
     },
+    clear() {
+      ctx.store.commit('modal/clear')
+    }
   }
   inject('modal', modal)
 }

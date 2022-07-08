@@ -31,7 +31,6 @@ export default {
   width: 400px;
   z-index: 20;
   max-height: 100vh;
-  overflow: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
 

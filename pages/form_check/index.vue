@@ -1,5 +1,5 @@
 <template>
-  <MoleculesForm :onSubmit="submit">
+  <MoleculesForm :onSubmit="submit" class="form">
     <AtomsInput
       v-model="name"
       name="Имя"
@@ -21,7 +21,6 @@
       styleType="animate"
       placeholder="email"
     />
-    <i class="icon-delete" />
     <AtomsInput
       id="password"
       v-model="password"
@@ -31,7 +30,7 @@
       rules="required|password"
       clearable
     />
-    <AtomsButton @click="notification" />
+    <AtomsButton @click="notification"> уведомление </AtomsButton>
     <AtomsInput
       v-model="passwordRepeat"
       type="password"
@@ -51,6 +50,11 @@
       styleType="placeholder"
     />
     <AtomsButton type="submit">submit</AtomsButton>
+    <div>
+      <i class="icon-error" />
+      <i class="icon-success" />
+      <i class="icon-error_input" />
+    </div>
   </MoleculesForm>
 </template>
 
@@ -126,4 +130,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.form::v-deep {
+  > * {
+    margin-bottom: 1rem;
+  }
+}
+</style>

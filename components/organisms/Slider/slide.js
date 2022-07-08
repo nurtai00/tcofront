@@ -8,35 +8,45 @@ export default class Slide {
   }
 
   init() {
-    this.pagination = document.querySelectorAll(this.options.pagination)
     this.wrapper = this.el.querySelector('.slider-wrapper')
     this.slides = this.el.querySelectorAll('.slide')
-    this.previous = document.querySelector(this.options.navigation.previous)
-    this.next = document.querySelector(this.options.navigation.next)
+    if (this.options.pagination) {
+      this.pagination = document.querySelectorAll(this.options.pagination)
+      this.paginationInit()
+    }
+    if (this.options.navigation?.previous && this.options.navigation?.next) {
+      this.previous = document.querySelector(this.options.navigation.previous)
+      this.next = document.querySelector(this.options.navigation.next)
+      this.navigationInit()
+    }
     this.perview = this.options.slidesPerView ?? 1
     this.index = 0
-    this.total = Math.ceil(this.slides.length / this.perview)
+    this.total = this.options.loop
+      ? this.slides.length
+      : this.slides.length - this.perview + 1
     this.setup()
-    this.actions()
     this.drag()
   }
 
   _slideTo() {
     const self = this
-    if (self.index === self.total - 1 && !self.options.loop) {
+    if (
+      self.index === self.total - 1 &&
+      !self.options.loop &&
+      self.options.navigation
+    ) {
       self.next.style.display = 'none'
     }
 
-    if (self.index === 0 && !self.options.loop) {
+    if (self.index === 0 && !self.options.loop && self.options.navigation) {
       self.previous.style.display = 'none'
     }
 
     if (self.options.loop) {
-      if (self.index === self.slides.length) {
+      if (self.index === self.slides.length - self.perview + 1) {
         self.slides[0].style.transition = 'none'
-        self.slides[0].style.marginLeft =
-          'calc(-1 * ' + self.perview + ' * 100%)'
-        self.index = 2
+        self.slides[0].style.marginLeft = 'calc(-100%)'
+        self.index = self.perview + 1
         setTimeout(() => {
           self.slides[0].style.transition = '0.5s ease'
           self.slides[0].style.marginLeft =
@@ -44,10 +54,9 @@ export default class Slide {
         }, 0)
       } else if (self.index === -1) {
         self.slides[0].style.transition = 'none'
-        self.index = self.slides.length - 3
+        self.index = self.slides.length - self.perview * 2 - 1
         self.slides[0].style.marginLeft =
-          'calc(-1 * ' + (self.slides.length - 2 / self.perview) + ' * 100%)'
-
+          'calc(-1 * ' + (self.index + 1) / self.perview + ' * 100%)'
         setTimeout(() => {
           self.slides[0].style.transition = '0.5s ease'
           self.slides[0].style.marginLeft =
@@ -57,6 +66,12 @@ export default class Slide {
         self.slides[0].style.marginLeft =
           'calc(-1 * ' + self.index / self.perview + ' * 100%)'
       }
+    } else {
+      self.slides[0].style.marginLeft =
+        'calc(-1 * ' + self.index / self.perview + ' * 100%)'
+    }
+    if (this.options.slide) {
+      this.options.slide(self._getCurrentIndex(self.index))
     }
   }
 
@@ -67,19 +82,23 @@ export default class Slide {
       (self.index < self.total - 1 || self.options.loop)
     ) {
       self.index++
-      self.previous.style.display = 'block'
+      if (self.options.navigation) {
+        self.previous.style.display = 'block'
+      }
 
       self._slideTo(self.index)
-      self._highlightCurrentLink(self.pagination[self.index])
+      self._highlightCurrentLink(self.index)
     } else if (
       touchendX > touchstartX &&
       (self.index > 0 || self.options.loop)
     ) {
       self.index--
-      self.next.style.display = 'block'
+      if (self.options.navigation) {
+        self.next.style.display = 'block'
+      }
 
       self._slideTo(self.index)
-      self._highlightCurrentLink(self.pagination[self.index])
+      self._highlightCurrentLink(self.index)
     }
   }
 
@@ -115,33 +134,47 @@ export default class Slide {
   }
 
   _highlightCurrentLink(link) {
+    if (!this.pagination) {
+      return
+    }
     const self = this
     for (let i = 0; i < self.pagination.length; ++i) {
       const a = self.pagination[i]
       a.className = ''
     }
-    link.className = 'current'
+
+    self.pagination[self._getCurrentIndex(link)].className = 'current'
   }
 
   setup() {
     const self = this
     const slideWidth = self.el.offsetWidth / this.perview + 'px'
     if (self.options.loop) {
-      const first = self.slides[0].cloneNode(true)
-      const last = self.slides[self.slides.length - 1].cloneNode(true)
-      Object.keys(first.dataset).forEach((key) => {
-        delete first.dataset[key]
-      })
-      Object.keys(last.dataset).forEach((key) => {
-        delete last.dataset[key]
-      })
+      const start = []
+      const end = []
+      let front, back
+      for (let i = 0; i < self.perview; i++) {
+        front = self.slides[i].cloneNode(true)
+        back = self.slides[self.slides.length - (i + 1)].cloneNode(true)
+        Object.keys(front.dataset).forEach((key) => {
+          delete front.dataset[key]
+        })
+        Object.keys(back.dataset).forEach((key) => {
+          delete back.dataset[key]
+        })
+        start.push(front)
+        end.unshift(back)
+      }
 
-      self.slides = [last, ...self.slides, first]
-      self.wrapper.append(first)
-      self.wrapper.prepend(last)
-
-      self.slides[0].style.marginLeft = '-100%'
-      self.index = 1
+      if (self.options.loop) {
+        self.slides = [...end, ...self.slides, ...start]
+        self.wrapper.append(...start)
+        self.wrapper.prepend(...end)
+        self.slides[0].style.marginLeft = '-100%'
+        self.index = self.perview
+      }
+    } else {
+      self.previous.style.display = 'none'
     }
     for (let k = 0; k < self.slides.length; ++k) {
       self.slides[k].style.minWidth = slideWidth
@@ -149,13 +182,17 @@ export default class Slide {
       self.slides[k].style.overflow = 'hidden'
       self.slides[k].style.transition = '0.5s ease'
     }
-    for (let k = 0; k < self.total; ++k) {
-      const pagLink = self.pagination[k]
-      pagLink.setAttribute('data-index', k)
+
+    if (self.pagination) {
+      for (let k = 0; k < self.total; k++) {
+        const pagLink = self.pagination[k]
+        pagLink.setAttribute('data-index', k)
+      }
+      self._highlightCurrentLink(self.index)
     }
   }
 
-  actions() {
+  navigationInit() {
     const self = this
     self.next.addEventListener(
       'click',
@@ -164,7 +201,7 @@ export default class Slide {
         self.previous.style.display = 'block'
 
         self._slideTo(self.index)
-        self._highlightCurrentLink(self.pagination[self.index])
+        self._highlightCurrentLink(self.index)
       },
       false
     )
@@ -176,11 +213,14 @@ export default class Slide {
         self.next.style.display = 'block'
 
         self._slideTo(self.index)
-        self._highlightCurrentLink(self.pagination[self.index])
+        self._highlightCurrentLink(self.index)
       },
       false
     )
+  }
 
+  paginationInit() {
+    const self = this
     for (let i = 0; i < self.pagination.length; ++i) {
       const a = self.pagination[i]
       a.addEventListener(
@@ -189,22 +229,41 @@ export default class Slide {
           e.preventDefault()
           const n = parseInt(this.getAttribute('data-index'), 10)
 
-          self.index = n + 1
+          self.index = self.options.loop ? n + self.perview : n
 
-          if (self.index > 0) {
+          if (self.index > 0 && self.previous) {
             self.previous.style.display = 'block'
           }
 
-          if (self.index !== self.total - 1 && !self.options.loop) {
+          if (
+            self.index !== self.total - 1 &&
+            !self.options.loop &&
+            self.next
+          ) {
             self.next.style.display = 'block'
           }
 
           self._slideTo(self.index)
 
-          self._highlightCurrentLink(this)
+          self._highlightCurrentLink(self.index)
         },
         false
       )
+    }
+  }
+
+  _getCurrentIndex(link = this.index) {
+    const self = this
+    if (self.options.loop) {
+      if (link > self.slides.length - self.perview - 1) {
+        return 0
+      } else if (link < self.perview) {
+        return self.slides.length - self.perview * 3 + link
+      } else {
+        return link - self.perview
+      }
+    } else {
+      return link
     }
   }
 }
