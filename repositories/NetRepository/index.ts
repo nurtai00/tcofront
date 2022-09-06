@@ -89,7 +89,7 @@ class BaseRepository implements INetRepository {
    */
   protected async delete<P>(params: INetMethodParams<P>) {
     try {
-      return await this.$http.$get(this.endpoint + params?.nestedUrl, {
+      return await this.$http.$delete(this.endpoint + params?.nestedUrl, {
         data: params?.params,
       })
     } catch (e) {
