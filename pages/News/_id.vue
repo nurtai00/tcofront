@@ -73,7 +73,7 @@ export default {}
 <style scoped lang="scss">
 .new {
   width: 896px;
-  margin-left: 100px;
+  margin-left: 150px;
   padding-bottom: 100px;
   @media (orientation: portrait) {
     background: #f2f6f7;

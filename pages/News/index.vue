@@ -80,13 +80,13 @@ export default {
     background: #f2f6f7;
     position: relative;
     left: calc((1280px - 100vw) / 2);
-    padding-left: calc((100vw - 1280px) / 2);
-    padding-right: calc((100vw - 1280px) / 2);
+    padding-left: calc((100vw - 1280px) / 2) !important;
+    padding-right: calc((100vw - 1280px) / 2) !important;
     width: 100vw;
     @media (orientation: portrait) {
       left: -16px;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 16px !important;
+      padding-right: 16px !important;
     }
   }
   &_all {
