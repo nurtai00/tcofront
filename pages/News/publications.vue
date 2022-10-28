@@ -3,7 +3,7 @@ export default {}
 </script>
 
 <template>
-  <div class="public">
+  <div class="public container">
     <h1>Публикации</h1>
     <div class="public_list">
       <div v-for="item in 9" :key="item">

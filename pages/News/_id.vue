@@ -3,7 +3,7 @@ export default {}
 </script>
 
 <template>
-  <div class="new">
+  <div class="new container">
     <h1>Тенгизшевройл создает условия для импортозамещения</h1>
     <AtomsTag :text="'Карьера'" selected />
     <p class="new_date">19 мая 2022</p>
@@ -73,7 +73,7 @@ export default {}
 <style scoped lang="scss">
 .new {
   width: 896px;
-  margin-left: 150px;
+  margin: 0 auto;
   padding-bottom: 100px;
   @media (orientation: portrait) {
     background: #f2f6f7;
