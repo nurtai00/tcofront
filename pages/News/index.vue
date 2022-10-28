@@ -47,6 +47,7 @@ p {
   margin: 0;
 }
 .news {
+  margin: 0 auto !important;
   padding-top: 20px;
   p {
     margin: 0;
