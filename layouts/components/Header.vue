@@ -16,7 +16,7 @@
       <NuxtLink to="/">Kazakhstani Content</NuxtLink>
       <NuxtLink to="/">Sustainability</NuxtLink>
       <NuxtLink to="/">Career</NuxtLink>
-      <NuxtLink to="/">Lender Relations</NuxtLink>
+      <NuxtLink to="/home/lender-relations">Lender Relations</NuxtLink>
     </div>
   </header>
 </template>
