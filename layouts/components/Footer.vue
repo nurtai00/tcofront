@@ -90,6 +90,10 @@ footer {
   display: flex;
   flex-direction: column;
   background: #30454e;
+  @media (orientation: portrait) {
+    display: none;
+    grid-template-columns: 48px 1fr;
+  }
 
   img {
     width: 130px;
@@ -111,7 +115,7 @@ footer {
       }
 
       span {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -129,7 +133,7 @@ footer {
       li {
         color: white;
         text-decoration: none;
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 18px;

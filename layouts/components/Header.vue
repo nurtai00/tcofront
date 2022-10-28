@@ -38,16 +38,15 @@ export default {
     justify-content: space-between;
 
     a {
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 16px;
       line-height: 20px;
-      /* identical to box height, or 125% */
-
-      /* tco 1 */
-
       color: #8c9fa6;
+      @media (orientation: portrait) {
+        display: none;
+      }
     }
   }
 
@@ -57,9 +56,12 @@ export default {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media (orientation: portrait) {
+      display: none;
+    }
 
     a {
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 16px;

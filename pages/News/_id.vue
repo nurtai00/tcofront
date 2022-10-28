@@ -4,6 +4,10 @@ export default {}
 
 <template>
   <div class="new container">
+    <MoleculesBreadcrumbs>
+      <AtomsBreadOption to="/">Home</AtomsBreadOption>
+      <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
+    </MoleculesBreadcrumbs>
     <h1>Тенгизшевройл создает условия для импортозамещения</h1>
     <AtomsTag :text="'Карьера'" selected />
     <p class="new_date">19 мая 2022</p>
@@ -72,6 +76,7 @@ export default {}
 
 <style scoped lang="scss">
 .new {
+  padding-top: 20px;
   width: 896px;
   margin: 0 auto;
   padding-bottom: 100px;

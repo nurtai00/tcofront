@@ -17,6 +17,10 @@ export default {
 
 <template>
   <div class="news container">
+    <MoleculesBreadcrumbs>
+      <AtomsBreadOption to="/">Home</AtomsBreadOption>
+      <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
+    </MoleculesBreadcrumbs>
     <div class="news_header">
       <h1>Новости ТШО</h1>
       <AtomsTag v-for="tag in tags" :key="tag" :text="tag" />
@@ -43,6 +47,7 @@ p {
   margin: 0;
 }
 .news {
+  padding-top: 20px;
   p {
     margin: 0;
   }
