@@ -106,8 +106,7 @@
         <div class="creditors__item">
           <span>Перспектива</span>
           <div class="creditors__item-footer">
-            <span>Положительный
-</span>
+            <span>Положительный</span>
             <span>Устойчивый</span>
           </div>
         </div>
@@ -179,7 +178,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    left: calc((1140px - 100vw) / 2);
+    left: 0;
     padding: 40px calc((100vw - 1140px) / 2);
     background-color: #F2F6F7;
     width: 100vw;
@@ -209,7 +208,6 @@
 .info {
   &__item {
     display: flex;
-    position: relative;
     width: 100vw;
     @media screen and (max-width: 560px) {
       flex-direction: column-reverse;
@@ -372,8 +370,8 @@
 .creditors {
   margin-top: 40px;
   position: relative;
-  left: calc((1280px - 100vw) / 2);
-  padding: 80px calc((100vw - 1140px) / 2);
+  left: 0;
+  padding: 80px 20px;
   background-color: #F2F6F7;
   width: 100vw;
   @media screen and (max-width: 560px) {
