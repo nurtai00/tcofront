@@ -1,20 +1,37 @@
 <template>
-  <section>
+  <section class="container">
     <section class="relation">
       <h1 class="relation__title">Lender Relation</h1>
       <div class="relation__content">
         <div class="relation__typography">
           <h1>Связь с внешними кредиторами ПБР-ПУУД</h1>
-          <p>В июле 2016 г. Партнеры объявили о согласовании окончательного решения по финансированию Проекта будущего расширения – Проекта управления устьевым давлением (ПБР-ПУУД), что представляет собой следующий этап крупного расширения добычи и производства на Тенгизском месторождении нефти.</p>
-          <p>В рамках проекта ПБР-ПУУД нам важно сохранять прозрачную двустороннюю связь с нашими кредиторами. ТШО внедряет полноценные отношения с кредиторами, чтобы гарантировать, что заинтересованные стороны будут иметь постоянные возможности задавать вопросы, комментировать и предоставлять обратную связь.</p>
-          <p>Наша цель - поддерживать открытый диалог с нашей базой кредиторов и своевременно реагировать на вопросы. Помимо предоставления информации, которая содержится под закладкой Компания, мы будем рады помочь вам, оперативно предоставив ответы на ваши вопросы.</p>
+          <p>
+            В июле 2016 г. Партнеры объявили о согласовании окончательного
+            решения по финансированию Проекта будущего расширения – Проекта
+            управления устьевым давлением (ПБР-ПУУД), что представляет собой
+            следующий этап крупного расширения добычи и производства на
+            Тенгизском месторождении нефти.
+          </p>
+          <p>
+            В рамках проекта ПБР-ПУУД нам важно сохранять прозрачную
+            двустороннюю связь с нашими кредиторами. ТШО внедряет полноценные
+            отношения с кредиторами, чтобы гарантировать, что заинтересованные
+            стороны будут иметь постоянные возможности задавать вопросы,
+            комментировать и предоставлять обратную связь.
+          </p>
+          <p>
+            Наша цель - поддерживать открытый диалог с нашей базой кредиторов и
+            своевременно реагировать на вопросы. Помимо предоставления
+            информации, которая содержится под закладкой Компания, мы будем рады
+            помочь вам, оперативно предоставив ответы на ваши вопросы.
+          </p>
         </div>
-        <img src="@/assets/img/factory.svg" alt="factory">
+        <img src="@/assets/img/factory.svg" alt="factory" />
       </div>
     </section>
     <section class="info">
       <div class="info__item first">
-        <div class="info__item-right first">
+        <div class="info__item-right first firstfirst">
           <h2>Полезные ссылки</h2>
           <ul>
             <li><a href="#">Общее сведения о компании</a></li>
@@ -25,54 +42,116 @@
             <li><a href="">Итоги года</a></li>
           </ul>
         </div>
-        <div class="info__item-left first">
-          <img src="@/assets/img/info-1.jpg" alt="info">
+        <div class="info__item-left first" style="right: 0">
+          <img src="@/assets/img/info-1.jpg" alt="info" />
         </div>
       </div>
       <div class="info__item second">
         <div class="info__item-right second reverse">
           <h2>Обзор</h2>
           <p>
-            Связь с кредиторами ТШО были созданы для улучшения связи с нашими кредиторами.</p>
-          <p>Общие сведения о компании и другая соответствующая информация доступны в разделе полезных ссылок.</p>
-          <p> Текущие держатели облигаций, кредиторы и потенциальные инвесторы могут связаться с нами для получения доступа к финансовым сведениям Компании, которые хранятся в защищенной сторонней организацией онлайн-базе данных, Merril Datasite. Для запроса на доступ, обратитесь к разделу «Контактная информация».
+            Связь с кредиторами ТШО были созданы для улучшения связи с нашими
+            кредиторами.
+          </p>
+          <p>
+            Общие сведения о компании и другая соответствующая информация
+            доступны в разделе полезных ссылок.
+          </p>
+          <p>
+            Текущие держатели облигаций, кредиторы и потенциальные инвесторы
+            могут связаться с нами для получения доступа к финансовым сведениям
+            Компании, которые хранятся в защищенной сторонней организацией
+            онлайн-базе данных, Merril Datasite. Для запроса на доступ,
+            обратитесь к разделу «Контактная информация».
           </p>
         </div>
         <div class="info__item-right second">
-          <img src="@/assets/img/info-2.jpg" alt="info-2">
+          <img src="@/assets/img/info-2.jpg" alt="info-2" />
         </div>
-        <div class="info__item-left second">
+        <div class="info__item-left second" style="padding-left: 100px">
           <h2>Обзор</h2>
           <p>
-            Связь с кредиторами ТШО были созданы для улучшения связи с нашими кредиторами.</p>
-            <p>Общие сведения о компании и другая соответствующая информация доступны в разделе полезных ссылок.</p>
-           <p> Текущие держатели облигаций, кредиторы и потенциальные инвесторы могут связаться с нами для получения доступа к финансовым сведениям Компании, которые хранятся в защищенной сторонней организацией онлайн-базе данных, Merril Datasite. Для запроса на доступ, обратитесь к разделу «Контактная информация».
+            Связь с кредиторами ТШО были созданы для улучшения связи с нашими
+            кредиторами.
+          </p>
+          <p>
+            Общие сведения о компании и другая соответствующая информация
+            доступны в разделе полезных ссылок.
+          </p>
+          <p>
+            Текущие держатели облигаций, кредиторы и потенциальные инвесторы
+            могут связаться с нами для получения доступа к финансовым сведениям
+            Компании, которые хранятся в защищенной сторонней организацией
+            онлайн-базе данных, Merril Datasite. Для запроса на доступ,
+            обратитесь к разделу «Контактная информация».
           </p>
         </div>
       </div>
       <div class="info__item third">
-        <div class="info__item-right third">
+        <div class="info__item-right third firstfirst">
           <h2>Контактная информация</h2>
           <div class="mail">
             Электронный адрес для связи: <span>tcolr@tengizchevroil.com</span>
           </div>
-          <p>Текущие держатели облигаций отправляют письмо <br> доверительному  управляющему по облигационному <br> займу на эл.адрес: </p>
+          <p>
+            Текущие держатели облигаций отправляют письмо <br />
+            доверительному управляющему по облигационному <br />
+            займу на эл.адрес:
+          </p>
           <div class="mail-with-text">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#00B0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M22 6L12 13L2 6" stroke="#00B0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                stroke="#00B0F0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 6L12 13L2 6"
+                stroke="#00B0F0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
-            <span>emea.at.debt@citi.com </span></div>
-          <p>Кредиторы отправляют письмо банку-агенту на эл.адрес: </p>
+            <span>emea.at.debt@citi.com </span>
+          </div>
+          <p>Кредиторы отправляют письмо банку-агенту на эл.адрес:</p>
           <div class="mail-with-text">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#00B0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M22 6L12 13L2 6" stroke="#00B0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                stroke="#00B0F0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 6L12 13L2 6"
+                stroke="#00B0F0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
-            <span>emea.at.debt@citi.com </span></div>
+            <span>emea.at.debt@citi.com </span>
+          </div>
         </div>
-        <div class="info__item-left third">
-          <img src="@/assets/img/info-3.jpg" alt="info-3">
+        <div class="info__item-left third" style="right: 0">
+          <img src="@/assets/img/info-3.jpg" alt="info-3" />
         </div>
       </div>
     </section>
@@ -130,36 +209,51 @@
       <div class="news__producing">Производства</div>
       <div class="news__list">
         <div class="news__list-item item">
-          <img src="@/assets/img/news-1.jpg" alt="news-1">
+          <img src="@/assets/img/news-1.jpg" alt="news-1" />
           <div>
             <div class="item__status">
               <span class="item__status-producing">#Производства</span>
               <span class="item__status-date">12.12.12</span>
             </div>
-            <span class="item__news-title">Камшат Байжанова: быть конкурентным ...</span>
-            <p class="item__news-descr">Выстраивание ценностей и открытая корпоративная среда, в которой каждый работник может понять свои...</p>
+            <span class="item__news-title"
+              >Камшат Байжанова: быть конкурентным ...</span
+            >
+            <p class="item__news-descr">
+              Выстраивание ценностей и открытая корпоративная среда, в которой
+              каждый работник может понять свои...
+            </p>
           </div>
         </div>
         <div class="news__list-item item">
-          <img src="@/assets/img/news-2.jpg" alt="news-2">
+          <img src="@/assets/img/news-2.jpg" alt="news-2" />
           <div>
             <div class="item__status">
               <span class="item__status-producing">#Производства</span>
               <span class="item__status-date">09/06/22</span>
             </div>
-            <span class="item__news-title">Тенгизшевройл изучает возможности оте..</span>
-            <p class="item__news-descr">В Алматы прошел Форум «Цифровой Тенгизшевройл – 2022» (Форум),  цель которого  изучить возможности ...</p>
+            <span class="item__news-title"
+              >Тенгизшевройл изучает возможности оте..</span
+            >
+            <p class="item__news-descr">
+              В Алматы прошел Форум «Цифровой Тенгизшевройл – 2022» (Форум),
+              цель которого изучить возможности ...
+            </p>
           </div>
         </div>
         <div class="news__list-item item">
-          <img src="@/assets/img/news-3.jpg" alt="news-1">
+          <img src="@/assets/img/news-3.jpg" alt="news-1" />
           <div>
             <div class="item__status">
               <span class="item__status-producing">#Производства</span>
               <span class="item__status-date">12.12.12</span>
             </div>
-            <span class="item__news-title">Тенгизшевройл продолжит оказывать ...</span>
-            <p class="item__news-descr">Генеральный директор ТОО «Тенгизшевройл» (ТШО) Кевин Лайон и Аким Жылыойского района Атырауско...</p>
+            <span class="item__news-title"
+              >Тенгизшевройл продолжит оказывать ...</span
+            >
+            <p class="item__news-descr">
+              Генеральный директор ТОО «Тенгизшевройл» (ТШО) Кевин Лайон и Аким
+              Жылыойского района Атырауско...
+            </p>
           </div>
         </div>
       </div>
@@ -168,9 +262,13 @@
 </template>
 <script setup></script>
 <style lang="scss">
+section {
+  gap: 0px;
+  grid-gap: 0px;
+}
 .relation {
   &__title {
-   color: #015467;
+    color: #015467;
     font-size: 56px;
   }
   &__content {
@@ -178,9 +276,9 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    left: 0;
+    left: calc((1144px - 100vw) / 2);
     padding: 40px calc((100vw - 1140px) / 2);
-    background-color: #F2F6F7;
+    background-color: #f2f6f7;
     width: 100vw;
     @media screen and (max-width: 560px) {
       flex-direction: column;
@@ -207,15 +305,25 @@
 }
 .info {
   &__item {
-    display: flex;
-    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    // width: 100vw;
+    // justify-content: space-between;
     @media screen and (max-width: 560px) {
       flex-direction: column-reverse;
     }
+    img {
+      width: 50vw;
+    }
     &-right {
-      img {width: 900px}
+      img {
+        width: 50vw;
+      }
       position: relative;
-      right: 320px;
+      left: calc((1144px - 100vw) / 2);
+      &.firstfirst {
+        left: 0; // calc((100vw - 1144px) / 2);
+      }
       &.reverse {
         display: none;
         @media screen and (max-width: 560px) {
@@ -267,7 +375,8 @@
         ul {
           padding-top: 40px;
         }
-        li, a {
+        li,
+        a {
           font-family: Roboto, sans-serif;
           color: #015467;
           font-size: 20px;
@@ -278,7 +387,7 @@
       &.third {
         margin-top: 40px;
         font-family: Roboto, sans-serif;
-        color: #30454E;
+        color: #30454e;
         right: 150px;
         font-size: 20px;
         @media screen and (max-width: 560px) {
@@ -315,7 +424,7 @@
           flex-direction: column;
           span {
             margin-top: 10px;
-            color: #00B0F0;
+            color: #00b0f0;
           }
           svg {
             margin-right: 10px;
@@ -327,11 +436,10 @@
       }
     }
     &-left {
-      img {
-        width: 900px;
-      }
       position: relative;
-      left: 350px;
+      // left: 350px;
+      width: 50vw;
+      right: calc((1144px - 100vw) / 2);
       @media screen and (max-width: 560px) {
         left: 0;
         img {
@@ -339,7 +447,7 @@
         }
       }
       &.third {
-        left: 80px;
+        // left: 80px;
         @media screen and (max-width: 560px) {
           left: 0;
           img {
@@ -370,9 +478,11 @@
 .creditors {
   margin-top: 40px;
   position: relative;
-  left: 0;
+  left: calc((1144px - 100vw) / 2);
   padding: 80px 20px;
-  background-color: #F2F6F7;
+  padding-left: calc((100vw - 1144px) / 2);
+  padding-right: calc((100vw - 1144px) / 2);
+  background-color: #f2f6f7;
   width: 100vw;
   @media screen and (max-width: 560px) {
     left: calc((560px - 100vw) / 2);
@@ -383,7 +493,7 @@
     span {
       height: 14px;
       width: 14px;
-      background-color: #00B0F0;
+      background-color: #00b0f0;
       border-radius: 50%;
       margin-top: 5px;
       margin-right: 12px;
@@ -404,7 +514,7 @@
       margin-right: 40px;
     }
     span {
-      color: #30454E;
+      color: #30454e;
       font-size: 18px;
       font-weight: 500;
     }
@@ -429,7 +539,7 @@
     justify-content: space-between;
     align-items: center;
     span {
-      color: #00B0F0;
+      color: #00b0f0;
       font-size: 18px;
       text-decoration: underline;
     }
@@ -442,15 +552,15 @@
     span {
       height: 14px;
       width: 14px;
-      background-color: #00B0F0;
+      background-color: #00b0f0;
       border-radius: 50%;
       margin-top: 5px;
       margin-right: 12px;
     }
   }
-  &__producing  {
+  &__producing {
     margin-top: 40px;
-    background-color:#015467;
+    background-color: #015467;
     padding: 6px 10px;
     font-weight: 500;
     font-size: 18px;
@@ -496,7 +606,7 @@
             @media screen and (max-width: 560px) {
               margin-top: 10px;
             }
-            color: #8C9FA6;
+            color: #8c9fa6;
           }
         }
         &__news-title {
@@ -511,7 +621,7 @@
         }
         &__news-descr {
           margin-top: 12px;
-          color: #8C9FA6;
+          color: #8c9fa6;
         }
       }
     }
