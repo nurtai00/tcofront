@@ -137,7 +137,7 @@
       </div>
     </section>
     <section style="padding: 0">
-      <div class="double-block">
+      <div class="double-block" style="justify-content: flex-end">
         <div class="tco__partners-wrapper">
           <h1>Казахстанское содержание:</h1>
           <div class="line"></div>
