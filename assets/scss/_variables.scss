@@ -54,3 +54,11 @@ $xxxlg: 1925px;
 @function rem($pixels, $context: $browser-context) {
   @return #{calc($pixels/$context)}rem;
 }
+
+.active {
+  color: #015467;
+}
+
+.active-primary {
+  color: #00b0f0;
+}
