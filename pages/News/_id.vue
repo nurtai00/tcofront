@@ -5,7 +5,7 @@ export default {}
 <template>
   <div class="new">
     <h1>Тенгизшевройл создает условия для импортозамещения</h1>
-    <AtomsTag :text="'Производство'" selected />
+    <AtomsTag :text="'Карьера'" selected />
     <p class="new_date">19 мая 2022</p>
     <img src="@/assets/img/new_card.png" alt="new_card" />
     <p class="new_text">
