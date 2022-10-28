@@ -320,6 +320,7 @@
             <circle cx="6" cy="6" r="6" fill="#00B0F0" />
           </svg>
           <h2>Новости ТШО</h2>
+          <nuxt-link to="/news">Все Новости ТШО</nuxt-link>
         </div>
       </div>
       <div class="container">
@@ -332,7 +333,7 @@
           <span>ПБР-ПУУД</span>
         </div>
         <div class="tco__news">
-          <div class="card">
+          <div class="card" @click="navigateNew">
             <img src="@/assets/img/news1.png" />
             <div class="info">
               <span>#Карьера </span>
@@ -344,7 +345,7 @@
               каждый работник может понять свои...
             </p>
           </div>
-          <div class="card">
+          <div class="card" @click="navigateNew">
             <img src="@/assets/img/news3.png" />
             <div class="info">
               <span>#Видео </span>
@@ -356,7 +357,7 @@
               Жылыойского района Атырауско...
             </p>
           </div>
-          <div class="card">
+          <div class="card" @click="navigateNew">
             <img src="@/assets/img/news2.png" />
             <div class="info">
               <span>#Карьера </span>
@@ -430,7 +431,11 @@ export default {
 
   mounted() {},
 
-  methods: {},
+  methods: {
+    navigateNew() {
+      this.$router.push('/news/1')
+    },
+  },
 }
 </script>
 
