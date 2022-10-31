@@ -2,7 +2,7 @@
   <header class="header container">
     <div class="header__container">
       <img src="@/assets/img/logo.svg" />
-      <SearchBar />
+      <AtomsSearchBar />
       <NuxtLink to="/">Телефон доверия</NuxtLink>
       <NuxtLink to="/">Рус</NuxtLink>
       <NuxtLink to="/">Қаз</NuxtLink>
@@ -18,14 +18,13 @@
       <NuxtLink to="/">Career</NuxtLink>
       <NuxtLink to="/">Lender Relations</NuxtLink>
     </div>
+    <div class="mobile-nav"></div>
   </header>
 </template>
 
 <script>
-import SearchBar from '@/components/custom/SearchBar.vue'
 export default {
   name: 'Header',
-  components: { SearchBar },
 }
 </script>
 
