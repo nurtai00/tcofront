@@ -34,6 +34,7 @@
 .section__title {
   display: flex;
   align-items: flex-start;
+  position: relative;
   gap: 15px;
 
   svg {
@@ -64,6 +65,20 @@
     /* tco 3 */
 
     color: #015467;
+  }
+  a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    float: right;
+    /* tco 5 */
+
+    color: #00b0f0;
+    position: absolute;
+    right: 0px;
   }
 }
 
