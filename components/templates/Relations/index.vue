@@ -1,5 +1,11 @@
 <template>
   <section class="container">
+    <div class="container">
+      <div class="breadcrumbs">
+        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
+        <span>Relations</span>
+      </div>
+    </div>
     <section class="relation">
       <h1 class="relation__title">Lender Relation</h1>
       <div class="relation__content">
@@ -416,6 +422,7 @@ section {
         .mail-with-text {
           display: flex;
           align-items: center;
+          gap: 10px;
           margin-top: 15px;
         }
         .mail {

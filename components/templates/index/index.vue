@@ -207,6 +207,14 @@ export default {
       gap: 25px;
       text-align: left;
 
+      @media (max-width: 1160px) {
+        padding: 15px;
+      }
+
+      @media (max-width: 886px) {
+        max-width: none;
+      }
+
       .underline {
         display: block;
         position: relative;
@@ -318,6 +326,14 @@ export default {
     justify-content: space-between;
     gap: 20px;
 
+    @media (max-width: 775px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+
     .card {
       display: flex;
       flex-direction: column;
@@ -390,6 +406,7 @@ export default {
     &-tags {
       display: flex;
       gap: 5px;
+      flex-wrap: wrap;
       span {
         /* black 92% */
 
@@ -424,10 +441,18 @@ export default {
     justify-content: space-between;
     gap: 25px;
 
+    @media (max-width: 730px) {
+      flex-direction: column;
+    }
+
     .card {
       display: flex;
       flex-direction: column;
       width: 40%;
+
+      @media (max-width: 730px) {
+        width: 100%;
+      }
 
       a {
         display: flex;
@@ -444,6 +469,10 @@ export default {
       flex-direction: column;
       gap: 15px;
       width: 60%;
+
+      @media (max-width: 730px) {
+        width: 100%;
+      }
 
       .line {
         width: 100%;

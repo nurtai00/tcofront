@@ -1,7 +1,7 @@
 <template>
   <div class="search-bar">
     <form action="">
-      <input type="text" />
+      <input type="text" autocomplete="false" />
       <button type="submit"><img src="@/assets/icons/search.svg" /></button>
     </form>
   </div>
