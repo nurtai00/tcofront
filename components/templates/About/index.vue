@@ -140,7 +140,6 @@
       <div class="double-block" style="justify-content: flex-end">
         <div class="tco__partners-wrapper">
           <h1>Казахстанское содержание:</h1>
-          <div class="line"></div>
           <div class="amount">
             <div class="item">
               <span>0,6 млрд (в долларах США)</span>
@@ -476,7 +475,7 @@ export default {
       span {
         font-family: 'Roboto';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 38px;
         line-height: 42px;
         /* identical to box height, or 111% */
@@ -556,10 +555,11 @@ export default {
     &-item {
       display: flex;
       justify-content: center;
-      padding: 40px;
+      padding: 40px 0 40px 40px;
       background: rgba(1, 84, 103, 0.1);
 
       &:last-of-type {
+        padding: 40px 40px 40px 0;
         background: inherit;
       }
     }
@@ -611,7 +611,7 @@ export default {
         p {
           font-family: 'Roboto';
           font-style: normal;
-          font-weight: 400;
+          font-weight: 300;
           font-size: 20px;
           line-height: 28px;
           /* identical to box height, or 140% */
@@ -667,7 +667,7 @@ export default {
       p {
         font-family: 'Roboto';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 18px;
         line-height: 22px;
         /* or 122% */
