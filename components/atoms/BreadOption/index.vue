@@ -59,9 +59,9 @@ li {
       flex: none;
       content: '';
 
-      @include block(6px, 11px);
+      @include block(18px, 14px);
       @include bg('icons/arrow-right-grey.svg', center center/contain);
-      margin: 0 17px;
+      margin: 0 11px;
     }
   }
 

@@ -1,7 +1,3 @@
-<script>
-export default {}
-</script>
-
 <template>
   <div class="p_block">
     <div class="p_block_title">
@@ -14,7 +10,11 @@ export default {}
   </div>
 </template>
 
-<style scoped lang="scss">
+<script>
+export default {}
+</script>
+
+<style lang="scss" scoped>
 .p_block {
   padding: 50px 0 80px 0;
   @media (orientation: portrait) {

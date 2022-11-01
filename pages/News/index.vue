@@ -1,20 +1,3 @@
-<script>
-export default {
-  data() {
-    return {
-      tags: [
-        'Производство',
-        'Экология',
-        'Соцпроекты',
-        'Казсодержание',
-        'Карьера',
-        'ПБР-ПУУД',
-      ],
-    }
-  },
-}
-</script>
-
 <template>
   <div class="news container">
     <MoleculesBreadcrumbs>
@@ -23,7 +6,16 @@ export default {
     </MoleculesBreadcrumbs>
     <div class="news_header">
       <h1>Новости ТШО</h1>
-      <AtomsTag v-for="tag in tags" :key="tag" :text="tag" />
+      <AtomsTag
+        v-for="(tag, idx) in tags"
+        :key="idx"
+        :tag="tag"
+        @click="
+          (val) => {
+            val.selected = !val.selected
+          }
+        "
+      />
     </div>
     <div class="news_all">
       <div class="news_list">
@@ -42,7 +34,48 @@ export default {
   </div>
 </template>
 
-<style scoped lang="scss">
+<script>
+export default {
+  data() {
+    return {
+      tags: [
+        {
+          text: 'Производство',
+          value: '',
+          selected: false,
+        },
+        {
+          text: 'Экология',
+          value: '',
+          selected: false,
+        },
+        {
+          text: 'Соцпроекты',
+          value: '',
+          selected: false,
+        },
+        {
+          text: 'Казсодержание',
+          value: '',
+          selected: false,
+        },
+        {
+          text: 'Карьера',
+          value: '',
+          selected: false,
+        },
+        {
+          text: 'ПБР-ПУУД',
+          value: '',
+          selected: false,
+        },
+      ],
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped>
 p {
   margin: 0;
 }

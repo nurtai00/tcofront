@@ -1,7 +1,3 @@
-<script>
-export default {}
-</script>
-
 <template>
   <div class="new container">
     <MoleculesBreadcrumbs>
@@ -9,7 +5,12 @@ export default {}
       <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
     </MoleculesBreadcrumbs>
     <h1>Тенгизшевройл создает условия для импортозамещения</h1>
-    <AtomsTag :text="'Карьера'" selected />
+    <AtomsTag
+      :tag="{
+        text: 'Производство',
+        selected: true,
+      }"
+    />
     <p class="new_date">19 мая 2022</p>
     <img src="@/assets/img/new_card.png" alt="new_card" />
     <p class="new_text">
@@ -74,7 +75,7 @@ export default {}
   </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .new {
   padding-top: 20px;
   width: 896px;
