@@ -117,7 +117,7 @@ export default {}
   }
   &_text {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     line-height: 28px;
     color: #30454e;

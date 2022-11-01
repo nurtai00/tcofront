@@ -85,6 +85,7 @@ export default {
   }
 
   .links {
+    z-index: 99;
     border-top: 1px solid #8c9fa6;
     padding: 20px 0;
     display: flex;
