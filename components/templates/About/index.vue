@@ -753,6 +753,14 @@ export default {
     justify-content: space-between;
     gap: 20px;
 
+    @media (max-width: 775px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+
     .card {
       display: flex;
       flex-direction: column;
@@ -825,6 +833,7 @@ export default {
     &-tags {
       display: flex;
       gap: 5px;
+      flex-wrap: wrap;
       span {
         /* black 92% */
 
@@ -856,12 +865,7 @@ export default {
       flex-direction: column;
       gap: 15px;
       height: 100%;
-      width: 25%;
-
-      img {
-        width: 276px;
-        height: 388px;
-      }
+      width: 24%;
 
       div {
         img {

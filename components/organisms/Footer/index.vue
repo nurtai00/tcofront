@@ -114,25 +114,23 @@ footer {
   display: flex;
   flex-direction: column;
   background: #30454e;
-
-  @media (orientation: portrait) {
-    display: none;
-    grid-template-columns: 48px 1fr;
-  }
-
-  img {
-    width: 130px;
-  }
+  padding: 20px 0;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px 0;
+    flex-wrap: wrap;
+
+    @media (max-width: 645px) {
+      flex-direction: column;
+    }
 
     .block {
+      padding: 20px;
       .socials {
         img {
+          padding: 0px;
           width: 50px;
           height: 50px;
           margin-right: 10px;
