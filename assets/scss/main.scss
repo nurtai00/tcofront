@@ -6,8 +6,25 @@
 @import 'layout';
 @import 'animations';
 
+.blocks_content__info {
+  p, li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #30454e;
+  }
+  ul {
+    padding-left: 30px;
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+
 .container {
-  max-width: 1144px;
+  max-width: 1176px;
   margin: 0 auto;
 }
 
