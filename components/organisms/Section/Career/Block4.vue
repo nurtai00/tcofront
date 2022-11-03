@@ -1,24 +1,26 @@
 <template>
   <div class="programm_career">
     <img src="@/assets/img/career/programm_left.png" alt="" />
-    <div class="programm_career_info">
-      <AtomsHeading type="h2" color="main">
-        Программа адаптации
-      </AtomsHeading>
-      <p>
-        Программа адаптации ТШО предназначена для ускоренной интеграции новых
-        сотрудников в новую среду и обеспечения их успеха в новой роли.
-        Программа представляет собой обзор всей необходимой информации об
-        организации, требованиях к безопасности и соответствию, политиках и
-        процедурах, корпоративной культуре, ценностях, управлении деятельностью
-        работников и ожиданиях в отношении поведения.
-      </p>
+    <div class="programm_career_info" :class="{ background: background }">
+      <AtomsHeading type="h2" color="main"> {{ content.title }} </AtomsHeading>
+      <div v-html="content.text"></div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    content: {
+      type: Object,
+      required: true,
+    },
+    background: {
+      type: Boolean,
+      default: false,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -28,24 +30,20 @@ export default {}
   img {
     width: 50%;
     height: auto;
-    max-height: 498px;
+    max-height: 572px;
     object-fit: cover;
   }
   &_info {
+    width: 50%;
     padding: 80px 40px;
     h2 {
-      margin-bottom: 40px;
-    }
-    p {
       width: 100%;
       max-width: 548px;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 28px;
-      color: #30454e;
+      margin-bottom: 40px;
     }
   }
+}
+.background {
+  background: #f2f6f7 !important;
 }
 </style>
