@@ -23,7 +23,7 @@
       {{ text }}
       <span v-if="!text" class="plc">{{ placeholder }}</span>
       <div :class="['select-arrow-down']">
-        <img src="~/assets/icons/arrowDown.svg" alt="#" />
+        <!-- <img src="~/assets/icons/arrowDown.svg" alt="#" /> -->
       </div>
     </label>
     <transition name="fade">
