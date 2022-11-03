@@ -16,7 +16,11 @@ export default {
 </script>
 
 <template>
-  <div class="news">
+  <div class="news container">
+    <MoleculesBreadcrumbs>
+      <AtomsBreadOption to="/">Home</AtomsBreadOption>
+      <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
+    </MoleculesBreadcrumbs>
     <div class="news_header">
       <h1>Новости ТШО</h1>
       <AtomsTag v-for="tag in tags" :key="tag" :text="tag" />
@@ -39,7 +43,15 @@ export default {
 </template>
 
 <style scoped lang="scss">
+p {
+  margin: 0;
+}
 .news {
+  margin: 0 auto !important;
+  padding-top: 20px;
+  p {
+    margin: 0;
+  }
   &_header {
     padding-bottom: 35px;
     @media (orientation: portrait) {
@@ -79,22 +91,22 @@ export default {
   &_publications {
     background: #f2f6f7;
     position: relative;
-    left: calc((1280px - 100vw) / 2);
-    padding-left: calc((100vw - 1280px) / 2);
-    padding-right: calc((100vw - 1280px) / 2);
+    left: calc((1144px - 100vw) / 2);
+    padding-left: calc((100vw - 1144px) / 2) !important;
+    padding-right: calc((100vw - 1144px) / 2) !important;
     width: 100vw;
     @media (orientation: portrait) {
       left: -16px;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 16px !important;
+      padding-right: 16px !important;
     }
   }
   &_all {
     background: rgba(1, 84, 103, 0.1);
     position: relative;
-    left: calc((1280px - 100vw) / 2);
-    padding-left: calc((100vw - 1280px) / 2);
-    padding-right: calc((100vw - 1280px) / 2);
+    left: calc((1144px - 100vw) / 2);
+    padding-left: calc((100vw - 1144px) / 2);
+    padding-right: calc((100vw - 1144px) / 2);
     width: 100vw;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -110,7 +122,7 @@ export default {
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 158px;
+    grid-auto-rows: 170px;
     @media (orientation: portrait) {
       display: block;
     }

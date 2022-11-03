@@ -32,20 +32,21 @@ li {
   display: flex;
   align-items: center;
   &:last-child a {
-    color: $bread-color;
+    color: #015467; // $bread-color;
   }
 
   > a {
-    font-size: 12px;
-    line-height: 14px;
-
-    color: $c-grey;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8c9fa6; // $c-grey;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 
     &.nuxt-link-exact-active {
-      color: $bread-color;
+      color: #015467; // $bread-color;
       cursor: default;
     }
     &:active {
@@ -60,7 +61,7 @@ li {
 
       @include block(6px, 11px);
       @include bg('icons/arrow-right-grey.svg', center center/contain);
-      margin: 0 4px;
+      margin: 0 17px;
     }
   }
 

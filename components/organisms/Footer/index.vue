@@ -4,10 +4,37 @@
       <img src="@/assets/img/logo.svg" alt="TCO" />
       <div class="block">
         <ul>
-          <li><Nuxt-Link to="/">Главная</Nuxt-Link></li>
-          <li><Nuxt-Link to="/">О нас</Nuxt-Link></li>
-          <li><Nuxt-Link to="/">Производственная безопасность</Nuxt-Link></li>
-          <li><Nuxt-Link to="/">Казахстанское содержание</Nuxt-Link></li>
+          <li>
+            <Nuxt-Link to="/">Инвестиции в сообщество</Nuxt-Link>
+          </li>
+          <li>
+            <Nuxt-Link to="/">Карьера</Nuxt-Link>
+          </li>
+          <li>
+            <Nuxt-Link to="/">Поставщикам</Nuxt-Link>
+          </li>
+          <li>
+            <Nuxt-Link to="/">Продукция</Nuxt-Link>
+          </li>
+          <li>
+            <Nuxt-Link to="/">ПБР-ПУУД</Nuxt-Link>
+          </li>
+        </ul>
+      </div>
+      <div class="block">
+        <ul>
+          <li>
+            <Nuxt-Link to="/">Главная</Nuxt-Link>
+          </li>
+          <li>
+            <Nuxt-Link to="/">О нас</Nuxt-Link>
+          </li>
+          <li>
+            <Nuxt-Link to="/">Производственная безопасность</Nuxt-Link>
+          </li>
+          <li>
+            <Nuxt-Link to="/">Казахстанское содержание</Nuxt-Link>
+          </li>
         </ul>
         <div class="socials">
           <Nuxt-link to="/">
@@ -25,24 +52,21 @@
         </div>
       </div>
       <div class="block">
-        <ul>
-          <li><Nuxt-Link to="/">Инвестиции в сообщество</Nuxt-Link></li>
-          <li><Nuxt-Link to="/">Карьера</Nuxt-Link></li>
-          <li><Nuxt-Link to="/">Поставщикам</Nuxt-Link></li>
-          <li><Nuxt-Link to="/">Продукция</Nuxt-Link></li>
-          <li><Nuxt-Link to="/">ПБР-ПУУД</Nuxt-Link></li>
-        </ul>
-      </div>
-      <div class="block">
         <span>Контакты</span>
         <ul>
-          <li><Nuxt-Link to="/">+7 712 227 1212</Nuxt-Link></li>
-          <li><Nuxt-Link to="/">+7 712 302 6000</Nuxt-Link></li>
+          <li>
+            <Nuxt-Link to="/">+7 712 227 1212</Nuxt-Link>
+          </li>
+          <li>
+            <Nuxt-Link to="/">+7 712 302 6000</Nuxt-Link>
+          </li>
           <li>
             Республика Казахстан 060011, <br />
             г.Атырау , ул. Сатпаева 3
           </li>
-          <li><Nuxt-Link to="/">tcoinfo@tengizchevroil.com</Nuxt-Link></li>
+          <li>
+            <Nuxt-Link to="/">tcoinfo@tengizchevroil.com</Nuxt-Link>
+          </li>
           <li>
             <Nuxt-Link to="/">ПБР-Телефон доверия и другие контакты</Nuxt-Link>
           </li>
@@ -90,20 +114,23 @@ footer {
   display: flex;
   flex-direction: column;
   background: #30454e;
-
-  img {
-    width: 130px;
-  }
+  padding: 20px 0;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px 0;
+    flex-wrap: wrap;
+
+    @media (max-width: 645px) {
+      flex-direction: column;
+    }
 
     .block {
+      padding: 20px;
       .socials {
         img {
+          padding: 0px;
           width: 50px;
           height: 50px;
           margin-right: 10px;
@@ -111,7 +138,7 @@ footer {
       }
 
       span {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -129,7 +156,7 @@ footer {
       li {
         color: white;
         text-decoration: none;
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 18px;

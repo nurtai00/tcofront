@@ -3,9 +3,13 @@ export default {}
 </script>
 
 <template>
-  <div class="new">
+  <div class="new container">
+    <MoleculesBreadcrumbs>
+      <AtomsBreadOption to="/">Home</AtomsBreadOption>
+      <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
+    </MoleculesBreadcrumbs>
     <h1>Тенгизшевройл создает условия для импортозамещения</h1>
-    <AtomsTag :text="'Производство'" selected />
+    <AtomsTag :text="'Карьера'" selected />
     <p class="new_date">19 мая 2022</p>
     <img src="@/assets/img/new_card.png" alt="new_card" />
     <p class="new_text">
@@ -72,8 +76,9 @@ export default {}
 
 <style scoped lang="scss">
 .new {
+  padding-top: 20px;
   width: 896px;
-  margin-left: 100px;
+  margin: 0 auto;
   padding-bottom: 100px;
   @media (orientation: portrait) {
     background: #f2f6f7;
@@ -112,7 +117,7 @@ export default {}
   }
   &_text {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     line-height: 28px;
     color: #30454e;

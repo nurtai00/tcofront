@@ -3,7 +3,12 @@ export default {}
 </script>
 
 <template>
-  <div class="public">
+  <div class="public container">
+    <MoleculesBreadcrumbs>
+      <AtomsBreadOption to="/">Home</AtomsBreadOption>
+      <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
+      <AtomsBreadOption to="/news/publications">Publications</AtomsBreadOption>
+    </MoleculesBreadcrumbs>
     <h1>Публикации</h1>
     <div class="public_list">
       <div v-for="item in 9" :key="item">
@@ -19,6 +24,7 @@ export default {}
 
 <style scoped lang="scss">
 .public {
+  padding-top: 20px;
   margin-bottom: 40px;
   h1 {
     font-family: 'Montserrat', sans-serif;

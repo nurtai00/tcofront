@@ -58,6 +58,9 @@ export default {
 </template>
 
 <style scoped lang="scss">
+p {
+  margin: 0;
+}
 .n_card {
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;

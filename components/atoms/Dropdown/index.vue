@@ -96,6 +96,7 @@ $dropdown-background: #000;
   }
 
   &-menu {
+    z-index: 99;
     position: absolute;
     display: none;
     border: 1px solid $dropdown-line;
@@ -120,8 +121,6 @@ $dropdown-background: #000;
   }
 
   &.open {
-    background-color: $dropdown-background;
-
     .menu {
       display: block;
       z-index: 1;

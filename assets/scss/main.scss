@@ -20,7 +20,7 @@
   span {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 20px;
     /* identical to box height, or 125% */
@@ -34,7 +34,9 @@
 .section__title {
   display: flex;
   align-items: flex-start;
+  position: relative;
   gap: 15px;
+  margin-bottom: 15px;
 
   svg {
     margin-top: 10px;
@@ -65,6 +67,20 @@
 
     color: #015467;
   }
+  a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    float: right;
+    /* tco 5 */
+
+    color: #00b0f0;
+    position: absolute;
+    right: 0px;
+  }
 }
 
 h2 {
@@ -85,6 +101,9 @@ section {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  @media (max-width: 1160px) {
+    padding: 15px;
+  }
 }
 
 .section--blue {
@@ -114,15 +133,49 @@ p {
 .double-block {
   display: flex;
   justify-content: center;
+
+  @media (max-width: 886px) {
+    flex-direction: column;
+  }
+
   div {
     width: 50%;
+
+    @media (max-width: 886px) {
+      width: 100%;
+    }
   }
   .wrapper {
     max-width: 572px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 886px) {
+      max-width: none;
+    }
   }
   img {
     width: 50%;
+
+    @media (max-width: 886px) {
+      width: 100%;
+    }
   }
+}
+
+time {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  /* grey */
+
+  color: #8c9fa6;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
 }

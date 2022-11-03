@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TemplatesIndex />
+    <TemplatesAbout />
   </div>
 </template>
 
