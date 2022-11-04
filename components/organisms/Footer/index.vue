@@ -8,7 +8,7 @@
             <Nuxt-Link to="/">Инвестиции в сообщество</Nuxt-Link>
           </li>
           <li>
-            <Nuxt-Link to="/">Карьера</Nuxt-Link>
+            <Nuxt-Link to="/career">Карьера</Nuxt-Link>
           </li>
           <li>
             <Nuxt-Link to="/">Поставщикам</Nuxt-Link>
