@@ -1,7 +1,7 @@
 <template>
   <div class="personal_career">
     <div class="container">
-      <AtomsHeading type="h2" color="main"> Развитие персонала </AtomsHeading>
+      <AtomsHeading type="h3" color="main"> Развитие персонала </AtomsHeading>
       <div class="personal_career_header">
         <p>
           Одной из стратегий ТШО является инвестирование в человеческие ресурсы

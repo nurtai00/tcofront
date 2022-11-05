@@ -24,11 +24,5 @@ export default {}
     margin-top: 14px;
     margin-right: 12px;
   }
-  h1 {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
-    color: #015467;
-  }
 }
 </style>

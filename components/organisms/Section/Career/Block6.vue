@@ -1,6 +1,6 @@
 <template>
   <div class="assignments_career container">
-    <AtomsHeading type="h2" color="main">
+    <AtomsHeading type="h3" color="main">
       Работники ТШО на зарубежных назначениях и назначениях внутри Казахстана
     </AtomsHeading>
     <p>

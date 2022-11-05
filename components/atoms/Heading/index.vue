@@ -33,14 +33,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$hs: (56px 700 64px), (38px 700 46px), (24px 800 28px), (16px 700 20px),
-  (16px 500 20px), (14px 500 18px);
+$hs: ('Montserrat' 56px 700 64px), ('Montserrat' 48px 700 56px),
+  ('Montserrat' 38px 700 46px), ('Montserrat' 28px 700 32px),
+  ('Roboto' 24px 700 28px), ('Roboto' 18px 500 22px);
 
 @for $i from 1 through 6 {
   h#{$i} {
-    font-size: nth(nth($hs, $i), 1);
-    font-weight: nth(nth($hs, $i), 2);
-    line-height: nth(nth($hs, $i), 3);
+    font-family: nth(nth($hs, $i), 1);
+    font-size: nth(nth($hs, $i), 2);
+    font-weight: nth(nth($hs, $i), 3);
+    line-height: nth(nth($hs, $i), 4);
   }
 }
 .main {
@@ -54,5 +56,8 @@ $hs: (56px 700 64px), (38px 700 46px), (24px 800 28px), (16px 700 20px),
 }
 .white {
   color: #fff;
+}
+.id_popup {
+  color: rgba(1, 84, 103, 0.2);
 }
 </style>

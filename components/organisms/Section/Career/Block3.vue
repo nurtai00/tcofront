@@ -1,7 +1,7 @@
 <template>
   <div class="about_career">
     <div class="container">
-      <AtomsHeading type="h2" color="main">
+      <AtomsHeading type="h3" color="main">
         Стратегическое планирование персонала
       </AtomsHeading>
       <div class="statistic">
@@ -11,7 +11,7 @@
           :key="idx"
         >
           <img :src="item.img" alt="" />
-          <AtomsHeading type="h2" color="main"> {{ item.title }}</AtomsHeading>
+          <AtomsHeading type="h3" color="main"> {{ item.title }}</AtomsHeading>
           <p>{{ item.text }}</p>
         </div>
       </div>

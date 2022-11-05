@@ -2,7 +2,7 @@
   <div class="programm_career">
     <img src="@/assets/img/career/programm_left.png" alt="" />
     <div class="programm_career_info" :class="{ background: background }">
-      <AtomsHeading type="h2" color="main"> {{ content.title }} </AtomsHeading>
+      <AtomsHeading type="h3" color="main"> {{ content.title }} </AtomsHeading>
       <div v-html="content.text"></div>
     </div>
   </div>

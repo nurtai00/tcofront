@@ -1,6 +1,6 @@
 <template>
   <div class="about_career container">
-    <AtomsHeading type="h2" color="main">
+    <AtomsHeading type="h3" color="main">
       Стратегическое планирование и найм персонала
     </AtomsHeading>
     <div class="about_career_block">
@@ -26,7 +26,7 @@
         />
         <div class="info_block">
           <img src="@/assets/icons/vacancy.svg" alt="" />
-          <AtomsHeading type="h3" color="main">
+          <AtomsHeading type="h5" color="main">
             Посмотреть список вакансии
           </AtomsHeading>
           <p>Нажимая здесь вы можете видеть список доступных вакансий</p>
