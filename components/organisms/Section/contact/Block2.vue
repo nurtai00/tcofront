@@ -2,7 +2,7 @@
   <div class="contact__helpline">
     <div class="container">
       <div class="content__helpline-content content">
-        <AtomsHeading type="h2" color="black">
+        <AtomsHeading type="h2">
           Телефон доверия ТШО
         </AtomsHeading>
         <p class="content__description">
@@ -48,6 +48,15 @@
     }
     .content {
       padding: 80px 0px 40px 0;
+      @include phone() {
+        padding-top: 40px;
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
       p {
         display: block;
         margin-top: 30px;
@@ -61,12 +70,32 @@
   &__contacts {
     padding-top: 40px;
     background-color: #ECFAFE;
+    @include phone() {
+      padding-top: 0;
+    }
     .contacts {
-
       &__list {
         padding: 40px 0px 80px 0;
         display: flex;
         justify-content: space-between;
+        @include wide-tablet() {
+          flex-wrap: wrap;
+          gap: 40px;
+          justify-content: center;
+        }
+        @include phone() {
+          padding: 20px 0;
+          flex-wrap: wrap;
+          gap: 40px;
+          &-item {
+            flex-direction: column;
+            font-size: 16px;
+            @media screen and (max-width: $xs) {
+              width: 210px;
+              margin: 0 auto;
+            }
+          }
+        }
         &-item {
           display: flex;
         }
@@ -84,6 +113,9 @@
   &__phone {
     display: flex;
     flex-direction: column;
+    @include phone() {
+      margin-top: 12px;
+    }
     span {
       font-weight: 400;
       color: #0282A0;

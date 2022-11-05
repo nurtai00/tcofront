@@ -23,6 +23,18 @@ export default {}
   svg {
     margin-top: 14px;
     margin-right: 12px;
+    @include phone() {
+      display: none;
+    }
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    color: #015467;
+    @include phone() {
+      font-size: 24px;
+    }
   }
 }
 </style>

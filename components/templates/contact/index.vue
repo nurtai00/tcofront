@@ -6,7 +6,7 @@
         <AtomsBreadOption to="/company">Company</AtomsBreadOption>
         <AtomsBreadOption to="/contact">Contact Information</AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="mb20"> Контактная информация </AtomsTitle>
+      <AtomsTitle class="mb20 contact__title"> Контактная информация </AtomsTitle>
       <div class="contact__tags">
         <AtomsTag v-for="(tag, index) of tags" :key="index" :tag="tag" @click="onClickTag" />
       </div>
@@ -191,10 +191,18 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .contact {
+  @include phone(){
+    h1 {
+      padding: 0 16px;
+    }
+  }
   &__tags {
     max-width: 750px;
+    @include middle-laptop() {
+      padding: 0 16px;
+    }
   }
 }
 </style>

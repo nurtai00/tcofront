@@ -3,8 +3,8 @@
     <div class="container">
       <div class="contact__act content">
         <div class="content__left">
-          <AtomsHeading type="h2" color="black">Примеры нарушений,о которых следует сообщать:</AtomsHeading>
-          <p>
+          <AtomsHeading class="content__left-title" type="h2">Примеры нарушений,о которых следует сообщать:</AtomsHeading>
+          <p class="content__left-subtitle">
             Все другие вопросы, вызывающие озабоченность, предложения и наблюдения можно отправлять через систему
             <a href="#">управления обратной связью</a>
           </p>
@@ -12,7 +12,7 @@
         <div class="content__right">
           <AtomsAccordion :is-open="accordions.first" @click="accordions.first = !accordions.first">
             <template #title>
-              <AtomsHeading type="h3" color="black">Нарушения</AtomsHeading>
+              <AtomsHeading class="content__right-title" type="h3" color="black">Нарушения</AtomsHeading>
             </template>
             <template #content>
               <div class="content__right-inner">
@@ -107,7 +107,7 @@
           </AtomsAccordion>
           <AtomsAccordion :is-open="accordions.second" @click="accordions.second = !accordions.second">
             <template #title>
-              <AtomsHeading type="h3" color="black">Мошенничества</AtomsHeading>
+              <AtomsHeading class="content__right-title" type="h3" color="black">Мошенничества</AtomsHeading>
             </template>
             <template #content>
               <div class="content__right-inner">
@@ -184,7 +184,7 @@
           </AtomsAccordion>
           <AtomsAccordion :is-open="accordions.third" @click="accordions.third = !accordions.third">
             <template #title>
-              <AtomsHeading type="h3" color="black">Законы</AtomsHeading>
+              <AtomsHeading class="content__right-title" type="h3" color="black">Законы</AtomsHeading>
             </template>
             <template #content>
               <div class="content__right-inner">
@@ -341,25 +341,49 @@ export default {
 <style lang="scss" scoped>
 .contact__act {
   padding: 80px 0;
+  @include phone() {
+    padding: 40px 0;
+  }
   .content {
     display: flex;
+    @include tablet() {
+      flex-direction: column;
+    }
+    @include wide-tablet() {
+      padding: 0 16px;
+    }
     gap: 50px;
     &__left {
       flex-basis: 50%;
-      h2 {
-        margin-bottom: 40px;
-      }
-      p {
+      &-title {}
+      &-subtitle {
+        display: inline-block;
+        margin-top: 40px;
         font-size: 20px;
         font-family: Roboto, sans-serif;
         color: $c-text;
+        a {
+          text-decoration: underline;
+        }
       }
-      a {
-        text-decoration: underline;
+      @include phone() {
+        &-title {
+          font-size: 20px;
+          line-height: 26px;
+        }
+        &-subtitle {
+          margin-top: 20px;
+          font-size: 16px;
+        }
       }
     }
     &__right {
       flex-basis: 50%;
+      @include phone() {
+        &-title {
+          font-size: 14px;
+        }
+      }
       &-inner {
         padding: 24px;
         & .subtitle {
