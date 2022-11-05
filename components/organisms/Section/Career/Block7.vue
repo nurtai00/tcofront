@@ -15,19 +15,11 @@
       <img src="@/assets/img/career/motivation_img.svg" alt="" />
     </div>
     <div class="motivation_career_cards">
-      <div
-        class="motivation_card"
+      <MoleculesCardPopUpCard
         v-for="(motivation, idx) in motivations"
         :key="idx"
-      >
-        <p class="motivation_card__title">
-          {{ motivation.title }}
-        </p>
-        <p class="motivation_card__text">
-          {{ motivation.text }}
-        </p>
-        <img src="@/assets/img/career/arrow_next.svg" alt="" />
-      </div>
+        :item="motivation"
+      />
     </div>
   </div>
 </template>
@@ -105,39 +97,6 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     grid-gap: 24px;
-  }
-}
-.motivation_card {
-  position: relative;
-  width: 100%;
-  max-width: 376px;
-  min-height: 270px;
-
-  background: #ffffff;
-  box-shadow: 0px 10px 30px rgba(1, 84, 103, 0.1);
-  border-radius: 4px;
-
-  padding: 30px;
-  &__title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
-    color: rgba(1, 84, 103, 0.2);
-    margin-bottom: 20px;
-  }
-  &__text {
-    font-weight: 600;
-    line-height: 28px;
-    color: #015467;
-    margin-bottom: 44px;
-  }
-  img {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    cursor: pointer;
   }
 }
 </style>
