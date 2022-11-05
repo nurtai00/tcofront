@@ -1,12 +1,12 @@
 <template>
   <div class="card">
     <p class="card__title">
-      {{ item.title }}
+      {{ item.id }}
     </p>
     <p class="card__text">
-      {{ item.text }}
+      {{ item.title }}
     </p>
-    <img src="@/assets/img/career/arrow_next.svg" alt="" />
+    <img @click="showMod" src="@/assets/img/career/arrow_next.svg" alt="" />
   </div>
 </template>
 
@@ -16,6 +16,11 @@ export default {
     item: {
       type: Object,
       required: true,
+    },
+  },
+  methods: {
+    showMod() {
+      this.$modal.add({ title: 'CareerMotivation', payload: this.item })
     },
   },
 }

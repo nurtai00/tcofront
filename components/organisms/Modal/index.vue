@@ -5,6 +5,7 @@
       v-for="item in modals"
       v-show="item.id === modals.length"
       :key="item.id"
+      :payload="item.payload"
     />
   </AtomsModalContainer>
 </template>
