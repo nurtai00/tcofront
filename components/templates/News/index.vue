@@ -19,7 +19,7 @@
     </div>
     <div class="news_all">
       <div class="news_list">
-        <AtomsNewsCard
+        <MoleculesCardNewsMain
           v-for="item in 7"
           :key="item"
           :index="item"
@@ -30,7 +30,7 @@
         <button>Загрузить еще</button>
       </div>
     </div>
-    <MoleculesPublicationsBlock class="news_publications" />
+    <OrganismsSectionNewsPublicationsBlock class="news_publications" />
   </div>
 </template>
 
