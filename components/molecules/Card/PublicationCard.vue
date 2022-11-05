@@ -1,7 +1,3 @@
-<script>
-export default {}
-</script>
-
 <template>
   <div class="p_card">
     <img
@@ -21,6 +17,10 @@ export default {}
     </div>
   </div>
 </template>
+
+<script>
+export default {}
+</script>
 
 <style scoped lang="scss">
 .p_card {

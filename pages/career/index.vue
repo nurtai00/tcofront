@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <TemplatesCareer />
-  </div>
+  <TemplatesCareer />
 </template>
 
 <script>

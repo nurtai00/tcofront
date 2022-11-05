@@ -2,7 +2,7 @@
   <header class="header container">
     <div class="header__container">
       <img src="@/assets/img/logo.svg" />
-      <AtomsSearchBar />
+      <MoleculesSearchBar />
       <NuxtLink to="/">Телефон доверия</NuxtLink>
       <NuxtLink to="/">Рус</NuxtLink>
       <NuxtLink to="/">Қаз</NuxtLink>

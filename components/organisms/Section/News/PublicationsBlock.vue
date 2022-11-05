@@ -5,7 +5,7 @@
       <nuxt-link to="/news/publications">Все публикации</nuxt-link>
     </div>
     <div class="p_block_list">
-      <AtomsPublicationCard v-for="item in 4" :key="item" />
+      <MoleculesCardPublicationCard v-for="item in 4" :key="item" />
     </div>
   </div>
 </template>

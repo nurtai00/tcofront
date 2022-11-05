@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <TemplatesRelations />
-  </div>
+  <TemplatesRelations />
 </template>
 
 <script>
