@@ -1,31 +1,25 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="breadcrumbs">
-        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
-        <span>Company</span>
+  <section class="section--blue" style="padding: 0">
+    <div class="double-block tco__partners" style="justify-content: flex-end">
+      <div class="tco__partners-wrapper">
+        <h1>Достижение результата правильными методами</h1>
+        <div class="underline"></div>
+        <p>
+          «Путь ТШО» объясняет, кто мы, во что верим, как достигаем целей и к
+          чему стремимся. Он обеспечивает единство понимания наших ценностей и
+          моделей поведения не только нами, но и всеми, кто с нами
+          взаимодействует.
+        </p>
       </div>
+      <img src="@/assets/img/photo.png" />
     </div>
-    <OrganismsSectionAboutBlock1 />
-    <OrganismsSectionAboutBlock2 />
-    <OrganismsSectionAboutBlock3 />
-    <OrganismsSectionAboutBlock4 />
-    <OrganismsSectionAboutBlock5 />
-    <OrganismsSectionAboutBlock6 />
-    <OrganismsSectionAboutBlock7 />
-    <OrganismsSectionAboutBlock8 />
-    <OrganismsSectionAboutBlock9 />
-    <OrganismsSectionAboutBlock10 />
-    <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionAboutBlock12 />
-    <OrganismsSectionAboutBlock13 />
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'TcoFrontIndex',
-  components: {},
+  name: 'TcoFrontBlock8',
+
   data() {
     return {}
   },

@@ -11,7 +11,6 @@
     <OrganismsSectionCareerBlock1 />
     <OrganismsSectionCareerBlock2 />
     <OrganismsSectionCareerBlock3 />
-
   </div>
 </template>
 
