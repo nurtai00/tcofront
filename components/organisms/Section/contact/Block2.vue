@@ -90,14 +90,17 @@
           &-item {
             flex-direction: column;
             font-size: 16px;
+            width: 210px;
+            align-items: center;
             @media screen and (max-width: $xs) {
-              width: 210px;
               margin: 0 auto;
             }
           }
         }
         &-item {
           display: flex;
+          justify-content: space-between;
+          width: 400px;
         }
       }
     }

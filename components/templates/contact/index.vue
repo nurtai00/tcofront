@@ -3,7 +3,6 @@
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
         <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/company">Company</AtomsBreadOption>
         <AtomsBreadOption to="/contact">Contact Information</AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20 contact__title"> Контактная информация </AtomsTitle>
