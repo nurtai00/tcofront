@@ -1,31 +1,46 @@
 <template>
-  <div>
+  <section>
     <div class="container">
-      <div class="breadcrumbs">
-        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
-        <span>Company</span>
+      <h2>Преимущества для Республики Казахстан</h2>
+    </div>
+    <div class="double-block tco__partners" style="justify-content: center">
+      <div class="tco__barrels-item">
+        <div class="tco__barrels-wrapper" style="width: 100%">
+          <img src="@/assets/img/fees.svg" />
+          <div>
+            <h4>Прямые выплаты</h4>
+            <span>2,8 млрд</span>
+            <p>(в долл. США)</p>
+          </div>
+        </div>
+      </div>
+      <div class="tco__barrels-item">
+        <div class="tco__barrels-wrapper" style="width: 100%">
+          <img src="@/assets/img/fees2.svg" />
+          <div>
+            <h4>Совокупные выплаты с 1993 г.</h4>
+            <span>164 млрд</span>
+            <p>(в долл. США)</p>
+          </div>
+        </div>
       </div>
     </div>
-    <OrganismsSectionAboutBlock1 />
-    <OrganismsSectionAboutBlock2 />
-    <OrganismsSectionAboutBlock3 />
-    <OrganismsSectionAboutBlock4 />
-    <OrganismsSectionAboutBlock5 />
-    <OrganismsSectionAboutBlock6 />
-    <OrganismsSectionAboutBlock7 />
-    <OrganismsSectionAboutBlock8 />
-    <OrganismsSectionAboutBlock9 />
-    <OrganismsSectionAboutBlock10 />
-    <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionAboutBlock12 />
-    <OrganismsSectionAboutBlock13 />
-  </div>
+    <div class="container">
+      <p>
+        Прямые финансовые выплаты включают заработную плату казахстанским
+        сотрудникам, закупки товаров и услуг отечественных товаропроизводителей
+        и поставщиков, платежи государственным предприятиям, выплаты дивидендов
+        казахстанскому партнеру, а также налоги и роялти, перечисляемые в
+        государственный бюджет.
+      </p>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'TcoFrontIndex',
-  components: {},
+  name: 'TcoFrontBlock5',
+
   data() {
     return {}
   },

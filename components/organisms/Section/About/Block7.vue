@@ -1,31 +1,43 @@
 <template>
-  <div>
+  <section>
     <div class="container">
-      <div class="breadcrumbs">
-        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
-        <span>Company</span>
+      <div class="section__title">
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="6" cy="6" r="6" fill="#00B0F0" />
+        </svg>
+        <h2>История компании</h2>
       </div>
     </div>
-    <OrganismsSectionAboutBlock1 />
-    <OrganismsSectionAboutBlock2 />
-    <OrganismsSectionAboutBlock3 />
-    <OrganismsSectionAboutBlock4 />
-    <OrganismsSectionAboutBlock5 />
-    <OrganismsSectionAboutBlock6 />
-    <OrganismsSectionAboutBlock7 />
-    <OrganismsSectionAboutBlock8 />
-    <OrganismsSectionAboutBlock9 />
-    <OrganismsSectionAboutBlock10 />
-    <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionAboutBlock12 />
-    <OrganismsSectionAboutBlock13 />
-  </div>
+    <div class="double-block">
+      <div class="tco__partners-wrapper">
+        <img class="years" src="@/assets/img/years.svg" />
+      </div>
+      <div class="tco__story">
+        <h4>Открыто Тенгизское месторождение</h4>
+        <img src="@/assets/img/image 68.png" />
+        <p>
+          Тенгизское нефтяное месторождение на западе Казахстана открыто в
+          1979-м году. 18 декабря 1979-го года первая скважина на данной площади
+          дала нефть из подсолевых пластов на глубине 4045 – 4095 метров. С
+          начала и до середины восьмидесятых годов прошлого века на территории
+          месторождения велись активные буровые работы, было пробурено более ста
+          скважин.
+        </p>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'TcoFrontIndex',
-  components: {},
+  name: 'TcoFrontBlock7',
+
   data() {
     return {}
   },

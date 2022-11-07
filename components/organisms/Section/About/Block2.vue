@@ -1,31 +1,54 @@
 <template>
-  <div>
+  <section>
     <div class="container">
-      <div class="breadcrumbs">
-        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
-        <span>Company</span>
+      <h2>Месторождение</h2>
+      <p>
+        «Тенгизшевройл» расположен на территории лицензионного участка площадью
+        2500 квадратных километров или 1600 квадратных миль, включающего
+        супергигантское Тенгизское месторождение и меньшее, но крупное по
+        запасам Королевское месторождение, а также несколько перспективных
+        участков для ведения разведки.
+      </p>
+    </div>
+    <div class="double-block tco__partners">
+      <div class="tco__barrels-item">
+        <div class="tco__barrels-wrapper" style="width: 100%">
+          <img src="@/assets/img/barrels.svg" />
+          <div>
+            <h4>Тенгизское месторождение</h4>
+            <span>3,2 млрд тонн</span>
+            <p>(25,5 млрд баррелей)</p>
+          </div>
+        </div>
+      </div>
+      <div class="tco__barrels-item">
+        <div class="tco__barrels-wrapper" style="width: 100%">
+          <img src="@/assets/img/barrels.svg" />
+          <div>
+            <h4>Тенгизское месторождение</h4>
+            <span>3,2 млрд тонн</span>
+            <p>(25,5 млрд баррелей)</p>
+          </div>
+        </div>
       </div>
     </div>
-    <OrganismsSectionAboutBlock1 />
-    <OrganismsSectionAboutBlock2 />
-    <OrganismsSectionAboutBlock3 />
-    <OrganismsSectionAboutBlock4 />
-    <OrganismsSectionAboutBlock5 />
-    <OrganismsSectionAboutBlock6 />
-    <OrganismsSectionAboutBlock7 />
-    <OrganismsSectionAboutBlock8 />
-    <OrganismsSectionAboutBlock9 />
-    <OrganismsSectionAboutBlock10 />
-    <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionAboutBlock12 />
-    <OrganismsSectionAboutBlock13 />
-  </div>
+    <div class="container">
+      <p>
+        Извлекаемые запасы нефти Тенгизского и Королевского месторождений
+        составляют 1,4 миллиарда тонн. Тенгизское месторождение - это самое
+        глубокое в мире нефтяное месторождение-супергигант, верхний нефтеносный
+        коллектор которого залегает на глубине около 4000 метров. Тенгизский
+        коллектор протянулся на 19 километров в длину и 21 километр в ширину, а
+        высота нефтеносного пласта составляет 1,6 километра.
+      </p>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'TcoFrontIndex',
-  components: {},
+  name: 'TcoFrontBlock2',
+
   data() {
     return {}
   },

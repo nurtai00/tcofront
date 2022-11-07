@@ -1,31 +1,40 @@
 <template>
-  <div>
+  <section class="section--blue">
     <div class="container">
-      <div class="breadcrumbs">
-        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
-        <span>Company</span>
+      <div class="section__title">
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="6" cy="6" r="6" fill="#00B0F0" />
+        </svg>
+        <h2>Ключевые цифры за 2022 г.:</h2>
+      </div>
+      <div class="tco__files">
+        <a class="item" href="">
+          <img src="@/assets/img/pdf.svg" />
+          1 Квартал 2022
+        </a>
+        <a class="item" href="">
+          <img src="@/assets/img/pdf.svg" />
+          Все цифры и факты
+        </a>
+        <a class="item" href="">
+          <img src="@/assets/img/pdf.svg" />
+          Отчет о корпоративной ответственности за 2019-2020 гг
+        </a>
       </div>
     </div>
-    <OrganismsSectionAboutBlock1 />
-    <OrganismsSectionAboutBlock2 />
-    <OrganismsSectionAboutBlock3 />
-    <OrganismsSectionAboutBlock4 />
-    <OrganismsSectionAboutBlock5 />
-    <OrganismsSectionAboutBlock6 />
-    <OrganismsSectionAboutBlock7 />
-    <OrganismsSectionAboutBlock8 />
-    <OrganismsSectionAboutBlock9 />
-    <OrganismsSectionAboutBlock10 />
-    <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionAboutBlock12 />
-    <OrganismsSectionAboutBlock13 />
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'TcoFrontIndex',
-  components: {},
+  name: 'TcoFrontBlock6',
+
   data() {
     return {}
   },
