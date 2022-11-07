@@ -58,7 +58,6 @@
       <div class="links">
         <a href="#">Буклет о процессе управления обратной связью (pdf)</a>
         <nuxt-link to="/contact/feedback/reports">Отчёты по процессу обратной связи ТШО</nuxt-link>
-        <AtomsPdfFile direction="column" :width="100" :height="100" text="qwer" />
       </div>
     </div>
   </div>
