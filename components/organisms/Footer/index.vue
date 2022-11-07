@@ -68,7 +68,7 @@
             <Nuxt-Link to="/">tcoinfo@tengizchevroil.com</Nuxt-Link>
           </li>
           <li>
-            <Nuxt-Link to="/">ПБР-Телефон доверия и другие контакты</Nuxt-Link>
+            <Nuxt-Link to="/contact">ПБР-Телефон доверия и другие контакты</Nuxt-Link>
           </li>
         </ul>
       </div>

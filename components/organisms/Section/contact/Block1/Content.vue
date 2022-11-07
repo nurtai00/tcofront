@@ -3,7 +3,7 @@
     <div class="container">
       <div class="contact__office-info">
         <div class="contact__office-info content">
-          <AtomsHeading type="h2" color="black">
+          <AtomsHeading type="h3" color="black">
             {{ content.title }}
           </AtomsHeading>
           <ul class="content__list list">
