@@ -6,7 +6,7 @@
           <AtomsHeading class="content__left-title" type="h2">Примеры нарушений,о которых следует сообщать:</AtomsHeading>
           <p class="content__left-subtitle">
             Все другие вопросы, вызывающие озабоченность, предложения и наблюдения можно отправлять через систему
-            <a href="#">управления обратной связью</a>
+            <nuxt-link to="/contact/feedback">управления обратной связью</nuxt-link>
           </p>
         </div>
         <div class="content__right">
