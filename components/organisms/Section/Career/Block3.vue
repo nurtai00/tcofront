@@ -55,7 +55,7 @@ export default {
   width: 100%;
   padding: 80px 0;
   background: #f2f6f7;
-  h2 {
+  h3 {
     margin-bottom: 40px;
   }
 }
@@ -74,7 +74,7 @@ export default {
       width: 80px;
       height: 80px;
     }
-    h2 {
+    h3 {
       margin: 20px 0;
     }
     p {

@@ -93,7 +93,7 @@ export default {
     div {
       width: 100%;
       max-width: 776px;
-      h2 {
+      h3 {
         margin-bottom: 40px;
       }
     }

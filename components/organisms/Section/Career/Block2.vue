@@ -44,7 +44,7 @@ export default {}
 .about_career {
   width: 100%;
   padding: 80px 0;
-  h2 {
+  h3 {
     max-width: 776px;
     margin-bottom: 40px;
   }
@@ -76,7 +76,7 @@ export default {}
   img {
     width: 64px;
   }
-  h3 {
+  h5 {
     margin: 20px 0;
   }
 }

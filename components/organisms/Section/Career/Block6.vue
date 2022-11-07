@@ -52,7 +52,7 @@ export default {}
 .assignments_career {
   width: 100%;
   padding: 80px 0;
-  h2 {
+  h3 {
     margin-bottom: 40px;
   }
 }

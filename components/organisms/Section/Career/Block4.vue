@@ -36,7 +36,7 @@ export default {
   &_info {
     width: 50%;
     padding: 80px 40px;
-    h2 {
+    h3 {
       width: 100%;
       max-width: 548px;
       margin-bottom: 40px;

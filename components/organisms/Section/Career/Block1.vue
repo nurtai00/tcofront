@@ -23,7 +23,7 @@ export default {}
     max-height: 565px;
     object-fit: cover;
   }
-  h2 {
+  h3 {
     position: absolute;
     margin: auto;
     left: 0;
