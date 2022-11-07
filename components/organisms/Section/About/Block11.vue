@@ -1,31 +1,25 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="breadcrumbs">
-        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
-        <span>Company</span>
+  <section style="padding: 0">
+    <div class="double-block tco__partners" style="justify-content: flex-end">
+      <div class="tco__partners-wrapper">
+        <h1>Стратегии</h1>
+        <div class="underline"></div>
+        <span style="font-weight: bolder">Люди</span>
+        <p>
+          Инвестировать в человеческие ресурсы для развития и поддержки
+          высококвалифицированных сотрудников, которые обеспечивают достижение
+          результатов должным образом.
+        </p>
       </div>
+      <img src="@/assets/img/Rectangle 182.png" />
     </div>
-    <OrganismsSectionAboutBlock1 />
-    <OrganismsSectionAboutBlock2 />
-    <OrganismsSectionAboutBlock3 />
-    <OrganismsSectionAboutBlock4 />
-    <OrganismsSectionAboutBlock5 />
-    <OrganismsSectionAboutBlock6 />
-    <OrganismsSectionAboutBlock7 />
-    <OrganismsSectionAboutBlock8 />
-    <OrganismsSectionAboutBlock9 />
-    <OrganismsSectionAboutBlock10 />
-    <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionAboutBlock12 />
-    <OrganismsSectionAboutBlock13 />
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'TcoFrontIndex',
-  components: {},
+  name: 'TcoFrontBlock11',
+
   data() {
     return {}
   },

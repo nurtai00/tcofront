@@ -1,31 +1,74 @@
 <template>
-  <div>
+  <section>
     <div class="container">
-      <div class="breadcrumbs">
-        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
-        <span>Company</span>
+      <div class="section__title">
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="6" cy="6" r="6" fill="#00B0F0" />
+        </svg>
+        <h2>Новости ТШО</h2>
       </div>
     </div>
-    <OrganismsSectionAboutBlock1 />
-    <OrganismsSectionAboutBlock2 />
-    <OrganismsSectionAboutBlock3 />
-    <OrganismsSectionAboutBlock4 />
-    <OrganismsSectionAboutBlock5 />
-    <OrganismsSectionAboutBlock6 />
-    <OrganismsSectionAboutBlock7 />
-    <OrganismsSectionAboutBlock8 />
-    <OrganismsSectionAboutBlock9 />
-    <OrganismsSectionAboutBlock10 />
-    <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionAboutBlock12 />
-    <OrganismsSectionAboutBlock13 />
-  </div>
+    <div class="container">
+      <div class="tco__news-tags">
+        <span>Производство</span>
+        <span>Экология</span>
+        <span>Соцпроекты</span>
+        <span>Казсодержание</span>
+        <span>Карьера</span>
+        <span>ПБР-ПУУД</span>
+      </div>
+      <div class="tco__news">
+        <div class="card">
+          <img src="@/assets/img/news1.png" />
+          <div class="info">
+            <span>#Карьера </span>
+            <span> 14/07/2022</span>
+          </div>
+          <h4>Камшат Байжанова: быть конкурентным ...</h4>
+          <p>
+            Выстраивание ценностей и открытая корпоративная среда, в которой
+            каждый работник может понять свои...
+          </p>
+        </div>
+        <div class="card">
+          <img src="@/assets/img/news3.png" />
+          <div class="info">
+            <span>#Видео </span>
+            <span> 03/05/2022</span>
+          </div>
+          <h4>Тенгизшевройл продолжит оказывать ...</h4>
+          <p>
+            Генеральный директор ТОО «Тенгизшевройл» (ТШО) Кевин Лайон и Аким
+            Жылыойского района Атырауско...
+          </p>
+        </div>
+        <div class="card">
+          <img src="@/assets/img/news2.png" />
+          <div class="info">
+            <span>#Карьера </span>
+            <span> 09/06/2022</span>
+          </div>
+          <h4>Тенгизшевройл изучает возможности оте..</h4>
+          <p>
+            В Алматы прошел Форум «Цифровой Тенгизшевройл – 2022» (Форум), цель
+            которого изучить возможности ...
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'TcoFrontIndex',
-  components: {},
+  name: 'TcoFrontBlock12',
+
   data() {
     return {}
   },

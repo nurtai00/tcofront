@@ -1,31 +1,32 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="breadcrumbs">
-        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
-        <span>Company</span>
+  <section style="padding: 0">
+    <div class="double-block" style="justify-content: flex-end">
+      <div class="tco__partners-wrapper">
+        <h1>Казахстанское содержание:</h1>
+        <div class="amount">
+          <div class="item">
+            <span>0,6 млрд (в долларах США)</span>
+            <p>В т. ч. затраты по ПБР-ПУУД</p>
+          </div>
+          <div class="item">
+            <span>0,9 млрд (в долларах США)</span>
+            <p>Затраты на товары и услуги</p>
+          </div>
+          <div class="item">
+            <span>>40,9 млрд</span>
+            <p>Совокупные затраты с 1993 г.</p>
+          </div>
+        </div>
       </div>
+      <img src="@/assets/img/Rectangle 179.png" />
     </div>
-    <OrganismsSectionAboutBlock1 />
-    <OrganismsSectionAboutBlock2 />
-    <OrganismsSectionAboutBlock3 />
-    <OrganismsSectionAboutBlock4 />
-    <OrganismsSectionAboutBlock5 />
-    <OrganismsSectionAboutBlock6 />
-    <OrganismsSectionAboutBlock7 />
-    <OrganismsSectionAboutBlock8 />
-    <OrganismsSectionAboutBlock9 />
-    <OrganismsSectionAboutBlock10 />
-    <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionAboutBlock12 />
-    <OrganismsSectionAboutBlock13 />
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'TcoFrontIndex',
-  components: {},
+  name: 'TcoFrontBlock4',
+
   data() {
     return {}
   },

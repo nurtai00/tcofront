@@ -95,6 +95,9 @@
     line-height: 64px;
     /* identical to box height, or 114% */
 
+    @media (max-width: 385px) {
+      font-size: 38px;
+    }
     /* tco 3 */
 
     color: #015467;
@@ -111,6 +114,10 @@
     /* tco 3 */
 
     color: #015467;
+
+    @media (max-width: 385px) {
+      font-size: 24px;
+    }
   }
   a {
     font-family: 'Roboto', sans-serif;
@@ -135,6 +142,10 @@ h2 {
   font-size: 38px;
   line-height: 46px;
   color: #015467;
+
+  @media (max-width: 385px) {
+    font-size: 24px;
+  }
 }
 
 section {
@@ -142,9 +153,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  @media (max-width: 1160px) {
-    padding: 15px;
-  }
 }
 
 .section--blue {

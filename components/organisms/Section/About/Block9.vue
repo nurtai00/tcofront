@@ -1,31 +1,26 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="breadcrumbs">
-        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
-        <span>Company</span>
+  <section style="padding: 0">
+    <div class="double-block tco__partners" style="justify-content: flex-start">
+      <img src="@/assets/img/Rectangle 182.png" />
+      <div class="tco__partners-wrapper" style="padding: 40px 0 40px 40px">
+        <h1>Ценности</h1>
+        <div class="underline"></div>
+        <p>
+          Наши ценности определяют, кем мы являемся, и направляют нас к
+          достижению результатов. Мы ведем свою деятельность, придерживаясь
+          принципа ответственности в социальной сфере и в вопросах охраны
+          окружающей среды, а также соблюдая законы и принося пользу обществу, в
+          котором мы работаем.
+        </p>
       </div>
     </div>
-    <OrganismsSectionAboutBlock1 />
-    <OrganismsSectionAboutBlock2 />
-    <OrganismsSectionAboutBlock3 />
-    <OrganismsSectionAboutBlock4 />
-    <OrganismsSectionAboutBlock5 />
-    <OrganismsSectionAboutBlock6 />
-    <OrganismsSectionAboutBlock7 />
-    <OrganismsSectionAboutBlock8 />
-    <OrganismsSectionAboutBlock9 />
-    <OrganismsSectionAboutBlock10 />
-    <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionAboutBlock12 />
-    <OrganismsSectionAboutBlock13 />
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'TcoFrontIndex',
-  components: {},
+  name: 'TcoFrontBlock9',
+
   data() {
     return {}
   },
