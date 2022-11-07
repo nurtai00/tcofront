@@ -25,7 +25,7 @@
           </ul>
         </div>
         <div class="contact__office-info photo">
-          <AtomsHeading class="mobile__title" type="h3">{{ content.title }}</AtomsHeading>
+          <AtomsHeading class="mobile__title" type="h4">{{ content.title }}</AtomsHeading>
           <img :src="require(`~/assets/img/contact/block1/${content.imgName}`)" alt="offices">
           <span> {{ content.id }} / {{ contentCount }}</span>
         </div>
@@ -97,11 +97,11 @@ export default {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  width: 456px;
+  max-width: 456px;
   padding-bottom: 40px;
   position: relative;
   @include middle-laptop() {
-    h2 {
+    h3 {
       text-align: center;
     }
     margin: 40px auto;
@@ -109,7 +109,7 @@ export default {
   @include phone() {
     padding: 0 16px 100px;
     margin-top: 0;
-    h2 {
+    h3 {
       display: none;
     }
   }
@@ -117,6 +117,7 @@ export default {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    width: auto;
     @include phone() {
       margin-top: 0;
     }
