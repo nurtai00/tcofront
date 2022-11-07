@@ -107,6 +107,7 @@ export default {
     margin: 40px auto;
   }
   @include phone() {
+    width: auto;
     padding: 0 16px 100px;
     margin-top: 0;
     h3 {
