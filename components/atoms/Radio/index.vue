@@ -3,7 +3,7 @@
     <input
       :id="id"
       v-model="model"
-      :value="value"
+      :value="val"
       :name="name"
       :disabled="disabled"
       type="radio"
@@ -52,7 +52,7 @@ export default {
      * Value
      * @model
      */
-    value: {
+    val: {
       type: [String, Number, Boolean, Object],
       default: '',
     },

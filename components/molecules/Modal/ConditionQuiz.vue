@@ -9,7 +9,7 @@
         <AtomsRadio
           v-model="model.citizen"
           name="citizen"
-          value="yes"
+          val="yes"
           id="yes_citizen"
           class="radio"
           >Да</AtomsRadio
@@ -18,7 +18,7 @@
           v-model="model.citizen"
           name="citizen"
           id="no_citizen"
-          value="no"
+          val="no"
           class="radio"
           >Нет</AtomsRadio
         >
@@ -28,7 +28,7 @@
         <AtomsRadio
           v-model="model.age"
           name="age"
-          value="yes"
+          val="yes"
           id="yes_age"
           class="radio"
           >Да</AtomsRadio
@@ -36,7 +36,7 @@
         <AtomsRadio
           v-model="model.age"
           name="age"
-          value="no"
+          val="no"
           id="no_age"
           class="radio"
         >
@@ -51,7 +51,7 @@
         <AtomsRadio
           v-model="model.student"
           name="student"
-          value="yes"
+          val="yes"
           id="yes_student"
           class="radio"
           >Да</AtomsRadio
@@ -59,7 +59,7 @@
         <AtomsRadio
           v-model="model.student"
           name="student"
-          value="no"
+          val="no"
           id="no_student"
           class="radio"
         >
@@ -71,7 +71,7 @@
         <AtomsRadio
           v-model="model.gpa"
           name="gpa"
-          value="yes"
+          val="yes"
           id="yes_gpa"
           class="radio"
           >Да</AtomsRadio
@@ -79,7 +79,7 @@
         <AtomsRadio
           v-model="model.gpa"
           name="gpa"
-          value="no"
+          val="no"
           id="no_gpa"
           class="radio"
         >
