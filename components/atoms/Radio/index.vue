@@ -75,8 +75,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$radio-border: #999;
-$radio-background: $c-base;
+$radio-border: #015467;
+$radio-background: $c-main;
 $radio-disabled: #3c474c;
 .radio {
   display: flex;
@@ -94,7 +94,7 @@ $radio-disabled: #3c474c;
     &::before {
       position: absolute;
       content: '';
-      top: 50%;
+      top: 49.5%;
       left: 50%;
       width: 12px;
       height: 12px;
@@ -123,6 +123,14 @@ $radio-disabled: #3c474c;
       color: $radio-disabled;
       opacity: 0.1;
     }
+  }
+  span.radio__message {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #30454e;
   }
 }
 </style>

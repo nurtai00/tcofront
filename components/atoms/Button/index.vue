@@ -76,7 +76,7 @@ export default {
 </script>
 
 <style lang="scss">
-$btn-main: #0084f4;
+$btn-main: $c-main;
 $btn-base: #03b760;
 .btn {
   position: relative;
@@ -87,10 +87,14 @@ $btn-base: #03b760;
   border: 1px solid transparent;
   outline: none;
   background-color: $btn-main;
-  padding: 9px 30px;
-  color: #fbfbfb;
-  border-radius: 10px;
-  font-size: rem(16);
+  padding: 16px 20px;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
   transition: $t-primary;
   cursor: pointer;
   &:hover,

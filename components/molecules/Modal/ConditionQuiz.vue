@@ -9,7 +9,7 @@
         <AtomsRadio
           v-model="model.citizen"
           name="citizen"
-          value="no"
+          value="yes"
           id="yes_citizen"
           class="radio"
           >Да</AtomsRadio
@@ -17,8 +17,8 @@
         <AtomsRadio
           v-model="model.citizen"
           name="citizen"
-          value="no"
           id="no_citizen"
+          value="no"
           class="radio"
           >Нет</AtomsRadio
         >
@@ -86,6 +86,7 @@
           Нет
         </AtomsRadio>
       </div>
+      <AtomsButton type="submit">Отправить</AtomsButton>
     </MoleculesForm>
   </div>
 </template>
@@ -104,7 +105,7 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log(123)
+      console.log(this.model)
     },
   },
 }
@@ -117,6 +118,7 @@ export default {
     margin-top: 52px;
   }
   p {
+    font-weight: 400;
     margin-bottom: 16px;
   }
   div {
