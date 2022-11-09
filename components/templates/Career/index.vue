@@ -31,7 +31,7 @@ export default {
         },
         {
           text: 'Стажировка В ТШО',
-          url: '123',
+          url: '/career/internship',
         },
       ],
       content1: {

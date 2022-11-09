@@ -33,7 +33,7 @@ export default {}
     line-height: 64px;
     color: #015467;
     @include phone() {
-      font-size: 24px;
+      font-size: 24px !important;
     }
     @include tablet() {
       font-size: 36px;
