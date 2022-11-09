@@ -81,7 +81,7 @@ export default {
         {
           id: 16,
           type: 'link',
-          text: 'Вакансий'
+          text: 'Вакансии'
         },
         {
           id: 17,
