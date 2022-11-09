@@ -3,16 +3,33 @@
     <div class="container">
       <div class="contact__act content">
         <div class="content__left">
-          <AtomsHeading class="content__left-title" type="h2">Примеры нарушений,о которых следует сообщать:</AtomsHeading>
+          <AtomsHeading
+            class="content__left-title"
+            type="h2"
+          >
+            Примеры нарушений,о которых следует сообщать:
+          </AtomsHeading>
           <p class="content__left-subtitle">
-            Все другие вопросы, вызывающие озабоченность, предложения и наблюдения можно отправлять через систему
-            <nuxt-link to="/contact/feedback">управления обратной связью</nuxt-link>
+            Все другие вопросы, вызывающие озабоченность, предложения и
+            наблюдения можно отправлять через систему
+            <nuxt-link to="/contact/feedback">
+              управления обратной связью
+            </nuxt-link>
           </p>
         </div>
         <div class="content__right">
-          <AtomsAccordion :is-open="accordions.first" @click="accordions.first = !accordions.first">
+          <AtomsAccordion
+            :is-open="accordions.first"
+            @click="accordions.first = !accordions.first"
+          >
             <template #title>
-              <AtomsHeading class="content__right-title" type="h4" color="black">Нарушения</AtomsHeading>
+              <AtomsHeading
+                class="content__right-title"
+                type="h4"
+                color="black"
+              >
+                Нарушения
+              </AtomsHeading>
             </template>
             <template #content>
               <div class="content__right-inner">
@@ -29,7 +46,10 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <div>Поведение, не соответствующее принципам документа «Путь ТШО», случаи кражи и мошенничества</div>
+                    <div>
+                      Поведение, не соответствующее принципам документа «Путь
+                      ТШО», случаи кражи и мошенничества
+                    </div>
                   </li>
                   <li class="list__item">
                     <div>
@@ -57,7 +77,8 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Наличие наркотических средств, алкогольных напитков или оружий на территории объектов компании</span>
+                    <span>Наличие наркотических средств, алкогольных напитков или
+                      оружий на территории объектов компании</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -71,7 +92,8 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Неправомочное раскрытие конфиденциальной информации компании</span>
+                    <span>Неправомочное раскрытие конфиденциальной информации
+                      компании</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -85,7 +107,9 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Манипуляция с бухгалтерскими операциями и процессами внутреннего контроля, в результате чего возникает неверная финансовая информация</span>
+                    <span>Манипуляция с бухгалтерскими операциями и процессами
+                      внутреннего контроля, в результате чего возникает неверная
+                      финансовая информация</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -105,9 +129,18 @@
               </div>
             </template>
           </AtomsAccordion>
-          <AtomsAccordion :is-open="accordions.second" @click="accordions.second = !accordions.second">
+          <AtomsAccordion
+            :is-open="accordions.second"
+            @click="accordions.second = !accordions.second"
+          >
             <template #title>
-              <AtomsHeading class="content__right-title" type="h4" color="black">Мошенничества</AtomsHeading>
+              <AtomsHeading
+                class="content__right-title"
+                type="h4"
+                color="black"
+              >
+                Мошенничества
+              </AtomsHeading>
             </template>
             <template #content>
               <div class="content__right-inner">
@@ -167,24 +200,41 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Случаи мошенничества могут касаться следующих сфер, но не ограничиваются ими:</span>
+                    <span>Случаи мошенничества могут касаться следующих сфер, но не
+                      ограничиваются ими:</span>
                   </li>
                   <li class="list__item sublist">
                     <ol type="1">
                       <li>
-                        1. Закуп и составление контрактов, прием сотрудников на работу, организация поездок, проживания и питания, манипуляция ценами реализации, финансовые махинации
+                        1. Закуп и составление контрактов, прием сотрудников на
+                        работу, организация поездок, проживания и питания,
+                        манипуляция ценами реализации, финансовые махинации
                       </li>
-                      <li>2. Неразглашение информации о конфликте интересов, в том числе внешних деловых интересов компании</li>
-                      <li>3. Манипуляция с процессами и системой контроля ТШО</li>
+                      <li>
+                        2. Неразглашение информации о конфликте интересов, в том
+                        числе внешних деловых интересов компании
+                      </li>
+                      <li>
+                        3. Манипуляция с процессами и системой контроля ТШО
+                      </li>
                     </ol>
                   </li>
                 </ul>
               </div>
             </template>
           </AtomsAccordion>
-          <AtomsAccordion :is-open="accordions.third" @click="accordions.third = !accordions.third">
+          <AtomsAccordion
+            :is-open="accordions.third"
+            @click="accordions.third = !accordions.third"
+          >
             <template #title>
-              <AtomsHeading class="content__right-title" type="h4" color="black">Законы</AtomsHeading>
+              <AtomsHeading
+                class="content__right-title"
+                type="h4"
+                color="black"
+              >
+                Законы
+              </AtomsHeading>
             </template>
             <template #content>
               <div class="content__right-inner">
@@ -299,7 +349,8 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Законоположение о непозволительных действиях лоббирования или взносах на политические цели</span>
+                    <span>Законоположение о непозволительных действиях лоббирования
+                      или взносах на политические цели</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -313,7 +364,8 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Другие подозрительные действия криминального характера</span>
+                    <span>Другие подозрительные действия криминального
+                      характера</span>
                   </li>
                 </ul>
               </div>
@@ -333,9 +385,9 @@ export default {
         first: false,
         second: false,
         third: false,
-      }
+      },
     }
-  }
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -355,7 +407,8 @@ export default {
     gap: 50px;
     &__left {
       flex-basis: 50%;
-      &-title {}
+      &-title {
+      }
       &-subtitle {
         display: inline-block;
         margin-top: 40px;

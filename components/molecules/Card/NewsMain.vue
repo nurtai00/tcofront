@@ -30,8 +30,8 @@ export default {
       class="n_card_desktop"
     />
     <img
-      class="n_card_mobile"
       v-if="![1, 2].includes(index)"
+      class="n_card_mobile"
       src="@/assets/img/news_card.png"
       alt="news_card"
     />

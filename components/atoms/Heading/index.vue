@@ -63,6 +63,9 @@ $hs: ('Montserrat' 56px 700 64px), ('Montserrat' 48px 700 56px),
 .black {
   color: $c-dark;
 }
+.title {
+  color: $c-tco3;
+}
 .id_popup {
   color: rgba(1, 84, 103, 0.2);
 }

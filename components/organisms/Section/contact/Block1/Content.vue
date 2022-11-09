@@ -18,15 +18,26 @@
                 <p class="list__item-description">{{ list.text }}</p>
               </div>
               <div v-else class="list__item withOutIcon">
-                <a v-if="list.type === 'link'" class="list__item-link" :href="list.href">{{ list.text }}</a>
+                <a
+                  v-if="list.type === 'link'"
+                  class="list__item-link"
+                  :href="list.href"
+                >{{ list.text }}</a>
                 <p v-else class="list__item-description">{{ list.text }}</p>
               </div>
             </li>
           </ul>
         </div>
         <div class="contact__office-info photo">
-          <AtomsHeading class="mobile__title" type="h4">{{ content.title }}</AtomsHeading>
-          <img :src="require(`~/assets/img/contact/block1/${content.imgName}`)" alt="offices">
+          <AtomsHeading class="mobile__title" type="h4">
+            {{
+              content.title
+            }}
+          </AtomsHeading>
+          <img
+            :src="require(`~/assets/img/contact/block1/${content.imgName}`)"
+            alt="offices"
+          />
           <span> {{ content.id }} / {{ contentCount }}</span>
         </div>
       </div>
@@ -44,16 +55,16 @@ export default {
       type: Object,
       default: () => ({
         title: '',
-        lists: []
-      })
-    }
+        lists: [],
+      }),
+    },
   },
 }
 </script>
 <style lang="scss" scoped>
 .contact__office {
   margin-top: 40px;
-  background-color: #F2F6F7;
+  background-color: #f2f6f7;
   @include phone() {
     .container {
       padding: 0;
@@ -78,7 +89,7 @@ export default {
       @include phone() {
         .mobile__title {
           display: block;
-          color: black ;
+          color: black;
         }
       }
       @include middle-laptop() {

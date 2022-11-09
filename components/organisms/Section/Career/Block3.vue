@@ -6,9 +6,9 @@
       </AtomsHeading>
       <div class="statistic">
         <div
-          class="statistic_block"
           v-for="(item, idx) in statistics"
           :key="idx"
+          class="statistic_block"
         >
           <img :src="item.img" alt="" />
           <AtomsHeading type="h3" color="main"> {{ item.title }}</AtomsHeading>

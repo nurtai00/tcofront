@@ -3,7 +3,11 @@
     <!-- @slot текстовый слот, название аккордеон -->
     <div class="accordion__title" @click="$emit('click')">
       <slot name="title" />
-      <img src="@/assets/icons/arrow-bottom-blue.svg" alt="arrow" :class="{'open': isOpen}">
+      <img
+        src="@/assets/icons/arrow-bottom-blue.svg"
+        alt="arrow"
+        :class="{ open: isOpen }"
+      />
     </div>
     <div v-if="isOpen" class="accordion__content">
       <slot name="content" />
@@ -45,8 +49,8 @@ export default {
       border: 1px solid $c-base;
       padding: 5px;
       border-radius: 50%;
-      background-color: #F2FBFE;
-      @include trans(transform .3s ease);
+      background-color: #f2fbfe;
+      @include trans(transform 0.3s ease);
       &.open {
         transform: rotate(180deg);
       }
