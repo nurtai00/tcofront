@@ -29,7 +29,7 @@
     "create-component": "node index.cli.js component",
     "create-page": "node index.cli.js page",
     "create-store": "node index.cli.js store",
-    "icons": "node bin/svg2ttf && svgicons2svgfont --centerVertically --centerhorizontally --fontname=iconsfont --prependUnicode --height=1024 --normalize assets/icons/*.svg > assets/icons/formatted/iconsfont.svg && svg2ttf assets/icons/formatted/iconsfont.svg assets/icons/formatted/iconsfont.ttf"
+    "svg-font": "yarn add svgicons2svgfont svg2ttf && node bin/svg2ttf && svgicons2svgfont --fontname=iconsfont --prependUnicode --preserveAspectRatio --height=1024 --normalize assets/icons/*.svg > assets/icons/formatted/iconsfont.svg && svg2ttf assets/icons/formatted/iconsfont.svg assets/icons/formatted/iconsfont.ttf && yarn remove svgicons2svgfont svg2ttf"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint, prettier",
@@ -49,7 +49,6 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/eslint-config-typescript": "^10.0.0",
     "@nuxtjs/style-resources": "^1.2.1",
-    "apexcharts": "^3.36.3",
     "core-js": "^3.19.3",
     "fs": "0.0.1-security",
     "html-webpack-plugin": "5.5.0",
@@ -59,6 +58,8 @@
     "nuxt": "^2.15.8",
     "sass": "^1.52.3",
     "sass-loader": "10.1.1",
+    "svg2ttf": "^6.0.3",
+    "svgicons2svgfont": "^12.0.0",
     "vue": "^2.6.14",
     "vue-apexcharts": "^1.6.2",
     "vue-client-only": "^2.1.0",

@@ -1,7 +1,10 @@
 <template>
   <div class="chart">
     <div class="container">
-      <AtomsHeading type="h3" class="chart__title">
+      <AtomsHeading
+        type="h3"
+        class="chart__title"
+      >
         Техника безопасности
       </AtomsHeading>
       <client-only>
