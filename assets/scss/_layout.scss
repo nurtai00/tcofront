@@ -50,25 +50,32 @@ a {
 }
 
 .container {
+  --width-container: #{$lg};
   max-width: $lg;
   width: 100%;
   margin: 0 auto;
   @include laptop {
+    --width-container: #{$laptop};
     max-width: $laptop;
   }
   @include middle-laptop {
+    --width-container: 1080px;
     max-width: 1080px;
   }
   @include small-laptop {
+    --width-container: #{$slg};
     max-width: $slg;
   }
   @include wide-tablet {
+    --width-container: #{$smd};
     max-width: $smd;
   }
   @include tablet {
+    --width-container: #{$sm};
     max-width: $sm;
   }
   @include phone {
+    --width-container: 100%;
     max-width: 100%;
     padding: 0 16px;
   }

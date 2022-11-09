@@ -14,9 +14,9 @@
       </div>
       <div class="personal_career_blocks">
         <div
-          class="blocks_content"
           v-for="(personal, idx) in personal_list"
           :key="idx"
+          class="blocks_content"
           :class="{ reverse: idx % 2 == 1 }"
         >
           <div class="blocks_content__info">

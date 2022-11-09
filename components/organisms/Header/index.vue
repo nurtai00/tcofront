@@ -23,7 +23,7 @@
     <div class="links container" :class="show ? 'show' : ''">
       <NuxtLink class="active" to="/">Home</NuxtLink>
       <NuxtLink to="/about">Company</NuxtLink>
-      <NuxtLink to="/">Operations</NuxtLink>
+      <NuxtLink to="/operations">Operations</NuxtLink>
       <NuxtLink to="/">Projects</NuxtLink>
       <NuxtLink to="/">Kazakhstani Content</NuxtLink>
       <NuxtLink to="/">Sustainability</NuxtLink>

@@ -221,9 +221,7 @@
               <span class="item__status-producing">#Производства</span>
               <span class="item__status-date">12.12.12</span>
             </div>
-            <span class="item__news-title"
-              >Камшат Байжанова: быть конкурентным ...</span
-            >
+            <span class="item__news-title">Камшат Байжанова: быть конкурентным ...</span>
             <p class="item__news-descr">
               Выстраивание ценностей и открытая корпоративная среда, в которой
               каждый работник может понять свои...
@@ -237,9 +235,7 @@
               <span class="item__status-producing">#Производства</span>
               <span class="item__status-date">09/06/22</span>
             </div>
-            <span class="item__news-title"
-              >Тенгизшевройл изучает возможности оте..</span
-            >
+            <span class="item__news-title">Тенгизшевройл изучает возможности оте..</span>
             <p class="item__news-descr">
               В Алматы прошел Форум «Цифровой Тенгизшевройл – 2022» (Форум),
               цель которого изучить возможности ...
@@ -253,9 +249,7 @@
               <span class="item__status-producing">#Производства</span>
               <span class="item__status-date">12.12.12</span>
             </div>
-            <span class="item__news-title"
-              >Тенгизшевройл продолжит оказывать ...</span
-            >
+            <span class="item__news-title">Тенгизшевройл продолжит оказывать ...</span>
             <p class="item__news-descr">
               Генеральный директор ТОО «Тенгизшевройл» (ТШО) Кевин Лайон и Аким
               Жылыойского района Атырауско...
