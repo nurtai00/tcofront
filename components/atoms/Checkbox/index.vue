@@ -87,9 +87,9 @@ $checkbox-disabled: #3c474c;
     display: block;
     width: 24px;
     height: 24px;
-    background: #f6f6f6;
     border-radius: 6px;
     margin-right: 8px;
+    border: 1px solid #015467;
     &::before {
       content: '';
       opacity: 0;
@@ -106,8 +106,8 @@ $checkbox-disabled: #3c474c;
     }
     &:hover {
       background: #f3f5f8;
-      box-shadow: inset 0px 0.5px 4px rgba(0, 196, 140, 0.62);
-      border: 1px solid $c-base;
+      box-shadow: inset 0px 0.5px 4px rgba(23, 18, 150, 0.62);
+      border: 1px solid $c-main;
     }
   }
 
@@ -116,8 +116,8 @@ $checkbox-disabled: #3c474c;
     position: absolute;
     opacity: 0.5;
     &:checked ~ span.checkbox__indicator {
-      background: $c-base;
-      border: 1px solid $c-base;
+      background: $c-main;
+      border: 1px solid $c-main;
     }
     &:checked ~ span.checkbox__indicator::before {
       opacity: 1;

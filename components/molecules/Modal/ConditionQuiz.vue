@@ -86,7 +86,16 @@
           Нет
         </AtomsRadio>
       </div>
-      <AtomsButton type="submit">Отправить</AtomsButton>
+      <AtomsButton
+        v-if="!message.text"
+        type="submit"
+        :disabled="disabled"
+        class="btn"
+        >Отправить</AtomsButton
+      >
+      <p v-else class="message" :style="{ color: message.color }">
+        {{ message.text }}
+      </p>
     </MoleculesForm>
   </div>
 </template>
@@ -101,11 +110,34 @@ export default {
         student: '',
         gpa: '',
       },
+      message: {},
     }
+  },
+  computed: {
+    disabled() {
+      let bool = false
+      for (let i = 0; i < Object.values(this.model).length; i++) {
+        if (Object.values(this.model)[i] === '') {
+          bool = true
+          break
+        }
+      }
+      return bool
+    },
   },
   methods: {
     onSubmit() {
-      console.log(this.model)
+      if (Object.values(this.model).includes('no')) {
+        this.message = {
+          text: 'К сожалению, вы не соответствовали критериям.',
+          color: '#D01D12',
+        }
+      } else {
+        this.message = {
+          text: 'Поздравляем, вы соответствовали критериям, можете оставить заявку!',
+          color: '#015467',
+        }
+      }
     },
   },
 }
@@ -132,5 +164,12 @@ export default {
       margin-bottom: 40px;
     }
   }
+}
+.message {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 </style>
