@@ -3,10 +3,7 @@
     <div class="container">
       <div class="contact__act content">
         <div class="content__left">
-          <AtomsHeading
-            class="content__left-title"
-            type="h2"
-          >
+          <AtomsHeading class="content__left-title" type="h2">
             Примеры нарушений,о которых следует сообщать:
           </AtomsHeading>
           <p class="content__left-subtitle">

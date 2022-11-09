@@ -21,10 +21,7 @@
         <i class="icon-arrowDown" @click="onSlide(true)" />
       </div>
       <template v-if="data.link">
-        <nuxt-link
-          class="slide__link"
-          :to="data.link"
-        >
+        <nuxt-link class="slide__link" :to="data.link">
           <span>Читать дальше</span> <i class="icon-arrow-left" />
         </nuxt-link>
       </template>

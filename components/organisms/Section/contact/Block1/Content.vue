@@ -30,9 +30,7 @@
         </div>
         <div class="contact__office-info photo">
           <AtomsHeading class="mobile__title" type="h4">
-            {{
-              content.title
-            }}
+            {{ content.title }}
           </AtomsHeading>
           <img
             :src="require(`~/assets/img/contact/block1/${content.imgName}`)"
