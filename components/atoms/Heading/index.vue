@@ -43,6 +43,9 @@ $hs: ('Montserrat' 56px 700 64px), ('Montserrat' 48px 700 56px),
     font-size: nth(nth($hs, $i), 2);
     font-weight: nth(nth($hs, $i), 3);
     line-height: nth(nth($hs, $i), 4);
+    @include phone() {
+      font-size: 20px;
+    }
   }
 }
 .main {
