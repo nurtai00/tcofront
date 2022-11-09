@@ -7,40 +7,37 @@
       <p>1. Вы гражданин Республики Казахстан?</p>
       <div>
         <AtomsRadio
-          id="yes_citizen"
           v-model="model.citizen"
           name="citizen"
           val="yes"
+          id="yes_citizen"
           class="radio"
+          >Да</AtomsRadio
         >
-          Да
-        </AtomsRadio>
         <AtomsRadio
-          id="no_citizen"
           v-model="model.citizen"
           name="citizen"
+          id="no_citizen"
           val="no"
           class="radio"
+          >Нет</AtomsRadio
         >
-          Нет
-        </AtomsRadio>
       </div>
       <p>2. Ваш возраст выше 18 лет?</p>
       <div>
         <AtomsRadio
-          id="yes_age"
           v-model="model.age"
           name="age"
           val="yes"
+          id="yes_age"
           class="radio"
+          >Да</AtomsRadio
         >
-          Да
-        </AtomsRadio>
         <AtomsRadio
-          id="no_age"
           v-model="model.age"
           name="age"
           val="no"
+          id="no_age"
           class="radio"
         >
           Нет
@@ -52,19 +49,18 @@
       </p>
       <div>
         <AtomsRadio
-          id="yes_student"
           v-model="model.student"
           name="student"
           val="yes"
+          id="yes_student"
           class="radio"
+          >Да</AtomsRadio
         >
-          Да
-        </AtomsRadio>
         <AtomsRadio
-          id="no_student"
           v-model="model.student"
           name="student"
           val="no"
+          id="no_student"
           class="radio"
         >
           Нет
@@ -73,19 +69,18 @@
       <p>4. Ваш средний балл (GPA) 3.0 и выше?</p>
       <div>
         <AtomsRadio
-          id="yes_gpa"
           v-model="model.gpa"
           name="gpa"
           val="yes"
+          id="yes_gpa"
           class="radio"
+          >Да</AtomsRadio
         >
-          Да
-        </AtomsRadio>
         <AtomsRadio
-          id="no_gpa"
           v-model="model.gpa"
           name="gpa"
           val="no"
+          id="no_gpa"
           class="radio"
         >
           Нет
@@ -96,9 +91,8 @@
         type="submit"
         :disabled="disabled"
         class="btn"
+        >Отправить</AtomsButton
       >
-        Отправить
-      </AtomsButton>
       <p v-else class="message" :style="{ color: message.color }">
         {{ message.text }}
       </p>
