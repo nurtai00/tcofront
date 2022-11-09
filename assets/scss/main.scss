@@ -42,6 +42,34 @@
     }
   }
 }
+.content_step_text {
+  p {
+    width: 100%;
+    max-width: 776px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #30454e;
+  }
+}
+.default_modal_text {
+  p,
+  li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #30454e;
+  }
+  ol {
+    padding-left: 30px;
+    li {
+      list-style-type: decimal;
+    }
+  }
+}
 
 .my-clamp1 {
   display: -webkit-box;

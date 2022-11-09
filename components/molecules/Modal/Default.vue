@@ -3,10 +3,10 @@
     <AtomsHeading type="h4" color="id_popup">
       {{ payload.id }}
     </AtomsHeading>
-    <AtomsHeading type="h2" color="text">
+    <AtomsHeading type="h3" color="text">
       {{ payload.title }}
     </AtomsHeading>
-    <p>{{ payload.text }}</p>
+    <p v-html="payload.text" class="default_modal_text"></p>
   </div>
 </template>
 
@@ -24,16 +24,9 @@ export default {
 <style lang="scss" scoped>
 .career_motivation_popup {
   width: 100%;
-  h2 {
+  max-width: 696px;
+  h3 {
     margin: 20px 0 40px;
-  }
-  p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    color: #30454e;
   }
 }
 </style>

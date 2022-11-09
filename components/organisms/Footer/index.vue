@@ -91,7 +91,7 @@
         <span>© 2018 ТОО «Тенгизшевройл»</span>
       </div>
       <div class="block">
-        <Nuxt-link to="">Положение о конфиденциальности</Nuxt-link>
+        <Nuxt-link to="/privacy">Положение о конфиденциальности</Nuxt-link>
       </div>
     </div>
   </footer>

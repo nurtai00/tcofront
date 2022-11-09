@@ -106,7 +106,7 @@ export default {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  max-width: 456px;
+  width: 456px;
   padding-bottom: 40px;
   position: relative;
   @include middle-laptop() {
