@@ -78,10 +78,7 @@
       </div>
     </div>
     <div class="container">
-      <AtomsHeading
-        class="document-title"
-        type="h3"
-      >
+      <AtomsHeading class="document-title" type="h3">
         Документы по процессу обратной связи
       </AtomsHeading>
       <div class="links">
