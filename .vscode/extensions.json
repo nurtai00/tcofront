@@ -1,5 +1,3 @@
 {
-    "recommendations": [
-        "ishiyama.vue-autoimport"
-    ]
+  "recommendations": ["ishiyama.vue-autoimport"]
 }

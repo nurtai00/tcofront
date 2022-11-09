@@ -6,7 +6,7 @@
     <p class="card__text">
       {{ item.title }}
     </p>
-    <img @click="showMod" src="@/assets/img/career/arrow_next.svg" alt="" />
+    <img src="@/assets/img/career/arrow_next.svg" alt="" @click="showMod" />
   </div>
 </template>
 
