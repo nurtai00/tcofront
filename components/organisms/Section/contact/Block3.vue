@@ -364,6 +364,7 @@ export default {
         color: $c-text;
         a {
           text-decoration: underline;
+          color: $c-base;
         }
       }
       @include phone() {

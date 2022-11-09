@@ -47,7 +47,7 @@
     &-content {
     }
     .content {
-      padding: 80px 0px 40px 0;
+      padding: 80px 0 40px 0;
       @include phone() {
         padding-top: 40px;
         h2 {
@@ -75,18 +75,17 @@
     }
     .contacts {
       &__list {
-        padding: 40px 0px 80px 0;
+        padding: 40px 0 80px 0;
         display: flex;
         justify-content: space-between;
+        gap: 40px;
         @include wide-tablet() {
           flex-wrap: wrap;
-          gap: 40px;
           justify-content: center;
         }
         @include phone() {
           padding: 20px 0;
           flex-wrap: wrap;
-          gap: 40px;
           &-item {
             flex-direction: column;
             font-size: 16px;
@@ -98,9 +97,12 @@
           }
         }
         &-item {
+          font-family: Roboto, sans-serif;
           display: flex;
-          justify-content: space-between;
-          width: 400px;
+          gap: 10px;
+          @include tablet() {
+            width: 400px;
+          }
         }
       }
     }
@@ -108,7 +110,6 @@
 }
 .item {
   span {
-    margin-right: 10px;
     font-size: 20px;
     font-weight: 500;
     font-family: Roboto, sans-serif;
