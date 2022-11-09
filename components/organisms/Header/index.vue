@@ -2,7 +2,7 @@
   <header class="header container">
     <div class="header__container">
       <img src="@/assets/img/logo.svg" />
-      <AtomsSearchBar />
+      <MoleculesSearchBar />
       <NuxtLink to="/">Телефон доверия</NuxtLink>
       <NuxtLink to="/">Рус</NuxtLink>
       <NuxtLink to="/">Қаз</NuxtLink>
@@ -23,11 +23,11 @@
     <div class="links container" :class="show ? 'show' : ''">
       <NuxtLink class="active" to="/">Home</NuxtLink>
       <NuxtLink to="/about">Company</NuxtLink>
-      <NuxtLink to="/">Operations</NuxtLink>
+      <NuxtLink to="/operations">Operations</NuxtLink>
       <NuxtLink to="/">Projects</NuxtLink>
       <NuxtLink to="/">Kazakhstani Content</NuxtLink>
       <NuxtLink to="/">Sustainability</NuxtLink>
-      <NuxtLink to="/">Career</NuxtLink>
+      <NuxtLink to="/career">Career</NuxtLink>
       <NuxtLink to="/relations">Lender Relations</NuxtLink>
     </div>
   </header>

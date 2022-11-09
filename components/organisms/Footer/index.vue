@@ -8,7 +8,7 @@
             <Nuxt-Link to="/">Инвестиции в сообщество</Nuxt-Link>
           </li>
           <li>
-            <Nuxt-Link to="/">Карьера</Nuxt-Link>
+            <Nuxt-Link to="/career">Карьера</Nuxt-Link>
           </li>
           <li>
             <Nuxt-Link to="/">Поставщикам</Nuxt-Link>
@@ -68,7 +68,9 @@
             <Nuxt-Link to="/">tcoinfo@tengizchevroil.com</Nuxt-Link>
           </li>
           <li>
-            <Nuxt-Link to="/">ПБР-Телефон доверия и другие контакты</Nuxt-Link>
+            <Nuxt-Link to="/contact">
+              ПБР-Телефон доверия и другие контакты
+            </Nuxt-Link>
           </li>
         </ul>
       </div>
@@ -89,7 +91,7 @@
         <span>© 2018 ТОО «Тенгизшевройл»</span>
       </div>
       <div class="block">
-        <Nuxt-link to="">Положение о конфиденциальности</Nuxt-link>
+        <Nuxt-link to="/privacy">Положение о конфиденциальности</Nuxt-link>
       </div>
     </div>
   </footer>

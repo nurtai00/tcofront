@@ -25,43 +25,39 @@ export default {
   @include fixed(0, 0, 0, 0);
   @include size(100%);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   z-index: 500;
 }
-
 @keyframes animModal {
   from {
-    transform: translateY(20px);
+    transform: translateX(20px);
     opacity: 0;
   }
   to {
-    transform: translateY(0px);
+    transform: translateX(0px);
     opacity: 1;
   }
 }
 .modal-container {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(53, 56, 161, 0.07);
-  border-radius: 16px;
   z-index: 600;
-  width: min-content;
+  width: 63%;
   position: relative;
   overflow: auto;
-  max-height: calc(100vh - 20px);
-  padding: 32px;
+  height: 100vh;
+  padding: 52px 132px 40px 80px;
   animation: animModal 0.5s cubic-bezier(0.11, 0.72, 0.56, 1.28);
 }
 .modal-close {
-  @include size(16px);
+  @include size(44px);
   @include bg('~assets/icons/close_popup.svg', center center/contain);
   margin-left: auto;
   transition: transform 0.5s ease;
   cursor: pointer;
   position: absolute;
-  top: 32px;
-  right: 32px;
-
+  top: 40px;
+  right: 132px;
   &:hover {
     transform: rotate(180deg);
   }

@@ -1,7 +1,17 @@
 <template>
-  <div :class="['accordion', isOpen && 'open']" @click="$emit('click')">
+  <div class="accordion">
     <!-- @slot текстовый слот, название аккордеон -->
-    <slot />
+    <div class="accordion__title" @click="$emit('click')">
+      <slot name="title" />
+      <img
+        src="@/assets/icons/arrow-bottom-blue.svg"
+        alt="arrow"
+        :class="{ open: isOpen }"
+      />
+    </div>
+    <div v-if="isOpen" class="accordion__content">
+      <slot name="content" />
+    </div>
   </div>
 </template>
 
@@ -19,25 +29,31 @@ export default {
 
 <style lang="scss" scoped>
 .accordion {
-  padding: 14px 20px;
-  background: #a6d6ff;
-  color: #0084f4;
-  border-radius: 10px;
+  color: $c-dark;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   cursor: pointer;
-
-  &::after {
-    content: '';
-    @include block(14px, 8px);
-    @include bg('icons/arrow-bottom-blue.svg', center center/contain);
-    @include trans(transform 0.3s ease);
+  &__content {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba($c-text, 20%);
   }
-
-  &.open {
-    &::after {
-      transform: rotate(180deg);
+  &__title {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba($c-text, 20%);
+    img {
+      width: 24px;
+      height: 24px;
+      border: 1px solid $c-base;
+      padding: 5px;
+      border-radius: 50%;
+      background-color: #f2fbfe;
+      @include trans(transform 0.3s ease);
+      &.open {
+        transform: rotate(180deg);
+      }
     }
   }
 }

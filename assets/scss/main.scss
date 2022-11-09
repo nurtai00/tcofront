@@ -6,9 +6,82 @@
 @import 'layout';
 @import 'animations';
 
-.container {
-  max-width: 1144px;
-  margin: 0 auto;
+.blocks_content__info {
+  p,
+  li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #30454e;
+  }
+  ul {
+    padding-left: 30px;
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+.programm_career_info {
+  p,
+  li {
+    width: 100%;
+    max-width: 548px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #30454e;
+  }
+  ul {
+    padding-left: 30px;
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+.content_step_text {
+  p {
+    width: 100%;
+    max-width: 776px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #30454e;
+  }
+}
+.default_modal_text {
+  p,
+  li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #30454e;
+  }
+  ol {
+    padding-left: 30px;
+    li {
+      list-style-type: decimal;
+    }
+  }
+}
+
+.my-clamp1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.my-clamp2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 // breadCrumbs
@@ -50,6 +123,9 @@
     line-height: 64px;
     /* identical to box height, or 114% */
 
+    @media (max-width: 385px) {
+      font-size: 38px;
+    }
     /* tco 3 */
 
     color: #015467;
@@ -66,6 +142,10 @@
     /* tco 3 */
 
     color: #015467;
+
+    @media (max-width: 385px) {
+      font-size: 24px;
+    }
   }
   a {
     font-family: 'Roboto', sans-serif;
@@ -89,11 +169,11 @@ h2 {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
-  /* identical to box height, or 121% */
-
-  /* tco 3 */
-
   color: #015467;
+
+  @media (max-width: 385px) {
+    font-size: 24px;
+  }
 }
 
 section {
@@ -101,9 +181,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  @media (max-width: 1160px) {
-    padding: 15px;
-  }
 }
 
 .section--blue {
@@ -127,7 +204,7 @@ p {
   /* tco 1 */
 
   color: #30454e;
-  margin: 20px 0;
+  // margin: 20px 0;
 }
 
 .double-block {

@@ -2,7 +2,7 @@
   <div ref="dropdown" class="dropdown">
     <button class="dropdown__button" type="button">
       <span class="dropdown__text">{{ title }}</span>
-      <AtomsIcon icon="dropdown-arrow" :size="14" />
+      <!-- <AtomsIcon icon="dropdown-arrow" :size="14" /> -->
     </button>
     <ul class="dropdown-menu menu">
       <li v-for="(item, key) in links" :key="key" class="dropdown-menu__item">
