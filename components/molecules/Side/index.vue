@@ -10,7 +10,8 @@
           </div>
         </div>
         <div class="side__content_name">{{ this.side.name }}</div>
-        <div class="side__content_description">{{ this.side.description }}</div>
+        <div v-if="this.side.description" class="side__content_description">{{ this.side.description }}</div>
+        <div v-else v-html="this.side.html" />
       </div>
     </div>
   </transition>
@@ -95,6 +96,7 @@ export default {
       line-height: 56px;
       font-weight: 700;
       margin-bottom: 40px;
+      padding-top: 30px;
     }
 
     &_description {
@@ -109,9 +111,90 @@ export default {
       }
     }
   }
+
+  @include wide-tablet {
+    &__content {
+      width: 80%;
+    }
+  }
+
+  @include phone {
+    &__content {
+      width: 90%;
+      padding: 20px 16px;
+
+      &_header {
+        top: 20px;
+      }
+
+      &_number {
+        font-size: 18px;
+      }
+
+      &_close {
+        font-size: 12px;
+      }
+
+      &_name {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 12px;
+      }
+
+      &_description {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
 }
 
 .side-enter-active, .side-leave-active {
   transform: translateX(100%);
+}
+
+.side::v-deep {
+  .abs {
+    margin-bottom: 40px;
+  }
+
+  ul {
+    padding-left: 22px;
+    margin-bottom: 20px;
+
+    li {
+      list-style-type: disc;
+      font-size: 20px;
+      line-height: 28px;
+      color: $c-tco1;
+    }
+  }
+
+  p {
+    margin-bottom: 12px;
+
+    &.title {
+      font-size: 28px;
+      line-height: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include phone {
+    .abs {
+      margin-bottom: 20px;
+    }
+
+    p, ul li {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    p.title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
 }
 </style>
