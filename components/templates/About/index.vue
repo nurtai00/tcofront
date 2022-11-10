@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="container">
-      <div class="breadcrumbs">
-        <span>Home</span><img src="@/assets/icons/breadCrumbArrow.svg" />
-        <span>Company</span>
-      </div>
+      <MoleculesBreadcrumbs class="mt40 mb20">
+        <AtomsBreadOption to="/">Home</AtomsBreadOption>
+        <AtomsBreadOption to="/about">Company</AtomsBreadOption>
+      </MoleculesBreadcrumbs>
     </div>
     <OrganismsSectionAboutBlock1 />
     <OrganismsSectionAboutBlock2 />
@@ -15,7 +15,7 @@
     <OrganismsSectionAboutBlock7 />
     <OrganismsSectionAboutBlock8 />
     <OrganismsSectionAboutBlock9 />
-    <OrganismsSectionAboutBlock10 />
+    <!-- <OrganismsSectionAboutBlock10 /> -->
     <OrganismsSectionAboutBlock11 />
     <OrganismsSectionAboutBlock12 />
     <OrganismsSectionAboutBlock13 />

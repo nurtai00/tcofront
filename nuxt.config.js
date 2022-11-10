@@ -112,11 +112,11 @@ export default {
         console.log(config.entry) // { app: [ "path/to/server.js" ] } (currently undefined)
       }
 
-      config.entry = {
-        ...entries,
-        // hot: 'webpack/hot/dev-server.js',
-        // client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
-      }
+      // config.entry = {
+      // ...entries,
+      // hot: 'webpack/hot/dev-server.js',
+      // client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
+      // }
 
       // This is ok
       // for (const [key, value] of Object.entries(entries)) {
