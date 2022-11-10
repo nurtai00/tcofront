@@ -9,7 +9,7 @@ export default {}
         <div class="tco__numbers">
           <div class="lines">
             <div class="section__title">
-              <AtomsTitle class="atoms_title mb20">
+              <AtomsTitle class="atoms_title mb20" small>
                 Отчет и цифры за 2021 г.
               </AtomsTitle>
               <a href="/projects#pbr">Подробнее</a>
@@ -58,12 +58,6 @@ export default {}
 </template>
 
 <style scoped lang="scss">
-.atoms_title::v-deep {
-  h1 {
-    font-size: 38px;
-    line-height: 46px;
-  }
-}
 .tco {
   &__numbers {
     display: flex;

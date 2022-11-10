@@ -105,17 +105,29 @@ export default class Slide {
   drag() {
     const self = this
     let touchstartX, touchendX
-    const touchableElement = document.body
-    touchableElement.addEventListener('mousedown', function (event) {
-      touchstartX = event.pageX
-      event.preventDefault()
-    })
+    const touchableElement = document.querySelector('.slider-wrapper')
+    if (window.innerWidth < 550) {
+      touchableElement.addEventListener('touchstart', function (event) {
+        touchstartX = event.touches[0].pageX
+        event.preventDefault()
+      })
+      touchableElement.addEventListener('touchend', function (event) {
+        touchendX = event.changedTouches[0].pageX
 
-    touchableElement.addEventListener('mouseup', function (event) {
-      touchendX = event.pageX
+        self._handleGesture(touchstartX, touchendX)
+      })
+    } else {
+      touchableElement.addEventListener('mousedown', function (event) {
+        touchstartX = event.pageX
+        event.preventDefault()
+      })
 
-      self._handleGesture(touchstartX, touchendX)
-    })
+      touchableElement.addEventListener('mouseup', function (event) {
+        touchendX = event.pageX
+
+        self._handleGesture(touchstartX, touchendX)
+      })
+    }
   }
 
   touch() {

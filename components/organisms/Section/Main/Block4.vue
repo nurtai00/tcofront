@@ -6,18 +6,7 @@ export default {}
   <div>
     <section class="section--blue">
       <div class="container">
-        <div class="section__title">
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="6" cy="6" r="6" fill="#00B0F0" />
-          </svg>
-          <h2>Казахстанское содержание</h2>
-        </div>
+        <AtomsTitle small>Казахстанское содержание</AtomsTitle>
       </div>
       <div class="double-block">
         <div class="tco__partners-wrapper tco__maintenance">

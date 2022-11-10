@@ -1,18 +1,7 @@
 <template>
   <section class="section--blue">
     <div class="container">
-      <div class="section__title">
-        <svg
-          width="12"
-          height="12"
-          viewBox="0 0 12 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="6" cy="6" r="6" fill="#00B0F0" />
-        </svg>
-        <h2>Ключевые цифры за 2022 г.:</h2>
-      </div>
+      <AtomsTitle small :point="false"> Ключевые цифры за 2022 г.: </AtomsTitle>
       <div class="tco__files">
         <a class="item" href="">
           <img src="@/assets/img/pdf.svg" />

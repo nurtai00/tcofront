@@ -7,6 +7,7 @@
       </MoleculesBreadcrumbs>
     </div>
     <OrganismsSectionAboutBlock1 />
+    <OrganismsSectionAboutSlider />
     <OrganismsSectionAboutBlock2 />
     <OrganismsSectionAboutBlock3 />
     <OrganismsSectionAboutBlock4 />
@@ -17,8 +18,12 @@
     <OrganismsSectionAboutBlock9 />
     <!-- <OrganismsSectionAboutBlock10 /> -->
     <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionAboutBlock12 />
-    <OrganismsSectionAboutBlock13 />
+    <OrganismsSectionMainBlock2 white />
+    <section class="section--blue">
+      <div class="container">
+        <OrganismsSectionNewsPublicationsBlock />
+      </div>
+    </section>
   </div>
 </template>
 
