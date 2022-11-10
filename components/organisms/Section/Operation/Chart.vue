@@ -119,6 +119,11 @@ export default {
   &__description {
     font-size: 20px;
     line-height: 28px;
+
+    @include phone {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 </style>

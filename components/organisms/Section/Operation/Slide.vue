@@ -1,8 +1,8 @@
 <template>
-  <div class="slide" :class="{ side }">
+  <div class="slide" :class="{ side, background: data.background }">
     <div
       class="slide__content container"
-      :class="{ slided: slide, background: data.background }"
+      :class="{ slided: slide }"
     >
       <AtomsHeading type="h3" class="slide__title title">
         {{ data.title }}
@@ -12,21 +12,16 @@
           v-for="(text, key) in data.description"
           :key="key"
           class="slide__description_item"
-        >
-          {{ text }}
-        </div>
+        >{{ text }}</div>
       </div>
       <div v-if="data.description.length > 1" class="slide__arrow">
         <i class="icon-arrowDown" @click="onSlide(false)" />
         <i class="icon-arrowDown" @click="onSlide(true)" />
       </div>
       <template v-if="data.link">
-        <nuxt-link
-          class="slide__link"
-          :to="data.link"
-        >
+        <div class="slide__link" @click="data.link()">
           <span>Читать дальше</span> <i class="icon-arrow-left" />
-        </nuxt-link>
+        </div>
       </template>
     </div>
     <div class="slide__image">
@@ -62,6 +57,7 @@ export default {
 <style lang="scss" scoped>
 .slide {
   display: flex;
+  position: relative;
 
   &__content {
     width: 50%;
@@ -72,12 +68,12 @@ export default {
         &__arrow {
           i:first-child {
             cursor: pointer;
-            background-color: $c-tco33;
+            background-color: white;
           }
 
           i:last-child {
             cursor: default;
-            background-color: transparent;
+            background-color: $c-tco33;
           }
         }
 
@@ -88,10 +84,10 @@ export default {
         }
       }
     }
+  }
 
-    &.background {
-      background-color: $c-tco33;
-    }
+  &.background {
+    background-color: $c-tco33;
   }
 
   &__link {
@@ -154,12 +150,13 @@ export default {
       transform: rotate(90deg);
       transform-origin: center;
       font-size: 11px;
+      background-color: $c-tco33;
 
       &:last-child {
         transform: rotate(-90deg);
         margin-left: 24px;
         cursor: pointer;
-        background-color: $c-tco33;
+        background: white;
       }
     }
   }
@@ -170,6 +167,82 @@ export default {
     img {
       width: 100%;
       height: 100%;
+    }
+  }
+
+  @include tablet {
+    flex-direction: column-reverse;
+
+    &.side {
+      flex-direction: column-reverse;
+    }
+
+    &__image {
+      width: 100%;
+      height: 412px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &__content {
+      max-width: 100%;
+      padding: 20px 16px;
+    }
+
+    &.slide {
+      .slide__content {
+        width: 100%;
+        padding: 20px 16px;
+      }
+    }
+
+    &__title {
+      position: absolute;
+      top: 20px;
+      color: white;
+      width: 70%;
+    }
+
+    &__arrow {
+      position: absolute;
+      top: 320px;
+    }
+  }
+
+  @include phone {
+    &__image {
+      height: 218px;
+    }
+
+    &__title {
+      width: 70%;
+    }
+
+    &__arrow {
+      top: 157px;
+
+      i {
+        width: 24px;
+        height: 24px;
+        font-size: 6px;
+
+        &:last-child {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    &__description {
+      &_item {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
   }
 }

@@ -4,6 +4,7 @@
     <div class="main-container">
       <Nuxt />
       <OrganismsModal />
+      <MoleculesSide />
       <MoleculesNotification />
     </div>
     <OrganismsFooter />

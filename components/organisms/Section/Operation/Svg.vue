@@ -5,13 +5,24 @@
         <AtomsHeading type="h3" class="block__title title">
           {{ data.title }}
         </AtomsHeading>
+        <div class="block__content_icon">
+          <i :class="`icon-${data.icon}`" />
+        </div>
         <div class="block__description">
-          {{ data.description }}
+          <template v-if="data.description">
+            {{ data.description }}
+          </template>
+          <template v-else>
+            <slot name="description" />
+          </template>
         </div>
       </div>
       <div class="block__icon">
         <i :class="`icon-${data.icon}`" />
       </div>
+    </div>
+    <div class="container footer">
+      <slot name="footer" />
     </div>
   </div>
 </template>
@@ -40,6 +51,12 @@ export default {
 
   &__content {
     padding-right: 130px;
+
+    &_icon {
+      display: none;
+      font-size: 240px;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -55,6 +72,37 @@ export default {
     i {
       font-size: 200px;
       color: $c-tco3;
+    }
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+
+  @include tablet {
+    padding: 20px 0;
+
+    &__icon {
+      display: none;
+    }
+
+    &__content {
+      padding-right: 0;
+
+      &_icon {
+        display: block;
+      }
+    }
+  }
+
+  @include phone {
+    &__description {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__content_icon {
+      font-size: 125px;
     }
   }
 }

@@ -43,6 +43,14 @@ $hs: ('Montserrat' 56px 700 64px), ('Montserrat' 48px 700 56px),
     font-size: nth(nth($hs, $i), 2);
     font-weight: nth(nth($hs, $i), 3);
     line-height: nth(nth($hs, $i), 4);
+    @include wide-tablet {
+      font-size: calc(nth(nth($hs, $i), 2) - 8px);
+      line-height: calc(nth(nth($hs, $i), 4) - 8px)
+    }
+    @include tablet {
+      font-size: calc(nth(nth($hs, $i), 2) - 14px);
+      line-height: calc(nth(nth($hs, $i), 4) - 14px)
+    }
     @include phone() {
       font-size: 20px;
     }
