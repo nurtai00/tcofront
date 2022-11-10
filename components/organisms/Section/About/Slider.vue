@@ -74,7 +74,7 @@ export default {
     }
     &-wrapper {
       padding: 40px 40px 40px 0;
-      max-width: 572px;
+      max-width: 590px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
