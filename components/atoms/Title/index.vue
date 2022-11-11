@@ -54,5 +54,11 @@ export default {
       line-height: 36px;
     }
   }
+  h3 {
+    @include phone() {
+      font-size: 20px !important;
+      line-height: 26px !important;
+    }
+  }
 }
 </style>

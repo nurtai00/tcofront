@@ -1,18 +1,36 @@
 <template>
   <section style="padding: 0">
-    <div class="double-block tco__partners" style="justify-content: flex-start">
-      <img src="@/assets/img/Rectangle 182.png" />
-      <div class="tco__partners-wrapper" style="padding: 40px 0 40px 40px">
-        <h1>Ценности</h1>
-        <div class="underline"></div>
-        <p>
-          Наши ценности определяют, кем мы являемся, и направляют нас к
-          достижению результатов. Мы ведем свою деятельность, придерживаясь
-          принципа ответственности в социальной сфере и в вопросах охраны
-          окружающей среды, а также соблюдая законы и принося пользу обществу, в
-          котором мы работаем.
-        </p>
-      </div>
+    <OrganismsSlider :options="options">
+      <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
+        <div
+          class="double-block tco__partners"
+          style="justify-content: flex-start"
+        >
+          <img src="@/assets/img/Rectangle 182.png" />
+          <div class="tco__partners-wrapper" style="padding: 40px 0 40px 40px">
+            <h1 v-text="slide.title"></h1>
+            <div class="underline"></div>
+            <p v-text="slide.text"></p>
+          </div>
+        </div>
+      </MoleculesSlide>
+    </OrganismsSlider>
+
+    <div class="main_b9_actions">
+      <img
+        class="main_b9_actions_prev"
+        src="../../../../assets/icons/small-chevron-left.svg"
+        alt="small-chevron-left"
+        width="44px"
+        height="44px"
+      />
+      <img
+        class="main_b9_actions_next"
+        src="../../../../assets/icons/small-chevron-right.svg"
+        alt="small-chevron-right"
+        width="44px"
+        height="44px"
+      />
     </div>
   </section>
 </template>
@@ -22,12 +40,57 @@ export default {
   name: 'TcoFrontBlock9',
 
   data() {
-    return {}
+    return {
+      options: {
+        navigation: {
+          previous: '.main_b9_actions_prev',
+          next: '.main_b9_actions_next',
+        },
+        loop: true,
+        slidesPerView: 1,
+        id: 'main_b9',
+        slide: this.slideTo,
+      },
+      slides: [
+        {
+          title: 'Ценности',
+          text: 'Наши ценности определяют, кем мы являемся, и направляют нас к достижению результатов. Мы ведем свою деятельность, придерживаясь принципа ответственности в социальной сфере и в вопросах охраны окружающей среды, а также соблюдая законы и принося пользу обществу, в котором мы работаем.',
+        },
+        {
+          title: 'Уважение к различиям и вовлеченность',
+          text: 'Мы работаем в атмосфере открытости, в которой уважают уникальность и разнообразие культур, ценят талант, опыт и идеи каждого человека.',
+        },
+        {
+          title: 'Высокие показатели',
+          text: 'Мы стремимся к совершенству и достижению положительных результатов. Мы нацелены на высокую производительность и постоянное совершенствование. Мы придерживаемся модели поведения для достижения высоких показателей ТШО и несем ответственность за свои действия и результаты.',
+        },
+        {
+          title: 'Честность и доверие',
+          text: 'Мы честны по отношению к себе и другим. Мы стремимся заслужить доверие благодаря уважению и поддержке друг друга, соблюдая высочайшие этические нормы во всем, что мы делаем.',
+        },
+        {
+          title: 'Партнерство',
+          text: 'Мы строим доверительные, продуктивные и конструктивные отношения с государственными органами, учредителями, общественностью, деловыми партнерами, заказчиками и поставщиками, а также друг с другом. Мы наиболее успешны, когда достигаем успеха вместе.',
+        },
+        {
+          title: 'Защита здоровья людей и охрана окружающей среды',
+          text: 'Здоровье и безопасность наших сотрудников, производственная безопасность и охрана окружающей среды имеют для нас первостепенное значение. Мы стремимся к безаварийной производственной деятельности без травматизма, уделяя особое внимание на предотвращение происшествий с серьёзными последствиями.',
+        },
+        {
+          title: 'Уважение к различиям и вовлеченность',
+          text: 'Мы работаем в атмосфере открытости, в которой уважают уникальность и разнообразие культур, ценят талант, опыт и идеи каждого человека.',
+        },
+      ],
+    }
   },
 
   mounted() {},
 
-  methods: {},
+  methods: {
+    slideTo(index) {
+      console.log('has slidet', index)
+    },
+  },
 }
 </script>
 
@@ -43,15 +106,12 @@ export default {
       justify-content: center;
       gap: 25px;
       text-align: left;
-
       @media (max-width: 1200px) {
         padding: 15px;
       }
-
       @media (max-width: 886px) {
         max-width: inherit;
       }
-
       .underline {
         display: block;
         position: relative;
@@ -64,502 +124,56 @@ export default {
         width: 80vw;
         border: 1px solid #8c9fa6;
       }
-
       h1 {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 38px;
         line-height: 46px;
-        /* or 121% */
-
-        /* tco 3 */
-
         color: #015467;
-
         @media (max-width: 385px) {
           font-size: 32px;
         }
       }
-
       span {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 300;
         font-size: 38px;
         line-height: 42px;
-        /* identical to box height, or 111% */
-
-        /* tco 3 */
-
         color: #015467;
       }
-
-      .steps {
-        margin-top: auto;
-        display: flex;
-        align-items: center;
-        gap: 2px;
-
-        span {
-          display: block;
-          width: 40px;
-          height: 4px;
-          background: rgba(1, 84, 103, 0.1);
-          border-radius: 4px;
-        }
-
-        .done {
-          background: #5e8698;
-        }
-      }
-
-      .amount {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-
-        .item {
-          background: #e8f8fe;
-          border-radius: 4px;
-          padding: 20px;
-          width: 100%;
-
-          span {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 32px;
-            /* identical to box height, or 114% */
-
-            /* black background */
-
-            color: #30454e;
-          }
-
-          p {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 20px;
-            /* identical to box height, or 125% */
-
-            /* grey */
-
-            color: #8c9fa6;
-          }
-        }
-      }
-
-      .years {
-        width: 80%;
-
-        @media (max-width: 886px) {
-          width: 100%;
-          max-width: inherit;
-          margin: auto;
-        }
-      }
     }
     background: #f2f6f7;
   }
-
-  &__barrels {
-    &-item {
-      display: flex;
-      justify-content: center;
-      padding: 40px 0 40px 40px;
-      background: rgba(1, 84, 103, 0.1);
-
-      @media (max-width: 450px) {
-        padding: 15px !important;
-        flex-direction: column;
-      }
-
-      &:last-of-type {
-        padding: 40px 40px 40px 0;
-        background: inherit;
-      }
-    }
-
-    &-wrapper {
-      max-width: 572px;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-
-      @media (max-width: 450px) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      img {
-        width: 160px;
-        height: auto;
-      }
-
-      div {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-
-        h4 {
-          font-family: 'Roboto';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 24px;
-          line-height: 28px;
-          /* identical to box height, or 117% */
-
-          /* tco 1 */
-
-          color: #30454e;
-        }
-
-        span {
-          font-family: 'Montserrat';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 28px;
-          line-height: 32px;
-          /* identical to box height, or 114% */
-
-          text-align: justify;
-
-          /* tco 1 */
-
-          color: #30454e;
-        }
-
-        p {
-          font-family: 'Roboto';
-          font-style: normal;
-          font-weight: 300;
-          font-size: 20px;
-          line-height: 28px;
-          /* identical to box height, or 140% */
-
-          text-align: justify;
-
-          /* grey */
-
-          color: #8c9fa6;
-        }
-      }
-    }
-    background: #f2f6f7;
+}
+::v-deep .slider-wrapper {
+  height: auto;
+}
+.main_b9_actions {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: calc(50% + 40px);
+  top: -85px;
+  img {
+    padding: 12px 18px 12px 14px;
+    border: 1px solid #8c9fa6;
+    border-radius: 50%;
+    margin-right: 24px;
+    cursor: pointer;
+    pointer-events: auto;
+    touch-action: auto;
+    background: rgba(1, 84, 103, 0.1);
   }
-
-  &__items {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 25px 0;
-    gap: 25px;
-    @media (max-width: 650px) {
-      flex-direction: column;
-    }
-
-    .item {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      background: #ffffff;
-      /* 3 */
-      width: 40%;
-      box-shadow: 0px 6px 30px rgba(48, 69, 78, 0.1);
-      border-radius: 4px;
-      padding: 30px;
-      @media (max-width: 650px) {
-        width: 90%;
-      }
-
-      img {
-        width: 80px;
-        height: 80px;
-      }
-
-      span {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
-        /* identical to box height, or 117% */
-
-        /* tco 1 */
-
-        color: #30454e;
-      }
-
-      p {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 22px;
-        /* or 122% */
-
-        /* black background */
-
-        color: #30454e;
-      }
-    }
+  img:last-child {
+    padding: 12px 14px 12px 18px;
   }
-
-  &__files {
-    display: flex;
-    gap: 70px;
-    padding: 25px 0;
-
-    @media (max-width: 682px) {
-      flex-direction: column;
-      align-items: center;
-    }
-    .item {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      gap: 15px;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 22px;
-      /* identical to box height, or 122% */
-
-      text-decoration-line: underline;
-
-      @media (max-width: 682px) {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      /* tco 5 */
-
-      color: #00b0f0;
-
-      img {
-        width: 176px;
-        height: 164px;
-      }
-    }
-  }
-
-  &__story {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 40px 40px 40px 0;
-    max-width: 572px;
-
-    @media (max-width: 886px) {
-      width: 100%;
-      max-width: inherit;
-      padding: 15px;
-    }
-
-    h4 {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 32px;
-      /* identical to box height, or 114% */
-      width: 100%;
-      /* black background */
-
-      color: #30454e;
-    }
-    img {
-      width: 550px;
-      @media (max-width: 886px) {
-        width: 100%;
-        max-width: inherit;
-      }
-    }
-
-    p {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 28px;
-      /* or 140% */
-
-      /* black background */
-
-      color: #30454e;
-    }
-  }
-
-  &__news {
-    padding: 25px 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-
-    @media (max-width: 775px) {
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 500px) {
-      flex-direction: column;
-    }
-
-    .card {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-
-      img {
-        height: 260px;
-        width: 100%;
-      }
-
-      .info {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-
-        span {
-          font-family: 'Roboto';
-          font-style: normal;
-          font-weight: 300;
-          font-size: 14px;
-          line-height: 18px;
-          /* identical to box height, or 129% */
-
-          color: #d01d12;
-
-          &:last-of-type {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 18px;
-            /* identical to box height, or 129% */
-
-            text-align: right;
-
-            /* grey */
-
-            color: #8c9fa6;
-          }
-        }
-      }
-
-      h4 {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        /* identical to box height, or 122% */
-
-        /* black 92% */
-
-        color: #30454e;
-      }
-
-      p {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 18px;
-        /* or 129% */
-
-        /* grey */
-
-        color: #8c9fa6;
-      }
-    }
-
-    &-tags {
-      display: flex;
-      gap: 5px;
-      flex-wrap: wrap;
-      span {
-        /* black 92% */
-
-        border: 1px solid #30454e;
-        border-radius: 4px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 18px;
-        /* identical to box height, or 129% */
-        padding: 5px;
-
-        /* black 92% */
-
-        color: #30454e;
-      }
-    }
-  }
-
-  &__publications {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 40px 0;
-
-    @media (max-width: 1115px) {
-      padding: 15px;
-    }
-
-    @media (max-width: 700px) {
-      flex-wrap: wrap;
-      gap: 15p;
-    }
-
-    @media (max-width: 395px) {
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .card {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      height: 100%;
-      width: 24%;
-
-      @media (max-width: 700px) {
-        width: 49%;
-      }
-
-      @media (max-width: 395px) {
-        width: 100%;
-      }
-
-      div {
-        img {
-          width: 15px;
-          height: auto;
-        }
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 22px;
-        /* or 122% */
-
-        /* black 92% */
-
-        color: #30454e;
-      }
-    }
-  }
+  // .disabled {
+  //   cursor: not-allowed;
+  //   pointer-events: none;
+  //   touch-action: none;
+  //   background: #ffffff;
+  // }
 }
 </style>

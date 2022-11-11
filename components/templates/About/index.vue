@@ -16,7 +16,6 @@
     <OrganismsSectionAboutBlock7 />
     <OrganismsSectionAboutBlock8 />
     <OrganismsSectionAboutBlock9 />
-    <!-- <OrganismsSectionAboutBlock10 /> -->
     <OrganismsSectionAboutBlock11 />
     <OrganismsSectionMainBlock2 white />
     <section class="section--blue">

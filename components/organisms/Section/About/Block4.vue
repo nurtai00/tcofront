@@ -1,5 +1,5 @@
 <template>
-  <section style="padding: 0">
+  <section style="padding: 0; position: relative">
     <OrganismsSlider :options="options">
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
         <div class="double-block" style="justify-content: flex-end">
@@ -30,15 +30,11 @@
         class="main_b4_actions_prev"
         src="../../../../assets/icons/small-chevron-left.svg"
         alt="small-chevron-left"
-        width="44px"
-        height="44px"
       />
       <img
         class="main_b4_actions_next"
         src="../../../../assets/icons/small-chevron-right.svg"
         alt="small-chevron-right"
-        width="44px"
-        height="44px"
       />
     </div>
   </section>
@@ -96,6 +92,18 @@ export default {
 </script>
 
 <style lang="scss" v-deep scoped>
+.double-block {
+  @media (orientation: portrait) {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  img {
+    @media (orientation: portrait) {
+      height: 220px;
+      object-fit: cover;
+    }
+  }
+}
 .tco {
   &__partners {
     &-wrapper {
@@ -107,20 +115,11 @@ export default {
       justify-content: center;
       gap: 25px;
       text-align: left;
-
       @media (max-width: 1200px) {
         padding: 15px;
       }
-
       @media (max-width: 886px) {
         max-width: inherit;
-      }
-
-      .underline {
-        display: block;
-        position: relative;
-        width: 80%;
-        border: 1px solid #8c9fa6;
       }
       .line {
         display: block;
@@ -128,103 +127,67 @@ export default {
         width: 80vw;
         border: 1px solid #8c9fa6;
       }
-
       h1 {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 38px;
         line-height: 46px;
-        /* or 121% */
-
-        /* tco 3 */
-
         color: #015467;
-
         @media (max-width: 385px) {
           font-size: 32px;
         }
+        @media (orientation: portrait) {
+          font-size: 20px;
+          line-height: 26px;
+          color: #ffffff;
+          position: absolute;
+          left: 16px;
+          top: 40px;
+        }
       }
-
       span {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 300;
         font-size: 38px;
         line-height: 42px;
-        /* identical to box height, or 111% */
-
-        /* tco 3 */
-
         color: #015467;
       }
-
-      .steps {
-        margin-top: auto;
-        display: flex;
-        align-items: center;
-        gap: 2px;
-
-        span {
-          display: block;
-          width: 40px;
-          height: 4px;
-          background: rgba(1, 84, 103, 0.1);
-          border-radius: 4px;
-        }
-
-        .done {
-          background: #5e8698;
-        }
-      }
-
       .amount {
         display: flex;
         flex-direction: column;
         gap: 15px;
         width: 100%;
-
         .item {
           background: #e8f8fe;
           border-radius: 4px;
           padding: 20px;
           width: 100%;
-
           span {
-            font-family: 'Montserrat';
+            font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 28px;
             line-height: 32px;
-            /* identical to box height, or 114% */
-
-            /* black background */
-
             color: #30454e;
+            @media (orientation: portrait) {
+              font-size: 18px;
+              line-height: 24px;
+            }
           }
-
           p {
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
             line-height: 20px;
-            /* identical to box height, or 125% */
-
-            /* grey */
-
             color: #8c9fa6;
+            @media (orientation: portrait) {
+              font-size: 14px;
+              line-height: 18px;
+            }
           }
-        }
-      }
-
-      .years {
-        width: 80%;
-
-        @media (max-width: 886px) {
-          width: 100%;
-          max-width: inherit;
-          margin: auto;
         }
       }
     }
@@ -239,7 +202,12 @@ export default {
   align-items: center;
   position: relative;
   left: calc((100vw - 1176px) / 2);
-  top: -140px;
+  top: 140px;
+  @media (orientation: portrait) {
+    left: 16px;
+    position: absolute;
+    top: 175px;
+  }
   img {
     padding: 12px 18px 12px 14px;
     border: 1px solid #8c9fa6;
@@ -249,9 +217,23 @@ export default {
     pointer-events: auto;
     touch-action: auto;
     background: rgba(1, 84, 103, 0.1);
+    @media (orientation: portrait) {
+      padding: 7px 10px 7px 8px;
+      margin-right: 12px;
+      width: 26px;
+      height: 26px;
+      background: #ffffff;
+    }
   }
   img:last-child {
     padding: 12px 14px 12px 18px;
+    @media (orientation: portrait) {
+      padding: 7px 8px 7px 10px;
+      margin-right: 12px;
+    }
+  }
+  section {
+    position: relative;
   }
   // .disabled {
   //   cursor: not-allowed;
