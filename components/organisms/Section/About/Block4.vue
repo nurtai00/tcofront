@@ -202,7 +202,7 @@ export default {
   align-items: center;
   position: relative;
   left: calc((100vw - 1176px) / 2);
-  top: 140px;
+  top: -140px;
   @media (orientation: portrait) {
     left: 16px;
     position: absolute;

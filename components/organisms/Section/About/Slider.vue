@@ -159,6 +159,6 @@ export default {
   }
 }
 ::v-deep .slider-wrapper {
-  height: 100%;
+  height: 100% !important;
 }
 </style>
