@@ -153,11 +153,6 @@ export default {
           ],
         },
         {
-<<<<<<< HEAD
-          id: 16,
-          type: 'link',
-          text: 'Вакансии'
-=======
           id: 6,
           title: 'Потенциальным поставщикам',
           imgName: 'content6.jpg',
@@ -172,7 +167,6 @@ export default {
               type: 'link',
             },
           ],
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
         },
       ],
       tags: [

@@ -5,10 +5,6 @@
         <AtomsHeading type="h3" class="block__title title">
           {{ data.title }}
         </AtomsHeading>
-<<<<<<< HEAD
-        <div class="block__description">
-          {{ data.description }}
-=======
         <div class="block__content_icon">
           <i :class="`icon-${data.icon}`" />
         </div>
@@ -19,19 +15,15 @@
           <template v-else>
             <slot name="description" />
           </template>
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
         </div>
       </div>
       <div class="block__icon">
         <i :class="`icon-${data.icon}`" />
       </div>
     </div>
-<<<<<<< HEAD
-=======
     <div class="container footer">
       <slot name="footer" />
     </div>
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
   </div>
 </template>
 
@@ -59,15 +51,12 @@ export default {
 
   &__content {
     padding-right: 130px;
-<<<<<<< HEAD
-=======
 
     &_icon {
       display: none;
       font-size: 240px;
       text-align: center;
     }
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
   }
 
   &__title {
@@ -85,8 +74,6 @@ export default {
       color: $c-tco3;
     }
   }
-<<<<<<< HEAD
-=======
 
   .footer {
     margin-top: 20px;
@@ -118,6 +105,5 @@ export default {
       font-size: 125px;
     }
   }
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
 }
 </style>

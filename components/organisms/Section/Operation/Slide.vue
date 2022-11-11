@@ -1,43 +1,17 @@
 <template>
-<<<<<<< HEAD
-  <div class="slide" :class="{ side }">
-    <div
-      class="slide__content container"
-      :class="{ slided: slide, background: data.background }"
-=======
   <div class="slide" :class="{ side, background: data.background }">
-    <div
-      class="slide__content container"
-      :class="{ slided: slide }"
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
-    >
+    <div class="slide__content container" :class="{ slided: slide }">
       <AtomsHeading type="h3" class="slide__title title">
         {{ data.title }}
       </AtomsHeading>
-<<<<<<< HEAD
-      <div class="slide__description">
-=======
       <div v-if="data.description" class="slide__description">
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
         <div
           v-for="(text, key) in data.description"
           :key="key"
           class="slide__description_item"
-<<<<<<< HEAD
         >
           {{ text }}
         </div>
-      </div>
-      <div v-if="data.description.length > 1" class="slide__arrow">
-        <i class="icon-arrowDown" @click="onSlide(false)" />
-        <i class="icon-arrowDown" @click="onSlide(true)" />
-      </div>
-      <template v-if="data.link">
-        <nuxt-link class="slide__link" :to="data.link">
-          <span>Читать дальше</span> <i class="icon-arrow-left" />
-        </nuxt-link>
-=======
-        >{{ text }}</div>
       </div>
       <template v-else>
         <slot />
@@ -52,7 +26,6 @@
         <div class="slide__link" @click="data.link()">
           <span>Читать дальше</span> <i class="icon-arrow-left" />
         </div>
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
       </template>
     </div>
     <div class="slide__image">
@@ -88,10 +61,7 @@ export default {
 <style lang="scss" scoped>
 .slide {
   display: flex;
-<<<<<<< HEAD
-=======
   position: relative;
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
 
   &__content {
     width: 50%;
@@ -102,20 +72,12 @@ export default {
         &__arrow {
           i:first-child {
             cursor: pointer;
-<<<<<<< HEAD
-            background-color: $c-tco33;
-=======
             background-color: white;
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
           }
 
           i:last-child {
             cursor: default;
-<<<<<<< HEAD
-            background-color: transparent;
-=======
             background-color: $c-tco33;
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
           }
         }
 
@@ -126,17 +88,10 @@ export default {
         }
       }
     }
-<<<<<<< HEAD
-
-    &.background {
-      background-color: $c-tco33;
-    }
-=======
   }
 
   &.background {
     background-color: $c-tco33;
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
   }
 
   &__link {
@@ -199,20 +154,13 @@ export default {
       transform: rotate(90deg);
       transform-origin: center;
       font-size: 11px;
-<<<<<<< HEAD
-=======
       background-color: $c-tco33;
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
 
       &:last-child {
         transform: rotate(-90deg);
         margin-left: 24px;
         cursor: pointer;
-<<<<<<< HEAD
-        background-color: $c-tco33;
-=======
         background: white;
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
       }
     }
   }
@@ -225,8 +173,6 @@ export default {
       height: 100%;
     }
   }
-<<<<<<< HEAD
-=======
 
   @include tablet {
     flex-direction: column-reverse;
@@ -303,6 +249,5 @@ export default {
       }
     }
   }
->>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
 }
 </style>
