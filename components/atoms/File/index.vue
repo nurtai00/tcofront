@@ -1,7 +1,7 @@
 <template>
   <div class="file">
     <div class="file__image">
-      <img :src="`${require(`@/assets/img/${icon}.svg`)}`" alt="file format">
+      <img :src="`${require(`@/assets/img/${icon}.svg`)}`" alt="file format" />
     </div>
     <a :href="file" class="file__name">
       {{ text }}
@@ -11,20 +11,20 @@
 
 <script>
 export default {
-  name: 'file',
+  name: 'File',
   props: {
     file: {
       type: String,
-      required: true
+      required: true,
     },
     text: {
       type: String,
-      default: ''
+      default: '',
     },
     icon: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
 }
 </script>
@@ -50,13 +50,13 @@ export default {
   &__name {
     font-size: 20px;
     line-height: 28px;
-    color: #30454E;
+    color: #30454e;
     text-decoration: underline;
 
     @include phone {
       font-size: 16px;
       line-height: 20px;
-      color: #00B0F0;
+      color: #00b0f0;
     }
   }
 }

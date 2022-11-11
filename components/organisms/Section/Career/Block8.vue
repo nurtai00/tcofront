@@ -2,7 +2,7 @@
   <div class="news_career">
     <div class="container">
       <div class="news_title">
-        <AtomsTitle class="atoms_title"> Новости ТШО </AtomsTitle>
+        <AtomsTitle class="atoms_title" small> Новости ТШО </AtomsTitle>
         <nuxt-link to="/news">Все Новости ТШО</nuxt-link>
       </div>
       <AtomsTag
@@ -85,13 +85,6 @@ export default {
     line-height: 22px;
     text-decoration-line: underline;
     color: #00b0f0;
-  }
-}
-.atoms_title::v-deep {
-  h1 {
-    font-size: 38px;
-    line-height: 46px;
-    color: #30454e;
   }
 }
 .atoms_tag {

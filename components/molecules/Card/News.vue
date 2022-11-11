@@ -1,5 +1,5 @@
 <template>
-  <div class="news_card">
+  <div class="news_card" @click="navNew">
     <img :src="news.img" alt="" />
     <div>
       <p :style="{ color: news.tag.color }">{{ news.tag.text }}</p>
@@ -18,6 +18,11 @@ export default {
       required: true,
     },
   },
+  methods: {
+    navNew() {
+      this.$router.push('/news/1')
+    },
+  },
 }
 </script>
 
@@ -25,6 +30,7 @@ export default {
 .news_card {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   img {
     width: 100%;
     height: auto;

@@ -1,9 +1,6 @@
 <template>
   <div class="slide" :class="{ side, background: data.background }">
-    <div
-      class="slide__content container"
-      :class="{ slided: slide }"
-    >
+    <div class="slide__content container" :class="{ slided: slide }">
       <AtomsHeading type="h3" class="slide__title title">
         {{ data.title }}
       </AtomsHeading>
@@ -12,7 +9,9 @@
           v-for="(text, key) in data.description"
           :key="key"
           class="slide__description_item"
-        >{{ text }}</div>
+        >
+          {{ text }}
+        </div>
       </div>
       <template v-else>
         <slot />

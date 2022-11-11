@@ -24,16 +24,27 @@
     </div>
 
     <!--    Mask, rules-->
+    <label v-if="type === 'file'" class="input file" :for="id">
+      <div class="file__info">
+        <slot name="info" />
+      </div>
+      <div class="append">
+        <slot name="append" />
+      </div>
+    </label>
     <input
+      v-show="type !== 'file'"
       v-if="!textarea"
       :id="id"
       v-model="model"
+      :class="{ outlined }"
       :type="getType"
       :placeholder="getPlaceholder"
       :name="name"
       :disabled="disabled"
       v-bind="$attrs"
       @input="validateCheck"
+      @change="onChangeHandler($event)"
       @keydown="onKey"
       @focus="onFocus"
       @blur="onBlur"
@@ -91,6 +102,10 @@
 export default {
   name: 'Input',
   props: {
+    outlined: {
+      type: Boolean,
+      default: false,
+    },
     /**
      * Сюда пробрасывать переменную через v-model
      * @model
@@ -126,7 +141,7 @@ export default {
       type: String,
       default: 'text',
       validator(value) {
-        const types = ['text', 'number', 'password']
+        const types = ['text', 'number', 'password', 'file']
         if (!types.includes(value)) {
           console.log(
             '\x1B[31m INPUT',
@@ -287,7 +302,6 @@ export default {
          * @property ['value', 'maskValue(value)']
          */
         this.$emit('input', this.mask ? this.maskValue(value) : value)
-
         /**
          * setSelectionRange чтобы поле не переключал курсор при вводе данных
          */
@@ -357,6 +371,7 @@ export default {
       }
 
       this.error = this.$services.validate.validate(this.formatRules, value)
+      this.$emit('error', this.error)
     },
     // PreValidate check if rules exist
     validateCheck(e) {
@@ -366,6 +381,14 @@ export default {
       } else {
         this.error = []
       }
+    },
+    onChangeHandler(event) {
+      if (!event) {
+        return
+      }
+      console.log(event.target.value)
+      this.validateCheck(event)
+      this.$emit('change', event)
     },
     // Cursor selection position save
     onKey(e) {
@@ -414,15 +437,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$border: 1px solid blue;
-$border-hover: 1px solid darkblue;
-$border-focus: 1px solid midnightblue;
+$border: 1px solid rgba($c-text, 20%);
+$border-hover: 1px solid rgba($c-text, 40%);
+$border-focus: 1px solid rgba($c-text, 60%);
 $border-error: 1px solid #ffd8d8;
 
 $background: #fff;
 $background-error: #ffd8d8;
-$background-hover: #f5f5f5;
-$background-focus: #eeeeee;
+$background-hover: white;
+$background-focus: white;
 
 $border-radius: 4px;
 
@@ -433,22 +456,22 @@ $input-height: 56px;
 $input-size: 16px;
 
 $placeholder-default-size: 16px;
-$placeholder-default-color: gray;
+$placeholder-default-color: $c-text;
 $placeholder-default-error-color: red;
 $placeholder-default-opacity: 0.7;
 $placeholder-default-disabled-opacity: 0.5;
 $placeholder-default-bottom: 8px;
 
 $placeholder-size: 16px;
-$placeholder-color: gray;
+$placeholder-color: $c-text;
 $placeholder-opacity: 0.7;
 $placeholder-disabled-opacity: 0.5;
 
 $placeholder-animate-size: 16px;
-$placeholder-animate-color: gray;
+$placeholder-animate-color: $c-text;
 $placeholder-animate-opacity: 0.7;
 $placeholder-animate-disabled-opacity: 0.5;
-$placeholder-animate-transition: 0.6s ease;
+$placeholder-animate-transition: 0.35s ease;
 
 $error-size: 16px;
 $error-color: red;
@@ -459,7 +482,29 @@ $icons-size: 24px;
 .input {
   display: block;
   position: relative;
-
+  .file {
+    display: flex;
+    border-bottom: 1px solid rgba($c-text, 20%);
+    padding-bottom: 10px;
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    & .append {
+      margin-left: auto;
+    }
+  }
+  .outlined {
+    border: 0;
+    border-bottom: 1px solid rgba($c-text, 20%);
+    border-radius: 0;
+  }
   .clear,
   .password {
     position: absolute;
@@ -506,15 +551,26 @@ $icons-size: 24px;
     border-radius: $border-radius;
     border: $border;
     transition: $input-transition;
-    background: $background;
+    background: transparent;
+    &.outlined {
+      &:hover {
+        border: none;
+        border-bottom: 1px solid rgba($c-text, 30%);
+        background: rgba($c-text, 5%);
+      }
 
+      &:focus {
+        border: none;
+        border-bottom: 1px solid rgba($c-text, 60%);
+        background-color: transparent;
+      }
+    }
     &::placeholder {
       font-size: $placeholder-default-size;
       color: $placeholder-default-color;
       opacity: $placeholder-default-opacity;
       margin-bottom: $placeholder-default-bottom;
     }
-
     &:hover {
       border: $border-hover;
       background: $background-hover;
@@ -546,6 +602,7 @@ $icons-size: 24px;
     opacity: $placeholder-default-opacity;
     margin-bottom: $placeholder-default-bottom;
     cursor: text;
+    font-weight: 600;
   }
 
   .errors {

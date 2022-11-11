@@ -5,7 +5,7 @@
       <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
       <AtomsBreadOption to="/news/publications">Publications</AtomsBreadOption>
     </MoleculesBreadcrumbs>
-    <h1>Публикации</h1>
+    <AtomsTitle class="mb20 mt20" small> Публикации </AtomsTitle>
     <div class="public_list">
       <div v-for="item in 9" :key="item">
         <img src="@/assets/icons/pdf.svg" alt="pdf" width="30" height="40" />
@@ -26,37 +26,6 @@ export default {}
 .public {
   padding-top: 20px;
   margin-bottom: 40px;
-  h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
-    color: #015467;
-    margin: 20px 0;
-    position: relative;
-    padding-left: 24px;
-    margin-bottom: 40px;
-    @media (orientation: portrait) {
-      font-size: 24px;
-      line-height: 32px;
-      padding-left: 18px;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0px;
-      top: 12px;
-      width: 12px;
-      height: 12px;
-      background: #00b0f0;
-      border-radius: 50%;
-      @media (orientation: portrait) {
-        width: 10px;
-        height: 10px;
-        top: 6px;
-      }
-    }
-  }
   &_list {
     display: grid;
     grid-gap: 24px;

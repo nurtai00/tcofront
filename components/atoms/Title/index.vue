@@ -1,6 +1,7 @@
 <template>
   <div class="title">
     <svg
+      v-if="point"
       width="12"
       height="12"
       viewBox="0 0 12 12"
@@ -9,12 +10,25 @@
     >
       <circle cx="6" cy="6" r="6" fill="#00B0F0" />
     </svg>
-    <AtomsHeading type="h1" color="main"><slot /></AtomsHeading>
+    <AtomsHeading :type="small ? 'h3' : 'h1'" color="main">
+      <slot />
+    </AtomsHeading>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    small: {
+      type: Boolean,
+      default: false,
+    },
+    point: {
+      type: Boolean,
+      default: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -38,6 +52,12 @@ export default {}
     @include tablet() {
       font-size: 36px;
       line-height: 36px;
+    }
+  }
+  h3 {
+    @include phone() {
+      font-size: 20px !important;
+      line-height: 26px !important;
     }
   }
 }

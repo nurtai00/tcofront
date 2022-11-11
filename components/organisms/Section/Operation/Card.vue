@@ -10,25 +10,25 @@
 
 <script>
 export default {
-  name: 'card',
+  name: 'Card',
   props: {
     content: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   methods: {
     onSideModal() {
       this.$store.commit('side/open', this.content)
-    }
-  }
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .card {
   background-color: white;
-  box-shadow: 0 10px 30px rgba(1, 84, 103, .1);
+  box-shadow: 0 10px 30px rgba(1, 84, 103, 0.1);
   border-radius: 4px;
   padding: 30px 30px 64px;
   position: relative;

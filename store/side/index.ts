@@ -3,7 +3,7 @@ import { ISide } from 'models/side'
 
 export const state = () => ({
   side: Object as ISide,
-  open: false
+  open: false,
 })
 
 export type ModalStateT = ReturnType<typeof state>

@@ -2,6 +2,7 @@ export default class Slide {
   constructor(options) {
     if (typeof window !== 'undefined') {
       this.el = document.getElementById(options.id)
+      console.log(this.el)
       this.options = options
       this.init()
     }
@@ -105,17 +106,29 @@ export default class Slide {
   drag() {
     const self = this
     let touchstartX, touchendX
-    const touchableElement = document.body
-    touchableElement.addEventListener('mousedown', function (event) {
-      touchstartX = event.pageX
-      event.preventDefault()
-    })
+    const touchableElement = this.el.querySelector('.slider-wrapper')
+    if (window.innerWidth < 550) {
+      touchableElement.addEventListener('touchstart', function (event) {
+        touchstartX = event.touches[0].pageX
+        event.preventDefault()
+      })
+      touchableElement.addEventListener('touchend', function (event) {
+        touchendX = event.changedTouches[0].pageX
 
-    touchableElement.addEventListener('mouseup', function (event) {
-      touchendX = event.pageX
+        self._handleGesture(touchstartX, touchendX)
+      })
+    } else {
+      touchableElement.addEventListener('mousedown', function (event) {
+        touchstartX = event.pageX
+        event.preventDefault()
+      })
 
-      self._handleGesture(touchstartX, touchendX)
-    })
+      touchableElement.addEventListener('mouseup', function (event) {
+        touchendX = event.pageX
+
+        self._handleGesture(touchstartX, touchendX)
+      })
+    }
   }
 
   touch() {
@@ -199,7 +212,13 @@ export default class Slide {
       function () {
         self.index++
         self.previous.style.display = 'block'
-
+        console.log(self.slides.length, self.index)
+        if (self.index === self.slides.length) {
+          self.next.classList.add('disabled')
+          self.previous.classList.remove('disabled')
+        } else {
+          self.next.classList.remove('disabled')
+        }
         self._slideTo(self.index)
         self._highlightCurrentLink(self.index)
       },
@@ -211,6 +230,12 @@ export default class Slide {
       function () {
         self.index--
         self.next.style.display = 'block'
+        if (self.index === 0) {
+          self.previous.classList.add('disabled')
+          self.next.classList.remove('disabled')
+        } else {
+          self.previous.classList.remove('disabled')
+        }
 
         self._slideTo(self.index)
         self._highlightCurrentLink(self.index)
