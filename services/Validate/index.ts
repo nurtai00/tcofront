@@ -77,7 +77,7 @@ const listOfRules: any = {
   },
 
   tel: (e: string) => {
-    const re = /^\d{3}-\d{3}-\d{4}$/
+    const re = /^\+7\s[(]\d{3}[)]\s\d{3}-\d{2}-\d{2}/
     return re.test(e)
       ? { valid: true }
       : { valid: false, message: 'This field must be a valid tel' }
@@ -117,7 +117,11 @@ const listOfRules: any = {
       ? { valid: true }
       : { valid: false, message: 'This field must be a valid password' }
   },
-
+  file: (e: string) => {
+    return e.length === 0
+      ? { valid: false, message: 'This field are required' }
+      : { valid: true }
+  },
   confirmed: (e: string, confirmed: string) => {
     return e === confirmed
       ? { valid: true }
