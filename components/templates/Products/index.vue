@@ -86,9 +86,7 @@
       />
       <p class="slide_text">
         Пожалуйста, отправьте все заполненные документы на адрес:
-        <a href="mailto:mtadmin@tengizchevroil.com"
-          >mtadmin@tengizchevroil.com</a
-        >
+        <a href="mailto:mtadmin@tengizchevroil.com">mtadmin@tengizchevroil.com</a>
       </p>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSvg
