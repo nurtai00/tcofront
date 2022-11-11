@@ -22,6 +22,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .list {
+  max-width: 696px;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
