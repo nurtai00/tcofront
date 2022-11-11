@@ -1,25 +1,25 @@
 import { resolve } from 'path'
 // eslint-disable-next-line nuxt/no-cjs-in-config
-const fs = require('fs')
-// eslint-disable-next-line nuxt/no-cjs-in-config
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-// eslint-disable-next-line nuxt/no-cjs-in-config
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-// eslint-disable-next-line nuxt/no-cjs-in-config
-const webpack = require('webpack')
-const files = fs.readdirSync('./pages/')
-const htmlPlugins = files.map((file) => {
-  return new HtmlWebpackPlugin({
-    template: `./pages/${file}/index.html`,
-    filename: `./${file}/index.html`,
-    chunks: ['main'],
-  })
-})
-const entries = {}
-for (const file of files) {
-  entries[`${file}/index.js`] = `./pages/${file}/index.js`
-}
-console.log(entries)
+// const fs = require('fs')
+// // eslint-disable-next-line nuxt/no-cjs-in-config
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
+// // eslint-disable-next-line nuxt/no-cjs-in-config
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+// // eslint-disable-next-line nuxt/no-cjs-in-config
+// const webpack = require('webpack')
+// const files = fs.readdirSync('./pages/')
+// const htmlPlugins = files.map((file) => {
+//   return new HtmlWebpackPlugin({
+//     template: `./pages/${file}/index.html`,
+//     filename: `./${file}/index.html`,
+//     chunks: ['main'],
+//   })
+// })
+// const entries = {}
+// for (const file of files) {
+//   entries[`${file}/index.js`] = `./pages/${file}/index.js`
+// }
+// console.log(entries)
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -106,36 +106,33 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extend(config, { isClient }) {
-      if (isClient) {
-        console.log(config.entry) // { app: [ "path/to/client.js", "eventsource-polyfill", "etc..." ] } (currently undefined)
-      } else {
-        console.log(config.entry) // { app: [ "path/to/server.js" ] } (currently undefined)
-      }
-
-      // config.entry = {
-      // ...entries,
-      // hot: 'webpack/hot/dev-server.js',
-      // client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
-      // }
-
-      // This is ok
-      // for (const [key, value] of Object.entries(entries)) {
-      //   config.entry[key] = resolve(value)
-      // }
-      // config.entry.custom = resolve('custom-entry.js')
-
-      // Throws error "entry.app is reserved by Nuxt"
-      // Could use Object.defineProperty for the
-      // config object passed to build.extend to
-      // throw an error when attempting to set entry.app
-      // config.entry.app = resolve('app.js')
-    },
-    // plugins: [
-    //   new MiniCssExtractPlugin({
-    //     filename: '[name].css',
-    //   }),
-    //   new webpack.HotModuleReplacementPlugin(),
-    // ].concat(htmlPlugins),
+    // extend(config, { isClient }) {
+    //   if (isClient) {
+    //     console.log(config.entry) // { app: [ "path/to/client.js", "eventsource-polyfill", "etc..." ] } (currently undefined)
+    //   } else {
+    //     console.log(config.entry) // { app: [ "path/to/server.js" ] } (currently undefined)
+    //   }
+    // config.entry = {
+    // ...entries,
+    // hot: 'webpack/hot/dev-server.js',
+    // client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
+    // }
+    // This is ok
+    // for (const [key, value] of Object.entries(entries)) {
+    //   config.entry[key] = resolve(value)
+    // }
+    // config.entry.custom = resolve('custom-entry.js')
+    // Throws error "entry.app is reserved by Nuxt"
+    // Could use Object.defineProperty for the
+    // config object passed to build.extend to
+    // throw an error when attempting to set entry.app
+    // config.entry.app = resolve('app.js')
   },
+  // plugins: [
+  //   new MiniCssExtractPlugin({
+  //     filename: '[name].css',
+  //   }),
+  //   new webpack.HotModuleReplacementPlugin(),
+  // ].concat(htmlPlugins),
+  // },
 }
