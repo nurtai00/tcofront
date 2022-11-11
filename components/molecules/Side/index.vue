@@ -4,14 +4,16 @@
       <div class="side__closing" @click="close" />
       <div class="side__content">
         <div class="side__content_header">
-          <div class="side__content_number">{{ this.side.number }}</div>
+          <div class="side__content_number">{{ side.number }}</div>
           <div class="side__content_close" @click="close">
             <i class="icon-close" />
           </div>
         </div>
-        <div class="side__content_name">{{ this.side.name }}</div>
-        <div v-if="this.side.description" class="side__content_description">{{ this.side.description }}</div>
-        <div v-else v-html="this.side.html" />
+        <div class="side__content_name">{{ side.name }}</div>
+        <div v-if="side.description" class="side__content_description">
+          {{ side.description }}
+        </div>
+        <div v-else v-html="side.html" />
       </div>
     </div>
   </transition>
@@ -19,20 +21,20 @@
 
 <script>
 export default {
-  name: 'side',
+  name: 'Side',
   computed: {
     isOpen() {
       return this.$store.state.side.open
     },
     side() {
       return this.$store.state.side.side
-    }
+    },
   },
   methods: {
     close() {
       this.$store.commit('side/close')
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -43,7 +45,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  transition: .8s ease-in-out;
+  transition: 0.8s ease-in-out;
 
   &__closing {
     width: 100%;
@@ -54,8 +56,8 @@ export default {
     right: 0;
     cursor: pointer;
     background-color: $c-tco1;
-    transition: .8s ease-in-out;
-    opacity: .9;
+    transition: 0.8s ease-in-out;
+    opacity: 0.9;
   }
 
   &__content {
@@ -149,7 +151,8 @@ export default {
   }
 }
 
-.side-enter-active, .side-leave-active {
+.side-enter-active,
+.side-leave-active {
   transform: translateX(100%);
 }
 
@@ -186,7 +189,8 @@ export default {
       margin-bottom: 20px;
     }
 
-    p, ul li {
+    p,
+    ul li {
       font-size: 16px;
       line-height: 20px;
     }
