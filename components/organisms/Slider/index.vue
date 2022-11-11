@@ -31,10 +31,12 @@ export default {
     },
   },
   mounted() {
-    window.addEventListener('load', () => {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const slider = new Slide(this.options)
-    })
+    // window.addEventListener('load', () => {
+    //   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    //   const slider = new Slide(this.options)
+    // })
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const slider = new Slide(this.options)
   },
 }
 </script>
@@ -53,6 +55,9 @@ export default {
   align-items: center;
   width: auto;
   animation: 0.5s;
+  @media (orientation: portrait) {
+    align-items: flex-start;
+  }
 }
 
 .slider-wrapper > .slide:first-child {

@@ -2,7 +2,6 @@ export default class Slide {
   constructor(options) {
     if (typeof window !== 'undefined') {
       this.el = document.getElementById(options.id)
-      console.log(this.el)
       this.options = options
       this.init()
     }
@@ -110,20 +109,23 @@ export default class Slide {
     if (window.innerWidth < 550) {
       touchableElement.addEventListener('touchstart', function (event) {
         touchstartX = event.touches[0].pageX
-        event.preventDefault()
+        // event.preventDefault()
       })
       touchableElement.addEventListener('touchend', function (event) {
         touchendX = event.changedTouches[0].pageX
-
-        self._handleGesture(touchstartX, touchendX)
+        if (Math.abs(touchstartX - touchendX) > 80) {
+          self._handleGesture(touchstartX, touchendX)
+        }
       })
     } else {
       touchableElement.addEventListener('mousedown', function (event) {
+        console.log({ event })
         touchstartX = event.pageX
         event.preventDefault()
       })
 
       touchableElement.addEventListener('mouseup', function (event) {
+        console.log({ event })
         touchendX = event.pageX
 
         self._handleGesture(touchstartX, touchendX)

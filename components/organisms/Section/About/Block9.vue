@@ -134,6 +134,14 @@ export default {
         @media (max-width: 385px) {
           font-size: 32px;
         }
+        @media (orientation: portrait) {
+          font-size: 20px;
+          line-height: 26px;
+          color: #ffffff;
+          position: absolute;
+          left: 16px;
+          top: 40px;
+        }
       }
       span {
         font-family: 'Roboto';
@@ -150,12 +158,31 @@ export default {
 ::v-deep .slider-wrapper {
   height: auto;
 }
+.double-block {
+  @media (orientation: portrait) {
+    position: relative;
+  }
+  img {
+    @media (orientation: portrait) {
+      height: 216px;
+      object-fit: cover;
+    }
+  }
+}
+section {
+  position: relative;
+}
 .main_b9_actions {
   display: flex;
   align-items: center;
   position: relative;
   left: calc(50% + 40px);
   top: -85px;
+  @media (orientation: portrait) {
+    left: 16px;
+    position: absolute;
+    top: 175px;
+  }
   img {
     padding: 12px 18px 12px 14px;
     border: 1px solid #8c9fa6;
@@ -165,9 +192,20 @@ export default {
     pointer-events: auto;
     touch-action: auto;
     background: rgba(1, 84, 103, 0.1);
+    @media (orientation: portrait) {
+      padding: 7px 10px 7px 8px;
+      margin-right: 12px;
+      width: 26px;
+      height: 26px;
+      background: #ffffff;
+    }
   }
   img:last-child {
     padding: 12px 14px 12px 18px;
+    @media (orientation: portrait) {
+      padding: 7px 8px 7px 10px;
+      margin-right: 12px;
+    }
   }
   // .disabled {
   //   cursor: not-allowed;
