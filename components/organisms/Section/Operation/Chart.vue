@@ -1,6 +1,7 @@
 <template>
   <div class="chart">
     <div class="container">
+<<<<<<< HEAD
       <AtomsHeading type="h3" class="chart__title">
         Техника безопасности
       </AtomsHeading>
@@ -11,6 +12,21 @@
                 :series="series"
               />
             </client-only>
+=======
+      <AtomsHeading
+        type="h3"
+        class="chart__title"
+      >
+        Техника безопасности
+      </AtomsHeading>
+      <client-only>
+        <VueApexCharts
+          class="chart__item"
+          :options="chartOptions"
+          :series="series"
+        />
+      </client-only>
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
       <div class="chart__description">
         ТШО сохраняет за собой лидирующие позиции в области обеспечения
         промышленной безопасности по таким стандартным показателям как,
@@ -116,6 +132,14 @@ export default {
   &__description {
     font-size: 20px;
     line-height: 28px;
+<<<<<<< HEAD
+=======
+
+    @include phone {
+      font-size: 16px;
+      line-height: 20px;
+    }
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
   }
 }
 </style>

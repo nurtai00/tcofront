@@ -1,17 +1,29 @@
 <template>
+<<<<<<< HEAD
   <div class="slide" :class="{ side }">
     <div
       class="slide__content container"
       :class="{ slided: slide, background: data.background }"
+=======
+  <div class="slide" :class="{ side, background: data.background }">
+    <div
+      class="slide__content container"
+      :class="{ slided: slide }"
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
     >
       <AtomsHeading type="h3" class="slide__title title">
         {{ data.title }}
       </AtomsHeading>
+<<<<<<< HEAD
       <div class="slide__description">
+=======
+      <div v-if="data.description" class="slide__description">
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
         <div
           v-for="(text, key) in data.description"
           :key="key"
           class="slide__description_item"
+<<<<<<< HEAD
         >
           {{ text }}
         </div>
@@ -24,6 +36,23 @@
         <nuxt-link class="slide__link" :to="data.link">
           <span>Читать дальше</span> <i class="icon-arrow-left" />
         </nuxt-link>
+=======
+        >{{ text }}</div>
+      </div>
+      <template v-else>
+        <slot />
+      </template>
+      <template v-if="data.description">
+        <div v-if="data.description.length > 1" class="slide__arrow">
+          <i class="icon-arrowDown" @click="onSlide(false)" />
+          <i class="icon-arrowDown" @click="onSlide(true)" />
+        </div>
+      </template>
+      <template v-if="data.link">
+        <div class="slide__link" @click="data.link()">
+          <span>Читать дальше</span> <i class="icon-arrow-left" />
+        </div>
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
       </template>
     </div>
     <div class="slide__image">
@@ -59,6 +88,10 @@ export default {
 <style lang="scss" scoped>
 .slide {
   display: flex;
+<<<<<<< HEAD
+=======
+  position: relative;
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
 
   &__content {
     width: 50%;
@@ -69,12 +102,20 @@ export default {
         &__arrow {
           i:first-child {
             cursor: pointer;
+<<<<<<< HEAD
             background-color: $c-tco33;
+=======
+            background-color: white;
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
           }
 
           i:last-child {
             cursor: default;
+<<<<<<< HEAD
             background-color: transparent;
+=======
+            background-color: $c-tco33;
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
           }
         }
 
@@ -85,10 +126,17 @@ export default {
         }
       }
     }
+<<<<<<< HEAD
 
     &.background {
       background-color: $c-tco33;
     }
+=======
+  }
+
+  &.background {
+    background-color: $c-tco33;
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
   }
 
   &__link {
@@ -151,12 +199,20 @@ export default {
       transform: rotate(90deg);
       transform-origin: center;
       font-size: 11px;
+<<<<<<< HEAD
+=======
+      background-color: $c-tco33;
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
 
       &:last-child {
         transform: rotate(-90deg);
         margin-left: 24px;
         cursor: pointer;
+<<<<<<< HEAD
         background-color: $c-tco33;
+=======
+        background: white;
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
       }
     }
   }
@@ -169,5 +225,84 @@ export default {
       height: 100%;
     }
   }
+<<<<<<< HEAD
+=======
+
+  @include tablet {
+    flex-direction: column-reverse;
+
+    &.side {
+      flex-direction: column-reverse;
+    }
+
+    &__image {
+      width: 100%;
+      height: 412px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &__content {
+      max-width: 100%;
+      padding: 20px 16px;
+    }
+
+    &.slide {
+      .slide__content {
+        width: 100%;
+        padding: 20px 16px;
+      }
+    }
+
+    &__title {
+      position: absolute;
+      top: 20px;
+      color: white;
+      width: 70%;
+    }
+
+    &__arrow {
+      position: absolute;
+      top: 320px;
+    }
+  }
+
+  @include phone {
+    &__image {
+      height: 218px;
+    }
+
+    &__title {
+      width: 70%;
+    }
+
+    &__arrow {
+      top: 157px;
+
+      i {
+        width: 24px;
+        height: 24px;
+        font-size: 6px;
+
+        &:last-child {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    &__description {
+      &_item {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+>>>>>>> 23026837d9aece81f91d7ef3b00f4fdc295a9903
 }
 </style>

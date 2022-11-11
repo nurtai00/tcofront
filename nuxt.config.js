@@ -63,6 +63,7 @@ export default {
     { src: '~/plugins/services/index.ts' },
     { src: '~/plugins/repositories/index.ts' },
     { src: '~/plugins/notification' },
+    { src: '~/plugins/vue-select.js' },
   ],
   alias: {
     atoms: resolve(__dirname, 'components/atoms'),

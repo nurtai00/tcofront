@@ -27,7 +27,7 @@ export default {
       tags: [
         {
           text: 'Вакансии',
-          url: '123',
+          url: '/vacancy',
         },
         {
           text: 'Стажировка В ТШО',
