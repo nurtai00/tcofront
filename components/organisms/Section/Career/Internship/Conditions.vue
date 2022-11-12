@@ -75,37 +75,68 @@ export default {
 .conditions {
   width: 100%;
   padding: 80px 0;
+  @include tablet() {
+    padding: 40px 0;
+  }
+  @include phone() {
+    padding: 40px 16px;
+  }
   h3 {
     margin-bottom: 40px;
+    @include tablet() {
+      margin-bottom: 20px;
+    }
   }
 }
 .tag::v-deep {
   padding: 16px 20px !important;
   margin: 0;
   margin-bottom: 38px !important;
+  @include tablet() {
+    padding: 6px 10px !important;
+    margin-bottom: 20px !important;
+  }
 }
 .conditions_cards {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
   grid-gap: 24px;
+  @include tablet() {
+    grid-template-columns: repeat(auto-fit, minmax(167px, 1fr));
+    grid-gap: 8px 9px;
+  }
 }
 .conditions_small_info {
   width: 100%;
   background: #f2f6f7;
   padding: 40px;
   margin-top: 40px;
+  @include tablet() {
+    padding: 20px;
+    margin-top: 20px;
+  }
   p {
     color: #30454e;
     margin-bottom: 8px;
+    @include tablet() {
+      font-size: 16px;
+      line-height: 20px;
+    }
     span {
       font-weight: 600;
       color: #00b0f0;
+      @include tablet() {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
   }
   ul {
     padding-left: 30px;
+    @include tablet() {
+      padding-left: 20px;
+    }
     li {
       font-family: 'Roboto';
       font-style: normal;
@@ -114,6 +145,10 @@ export default {
       line-height: 28px;
       color: #30454e;
       list-style-type: disc;
+      @include tablet() {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
   }
 }
