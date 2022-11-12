@@ -46,7 +46,6 @@ $Mob_hs: ('Montserrat' 24px 700 32px), ('Montserrat' 22px 700 28px),
     font-size: nth(nth($hs, $i), 2);
     font-weight: nth(nth($hs, $i), 3);
     line-height: nth(nth($hs, $i), 4);
-<<<<<<< HEAD
   }
   @include tablet() {
     h#{$i} {
@@ -54,20 +53,19 @@ $Mob_hs: ('Montserrat' 24px 700 32px), ('Montserrat' 22px 700 28px),
       font-size: nth(nth($Mob_hs, $i), 2);
       font-weight: nth(nth($Mob_hs, $i), 3);
       line-height: nth(nth($Mob_hs, $i), 4);
-=======
-    @include wide-tablet {
-      font-size: calc(nth(nth($hs, $i), 2) - 8px);
-      line-height: calc(nth(nth($hs, $i), 4) - 8px);
-    }
-    @include tablet {
-      font-size: calc(nth(nth($hs, $i), 2) - 14px);
-      line-height: calc(nth(nth($hs, $i), 4) - 14px);
-    }
-    @include phone() {
-      font-size: 20px;
->>>>>>> main
     }
   }
+  // @include wide-tablet {
+  //   font-size: calc(nth(nth($hs, $i), 2) - 8px);
+  //   line-height: calc(nth(nth($hs, $i), 4) - 8px);
+  // }
+  // @include tablet {
+  //   font-size: calc(nth(nth($hs, $i), 2) - 14px);
+  //   line-height: calc(nth(nth($hs, $i), 4) - 14px);
+  // }
+  // @include phone() {
+  //   font-size: 20px;
+  // }
 }
 .main {
   color: $c-main;
