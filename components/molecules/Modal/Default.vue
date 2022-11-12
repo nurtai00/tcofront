@@ -6,7 +6,7 @@
     <AtomsHeading type="h3" color="text">
       {{ payload.title }}
     </AtomsHeading>
-    <p v-html="payload.text" class="default_modal_text"></p>
+    <p class="default_modal_text" v-html="payload.text"></p>
   </div>
 </template>
 

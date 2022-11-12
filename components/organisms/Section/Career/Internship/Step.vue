@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="content">
-        <div v-html="text[active_step]" class="content_step_text"></div>
+        <div class="content_step_text" v-html="text[active_step]"></div>
         <img src="@/assets/img/career/stepper_img.svg" alt="" />
       </div>
     </div>

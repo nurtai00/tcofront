@@ -4,13 +4,13 @@
       <AtomsHeading type="h3" class="chart__title">
         Техника безопасности
       </AtomsHeading>
-            <client-only>
-              <VueApexCharts
-                class="chart__item"
-                :options="chartOptions"
-                :series="series"
-              />
-            </client-only>
+      <client-only>
+        <VueApexCharts
+          class="chart__item"
+          :options="chartOptions"
+          :series="series"
+        />
+      </client-only>
       <div class="chart__description">
         ТШО сохраняет за собой лидирующие позиции в области обеспечения
         промышленной безопасности по таким стандартным показателям как,
@@ -116,6 +116,11 @@ export default {
   &__description {
     font-size: 20px;
     line-height: 28px;
+
+    @include phone {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 </style>

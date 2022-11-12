@@ -12,14 +12,14 @@
             №086 , связанных с целью участия в программе учебной практики ТШО.
           </p>
           <AtomsCheckbox
+            id="checked"
             :value="checked"
+            class="checkbox"
             @change="
               (val) => {
                 checked = val
               }
             "
-            id="checked"
-            class="checkbox"
           >
             Я осведомлен(а), что мои персональные данные будут уничтожены по
             умолчанию через 6 месяцев с момента подачи заявки на учебную
@@ -28,8 +28,8 @@
             соглашаюсь со всеми его условиями.
           </AtomsCheckbox>
           <AtomsButton :disabled="disabled">
-            Сохранить и продолжить</AtomsButton
-          >
+            Сохранить и продолжить
+          </AtomsButton>
         </div>
       </div>
     </div>

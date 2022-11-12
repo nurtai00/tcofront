@@ -14,7 +14,7 @@
             <Nuxt-Link to="/">Поставщикам</Nuxt-Link>
           </li>
           <li>
-            <Nuxt-Link to="/">Продукция</Nuxt-Link>
+            <Nuxt-Link to="/products">Продукция</Nuxt-Link>
           </li>
           <li>
             <Nuxt-Link to="/">ПБР-ПУУД</Nuxt-Link>
