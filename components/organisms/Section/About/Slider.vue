@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     slideTo(index) {
-      console.log('has slidet', index)
+      console.log(index)
     },
   },
 }
