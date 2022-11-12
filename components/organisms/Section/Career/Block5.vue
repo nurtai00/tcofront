@@ -76,8 +76,14 @@ export default {
   width: 100%;
   background: #f2f6f7;
   padding: 80px 0;
+  @include tablet() {
+    padding: 40px 0;
+  }
   h3 {
     margin-bottom: 36px;
+    @include tablet() {
+      margin-bottom: 40px;
+    }
   }
   p {
     font-family: 'Roboto';
@@ -86,35 +92,60 @@ export default {
     font-size: 20px;
     line-height: 28px;
     color: #30454e;
+    @include tablet() {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
   &_header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 40px;
+    @include tablet() {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+    }
     p {
       max-width: 776px;
     }
     img {
       width: 270px;
       height: 246px;
+      margin-left: 10px;
+      @include tablet() {
+        width: 162.44px;
+        height: 148px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
     }
   }
   &_blocks {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 376px);
     grid-gap: 24px;
+    @media only screen and (max-width: 1170px) {
+      overflow-x: scroll;
+      padding-bottom: 20px;
+    }
+    @include tablet() {
+      grid-template-columns: repeat(3, 317px);
+      grid-gap: 16px;
+    }
   }
 }
 .reverse {
   flex-direction: column-reverse !important;
   justify-content: flex-end !important;
+  @include tablet() {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
 }
 .blocks_content {
-  width: 100%;
-  max-width: 376px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -123,6 +154,9 @@ export default {
   &__info {
     padding: 20px 30px;
     background: #ffffff;
+    @include tablet() {
+      padding: 20px 16px;
+    }
     h3 {
       font-family: 'Montserrat';
       font-style: normal;
@@ -131,11 +165,16 @@ export default {
       line-height: 34px;
       color: #5e8698;
       margin-bottom: 20px;
+      @include tablet() {
+        font-size: 18px;
+        line-height: 24px;
+      }
     }
   }
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 }
 </style>

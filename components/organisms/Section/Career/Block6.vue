@@ -17,18 +17,17 @@
       <img src="@/assets/img/career/grey.svg" alt="" class="grey" />
     </div>
     <div class="statistic">
-      <div>
+      <div class="statistic_info">
         <p>
           США – 51,5 %<br />
           1000 работников
         </p>
-
         <p>
           Великобритания – 12,9 %<br />
           1000 работников
         </p>
       </div>
-      <div>
+      <div class="statistic_info">
         <p>
           Алматы – 32,2 %<br />
           1000 работников
@@ -38,8 +37,10 @@
           1000 работников
         </p>
       </div>
-      <img src="@/assets/img/career/muzh.png" alt="" />
-      <img src="@/assets/img/career/zhen.png" alt="" />
+      <div class="statistic_gender">
+        <img src="@/assets/img/career/muzh.png" alt="" />
+        <img src="@/assets/img/career/zhen.png" alt="" />
+      </div>
     </div>
   </div>
 </template>
@@ -112,7 +113,7 @@ export default {}
     font-weight: 700;
     font-size: 24px;
   }
-  div {
+  &_info {
     width: 100%;
     max-width: 376px;
     &:first-of-type {
@@ -124,7 +125,7 @@ export default {}
         margin-top: 24px;
       }
     }
-    &:last-of-type {
+    &:nth-last-child(2) {
       p:first-of-type {
         color: #00b0f0;
       }
@@ -134,8 +135,16 @@ export default {}
       }
     }
   }
-  img {
-    margin-left: 35px;
+  &_gender {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 130px;
+      height: 130px;
+      &:last-child {
+        margin-left: 73px;
+      }
+    }
   }
 }
 </style>

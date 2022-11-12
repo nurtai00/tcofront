@@ -80,8 +80,7 @@ export default {}
   }
 }
 .info_block {
-  width: 100%;
-  max-width: 376px;
+  width: 376px;
 
   display: flex;
   flex-direction: column;
@@ -92,6 +91,7 @@ export default {}
   border-radius: 4px;
 
   @include tablet() {
+    width: 100%;
     margin-top: 12px;
     padding: 40px 30px 55px;
   }
