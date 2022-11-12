@@ -69,7 +69,7 @@ export default {
 }
 .form_content {
   width: 100%;
-  min-height: 766px;
+  height: 766px;
   display: flex;
   flex-direction: column;
   padding: 80px 0;

@@ -23,8 +23,11 @@ export default {}
   svg {
     margin-top: 14px;
     margin-right: 12px;
-    @include phone() {
-      display: none;
+    @include tablet() {
+      width: 10px;
+      height: 10px;
+      margin-top: 8px;
+      margin-right: 8px;
     }
   }
   h1 {
@@ -32,12 +35,9 @@ export default {}
     font-size: 56px;
     line-height: 64px;
     color: #015467;
-    @include phone() {
-      font-size: 24px !important;
-    }
     @include tablet() {
-      font-size: 36px;
-      line-height: 36px;
+      font-size: 24px;
+      line-height: 32px;
     }
   }
 }
