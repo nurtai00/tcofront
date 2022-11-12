@@ -15,8 +15,8 @@
     <OrganismsSectionCareerBlock5 />
     <OrganismsSectionCareerBlock6 />
     <OrganismsSectionCareerBlock4 :content="content2" :background="true" />
-    <!-- <OrganismsSectionCareerBlock7 /> -->
-    <!-- <OrganismsSectionCareerBlock8 /> -->
+    <OrganismsSectionCareerBlock7 />
+    <OrganismsSectionCareerBlock8 />
   </div>
 </template>
 

@@ -48,7 +48,7 @@ export default {
   height: 100vh;
   padding: 52px 132px 40px 80px;
   animation: animModal 0.5s cubic-bezier(0.11, 0.72, 0.56, 1.28);
-  @include phone() {
+  @include tablet() {
     width: 90%;
     padding: 64px 16px;
   }
@@ -62,7 +62,7 @@ export default {
   position: absolute;
   top: 40px;
   right: 132px;
-  @include phone() {
+  @include tablet() {
     @include size(22px);
     top: 20px;
     right: 20px;
