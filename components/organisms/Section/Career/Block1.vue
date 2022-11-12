@@ -40,10 +40,13 @@ export default {}
 
     text-align: center;
     color: #fff !important;
-    @media only screen and (max-width: 1040px) {
-      max-width: 560px;
+    @media only screen and (max-width: 1025px) {
+      max-width: 780px;
       padding: 0 16px;
       bottom: 20px;
+    }
+    @include tablet() {
+      max-width: 560px;
     }
   }
 }
