@@ -36,6 +36,9 @@ export default {
 $hs: ('Montserrat' 56px 700 64px), ('Montserrat' 48px 700 56px),
   ('Montserrat' 38px 700 46px), ('Montserrat' 28px 700 32px),
   ('Roboto' 24px 700 28px), ('Roboto' 18px 500 22px);
+$Mob_hs: ('Montserrat' 24px 700 32px), ('Montserrat' 22px 700 28px),
+  ('Montserrat' 20px 700 26px), ('Montserrat' 16px 700 22px),
+  ('Roboto' 16px 700 22px), ('Roboto' 14px 500 18px);
 
 @for $i from 1 through 6 {
   h#{$i} {
@@ -43,16 +46,13 @@ $hs: ('Montserrat' 56px 700 64px), ('Montserrat' 48px 700 56px),
     font-size: nth(nth($hs, $i), 2);
     font-weight: nth(nth($hs, $i), 3);
     line-height: nth(nth($hs, $i), 4);
-    @include wide-tablet {
-      font-size: calc(nth(nth($hs, $i), 2) - 8px);
-      line-height: calc(nth(nth($hs, $i), 4) - 8px)
-    }
-    @include tablet {
-      font-size: calc(nth(nth($hs, $i), 2) - 14px);
-      line-height: calc(nth(nth($hs, $i), 4) - 14px)
-    }
-    @include phone() {
-      font-size: 20px;
+  }
+  @include tablet() {
+    h#{$i} {
+      font-family: nth(nth($Mob_hs, $i), 1);
+      font-size: nth(nth($Mob_hs, $i), 2);
+      font-weight: nth(nth($Mob_hs, $i), 3);
+      line-height: nth(nth($Mob_hs, $i), 4);
     }
   }
   // @include wide-tablet {
