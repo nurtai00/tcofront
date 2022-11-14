@@ -24,7 +24,7 @@
       <NuxtLink class="active" to="/">Home</NuxtLink>
       <NuxtLink to="/about">Company</NuxtLink>
       <NuxtLink to="/operations">Operations</NuxtLink>
-      <NuxtLink to="/">Projects</NuxtLink>
+      <NuxtLink to="/projects">Projects</NuxtLink>
       <NuxtLink to="/">Kazakhstani Content</NuxtLink>
       <NuxtLink to="/">Sustainability</NuxtLink>
       <NuxtLink to="/career">Career</NuxtLink>
