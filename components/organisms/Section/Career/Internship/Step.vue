@@ -4,6 +4,11 @@
       <AtomsHeading type="h3" color="main">
         Процедура принятие заявки
       </AtomsHeading>
+      <img
+        src="@/assets/img/career/stepper_img.svg"
+        alt=""
+        class="mobile_img"
+      />
       <div class="stepper">
         <div
           :class="{ active_step: active_step == 1 }"
@@ -54,8 +59,24 @@ export default {
   width: 100%;
   background: #f2f6f7;
   padding: 40px 0 80px;
+  @include tablet() {
+    padding: 40px 0;
+  }
   h3 {
     margin-bottom: 40px;
+    @include tablet() {
+      margin-bottom: 20px;
+    }
+  }
+}
+.mobile_img {
+  display: none;
+  @include tablet() {
+    display: block;
+    width: 175.03px;
+    height: 142px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 .active_step {
@@ -67,6 +88,10 @@ export default {
   flex-direction: row;
   align-items: center;
   margin-bottom: 40px;
+  @include tablet() {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
   div {
     padding: 16px 20px;
     border: 1px solid #015467;
@@ -80,8 +105,12 @@ export default {
 
     cursor: pointer;
     transition: 0.3s;
+    @media only screen and (max-width: 375px) {
+      padding: 10px 5px;
+    }
   }
   img {
+    width: 24px;
     margin: 0 8px;
   }
 }
@@ -92,6 +121,9 @@ export default {
   img {
     width: 320px;
     height: 259.61px;
+    @include tablet() {
+      display: none;
+    }
   }
 }
 </style>

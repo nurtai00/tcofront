@@ -17,18 +17,17 @@
       <img src="@/assets/img/career/grey.svg" alt="" class="grey" />
     </div>
     <div class="statistic">
-      <div>
+      <div class="statistic_info">
         <p>
           США – 51,5 %<br />
           1000 работников
         </p>
-
         <p>
           Великобритания – 12,9 %<br />
           1000 работников
         </p>
       </div>
-      <div>
+      <div class="statistic_info">
         <p>
           Алматы – 32,2 %<br />
           1000 работников
@@ -38,8 +37,10 @@
           1000 работников
         </p>
       </div>
-      <img src="@/assets/img/career/muzh.png" alt="" />
-      <img src="@/assets/img/career/zhen.png" alt="" />
+      <div class="statistic_gender">
+        <img src="@/assets/img/career/muzh.png" alt="" />
+        <img src="@/assets/img/career/zhen.png" alt="" />
+      </div>
     </div>
   </div>
 </template>
@@ -52,14 +53,27 @@ export default {}
 .assignments_career {
   width: 100%;
   padding: 80px 0;
+  @include tablet() {
+    padding: 40px 0;
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  @include phone() {
+    padding: 40px 16px;
+  }
   h3 {
     margin-bottom: 40px;
+    @include tablet() {
+      margin-bottom: 20px;
+    }
   }
 }
 .map {
   position: relative;
   width: 100%;
-  margin-top: 18px;
+  margin-top: 20px;
   &_back {
     width: 100%;
     height: auto;
@@ -70,6 +84,9 @@ export default {}
   .grey {
     position: absolute;
     animation: pulse 2.5s linear infinite;
+    @include tablet() {
+      width: 20px;
+    }
   }
   .blue {
     top: 34%;
@@ -108,34 +125,80 @@ export default {}
   justify-content: space-between;
   margin-top: -100px;
   z-index: 111;
+  @include tablet() {
+    flex-direction: column;
+    margin-top: 0;
+  }
   p {
     font-weight: 700;
     font-size: 24px;
+    @include tablet() {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
-  div {
+  &_info {
     width: 100%;
     max-width: 376px;
+    @include tablet() {
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
     &:first-of-type {
+      @include tablet() {
+        order: 0;
+        margin-bottom: 20px;
+      }
       p:first-of-type {
         color: #015467;
       }
       p:last-of-type {
         color: #ffc000;
         margin-top: 24px;
+        @include tablet() {
+          margin-top: 0px;
+        }
       }
     }
-    &:last-of-type {
+    &:nth-last-child(2) {
+      @include tablet() {
+        order: 1;
+      }
       p:first-of-type {
         color: #00b0f0;
       }
       p:last-of-type {
         color: #8c9fa6;
         margin-top: 24px;
+        @include tablet() {
+          margin-top: 0px;
+        }
       }
     }
   }
-  img {
-    margin-left: 35px;
+  &_gender {
+    display: flex;
+    flex-direction: row;
+    @include tablet() {
+      order: -1;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 130px;
+      height: 130px;
+      @include tablet() {
+        width: 83px;
+        height: 83px;
+      }
+      &:last-child {
+        margin-left: 73px;
+        @include tablet() {
+          margin-left: 93px;
+        }
+      }
+    }
   }
 }
 </style>

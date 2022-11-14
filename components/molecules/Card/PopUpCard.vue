@@ -30,7 +30,6 @@ export default {
 .card {
   position: relative;
   width: 100%;
-  max-width: 376px;
   min-height: 270px;
 
   background: #ffffff;
@@ -38,6 +37,10 @@ export default {
   border-radius: 4px;
 
   padding: 30px;
+  @include tablet() {
+    min-height: 200px;
+    padding: 16px;
+  }
   &__title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -46,18 +49,34 @@ export default {
     line-height: 32px;
     color: rgba(1, 84, 103, 0.2);
     margin-bottom: 20px;
+    @include tablet() {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
   }
   &__text {
     font-weight: 600;
     line-height: 28px;
     color: #015467;
     margin-bottom: 44px;
+    @include tablet() {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
   }
   img {
     position: absolute;
     right: 30px;
     bottom: 30px;
     cursor: pointer;
+    @include tablet() {
+      width: 24px;
+      height: 24px;
+      right: 16px;
+      bottom: 16px;
+    }
   }
 }
 </style>

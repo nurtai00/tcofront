@@ -44,9 +44,15 @@ export default {}
 .about_career {
   width: 100%;
   padding: 80px 0;
+  @include tablet() {
+    padding: 40px 16px;
+  }
   h3 {
     max-width: 776px;
     margin-bottom: 40px;
+    @include tablet() {
+      margin-bottom: 20px;
+    }
   }
   &_block {
     display: flex;
@@ -57,10 +63,21 @@ export default {}
       line-height: 22px;
       color: #30454e;
     }
+    @include tablet() {
+      flex-direction: column-reverse;
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
   }
 }
 .info {
   margin-left: 24px;
+  @include tablet() {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
 .info_block {
   width: 376px;
@@ -73,6 +90,11 @@ export default {}
   box-shadow: 0px 10px 30px rgba(1, 84, 103, 0.1);
   border-radius: 4px;
 
+  @include tablet() {
+    width: 100%;
+    margin-top: 12px;
+    padding: 40px 30px 55px;
+  }
   img {
     width: 64px;
   }

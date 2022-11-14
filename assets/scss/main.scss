@@ -15,9 +15,16 @@
     font-size: 16px;
     line-height: 20px;
     color: #30454e;
+    @include tablet() {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
   ul {
     padding-left: 30px;
+    @include tablet() {
+      padding-left: 20px;
+    }
     li {
       list-style-type: disc;
     }
@@ -51,6 +58,10 @@
     font-size: 20px;
     line-height: 28px;
     color: #30454e;
+    @include tablet() {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 .default_modal_text {
@@ -62,9 +73,16 @@
     font-size: 20px;
     line-height: 28px;
     color: #30454e;
+    @include tablet() {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
   ol {
     padding-left: 30px;
+    @include tablet() {
+      padding-left: 20px;
+    }
     li {
       list-style-type: decimal;
     }

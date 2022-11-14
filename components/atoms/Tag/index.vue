@@ -70,11 +70,12 @@ export default {
   svg {
     margin-left: 10px;
   }
-  @media (orientation: portrait) {
-    border: 1px solid #30454e;
-    color: #30454e;
+  @include tablet() {
     font-size: 14px;
     line-height: 18px;
+    svg {
+      margin-left: 8px;
+    }
   }
   &_selected {
     background: #015467;

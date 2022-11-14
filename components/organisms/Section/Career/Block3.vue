@@ -58,11 +58,28 @@ export default {
   h3 {
     margin-bottom: 40px;
   }
+  @include tablet() {
+    padding: 40px 0;
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
 }
 .statistic {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 24px;
+  @media (max-width: 1025px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @include tablet() {
+    grid-gap: 9px;
+  }
+  @media only screen and (max-width: 340px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+  }
   &_block {
     display: flex;
     flex-direction: column;
@@ -82,6 +99,20 @@ export default {
       font-size: 20px;
       line-height: 28px;
       color: #30454e;
+    }
+    @include tablet() {
+      padding: 20px;
+      img {
+        width: 64px;
+        height: 64px;
+      }
+      h3 {
+        margin: 20px 0 8px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
   }
 }

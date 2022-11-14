@@ -80,7 +80,7 @@
         icon="xls"
       />
       <AtomsFile
-        file="@/assets/files/Статистика по ТБ: определения и показатели.pdf"
+        file="@/assets/files/statistics.pdf"
         text="Список регистрационных документов"
         icon="doc"
       />
@@ -128,7 +128,7 @@
     <!--    >-->
     <!--      <template #description>-->
     <!--        <AtomsFile file="@/assets/files/Квалификационная анкета по процессу CHESM для потенциальных бизнес-партнеров.xls" text="Квалификационная анкета по процессу CHESM для потенциальных бизнес-партнеров" icon="xls" />-->
-    <!--        <AtomsFile file="@/assets/files/Статистика по ТБ: определения и показатели.pdf" text="Статистика по ТБ: определения и показатели" icon="pdf" />-->
+    <!--        <AtomsFile file="@/assets/files/statistics.pdf" text="Статистика по ТБ: определения и показатели" icon="pdf" />-->
     <!--      </template>-->
     <!--      <template #footer>-->
     <!--        <div class="cards">-->

@@ -70,6 +70,9 @@ export default {
   width: 100%;
   padding: 80px 0;
   background: #f2f6f7;
+  @include tablet() {
+    padding: 40px 0;
+  }
 }
 .news_title {
   display: flex;
@@ -77,6 +80,16 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 36px;
+  @include tablet() {
+    margin-bottom: 20px;
+  }
+  @media only screen and (max-width: 330px) {
+    flex-direction: column;
+    align-items: flex-start;
+    a {
+      margin-top: 10px;
+    }
+  }
   a {
     font-family: 'Roboto';
     font-style: normal;
@@ -85,19 +98,27 @@ export default {
     line-height: 22px;
     text-decoration-line: underline;
     color: #00b0f0;
+    @include tablet() {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
 .atoms_tag {
   margin-bottom: 20px;
 }
 .news_cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
   grid-gap: 24px;
   &_item {
     width: 100%;
-    max-width: 376px;
+  }
+  @include phone() {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: unset;
+    grid-gap: 12px;
   }
 }
 </style>

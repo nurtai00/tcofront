@@ -22,6 +22,10 @@ export default {}
     height: auto;
     max-height: 565px;
     object-fit: cover;
+    @include tablet() {
+      min-height: 260px;
+      max-height: 100%;
+    }
   }
   h3 {
     position: absolute;
@@ -36,6 +40,14 @@ export default {}
 
     text-align: center;
     color: #fff !important;
+    @media only screen and (max-width: 1025px) {
+      max-width: 780px;
+      padding: 0 16px;
+      bottom: 20px;
+    }
+    @include tablet() {
+      max-width: 560px;
+    }
   }
 }
 </style>

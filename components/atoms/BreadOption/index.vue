@@ -52,6 +52,10 @@ li {
     &:active {
       transform: translateY(1px);
     }
+    @include tablet() {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   + li {

@@ -44,7 +44,7 @@
           icon="xls"
         />
         <AtomsFile
-          file="@/assets/files/Статистика по ТБ: определения и показатели.pdf"
+          file="@/assets/files/statistics.pdf"
           text="Статистика по ТБ: определения и показатели"
           icon="pdf"
         />

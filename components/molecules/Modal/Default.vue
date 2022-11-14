@@ -27,6 +27,9 @@ export default {
   max-width: 696px;
   h3 {
     margin: 20px 0 40px;
+    @include tablet() {
+      margin: 20px 0;
+    }
   }
 }
 </style>
