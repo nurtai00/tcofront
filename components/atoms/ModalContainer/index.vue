@@ -61,8 +61,8 @@ export default {
     right: 50%;
     animation: none;
     & .modal-close {
-      top: 20px;
-      right: 20px;
+      top: 5px;
+      right: 5px;
     }
   }
   @include tablet() {
