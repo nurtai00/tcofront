@@ -88,6 +88,10 @@ export default {
     line-height: 22px;
     text-decoration-line: underline;
     color: #00b0f0;
+    @media (orientation: portrait) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
 .atoms_tag {

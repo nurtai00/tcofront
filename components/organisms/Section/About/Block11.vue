@@ -1,11 +1,8 @@
 <template>
-  <section style="padding: 0">
+  <section style="padding: 0; position: relative">
     <OrganismsSlider :options="options">
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
-        <div
-          class="double-block tco__partners"
-          style="justify-content: flex-end"
-        >
+        <div class="double-block tco__partners">
           <div class="tco__partners-wrapper">
             <h1>Стратегии</h1>
             <div class="underline"></div>
@@ -86,6 +83,10 @@ export default {
 <style lang="scss" v-deep scoped>
 .tco {
   &__partners {
+    justify-content: flex-end;
+    @media (orientation: portrait) {
+      flex-direction: column-reverse;
+    }
     &-wrapper {
       padding: 40px 40px 40px 0;
       max-width: 590px;
@@ -101,11 +102,17 @@ export default {
       @media (max-width: 886px) {
         max-width: inherit;
       }
+      @media (orientation: portrait) {
+        gap: 15px;
+      }
       .underline {
         display: block;
         position: relative;
         width: 80%;
         border: 1px solid #8c9fa6;
+        @media (orientation: portrait) {
+          display: none;
+        }
       }
       .line {
         display: block;
@@ -123,6 +130,14 @@ export default {
         @media (max-width: 385px) {
           font-size: 32px;
         }
+        @media (orientation: portrait) {
+          font-size: 20px;
+          line-height: 26px;
+          color: #ffffff;
+          position: absolute;
+          left: 16px;
+          top: 40px;
+        }
       }
       span {
         font-family: 'Roboto';
@@ -131,9 +146,31 @@ export default {
         font-size: 38px;
         line-height: 42px;
         color: #015467;
+        @media (orientation: portrait) {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      p {
+        @media (orientation: portrait) {
+          font-size: 16px;
+          line-height: 22px;
+        }
       }
     }
     background: #f2f6f7;
+  }
+}
+.double-block {
+  @media (orientation: portrait) {
+    position: relative;
+  }
+  img {
+    @media (orientation: portrait) {
+      height: 216px;
+      object-fit: cover;
+    }
   }
 }
 ::v-deep .slider-wrapper {
@@ -145,6 +182,11 @@ export default {
   position: relative;
   left: calc((100vw - 1176px) / 2);
   top: -85px;
+  @media (orientation: portrait) {
+    left: 16px;
+    position: absolute;
+    top: 175px;
+  }
   img {
     padding: 12px 18px 12px 14px;
     border: 1px solid #8c9fa6;
@@ -154,9 +196,20 @@ export default {
     pointer-events: auto;
     touch-action: auto;
     background: rgba(1, 84, 103, 0.1);
+    @media (orientation: portrait) {
+      padding: 7px 10px 7px 8px;
+      margin-right: 12px;
+      width: 26px;
+      height: 26px;
+      background: #ffffff;
+    }
   }
   img:last-child {
     padding: 12px 14px 12px 18px;
+    @media (orientation: portrait) {
+      padding: 7px 8px 7px 10px;
+      margin-right: 12px;
+    }
   }
   // .disabled {
   //   cursor: not-allowed;

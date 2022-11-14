@@ -48,6 +48,9 @@ export default {
       overflow-y: hidden;
       width: calc(100vw - 32px);
     }
+    @media (orientation: portrait) {
+      height: 100%;
+    }
     .item {
       display: flex;
       flex-direction: column;
@@ -66,7 +69,9 @@ export default {
         align-items: center;
       }
       @media (orientation: portrait) {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: calc(50vw - 16px);
       }
       color: #00b0f0;
       img {

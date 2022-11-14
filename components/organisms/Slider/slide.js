@@ -24,8 +24,22 @@ export default class Slide {
     this.total = this.options.loop
       ? this.slides.length
       : this.slides.length - this.perview + 1
+    this.interval = null
     this.setup()
     this.drag()
+    if (this.options.loop) {
+      this.makeLoop()
+    }
+  }
+
+  makeLoop() {
+    this.interval = setInterval(() => {
+      this._handleGesture(200, 0)
+    }, 2000)
+  }
+
+  destroyLoop() {
+    clearInterval(this.interval)
   }
 
   _slideTo() {
@@ -41,7 +55,6 @@ export default class Slide {
     if (self.index === 0 && !self.options.loop && self.options.navigation) {
       self.previous.style.display = 'none'
     }
-
     if (self.options.loop) {
       if (self.index === self.slides.length - self.perview + 1) {
         self.slides[0].style.transition = 'none'
@@ -119,13 +132,11 @@ export default class Slide {
       })
     } else {
       touchableElement.addEventListener('mousedown', function (event) {
-        console.log({ event })
         touchstartX = event.pageX
         event.preventDefault()
       })
 
       touchableElement.addEventListener('mouseup', function (event) {
-        console.log({ event })
         touchendX = event.pageX
 
         self._handleGesture(touchstartX, touchendX)
@@ -214,7 +225,6 @@ export default class Slide {
       function () {
         self.index++
         self.previous.style.display = 'block'
-        console.log(self.slides.length, self.index)
         if (self.index === self.slides.length) {
           self.next.classList.add('disabled')
           self.previous.classList.remove('disabled')

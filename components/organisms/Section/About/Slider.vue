@@ -38,9 +38,7 @@ export default {
     }
   },
   methods: {
-    slideTo(index) {
-      console.log(index)
-    },
+    slideTo() {},
   },
 }
 </script>
