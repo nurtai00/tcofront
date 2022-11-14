@@ -7,7 +7,7 @@
           style="justify-content: flex-start"
         >
           <img src="@/assets/img/Rectangle 182.png" />
-          <div class="tco__partners-wrapper" style="padding: 40px 0 40px 40px">
+          <div class="tco__partners-wrapper">
             <h1 v-text="slide.title"></h1>
             <div class="underline"></div>
             <p v-text="slide.text"></p>
@@ -98,7 +98,7 @@ export default {
 .tco {
   &__partners {
     &-wrapper {
-      padding: 40px 40px 40px 0;
+      padding: 40px 0px 40px 40px;
       max-width: 572px;
       display: flex;
       flex-direction: column;
@@ -117,6 +117,9 @@ export default {
         position: relative;
         width: 80%;
         border: 1px solid #8c9fa6;
+        @media (orientation: portrait) {
+          display: none;
+        }
       }
       .line {
         display: block;
@@ -150,6 +153,12 @@ export default {
         font-size: 38px;
         line-height: 42px;
         color: #015467;
+      }
+      p {
+        @media (orientation: portrait) {
+          font-size: 16px;
+          line-height: 22px;
+        }
       }
     }
     background: #f2f6f7;

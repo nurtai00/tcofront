@@ -1,5 +1,5 @@
 <template>
-  <section class="section--blue" style="padding: 0">
+  <section class="section--blue" style="padding: 0; position: relative">
     <OrganismsSlider :options="options">
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
         <div
@@ -89,6 +89,23 @@ export default {
 </script>
 
 <style lang="scss" v-deep scoped>
+.double-block {
+  @media (orientation: portrait) {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  img {
+    @media (orientation: portrait) {
+      height: 220px;
+      object-fit: cover;
+      background: linear-gradient(
+        0deg,
+        rgba(48, 69, 78, 0.8),
+        rgba(48, 69, 78, 0.8)
+      );
+    }
+  }
+}
 .tco {
   &__partners {
     &-wrapper {
@@ -107,11 +124,29 @@ export default {
       @media (max-width: 886px) {
         max-width: inherit;
       }
+      &:before {
+        @media (orientation: portrait) {
+          background: linear-gradient(
+            0deg,
+            rgba(48, 69, 78, 0.8),
+            rgba(48, 69, 78, 0.8)
+          );
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 220px;
+        }
+      }
       .underline {
         display: block;
         position: relative;
         width: 80%;
         border: 1px solid #8c9fa6;
+        @media (orientation: portrait) {
+          display: none;
+        }
       }
       .line {
         display: block;
@@ -128,6 +163,20 @@ export default {
         color: #015467;
         @media (max-width: 385px) {
           font-size: 32px;
+        }
+        @media (orientation: portrait) {
+          font-size: 20px;
+          line-height: 26px;
+          color: #ffffff;
+          position: absolute;
+          left: 16px;
+          top: 40px;
+        }
+      }
+      p {
+        @media (orientation: portrait) {
+          font-size: 16px;
+          line-height: 22px;
         }
       }
       span {
@@ -149,10 +198,17 @@ export default {
           line-height: 22px;
           text-decoration-line: underline;
           color: #00b0f0;
+          @media (orientation: portrait) {
+            font-size: 14px;
+            line-height: 18px;
+          }
         }
         img {
           width: 30px;
           margin-right: 12px;
+          @media (orientation: portrait) {
+            height: 40px;
+          }
         }
       }
     }
@@ -168,6 +224,11 @@ export default {
   position: relative;
   left: calc((100vw - 1176px) / 2);
   top: -140px;
+  @media (orientation: portrait) {
+    left: 16px;
+    position: absolute;
+    top: 175px;
+  }
   img {
     padding: 12px 18px 12px 14px;
     border: 1px solid #8c9fa6;
@@ -177,9 +238,20 @@ export default {
     pointer-events: auto;
     touch-action: auto;
     background: rgba(1, 84, 103, 0.1);
+    @media (orientation: portrait) {
+      padding: 7px 10px 7px 8px;
+      margin-right: 12px;
+      width: 26px;
+      height: 26px;
+      background: #ffffff;
+    }
   }
   img:last-child {
     padding: 12px 14px 12px 18px;
+    @media (orientation: portrait) {
+      padding: 7px 8px 7px 10px;
+      margin-right: 12px;
+    }
   }
   // .disabled {
   //   cursor: not-allowed;
