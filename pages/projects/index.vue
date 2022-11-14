@@ -1,3 +1,3 @@
 <template>
-  <OrganismsProjects />
+  <TemplatesProjects />
 </template>
