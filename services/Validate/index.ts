@@ -123,6 +123,7 @@ const listOfRules: any = {
       : { valid: true }
   },
   confirmed: (e: string, confirmed: string) => {
+    console.log(e, confirmed)
     return e === confirmed
       ? { valid: true }
       : { valid: false, message: 'This field must be confirmed' }

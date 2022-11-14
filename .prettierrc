@@ -1,5 +1,6 @@
 {
   "semi": false,
   "singleQuote": true,
-  "--prefer-void-tags": true
+  "--prefer-void-tags": true,
+  "printWidth": 80
 }

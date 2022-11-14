@@ -10,6 +10,7 @@
     </div>
     <OrganismsSectionVacancyBlock1 />
     <OrganismsSectionVacancyBlock2 />
+    <OrganismsSectionVacancyBlockDeclaration />
     <OrganismsSectionVacancyBlock3 />
     <OrganismsSectionVacancyBlock4 />
     <OrganismsSectionVacancyBlock5 />

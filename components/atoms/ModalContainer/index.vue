@@ -1,6 +1,6 @@
 <template>
   <div class="modal-wrapper">
-    <div class="modal-container">
+    <div class="modal-container" :class="{ center: type === 'centered' }">
       <div class="modal-close" @click="close" />
       <!-- @slot контент -->
       <slot />
@@ -11,7 +11,11 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
+  computed: {
+    ...mapState('modal', ['type']),
+  },
   methods: {
     close() {
       this.$modal.close()
@@ -48,6 +52,19 @@ export default {
   height: 100vh;
   padding: 52px 132px 40px 80px;
   animation: animModal 0.5s cubic-bezier(0.11, 0.72, 0.56, 1.28);
+  &.center {
+    height: 60vh;
+    padding: 20px;
+    width: 90%;
+    top: 20%;
+    transform: translateX(50%);
+    right: 50%;
+    animation: none;
+    & .modal-close {
+      top: 5px;
+      right: 5px;
+    }
+  }
   @include tablet() {
     width: 90%;
     padding: 64px 16px;
@@ -59,7 +76,7 @@ export default {
   margin-left: auto;
   transition: transform 0.5s ease;
   cursor: pointer;
-  position: absolute;
+  position: sticky;
   top: 40px;
   right: 132px;
   @include tablet() {

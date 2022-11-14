@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="fair__list">
-        <div class="item">
+        <div class="item" @click="openVacancy">
           <p class="item__description">
             Инженер программы обеспечения надежности на основе риска
           </p>
@@ -43,7 +43,7 @@
             <span class="block__second">22/02/2022</span>
           </div>
         </div>
-        <div class="item">
+        <div class="item" @click="openVacancy">
           <p class="item__description">
             Инженер программы обеспечения надежности на основе риска
           </p>
@@ -56,7 +56,7 @@
             <span class="block__second">22/02/2022</span>
           </div>
         </div>
-        <div class="item">
+        <div class="item" @click="openVacancy">
           <p class="item__description">
             Инженер программы обеспечения надежности на основе риска
           </p>
@@ -73,6 +73,19 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    openVacancy() {
+      this.$modal.add({
+        title: 'VacancyModal',
+        payload: { modal: 'VacancyModal' },
+        type: 'centered',
+      })
+    },
+  },
+}
+</script>
 <style lang="scss" scoped>
 .fair {
   padding: 80px 0;
@@ -117,6 +130,7 @@
   flex-direction: column;
   gap: 20px;
   border: 1px solid rgba($c-text, 20%);
+  cursor: pointer;
   &__description {
     font-size: 18px;
     font-weight: 500;
