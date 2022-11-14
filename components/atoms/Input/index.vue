@@ -20,7 +20,7 @@
   >
     <!-- Placeholder for input type "animate" -->
     <div v-if="placeholder && styleType !== 'placeholder'" class="placeholder">
-      {{ placeholder }}
+      {{ placeholder }} <span v-if="isRequired">*</span>
     </div>
 
     <!--    Mask, rules-->
@@ -32,6 +32,7 @@
         <slot name="append" />
       </div>
     </label>
+    <slot />
     <input
       v-show="type !== 'file'"
       v-if="!textarea"
@@ -458,7 +459,7 @@ $input-size: 16px;
 $placeholder-default-size: 16px;
 $placeholder-default-color: $c-text;
 $placeholder-default-error-color: red;
-$placeholder-default-opacity: 0.7;
+$placeholder-default-opacity: 1;
 $placeholder-default-disabled-opacity: 0.5;
 $placeholder-default-bottom: 8px;
 
@@ -603,6 +604,10 @@ $icons-size: 24px;
     margin-bottom: $placeholder-default-bottom;
     cursor: text;
     font-weight: 600;
+    span {
+      margin-left: 5px;
+      color: red;
+    }
   }
 
   .errors {

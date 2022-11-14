@@ -9,7 +9,7 @@
       type="radio"
       class="radio__field"
     />
-    <span class="radio__indicator" />
+    <span class="radio__indicator" :class="{ blue: color === 'blue' }" />
     <span class="radio__message"><slot /></span>
   </label>
 </template>
@@ -28,6 +28,10 @@ export default {
     /**
      * ID of the radio
      */
+    color: {
+      type: String,
+      default: '',
+    },
     id: {
       type: [String, Number],
       default: '',
@@ -60,7 +64,7 @@ export default {
   computed: {
     model: {
       get() {
-        return this.value
+        return this.val
       },
       set(value) {
         /**
@@ -91,6 +95,12 @@ $radio-disabled: #3c474c;
     border: 1px solid $radio-border;
     border-radius: 50%;
     margin-right: 8px;
+    &.blue {
+      border: 1px solid $c-base;
+      &::before {
+        background-color: $c-base;
+      }
+    }
     &::before {
       position: absolute;
       content: '';
@@ -128,7 +138,7 @@ $radio-disabled: #3c474c;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 28px;
     color: #30454e;
   }
