@@ -81,9 +81,7 @@ export default {
   mounted() {},
 
   methods: {
-    slideTo(index) {
-      console.log('has slidet', index)
-    },
+    slideTo() {},
   },
 }
 </script>
