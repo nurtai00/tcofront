@@ -67,7 +67,6 @@
         font-weight: 600;
         width: 50%;
         @include tablet() {
-          width: 100%;
           font-size: 12px;
         }
       }

@@ -3,7 +3,9 @@
     <div class="container">
       <div class="department__wrapper">
         <div class="department__info">
-          <AtomsHeading type="h3" color="black">Департаменты ТШО</AtomsHeading>
+          <AtomsHeading class="department__info-title" type="h3" color="black">
+            Департаменты ТШО
+          </AtomsHeading>
           <img src="@/assets/img/vacancy/block4.jpg" />
         </div>
         <div class="department__accordion">
@@ -92,9 +94,11 @@
                       </template>
                     </AtomsInput>
                     <div class="respond__form-action action">
-                      <span class="action__text">Нажимая кнопку "Отправить", вы принимаете условия
+                      <span class="action__text"
+                        >Нажимая кнопку "Отправить", вы принимаете условия
                         Политики конфиденциальности и обработки персональных
-                        данных</span>
+                        данных</span
+                      >
                       <button class="action__button">Send</button>
                     </div>
                   </form>
@@ -178,6 +182,14 @@ export default {
   }
   &__info {
     flex-basis: 50%;
+    @include tablet {
+      &-title {
+        color: white;
+        position: relative;
+        top: 100px;
+        z-index: 2;
+      }
+    }
     img {
       margin-top: 40px;
       width: 100%;

@@ -14,5 +14,6 @@
     <OrganismsSectionVacancyBlock3 />
     <OrganismsSectionVacancyBlock4 />
     <OrganismsSectionVacancyBlock5 />
+    <OrganismsSectionVacancyBlock6 />
   </div>
 </template>
