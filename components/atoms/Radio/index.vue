@@ -64,7 +64,7 @@ export default {
   computed: {
     model: {
       get() {
-        return this.val
+        return this.value
       },
       set(value) {
         /**
