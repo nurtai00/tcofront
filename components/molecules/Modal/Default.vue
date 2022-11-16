@@ -7,6 +7,9 @@
       {{ payload.title }}
     </AtomsHeading>
     <p class="default_modal_text" v-html="payload.text"></p>
+    <template v-if="!!payload.imgSrc && payload.imgSrc.length">
+      <img :src="require(`@/assets/img/${payload.imgSrc}`)" alt="img" />
+    </template>
   </div>
 </template>
 
@@ -30,6 +33,10 @@ export default {
     @include tablet() {
       margin: 20px 0;
     }
+  }
+  img {
+    margin-top: 20px;
+    max-width: 100%;
   }
 }
 </style>

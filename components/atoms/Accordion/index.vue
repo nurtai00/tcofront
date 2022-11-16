@@ -1,15 +1,29 @@
 <template>
   <div class="accordion">
     <!-- @slot текстовый слот, название аккордеон -->
-    <div class="accordion__title" @click="$emit('click')">
+    <div
+      class="accordion__title"
+      :class="{ filled, open: isOpen }"
+      @click="$emit('click')"
+    >
       <slot name="title" />
-      <img
-        src="@/assets/icons/arrow-bottom-blue.svg"
-        alt="arrow"
-        :class="{ open: isOpen }"
-      />
+      <svg
+        width="14"
+        height="8"
+        viewBox="0 0 14 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        :class="{ open: isOpen, filled }"
+      >
+        <path
+          d="M1 1.30981L7 7.30981L13 1.30981"
+          stroke="#0084F4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
     </div>
-    <div v-if="isOpen" class="accordion__content">
+    <div v-if="isOpen" class="accordion__content" :class="{ filled }">
       <slot name="content" />
     </div>
   </div>
@@ -22,6 +36,10 @@ export default {
     isOpen: {
       type: Boolean,
       required: true,
+    },
+    filled: {
+      type: Boolean,
+      default: false,
     },
   },
 }
@@ -36,6 +54,10 @@ export default {
   &__content {
     padding: 20px 0;
     border-bottom: 1px solid rgba($c-text, 20%);
+    &.filled {
+      padding: 0;
+      border-bottom: none;
+    }
   }
   &__title {
     display: flex;
@@ -43,7 +65,14 @@ export default {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba($c-text, 20%);
-    img {
+    &.filled {
+      background-color: #f2f6f7;
+      padding: 20px 10px;
+      &.open {
+        border-bottom: none;
+      }
+    }
+    svg {
       width: 24px;
       height: 24px;
       border: 1px solid $c-base;
@@ -53,6 +82,13 @@ export default {
       @include trans(transform 0.3s ease);
       &.open {
         transform: rotate(180deg);
+      }
+      &.filled {
+        background-color: $c-main;
+        border-color: $c-main;
+        path {
+          stroke: white;
+        }
       }
     }
   }
