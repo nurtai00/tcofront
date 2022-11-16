@@ -28,20 +28,12 @@
           объектов:
         </span>
         <div class="work__cards">
-          <div
+          <MoleculesCardSuistanabilityCard
             v-for="card of cards"
-            :key="card.item"
-            class="work__card"
+            :key="card.id"
+            :card="card"
             @click="openPopup"
-          >
-            <img
-              :src="
-                require(`@/assets/img/sustainability/work-places/${card.img}`)
-              "
-              alt="home"
-            />
-            <span>{{ card.text }}</span>
-          </div>
+          />
         </div>
       </div>
     </div>
@@ -55,32 +47,32 @@ export default {
         {
           id: 1,
           text: 'Центральная больница в г. Кульсары',
-          img: 'hospital.svg',
+          img: 'sustainability/work-places/hospital.svg',
         },
         {
           id: 2,
           text: 'Центральный стадион в г. Кульсары',
-          img: 'stadion.svg',
+          img: 'sustainability/work-places/stadion.svg',
         },
         {
           id: 3,
           text: 'Детский сад в мкр. Коктем в г. Атырау',
-          img: 'home.svg',
+          img: 'sustainability/work-places/home.svg',
         },
         {
           id: 4,
           text: 'Детский сад в мкр. Жулдыз в г. Атырау',
-          img: 'home.svg',
+          img: 'sustainability/work-places/home.svg',
         },
         {
           id: 5,
           text: 'Пристройка к школе в поселке Тущыкудык, Исатайский район',
-          img: 'school.svg',
+          img: 'sustainability/work-places/school.svg',
         },
         {
           id: 6,
           text: 'Строительство школы им. Жумабаева в г. Атырау',
-          img: 'school.svg',
+          img: 'sustainability/work-places/school.svg',
         },
       ],
     }

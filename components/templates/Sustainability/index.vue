@@ -16,6 +16,7 @@
     <OrganismsSectionSustainabilitySocialInvest />
     <OrganismsSectionSustainabilitySocialInvestProgram />
     <OrganismsSectionSustainabilityWorkPlaces />
+    <OrganismsSectionSustainabilityMapProjects />
   </div>
 </template>
 <script>
