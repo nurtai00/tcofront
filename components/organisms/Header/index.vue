@@ -25,7 +25,7 @@
       <NuxtLink to="/about">Company</NuxtLink>
       <NuxtLink to="/operations">Operations</NuxtLink>
       <NuxtLink to="/projects">Projects</NuxtLink>
-      <NuxtLink to="/">Kazakhstani Content</NuxtLink>
+      <NuxtLink to="/kazakhstani-content">Kazakhstani Content</NuxtLink>
       <NuxtLink to="/">Sustainability</NuxtLink>
       <NuxtLink to="/career">Career</NuxtLink>
       <NuxtLink to="/relations">Lender Relations</NuxtLink>

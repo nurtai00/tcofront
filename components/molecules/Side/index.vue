@@ -184,6 +184,10 @@ export default {
     }
   }
 
+  img {
+    margin-bottom: 40px;
+  }
+
   @include phone {
     .abs {
       margin-bottom: 20px;
@@ -198,6 +202,10 @@ export default {
     p.title {
       font-size: 18px;
       line-height: 24px;
+    }
+
+    img {
+      margin-bottom: 20px;
     }
   }
 }
