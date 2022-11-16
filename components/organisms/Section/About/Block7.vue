@@ -3,9 +3,7 @@
     <div class="container">
       <AtomsTitle small :point="false"> История компании </AtomsTitle>
     </div>
-    <div class="tco__yearcircle">
-      <div class="tco__yearcircle-inner"></div>
-    </div>
+    <div class="tco__yearcircle"></div>
     <div class="double-block">
       <div class="tco__year">
         <h2
@@ -487,6 +485,12 @@ export default {
     position: sticky;
     top: 6.5vh;
     height: 100vh;
+    @media (orientation: portrait) {
+      position: relative !important;
+      top: 0p;
+      height: auto;
+      width: 100vw;
+    }
     h2 {
       position: relative;
       font-family: 'Roboto', sans-serif;
@@ -500,6 +504,10 @@ export default {
       text-align: right;
       padding-right: 3.2vw;
       top: 15.6vw;
+      @media (orientation: portrait) {
+        font-size: 22vw; // 86px;
+        line-height: 24vw; // 90px;
+      }
     }
     .active {
       opacity: 1;
@@ -507,6 +515,10 @@ export default {
     .small {
       font-size: 12.4vh; // 7.77vw; // 112px;
       line-height: 24.88vh; // 15.55vw; // 224px;
+      @media (orientation: portrait) {
+        font-size: 13vw; // 51px
+        line-height: 24vw; // 90px;
+      }
     }
     &-text {
       padding-bottom: 50vw;
@@ -520,39 +532,11 @@ export default {
     height: 32.6vh; // 20vw;
     background: #ffffff;
     opacity: 0.4;
-    // border: 3px solid #015467;
+    border: 3px solid #015467;
     box-shadow: 3px 3px 50px rgba(0, 176, 240, 0.1);
     border-radius: 50%;
     transition: 0.5s all ease;
     opacity: 0;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 32.6vh;
-      height: 32.6vh;
-      border-radius: 50%;
-      opacity: 1;
-      background: linear-gradient(
-        to top right,
-        #b8b9bb 0%,
-        #b8b9bb 49%,
-        #015467 50%,
-        #015467 100%
-      );
-      box-shadow: 3px 3px 50px rgba(0, 176, 240, 0.1);
-    }
-    &-inner {
-      width: calc(32.6vh - 6px);
-      height: calc(32.6vh - 6px);
-      z-index: 10;
-      background: #fff;
-      border-radius: 50%;
-      top: 3px;
-      left: 3px;
-      position: absolute;
-    }
   }
   &__yearcircle-fixed {
     position: sticky;
