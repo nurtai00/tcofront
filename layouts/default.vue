@@ -1,12 +1,12 @@
 <template>
   <div>
-    <!-- <OrganismsHeader /> -->
-    <!-- <div class="main-container">
+    <OrganismsHeader />
+    <div class="main-container">
       <Nuxt />
       <OrganismsModal />
       <MoleculesSide />
       <MoleculesNotification />
-    </div> -->
+    </div>
     <OrganismsFooter />
   </div>
 </template>
