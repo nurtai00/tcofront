@@ -2,11 +2,12 @@
   <div class="card" @click="$emit('click')">
     <img :src="require(`@/assets/img/${card.img}`)" alt="home" />
     <span class="card__title">{{ card.text }}</span>
-    <span
+    <div
       v-if="!!card.description && card.description.length"
       class="card__description"
-      >{{ card.description }}</span
     >
+      {{ card.description }}
+    </div>
   </div>
 </template>
 <script>
@@ -25,6 +26,7 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 350px;
   gap: 20px;
   background: #ffffff;
   box-shadow: 0px 6px 30px rgba(48, 69, 78, 0.1);
@@ -48,6 +50,7 @@ export default {
   &__description {
     font-size: 16px;
     font-weight: 300;
+    word-wrap: break-word;
   }
 }
 </style>

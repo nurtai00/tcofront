@@ -17,6 +17,8 @@
     <OrganismsSectionSustainabilitySocialInvestProgram />
     <OrganismsSectionSustainabilityWorkPlaces />
     <OrganismsSectionSustainabilityMapProjects />
+    <OrganismsSectionSustainabilitySocialProgramInvest />
+    <OrganismsSectionSustainabilityRateRequirement />
   </div>
 </template>
 <script>

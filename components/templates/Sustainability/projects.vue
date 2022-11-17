@@ -14,7 +14,7 @@
       <div class="project__content">
         <div class="project__info">
           <AtomsTitle class="mb40">
-            Проекты, созданные в рамках “Игилик”
+            {{ title }}
           </AtomsTitle>
           <p>
             Результаты совместной работы ТШО с неправительственными
@@ -69,6 +69,14 @@ export default {
         },
       ],
     }
+  },
+  computed: {
+    title() {
+      const path = this.$route.path.split('/').pop()
+      return path === 'igilik'
+        ? 'Проекты, созданные в рамках “Игилик”'
+        : 'Проекты, созданные в рамках “ПСИ”'
+    },
   },
 }
 </script>

@@ -19,7 +19,11 @@
         </p>
       </div>
     </div>
-    <img src="@/assets/img/operation/operations1.png" alt="building" />
+    <img
+      class="program__img"
+      src="@/assets/img/operation/operations1.png"
+      alt="building"
+    />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -50,7 +54,7 @@
         font-size: 16px;
       }
     }
-    img {
+    &__img {
       max-width: 100%;
       height: auto;
     }
