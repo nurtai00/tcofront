@@ -1,18 +1,3 @@
-<script>
-export default {
-  props: {
-    index: {
-      type: Number,
-    },
-  },
-  methods: {
-    navigateNew() {
-      this.$router.push('/news/1')
-    },
-  },
-}
-</script>
-
 <template>
   <div
     class="n_card"
@@ -40,7 +25,9 @@ export default {
         <p class="n_card_type">#Карьера</p>
         <p class="n_card_date">03/05/2022</p>
       </div>
-      <h2>Тенгизшевройл объявляет о Хакатоне</h2>
+      <AtomsHeading type="h6" color="main">
+        Тенгизшевройл объявляет о Хакатоне
+      </AtomsHeading>
       <p
         class="n_card_text"
         :style="{
@@ -57,22 +44,37 @@ export default {
   </div>
 </template>
 
-<style scoped lang="scss">
-p {
-  margin: 0;
+<script>
+export default {
+  props: {
+    index: {
+      type: Number,
+    },
+  },
+  methods: {
+    navigateNew() {
+      this.$router.push('/news/1')
+    },
+  },
 }
+</script>
+
+<style lang="scss" scoped>
 .n_card {
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;
   cursor: pointer;
-  @media (orientation: portrait) {
+  @include tablet() {
     margin-top: 20px;
     padding: 12px 16px !important;
     box-shadow: -1px 0px 0px #30454e !important;
     border-radius: 0px 4px 4px 0px !important;
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
   &_mobile_img {
-    @media (orientation: portrait) {
+    @include tablet() {
       padding: 0px !important;
       box-shadow: 0px 0px 0px #30454e !important;
       border-radius: 4px;
@@ -85,7 +87,7 @@ p {
     box-shadow: -1px 0px 0px #30454e;
     border-radius: 0px 4px 4px 0px;
     padding: 20px;
-    @media (orientation: portrait) {
+    @include tablet() {
       padding: 0px;
       box-shadow: 0px 0px 0px #30454e;
     }
@@ -93,7 +95,7 @@ p {
   &_right {
     .n_card_content {
       padding: 12px 20px 20px 20px;
-      @media (orientation: portrait) {
+      @include tablet() {
         padding: 0px;
       }
     }
@@ -103,22 +105,15 @@ p {
     align-items: center;
     justify-content: space-between;
   }
-  p,
-  h2 {
+  p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
   }
-  h2 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+  h6 {
     margin: 12px 0;
-    color: #30454e;
-    @media (orientation: portrait) {
-      font-size: 14px;
-      line-height: 18px;
+    @include tablet() {
       margin: 12px 0 4px 0;
     }
   }
@@ -130,7 +125,7 @@ p {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    @media (orientation: portrait) {
+    @include tablet() {
       -webkit-line-clamp: 3 !important;
     }
   }
@@ -144,19 +139,19 @@ p {
     width: 100%;
     height: 208px;
     object-fit: cover;
-    @media (orientation: portrait) {
+    @include tablet() {
       border-radius: 4px;
     }
   }
   &_desktop {
     display: block !important;
-    @media (orientation: portrait) {
+    @include tablet() {
       display: none !important;
     }
   }
   &_mobile {
     display: none !important;
-    @media (orientation: portrait) {
+    @include tablet() {
       display: block !important;
     }
   }
