@@ -39,10 +39,23 @@
     <OrganismsSectionOperationSlide side :data="slide" class="slide">
       <div class="projects__slide">
         <div class="left">
-          <div v-for="(item, key) in slider.left" :key="key" :class="{ active: key === activeSlide }" @click="activeSlide = key">{{ item }}</div>
+          <div
+            v-for="(item, key) in slider.left"
+            :key="key"
+            :class="{ active: key === activeSlide }"
+            @click="activeSlide = key"
+          >
+            {{ item }}
+          </div>
         </div>
         <div class="right">
-          <div v-for="(item, key) in slider.right" :key="key" :class="{ active: key === activeSlide }">{{ item }}</div>
+          <div
+            v-for="(item, key) in slider.right"
+            :key="key"
+            :class="{ active: key === activeSlide }"
+          >
+            {{ item }}
+          </div>
         </div>
       </div>
     </OrganismsSectionOperationSlide>
@@ -56,7 +69,9 @@
         <div class="projects__protocols">
           <div class="projects__protocols_header">
             <AtomsTitle class="projects__title">Протоколы</AtomsTitle>
-            <nuxt-link class="more" to="/projects/protocols">Все протоколы</nuxt-link>
+            <nuxt-link class="more" to="/projects/protocols">
+              Все протоколы
+            </nuxt-link>
           </div>
           <div class="projects__protocols_body">
             <OrganismsSectionOperationCard
@@ -203,17 +218,13 @@ export default {
         },
       ],
       slider: {
-        left: [
-          '13,6 млрд долларов США',
-          '53 000',
-          '12 000 000 тонн в год'
-        ],
+        left: ['13,6 млрд долларов США', '53 000', '12 000 000 тонн в год'],
         right: [
           'Затраты на казахстанские товары и услуги',
           'Число казахстанских работников на проекте',
-          'Ожидаемый рост добычи'
-        ]
-      }
+          'Ожидаемый рост добычи',
+        ],
+      },
     }
   },
   methods: {
@@ -331,7 +342,7 @@ export default {
       & > div {
         margin-bottom: 46px;
         cursor: pointer;
-        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
 
         &:not(.active) {
           color: #30454e;

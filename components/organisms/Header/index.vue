@@ -1,158 +1,295 @@
 <template>
-  <header class="header container">
-    <div class="header__container">
-      <img src="@/assets/img/logo.svg" />
+  <div>
+    <header class="container">
+      <NuxtLink to="/" class="logo">
+        <img src="@/assets/img/logo.svg" />
+      </NuxtLink>
       <MoleculesSearchBar />
-      <NuxtLink to="/">Телефон доверия</NuxtLink>
-      <NuxtLink to="/">Рус</NuxtLink>
-      <NuxtLink to="/">Қаз</NuxtLink>
-      <NuxtLink to="/">Eng</NuxtLink>
-    </div>
+      <div class="lang">
+        <a>Рус</a>
+        <a>Қаз</a>
+        <a>Eng</a>
+      </div>
+    </header>
     <div class="mobile-nav">
-      <img src="@/assets/img/logo.svg" />
-      <AtomsDropdown
-        :title="'Rus'"
-        :links="[
-          { link: 'Eng', title: 'Eng' },
-          { link: 'Қаз', title: 'Қаз' },
-        ]"
+      <NuxtLink to="/" class="logo">
+        <img src="@/assets/img/logo.svg" />
+      </NuxtLink>
+      <MoleculesSelect
+        :model="defaultItem"
+        :options="langs"
+        height="100%"
+        :placeholder="''"
+        class="lang_btn"
+        @change="selectLang"
       />
-      <button><img src="@/assets/icons/search.svg" /></button>
-      <button><img src="@/assets/icons/burger.svg" @click="toggle" /></button>
+      <img src="@/assets/icons/search.svg" class="search_btn" />
+      <div
+        class="menu_btn"
+        :class="{ burger_close: show_nav }"
+        @click="showNav"
+      >
+        <div class="menu_btn__burger"></div>
+      </div>
     </div>
-    <div class="links container" :class="show ? 'show' : ''">
-      <NuxtLink class="active" to="/">Home</NuxtLink>
-      <NuxtLink to="/about">Company</NuxtLink>
-      <NuxtLink to="/operations">Operations</NuxtLink>
-      <NuxtLink to="/projects">Projects</NuxtLink>
-      <NuxtLink to="/kazakhstani-content">Kazakhstani Content</NuxtLink>
-      <NuxtLink to="/">Sustainability</NuxtLink>
-      <NuxtLink to="/career">Career</NuxtLink>
-      <NuxtLink to="/relations">Lender Relations</NuxtLink>
+    <div class="links container" :class="{ show_nav: show_nav }">
+      <div v-for="(route, idx) in routes" :key="idx">
+        <NuxtLink
+          :class="{ active_link: $route.path === route.link }"
+          :to="route.link"
+        >
+          {{ route.name }}
+        </NuxtLink>
+      </div>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
   data() {
     return {
-      show: true,
+      show_nav: false,
+      routes: [
+        {
+          name: 'Home',
+          link: '/',
+        },
+        {
+          name: 'Company',
+          link: '/about',
+        },
+        {
+          name: 'Operations',
+          link: '/operations',
+        },
+        {
+          name: 'Projects',
+          link: '/projects',
+        },
+        {
+          name: 'Kazakhstani Content',
+          link: '/kazakhstani_content',
+        },
+        {
+          name: 'Sustainability',
+          link: '/sustainability',
+        },
+        {
+          name: 'Career',
+          link: '/career',
+        },
+        {
+          name: 'Lender Relations',
+          link: '/relations',
+        },
+      ],
+      defaultItem: 'RU',
+      langs: [
+        {
+          name: 'RU',
+          id: 'RU',
+        },
+        {
+          name: 'KZ',
+          id: 'KZ',
+        },
+        {
+          name: 'EN',
+          id: 'EN',
+        },
+      ],
     }
   },
-
-  mounted() {
-    if (window.innerHeight > 810) {
-      this.show = false
-    }
-  },
-
   methods: {
-    toggle() {
-      this.show = !this.show
+    showNav() {
+      this.show_nav = !this.show_nav
+    },
+    selectLang(lang) {
+      if (this.defaultItem === lang) {
+        return
+      }
+      this.defaultItem = lang
+      // lang = lang.toLowerCase()
+      // if (lang == 'kz') lang = 'kk'
+      // if (this.$route.path != this.switchLocalePath(lang))
+      //   this.$router.replace(this.switchLocalePath(lang))
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.header {
-  &__container {
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @media (max-width: 1180px) {
-      padding: 15px;
-    }
-
-    @media (max-width: 810px) {
-      display: none;
-    }
-
-    a {
-      font-family: 'Roboto', sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 20px;
-      color: #8c9fa6;
-      @media (orientation: portrait) {
-        display: none;
-      }
-    }
-  }
-
-  .links {
-    z-index: 99;
-    border-top: 1px solid #8c9fa6;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    @media (max-width: 1180px) {
-      padding: 15px;
-    }
-
-    @media (max-width: 810px) {
-      background: white;
-      flex-direction: column;
-      position: absolute;
-      display: none;
-      width: 100%;
-      left: 0;
-    }
-
-    @media (orientation: portrait) {
-      display: none;
-    }
-
-    a {
-      font-family: 'Roboto', sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 20px;
-
-      color: #30454e;
-      @media (max-width: 810px) {
-        padding: 5px;
-        border-bottom: 1px solid #f2f6f7;
-      }
-    }
-
-    .active {
-      color: #00b0f0;
-    }
-  }
-
-  .show {
-    display: flex;
-  }
-
-  .mobile-nav {
+a {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+header {
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  @include tablet() {
     display: none;
-    align-items: center;
-    gap: 5px;
-    padding: 15px;
-
-    @media (max-width: 810px) {
-      display: flex;
-    }
-
+  }
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 36px;
     img {
-      margin-right: auto;
-      :first-of-type {
-        width: 48px;
-        height: 48px;
-      }
-    }
-
-    button {
-      background: none;
-      border: none;
+      width: 100%;
+      height: 100%;
     }
   }
+  .lang {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 24px;
+    margin-left: auto;
+    a {
+      color: #8c9fa6;
+    }
+  }
+}
+.show_nav {
+  display: flex !important;
+}
+.active_link {
+  color: #00b0f0 !important;
+  @include tablet() {
+    color: #30454e !important;
+    &::after {
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      display: block;
+      bottom: -5px;
+      left: 0;
+      background: url('@/assets/img/home/mobile_line.svg') repeat-x;
+      transition: 0.3s;
+      content: '';
+    }
+  }
+}
+.links {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px 0;
+  border-top: 1px solid #8c9fa6;
+  @include tablet() {
+    position: absolute;
+
+    display: none;
+    flex-direction: column;
+
+    padding: 0;
+    z-index: 9;
+    left: 0;
+
+    background: white;
+    border: none;
+    max-width: 100%;
+    box-shadow: 0px 0px 10px rgba(1, 1, 3, 0.1);
+  }
+  a {
+    color: #30454e;
+    @include tablet() {
+      position: relative;
+      width: max-content;
+    }
+  }
+  div {
+    @include tablet() {
+      padding: 12px 16px;
+      border-bottom: 1px solid #f2f6f7;
+    }
+  }
+}
+.mobile-nav {
+  display: none;
+  align-items: center;
+  padding: 6px 16px;
+  @include tablet() {
+    display: flex;
+    border-bottom: 1px solid #8c9fa6;
+  }
+  .logo {
+    width: 48px;
+    height: 48px;
+    margin-right: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.lang_btn::v-deep {
+  width: 90px;
+  .select__head {
+    border: none;
+  }
+  .select__content {
+    top: 103%;
+  }
+  .select-arrow-down {
+    padding: 0 16px;
+  }
+}
+.search_btn {
+  cursor: pointer;
+}
+.menu_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 8px;
+  &__burger {
+    height: 1.6px;
+    width: 24px;
+    background: #30454e;
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1.6px;
+      width: 24px;
+      background: #30454e;
+      border-radius: 1px;
+      transition: all 0.3s ease-in-out;
+    }
+    &::before {
+      transform: translateY(-7px);
+    }
+    &::after {
+      transform: translateY(7px);
+    }
+  }
+}
+.menu_btn.burger_close .menu_btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+.menu_btn.burger_close .menu_btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+  background: #30454e;
+}
+.menu_btn.burger_close .menu_btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+  background: #30454e;
 }
 </style>

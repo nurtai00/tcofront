@@ -94,11 +94,9 @@
                       </template>
                     </AtomsInput>
                     <div class="respond__form-action action">
-                      <span class="action__text"
-                        >Нажимая кнопку "Отправить", вы принимаете условия
+                      <span class="action__text">Нажимая кнопку "Отправить", вы принимаете условия
                         Политики конфиденциальности и обработки персональных
-                        данных</span
-                      >
+                        данных</span>
                       <button class="action__button">Send</button>
                     </div>
                   </form>

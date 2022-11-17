@@ -1,11 +1,12 @@
 <template>
-  <div class="card">
+  <div class="card" :class="{ dark }">
     <div class="card__icon">
       <i :class="`icon-${card.icon}`" />
       <div class="card__num">{{ card.number }}</div>
     </div>
     <div class="card__title">{{ card.title }}</div>
     <div class="card__description">{{ card.description }}</div>
+    <div class="card__description" v-html="card.html" />
   </div>
 </template>
 
@@ -16,15 +17,19 @@ export default {
     card: {
       type: Object,
       required: true,
-    }
-  }
+    },
+    dark: {
+      type: Boolean,
+      default: false,
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .card {
   padding: 30px;
-  background-color: #F2F4F7;
+  background-color: #f2f4f7;
 
   &__icon {
     position: relative;
@@ -47,8 +52,9 @@ export default {
     font-size: 48px;
     font-weight: 700;
     position: absolute;
-    bottom: 10px;
-    left: -10px;
+    bottom: 0;
+    left: -30px;
+    color: $c-tco3;
   }
 
   &__title {
@@ -61,7 +67,41 @@ export default {
 
   &__description {
     font-size: 14px;
-    color: #30454E;
+    color: #30454e;
+
+    &::v-deep {
+      ul {
+        padding-left: 18px;
+        margin-bottom: 20px;
+
+        li {
+          list-style-type: disc;
+          font-size: 14px;
+          margin-bottom: 6px;
+          color: $c-tco1;
+        }
+      }
+    }
+  }
+
+  &.dark {
+    background-color: $c-tco3;
+
+    .card {
+      &__icon {
+        background-color: #a2b9c0;
+
+        i {
+          color: white;
+        }
+      }
+
+      &__num,
+      &__title,
+      &__description {
+        color: white;
+      }
+    }
   }
 }
 </style>
