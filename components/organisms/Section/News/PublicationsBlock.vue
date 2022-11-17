@@ -26,6 +26,11 @@ export default {}
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet() {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
     a {
       font-weight: 400;
       font-size: 20px;
@@ -33,7 +38,9 @@ export default {}
       text-decoration-line: underline;
       color: #00b0f0;
       @include tablet() {
-        display: none;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 12px;
       }
     }
   }
