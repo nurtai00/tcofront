@@ -121,12 +121,14 @@ export default {
 
   &__title {
     margin-bottom: 40px;
+    color: $c-tco1;
   }
 
   &__description {
     margin-bottom: 40px;
     display: flex;
     overflow: hidden;
+    color: $c-tco1;
 
     &_item {
       min-width: 100%;

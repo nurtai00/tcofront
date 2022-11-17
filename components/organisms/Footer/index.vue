@@ -22,9 +22,7 @@
           <a href="tel:+7 712 227 1212">+7 712 227 1212</a>
           <a href="tel:+7 712 302 6000">+7 712 302 6000</a>
           <a>Республика Казахстан 060011, г.Атырау , ул. Сатпаева 3</a>
-          <a href="mailto:tcoinfo@tengizchevroil.com"
-            >tcoinfo@tengizchevroil.com</a
-          >
+          <a href="mailto:tcoinfo@tengizchevroil.com">tcoinfo@tengizchevroil.com</a>
           <Nuxt-Link to="/contact" class="with_underline">
             Телефон доверия и другие контакты
           </Nuxt-Link>
