@@ -1,1 +1,7 @@
-<template><TemplatesVacancy /></template>
+<template>
+  <TemplatesVacancy />
+</template>
+
+<script>
+export default {}
+</script>
