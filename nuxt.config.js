@@ -1,5 +1,6 @@
 import { resolve } from 'path'
 // eslint-disable-next-line nuxt/no-cjs-in-config
+const webpack = require('webpack')
 // const fs = require('fs')
 // // eslint-disable-next-line nuxt/no-cjs-in-config
 // const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -20,6 +21,71 @@ import { resolve } from 'path'
 //   entries[`${file}/index.js`] = `./pages/${file}/index.js`
 // }
 // console.log(entries)
+const build =
+  process.env.NODE_ENV === 'production'
+    ? {
+        extend(config, ctx) {
+          if (ctx && ctx.isClient) {
+            // config.optimization.splitChunks.maxSize = 4096
+            // config.output.globalObject = 'this'
+            if (!this.dev) {
+              config.plugins.push(
+                new webpack.optimize.LimitChunkCountPlugin({
+                  maxChunks: 1,
+                })
+              )
+            }
+          }
+        },
+        loaders: {
+          cssModules: {
+            modules: true,
+            localIdentName: '[local]',
+          },
+        },
+        scss: {
+          cssModules: {
+            modules: true,
+            localIdentName: '[local]',
+          },
+        },
+        optimization: {
+          splitChunks: {
+            chunks: 'async',
+            automaticNameDelimiter: '.',
+          },
+        },
+        splitChunks: {
+          pages: false,
+          vendor: false,
+          commons: false,
+          runtime: false,
+          layouts: false,
+        },
+        filenames: {
+          app: () => '[name].js',
+          font: () => '[name].[ext]',
+          img: () => '[name].[ext]',
+        },
+        extractCSS: true,
+        // optimization: {
+        //   splitChunks: {
+        //     cacheGroups: {
+        //       styles: {
+        //         name: 'styles',
+        //         test: /\.(css|vue)$/,
+        //         chunks: 'all',
+        //         enforce: true,
+        //       },
+        //     },
+        //     chunks: 'all',
+        //     automaticNameDelimiter: '.',
+        //     name: undefined,
+        //   },
+        //   minimize: true,
+        // },
+      }
+    : {}
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -105,29 +171,28 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    // extend(config, { isClient }) {
-    //   if (isClient) {
-    //     console.log(config.entry) // { app: [ "path/to/client.js", "eventsource-polyfill", "etc..." ] } (currently undefined)
-    //   } else {
-    //     console.log(config.entry) // { app: [ "path/to/server.js" ] } (currently undefined)
-    //   }
-    // config.entry = {
-    // ...entries,
-    // hot: 'webpack/hot/dev-server.js',
-    // client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
-    // }
-    // This is ok
-    // for (const [key, value] of Object.entries(entries)) {
-    //   config.entry[key] = resolve(value)
-    // }
-    // config.entry.custom = resolve('custom-entry.js')
-    // Throws error "entry.app is reserved by Nuxt"
-    // Could use Object.defineProperty for the
-    // config object passed to build.extend to
-    // throw an error when attempting to set entry.app
-    // config.entry.app = resolve('app.js')
-  },
+  build,
+  // extend(config, { isClient }) {
+  //   if (isClient) {
+  //     console.log(config.entry) // { app: [ "path/to/client.js", "eventsource-polyfill", "etc..." ] } (currently undefined)
+  //   } else {
+  //     console.log(config.entry) // { app: [ "path/to/server.js" ] } (currently undefined)
+  //   }
+  // config.entry = {
+  // ...entries,
+  // hot: 'webpack/hot/dev-server.js',
+  // client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
+  // }
+  // This is ok
+  // for (const [key, value] of Object.entries(entries)) {
+  //   config.entry[key] = resolve(value)
+  // }
+  // config.entry.custom = resolve('custom-entry.js')
+  // Throws error "entry.app is reserved by Nuxt"
+  // Could use Object.defineProperty for the
+  // config object passed to build.extend to
+  // throw an error when attempting to set entry.app
+  // config.entry.app = resolve('app.js')
   // plugins: [
   //   new MiniCssExtractPlugin({
   //     filename: '[name].css',
