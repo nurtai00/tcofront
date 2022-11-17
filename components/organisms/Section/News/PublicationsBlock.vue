@@ -16,9 +16,11 @@ export default {}
 
 <style lang="scss" scoped>
 .p_block {
-  padding: 50px 0 80px 0;
-  @media (orientation: portrait) {
-    padding: 40px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include tablet() {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   &_title {
     display: flex;
@@ -30,7 +32,7 @@ export default {}
       line-height: 28px;
       text-decoration-line: underline;
       color: #00b0f0;
-      @media (orientation: portrait) {
+      @include tablet() {
         display: none;
       }
     }
@@ -39,11 +41,11 @@ export default {}
     display: grid;
     grid-template-columns: repeat(4, calc(25% - 18px));
     grid-gap: 24px;
-    margin-top: 20px;
-    @media (orientation: portrait) {
+    margin-top: 92px;
+    @include tablet() {
       grid-template-columns: repeat(2, calc(50% - 7px));
       grid-gap: 13px;
-      margin-top: 00px;
+      margin-top: 20px;
     }
   }
 }
