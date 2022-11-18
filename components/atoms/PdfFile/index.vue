@@ -60,6 +60,7 @@ export default {
 .pdf {
   display: flex;
   gap: 10px;
+  align-items: center;
   &.column {
     flex-direction: column;
     text-align: center;

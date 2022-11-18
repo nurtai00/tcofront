@@ -17,6 +17,10 @@ export default {
       type: Object,
       required: true,
     },
+    imgSrc: {
+      type: String,
+      default: '',
+    },
   },
   methods: {
     showMod() {

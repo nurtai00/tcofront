@@ -6,10 +6,11 @@
     <AtomsHeading type="h3" color="text">
       {{ payload.title }}
     </AtomsHeading>
-    <p class="default_modal_text" v-html="payload.text"></p>
-    <template v-if="!!payload.imgSrc && payload.imgSrc.length">
-      <img :src="require(`@/assets/img/${payload.imgSrc}`)" alt="img" />
-    </template>
+    <ul>
+      <li v-for="(list, index) of payload.list" :key="index + list">
+        {{ list }}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -37,6 +38,17 @@ export default {
   img {
     margin-top: 20px;
     max-width: 100%;
+  }
+  ul {
+    margin-left: 20px;
+    li {
+      list-style: disc;
+      font-size: 20px;
+      color: $c-text;
+      line-height: 32px;
+      font-family: Roboto, sans-serif;
+      font-weight: 300;
+    }
   }
 }
 </style>
