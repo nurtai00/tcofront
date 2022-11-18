@@ -69,7 +69,7 @@ export default {
         },
         {
           name: 'Kazakhstani Content',
-          link: '/kazakhstani_content',
+          link: '/kazakhstani-content',
         },
         {
           name: 'Sustainability',
