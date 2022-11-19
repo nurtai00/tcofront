@@ -24,7 +24,6 @@
 <style lang="scss" scoped>
 .privacy {
   &__content {
-    margin-top: 40px;
     display: flex;
     gap: 120px;
     img {
@@ -36,20 +35,16 @@
       gap: 20px;
       img {
         width: 138px;
-        height: 160px;
+        height: 164px;
       }
     }
     & .content {
       &__description {
-        display: block;
         margin-top: 20px;
-        font-size: 20px;
-        font-family: Roboto, sans-serif;
-        line-height: 28px;
-        color: $c-text;
-        @include phone() {
+        @include tablet() {
+          margin-top: 12px;
           font-size: 16px;
-          font-weight: 500;
+          line-height: 20px;
         }
       }
     }

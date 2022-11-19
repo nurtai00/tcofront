@@ -5,7 +5,7 @@
         <AtomsBreadOption to="/">Home</AtomsBreadOption>
         <AtomsBreadOption to="/privacy">Privacy Statement</AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle type="h1" class="mb20">
+      <AtomsTitle type="h1" class="mb40">
         Положение о конфиденциальности
       </AtomsTitle>
       <OrganismsSectionPrivacyBlock1 />
