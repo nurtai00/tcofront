@@ -35,7 +35,8 @@
           степеней университетов РК и зарубежных университетов и стипендиальной
           программы "Болашак".
         </p>
-        <a class="info__link-button">Подробнее
+        <a class="info__link-button"
+          >Подробнее
           <svg
             width="24"
             height="24"
@@ -56,7 +57,8 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-            /></svg></a>
+            /></svg
+        ></a>
         <a class="info__link">Перейти на вакансию</a>
       </div>
       <div class="info__img">
@@ -70,43 +72,104 @@
 </template>
 <style lang="scss" scoped>
 .info {
-  background-color: #f2f6f7;
   display: flex;
+  background-color: #f2f6f7;
+  @include tablet() {
+    flex-direction: column;
+    &.reverse {
+      flex-direction: column-reverse;
+    }
+    &__title-desktop {
+      display: none;
+    }
+    &__title-mobile {
+      display: block !important;
+      position: absolute;
+      top: 40px;
+      left: 16px;
+      color: white;
+    }
+  }
   &__img {
     width: 50%;
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
+    }
+    @include tablet() {
+      position: relative;
+      width: 100%;
+      img {
+        width: 100%;
+        max-height: 218px;
+        height: 100%;
+      }
     }
   }
   &__content {
     width: 50%;
     padding: 80px calc((100vw - var(--width-container)) / 2) 80px 40px;
+    @include tablet() {
+      width: 100%;
+      padding: 0;
+    }
+    @media (max-width: 560px) {
+      padding: 0 16px !important;
+    }
     &.reverse {
       padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
+      @include tablet() {
+        padding: 0;
+      }
     }
     display: flex;
     flex-direction: column;
-    gap: 20px;
     font-family: Roboto, sans-serif;
   }
   &__description {
-    font-size: 20px;
     font-weight: 400;
+    font-size: 20px;
     line-height: 28px;
+    margin: 40px 0;
+    @include tablet() {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 20px 0;
+    }
   }
   &__title-mobile {
     display: none;
   }
   &__link {
-    color: $c-base;
-    text-decoration: underline;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #00b0f0;
+    @include tablet() {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
     &-button {
-      color: $c-base;
       display: flex;
-      gap: 5px;
       align-items: center;
+      gap: 5px;
+      margin-bottom: 20px;
       cursor: pointer;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #00b0f0;
+      @include tablet() {
+        font-size: 16px;
+        line-height: 20px;
+      }
       svg {
         transition: transform 0.3s ease;
       }
@@ -114,41 +177,6 @@
         svg {
           transform: translateX(10px);
         }
-      }
-    }
-  }
-  @include tablet {
-    flex-direction: column;
-    &.reverse {
-      flex-direction: column-reverse;
-      .info__content {
-        padding: 20px 16px;
-      }
-    }
-    &__content {
-      margin-top: 20px;
-      width: 100%;
-      padding: 20px 16px;
-    }
-    &__title-desktop {
-      display: none;
-    }
-    &__title-mobile {
-      display: block;
-      position: relative;
-      color: white;
-      top: 100px;
-      margin-left: 20px;
-    }
-    &__description {
-      font-size: 16px;
-    }
-    &__img {
-      width: 100%;
-      overflow: hidden;
-      img {
-        width: 100%;
-        height: 100%;
       }
     }
   }

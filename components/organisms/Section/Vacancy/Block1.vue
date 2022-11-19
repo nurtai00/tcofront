@@ -26,30 +26,50 @@
 </template>
 <style lang="scss" scoped>
 .vacancy {
-  &__info {
-    margin-top: 80px;
-    flex-basis: 65%;
-    &-description {
-      margin-top: 40px;
-      p {
-        color: $c-text;
-        font-size: 20px;
-        &:not(:first-child) {
-          margin-top: 20px;
-        }
-        @include tablet() {
-          font-size: 16px;
-        }
-      }
-    }
-  }
   &__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    img {
+      width: 320px;
+      height: 272px;
+    }
     @include tablet() {
       flex-direction: column-reverse;
+      justify-content: flex-start;
+      margin-top: 20px;
       img {
-        margin-top: 40px;
+        max-width: 260px;
+        height: auto;
+      }
+    }
+  }
+  &__info {
+    width: 100%;
+    max-width: 776px;
+    margin-right: 20px;
+    @include tablet() {
+      max-width: 100%;
+      margin-right: 0;
+      margin-top: 20px;
+    }
+    &-description {
+      margin-top: 40px;
+      @include tablet() {
+        margin-top: 20px;
+      }
+      p {
+        &:not(:first-child) {
+          margin-top: 20px;
+          @include tablet() {
+            margin-top: 12px;
+          }
+        }
+        @include tablet() {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
     }
   }
