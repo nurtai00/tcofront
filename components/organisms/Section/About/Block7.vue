@@ -305,7 +305,6 @@ export default {
   },
   methods: {
     touchEndHandler(event) {
-      event.preventDefault()
       console.log({ touchend: event })
       if (Math.abs(this.touchstartX - event.changedTouches[0].pageX) > 80) {
         console.log(
@@ -344,10 +343,11 @@ export default {
         document.querySelector('.tco__year-text').style.width = `calc(100vw + ${
           this.scrolledIndex * 83
         }vw - ${34 * this.scrolledIndex}px)`
+
+        event.preventDefault()
       }
     },
     touchStartHandler(event) {
-      event.preventDefault()
       console.log({ touchstart: event })
       this.touchstartX = event.touches[0].pageX
     },
