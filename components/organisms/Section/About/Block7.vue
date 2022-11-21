@@ -263,6 +263,8 @@ export default {
           id: '2018',
         },
       ],
+      touchstartX: 0,
+      scrolledIndex: 0,
     }
   },
   mounted() {
@@ -276,12 +278,77 @@ export default {
         null
       )
     }
-    document.addEventListener('scroll', this.scrollHandler)
+    if (window.innerWidth < 550) {
+      this.$nextTick(() => {
+        document
+          .querySelector('#company_year .double-block')
+          .addEventListener('touchstart', this.touchStartHandler)
+        document
+          .querySelector('#company_year .double-block')
+          .addEventListener('touchend', this.touchEndHandler)
+      })
+    } else {
+      document.addEventListener('scroll', this.scrollHandler)
+    }
   },
   beforeDestroy() {
-    document.removeEventListener('scroll', this.scrollHandler)
+    if (window.innerWidth < 550) {
+      document
+        .querySelector('#company_year .double-block')
+        .removeEventListener('touchstart', this.touchStartHandler)
+      document
+        .querySelector('#company_year .double-block')
+        .removeEventListener('touchend', this.touchEndHandler)
+    } else {
+      document.removeEventListener('scroll', this.scrollHandler)
+    }
   },
   methods: {
+    touchEndHandler(event) {
+      console.log({ touchend: event })
+      if (Math.abs(this.touchstartX - event.changedTouches[0].pageX) > 80) {
+        console.log(
+          'scrolled',
+          this.touchstartX - event.changedTouches[0].pageX
+        )
+        if (this.touchstartX - event.changedTouches[0].pageX > 0) {
+          this.scrolledIndex++
+        } else if (
+          this.touchstartX - event.changedTouches[0].pageX < 0 &&
+          this.scrolledIndex
+        ) {
+          this.scrolledIndex--
+        }
+        if (this.scrolledIndex === 23) {
+          this.scrolledIndex = 22
+        }
+        document.querySelector('.tco__year').style.left = `-${
+          this.scrolledIndex * 53.6
+        }vw`
+        document.querySelector('.tco__year').style.width = `calc(100vw + ${
+          this.scrolledIndex * 53.6
+        }vw)`
+        document
+          .querySelectorAll('.tco__year h2')
+          .forEach((h_element, h_index) => {
+            if (h_index === this.scrolledIndex) {
+              h_element.classList.add('active')
+            } else {
+              h_element.classList.remove('active')
+            }
+          })
+        document.querySelector('.tco__year-text').style.left = `calc(-${
+          this.scrolledIndex * 83
+        }vw + ${34 * this.scrolledIndex}px)`
+        document.querySelector('.tco__year-text').style.width = `calc(100vw + ${
+          this.scrolledIndex * 83
+        }vw - ${34 * this.scrolledIndex}px)`
+      }
+    },
+    touchStartHandler(event) {
+      console.log({ touchstart: event })
+      this.touchstartX = event.touches[0].pageX
+    },
     scrollHandler() {
       const year_list = []
       this.year_list.forEach((year) => {
@@ -452,15 +519,29 @@ export default {
       max-width: inherit;
       padding: 15px;
     }
+    @media (orientation: portrait) {
+      width: 75vw;
+      max-width: inherit;
+      min-width: 75vw;
+      padding: 0;
+      padding-right: 8vw;
+      padding-left: 16px;
+      border-bottom: 0px solid #8c9fa6;
+      border-right: 1px solid #8c9fa6;
+    }
 
     h4 {
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 28px;
       line-height: 32px;
       width: 100%;
       color: #30454e;
+      @media (orientation: portrait) {
+        font-size: 4.8vw; // 18px;
+        line-height: 6.4vw; // 24px;
+      }
     }
     img {
       width: 550px;
@@ -468,14 +549,21 @@ export default {
         width: 100%;
         max-width: inherit;
       }
+      @media (orientation: portrait) {
+        width: 75%;
+      }
     }
     p {
-      font-family: 'Roboto';
+      font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 20px;
       line-height: 28px;
       color: #30454e;
+      @media (orientation: portrait) {
+        font-size: 4.2vw; // 16px;
+        line-height: 5.8vw; // 22px;
+      }
     }
   }
   &__year {
@@ -487,9 +575,17 @@ export default {
     height: 100vh;
     @media (orientation: portrait) {
       position: relative !important;
-      top: 0p;
+      top: 0px;
       height: auto;
       width: 100vw;
+      display: flex;
+      max-width: inherit;
+      padding: 0;
+      padding: 28px 0;
+      padding-left: 13.6vw;
+      left: 0px;
+      overflow-x: hidden;
+      transition: 0.5s all ease;
     }
     h2 {
       position: relative;
@@ -507,6 +603,7 @@ export default {
       @media (orientation: portrait) {
         font-size: 22vw; // 86px;
         line-height: 24vw; // 90px;
+        top: 0px !important;
       }
     }
     .active {
@@ -516,12 +613,23 @@ export default {
       font-size: 12.4vh; // 7.77vw; // 112px;
       line-height: 24.88vh; // 15.55vw; // 224px;
       @media (orientation: portrait) {
-        font-size: 13vw; // 51px
+        font-size: 13.23vw; // 51px
         line-height: 24vw; // 90px;
       }
     }
     &-text {
       padding-bottom: 50vw;
+      @media (orientation: portrait) {
+        padding-bottom: 0px;
+        padding-top: 40px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100vw;
+        overflow-x: hidden;
+        transition: 0.5s all ease;
+        position: relative;
+      }
     }
   }
   &__yearcircle {
@@ -537,6 +645,13 @@ export default {
     border-radius: 50%;
     transition: 0.5s all ease;
     opacity: 0;
+    @media (orientation: portrait) {
+      width: 39vw;
+      height: 39vw;
+      left: 30vw;
+      top: calc(66px + 28px);
+      opacity: 0.4;
+    }
   }
   &__yearcircle-fixed {
     position: sticky;
