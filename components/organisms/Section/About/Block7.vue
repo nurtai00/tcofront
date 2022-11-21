@@ -305,6 +305,7 @@ export default {
   },
   methods: {
     touchEndHandler(event) {
+      event.preventDefault()
       console.log({ touchend: event })
       if (Math.abs(this.touchstartX - event.changedTouches[0].pageX) > 80) {
         console.log(
@@ -346,6 +347,7 @@ export default {
       }
     },
     touchStartHandler(event) {
+      event.preventDefault()
       console.log({ touchstart: event })
       this.touchstartX = event.touches[0].pageX
     },
