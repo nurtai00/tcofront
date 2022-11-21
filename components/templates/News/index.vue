@@ -1,11 +1,11 @@
 <template>
-  <div class="news container">
-    <MoleculesBreadcrumbs>
-      <AtomsBreadOption to="/">Home</AtomsBreadOption>
-      <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
-    </MoleculesBreadcrumbs>
-    <div class="news_header">
-      <h1>Новости ТШО</h1>
+  <div class="news">
+    <div class="container">
+      <MoleculesBreadcrumbs class="mt40 mb20">
+        <AtomsBreadOption to="/">Home</AtomsBreadOption>
+        <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
+      </MoleculesBreadcrumbs>
+      <AtomsTitle class="mb20"> Новости ТШО </AtomsTitle>
       <AtomsTag
         v-for="(tag, idx) in tags"
         :key="idx"
@@ -18,19 +18,21 @@
       />
     </div>
     <div class="news_all">
-      <div class="news_list">
-        <MoleculesCardNewsMain
-          v-for="item in 7"
-          :key="item"
-          :index="item"
-          :class="`news_card_` + item"
-        />
-      </div>
-      <div class="news_button">
-        <button>Загрузить еще</button>
+      <div class="container">
+        <div class="news_list">
+          <MoleculesCardNewsMain
+            v-for="item in 7"
+            :key="item"
+            :index="item"
+            :class="`news_card_` + item"
+          />
+        </div>
+        <AtomsButton type="submit"> Загрузить еще </AtomsButton>
       </div>
     </div>
-    <OrganismsSectionNewsPublicationsBlock class="news_publications" />
+    <div class="news_publications">
+      <OrganismsSectionNewsPublicationsBlock class="container" />
+    </div>
   </div>
 </template>
 
@@ -76,79 +78,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-p {
-  margin: 0;
-}
 .news {
-  margin: 0 auto !important;
-  padding-top: 20px;
-  p {
-    margin: 0;
-  }
-  &_header {
-    padding-bottom: 35px;
-    @media (orientation: portrait) {
-      padding-bottom: 20px;
-    }
-  }
-  h1 {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
-    color: #015467;
-    margin: 20px 0;
-    position: relative;
-    padding-left: 24px;
-    @media (orientation: portrait) {
-      font-size: 24px;
-      line-height: 32px;
-      padding-left: 18px;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0px;
-      top: 12px;
-      width: 12px;
-      height: 12px;
-      background: #00b0f0;
-      border-radius: 50%;
-      @media (orientation: portrait) {
-        width: 10px;
-        height: 10px;
-        top: 6px;
-      }
-    }
-  }
-  &_publications {
-    background: #f2f6f7;
-    position: relative;
-    left: calc((1144px - 100vw) / 2);
-    padding-left: calc((100vw - 1144px) / 2) !important;
-    padding-right: calc((100vw - 1144px) / 2) !important;
-    width: 100vw;
-    @media (orientation: portrait) {
-      left: -16px;
-      padding-left: 16px !important;
-      padding-right: 16px !important;
-    }
-  }
+  width: 100%;
   &_all {
+    width: 100%;
     background: rgba(1, 84, 103, 0.1);
-    position: relative;
-    left: calc((1144px - 100vw) / 2);
-    padding-left: calc((100vw - 1144px) / 2);
-    padding-right: calc((100vw - 1144px) / 2);
-    width: 100vw;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    @media (orientation: portrait) {
-      left: -16px;
-      padding-left: 16px;
-      padding-right: 16px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+    padding: 80px 0;
+    margin-top: 32px;
+    @include tablet() {
+      padding: 20px 0;
+      margin-top: 12px;
     }
   }
   &_list {
@@ -156,8 +95,11 @@ p {
     grid-gap: 24px;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 170px;
-    @media (orientation: portrait) {
+    @include tablet() {
       display: block;
+      grid-gap: 0px;
+      grid-template-columns: unset;
+      grid-auto-rows: unset;
     }
   }
   &_card_1 {
@@ -196,27 +138,22 @@ p {
     grid-row-start: 3;
     grid-row-end: 5;
   }
-  &_button {
-    text-align: center;
-    margin-top: 40px;
-    button {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      color: #ffffff;
-      padding: 14px 85px;
-      background: #015467;
-      box-shadow: 20px 4px 34px rgba(255, 255, 255, 0.1);
-      border-radius: 4px;
-      border: 0px;
-      outline: none;
-      cursor: pointer;
-      @media (orientation: portrait) {
-        padding: 12px 0;
-        width: 100%;
-      }
-    }
+  &_publications {
+    width: 100%;
+    background: #f2f6f7;
+  }
+}
+.btn {
+  margin: 40px auto 0;
+  padding: 14px 85px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  @include tablet() {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 85px;
   }
 }
 </style>

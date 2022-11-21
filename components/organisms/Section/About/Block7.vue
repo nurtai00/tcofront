@@ -8,18 +8,18 @@
       <div class="tco__year">
         <h2
           v-for="(year, year_index) in year_list"
+          :id="'year' + year.id"
           :key="year.text + ' ' + year_index"
           :class="{ active: active === year.text, small: year.small }"
-          :id="'year' + year.id"
           v-text="year.text"
         ></h2>
       </div>
       <div class="tco__year-text">
         <div
           v-for="(text, text_index) in text_list"
+          :id="'text' + text.id"
           :key="text_index"
           class="tco__story"
-          :id="'text' + text.id"
         >
           <h4 v-text="text.title"></h4>
           <img v-if="text.image" :src="text.image" alt="image1" />

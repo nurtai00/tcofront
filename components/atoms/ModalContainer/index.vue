@@ -69,6 +69,9 @@ export default {
     width: 90%;
     padding: 64px 16px;
   }
+  @include wide-tablet {
+    padding: 52px 20px;
+  }
 }
 .modal-close {
   @include size(44px);
@@ -76,13 +79,13 @@ export default {
   margin-left: auto;
   transition: transform 0.5s ease;
   cursor: pointer;
-  position: sticky;
+  position: fixed;
   top: 40px;
-  right: 132px;
+  right: 10px;
   @include tablet() {
     @include size(22px);
     top: 20px;
-    right: 20px;
+    right: 10px;
   }
   &:hover {
     transform: rotate(180deg);

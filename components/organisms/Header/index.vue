@@ -20,14 +20,14 @@
         :options="langs"
         height="100%"
         :placeholder="''"
-        @change="selectLang"
         class="lang_btn"
+        @change="selectLang"
       />
       <img src="@/assets/icons/search.svg" class="search_btn" />
       <div
-        @click="showNav"
         class="menu_btn"
         :class="{ burger_close: show_nav }"
+        @click="showNav"
       >
         <div class="menu_btn__burger"></div>
       </div>
@@ -35,7 +35,7 @@
     <div class="links container" :class="{ show_nav: show_nav }">
       <div v-for="(route, idx) in routes" :key="idx">
         <NuxtLink
-          :class="{ active_link: $route.path == route.link }"
+          :class="{ active_link: $route.path === route.link }"
           :to="route.link"
         >
           {{ route.name }}
@@ -69,7 +69,7 @@ export default {
         },
         {
           name: 'Kazakhstani Content',
-          link: '/kazakhstani_content',
+          link: '/kazakhstani-content',
         },
         {
           name: 'Sustainability',

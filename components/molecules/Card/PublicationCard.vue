@@ -38,7 +38,6 @@ export default {}
       font-size: 18px;
       line-height: 22px;
       color: #30454e;
-      margin: 0px;
       @media (orientation: portrait) {
         font-size: 14px;
         line-height: 18px;

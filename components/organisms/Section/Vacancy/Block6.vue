@@ -35,8 +35,7 @@
           степеней университетов РК и зарубежных университетов и стипендиальной
           программы "Болашак".
         </p>
-        <a class="info__link-button"
-          >Подробнее
+        <a class="info__link-button">Подробнее
           <svg
             width="24"
             height="24"
@@ -57,8 +56,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-            /></svg
-        ></a>
+            /></svg></a>
         <a class="info__link">Перейти на вакансию</a>
       </div>
       <div class="info__img">
@@ -147,6 +145,7 @@
     }
     &__img {
       width: 100%;
+      overflow: hidden;
       img {
         width: 100%;
         height: 100%;

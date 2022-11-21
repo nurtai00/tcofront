@@ -44,21 +44,5 @@ export default {
       margin-right: 8px;
     }
   }
-  h1 {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
-    color: #015467;
-    @include tablet() {
-      font-size: 24px;
-      line-height: 32px;
-    }
-  }
-  h3 {
-    @include phone() {
-      font-size: 20px !important;
-      line-height: 26px !important;
-    }
-  }
 }
 </style>
