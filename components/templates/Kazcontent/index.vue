@@ -253,7 +253,7 @@ export default {
         {
           id: 2,
           text: 'Как стать поставщиком',
-          url: '/kazakhstani-content/benefits',
+          url: '/kazakhstani-content',
         },
         {
           id: 3,
@@ -263,7 +263,7 @@ export default {
         {
           id: 4,
           text: 'Льготы',
-          url: '/kazakhstani-content',
+          url: '/kazakhstani-content/benefits',
         },
       ],
       series: [
