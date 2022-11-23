@@ -7,7 +7,7 @@
           Устойчивость
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="mb20">Sustainability</AtomsTitle>
+      <AtomsTitle class="mb20">Устойчивость</AtomsTitle>
       <AtomsTag v-for="tag of tags" :key="tag.id" :tag="tag" />
     </div>
     <OrganismsSectionSustainabilityImpactPopulation />
