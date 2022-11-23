@@ -11,7 +11,7 @@
           <img src="@/assets/img/fees.svg" />
           <div>
             <h4>Прямые выплаты</h4>
-            <span>2,8 млрд</span>
+            <span>10,9 млрд</span>
             <p>(в долл. США)</p>
           </div>
         </div>
@@ -21,7 +21,7 @@
           <img src="@/assets/img/fees2.svg" />
           <div>
             <h4>Совокупные выплаты с 1993 г.</h4>
-            <span>164 млрд</span>
+            <span>172 млрд</span>
             <p>(в долл. США)</p>
           </div>
         </div>
