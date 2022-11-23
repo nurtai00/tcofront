@@ -2,7 +2,7 @@
   <div class="products">
     <div class="container">
       <MoleculesBreadcrumbs class="products__breadcrumbs">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
         <AtomsBreadOption to="/products">Продукция</AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="products__title">Продукция</AtomsTitle>
