@@ -5,7 +5,7 @@
       <div class="tco__files">
         <a class="item" href="">
           <img src="@/assets/img/pdf.svg" />
-          1 Квартал 2022
+          3 Квартал 2022
         </a>
         <a class="item" href="">
           <img src="@/assets/img/pdf.svg" />
