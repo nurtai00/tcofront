@@ -2,12 +2,12 @@
   <div class="join">
     <div class="container">
       <MoleculesBreadcrumbs class="join__breadcrumbs">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
         <AtomsBreadOption to="/kazakhstani-content">
-          Kazakhstani Content
+          Казахстанское содержание
         </AtomsBreadOption>
         <AtomsBreadOption to="/kazakhstani-content/join-tco-program">
-          Joint TCO and EBRD Program
+          Программы развития поставщиков
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="join__title">
