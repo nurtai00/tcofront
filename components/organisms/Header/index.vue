@@ -52,35 +52,35 @@ export default {
       show_nav: false,
       routes: [
         {
-          name: 'Home',
+          name: 'Главная',
           link: '/',
         },
         {
-          name: 'Company',
+          name: 'Компания',
           link: '/about',
         },
         {
-          name: 'Operations',
+          name: 'Операции',
           link: '/operations',
         },
         {
-          name: 'Projects',
+          name: 'Проекты',
           link: '/projects',
         },
         {
-          name: 'Kazakhstani Content',
+          name: 'Казахстанское содержание',
           link: '/kazakhstani-content',
         },
         {
-          name: 'Sustainability',
+          name: 'Устойчивость',
           link: '/sustainability',
         },
         {
-          name: 'Career',
+          name: 'Карьера',
           link: '/career',
         },
         {
-          name: 'Lender Relations',
+          name: 'Кредиторам',
           link: '/relations',
         },
       ],
