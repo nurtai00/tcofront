@@ -2,9 +2,9 @@
   <div class="kazakhstani">
     <div class="container">
       <MoleculesBreadcrumbs class="kazakhstani__breadcrumbs">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
         <AtomsBreadOption to="/kazakhstani-content">
-          Kazakhstani Content
+          Казахстанское содержание
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="kazakhstani__title">
@@ -329,7 +329,7 @@ export default {
           image: 'kazakhstani/kazakhstani2.png',
         },
         {
-          title: 'Создаем возможности для местных поставщиков',
+          title: 'Правильный способ ведения деятельности',
           image: 'kazakhstani/kazakhstani1.png',
         },
       ],
