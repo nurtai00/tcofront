@@ -2,12 +2,12 @@
   <div class="electronic">
     <div class="container">
       <MoleculesBreadcrumbs class="electronic__breadcrumbs">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
         <AtomsBreadOption to="/kazakhstani-content">
-          Kazakhstani Content
+          Казахстанское содержание
         </AtomsBreadOption>
         <AtomsBreadOption to="/kazakhstani-content/electronic-catalog">
-          Electronic catalog
+          Электронный каталог
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="electronic__title">
