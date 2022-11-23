@@ -2,9 +2,9 @@
   <div class="sustainability">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
         <AtomsBreadOption to="/Sustainability">
-          Sustainability
+          Устойчивость
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20">Sustainability</AtomsTitle>
