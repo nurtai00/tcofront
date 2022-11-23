@@ -2,8 +2,8 @@
   <div class="projects">
     <div class="container">
       <MoleculesBreadcrumbs class="projects__breadcrumbs">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/projects">Projects</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/projects">Проекты</AtomsBreadOption>
         <AtomsBreadOption to="/projects/other-projects">
           Other projects
         </AtomsBreadOption>
