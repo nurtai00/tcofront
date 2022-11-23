@@ -2,10 +2,10 @@
   <div class="operations">
     <div class="container">
       <MoleculesBreadcrumbs class="operations__breadcrumbs">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/operations">Operations</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/operations">Операции</AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="operations__title">Operations</AtomsTitle>
+      <AtomsTitle class="operations__title">Операции</AtomsTitle>
       <div class="operations__tags">
         <AtomsTag
           v-for="(tag, index) of tags"
@@ -160,7 +160,7 @@ export default {
       ],
       textSlide2: [
         {
-          title: 'Готовность к чрезвычайным ситуациям и разливам нефт',
+          title: 'Готовность к чрезвычайным ситуациям и разливам нефти',
           description: [
             'ТОО «Тенгизшевройл» обеспечивает соответствие самым высоким стандартам Практики управления качеством продукции в части обеспечения безопасной транспортировки и контроля качества при реализации продукции. Специально назначенная группа профессионалов с особым вниманием работает над оценкой и минимизацией потенциальных рисков для здоровья, окружающей среды, безопасности и качества, в ходе всего жизненного цикла продукции. Данная команда содействует применению передовой практики управления качеством промышленных продуктов заказчиками и поставщиками услуг посредством проверки безопасности и проведения технических аудитов.',
           ],
