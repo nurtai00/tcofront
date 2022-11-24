@@ -22,7 +22,7 @@
         <AtomsHeading class="ecology__title-mobile" type="h3" color="white">
           Экологический мониторинг
         </AtomsHeading>
-        <img src="@/assets/img/sustainability/block2.jpg" alt="block" />
+        <img src="@/assets/img/sustainability/block-2.png" alt="block" />
       </div>
     </div>
     <div class="container ecology__cards">
