@@ -49,6 +49,8 @@ export default {}
 
 <style lang="scss" scoped>
 .creditors {
+  margin-top: 0px !important;
+  left: 0px !important;
   width: 100%;
   padding: 80px 0;
   background: #f2f6f7;
