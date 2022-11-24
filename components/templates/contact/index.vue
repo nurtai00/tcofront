@@ -2,8 +2,8 @@
   <div class="contact">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/contact">Contact Information</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/contact">Контактная информация</AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20 contact__title">
         Контактная информация
