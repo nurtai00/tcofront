@@ -13,29 +13,29 @@
         <div class="info_block">
           <span>Последняя редакция</span>
           <div class="info_block__footer">
-            <span>21/12/2021</span>
+            <span>07/10/2022</span>
             <span>30/06/2021</span>
           </div>
         </div>
         <div class="info_block">
           <span>Мировой рейтинг</span>
           <div class="info_block__footer">
-            <span>BBB-</span>
+            <span>BB+</span>
             <span>Baa2</span>
           </div>
         </div>
         <div class="info_block">
           <span>Перспектива</span>
           <div class="info_block__footer">
-            <span>Положительный</span>
+            <span>Отрицательный</span>
             <span>Устойчивый</span>
           </div>
         </div>
         <div class="info_block">
           <span>Веб-страница</span>
           <div class="info_block__footer">
-            <span>S & P</span>
-            <span>Moody`s</span>
+            <a href="https://www.spglobal.com/ratings/en/">S & P</a>
+            <a href="https://www.moodys.com/research/Moodys-assigns-PBaa2-rating-to-Tengizchevroil-Finance-Company-International-Ltds--PR_351572">Moody`s</a>
           </div>
         </div>
       </div>
