@@ -29,7 +29,7 @@
       </div>
       <div class="statistic_info">
         <p>
-          Алматы – 32,2 %<br />
+          Казахстан – 32,2 %<br />
           1000 работников
         </p>
         <p>
@@ -97,8 +97,8 @@ export default {}
     left: 45%;
   }
   .golub {
-    top: 23%;
-    left: 63%;
+    top: 31%;
+    left: 64%;
   }
   .grey {
     top: 49.5%;
