@@ -2,8 +2,8 @@
   <div class="career">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/career">Career</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/career">Карьера</AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20"> Карьера </AtomsTitle>
       <AtomsTag v-for="(tag, idx) in tags" :key="idx" :tag="tag" />
