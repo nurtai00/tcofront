@@ -57,6 +57,10 @@ export default {
           :tag="{
             text: 'Карьера',
             selected: false,
+          },
+          {
+            text: 'Производство',
+            selected: false,
           }"
           class="atoms_tag"
         />
