@@ -4,7 +4,6 @@
       <div class="work__content">
         <AtomsHeading type="h3">
           ТШО создал тысячи новых рабочих мест
-          <i class="icon-marker" />
         </AtomsHeading>
         <div class="work__content-description">
           <p>
