@@ -391,7 +391,7 @@ export default {
           description: 'Волоконно-оптический кабель',
         },
         {
-          icon: 'danger',
+          icon: 'danger.svg',
           number: '06',
           title: 'БиОТ/ООС',
           description:
