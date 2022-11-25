@@ -365,7 +365,7 @@ export default {
             'Кабели высокого напряжения, распредщиты низкого напряжения, трансформаторы, подстанции, удаленные терминалы',
         },
         {
-          icon: 'tool',
+          img: require('@/assets/icons/statistic2.svg'),
           number: '02',
           title: 'Услуги по техобслуживанию',
           description:
