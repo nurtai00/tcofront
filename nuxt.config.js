@@ -164,6 +164,18 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
   ],
+  router: {
+    mode: 'hash',
+    base: '/vue',
+    extendRoutes(routes, resolve) {
+      routes.push({
+        path: '/vue',
+        components: {
+          default: resolve(__dirname, 'pages/index'), // or routes[index].component
+        },
+      })
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
