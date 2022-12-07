@@ -170,8 +170,16 @@ export default {
     locales: ['en', 'ru', 'kk'],
     defaultLocale: 'ru',
     vueI18n: {
-      fallbackLocale: 'en',
-      locales: [{ code: 'kk', iso: 'kk-KK', file: 'kk.json', name: 'Kazakh' }],
+      locales: [
+        { code: 'kk', iso: 'kk-KK', file: 'kk.json', name: 'Kazakh' },
+        { code: 'ru', iso: 'ru-RU', file: 'ru.json', name: 'Russian' },
+        { code: 'eng', iso: 'en-EN', file: 'en.json', name: 'English' },
+      ],
+      messages: {
+        kk: {
+          suistainability: require('./locales/Suistainability/kk.json'),
+        },
+      },
       loadLanguagesAsync: true,
       langDir: '~locales',
     },

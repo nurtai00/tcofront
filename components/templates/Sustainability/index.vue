@@ -2,12 +2,14 @@
   <div class="sustainability">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/">
+          {{ $t('suistainability.breadcrumbs.main') }}
+        </AtomsBreadOption>
         <AtomsBreadOption to="/Sustainability">
-          Устойчивость
+          {{ $t('suistainability.title') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="mb20">Устойчивость</AtomsTitle>
+      <AtomsTitle class="mb20"> {{ $t('suistainability.title') }}</AtomsTitle>
       <AtomsTag v-for="tag of tags" :key="tag.id" :tag="tag" />
     </div>
     <OrganismsSectionSustainabilityImpactPopulation />
@@ -30,7 +32,7 @@ export default {
     return {
       tags: [
         { id: 1, text: 'Экология' },
-        { id: 2, text: 'Социальные инвестиции' },
+        { id: 2, text: this.$t('suistainability.invest') },
       ],
     }
   },

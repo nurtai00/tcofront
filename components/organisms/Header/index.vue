@@ -109,7 +109,7 @@ export default {
       this.show_nav = !this.show_nav
     },
     selectLang(lang) {
-      this.$i18n.setLocale(lang.code)
+      this.$i18n.locale = lang.code
       if (this.defaultItem === lang) {
         return
       }

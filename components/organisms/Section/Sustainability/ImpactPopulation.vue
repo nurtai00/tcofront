@@ -2,30 +2,23 @@
   <div class="impact">
     <div class="impact__wrapper container">
       <AtomsHeading class="impact__title" type="h3">
-        Воздействие на окружающую среду
+        {{ $t('suistainability.impactPopulation.title') }}
       </AtomsHeading>
       <div class="impact__content">
         <div class="impact__info">
           <p class="impact__info-description">
-            Деятельность компании в области охраны окружающей среды отражают
-            приверженность защите окружающей среды путем постоянного улучшения
-            своих экологических показателей. С 2000 года ТШО инвестировал более
-            451 млрд тенге (или более 3 млрд долларов США) на реализацию
-            природоохранных мероприятий, в результате которых было достигнуто
-            сокращение сжигания газа на факелах и атмосферных выбросов,
-            улучшение эффективности очистки сточных вод, а также увеличение
-            объемов повторно используемой воды.
+            {{ $t('suistainability.impactPopulation.description') }}
           </p>
           <div class="mt40">
             <AtomsPdfFile
-              text="Основные экологические показатели за 2021 год "
+              :text="$t('suistainability.impactPopulation.files.file1')"
               direction="row"
               :width="30"
               :height="40"
             />
             <AtomsPdfFile
               class="mt20"
-              text="Краткий справочник Биотопов Тенгиза"
+              :text="$t('suistainability.impactPopulation.files.file2')"
               direction="row"
               :width="30"
               :height="40"
@@ -56,26 +49,29 @@ export default {
       items: [
         {
           id: 1,
-          title: 'Утилизация газа',
+          title: this.$t('suistainability.impactPopulation.cards.card1'),
           imgSrc: 'block1-1.svg',
         },
         {
           id: 2,
-          title: 'Рациональное использование воды',
+          title: this.$t('suistainability.impactPopulation.cards.card2'),
           imgSrc: 'block1-2.svg',
         },
         {
           id: 3,
-          title: 'Управление отходами',
+          title: this.$t('suistainability.impactPopulation.cards.card3'),
           imgSrc: 'block1-3.svg',
         },
         {
           id: 4,
-          title: 'Биоразнообразие',
+          title: this.$t('suistainability.impactPopulation.cards.card4'),
           imgSrc: 'block1-4.svg',
         },
       ],
     }
+  },
+  mounted() {
+    console.log(this.$t('suistainability.impactPopulation.cards.card2'))
   },
   methods: {
     openPopup(item) {
