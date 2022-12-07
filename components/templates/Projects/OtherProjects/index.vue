@@ -2,13 +2,13 @@
   <div class="projects">
     <div class="container">
       <MoleculesBreadcrumbs class="projects__breadcrumbs">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/projects">Projects</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/projects">Проекты</AtomsBreadOption>
         <AtomsBreadOption to="/projects/other-projects">
-          Other projects
+          Другие проекты
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="projects__title">Other projects</AtomsTitle>
+      <AtomsTitle class="projects__title">Другие проекты</AtomsTitle>
       <div class="projects__tags">
         <AtomsTag
           v-for="(tag, index) of tags"

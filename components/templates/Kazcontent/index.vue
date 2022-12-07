@@ -2,9 +2,9 @@
   <div class="kazakhstani">
     <div class="container">
       <MoleculesBreadcrumbs class="kazakhstani__breadcrumbs">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
         <AtomsBreadOption to="/kazakhstani-content">
-          Kazakhstani Content
+          Казахстанское содержание
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="kazakhstani__title">
@@ -253,7 +253,7 @@ export default {
         {
           id: 2,
           text: 'Как стать поставщиком',
-          url: '/kazakhstani-content/benefits',
+          url: '/kazakhstani-content',
         },
         {
           id: 3,
@@ -263,7 +263,7 @@ export default {
         {
           id: 4,
           text: 'Льготы',
-          url: '/kazakhstani-content',
+          url: '/kazakhstani-content/benefits',
         },
       ],
       series: [
@@ -329,7 +329,7 @@ export default {
           image: 'kazakhstani/kazakhstani2.png',
         },
         {
-          title: 'Создаем возможности для местных поставщиков',
+          title: 'Правильный способ ведения деятельности',
           image: 'kazakhstani/kazakhstani1.png',
         },
       ],
@@ -391,7 +391,7 @@ export default {
           description: 'Волоконно-оптический кабель',
         },
         {
-          icon: 'danger',
+          icon: 'danger.svg',
           number: '06',
           title: 'БиОТ/ООС',
           description:

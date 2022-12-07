@@ -3,12 +3,12 @@
     <div class="benefits__header">
       <div class="container">
         <MoleculesBreadcrumbs class="benefits__breadcrumbs">
-          <AtomsBreadOption to="/">Home</AtomsBreadOption>
+          <AtomsBreadOption to="/">Главная</AtomsBreadOption>
           <AtomsBreadOption to="/kazakhstani-content">
-            Kazakhstani Content
+            Казахстанское содержание
           </AtomsBreadOption>
           <AtomsBreadOption to="/kazakhstani-content/benefits">
-            Benefits
+            Льготы
           </AtomsBreadOption>
         </MoleculesBreadcrumbs>
         <AtomsTitle class="benefits__title">

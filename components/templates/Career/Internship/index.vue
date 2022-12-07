@@ -2,9 +2,9 @@
   <div class="internship">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/career">Career</AtomsBreadOption>
-        <AtomsBreadOption to="/career">Career</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/career">Карьера</AtomsBreadOption>
+        <AtomsBreadOption to="/career/internship">Стажировка</AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb40"> Стажировка В ТШО </AtomsTitle>
     </div>

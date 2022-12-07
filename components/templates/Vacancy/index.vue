@@ -2,9 +2,9 @@
   <div class="vacancy">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/career">Career</AtomsBreadOption>
-        <AtomsBreadOption to="/career/vacancy">Vacancy</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/career">Карьера</AtomsBreadOption>
+        <AtomsBreadOption to="/career/vacancy">Вакансии</AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle>Вакансии</AtomsTitle>
     </div>

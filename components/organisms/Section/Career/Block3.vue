@@ -31,17 +31,17 @@ export default {
         },
         {
           img: require('@/assets/icons/statistic2.svg'),
-          title: '93,9%',
+          title: '94,7%',
           text: 'Доля штатных казахстанских работников, без учета персонала ПБР-ПУУД',
         },
         {
           img: require('@/assets/icons/statistic3.svg'),
-          title: '88,5%',
+          title: '89,9%',
           text: 'Общая доля казахстанских работников на данный момент',
         },
         {
           img: require('@/assets/icons/statistic4.svg'),
-          title: '77,3%',
+          title: '76,6%',
           text: 'Доля казахстанцев на руководящих постах от общего числа руководящего состава',
         },
       ],

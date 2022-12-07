@@ -2,8 +2,8 @@
   <div class="projects">
     <div class="container">
       <MoleculesBreadcrumbs class="projects__breadcrumbs">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/projects">Projects</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/projects">Проекты</AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="projects__title">Проекты</AtomsTitle>
       <div class="projects__tags">
@@ -218,9 +218,9 @@ export default {
         },
       ],
       slider: {
-        left: ['13,6 млрд долларов США', '53 000', '12 000 000 тонн в год'],
+        left: ['15 млрд долларов США', '53 000', '12 000 000 тонн в год'],
         right: [
-          'Затраты на казахстанские товары и услуги',
+          'Затраты на казахстанские товары и услуги в 2022 г.',
           'Число казахстанских работников на проекте',
           'Ожидаемый рост добычи',
         ],

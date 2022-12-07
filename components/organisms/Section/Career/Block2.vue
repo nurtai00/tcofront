@@ -19,7 +19,7 @@
       <div class="info">
         <AtomsTag
           :tag="{
-            text: 'Производство',
+            text: 'Ценности в ТШО',
             url: '123',
             selected: true,
           }"

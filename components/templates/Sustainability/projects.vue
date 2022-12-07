@@ -2,12 +2,12 @@
   <div class="project">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
         <AtomsBreadOption to="/sustainability">
-          Sustainability
+          Устойчивость
         </AtomsBreadOption>
         <AtomsBreadOption :to="`/sustainability/${$route.params.projects}`">
-          Проекты Игилик
+          Проекты Игілік
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
 
@@ -74,7 +74,7 @@ export default {
     title() {
       const path = this.$route.path.split('/').pop()
       return path === 'igilik'
-        ? 'Проекты, созданные в рамках “Игилик”'
+        ? 'Проекты, созданные в рамках “Игілік”'
         : 'Проекты, созданные в рамках “ПСИ”'
     },
   },

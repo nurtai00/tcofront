@@ -9,13 +9,13 @@
           <img src="@/assets/img/logo.svg" />
         </NuxtLink>
         <div class="block">
-          <Nuxt-Link to="/">Home</Nuxt-Link>
-          <Nuxt-Link to="/about">Company</Nuxt-Link>
-          <Nuxt-Link to="/operations">Operations</Nuxt-Link>
-          <Nuxt-Link to="/kazakhstani_content">Kazakhstani Content</Nuxt-Link>
-          <Nuxt-Link to="/sustainability">Sustainability</Nuxt-Link>
-          <Nuxt-Link to="/career">Career</Nuxt-Link>
-          <Nuxt-Link to="/relations">Lender Relations</Nuxt-Link>
+          <Nuxt-Link to="/">Главная</Nuxt-Link>
+          <Nuxt-Link to="/about">Компания</Nuxt-Link>
+          <Nuxt-Link to="/operations">Операции</Nuxt-Link>
+          <Nuxt-Link to="/kazakhstani_content">Казахстанское содержание</Nuxt-Link>
+          <Nuxt-Link to="/sustainability">Устойчивость</Nuxt-Link>
+          <Nuxt-Link to="/career">Карьера</Nuxt-Link>
+          <Nuxt-Link to="/relations">Кредиторам</Nuxt-Link>
         </div>
         <div class="block">
           <h6>Контакты</h6>

@@ -10,27 +10,27 @@ export default {}
           <div class="lines">
             <div class="section__title">
               <AtomsTitle class="atoms_title mb20" small>
-                Отчет и цифры за 2021 г.
+                Отчет и цифры за 2022 г.
               </AtomsTitle>
               <a href="/projects#pbr">Подробнее</a>
             </div>
             <div class="line">
               <div>
-                <span> 3,6 млрд (в долларах США) </span>
+                <span> 3,8 млрд (в долларах США) </span>
                 <p>Затраты на товары и услуги казахстанских производителей</p>
               </div>
               <img src="@/assets/img/document-2.svg" alt="" />
             </div>
             <div class="line">
               <div>
-                <span> 9 млрд (в долларах США) </span>
+                <span> 10,9 млрд (в долларах США) </span>
                 <p>Прямые выплаты Республике Казахстан</p>
               </div>
               <img src="@/assets/img/barrels-2.svg" alt="" />
             </div>
             <div class="line">
               <div>
-                <span> 26,6 млн (в тоннах) </span>
+                <span> 21,5 млн (в тоннах) </span>
                 <p>Производство сырой нефти</p>
               </div>
               <img src="@/assets/img/oil-pump-2.svg" alt="" />

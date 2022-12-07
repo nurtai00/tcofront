@@ -5,22 +5,22 @@
       <div class="tco__items">
         <div class="item">
           <img src="@/assets/img/item1.svg" />
-          <span>7,3 млн</span>
+          <span>21,5 млн</span>
           <p>Сырая нефть <br />(в тоннах)</p>
         </div>
         <div class="item">
           <img src="@/assets/img/item2.svg" />
-          <span>0,28 млн</span>
+          <span>0,85 млн</span>
           <p>СУГ <br />(в тоннах)</p>
         </div>
         <div class="item">
           <img src="@/assets/img/item3.svg" />
-          <span>0,53 млрд</span>
+          <span>7,6 млрд</span>
           <p>Сухой газ <br />(в м3)</p>
         </div>
         <div class="item">
           <img src="@/assets/img/item4.svg" />
-          <span>0,62 млн</span>
+          <span>1,8 млн</span>
           <p>Сера <br />(в тоннах)</p>
         </div>
       </div>

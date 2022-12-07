@@ -2,10 +2,10 @@
   <div class="relations">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb40">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/career">Lender Relations</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/career">Кредиторам</AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="mb40"> Lender Relations </AtomsTitle>
+      <AtomsTitle class="mb40">Кредиторам</AtomsTitle>
     </div>
     <OrganismsSectionRelationsBlock1 />
     <OrganismsSectionRelationsBlock2 />

@@ -2,12 +2,12 @@
   <div class="sustainability">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
         <AtomsBreadOption to="/Sustainability">
-          Sustainability
+          Устойчивость
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="mb20">Sustainability</AtomsTitle>
+      <AtomsTitle class="mb20">Устойчивость</AtomsTitle>
       <AtomsTag v-for="tag of tags" :key="tag.id" :tag="tag" />
     </div>
     <OrganismsSectionSustainabilityImpactPopulation />

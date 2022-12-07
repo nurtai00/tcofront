@@ -2,8 +2,8 @@
   <div class="privacy">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/privacy">Privacy Statement</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/privacy">Положение о конфиденциальности</AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle type="h1" class="mb20">
         Положение о конфиденциальности

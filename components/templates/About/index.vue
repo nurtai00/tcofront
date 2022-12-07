@@ -2,8 +2,8 @@
   <div>
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/about">Company</AtomsBreadOption>
+        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/about">Компания</AtomsBreadOption>
       </MoleculesBreadcrumbs>
     </div>
     <OrganismsSectionAboutBlock1 />
