@@ -1,4 +1,5 @@
 import { resolve } from 'path'
+
 // eslint-disable-next-line nuxt/no-cjs-in-config
 const webpack = require('webpack')
 // const fs = require('fs')
@@ -163,7 +164,18 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
+    '@nuxtjs/i18n',
   ],
+  i18n: {
+    locales: ['en', 'ru', 'kk'],
+    defaultLocale: 'ru',
+    vueI18n: {
+      fallbackLocale: 'en',
+      locales: [{ code: 'kk', iso: 'kk-KK', file: 'kk.json', name: 'Kazakh' }],
+      loadLanguagesAsync: true,
+      langDir: '~locales',
+    },
+  },
   router: {
     mode: 'hash',
     base: '/vue',
