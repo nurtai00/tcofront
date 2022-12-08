@@ -195,16 +195,16 @@ export default {
           contact: require('./locales/Contact/ru.json'),
           products: require('./locales/Products/ru.json'),
           header: require('./locales/header/ru.json'),
-          en: {
-            suistainability: require('./locales/Suistainability/en.json'),
-            home: require('./locales/home/en.json'),
-            news: require('./locales/news/en.json'),
-            relation: require('./locales/relation/en.json'),
-            company: require('./locales/company/en.json'),
-            contact: require('./locales/Contact/en.json'),
-            products: require('./locales/Products/en.json'),
-            header: require('./locales/header/en.json'),
-          },
+        },
+        en: {
+          suistainability: require('./locales/Suistainability/en.json'),
+          home: require('./locales/home/en.json'),
+          news: require('./locales/news/en.json'),
+          relation: require('./locales/relation/en.json'),
+          company: require('./locales/company/en.json'),
+          contact: require('./locales/Contact/en.json'),
+          products: require('./locales/Products/en.json'),
+          header: require('./locales/header/en.json'),
         },
         loadLanguagesAsync: true,
         langDir: '~locales',
@@ -260,3 +260,4 @@ export default {
     // ].concat(htmlPlugins),
     // },
   }
+}
