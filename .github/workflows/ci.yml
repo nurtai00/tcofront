@@ -19,7 +19,7 @@ jobs:
           username: 'root'
           password: 'Behappy7+'
           port: '22'
-          source: 'assets,layouts,components,pages,nuxt.config.js,models,plugins,repositories,services,static,store,package.json'
+          source: 'assets,layouts,components,pages,nuxt.config.js,models,plugins,repositories,services,static,store,package.json,locales'
           target: '/var/www/front/TcoFront'
 
       - name: Connect to server
