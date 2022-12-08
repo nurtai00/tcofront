@@ -1,0 +1,199 @@
+{
+  "title": "Sustainability",
+  "breadcrumbs": {
+    "main": "Home",
+    "igilik": "project Игилик"
+  },
+  "invest": "Social Investments",
+  "ecologyText": "Ecology",
+  "impactPopulation": {
+    "title": "Environmental Performance",
+    "description": "TCO committed to continuous improvement of environmental performance. TCO has invested over 451 billion KZT (or over $3 billion) since 2000 in environmental protection activities which have achieved reductions in flaring and air emissions, improved wastewater treatment and increased the amount of water reuse.",
+    "files": {
+      "file1": "2021 Environmental Performance ",
+      "file2": "Quick Guide to Tengiz Biotopes"
+    },
+    "cards": {
+      "card1": "Flaring Reduction",
+      "card2": "Rational Water Use",
+      "card3": "Waste Management",
+      "card4": "Biodiversity"
+    },
+    "popupText": {
+      "card1": "TCO has implemented number of major projects on flaring reduction, including gas processing capacity expansion project, gas export pipeline capacity growth project and gas utilization project.\nSince 2000, investments in environmental protection and plant reliability improvement projects have helped TCO reduce total gas flaring volumes by 79%. TCO has successfully conducted significant Turnarounds each year to replace aging equipment and improve existing reliability; replacing equipment often requires flaring to conduct the work safely.\nAs of 2009, TCO has eliminated continuous routine flaring of associated gas. Currently the gas flaring at TCO facilities is periodically carried out to ensure safety of personnel and environment, as well as during equipment maintenance and replacement to improve the operational reliability.Tengizchevroil was awarded the prestigious Excellence in Flaring Reduction Award at the 10th Global Gas Flaring Reduction Conference in 2012. The World Bank’s Global Gas Flaring Reduction Partnership recognized TCO as a global leader in flaring reduction, in part due to the success of TCO’s Gas Utilization Program which helped TCO deliver on its commitment to significantly reduce gas flaring.",
+      "card2": "TCO recognizes the value of fresh water as a fundamental social, environmental and economic resource and places great importance on water conservation and emphasizes re-use whenever possible. TCO facilities, like most other water users in Atyrau Oblast, are supplied with fresh water through the Astrakhan-Mangyshlak water pipeline from the Kigash River, one of the Volga River’s channels, because the Tengiz region does not have fresh ground or surface water.TCO’s Wastewater Treatment Facility (WTF) and Water Recycling Facility (WRF) focus on fresh water conservation and wastewater management. TCO’s WTF is designed to treat 6,000 m3/day of sanitary wastewater. The treated wastewater from the WTF provides the WRF influent to produce high-quality water for operational purposes. Operation of the WRF supports TCO initiatives related to fresh water conservation and wastewater management. This facility, commissioned in 2016, is a major component of TCO’s long-term, comprehensive sustainable water management program.\nTCO’s WRF, which treats wastewater to technical water quality via reverse osmosis, is designed to produce up to 3,600 m3/day of recycled technical quality water to support TCO operations. The recycled water from operation of the WRF has increased TCO’s annual recycled water rate to over 30% of overall consumption. TCO has a strategy for short-, mid- and long-term water management. TCO is actively evaluating and executing various projects which aim to improve water conservation and awareness, and increase water re-use opportunities.",
+      "card3": "TCO is exploring opportunities to maintain waste recycling rate of 55% achieved in 2017 and makes considerable efforts for the development of local waste management services. TCO sends more than 25 types of solid wastes for recycling. TCO is furthering RoK’s Green Economy initiative by implementing recycling projects. Paper, cardboard, hard plastic and empty plastic bottles are collected and sent to 3rd parties for recycling and reusing, thus driving establishment of a sustainable waste recycling industry in Kazakhstan.TCO remains committed to developing local content with our waste recycling partners. TCO continues to identify additional waste treatment opportunities involving third party service providers to increase the range of materials recycled."
+    }
+  },
+  "ecology": {
+    "title": "Environmental Monitoring",
+    "description": "TCO conducts ongoing environmental monitoring including air, water and soil to verify that TCO operations comply with RoK regulations and align with OE expectations for Environmental Stewardship. Our integrated environmental monitoring program is carried out by licensed contractors and data are analyzed by relevant TCO departments. All measurement data is done according to the TCO Industrial Control Program developed in accordance with RoK environmental requirements. TCO has a full RoK accredited laboratory run by a third-party contractor to conduct all data analysis.",
+    "cards": {
+      "card1": "Atmospheric air monitoring",
+      "card2": "Groundwater monitoring",
+      "card3": "Waste water monitoring",
+      "card4": "Soil monitoring"
+    },
+    "popupText": {
+      "card1": "<p>There are 12 automated stationary environmental air monitoring stations within and on the boundary of TCO Sanitary Protection Zone in Tengiz. TCO also has fixed monitoring stations in TCO village as well as in the closest settlement, Zhana Karaton, 95 kilometers from Tengiz. A mobile laboratory is used weekly to monitor the area near the plant’s emissions stacks. Readings are taken 16 kilometers upwind from the plants to identify background values for the substances being monitored. Samples are also taken 0.5 to 15 kilometers downwind from the plants and at the border of the Sanitary Protection Zone to monitor air quality.<a href='#'>Казгидромет</a></p>",
+      "card2": "TCO performs regular and routine groundwater monitoring to obtain information about the condition of the environment and assess if there have been any impacts from production activity. The first two water-bearing horizons below ground surface are subject to routine monitoring through a network of groundwater observation wells. Unserviceable wells are decommissioned and old or failed wells are routinely repaired or replaced with new wells to provide a competent and comprehensive groundwater monitoring network resulting in reliable groundwater quality results.",
+      "card3": "Monitoring of waste water, both industrial and sanitary, allows TCO to control the quality of the effluents placed in evaporation ponds and subsurface horizons (industrial water is disposed in injection wells) as well as to measure compliance with established environmental standards of the Republic of Kazakhstan. Waste water is monitored at discharge points into evaporation ponds and injection wells. Frequency of sampling and analysis of samples complies with TCO’s Industrial Control Program developed in accordance with RoK environmental requirements.",
+      "card4": "There are 55 soil sampling sites, identified and sampled annually, for documenting the overall and local soil quality within the TCO partnership area. Sampling sites for soil monitoring are identified considering wind directions to understand if potential contamination may have been spread via wind from outside of the area. Location of sampling sites may slightly change between sampling events depending on the composition of the soil cover, soil status and other conditions."
+    }
+  },
+  "landScaping": {
+    "title": "Landscaping ",
+    "description": "Здесь будет текстовка. Озеленение. Может называние и описание фотографии. Может называние и описание фотографии. Здесь будет текстовка. Озеленение. Может называние и описание фотографии. Здесь будет текстовка. Озеленение. Может называние и описание фотографии. Здесь будет текстовка. Озеленение. Может называние и описание фотографии. Здесь будет текстовка. Озеленение. Может называние и описание фотографии. Здесь будет текстовка. Озеленение. Может называние и описание фотографии.  Здесь будет текстовка. Озеленение."
+  },
+  "socialInvest": {
+    "title": "Social Investments",
+    "description": "Tengizchevroil’s (TCO) social investment initiatives are aimed at stimulating and revealing the limitless potential of each resident and communities of Atyrau Oblast. TCO strives to expand opportunities for people by ensuring accessibility and improvement of health, education and economic development systems."
+  },
+  "socialInvestProgram": {
+    "title": "Egilik Social and Infrastructural Development Program",
+    "description": {
+      "one": "The Egilik program supports the construction of social infrastructure facilities (kindergartens, schools, sports facilities, parks, etc.) in Atyrau Oblast.",
+      "two": "After the completion of the social program “Atyrau Bonus Fund” (1993-1998) with an initial investment of $50 million, in 1999 an updated program of social and infrastructural development Egilik was launched, the annual budget of which since 2013 has been $25 million."
+    }
+  },
+  "workPlaces": {
+    "title": "TCO created thousands of new jobs",
+    "description": {
+      "one": "Egilik provided a powerful impetus to infrastructural development of Atyrau Oblast. There are new, modern buildings that have decorated the regional center and Zhylyoi district, multifunctional medical clinics and centers, well-equipped schools and other educational institutions. Egilik program fund has made it possible to modernize water supply systems and power grids, to carry out the long-awaited gasification of urban neighborhoods and rural settlements.",
+      "two": "Decisions on which projects are to be included in the Egilik Program are made jointly with the Akimat of Atyrau Oblast. The main criteria are sustainability, focus on the priority needs of the local population, benefits for the majority of the population, and most importantly, projects should create opportunities for unlocking the potential of residents of Atyrau Oblast.",
+      "three": "In 2022, the construction of facilities is being implemented within the framework of Egilik program:"
+    },
+    "cards": {
+      "card1": "Central Hospital in Kulsary",
+      "card2": "Central Stadium in Kulsary",
+      "card3": "Kindergarten in Koktem in Atyrau",
+      "card4": "Kindergarten in Zhuldyz in Atyrau",
+      "card5": "Additional construction to the school in Tushchykudyk village, Isataysky district",
+      "card6": "Construction of a school named after Zhumabayev in Atyrau."
+    }
+  },
+  "mapProjects": {
+    "title": "Map of Egilik projects (select a project)",
+    "tags": {
+      "one": "planned",
+      "two": "under construction",
+      "three": "finished"
+    },
+    "cards": {
+      "card1": {
+        "title": "30 (in million US dollars)",
+        "description": "2022 Budget of Egilik program"
+      },
+      "card2": {
+        "title": "Over 100",
+        "description": "Objects built within the framework of the Egilik program (schools, kindergartens, sport facilities, etc.)"
+      }
+    }
+  },
+  "socialProgrammingInvest": {
+    "title": "Community Investment Program (CIP)",
+    "description": "TCO’s Community Investment Program was launched in 2010. It is aimed at supporting education, healthcare, involvement of the population in the volunteer movement and economic development.\nWithin the framework of this program, 94 projects were implemented in 2010-2021 for a total amount of about $11.1 million. The CIP budget in 2022 is $2.3 million. Beneficiaries of projects implemented by NGOs are children, adults, pensioners, low-income families, large families, disabled children and many other representatives of the population of Atyrau Oblast."
+  },
+  "rateRequirement": {
+    "title": "Joint Needs Assessment",
+    "description": "A Joint Needs Assessment is an independent study aimed at identifying the most important social, economic and environmental problems or needs of a community and exploring ideas on how to solve them. Based on the Assessment, areas that need support are identified.",
+    "list": {
+      "one": "The program is aimed at residents of Atyrau Oblast and Borankul village, Mangystau Oblast",
+      "two": "Projects based on business goals and the results of the priority Needs Assessment of the population",
+      "three": "Transparent selection of projects by the Community Investment Council, including representatives of various TCO departments",
+      "four": "Grants only to non-profit organizations(individuals or commercial organizations are not considered)"
+    }
+  },
+  "projectSelection": {
+    "title": "Stages of project selection",
+    "section": {
+      "right": {
+        "title": "Stage",
+        "subtitle": "CRITERIA FOR PROJECT SELECTION",
+        "list": [
+          "The project is not for individuals",
+          "The project does not support a specific commercial business",
+          "The project does not imply sponsorship of sports teams",
+          "An NGO is not a military, political or religious organization",
+          "The project is planned within CIP geography - unless this project is of national importance",
+          "The project is planned within the framework of one of the CIP topics",
+          "The budget does not cover only trips or fees for participation in competitions",
+          "The project scope does not cover the usual operating costs for government agencies",
+          "The project is not planned for the construction of infrastructure facilities that can be covered under Egilik program",
+          "The project scope and budget do not imply only purchase of some items",
+          "The main part of the budget is not for Turnover"
+        ]
+      },
+      "left": {
+        "title": "Stage",
+        "subtitle": "EXAMPLES OF SELECTION CRITERIA FOR PROJECTS",
+        "list": [
+          "Supporting the needs and priorities of the local communities",
+          "Feasibility",
+          "Potential development",
+          "Sustainable development",
+          "The project is subjected to evaluation and control",
+          "Justification",
+          "Demonstrating high potential to achieve success",
+          "Focus on innovation and ability to implement project remotely (online format)"
+        ]
+      }
+    },
+    "section2": {
+      "title": "2023 social projects selecting process",
+      "markers": {
+        "june": {
+          "title": "June",
+          "label": "expression of interest by NGOs to participate in CIP (e-mail newsletter)"
+        },
+        "jule": {
+          "title": "Jule",
+          "label": "request and receipt of proposals for social projects (e-mail)"
+        },
+        "august": {
+          "title": "August",
+          "label": "study and evaluation of proposals in CIP Council according to TCO selection criteria"
+        },
+        "september": {
+          "title": "September"
+        },
+        "october": {
+          "title": "October"
+        },
+        "november": {
+          "title": "November",
+          "label": "obtaining internal permits and work on sponsorship contracts"
+        },
+        "december": {
+          "title": "December",
+          "label": "announcement of successful (selected) offers"
+        },
+        "january": {
+          "title": "January",
+          "label": "staged financing and execution of projects and programs"
+        }
+      }
+    }
+  },
+  "gift": {
+    "title": "Sponsorship and Donation",
+    "description": {
+      "one": "TCO annually allocates funds to support special requests for the benefit of residents of Atyrau Oblast.",
+      "two": "In the first half of 2015, medical equipment totaling $4 million was purchased and installed in Atyrau Oblast Cardiology Center, Atyrau Oblast Children's Hospital, and in the central hospitals of Makat, Inder, Makhambet, Zhylyoi, Kurmangazy, Issatay and Kyzylkuga districts.",
+      "three": "Since 2018, 40 couples from Zhylyoi district have received financial support from TCO to receive medical services for IVF."
+    },
+    "buttonMore": "More",
+    "popupText": "In 2019, TCO provided sponsorship to Zhylyoi district for purchase of 50 urban passenger buses of the ANKAI brand. The purchased buses are specially equipped with mechanical ramps for transporting people with disabilities and children in wheelchairs, meet all technical standards and modern requirements for motor transport.So, since the beginning of the pandemic, TCO has allocated over $18 million (7.7 billion tenge) to combat coronavirus, support the population and purchase medical equipment and supplies in Atyrau Oblast.\nIn addition, a project was launched in December 2021, which made it possible to donate medical equipment totaling $6.2 million to 14 hospitals in Atyrau city and the region.\nThese were medical devices of critical importance in healthcare – equipment for intensive care units, perinatal units. In particular, the purchase of expert-class ultrasound devices and non-invasive ventilation systems for newborns, ventilators, patient monitors, CT machines, surgical devices, fluorography vehicles, etc.\nAssistance is provided by the company to boarding schools in the district. In addition to implementation of targeted projects, funds raised during a number of charity events and programs initiated by TCO employees within the framework of the corporate volunteer movement are directed to support orphans and children of other socially vulnerable categories."
+  },
+  "project": {
+    "title": "Projects created within the framework of “{project}”",
+    "description": "The results of TCO's joint work with non-governmental organizations solve many social problems and have a positive impact on the social life of the region.",
+    "cardPlaces": {
+      "card1": "Atyrau",
+      "card2": "Zhylyoi district",
+      "card3": "Isatay district",
+      "card4": "Makhambet district",
+      "card5": "Inderskiy district"
+    }
+  }
+}

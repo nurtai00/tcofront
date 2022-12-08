@@ -182,6 +182,9 @@ export default {
         ru: {
           suistainability: require('./locales/Suistainability/ru.json'),
         },
+        en: {
+          suistainability: require('./locales/Suistainability/en.json'),
+        },
       },
       loadLanguagesAsync: true,
       langDir: '~locales',

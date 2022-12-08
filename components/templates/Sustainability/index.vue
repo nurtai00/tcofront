@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       tags: [
-        { id: 1, text: 'Экология' },
+        { id: 1, text: this.$t('suistainability.ecologyText') },
         { id: 2, text: this.$t('suistainability.invest') },
       ],
     }
