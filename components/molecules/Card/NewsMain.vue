@@ -22,11 +22,11 @@
     />
     <div class="n_card_content">
       <div class="n_card_header">
-        <p class="n_card_type">#Карьера</p>
-        <p class="n_card_date">03/05/2022</p>
+        <p class="n_card_type">{{ $t('news.new.tag') }}</p>
+        <p class="n_card_date">{{ $t('news.new.date') }}</p>
       </div>
       <AtomsHeading type="h6" color="main">
-        Тенгизшевройл объявляет о Хакатоне
+        {{ $t('news.new.title') }}
       </AtomsHeading>
       <p
         class="n_card_text"
@@ -34,11 +34,7 @@
           '-webkit-line-clamp': [2, 3].includes(index) ? 2 : index == 6 ? 1 : 3,
         }"
       >
-        ТОО «Тенгизшевройл» в поисках лучшего цифрового продукта объявляет о
-        Хакатоне, который состоится ТОО «Тенгизшевройл» в поисках лучшего
-        цифрового продукта объявляет о Хакатоне, который состоится ТОО
-        «Тенгизшевройл» в поисках лучшего цифрового продукта объявляет о
-        Хакатоне, который состоится
+        {{ $t('news.new.text') }}
       </p>
     </div>
   </div>
@@ -53,7 +49,7 @@ export default {
   },
   methods: {
     navigateNew() {
-      this.$router.push('/news/1')
+      this.$router.push(this.localePath('/news/1'))
     },
   },
 }

@@ -4,7 +4,7 @@
       <div class="container invest__content">
         <AtomsFlatHeading
           :title="$t('suistainability.socialProgrammingInvest.title')"
-          @click="$router.push('/sustainability/psi')"
+          @click="$router.push(localePath('/sustainability/psi'))"
         />
         <div class="invest__description">
           <p>

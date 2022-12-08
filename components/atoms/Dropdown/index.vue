@@ -6,7 +6,7 @@
     </button>
     <ul class="dropdown-menu menu">
       <li v-for="(item, key) in links" :key="key" class="dropdown-menu__item">
-        <nuxt-link :to="item.link">
+        <nuxt-link :to="localePath(item.link)">
           <i
             v-if="item.icon"
             :class="`icon-${item.icon} dropdown-menu__icon`"

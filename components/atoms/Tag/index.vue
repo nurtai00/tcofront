@@ -45,7 +45,7 @@ export default {
       if (!this.tag.url) {
         this.$emit('click', this.tag)
       } else {
-        this.$router.push(this.tag.url)
+        this.$router.push(this.localePath(this.tag.url))
       }
     },
   },

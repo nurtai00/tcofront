@@ -68,10 +68,9 @@
       <div class="container">
         <p>
           Также отзывы и замечания можно предоставлять по электронной почте
-          <a
-            href="mailto:tcofp@tengizchevroil.com"
-            type="mail"
-          >tcofp@tengizchevroil.com</a>
+          <a href="mailto:tcofp@tengizchevroil.com" type="mail">
+            tcofp@tengizchevroil.com</a
+          >
           и бесплатной телефонной линии по номеру
           <a href="tel:8-800-080-84-88">8-800-080-84-88</a>
         </p>
@@ -83,7 +82,7 @@
       </AtomsHeading>
       <div class="links">
         <a href="#">Буклет о процессе управления обратной связью (pdf)</a>
-        <nuxt-link to="/contact/feedback/reports">
+        <nuxt-link :to="localePath('/contact/feedback/reports')">
           Отчёты по процессу обратной связи ТШО
         </nuxt-link>
       </div>

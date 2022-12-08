@@ -1,17 +1,22 @@
 <template>
   <div class="public container">
     <MoleculesBreadcrumbs class="mt40 mb20">
-      <AtomsBreadOption to="/">Home</AtomsBreadOption>
-      <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
-      <AtomsBreadOption to="/news/publications">Publications</AtomsBreadOption>
+      <AtomsBreadOption to="/">{{
+        $t('news.breadcrumbs_1[0]')
+      }}</AtomsBreadOption>
+      <AtomsBreadOption to="/news">{{
+        $t('news.breadcrumbs_1[1]')
+      }}</AtomsBreadOption>
+      <AtomsBreadOption to="/news/publications">{{
+        $t('news.pub')
+      }}</AtomsBreadOption>
     </MoleculesBreadcrumbs>
-    <AtomsTitle class="mb40" small> Публикации </AtomsTitle>
+    <AtomsTitle class="mb40" small> {{ $t('news.pub') }} </AtomsTitle>
     <div class="public_list">
       <div v-for="item in 9" :key="item">
         <img src="@/assets/icons/pdf.svg" alt="pdf" width="30" height="40" />
         <p>
-          ТОО «Тенгизшевройл» передало в дар Атырауской области новые автобусы
-          для пассажирских перевозок
+          {{ $t('news.pubs[0]') }}
         </p>
       </div>
     </div>

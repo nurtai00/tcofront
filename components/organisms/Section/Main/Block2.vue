@@ -53,7 +53,9 @@ export default {
           <AtomsTitle class="atoms_title" small>{{
             $t('home.block_2.title')
           }}</AtomsTitle>
-          <nuxt-link to="/news">{{ $t('home.block_2.all_title') }}</nuxt-link>
+          <nuxt-link :to="localePath('/news')">{{
+            $t('home.block_2.all_title')
+          }}</nuxt-link>
         </div>
         <AtomsTag
           :tag="{

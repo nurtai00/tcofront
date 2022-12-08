@@ -9,23 +9,29 @@
           <img src="@/assets/img/logo.svg" />
         </NuxtLink>
         <div class="block">
-          <Nuxt-Link to="/">Главная</Nuxt-Link>
-          <Nuxt-Link to="/about">Компания</Nuxt-Link>
-          <Nuxt-Link to="/operations">Операции</Nuxt-Link>
-          <Nuxt-Link to="/kazakhstani_content">Казахстанское содержание</Nuxt-Link>
-          <Nuxt-Link to="/sustainability">Устойчивость</Nuxt-Link>
-          <Nuxt-Link to="/career">Карьера</Nuxt-Link>
-          <Nuxt-Link to="/relations">Кредиторам</Nuxt-Link>
+          <nuxt-link :to="localePath('/')">Главная</nuxt-link>
+          <nuxt-link :to="localePath('/about')">Компания</nuxt-link>
+          <nuxt-link :to="localePath('/operations')">Операции</nuxt-link>
+          <nuxt-link :to="localePath('/kazakhstani_content')"
+            >Казахстанское содержание</nuxt-link
+          >
+          <nuxt-link :to="localePath('/sustainability')"
+            >Устойчивость</nuxt-link
+          >
+          <nuxt-link :to="localePath('/career')">Карьера</nuxt-link>
+          <nuxt-link :to="localePath('/relations')">Кредиторам</nuxt-link>
         </div>
         <div class="block">
           <h6>Контакты</h6>
           <a href="tel:+7 712 227 1212">+7 712 227 1212</a>
           <a href="tel:+7 712 302 6000">+7 712 302 6000</a>
           <a>Республика Казахстан 060011, г.Атырау , ул. Сатпаева 3</a>
-          <a href="mailto:tcoinfo@tengizchevroil.com">tcoinfo@tengizchevroil.com</a>
-          <Nuxt-Link to="/contact" class="with_underline">
+          <a href="mailto:tcoinfo@tengizchevroil.com"
+            >tcoinfo@tengizchevroil.com</a
+          >
+          <nuxt-link :to="localePath('/contact')" class="with_underline">
             Телефон доверия и другие контакты
-          </Nuxt-Link>
+          </nuxt-link>
           <div class="socials">
             <a href="http://">
               <img src="@/assets/img/facebook.svg" />
@@ -56,9 +62,9 @@
     </div>
     <div class="container">
       <a>© 2022 ТОО «Тенгизшевройл»</a>
-      <Nuxt-link to="/privacy" class="with_underline">
+      <nuxt-link :to="localePath('/privacy')" class="with_underline">
         Положение о конфиденциальности
-      </Nuxt-link>
+      </nuxt-link>
     </div>
   </footer>
 </template>

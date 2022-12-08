@@ -3,7 +3,7 @@
     <div class="container program__content">
       <AtomsFlatHeading
         :title="$t('suistainability.socialInvestProgram.title')"
-        @click="$router.push(`/sustainability/igilik`)"
+        @click="$router.push(localePath(`/sustainability/igilik`))"
       />
       <div class="program__description">
         <p>{{ $t('suistainability.socialInvestProgram.description.one') }}</p>

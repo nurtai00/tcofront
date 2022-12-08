@@ -2,10 +2,14 @@
   <div class="news">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Home</AtomsBreadOption>
-        <AtomsBreadOption to="/news">TCO news</AtomsBreadOption>
+        <AtomsBreadOption to="/">{{
+          $t('news.breadcrumbs_1[0]')
+        }}</AtomsBreadOption>
+        <AtomsBreadOption to="/news">{{
+          $t('news.breadcrumbs_1[1]')
+        }}</AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="mb20"> Новости ТШО </AtomsTitle>
+      <AtomsTitle class="mb20"> {{ $t('news.breadcrumbs_1[1]') }} </AtomsTitle>
       <AtomsTag
         v-for="(tag, idx) in tags"
         :key="idx"
@@ -27,7 +31,7 @@
             :class="`news_card_` + item"
           />
         </div>
-        <AtomsButton type="submit"> Загрузить еще </AtomsButton>
+        <AtomsButton type="submit"> {{ this.$t('news.button'), }}</AtomsButton>
       </div>
     </div>
     <div class="news_publications">
@@ -42,32 +46,32 @@ export default {
     return {
       tags: [
         {
-          text: 'Производство',
+          text: this.$t('news.tags[0]'),
           value: '',
           selected: false,
         },
         {
-          text: 'Экология',
+          text: this.$t('news.tags[1]'),
           value: '',
           selected: false,
         },
         {
-          text: 'Соцпроекты',
+          text: this.$t('news.tags[2]'),
           value: '',
           selected: false,
         },
         {
-          text: 'Казсодержание',
+          text: this.$t('news.tags[3]'),
           value: '',
           selected: false,
         },
         {
-          text: 'Карьера',
+          text: this.$t('news.tags[4]'),
           value: '',
           selected: false,
         },
         {
-          text: 'ПБР-ПУУД',
+          text: this.$t('news.tags[5]'),
           value: '',
           selected: false,
         },

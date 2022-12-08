@@ -1,6 +1,6 @@
 <template>
   <li>
-    <nuxt-link :to="to">
+    <nuxt-link :to="localePath(to)">
       <!-- @slot Текст ссылки -->
       <slot />
     </nuxt-link>

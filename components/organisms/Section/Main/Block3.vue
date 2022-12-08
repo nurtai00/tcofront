@@ -44,10 +44,10 @@ export default {}
             <a href="/">
               {{ $t('home.block_3.right.link_1') }}
             </a>
-            <Nuxt-link to="" class="file">
+            <nuxt-link :to="localePath('/')" class="file">
               <img src="@/assets/img/pdf.svg" />
               {{ $t('home.block_3.right.link_2') }}
-            </Nuxt-link>
+            </nuxt-link>
           </div>
         </div>
       </div>

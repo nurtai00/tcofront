@@ -2,7 +2,7 @@
 export default {
   methods: {
     nav() {
-      this.$router.push('/kazakhstani-content')
+      this.$router.push(this.localePath('/kazakhstani-content'))
     },
   },
 }

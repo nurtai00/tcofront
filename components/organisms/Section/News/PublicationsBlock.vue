@@ -1,8 +1,10 @@
 <template>
   <div class="p_block">
     <div class="p_block_title">
-      <AtomsTitle small> Публикации </AtomsTitle>
-      <nuxt-link to="/news/publications">Все публикации</nuxt-link>
+      <AtomsTitle small> {{ $t('news.pub') }} </AtomsTitle>
+      <nuxt-link :to="localePath('/news/publications')">{{
+        $t('news.pub_all')
+      }}</nuxt-link>
     </div>
     <div class="p_block_list">
       <MoleculesCardPublicationCard v-for="item in 4" :key="item" />

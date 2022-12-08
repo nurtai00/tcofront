@@ -3,7 +3,7 @@
     <div class="container">
       <div class="news_title">
         <AtomsTitle class="atoms_title" small> Новости ТШО </AtomsTitle>
-        <nuxt-link to="/news">Все Новости ТШО</nuxt-link>
+        <nuxt-link :to="localePath('/news')">Все Новости ТШО</nuxt-link>
       </div>
       <AtomsTag
         :tag="{

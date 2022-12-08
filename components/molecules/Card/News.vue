@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     navNew() {
-      this.$router.push('/news/1')
+      this.$router.push(this.localePath('/news/1'))
     },
   },
 }
