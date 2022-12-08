@@ -5,12 +5,8 @@
         {{ data.title }}
       </AtomsHeading>
       <div v-if="data.description" class="slide__description">
-        <div
-          v-for="(text, key) in data.description"
-          :key="key"
-          class="slide__description_item"
-        >
-          {{ text }}
+        <div v-text="data.description" class="slide__description_item">
+          {{ data.description }}
         </div>
       </div>
       <template v-else>
@@ -24,7 +20,8 @@
       </template>
       <template v-if="data.link">
         <div class="slide__link" @click="data.link()">
-          <span>Читать дальше</span> <i class="icon-arrow-left" />
+          <span>{{ $t('project.block_3.more') }}</span>
+          <i class="icon-arrow-left" />
         </div>
       </template>
     </div>

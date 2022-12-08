@@ -19,10 +19,16 @@ export default {
       type: Object,
       required: true,
     },
+    isNew: {
+      type: Boolean,
+      default: true,
+    },
   },
   methods: {
     navNew() {
-      this.$router.push(this.localePath('/news/1'))
+      if (this.isNew) {
+        this.$router.push(this.localePath('/news/1'))
+      }
     },
   },
 }

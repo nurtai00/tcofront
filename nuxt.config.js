@@ -184,6 +184,7 @@ export default {
           company: require('./locales/company/kk.json'),
           contact: require('./locales/Contact/kk.json'),
           header: require('./locales/header/kk.json'),
+          project: require('./locales/project/kk.json'),
         },
         ru: {
           suistainability: require('./locales/Suistainability/ru.json'),
@@ -193,6 +194,7 @@ export default {
           company: require('./locales/company/ru.json'),
           contact: require('./locales/Contact/ru.json'),
           header: require('./locales/header/ru.json'),
+          project: require('./locales/project/ru.json'),
         },
         en: {
           suistainability: require('./locales/Suistainability/en.json'),
@@ -202,6 +204,7 @@ export default {
           company: require('./locales/company/en.json'),
           contact: require('./locales/Contact/en.json'),
           header: require('./locales/header/en.json'),
+          project: require('./locales/project/en.json'),
         },
       },
       loadLanguagesAsync: true,
