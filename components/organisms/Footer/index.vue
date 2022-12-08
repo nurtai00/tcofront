@@ -9,28 +9,38 @@
           <img src="@/assets/img/logo.svg" />
         </NuxtLink>
         <div class="block">
-          <nuxt-link :to="localePath('/')">Главная</nuxt-link>
-          <nuxt-link :to="localePath('/about')">Компания</nuxt-link>
-          <nuxt-link :to="localePath('/operations')">Операции</nuxt-link>
-          <nuxt-link :to="localePath('/kazakhstani_content')"
-            >Казахстанское содержание</nuxt-link
-          >
-          <nuxt-link :to="localePath('/sustainability')"
-            >Устойчивость</nuxt-link
-          >
-          <nuxt-link :to="localePath('/career')">Карьера</nuxt-link>
-          <nuxt-link :to="localePath('/relations')">Кредиторам</nuxt-link>
+          <nuxt-link :to="localePath('/')">{{
+            $t('header.header_links[0]')
+          }}</nuxt-link>
+          <nuxt-link :to="localePath('/about')">{{
+            $t('header.header_links[1]')
+          }}</nuxt-link>
+          <nuxt-link :to="localePath('/operations')">{{
+            $t('header.header_links[2]')
+          }}</nuxt-link>
+          <nuxt-link :to="localePath('/kazakhstani_content')">{{
+            $t('header.header_links[4]')
+          }}</nuxt-link>
+          <nuxt-link :to="localePath('/sustainability')">{{
+            $t('header.header_links[5]')
+          }}</nuxt-link>
+          <nuxt-link :to="localePath('/career')">{{
+            $t('header.header_links[6]')
+          }}</nuxt-link>
+          <nuxt-link :to="localePath('/relations')">{{
+            $t('header.header_links[7]')
+          }}</nuxt-link>
         </div>
         <div class="block">
-          <h6>Контакты</h6>
+          <h6>{{ $t('header.footer.contact') }}</h6>
           <a href="tel:+7 712 227 1212">+7 712 227 1212</a>
           <a href="tel:+7 712 302 6000">+7 712 302 6000</a>
-          <a>Республика Казахстан 060011, г.Атырау , ул. Сатпаева 3</a>
+          <a>{{ $t('header.footer.address') }}</a>
           <a href="mailto:tcoinfo@tengizchevroil.com"
             >tcoinfo@tengizchevroil.com</a
           >
           <nuxt-link :to="localePath('/contact')" class="with_underline">
-            Телефон доверия и другие контакты
+            {{ $t('header.footer.phone') }}
           </nuxt-link>
           <div class="socials">
             <a href="http://">
@@ -48,7 +58,7 @@
           </div>
         </div>
         <div>
-          <h6>Мобильное приложение</h6>
+          <h6>{{ $t('header.footer.mobile') }}</h6>
           <div class="links">
             <a href="/">
               <img src="@/assets/img/appstore.svg" />
@@ -61,9 +71,9 @@
       </div>
     </div>
     <div class="container">
-      <a>© 2022 ТОО «Тенгизшевройл»</a>
+      <a>{{ $t('header.footer.c') }}</a>
       <nuxt-link :to="localePath('/privacy')" class="with_underline">
-        Положение о конфиденциальности
+        {{ $t('header.footer.policy') }}
       </nuxt-link>
     </div>
   </footer>

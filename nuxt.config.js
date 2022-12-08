@@ -181,77 +181,82 @@ export default {
           home: require('./locales/home/kk.json'),
           news: require('./locales/news/kk.json'),
           relation: require('./locales/relation/kk.json'),
+          company: require('./locales/company/kk.json'),
           contact: require('./locales/Contact/kk.json'),
           products: require('./locales/Products/kk.json'),
+          header: require('./locales/header/kk.json'),
         },
         ru: {
           suistainability: require('./locales/Suistainability/ru.json'),
           home: require('./locales/home/ru.json'),
           news: require('./locales/news/ru.json'),
           relation: require('./locales/relation/ru.json'),
+          company: require('./locales/company/ru.json'),
           contact: require('./locales/Contact/ru.json'),
           products: require('./locales/Products/ru.json'),
+          header: require('./locales/header/ru.json'),
+          en: {
+            suistainability: require('./locales/Suistainability/en.json'),
+            home: require('./locales/home/en.json'),
+            news: require('./locales/news/en.json'),
+            relation: require('./locales/relation/en.json'),
+            company: require('./locales/company/en.json'),
+            contact: require('./locales/Contact/en.json'),
+            products: require('./locales/Products/en.json'),
+            header: require('./locales/header/en.json'),
+          },
         },
-        en: {
-          suistainability: require('./locales/Suistainability/en.json'),
-          home: require('./locales/home/en.json'),
-          news: require('./locales/news/en.json'),
-          relation: require('./locales/relation/en.json'),
-          contact: require('./locales/Contact/en.json'),
-          products: require('./locales/Products/en.json'),
-        },
+        loadLanguagesAsync: true,
+        langDir: '~locales',
       },
-      loadLanguagesAsync: true,
-      langDir: '~locales',
     },
-  },
-  router: {
-    mode: 'hash',
-    base: '/vue',
-    extendRoutes(routes, resolve) {
-      routes.push({
-        path: '/vue',
-        components: {
-          default: resolve(__dirname, 'pages/index'), // or routes[index].component
-        },
-      })
+    router: {
+      mode: 'hash',
+      base: '/vue',
+      extendRoutes(routes, resolve) {
+        routes.push({
+          path: '/vue',
+          components: {
+            default: resolve(__dirname, 'pages/index'), // or routes[index].component
+          },
+        })
+      },
     },
-  },
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-  },
+    // Axios module configuration: https://go.nuxtjs.dev/config-axios
+    axios: {
+      // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+      baseURL: '/',
+    },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build,
-  // extend(config, { isClient }) {
-  //   if (isClient) {
-  //     console.log(config.entry) // { app: [ "path/to/client.js", "eventsource-polyfill", "etc..." ] } (currently undefined)
-  //   } else {
-  //     console.log(config.entry) // { app: [ "path/to/server.js" ] } (currently undefined)
-  //   }
-  // config.entry = {
-  // ...entries,
-  // hot: 'webpack/hot/dev-server.js',
-  // client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
-  // }
-  // This is ok
-  // for (const [key, value] of Object.entries(entries)) {
-  //   config.entry[key] = resolve(value)
-  // }
-  // config.entry.custom = resolve('custom-entry.js')
-  // Throws error "entry.app is reserved by Nuxt"
-  // Could use Object.defineProperty for the
-  // config object passed to build.extend to
-  // throw an error when attempting to set entry.app
-  // config.entry.app = resolve('app.js')
-  // plugins: [
-  //   new MiniCssExtractPlugin({
-  //     filename: '[name].css',
-  //   }),
-  //   new webpack.HotModuleReplacementPlugin(),
-  // ].concat(htmlPlugins),
-  // },
-}
+    // Build Configuration: https://go.nuxtjs.dev/config-build
+    build,
+    // extend(config, { isClient }) {
+    //   if (isClient) {
+    //     console.log(config.entry) // { app: [ "path/to/client.js", "eventsource-polyfill", "etc..." ] } (currently undefined)
+    //   } else {
+    //     console.log(config.entry) // { app: [ "path/to/server.js" ] } (currently undefined)
+    //   }
+    // config.entry = {
+    // ...entries,
+    // hot: 'webpack/hot/dev-server.js',
+    // client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
+    // }
+    // This is ok
+    // for (const [key, value] of Object.entries(entries)) {
+    //   config.entry[key] = resolve(value)
+    // }
+    // config.entry.custom = resolve('custom-entry.js')
+    // Throws error "entry.app is reserved by Nuxt"
+    // Could use Object.defineProperty for the
+    // config object passed to build.extend to
+    // throw an error when attempting to set entry.app
+    // config.entry.app = resolve('app.js')
+    // plugins: [
+    //   new MiniCssExtractPlugin({
+    //     filename: '[name].css',
+    //   }),
+    //   new webpack.HotModuleReplacementPlugin(),
+    // ].concat(htmlPlugins),
+    // },
+  }

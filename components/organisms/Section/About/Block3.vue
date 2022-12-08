@@ -1,27 +1,43 @@
 <template>
   <section class="section--blue">
     <div class="container">
-      <AtomsTitle small>Добыча и реализация продукции:</AtomsTitle>
+      <AtomsTitle small>{{ $t('company.block_2.title') }}</AtomsTitle>
       <div class="tco__items">
         <div class="item">
           <img src="@/assets/img/item1.svg" />
-          <span>21,5 млн</span>
-          <p>Сырая нефть <br />(в тоннах)</p>
+          <span>{{ $t('company.block_2.items[0].title') }}</span>
+          <p>
+            {{ $t('company.block_2.items[0].p_1') }} <br />{{
+              $t('company.block_2.items[0].p_2')
+            }}
+          </p>
         </div>
         <div class="item">
           <img src="@/assets/img/item2.svg" />
-          <span>0,85 млн</span>
-          <p>СУГ <br />(в тоннах)</p>
+          <span>{{ $t('company.block_2.items[1].title') }}</span>
+          <p>
+            {{ $t('company.block_2.items[1].p_1') }} <br />{{
+              $t('company.block_2.items[1].p_2')
+            }}
+          </p>
         </div>
         <div class="item">
           <img src="@/assets/img/item3.svg" />
-          <span>7,6 млрд</span>
-          <p>Сухой газ <br />(в м3)</p>
+          <span>{{ $t('company.block_2.items[2].title') }}</span>
+          <p>
+            {{ $t('company.block_2.items[2].p_1') }} <br />{{
+              $t('company.block_2.items[2].p_2')
+            }}
+          </p>
         </div>
         <div class="item">
           <img src="@/assets/img/item4.svg" />
-          <span>1,8 млн</span>
-          <p>Сера <br />(в тоннах)</p>
+          <span>{{ $t('company.block_2.items[3].title') }}</span>
+          <p>
+            {{ $t('company.block_2.items[3].p_1') }} <br />{{
+              $t('company.block_2.items[3].p_2')
+            }}
+          </p>
         </div>
       </div>
     </div>

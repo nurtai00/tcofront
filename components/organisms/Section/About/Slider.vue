@@ -5,25 +5,25 @@ export default {
       slides: [
         {
           count: 3,
-          company: 'АО НК «КазМунайГаз»',
+          company: this.$t('company.slider_1[0].text'),
           percent: '20%',
           img: require('@/assets/img/company/kazmunaylogo.png'),
         },
         {
           count: 2,
-          company: '«Шеврон»',
+          company: this.$t('company.slider_1[1].text'),
           percent: '50%',
           img: require('@/assets/img/company/chevron.png'),
         },
         {
           count: 4,
-          company: '«ЭксонМобил Казахстан»',
+          company: this.$t('company.slider_1[2].text'),
           percent: '25%',
           img: require('@/assets/img/company/mobi.png'),
         },
         {
           count: 5,
-          company: 'СП «ЛукАрко»',
+          company: this.$t('company.slider_1[3].text'),
           percent: '5%',
           img: require('@/assets/img/company/uk.png'),
         },
@@ -49,7 +49,7 @@ export default {
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
         <div class="double-block tco__partners">
           <div class="tco__partners-wrapper">
-            <h3>В настоящее время партнерами ТШО являются</h3>
+            <h3>{{ $t('company.slider_1[0].title') }}</h3>
             <h3 v-text="slide.company"></h3>
             <h1 v-text="slide.percent"></h1>
           </div>

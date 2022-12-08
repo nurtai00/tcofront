@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <AtomsTitle class="mb20" small :point="false">
-        Преимущества для Республики Казахстан
+        {{ $t('company.block_3.title') }}
       </AtomsTitle>
     </div>
     <div class="double-block tco__partners" style="justify-content: center">
@@ -10,9 +10,9 @@
         <div class="tco__barrels-wrapper" style="width: 100%">
           <img src="@/assets/img/fees.svg" />
           <div>
-            <h4>Прямые выплаты</h4>
-            <span>10,9 млрд</span>
-            <p>(в долл. США)</p>
+            <h4>{{ $t('company.block_3.items[0].title') }}</h4>
+            <span>{{ $t('company.block_3.items[0].p_1') }}</span>
+            <p>{{ $t('company.block_3.items[0].p_2') }}</p>
           </div>
         </div>
       </div>
@@ -20,20 +20,16 @@
         <div class="tco__barrels-wrapper" style="width: 100%">
           <img src="@/assets/img/fees2.svg" />
           <div>
-            <h4>Совокупные выплаты с 1993 г.</h4>
-            <span>172 млрд</span>
-            <p>(в долл. США)</p>
+            <h4>{{ $t('company.block_3.items[1].title') }}</h4>
+            <span>{{ $t('company.block_3.items[1].p_1') }}</span>
+            <p>{{ $t('company.block_3.items[1].p_2') }}</p>
           </div>
         </div>
       </div>
     </div>
     <div class="container main_b_5 mt40">
       <p>
-        Прямые финансовые выплаты включают заработную плату казахстанским
-        сотрудникам, закупки товаров и услуг отечественных товаропроизводителей
-        и поставщиков, платежи государственным предприятиям, выплаты дивидендов
-        казахстанскому партнеру, а также налоги и роялти, перечисляемые в
-        государственный бюджет.
+        {{ $t('company.block_3.text') }}
       </p>
     </div>
   </section>
