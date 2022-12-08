@@ -178,12 +178,15 @@ export default {
       messages: {
         kk: {
           suistainability: require('./locales/Suistainability/kk.json'),
+          contact: require('./locales/Contact/kk.json'),
         },
         ru: {
           suistainability: require('./locales/Suistainability/ru.json'),
+          contact: require('./locales/Contact/ru.json'),
         },
         en: {
           suistainability: require('./locales/Suistainability/en.json'),
+          contact: require('./locales/Contact/en.json'),
         },
       },
       loadLanguagesAsync: true,

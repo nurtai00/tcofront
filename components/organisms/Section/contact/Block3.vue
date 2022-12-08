@@ -4,13 +4,12 @@
       <div class="contact__act content">
         <div class="content__left">
           <AtomsHeading class="content__left-title" type="h2">
-            Примеры нарушений,о которых следует сообщать:
+            {{ $t('contact.block3.title') }}
           </AtomsHeading>
           <p class="content__left-subtitle">
-            Все другие вопросы, вызывающие озабоченность, предложения и
-            наблюдения можно отправлять через систему
-            <nuxt-link to="/contact/feedback">
-              управления обратной связью
+            {{ $t('contact.block3.desc') }}
+            <nuxt-link :to="localePath('/contact/feedback')">
+              {{ $t('contact.block3.desc_link') }}
             </nuxt-link>
           </p>
         </div>
@@ -25,7 +24,7 @@
                 type="h4"
                 color="black"
               >
-                Нарушения
+                {{ $t('contact.block3.accordion1.title') }}
               </AtomsHeading>
             </template>
             <template #content>
@@ -44,8 +43,7 @@
                       </svg>
                     </div>
                     <div>
-                      Поведение, не соответствующее принципам документа «Путь
-                      ТШО», случаи кражи и мошенничества
+                      {{ $t('contact.block3.accordion1.text1') }}
                     </div>
                   </li>
                   <li class="list__item">
@@ -60,7 +58,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Домогательство/дискриминация</span>
+                    <span>{{ $t('contact.block3.accordion1.text2') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -74,8 +72,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Наличие наркотических средств, алкогольных напитков или
-                      оружий на территории объектов компании</span>
+                    <span>{{ $t('contact.block3.accordion1.text3') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -89,8 +86,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Неправомочное раскрытие конфиденциальной информации
-                      компании</span>
+                    <span>{{ $t('contact.block3.accordion1.text4') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -104,9 +100,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Манипуляция с бухгалтерскими операциями и процессами
-                      внутреннего контроля, в результате чего возникает неверная
-                      финансовая информация</span>
+                    <span>{{ $t('contact.block3.accordion1.text5') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -120,7 +114,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Случаи кражи</span>
+                    <span>{{ $t('contact.block3.accordion1.text6') }}</span>
                   </li>
                 </ul>
               </div>
@@ -136,12 +130,14 @@
                 type="h4"
                 color="black"
               >
-                Мошенничества
+                {{ $t('contact.block3.accordion2.title') }}
               </AtomsHeading>
             </template>
             <template #content>
               <div class="content__right-inner">
-                <span class="content_right subtitle">Согласно определениям, указанным в Политике ТШО 53:</span>
+                <span class="content_right subtitle">{{
+                  $t('contact.block3.accordion2.text1')
+                }}</span>
                 <ul class="list">
                   <li class="list__item">
                     <div>
@@ -155,7 +151,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Злоупотребление занимаемой должностью</span>
+                    <span>{{ $t('contact.block3.accordion2.text2') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -169,7 +165,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span> Сокрытие</span>
+                    <span>{{ $t('contact.block3.accordion2.text3') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -183,7 +179,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Предоставление неверных данных</span>
+                    <span>{{ $t('contact.block3.accordion2.text4') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -197,22 +193,18 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Случаи мошенничества могут касаться следующих сфер, но не
-                      ограничиваются ими:</span>
+                    <span>{{ $t('contact.block3.accordion2.text5') }}</span>
                   </li>
                   <li class="list__item sublist">
                     <ol type="1">
                       <li>
-                        1. Закуп и составление контрактов, прием сотрудников на
-                        работу, организация поездок, проживания и питания,
-                        манипуляция ценами реализации, финансовые махинации
+                        {{ $t('contact.block3.accordion2.text6') }}
                       </li>
                       <li>
-                        2. Неразглашение информации о конфликте интересов, в том
-                        числе внешних деловых интересов компании
+                        {{ $t('contact.block3.accordion2.text7') }}
                       </li>
                       <li>
-                        3. Манипуляция с процессами и системой контроля ТШО
+                        {{ $t('contact.block3.accordion2.text8') }}
                       </li>
                     </ol>
                   </li>
@@ -230,7 +222,7 @@
                 type="h4"
                 color="black"
               >
-                Законы
+                {{ $t('contact.block3.accordion3.title') }}
               </AtomsHeading>
             </template>
             <template #content>
@@ -248,7 +240,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <div>Закон «О соблюдении антибойкотных норм»</div>
+                    <div>{{ $t('contact.block3.accordion3.text1') }}</div>
                   </li>
                   <li class="list__item">
                     <div>
@@ -262,7 +254,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Законы о борьбе с коррупцией</span>
+                    <span>{{ $t('contact.block3.accordion3.text2') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -276,7 +268,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Законы о защите конкуренции</span>
+                    <span>{{ $t('contact.block3.accordion3.text3') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -290,7 +282,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Законы о неприкосновенности данных</span>
+                    <span>{{ $t('contact.block3.accordion3.text4') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -304,7 +296,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Природоохранное законодательство</span>
+                    <span>{{ $t('contact.block3.accordion3.text5') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -318,7 +310,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Законоположение об охране труда</span>
+                    <span>{{ $t('contact.block3.accordion3.text6') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -332,7 +324,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Законодательство об импорте/экспорте/торговли</span>
+                    <span>{{ $t('contact.block3.accordion3.text7') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -346,8 +338,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Законоположение о непозволительных действиях лоббирования
-                      или взносах на политические цели</span>
+                    <span>{{ $t('contact.block3.accordion3.text8') }}</span>
                   </li>
                   <li class="list__item">
                     <div>
@@ -361,8 +352,7 @@
                         <circle cx="6" cy="6" r="6" fill="#00B0F0" />
                       </svg>
                     </div>
-                    <span>Другие подозрительные действия криминального
-                      характера</span>
+                    <span>{{ $t('contact.block3.accordion3.text9') }}</span>
                   </li>
                 </ul>
               </div>

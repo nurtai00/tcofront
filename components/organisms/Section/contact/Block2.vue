@@ -2,17 +2,14 @@
   <div class="contact__helpline">
     <div class="container">
       <div class="content__helpline-content content">
-        <AtomsHeading type="h2"> Телефон доверия ТШО </AtomsHeading>
+        <AtomsHeading type="h2">
+          {{ $t('contact.block2.title') }}
+        </AtomsHeading>
         <p class="content__description">
-          Если вам стало известно или у вас есть подозрения о том, что один из
-          наших сотрудников, поставщиков или официальных представителей нарушают
-          требования законодательства и политики компании, имеют воздействие на
-          жизненно важные интересы компании, либо представляют угрозу
-          безопасности сотрудников и подрядчиков, просим вас сообщить об этом
-          через вебсайт www.TCOhotline.com или Телефоны доверия ТШО.
+          {{ $t('contact.block2.desc') }}
         </p>
         <p>
-          ТШО не допустит никаких преследований за добросовестное сообщение.
+          {{ $t('contact.block2.desc2') }}
         </p>
       </div>
     </div>
@@ -20,20 +17,20 @@
       <div class="container">
         <div class="contacts__list">
           <div class="contacts__list-item item">
-            <span>На казахском языке:</span>
+            <span>{{ $t('contact.block2.item1') }}</span>
             <div class="item__phone">
               <span>7-7122-27-26-76</span>
               <span>8-7122-27-26-76</span>
             </div>
           </div>
           <div class="contacts__list-item item">
-            <span>На русском языке:</span>
+            <span>{{ $t('contact.block2.item2') }}</span>
             <div class="item__phone">
               <span>8-7122-27-26-86</span>
             </div>
           </div>
           <div class="contacts__list-item item">
-            <span>На английском языке:</span>
+            <span>{{ $t('contact.block2.item3') }}</span>
             <div class="item__phone">
               <span>8-7122-27-26-86</span>
             </div>
