@@ -9,8 +9,7 @@
           v-for="(text, key) in data.description"
           :key="key"
           class="slide__description_item"
-        >
-          {{ text }}
+        >{{ text }}
         </div>
       </div>
       <template v-else>

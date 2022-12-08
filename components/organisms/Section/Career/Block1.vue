@@ -2,8 +2,7 @@
   <div class="about_career">
     <img src="@/assets/img/career/block1_back.png" alt="" />
     <AtomsHeading type="h3" color="white">
-      2021 - "Тенгизшевройл" второй год подряд назван самым привлекательным
-      работодателем Казахстана по версии Randstad Employer Brand Research
+      {{ $t('career.block1') }}
     </AtomsHeading>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="chart">
     <div class="container">
       <AtomsHeading type="h3" class="chart__title">
-        Техника безопасности
+        {{ $t('operation.chart') }}
       </AtomsHeading>
       <client-only>
         <VueApexCharts
@@ -12,10 +12,7 @@
         />
       </client-only>
       <div class="chart__description">
-        ТШО сохраняет за собой лидирующие позиции в области обеспечения
-        промышленной безопасности по таким стандартным показателям как,
-        происшествия с потерей рабочих дней и коэффициент регистрируемых
-        происшествий.
+        {{ $t('operation.chart_description') }}
       </div>
     </div>
   </div>
@@ -26,62 +23,64 @@ export default {
   components: {
     [process.browser && 'VueApexCharts']: () => import('vue-apexcharts'),
   },
-  data: () => ({
-    series: [
-      {
-        name: 'Коэффициент регистрируемых происшествий ',
-        data: [7, 5, 4, 5, 10, 2, 1, 3, 0],
-      },
-      {
-        name: 'Случаи серьезной травмы',
-        data: [0.15, 0.091, 0.097, 0.11, 0.1, 0.103, 0.137, 0.106, 0.143, 0.119],
-      },
-    ],
-    chartOptions: {
-      chart: {
-        height: 200,
-        type: 'line',
-        toolbar: {
+  data() {
+    return {
+      series: [
+        {
+          name: this.$t('operation.chart1'),
+          data: [7, 5, 4, 5, 10, 2, 1, 3, 0],
+        },
+        {
+          name: this.$t('operation.chart2'),
+          data: [0.15, 0.091, 0.097, 0.11, 0.1, 0.103, 0.137, 0.106, 0.143, 0.119],
+        },
+      ],
+      chartOptions: {
+        chart: {
+          height: 200,
+          type: 'line',
+          toolbar: {
+            show: false,
+          },
+        },
+        colors: ['#FFC000', '#00B0F0'],
+        dataLabels: {
+          enabled: true,
+        },
+        markers: {
+          size: 1,
+        },
+        xaxis: {
+          categories: [
+            '2013',
+            '2014',
+            '2015',
+            '2016',
+            '2017',
+            '2018',
+            '2019',
+            '2020',
+            '2021',
+            '2022',
+          ],
+          title: {
+            text: 'Year',
+          },
+        },
+        yaxis: {
+          enabled: false,
           show: false,
         },
-      },
-      colors: ['#FFC000', '#00B0F0'],
-      dataLabels: {
-        enabled: true,
-      },
-      markers: {
-        size: 1,
-      },
-      xaxis: {
-        categories: [
-          '2013',
-          '2014',
-          '2015',
-          '2016',
-          '2017',
-          '2018',
-          '2019',
-          '2020',
-          '2021',
-          '2022',
-        ],
-        title: {
-          text: 'Year',
+        legend: {
+          position: 'bottom',
+          horizontalAlign: 'left',
+          fontSize: '14px',
+          floating: false,
+          offsetY: 5,
         },
       },
-      yaxis: {
-        enabled: false,
-        show: false,
-      },
-      legend: {
-        position: 'bottom',
-        horizontalAlign: 'left',
-        fontSize: '14px',
-        floating: false,
-        offsetY: 5,
-      },
-    },
-  }),
+    }
+  },
 }
 </script>
 

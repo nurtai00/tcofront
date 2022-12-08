@@ -1,13 +1,10 @@
 <template>
   <div class="assignments_career container">
     <AtomsHeading type="h3" color="main">
-      Работники ТШО на зарубежных назначениях и назначениях внутри Казахстана
+      {{ $t('career.block6_header') }}
     </AtomsHeading>
     <p>
-      Работники ТШО имеют возможность работать в различных подразделениях
-      корпорации «Шеврон» для прохождения временных зарубежных назначений и
-      назначений внутри Казахстана с целью получения и применения новых знаний и
-      усовершенствованных навыков в ТШО после возвращения.
+      {{ $t('career.block6_description') }}
     </p>
     <div class="map">
       <img src="@/assets/img/career/map.svg" alt="" class="map_back" />
@@ -19,22 +16,22 @@
     <div class="statistic">
       <div class="statistic_info">
         <p>
-          США – 51,5 %<br />
-          1000 работников
+          {{ $t('career.USA') }} – 51,5 %<br />
+          1000 {{ $t('career.employee') }}
         </p>
         <p>
-          Великобритания – 12,9 %<br />
-          1000 работников
+          {{ $t('career.UK') }} – 12,9 %<br />
+          1000 {{ $t('career.employee') }}
         </p>
       </div>
       <div class="statistic_info">
         <p>
-          Казахстан – 32,2 %<br />
-          1000 работников
+          {{ $t('career.KZ') }} – 32,2 %<br />
+          1000 {{ $t('career.employee') }}
         </p>
         <p>
-          Тайланд – 3,2 %<br />
-          1000 работников
+          {{ $t('career.Tailand') }} – 3,2 %<br />
+          1000 {{ $t('career.employee') }}
         </p>
       </div>
       <div class="statistic_gender">

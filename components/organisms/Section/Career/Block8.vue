@@ -2,12 +2,12 @@
   <div class="news_career">
     <div class="container">
       <div class="news_title">
-        <AtomsTitle class="atoms_title" small> Новости ТШО </AtomsTitle>
-        <nuxt-link :to="localePath('/news')">Все Новости ТШО</nuxt-link>
+        <AtomsTitle class="atoms_title" small> {{ $t('career.news') }} </AtomsTitle>
+        <nuxt-link :to="localePath('/news')">{{ $t('career.all-news') }}</nuxt-link>
       </div>
       <AtomsTag
         :tag="{
-          text: 'Карьера',
+          text: $t('career.career'),
           selected: false,
         }"
         class="atoms_tag"
@@ -32,32 +32,32 @@ export default {
         {
           img: require('@/assets/img/career/news1.png'),
           tag: {
-            text: '#Экономика',
+            text: `#${this.$t('career.economic')}`,
             color: '#D01D12',
           },
           date: '03/05/2022',
-          title: 'Тенгизшевройл объявляет о Хакатоне',
-          text: 'ТОО «Тенгизшевройл»  в поисках лучшего цифрового продукта объявляет о Хакатоне, который состоится...',
+          title: this.$t('career.news_list')[0][0],
+          text: this.$t('career.news_list')[0][1],
         },
         {
           img: require('@/assets/img/career/news2.png'),
           tag: {
-            text: '#Технология',
+            text: `#${this.$t('career.techonolgy')}`,
             color: '#0DA9D7',
           },
           date: '03/05/2022',
-          title: 'Вниманию пользователей Интернет',
-          text: 'Тенгизшевройл (ТШО) стало известно о распространяемой в социальных сетях ложной инфор...',
+          title: this.$t('career.news_list')[1][0],
+          text: this.$t('career.news_list')[1][1],
         },
         {
           img: require('@/assets/img/career/news3.png'),
           tag: {
-            text: '#Окружающая среда',
+            text: `#${this.$t('career.area')}`,
             color: '#EDA210',
           },
           date: '03/05/2022',
-          title: 'Тенгизшевройл продолжит оказывать ...',
-          text: 'Генеральный директор ТОО «Тенгизшевройл» (ТШО) Кевин Лайон и Аким Жылыойского района Атырауско...',
+          title: this.$t('career.news_list')[2][0],
+          text: this.$t('career.news_list')[2][1],
         },
       ],
     }
