@@ -35,21 +35,25 @@ export default {
           id: 1,
           title: this.$t('suistainability.ecology.cards.card1'),
           imgSrc: 'ecology/card-1.svg',
+          popupText: this.$t('suistainability.ecology.popupText.card1'),
         },
         {
           id: 2,
           title: this.$t('suistainability.ecology.cards.card2'),
           imgSrc: 'ecology/card-2.svg',
+          popupText: this.$t('suistainability.ecology.popupText.card2'),
         },
         {
           id: 3,
           title: this.$t('suistainability.ecology.cards.card3'),
           imgSrc: 'ecology/card-3.svg',
+          popupText: this.$t('suistainability.ecology.popupText.card3'),
         },
         {
           id: 4,
           title: this.$t('suistainability.ecology.cards.card4'),
           imgSrc: 'ecology/card-4.svg',
+          popupText: this.$t('suistainability.ecology.popupText.card4'),
         },
       ],
     }
@@ -62,10 +66,7 @@ export default {
         payload: {
           modal: 'Default',
           title: item.title,
-          text: `<p>
-На территории и на границе санитарно-защитной зоны ТШО расположены 12 автоматизированных стационарных станций наблюдения за окружающей средой (СНОС). Стационарные станции мониторинга ТШО также находятся в поселке ТШО и ближайшем населенном пункте – в поселке Жана Каратон, расположенном в 95 км от месторождения Тенгиз. Дополнительно передвижной лабораторией осуществляется еженедельный подфакельный мониторинг. С наветренной стороны на расстоянии 16 км от завода проводятся замеры для получения фоновых значений концентраций исследуемых компонентов. Отбор проб также производится с подветренной стороны заводов в диапазоне от 0,5 до 15 км от завода и на границе санитарно-защитной зоны.
-<a style="{margin-top: 20px}" href="#">Казгидромет</a>
-</p>`,
+          text: item.popupText,
           imgSrc: 'sustainability/popup1.jpg',
         },
       })

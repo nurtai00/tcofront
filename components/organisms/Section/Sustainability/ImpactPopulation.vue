@@ -51,21 +51,31 @@ export default {
           id: 1,
           title: this.$t('suistainability.impactPopulation.cards.card1'),
           imgSrc: 'block1-1.svg',
+          popupText: this.$t(
+            'suistainability.impactPopulation.popupText.card1'
+          ),
         },
         {
           id: 2,
           title: this.$t('suistainability.impactPopulation.cards.card2'),
           imgSrc: 'block1-2.svg',
+          popupText: this.$t(
+            'suistainability.impactPopulation.popupText.card2'
+          ),
         },
         {
           id: 3,
           title: this.$t('suistainability.impactPopulation.cards.card3'),
           imgSrc: 'block1-3.svg',
+          popupText: this.$t(
+            'suistainability.impactPopulation.popupText.card3'
+          ),
         },
         {
           id: 4,
           title: this.$t('suistainability.impactPopulation.cards.card4'),
           imgSrc: 'block1-4.svg',
+          popupText: '',
         },
       ],
     }
@@ -80,10 +90,7 @@ export default {
         payload: {
           title: item.title,
           modal: 'Default',
-          text: `
-          ТШО реализовал ряд крупных проектов по сокращению сжигания на факелах, включая проект расширения мощностей по переработке газа, повышение пропускной способности экспортного газопровода и проект утилизации газа. С 2000 года инвестиции в мероприятия по охране окружающей среды и повышению надежности заводского оборудования позволили ТШО сократить общий объем сжигания газа на факелах на 79%. ТШО ежегодно успешно осуществлял значительные капремонты для замены устаревшего оборудования и повышения надежности действующего; замена оборудования часто требует сжигания газа на факелах в целях безопасности.
-С 2009 года ТШО исключило непрерывное рутинное сжигание попутного газа на факелах. На сегодняшний день факельное сжигание на объектах ТШО периодически осуществляется для обеспечения безопасности персонала, окружающей среды, а также во время ремонта или замены оборудования в целях повышения надежности производства.
-          `,
+          text: item.popupText,
           imgSrc: 'sustainability/popup1.jpg',
         },
       })

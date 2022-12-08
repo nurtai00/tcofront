@@ -2,12 +2,14 @@
   <div class="project">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
+        <AtomsBreadOption to="/">
+          {{ $t('suistainability.breadcrumbs.main') }}
+        </AtomsBreadOption>
         <AtomsBreadOption to="/sustainability">
-          Устойчивость
+          {{ $t('suistainability.title') }}
         </AtomsBreadOption>
         <AtomsBreadOption :to="`/sustainability/${$route.params.projects}`">
-          Проекты Игілік
+          {{ $t('suistainability.breadcrumbs.igilik') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
 
@@ -17,9 +19,7 @@
             {{ title }}
           </AtomsTitle>
           <p>
-            Результаты совместной работы ТШО с неправительственными
-            организациями решают многие социальные проблемы и оказывают
-            позитивное влияние на общественную жизнь региона.
+            {{ $t('suistainability.project.description') }}
           </p>
         </div>
         <img
@@ -44,27 +44,27 @@ export default {
       cardItems: [
         {
           id: 1,
-          title: 'г.Атырау',
+          title: this.$t('suistainability.project.cardPlaces.card1'),
           modal: 'SustainabilityProject',
         },
         {
           id: 2,
-          title: 'Жылыойский район',
+          title: this.$t('suistainability.project.cardPlaces.card2'),
           modal: 'SustainabilityProject',
         },
         {
           id: 3,
-          title: 'Исатайский район',
+          title: this.$t('suistainability.project.cardPlaces.card3'),
           modal: 'SustainabilityProject',
         },
         {
           id: 4,
-          title: 'Махамбетский район',
+          title: this.$t('suistainability.project.cardPlaces.card4'),
           modal: 'SustainabilityProject',
         },
         {
           id: 5,
-          title: 'Индерский район',
+          title: this.$t('suistainability.project.cardPlaces.card5'),
           modal: 'SustainabilityProject',
         },
       ],
@@ -74,8 +74,8 @@ export default {
     title() {
       const path = this.$route.path.split('/').pop()
       return path === 'igilik'
-        ? 'Проекты, созданные в рамках “Игілік”'
-        : 'Проекты, созданные в рамках “ПСИ”'
+        ? this.$t('suistainability.project.title', { project: 'Игилик' })
+        : this.$t('suistainability.project.title', { project: 'ПСИ' })
     },
   },
 }

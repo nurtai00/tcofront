@@ -179,6 +179,9 @@ export default {
         kk: {
           suistainability: require('./locales/Suistainability/kk.json'),
         },
+        ru: {
+          suistainability: require('./locales/Suistainability/ru.json'),
+        },
       },
       loadLanguagesAsync: true,
       langDir: '~locales',
