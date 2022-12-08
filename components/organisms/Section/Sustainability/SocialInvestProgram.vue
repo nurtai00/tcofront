@@ -2,20 +2,13 @@
   <div class="program">
     <div class="container program__content">
       <AtomsFlatHeading
-        title="Программа социально-инфраструктурного развития «Игілік»"
+        :title="$t('suistainability.socialInvestProgram.title')"
         @click="$router.push(`/sustainability/igilik`)"
       />
       <div class="program__description">
+        <p>{{ $t('suistainability.socialInvestProgram.description.one') }}</p>
         <p>
-          Программа «Игилик» направлена на строительство объектов социальной
-          инфраструктуры (детские сады, школы, спортивные сооружения, парки и т.
-          п.) в Атырауской области.
-        </p>
-        <p>
-          После завершения соцпрограммы «Бонус Фонд Атырау» (1993-1998) с
-          размером инвестиций 50 млн долларов США, в 1999 году стартовала
-          обновленная Программа социально-инфраструктурного развития «Игилик»,
-          ежегодный бюджет которой с 2013 года составляет 25 млн долларов США.
+          {{ $t('suistainability.socialInvestProgram.description.two') }}
         </p>
       </div>
     </div>

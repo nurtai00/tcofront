@@ -3,24 +3,15 @@
     <div class="ecology__wrapper">
       <div class="container ecology__content">
         <AtomsHeading class="ecology__title-desktop" type="h3" color="white">
-          Экологический мониторинг
+          {{ $t('suistainability.ecology.title') }}
         </AtomsHeading>
         <p class="ecology__description">
-          ТШО ведет постоянный экологический мониторинг, который включает
-          мониторинг воздуха, воды и почвы, в целях обеспечения соответствия
-          деятельности ТШО нормативным положениям РК и ожиданиям по ОП в рамках
-          УООС и РП. Наша комплексная программа экологического мониторинга
-          осуществляется лицензированными подрядными организациями и данные
-          анализируются соответствующими службами ТШО. Сбор данных измерений
-          проводится в соответствии с Программой производственного
-          экологического контроля ТШО, разработанной в соответствии с
-          экологическими требованиями РК. В ТШО имеется лаборатория для
-          проведения анализов, прошедшая полную аккредитацию в РК.
+          {{ $t('suistainability.ecology.description') }}}
         </p>
       </div>
       <div class="ecology__img">
         <AtomsHeading class="ecology__title-mobile" type="h3" color="white">
-          Экологический мониторинг
+          {{ $t('suistainability.ecology.title') }}}
         </AtomsHeading>
         <img src="@/assets/img/sustainability/block-2.png" alt="block" />
       </div>
@@ -42,22 +33,22 @@ export default {
       items: [
         {
           id: 1,
-          title: 'Мониторинг Атмосферного воздуха',
+          title: this.$t('suistainability.ecology.cards.card1'),
           imgSrc: 'ecology/card-1.svg',
         },
         {
           id: 2,
-          title: 'Мониторинг грунтовых вод',
+          title: this.$t('suistainability.ecology.cards.card2'),
           imgSrc: 'ecology/card-2.svg',
         },
         {
           id: 3,
-          title: 'Мониторинг сточных вод',
+          title: this.$t('suistainability.ecology.cards.card3'),
           imgSrc: 'ecology/card-3.svg',
         },
         {
           id: 4,
-          title: 'Мониторинг почвы',
+          title: this.$t('suistainability.ecology.cards.card4'),
           imgSrc: 'ecology/card-4.svg',
         },
       ],
@@ -65,6 +56,7 @@ export default {
   },
   methods: {
     openPopup(item) {
+      console.log()
       this.$modal.add({
         title: 'Default',
         payload: {

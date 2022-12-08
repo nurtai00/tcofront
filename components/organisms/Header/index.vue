@@ -6,9 +6,13 @@
       </NuxtLink>
       <MoleculesSearchBar />
       <div class="lang">
-        <a v-for="item of langs" :key="item.code" @click="selectLang(item)">{{
-          item.label
-        }}</a>
+        <a
+          v-for="item of langs"
+          :key="item.code"
+          :class="{ active_link: $i18n.locale === item.code }"
+          @click="selectLang(item)"
+          >{{ item.label }}</a
+        >
       </div>
     </header>
     <div class="mobile-nav">
@@ -109,7 +113,7 @@ export default {
       this.show_nav = !this.show_nav
     },
     selectLang(lang) {
-      this.$i18n.locale = lang.code
+      this.$i18n.setLocale(lang.code)
       if (this.defaultItem === lang) {
         return
       }

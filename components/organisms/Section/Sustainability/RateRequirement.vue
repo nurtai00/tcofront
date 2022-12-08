@@ -2,7 +2,7 @@
   <div class="requirement">
     <div class="requirement__img">
       <AtomsHeading class="requirement__title-mobile" type="h3">
-        Совместная оценка потребностей
+        {{ $t('suistainability.rateRequirement.title') }}
       </AtomsHeading>
       <img
         class="requirement__img"
@@ -13,32 +13,24 @@
 
     <div class="container requirement__content">
       <AtomsHeading class="requirement__title-desktop" type="h3">
-        Совместная оценка потребностей
+        {{ $t('suistainability.rateRequirement.title') }}
       </AtomsHeading>
       <div class="requirement__description">
         <p>
-          Совместная оценка потребностей (СОП) – независимое исследование, целью
-          которого является выявление наиболее важных социальных, экономических
-          и экологических проблем или потребностей сообщества и изучение идей о
-          том, как их решать. На основе СОП выявляются сферы, которые нуждаются
-          в поддержке.
+          {{ $t('suistainability.rateRequirement.description') }}
         </p>
         <ul>
           <li>
-            Программа направлена на жителей Атырауской области и с. Боранкул,
-            Мангистауской области
+            {{ $t('suistainability.rateRequirement.list.one') }}
           </li>
           <li>
-            Проекты основаны на бизнес-целях и результатах совместной оценки
-            потребностей населения
+            {{ $t('suistainability.rateRequirement.list.two') }}
           </li>
           <li>
-            Прозрачный отбор проектов Советом по социальным инвестициям, в
-            состав которого входят представители разных отделов ТШО
+            {{ $t('suistainability.rateRequirement.list.three') }}
           </li>
           <li>
-            Гранты предоставляют только некоммерческим организациям (не
-            рассматриваются физические лица или коммерческие организации)
+            {{ $t('suistainability.rateRequirement.list.four') }}
           </li>
         </ul>
         <AtomsPdfFile

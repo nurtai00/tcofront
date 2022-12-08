@@ -2,7 +2,7 @@
   <div class="map">
     <div class="container map__content">
       <AtomsHeading type="h3">
-        Карта проектов «Игілік» (выберите проект)
+        {{ $t('suistainability.mapProjects.title') }}
       </AtomsHeading>
       <img
         class="map__img"
@@ -23,7 +23,7 @@
               fill="#44D0F7"
             />
           </svg>
-          <span>запланировано</span>
+          <span> {{ $t('suistainability.mapProjects.tags.one') }}</span>
         </div>
         <div class="map__marker">
           <svg
@@ -38,7 +38,7 @@
               fill="#FFC000"
             />
           </svg>
-          <span>строится</span>
+          <span>{{ $t('suistainability.mapProjects.tags.two') }}</span>
         </div>
         <div class="map__marker">
           <svg
@@ -53,7 +53,7 @@
               fill="#015467"
             />
           </svg>
-          <span>закончено</span>
+          <span>{{ $t('suistainability.mapProjects.tags.three') }}</span>
         </div>
       </div>
       <or class="map__list">
@@ -84,15 +84,18 @@ export default {
       cards: [
         {
           id: 1,
-          text: '30 (в млн долларах США)',
-          description: 'Бюджет программы «Игілік» на 2022 г. ',
+          text: this.$t('suistainability.mapProjects.cards.card1.title'),
+          description: this.$t(
+            'suistainability.mapProjects.cards.card1.description'
+          ),
           img: 'sustainability/map-projects/document.svg',
         },
         {
           id: 2,
-          text: 'Более 1000',
-          description:
-            'Объектов построено в рамках программы «Игілік»  (школы, детские сады, спортивные сооружения и другое)',
+          text: this.$t('suistainability.mapProjects.cards.card2.title'),
+          description: this.$t(
+            'suistainability.mapProjects.cards.card2.description'
+          ),
           img: 'sustainability/map-projects/build.svg',
         },
       ],

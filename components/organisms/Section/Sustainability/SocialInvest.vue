@@ -2,15 +2,11 @@
   <div class="invest">
     <div class="container">
       <AtomsHeading class="invest__title" type="h3">
-        Социальные инвестиции
+        {{ $t('suistainability.socialInvest.title') }}
       </AtomsHeading>
       <div class="invest__content">
         <p class="invest__description">
-          Социальные инициативы Тенгизшевройл (ТШО) направлены на стимулирование
-          и раскрытие безграничного потенциала каждого жителя и сообществ
-          Атырауской области. ТШО стремится расширять возможности для людей,
-          обеспечивая доступность и усовершенствование систем здравоохранения,
-          образования и экономического развития.
+          {{ $t('suistainability.socialInvest.description') }}
         </p>
         <img
           src="@/assets/img/sustainability/invest/background.svg"

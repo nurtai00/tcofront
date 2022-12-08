@@ -3,28 +3,19 @@
     <div class="container">
       <div class="work__content">
         <AtomsHeading type="h3">
-          ТШО создал тысячи новых рабочих мест
+          {{ $t('suistainability.workPlaces.title') }}
         </AtomsHeading>
         <div class="work__content-description">
           <p>
-            «Игилик» дала мощный импульс инфраструктурному развитию Атырауской
-            области. Появились новые, современные здания, украсившие областной
-            центр и Жылыойский район, многофункциональные медицинские клиники и
-            центры, прекрасно оснащенные школы и другие учебные заведения.
+            {{ $t('suistainability.workPlaces.description.one') }}
           </p>
 
           <p>
-            Решения о том, какие проекты подлежат включению в Программу
-            «Игилик», принимаются совместно с акиматом Атырауской области.
-            Главные критерии: устойчивость, направленность на приоритетные нужды
-            местного населения, польза для бОльшей части населения, и главное –
-            проекты должны создавать возможности для раскрытия потенциала
-            жителей Атырауской области.
+            {{ $t('suistainability.workPlaces.description.two') }}
           </p>
         </div>
-        <span class="work__buildProgram"
-          >В 2022 г. в рамках программы “Игилик” реализуется строительство
-          объектов:
+        <span class="work__buildProgram">
+          {{ $t('suistainability.workPlaces.description.three') }}
         </span>
         <div class="work__cards">
           <MoleculesCardSuistanabilityCard
@@ -45,32 +36,32 @@ export default {
       cards: [
         {
           id: 1,
-          text: 'Центральная больница в г. Кульсары',
+          text: this.$t('suistainability.workPlaces.cards.card1'),
           img: 'sustainability/work-places/hospital.svg',
         },
         {
           id: 2,
-          text: 'Центральный стадион в г. Кульсары',
+          text: this.$t('suistainability.workPlaces.cards.card2'),
           img: 'sustainability/work-places/stadion.svg',
         },
         {
           id: 3,
-          text: 'Детский сад в мкр. Коктем в г. Атырау',
+          text: this.$t('suistainability.workPlaces.cards.card3'),
           img: 'sustainability/work-places/home.svg',
         },
         {
           id: 4,
-          text: 'Детский сад в мкр. Жулдыз в г. Атырау',
+          text: this.$t('suistainability.workPlaces.cards.card4'),
           img: 'sustainability/work-places/home.svg',
         },
         {
           id: 5,
-          text: 'Пристройка к школе в поселке Тущыкудык, Исатайский район',
+          text: this.$t('suistainability.workPlaces.cards.card5'),
           img: 'sustainability/work-places/school.svg',
         },
         {
           id: 6,
-          text: 'Строительство школы им. Жумабаева в г. Атырау',
+          text: this.$t('suistainability.workPlaces.cards.card6'),
           img: 'sustainability/work-places/school.svg',
         },
       ],

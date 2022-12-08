@@ -1,17 +1,21 @@
 <template>
   <div class="selection">
     <div class="container">
-      <AtomsHeading type="h3">Этапы отбора проектов</AtomsHeading>
+      <AtomsHeading type="h3">
+        {{ $t('suistainability.projectSelection.title') }}
+      </AtomsHeading>
     </div>
     <div class="selection__step">
       <div class="selection__step-one" @click="openPopup(popups.one)">
         <div class="container content">
           <div class="content__title">
             <AtomsHeading type="h4" color="white">01</AtomsHeading>
-            <AtomsHeading type="h4" color="white">Этап</AtomsHeading>
+            <AtomsHeading type="h4" color="white">
+              {{ $t('suistainability.projectSelection.section.right.title') }}
+            </AtomsHeading>
           </div>
           <AtomsHeading type="h4" color="white">
-            КРИТЕРИИ ОТБОРА ПРОЕКТОВ
+            {{ $t('suistainability.projectSelection.section.right.subtitle') }}
           </AtomsHeading>
         </div>
       </div>
@@ -19,22 +23,24 @@
         <div class="container content">
           <div>
             <AtomsHeading type="h4" color="white">02</AtomsHeading>
-            <AtomsHeading type="h4" color="white">Этап</AtomsHeading>
+            <AtomsHeading type="h4" color="white">
+              {{ $t('suistainability.projectSelection.section.left.title') }}
+            </AtomsHeading>
           </div>
           <AtomsHeading type="h4" color="white">
-            ПРИМЕРЫ КРИТЕРИЕВ ОТБОРА ПРОЕКТОВ
+            {{ $t('suistainability.projectSelection.section.left.subtitle') }}
           </AtomsHeading>
         </div>
       </div>
     </div>
     <div class="container project">
       <AtomsHeading type="h3">
-        ПРОЦЕСС ОТБОРА СОЦИАЛЬНЫХ ПРОЕКТОВ НА 2023 Г
+        {{ $t('suistainability.projectSelection.section2.title') }}
       </AtomsHeading>
       <div class="project__markers">
         <div
-          v-for="marker of markers"
-          :key="marker.id"
+          v-for="(marker, index) of markers"
+          :key="index"
           :data-label="marker.label"
           class="marker"
         >
@@ -67,80 +73,118 @@ export default {
           id: '01',
           title: 'КРИТЕРИИ ОТБОРА ПРОЕКТОВ (ЭТАП 1):',
           modal: 'SelectionProject',
-          list: [
-            'Проект не для индивидуальных лиц',
-            'Проект не поддерживает конкретный коммерческий бизнес',
-            'Проект не подразумевает спонсорство спортивных команд',
-            'НПО не является военной, политической или религиозной организацией',
-            'Проект планируется в пределах географии ПСИ - если только этот проект не имеет национального значения',
-            'Проект планируется в рамках одной из тем ПСИ',
-            'Бюджет не охватывает только поездки или сборы за участие в соревнованиях',
-            'Объем проекта не покрывает обычные операционные расходы для государственных учреждений',
-            'Проект не планируется для строительства объектов инфраструктуры, которые могут быть охвачены в рамках программы Игилик',
-            'Объем работ проекта и бюджет не подразумевают только приобретение чего-либо',
-            'Основная часть бюджета не закладывается для проведения капитального ремонта',
-          ],
+          list: this.$t('suistainability.projectSelection.section.right.list'),
+          // list: [
+          //   'Проект не для индивидуальных лиц',
+          //   'Проект не поддерживает конкретный коммерческий бизнес',
+          //   'Проект не подразумевает спонсорство спортивных команд',
+          //   'НПО не является военной, политической или религиозной организацией',
+          //   'Проект планируется в пределах географии ПСИ - если только этот проект не имеет национального значения',
+          //   'Проект планируется в рамках одной из тем ПСИ',
+          //   'Бюджет не охватывает только поездки или сборы за участие в соревнованиях',
+          //   'Объем проекта не покрывает обычные операционные расходы для государственных учреждений',
+          //   'Проект не планируется для строительства объектов инфраструктуры, которые могут быть охвачены в рамках программы Игилик',
+          //   'Объем работ проекта и бюджет не подразумевают только приобретение чего-либо',
+          //   'Основная часть бюджета не закладывается для проведения капитального ремонта',
+          // ],
         },
         two: {
           id: '02',
           title: 'ПРИМЕРЫ КРИТЕРИЕВ ОТБОРА ПРОЕКТОВ (ЭТАП 2):',
           modal: 'SelectionProject',
-          list: [
-            'Поддержка потребностей и приоритетов местного населения',
-            'Экономическая эффективность',
-            'Развитие потенциала',
-            'Устойчивое развитие',
-            'Проект поддается оценке и контролю',
-            'Обоснованность',
-            'Демонстрация высокого потенциала для достижения успеха',
-            'Инновационность и возможность выполнения проекта дистанционно в онлайн формате',
-          ],
+          list: this.$t('suistainability.projectSelection.section.left.list'),
+          // list: [
+          //   'Поддержка потребностей и приоритетов местного населения',
+          //   'Экономическая эффективность',
+          //   'Развитие потенциала',
+          //   'Устойчивое развитие',
+          //   'Проект поддается оценке и контролю',
+          //   'Обоснованность',
+          //   'Демонстрация высокого потенциала для достижения успеха',
+          //   'Инновационность и возможность выполнения проекта дистанционно в онлайн формате',
+          // ],
         },
       },
       markers: [
         {
           id: 1,
-          title: 'Июль',
+          title: this.$t(
+            'suistainability.projectSelection.section2.markers.june.title'
+          ),
           color: '#FFC000',
-          label:
-            'выражение заинтересованности НПО принять участие в ПСИ (рассылка по электронной почте)',
+          label: this.$t(
+            'suistainability.projectSelection.section2.markers.june.label'
+          ),
         },
         {
           id: 2,
-          title: 'Август',
+          title: this.$t(
+            'suistainability.projectSelection.section2.markers.jule.title'
+          ),
+          color: '#FFC000',
+          label: this.$t(
+            'suistainability.projectSelection.section2.markers.jule.label'
+          ),
+        },
+        {
+          id: 45,
+          title: this.$t(
+            'suistainability.projectSelection.section2.markers.august.title'
+          ),
           color: '#44D0F7',
-          label:
-            'запрос и получение предложений социальных проектов (рассылка по электронной почте)',
+          label: this.$t(
+            'suistainability.projectSelection.section2.markers.august.label'
+          ),
         },
         {
           id: 3,
-          title: 'Сентябрь',
+          title: this.$t(
+            'suistainability.projectSelection.section2.markers.september.title'
+          ),
           color: '#00B0F0',
-          label:
-            'изучение и оценка предложений в Совете ПСИ по действующим в ТШО критериям отбора',
         },
         {
           id: 4,
-          title: 'Октябрь',
+          title: this.$t(
+            'suistainability.projectSelection.section2.markers.october.title'
+          ),
           color: '#5E8698',
-          label:
-            'получение внутренних разрешений и работа над спонсорскими контрактами',
         },
-        { id: 5, title: 'Ноябрь', color: '#0282A0' },
+        {
+          id: 5,
+          title: this.$t(
+            'suistainability.projectSelection.section2.markers.november.title'
+          ),
+          label: this.$t(
+            'suistainability.projectSelection.section2.markers.november.label'
+          ),
+          color: '#0282A0',
+        },
         {
           id: 6,
-          title: 'Декабрь',
+          title: this.$t(
+            'suistainability.projectSelection.section2.markers.december.title'
+          ),
           color: '#015467',
-          label: 'объявление успешных (отобранных) предложений',
+          label: this.$t(
+            'suistainability.projectSelection.section2.markers.december.label'
+          ),
         },
         {
           id: 7,
-          title: 'Январь',
+          title: this.$t(
+            'suistainability.projectSelection.section2.markers.january.title'
+          ),
           color: '#30454E',
-          label: 'поэтапное финансирование и выполнение проектов и программ',
+          label: this.$t(
+            'suistainability.projectSelection.section2.markers.january.label'
+          ),
         },
       ],
     }
+  },
+  mounted() {
+    console.log(this.$t('suistainability.projectSelection.section2.markers'))
   },
   methods: {
     openPopup(payload) {
@@ -250,7 +294,7 @@ export default {
   &:nth-child(3) {
     #{$p}__arrow {
       position: relative;
-      left: -20px;
+      left: 150px;
       top: -20px;
     }
     &:before {
@@ -258,7 +302,7 @@ export default {
       content: attr(data-label);
       position: absolute;
       top: 50px;
-      left: 270px;
+      left: 500px;
       color: $c-text;
       width: 270px;
       height: 32px;
@@ -267,9 +311,9 @@ export default {
   &:nth-child(4) {
     #{$p}__arrow {
       position: relative;
-      left: 10px;
-      bottom: -120px;
-      transform: rotate(-180deg);
+      left: 150px;
+      bottom: 0px;
+      top: -20px;
     }
     &:after {
       display: block;
@@ -284,6 +328,7 @@ export default {
   }
   &:nth-child(5) {
     #{$p}__arrow {
+      visibility: hidden;
       position: relative;
       left: 10px;
       bottom: -120px;
@@ -293,14 +338,16 @@ export default {
   &:nth-child(6) {
     #{$p}__arrow {
       position: relative;
-      left: 70px;
-      top: -20px;
+      left: 0px;
+      bottom: -120px;
+      transform: rotate(-180deg);
     }
     &:before {
       display: block;
       content: attr(data-label);
       position: absolute;
-      top: 50px;
+      top: 80px;
+      right: -100px;
       color: $c-text;
       width: 270px;
       height: 32px;
@@ -309,7 +356,24 @@ export default {
   &:nth-child(7) {
     #{$p}__arrow {
       position: relative;
-      left: -70px;
+      left: 60px;
+      top: -20px;
+    }
+    &:after {
+      display: block;
+      content: attr(data-label);
+      position: absolute;
+      bottom: 70px;
+      left: 920px;
+      color: $c-text;
+      width: 270px;
+      height: 32px;
+    }
+  }
+  &:nth-child(8) {
+    #{$p}__arrow {
+      position: relative;
+      left: -60px;
       bottom: -120px;
       transform: rotate(-180deg);
     }
@@ -318,7 +382,7 @@ export default {
       content: attr(data-label);
       position: absolute;
       bottom: 70px;
-      left: 960px;
+      left: 1180px;
       color: $c-text;
       width: 270px;
       height: 32px;
