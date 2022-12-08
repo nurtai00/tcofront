@@ -2,11 +2,13 @@
   <div class="contact">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
-        <AtomsBreadOption to="/contact">Контактная информация</AtomsBreadOption>
+        <AtomsBreadOption to="/">{{ $t('contact.main') }}</AtomsBreadOption>
+        <AtomsBreadOption to="/contact">
+          {{ $t('contact.contact') }}
+        </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20 contact__title">
-        Контактная информация
+        {{ $t('contact.contact') }}
       </AtomsTitle>
       <div class="contact__tags">
         <AtomsTag
@@ -33,16 +35,48 @@ export default {
   data() {
     return {
       activeTagId: 1,
+      tags: [
+        {
+          text: this.$t('contact.tags.1'),
+          selected: true,
+          id: 1,
+        },
+        {
+          text: this.$t('contact.tags.2'),
+          selected: false,
+          id: 2,
+        },
+        {
+          text: this.$t('contact.tags.3'),
+          selected: false,
+          id: 3,
+        },
+        {
+          text: this.$t('contact.tags.4'),
+          selected: false,
+          id: 4,
+        },
+        {
+          text: this.$t('contact.tags.5'),
+          selected: false,
+          id: 5,
+        },
+        {
+          text: this.$t('contact.tags.6'),
+          selected: false,
+          id: 6,
+        },
+      ],
       contents: [
         {
           id: 1,
-          title: 'Головной офис ТОО «Тенгизшевройл»',
+          title: this.$t('contact.contents.1.title'),
           imgName: 'content1.jpg',
           lists: [
             {
               id: 11,
               iconName: 'map.svg',
-              text: 'Республика Казахстан 060011, г.Атырау , ул. Сатпаева 3',
+              text: this.$t('contact.contents.1.text'),
             },
             {
               id: 12,
@@ -63,13 +97,13 @@ export default {
         },
         {
           id: 2,
-          title: 'Представительство в г. Нур-Султан',
+          title: this.$t('contact.contents.2.title'),
           imgName: 'content2.jpg',
           lists: [
             {
               id: 15,
               iconName: 'map.svg',
-              text: 'Республика Казахстан 010000, г. Нур-Султан, ул. Достык 16 БЦ «Талан Тауэрс», 13-й этаж',
+              text: this.$t('contact.contents.2.text'),
             },
             {
               id: 16,
@@ -85,21 +119,21 @@ export default {
         },
         {
           id: 3,
-          title: 'Соискателям',
+          title: this.$t('contact.contents.3.title'),
           imgName: 'content3.jpg',
           lists: [
             {
               id: 15,
-              text: 'Для поиска вакансий и регистрации резюме в нашей базе данных пройдите по указанной ниже ссылке',
+              text: this.$t('contact.contents.3.text1'),
             },
             {
               id: 16,
               type: 'link',
-              text: 'Вакансий',
+              text: this.$t('contact.contents.3.text2'),
             },
             {
               id: 17,
-              text: 'По вопросам технической поддержки просим обратиться:',
+              text: this.$t('contact.contents.3.text3'),
             },
             {
               id: 18,
@@ -110,7 +144,7 @@ export default {
         },
         {
           id: 4,
-          title: 'Для запросов СМИ',
+          title: this.$t('contact.contents.4.title'),
           imgName: 'content4.jpg',
           lists: [
             {
@@ -127,13 +161,12 @@ export default {
         },
         {
           id: 5,
-          title:
-            'Проект будущего расширения - Проект управления устьевым давлением',
+          title: this.$t('contact.contents.5.title'),
           imgName: 'content5.jpg',
           lists: [
             {
               id: 21,
-              text: 'Команда Проекта будущего расширения будет рада вашим отзывам. Просим присылать ваши вопросы и комментарии по адресу:',
+              text: this.$t('contact.contents.5.text1'),
             },
             {
               id: 22,
@@ -147,58 +180,26 @@ export default {
             },
             {
               id: 24,
-              text: 'Веб-сайт ПБР-ПУУД',
+              text: this.$t('contact.contents.5.text2'),
               type: 'link',
             },
           ],
         },
         {
           id: 6,
-          title: 'Потенциальным поставщикам',
+          title: this.$t('contact.contents.6.title'),
           imgName: 'content6.jpg',
           lists: [
             {
               id: 25,
-              text: 'Пожалуйста, воспользуйтесь страницей Выражения заинтересованности поставщика, чтобы узнать больше о возможностях сотрудничества',
+              text: this.$t('contact.contents.6.text1'),
             },
             {
               id: 26,
-              text: 'Выражение заинтересованности поставщика',
+              text: this.$t('contact.contents.6.text2'),
               type: 'link',
             },
           ],
-        },
-      ],
-      tags: [
-        {
-          text: 'Головной офис в г.Атырау',
-          selected: true,
-          id: 1,
-        },
-        {
-          text: 'Представительство в г. Нур-Султан',
-          selected: false,
-          id: 2,
-        },
-        {
-          text: 'Соискателям',
-          selected: false,
-          id: 3,
-        },
-        {
-          text: 'Для запросов СМИ',
-          selected: false,
-          id: 4,
-        },
-        {
-          text: 'Команда Проекта',
-          selected: false,
-          id: 5,
-        },
-        {
-          text: 'Поставщикам',
-          selected: false,
-          id: 6,
         },
       ],
     }

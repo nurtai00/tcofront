@@ -2,88 +2,69 @@
   <div class="feedback">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
-        <AtomsBreadOption to="/contact">Контактная информация</AtomsBreadOption>
+        <AtomsBreadOption to="/">{{ $t('contact.main') }}</AtomsBreadOption>
+        <AtomsBreadOption to="/contact">{{
+          $t('contact.contact')
+        }}</AtomsBreadOption>
         <AtomsBreadOption to="/contact/feedback">
-          Обратная связь
+          {{ $t('contact.feedback.feedback') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="mb20">Обратная свзяь</AtomsTitle>
+      <AtomsTitle class="mb20">{{
+        $t('contact.feedback.feedback_text')
+      }}</AtomsTitle>
       <div class="feedback__content">
         <p>
-          Процесс обратной связи позволяет общественности быстро, легко и в
-          конфиденциальной форме связаться с ТОО «Тенгизшевройл» (ТШО) по
-          вопросам деятельности компании и получить своевременный ответ.
+          {{ $t('contact.feedback.text1') }}
         </p>
         <p>
-          ТШО стремится построить продуктивные и взаимовыгодные отношения с
-          государственными органами, коммерческими организациями и населением.
-          Одним из основополагающих элементов налаживания таких отношений
-          является открытый диалог между ТШО и населением. Процесс обратной
-          связи ТШО – это надёжный способ поделиться обеспокоенностью по тому
-          или иному вопросу, внести предложение или замечание, и получить ответ.
+          {{ $t('contact.feedback.text2') }}
         </p>
         <p>
-          После предоставления замечания/предложения, ТШО официально подтвердит
-          получение в течение 5 рабочих дней. ТШО планирует предоставлять ответы
-          на полученные замечания/предложения в течение 20 рабочих дней.
+          {{ $t('contact.feedback.text3') }}
         </p>
         <p>
-          ТШО не раскрывает информацию, полученную в процессе рассмотрения
-          замечаний/предложений, за пределы компании. Ваши отзывы позволят нам
-          ответить на вопросы, вызывающие вашу озабоченность, и рассмотреть ваши
-          предложения, что делает ТШО более открытым к взаимодействию с местной
-          общественностью.
+          {{ $t('contact.feedback.text4') }}
         </p>
         <p>
-          Процесс является конфиденциальным. При обращении к нам просим
-          оставлять вашу контактную информацию, чтобы мы смогли предоставить вам
-          ответ напрямую.
+          {{ $t('contact.feedback.text5') }}
         </p>
         <p>
-          ТШО предлагает множество различных вариантов, облегчающих процесс
-          предоставления замечаний/предложений. Представители общественности
-          могут заполнить формы обратной связи в местах, где расположены ящики
-          для сбора замечаний и предложений в г. Атырау, г. Кульсары и на
-          Тенгизе по следующим адресам:
+          {{ $t('contact.feedback.text6') }}
         </p>
         <ul>
           <li>
-            Aтырауская областная универсальная научная библиотека им. Г.
-            Сланова, г. Атырау
+            {{ $t('contact.feedback.text7') }}
           </li>
-          <li>Поселок «Шанырак», Дом 1, м/р Тенгиз</li>
-          <li>Поселок «Шанырак», зал перевахтовки, м/р Тенгиз</li>
-          <li>Столовая ПТШО, м/р Тенгиз</li>
+          <li>{{ $t('contact.feedback.text8') }}</li>
+          <li>{{ $t('contact.feedback.text9') }}</li>
+          <li>{{ $t('contact.feedback.text10') }}</li>
           <li>
-            Здание администрации акимата Жылыойского района, вахтовый поселок,
-            м/р Тенги
+            {{ $t('contact.feedback.text11') }}
           </li>
-          <li>Магазин «Избаскан», вахтовый поселок, м/р Тенгиз</li>
-          <li>Гостиница «Шанырак», г. Кульсары</li>
+          <li>{{ $t('contact.feedback.text12') }}</li>
+          <li>{{ $t('contact.feedback.text13') }}</li>
         </ul>
       </div>
     </div>
     <div class="feedback__callback">
       <div class="container">
         <p>
-          Также отзывы и замечания можно предоставлять по электронной почте
-          <a href="mailto:tcofp@tengizchevroil.com" type="mail">
-            tcofp@tengizchevroil.com</a
-          >
-          и бесплатной телефонной линии по номеру
+          {{ $t('contact.feedback.text14') }}
+          <a href="mailto:tcofp@tengizchevroil.com">tcofp@tengizchevroil.com</a>
+          {{ $t('contact.feedback.text15') }}
           <a href="tel:8-800-080-84-88">8-800-080-84-88</a>
         </p>
       </div>
     </div>
     <div class="container">
       <AtomsHeading class="document-title" type="h3">
-        Документы по процессу обратной связи
+        {{ $t('contact.feedback.text16') }}
       </AtomsHeading>
       <div class="links">
-        <a href="#">Буклет о процессе управления обратной связью (pdf)</a>
+        <a href="#">{{ $t('contact.feedback.text17') }}</a>
         <nuxt-link :to="localePath('/contact/feedback/reports')">
-          Отчёты по процессу обратной связи ТШО
+          {{ $t('contact.feedback.text18') }}
         </nuxt-link>
       </div>
     </div>

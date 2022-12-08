@@ -25,67 +25,67 @@ const webpack = require('webpack')
 const build =
   process.env.NODE_ENV === 'production'
     ? {
-        extend(config, ctx) {
-          if (ctx && ctx.isClient) {
-            // config.optimization.splitChunks.maxSize = 4096
-            // config.output.globalObject = 'this'
-            if (!this.dev) {
-              config.plugins.push(
-                new webpack.optimize.LimitChunkCountPlugin({
-                  maxChunks: 1,
-                })
-              )
-            }
+      extend(config, ctx) {
+        if (ctx && ctx.isClient) {
+          // config.optimization.splitChunks.maxSize = 4096
+          // config.output.globalObject = 'this'
+          if (!this.dev) {
+            config.plugins.push(
+              new webpack.optimize.LimitChunkCountPlugin({
+                maxChunks: 1,
+              })
+            )
           }
+        }
+      },
+      loaders: {
+        cssModules: {
+          modules: true,
+          localIdentName: '[local]',
         },
-        loaders: {
-          cssModules: {
-            modules: true,
-            localIdentName: '[local]',
-          },
+      },
+      scss: {
+        cssModules: {
+          modules: true,
+          localIdentName: '[local]',
         },
-        scss: {
-          cssModules: {
-            modules: true,
-            localIdentName: '[local]',
-          },
-        },
-        optimization: {
-          splitChunks: {
-            chunks: 'async',
-            automaticNameDelimiter: '.',
-          },
-        },
+      },
+      optimization: {
         splitChunks: {
-          pages: false,
-          vendor: false,
-          commons: false,
-          runtime: false,
-          layouts: false,
+          chunks: 'async',
+          automaticNameDelimiter: '.',
         },
-        filenames: {
-          app: () => '[name].js',
-          font: () => '[name].[ext]',
-          img: () => '[name].[ext]',
-        },
-        extractCSS: true,
-        // optimization: {
-        //   splitChunks: {
-        //     cacheGroups: {
-        //       styles: {
-        //         name: 'styles',
-        //         test: /\.(css|vue)$/,
-        //         chunks: 'all',
-        //         enforce: true,
-        //       },
-        //     },
-        //     chunks: 'all',
-        //     automaticNameDelimiter: '.',
-        //     name: undefined,
-        //   },
-        //   minimize: true,
-        // },
-      }
+      },
+      splitChunks: {
+        pages: false,
+        vendor: false,
+        commons: false,
+        runtime: false,
+        layouts: false,
+      },
+      filenames: {
+        app: () => '[name].js',
+        font: () => '[name].[ext]',
+        img: () => '[name].[ext]',
+      },
+      extractCSS: true,
+      // optimization: {
+      //   splitChunks: {
+      //     cacheGroups: {
+      //       styles: {
+      //         name: 'styles',
+      //         test: /\.(css|vue)$/,
+      //         chunks: 'all',
+      //         enforce: true,
+      //       },
+      //     },
+      //     chunks: 'all',
+      //     automaticNameDelimiter: '.',
+      //     name: undefined,
+      //   },
+      //   minimize: true,
+      // },
+    }
     : {}
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -181,18 +181,21 @@ export default {
           home: require('./locales/home/kk.json'),
           news: require('./locales/news/kk.json'),
           relation: require('./locales/relation/kk.json'),
+          contact: require('./locales/Contact/kk.json'),
         },
         ru: {
           suistainability: require('./locales/Suistainability/ru.json'),
           home: require('./locales/home/ru.json'),
           news: require('./locales/news/ru.json'),
           relation: require('./locales/relation/ru.json'),
+          contact: require('./locales/Contact/ru.json'),
         },
         en: {
           suistainability: require('./locales/Suistainability/en.json'),
           home: require('./locales/home/en.json'),
           news: require('./locales/news/en.json'),
           relation: require('./locales/relation/en.json'),
+          contact: require('./locales/Contact/en.json'),
         },
       },
       loadLanguagesAsync: true,

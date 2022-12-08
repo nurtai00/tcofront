@@ -1,0 +1,114 @@
+{
+  "main": "Home",
+  "contact": "Contact Us",
+  "tags": {
+    "1": "Tengizchevroil Headquarters",
+    "2": "Nur-Sultan Representative Office",
+    "3": "Employment Opportunities",
+    "4": "Media Inquiries",
+    "5": "Project team",
+    "6": "Potential Vendors"
+  },
+  "contents": {
+    "1": {
+      "title": "Tengizchevroil Headquarters",
+      "text": "Republic of Kazakhstan 060011 Atyrau, 3 Satpayev Street"
+    },
+    "2": {
+      "title": "Nur-Sultan Representative Office",
+      "text": "Republic of Kazakhstan 010000 Nur-Sultan, 16 Dostyk Str. Business Center 'Talan Towers', 13th floor"
+    },
+    "3": {
+      "title": "Employment Opportunities",
+      "text1": "You can search and apply for available positions by clicking link below",
+      "text2": "Open Jobs",
+      "text3": "For technical support please contact us via"
+    },
+    "4": {
+      "title": "Media Inquiries"
+    },
+    "5": {
+      "title": "Future Growth Project - Wellhead Pressure Management Project",
+      "text1": "Future Growth Project team appreciates your feedback. Please, send us your questions or comments at fgpinfo@tengizchevroil.com",
+      "text2": "FGP-WPMP Website"
+    },
+    "6": {
+      "title": "Potential Vendors",
+      "text1": "Please use Supplier Expression of Interest Page to learn how to become supplier",
+      "text2": "Supplier Expression of Interest"
+    }
+  },
+  "block2": {
+    "title": "TCO Hotline",
+    "desc": "If you are aware, or suspect, that one of our employees, suppliers, contractors or agents violate the law or company policies, affect the vital interests of the company, or threaten the security of its employees and contractors, we ask that you use the TCO Hotline – www.TCOhotline.com, or by calling:",
+    "desc2": "TCO does not tolerate any form of retaliation for reports made in good faith.",
+    "item1": "Kazakh Language:",
+    "item2": "Russian Language:",
+    "item3": "English Language:"
+  },
+  "block3": {
+    "title": "Examples of violations that should be reported:",
+    "desc": "All other concerns, suggestions or observations may be delivered through",
+    "desc_link": "Feedback Management Process.",
+    "accordion1": {
+      "title": "Violations",
+      "text1": "Behavior that does not comply with the principles of the document 'The Way of TCO', cases of theft and fraud",
+      "text2": "Harassment/Discrimination",
+      "text3": "Drugs, Alcohol or Weapons on Company Property",
+      "text4": "Unauthorized sharing of Company Sensitive Information",
+      "text5": "Manipulation of Accounting Internal Controls resulting in Financial Misstatement",
+      "text6": "Theft"
+    },
+    "accordion2": {
+      "title": "Fraud",
+      "text1": "As defined in TCO Fraud Policy #53:",
+      "text2": "Fraud by Abuse of Position",
+      "text3": "Fraud by Failure to Disclose",
+      "text4": "Fraud by Misrepresentation",
+      "text5": "Fraud can be in relation to but is not limited to:",
+      "text6": "1. Procurement & Contracting, Hiring, Travel & Hospitality and Sales Price Manipulation, Accounting Fraud",
+      "text7": "2. Undisclosed conflicts of interest, including outside business interests",
+      "text8": "3. The manipulation of TCO processes and controls"
+    },
+    "accordion3": {
+      "title": "Laws ",
+      "text1": "Antiboycott Laws",
+      "text2": "Anticorruption or Bribery Law",
+      "text3": "Competition Laws",
+      "text4": "Data Privacy Law",
+      "text5": "Environmental Laws",
+      "text6": "Health and Safety Laws",
+      "text7": "Import/Export/Trade Laws",
+      "text8": "Improper Lobbying Activities and Political Contributions Laws",
+      "text9": "Other suspected criminal acts"
+    }
+  },
+  "reports": {
+    "feedback": "Feedback",
+    "reports": "Reports",
+    "title": "TCO Feedback Process Reports",
+    "pdf": "Отчёт по процессу обратной связи ТШО за 2 квартал 2022 г (pdf)"
+  },
+  "feedback": {
+    "feedback": "Feedback",
+    "feedback_text": "Feedback Management Process",
+    "text1": "The Feedback Management Process is a quick, easy and confidential process for the community to communicate with Tengizchevroil LLP (TCO) on company operations issues and receive a timely response.",
+    "text2": "TCO is committed to building productive, collaborative and beneficial relationships with government, businesses, and local communities. Fundamental to this commitment is open dialog between TCO and the communities. TCO’s Feedback Process provides a reliable way to present a concern, suggestion or grievance to the company and then receive a response.",
+    "text3": "Once you have submitted feedback, TCO will formally acknowledge the receipt within 5 working days. TCO’s objective is to respond to the feedback within 20 working days.",
+    "text4": "TCO does not share feedback outside of the company. Feedback lets us respond to concerns, grievances and consider suggestions that help TCO become more responsive to our local communities.",
+    "text5": "The Process is confidential. We urge the community to provide us with your feedback, together with contact information that will allow us to respond directly to you.",
+    "text6": "TCO provides as many options as possible to make it easy to provide feedback. Community members can fill out a TCO feedback form at drop box locations in Atyrau, Kulsary and Tengiz at the following locations:",
+    "text7": "Atyrau Oblast G. Slanov Universal Research Library, Atyrau",
+    "text8": "Shanyrak Village, Dome 1, Tengiz",
+    "text9": "Shanyrak Village Crew Change Hall, Tengiz",
+    "text10": "TCOV Canteen, Tengiz",
+    "text11": "Building of Zhylyoi Region Akimat Administration, RV, Tengiz",
+    "text12": "Izbaskan shop, RV, Tengiz",
+    "text13": "Shanyrak Hotel, Kulsary",
+    "text14": "Additionally feedback can be provided by email",
+    "text15": "call-free telephone",
+    "text16": "Feedback Process Documents",
+    "text17": "Feedback Management Process flyer (pdf)",
+    "text18": "TCO Feedback Process Reports"
+  }
+}
