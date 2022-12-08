@@ -2,24 +2,26 @@
   <div class="reports">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
-        <AtomsBreadOption to="/contact">Контактная информация</AtomsBreadOption>
+        <AtomsBreadOption to="/">{{ $t('contact.main') }}</AtomsBreadOption>
+        <AtomsBreadOption to="/contact">{{
+          $t('contact.contact')
+        }}</AtomsBreadOption>
         <AtomsBreadOption to="/contact/feedback">
-          Обратная связь
+          {{ $t('contact.reports.feedback') }}
         </AtomsBreadOption>
         <AtomsBreadOption to="/contact/feedback/reports">
-          Отчеты
+          {{ $t('contact.reports.reports') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20">
-        Отчёты по процессу обратной связи ТШО
+        {{ $t('contact.reports.title') }}
       </AtomsTitle>
       <div class="reports__docs">
         <div v-for="file of files" :key="file">
           <AtomsPdfFile
             :width="30"
             :height="40"
-            text="Отчёт по процессу обратной связи ТШО за 2 квартал 2022 г (pdf)"
+            :text="$t('contact.reports.pdf')"
           />
         </div>
       </div>

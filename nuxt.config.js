@@ -182,6 +182,7 @@ export default {
           news: require('./locales/news/kk.json'),
           relation: require('./locales/relation/kk.json'),
           company: require('./locales/company/kk.json'),
+          contact: require('./locales/Contact/kk.json'),
         },
         ru: {
           suistainability: require('./locales/Suistainability/ru.json'),
@@ -189,6 +190,7 @@ export default {
           news: require('./locales/news/ru.json'),
           relation: require('./locales/relation/ru.json'),
           company: require('./locales/company/ru.json'),
+          contact: require('./locales/Contact/ru.json'),
         },
         en: {
           suistainability: require('./locales/Suistainability/en.json'),
@@ -196,6 +198,7 @@ export default {
           news: require('./locales/news/en.json'),
           relation: require('./locales/relation/en.json'),
           company: require('./locales/company/en.json'),
+          contact: require('./locales/Contact/en.json'),
         },
       },
       loadLanguagesAsync: true,
