@@ -1,22 +1,22 @@
 <template>
   <div class="declaration">
     <div class="container">
-      <div class="declaration__wrapper">
-        <div class="declaration__info">
-          <AtomsHeading type="h3">Декларация</AtomsHeading>
-          <div class="declaration__description">
-            <span class="declaration__description-title">ФОРМА СОГЛАСИЯ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</span>
-            <p class="declaration__description-item">
+      <AtomsHeading type="h3">Декларация</AtomsHeading>
+      <div class="content">
+        <div>
+          <div class="description">
+            <p>ФОРМА СОГЛАСИЯ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
+            <p>
               Настоящим я подтверждаю, что ознакомился(лась) с Положением о
               конфиденциальности персональных данных ТОО «Тенгизшевройл» (далее
               – «ТШО») (Ссылка: http://www.tengizchevroil.com/ru/privacy), и
               соглашаюсь со всеми его условиями.
             </p>
-            <p class="declaration__description-item">
+            <p>
               Я даю согласие на обработку ТШО моих персональных данных в
               законных деловых целях, связанных с привлечением и отбором кадров.
             </p>
-            <p class="declaration__description-item">
+            <p>
               Я даю согласие на передачу за рубеж своих персональных данных,
               предоставленных в ходе данного процессa онлайн регистрации и (или)
               подачи заявки, и извещен(а) о том, что они будут храниться на
@@ -24,25 +24,25 @@
               обеспечением их надлежащей защиты, и будут обрабатываться
               исключительно в соответствии с указаниями ТШО.
             </p>
-            <p class="declaration__description-item">
+            <p>
               Я извещен(а), что в случае необходимости я имею право в любое
               время обновить мои персональные данные через онлайн профиль, или
               просить их уничтожения до истечения указанного ниже срока,
               обратившись по следующему электронному адресу:
               rectechsup@tengizchevroil.com.
             </p>
-            <p class="declaration__description-item">
+            <p>
               Я осведомлен(а), что мои персональные данные будут уничтожены по
               умолчанию через 36 месяцев (3 года) с момента последнего
               обновления моего профиля.
             </p>
-            <p class="declaration__description-item">
+            <p>
               Мне также известно, что в случае, если мне будет предложена
               работа, от меня потребуется документальное подтверждение
               предоставленных мной данных для их дополнительной проверки
               согласно процедурам ТШО по найму персонала.
             </p>
-            <p class="declaration__description-item">
+            <p>
               Я подтверждаю, что предоставленная мной информация (в том числе
               содержащая персональные данные) является достоверной, правильной и
               полной. Я понимаю, что если предоставленная мной информация
@@ -52,7 +52,7 @@
               увольнения в любое время в будущем в случае моего приема на
               работу.
             </p>
-            <p class="declaration__description-item">
+            <p>
               Я понимаю, что в Положение о конфиденциальности персональных
               данных ТШО могут время от времени вноситься изменения и
               дополнения, и что мне необходимо периодически посещать Веб-сайт
@@ -63,7 +63,7 @@
               уничтожение.
             </p>
           </div>
-          <div class="declaration__agree">
+          <div class="agree">
             <AtomsCheckbox
               id="checkbox"
               v-model="isAgree"
@@ -75,14 +75,13 @@
               со всеми его условиями. *
             </AtomsCheckbox>
           </div>
-          <button
+          <AtomsButton
             :disabled="!isAgree"
-            class="declaration__button"
-            :class="{ disabled: !isAgree }"
             @click="saveAndNext"
+            :class="{ disabled: !isAgree }"
           >
             Сохранить и продолжить
-          </button>
+          </AtomsButton>
         </div>
         <img src="@/assets/img/vacancy/declaration-note.svg" alt="note" />
       </div>
@@ -109,63 +108,79 @@ export default {
 <style lang="scss" scoped>
 .declaration {
   padding: 80px 0;
-  &__wrapper {
-    display: flex;
-    align-items: flex-start;
-    gap: 120px;
-    @include tablet {
-      flex-direction: column-reverse;
-      gap: 20px;
-      img {
-        align-self: flex-end;
-      }
+  @include tablet {
+    padding: 40px 0;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  @include tablet {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  img {
+    width: 331px;
+    height: 209px;
+    margin-left: 123px;
+    @include tablet() {
+      width: 200px;
+      height: 126px;
+      margin-left: auto;
+      margin-bottom: 40px;
     }
   }
-  &__info {
-  }
-  &__description {
-    margin-top: 40px;
+  .description {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    &-item {
-      display: block;
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 28px;
-      font-family: Roboto, sans-serif;
-      color: $c-text;
-      @include phone {
+    p {
+      @include tablet() {
         font-size: 16px;
+        font-size: 16px;
+        line-height: 20px;
       }
     }
   }
-  &__agree {
+  .agree {
     margin-top: 40px;
-  }
-  &__button {
-    margin-top: 40px;
-    border: none;
-    background-color: $c-main;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    &.disabled {
-      background-color: rgba($c-text, 60%);
-      cursor: not-allowed;
+    @include tablet() {
+      margin-top: 20px;
     }
   }
 }
+.btn {
+  margin-top: 40px;
+  border: none;
+  background-color: $c-main;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  @include tablet() {
+    margin-top: 20px;
+    width: 100%;
+  }
+  &.disabled {
+    background-color: rgba($c-text, 60%);
+  }
+}
 .checkbox::v-deep {
+  span.checkbox__indicator {
+    margin-right: 20px;
+  }
   span {
-    width: calc(100% - 24px);
-    display: block;
-    font-family: Roboto, sans-serif;
+    width: calc(100% - 44px);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
     font-size: 20px;
-    font-weight: 400;
-    @include phone {
+    line-height: 28px;
+    color: #30454e;
+    @include tablet {
       font-size: 16px;
+      line-height: 20px;
     }
   }
 }

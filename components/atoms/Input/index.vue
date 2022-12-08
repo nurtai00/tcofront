@@ -546,6 +546,7 @@ $icons-size: 24px;
 
   input,
   textarea {
+    font-family: 'Roboto';
     width: 100%;
     height: $input-height;
     padding: $input-padding-y $input-padding-x;
@@ -598,6 +599,7 @@ $icons-size: 24px;
   }
 
   .placeholder {
+    font-family: 'Roboto';
     font-size: $placeholder-default-size;
     color: $placeholder-default-color;
     opacity: $placeholder-default-opacity;
