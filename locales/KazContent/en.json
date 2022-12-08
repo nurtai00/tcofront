@@ -1,0 +1,282 @@
+{
+  "breadcrumbs": {
+    "main": "Home",
+    "kazContent": "Kazakhstani Content",
+    "devProgram": "Supplier Development Programs",
+    "electricCatalog": "Электронный каталог",
+    "privileges": "Benefits"
+  },
+  "title": "Kazakhstani Content",
+  "section1": {
+    "tags": [
+      "Development of potential TCO suppliers",
+      "How to become a supplier",
+      "Creation of electronic catalog and invoice upload",
+      "Benefits  "
+    ],
+    "chartInfo": "With cumulative spent of over 39.3 billion US dollars on sourcing goods and services locally TCO remains a leading contributor into Kazakhstani content development"
+  },
+  "section2": {
+    "title": "At TCO we search, identify and develop local suppliers for world-class projects like Tengiz",
+    "description": "TCO operates one of the largest and technologically challenging oilfields in the world. Safety and reliability of exploration and production operations in Tengiz are the key to success in fueling Kazakhstani’s economic progress and fulfilling global energy demand.\nOur mission is to source goods and services that meet international standards while enabling opportunities for local suppliers and talents."
+  },
+  "contributionTco": "TCO contribution to the economy of the Republic of Kazakhstan",
+  "cooperationTco": {
+    "title": "TCO contribution to the economy of the Republic of Kazakhstan",
+    "subtitle": "Contracting & Procurement Plan",
+    "description": "Our contracting and procurement plan outlines supply opportunities that TCO has in different areas of its operations.",
+    "files": [
+      "2022 Contracting and Procurement Plan",
+      "2021 Contracting and Procurement Plan [UPDATED]"
+    ],
+    "accordion": {
+      "title": "Disclaimer",
+      "description": "The information contained in the TCO contracting and procurement plan is a forecast of Tengizchevroil LLP’s (hereinafter – TCO) needs in goods, works or services for the upcoming period referenced therein. The publication of data related to these forecasted sourcing, contracting and/or procurement activities is provided for information only and shall not be considered as a commitment by TCO to conduct any given activity or an offer by TCO to any person to participate in it. Sourcing, contracting and/or procurement activities published earlier may be postponed, modified or cancelled at TCO’s own discretion without prior notice. Please monitor this website regularly for any updates. TCO explicitly waives any responsibility or liability for any damages or losses that may be sustained by any person arising out of or in connection with such person’s reliance on the data published in TCO’s contracting and procurement plan."
+    },
+    "providerInterest": {
+      "title": "Supplier Expression of Interest",
+      "descriptions": {
+        "first": "Suppliers interested in doing business with TCO shall submit application through the link below:",
+        "link": "Link to Supplier Expression of Interest (SEOI)",
+        "second": "Note: TCO also utilizes the O&G industry ALASH database (www.alash-kz.com) to identify prospective suppliers."
+      }
+    }
+  },
+  "coomingEvent": {
+    "title": "Recent events",
+    "date": "15 june",
+    "name": "Seminar"
+  },
+  "localeSuppliers": {
+    "title": "Creating opportunities for local suppliers",
+    "description": "Understanding international standards of operation and meeting world-class safety and quality requirements are critical for local suppliers to successfully work with TCO. We continuously look for opportunities to offer and invest our resources into bringing suppliers to the next level of sustainable operation."
+  },
+  "cooperationInterest": {
+    "title": "We are interested working with local suppliers engaged in below areas:",
+    "subtitle": "Looking like a good fit?",
+    "link": ["Please email us at", "kcdsearch@tengizchevroil.com"],
+    "cards": [
+      {
+        "title": "Electrical",
+        "description": "HV cables, LV distribution boards, transformers, Substation, Remote Terminal Units"
+      },
+      {
+        "title": "Maintenance Services",
+        "description": "HV motors repair service, Heat exchanger, Retubing facility"
+      },
+      {
+        "title": "Construction",
+        "description": "Tanks and vessels"
+      },
+      {
+        "title": "Maintenance repair & operation",
+        "description": "Valves, Flanges & fittings, Stud bolts, Spectacle blinds & spacers"
+      },
+      {
+        "title": "IT/TELECOM",
+        "description": "Fiberoptic cable"
+      },
+      {
+        "title": "Health, Environment and Safety",
+        "description": "Waste recycling, safety and compliance online training, wood waste removal, safety garments"
+      }
+    ]
+  },
+  "longStrategy": {
+    "title": "How long-term contracting strategy works?",
+    "descriptions": [
+      "In 2019 alone TCO and its suppliers fulfilled 13 Kazakhstani content plans under long-term contracts",
+      "TCO works with globally recognized original equipment manufacturers (OEM) to maintain safe, reliable and uninterrupted production operations and continue executing FGP-WPMP project. We have partnered with several OEMs to create lonough building infrastructure, technology transfer and talent development"
+    ],
+    "cards": [
+      "TCO identifies opportunities for local content development with existing and potential suppliers",
+      "TCO and suppliers negotiate these opportunities and Kazakhstani Content plan is created",
+      "TCO and suppliers formalize KC plans within the agreements",
+      "TCO continuously monitors compliance and performance"
+    ]
+  },
+  "foreignTools": {
+    "title": "Manufacturers of foreign equipment",
+    "description": "TCO works with globally recognized original equipment manufacturers (OEM) to maintain safe, reliable and uninterrupted production operations and continue executing FGP-WPMP project. We have partnered with several OEMs to create long-lasting benefits for the economy of Kazakhstan though building infrastructure, technology transfer and talent development.\n"
+  },
+  "rightWay": {
+    "title": "Doing it Right Way",
+    "description": "When it comes to local content, measuring our performance is important to track our success.\nCalculation and reporting of Kazakhstani content spent is one of the legal requirements for TCO. It’s in our best interests to ensure that TCO suppliers are familiar with methodology of KC calculation. On a quarterly basis we conduct relevant training for our Business Partners that cover certain aspects of Subsoil Use Code and governmental decrees, which govern the calculation of local content, basic concepts and definitions, and examples of calculating KC in goods and services spent. Please note that this training is dedicated to TCO’s current suppliers and contractors only.",
+    "link": [
+      "Interested in enrolling? Please email us at",
+      "kcdsearch@tengizchevroil.com"
+    ]
+  },
+  "devManufacture": {
+    "title": "Domestic development of manufacturers",
+    "description": "TCO's internal program is to analyze upcoming purchases and search for potential suppliers together with TCO technical experts. As a result of the analysis, a list of “target goods and services” is revealed, for which we check and qualify suppliers, as well as place test orders with them. Below is a list of high potential titles including electrical services, chemical manufacturing, maintenance, repair and operation (TORE) and more. Throughout 2021, several TCO departments have developed supplier capabilities at once, supplying more than 18 products in categories such as rescue equipment, electrical equipment, drilling materials, maintenance services, telecommunications equipment, and materials for maintenance, repair and operation (MRE). ) and other telecommunications equipment, as well as materials for maintenance, repair and operation (TORE) and more."
+  },
+  "targetListDev": {
+    "title": "Target list for the development of manufacturers under the internal program of TCO:",
+    "cards": [
+      {
+        "title": "Construction",
+        "list": ["Thermal insulation materials", "Air ducts"]
+      },
+      {
+        "title": "Health, Environment and Safety",
+        "list": ["Fire extinguishers", "Fire trucks", "Fire blankets"]
+      },
+      {
+        "title": "Drilling",
+        "list": ["Supply of drill bits/refurbishment"]
+      },
+      {
+        "title": "Operation, repair and maintenance",
+        "list": [
+          "Obturators/spacers/wafer plugs",
+          "Pipe fittings and flanges",
+          " Ball Valves",
+          "Studs and bolts"
+        ]
+      },
+      {
+        "title": "Energy supply",
+        "list": [
+          "Switchboards",
+          "Junction box",
+          "Cable trays and accessories",
+          "Substation",
+          "Cable connection kit",
+          "Electrical cables"
+        ]
+      }
+    ]
+  },
+  "supportOriginBusiness": {
+    "title": "Joint Initiative to Support and Strengthen the Capacity of Local Enterprises",
+    "description": "EBRD specialists help implement a consultancy project with local and international consultants, while an enterprise receives a partial refund of the costs of attracting a consultant. Trainings and workshops for local suppliers are also organised as part of the program.\nExisting TCO suppliers, as well as potential suppliers who do not have direct contacts with this sector, will participate in the programme in order to increase their opportunities for cooperation with TCO and establishing supplies for the needs of the oil and gas sector in Kazakhstan."
+  },
+  "results": {
+    "title": "2015-2019 Results",
+    "cards": [
+      "27 projects with local consultants",
+      "7 projects with international experts",
+      "77% of companies more than doubled their turnover",
+      "187 new jobs created",
+      "50% of companies increased the number of female employees by 20%"
+    ]
+  },
+  "nationalCarProgram": {
+    "title": "Program International Center for the Development of Mechanical Engineering",
+    "description": "TCO, together with other oil and gas operators, is a member of the International Center for the Development of Mechanical Engineering. The participants identified the following product groups for development:",
+    "list": [
+      "Еlectrical equipment",
+      "KIPiA equipment",
+      "Shut-off valves",
+      "Main pipes",
+      "HVAC systems",
+      "Industrial filters",
+      "Seals"
+    ],
+    "link": "Link to IMBC site"
+  },
+  "accordions": [
+    {
+      "title": "Opportunities",
+      "text": "Identification of areas for finding local goods and services needed in the daily activities of TCO"
+    },
+    {
+      "title": "Qualification score",
+      "text": "Local market assessment to identify potential suppliers and work with them to meet TCO requirements"
+    },
+    {
+      "title": "Trial orders",
+      "text": "Placement of trial orders for TCO"
+    },
+    {
+      "title": "Final stage",
+      "text": "Feedback and the stage of concluding a contract"
+    }
+  ],
+  "motivations": {
+    "title": "Motivate employees",
+    "training": "7 trainings and workshops; more than 250 participants: ",
+    "list": [
+      "API Q1 & Q2 standards",
+      "HES based on EOSH & IOSH standards",
+      "tender preparedness"
+    ],
+    "instructions": "15 HES trainers were certified by International Labour Organization programme"
+  },
+  "offerEnterprise": {
+    "title": "What we offer to enterprises",
+    "subtitle": "Better access to know-how",
+    "description": "Consulting services for business provide enterprises high growth potential, the opportunity to get the help of local consultants and / or international experts, while workshops and trainings help to improve knowledge in various fields, such as strategy, operational management and quality control, finance and audit.\nIn addition, companies that offer goods and / or services for the oil and gas industry work with local and international consultants on the basis of a joint cost- sharing arrangement with the EBRD (the Bank reimburses up to 75% of the project cost) in order to improve the productivity of enterprises in various areas of their activities.",
+    "helpFinance": "Expanding access to finance",
+    "footerText": "The program aims to improve the access of enterprises to the financial resources necessary for growth and development."
+  },
+  "joinRules": {
+    "title": "Who can participate",
+    "cardIcons": [
+      {
+        "icon": "valuation",
+        "title": "Scale",
+        "text": "small and medium-sized enterprises (according to the law of the Republic of Kazakhstan) with the number of employees of up to 500"
+      },
+      {
+        "icon": "percantage",
+        "title": "Ownership",
+        "text": "private local business (foreign participation is allowed up to 49%)"
+      },
+      {
+        "icon": "oil",
+        "title": "Areas of operation",
+        "text": "companies with operations related to the oil and gas sector."
+      },
+      {
+        "icon": "basket",
+        "title": "Experience",
+        "text": "at least 2 years of successful work"
+      },
+      {
+        "icon": "euro",
+        "title": "Turnover",
+        "text": "annual turnover up to 50 million euros"
+      },
+      {
+        "icon": "documents",
+        "title": "Documents",
+        "text": "completed application, copy of constituent documents and financial statements for 2 years"
+      }
+    ]
+  },
+  "address": {
+    "title": "EBRD in Kazakhstan:",
+    "almaty": [
+      "Almaty",
+      "050010",
+      "41 Kazybek Bi st.",
+      "Tel: +7 727 3320007",
+      "Fax: +7 727 2584632"
+    ],
+    "nursultan": [
+      "Nur-Sultan",
+      "010000, 2 Dostyk str., Business Centre ‘SAAD’",
+      "Tel: +7 (7172) 554270"
+    ]
+  },
+  "electricCatalog": {
+    "title": "Creation of electronic catalog and invoice upload",
+    "description": "This page contains learning material designed to explain and train existing suppliers of the company regarding TСO payment procedure. Step-by-step instructions and video material in details describe the process of payment and registration in the TCO system.",
+    "file": "User Guidelines",
+    "invoiceTco": "Invoice submission to Tengizchevroil",
+    "createUploadElectricCatalog": "Creation and uploading of electronic catalog"
+  },
+  "benefits": {
+    "title": "On exemption from value added tax for Kazakh producers",
+    "subtitle": "On exemption from value added tax for Kazakh producers",
+    "descriptions": [
+      "We bring to your attention that, in accordance with the provisions of paragraph 1 of Article 393 of the Tax Code of the Republic of Kazakhstan “On taxes and other obligatory payments to the budget” (as amended and supplemented as of 04/01/2021, hereinafter referred to as the Tax Code), is taxed on value added at zero rate Turnover from the sale of goods of own production to taxpayers operating in the territory of the Republic of Kazakhstan under a subsoil use contract, production sharing agreement (contract), in accordance with the terms of which imported goods are exempt from value added tax.",
+      "Tengizchevroil LLP (hereinafter referred to as TCO) is included in the List of taxpayers operating in the territory of the Republic of Kazakhstan under a subsoil use contract, a production sharing agreement (contract), in accordance with the terms of which imported goods are exempt from value added tax, approved by order and about. Minister of Energy of the Republic of Kazakhstan dated February 28, 2018 No. 71.",
+      "The requirements for documents confirming such a sale of goods at a zero VAT rate are specified in paragraph 4 of Article 393 of the Tax Code. We also draw your attention to the need to confirm the country of production of goods with the relevant certificates of origin for such goods produced in the Republic of Kazakhstan.",
+      "TCO welcomes government support for local manufacturers to maintain competitiveness with foreign manufacturers.",
+      "TCO's local content development department continuously seeks to find and attract local suppliers of goods and services capable of providing high quality services in various areas."
+    ]
+  }
+}
