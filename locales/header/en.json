@@ -1,0 +1,21 @@
+{
+  "header_search": "Search",
+  "header_links": [
+    "Home",
+    "Company",
+    "Operations",
+    "Projects",
+    "Kazakhstani Content",
+    "Sustainability",
+    "Career",
+    "Lender Relations"
+  ],
+  "footer": {
+    "contact": "Contacts",
+    "mobile": "Mobile application",
+    "address": "Atyrau, Satpayev st., 3 Republic of Kazakhstan 060011",
+    "phone": "Helpline and other contacts",
+    "c": "© 2022 Tengizchevroil LLP",
+    "policy": "Privacy Statement"
+  }
+}

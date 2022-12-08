@@ -1,7 +1,11 @@
 <template>
   <div class="search-bar">
     <form action="">
-      <input type="text" autocomplete="false" placeholder="Поиск" />
+      <input
+        type="text"
+        autocomplete="false"
+        :placeholder="$t('header.header_search')"
+      />
       <button type="submit"><img src="@/assets/icons/search.svg" /></button>
     </form>
   </div>
