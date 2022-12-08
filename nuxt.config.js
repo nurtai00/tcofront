@@ -25,67 +25,67 @@ const webpack = require('webpack')
 const build =
   process.env.NODE_ENV === 'production'
     ? {
-      extend(config, ctx) {
-        if (ctx && ctx.isClient) {
-          // config.optimization.splitChunks.maxSize = 4096
-          // config.output.globalObject = 'this'
-          if (!this.dev) {
-            config.plugins.push(
-              new webpack.optimize.LimitChunkCountPlugin({
-                maxChunks: 1,
-              })
-            )
+        extend(config, ctx) {
+          if (ctx && ctx.isClient) {
+            // config.optimization.splitChunks.maxSize = 4096
+            // config.output.globalObject = 'this'
+            if (!this.dev) {
+              config.plugins.push(
+                new webpack.optimize.LimitChunkCountPlugin({
+                  maxChunks: 1,
+                })
+              )
+            }
           }
-        }
-      },
-      loaders: {
-        cssModules: {
-          modules: true,
-          localIdentName: '[local]',
         },
-      },
-      scss: {
-        cssModules: {
-          modules: true,
-          localIdentName: '[local]',
+        loaders: {
+          cssModules: {
+            modules: true,
+            localIdentName: '[local]',
+          },
         },
-      },
-      optimization: {
+        scss: {
+          cssModules: {
+            modules: true,
+            localIdentName: '[local]',
+          },
+        },
+        optimization: {
+          splitChunks: {
+            chunks: 'async',
+            automaticNameDelimiter: '.',
+          },
+        },
         splitChunks: {
-          chunks: 'async',
-          automaticNameDelimiter: '.',
+          pages: false,
+          vendor: false,
+          commons: false,
+          runtime: false,
+          layouts: false,
         },
-      },
-      splitChunks: {
-        pages: false,
-        vendor: false,
-        commons: false,
-        runtime: false,
-        layouts: false,
-      },
-      filenames: {
-        app: () => '[name].js',
-        font: () => '[name].[ext]',
-        img: () => '[name].[ext]',
-      },
-      extractCSS: true,
-      // optimization: {
-      //   splitChunks: {
-      //     cacheGroups: {
-      //       styles: {
-      //         name: 'styles',
-      //         test: /\.(css|vue)$/,
-      //         chunks: 'all',
-      //         enforce: true,
-      //       },
-      //     },
-      //     chunks: 'all',
-      //     automaticNameDelimiter: '.',
-      //     name: undefined,
-      //   },
-      //   minimize: true,
-      // },
-    }
+        filenames: {
+          app: () => '[name].js',
+          font: () => '[name].[ext]',
+          img: () => '[name].[ext]',
+        },
+        extractCSS: true,
+        // optimization: {
+        //   splitChunks: {
+        //     cacheGroups: {
+        //       styles: {
+        //         name: 'styles',
+        //         test: /\.(css|vue)$/,
+        //         chunks: 'all',
+        //         enforce: true,
+        //       },
+        //     },
+        //     chunks: 'all',
+        //     automaticNameDelimiter: '.',
+        //     name: undefined,
+        //   },
+        //   minimize: true,
+        // },
+      }
     : {}
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -178,6 +178,7 @@ export default {
       messages: {
         kk: {
           suistainability: require('./locales/Suistainability/kk.json'),
+          kazContent: require('./locales/KazContent/kk.json'),
           home: require('./locales/home/kk.json'),
           news: require('./locales/news/kk.json'),
           relation: require('./locales/relation/kk.json'),
@@ -188,6 +189,7 @@ export default {
         },
         ru: {
           suistainability: require('./locales/Suistainability/ru.json'),
+          kazContent: require('./locales/KazContent/ru.json'),
           home: require('./locales/home/ru.json'),
           news: require('./locales/news/ru.json'),
           relation: require('./locales/relation/ru.json'),
@@ -198,6 +200,7 @@ export default {
         },
         en: {
           suistainability: require('./locales/Suistainability/en.json'),
+          kazContent: require('./locales/KazContent/en.json'),
           home: require('./locales/home/en.json'),
           news: require('./locales/news/en.json'),
           relation: require('./locales/relation/en.json'),
@@ -206,58 +209,58 @@ export default {
           products: require('./locales/Products/en.json'),
           header: require('./locales/header/en.json'),
         },
-        loadLanguagesAsync: true,
-        langDir: '~locales',
       },
+      loadLanguagesAsync: true,
+      langDir: '~locales',
     },
-    router: {
-      mode: 'hash',
-      base: '/vue',
-      extendRoutes(routes, resolve) {
-        routes.push({
-          path: '/vue',
-          components: {
-            default: resolve(__dirname, 'pages/index'), // or routes[index].component
-          },
-        })
-      },
+  },
+  router: {
+    mode: 'hash',
+    base: '/vue',
+    extendRoutes(routes, resolve) {
+      routes.push({
+        path: '/vue',
+        components: {
+          default: resolve(__dirname, 'pages/index'), // or routes[index].component
+        },
+      })
     },
+  },
 
-    // Axios module configuration: https://go.nuxtjs.dev/config-axios
-    axios: {
-      // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-      baseURL: '/',
-    },
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  axios: {
+    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    baseURL: '/',
+  },
 
-    // Build Configuration: https://go.nuxtjs.dev/config-build
-    build,
-    // extend(config, { isClient }) {
-    //   if (isClient) {
-    //     console.log(config.entry) // { app: [ "path/to/client.js", "eventsource-polyfill", "etc..." ] } (currently undefined)
-    //   } else {
-    //     console.log(config.entry) // { app: [ "path/to/server.js" ] } (currently undefined)
-    //   }
-    // config.entry = {
-    // ...entries,
-    // hot: 'webpack/hot/dev-server.js',
-    // client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
-    // }
-    // This is ok
-    // for (const [key, value] of Object.entries(entries)) {
-    //   config.entry[key] = resolve(value)
-    // }
-    // config.entry.custom = resolve('custom-entry.js')
-    // Throws error "entry.app is reserved by Nuxt"
-    // Could use Object.defineProperty for the
-    // config object passed to build.extend to
-    // throw an error when attempting to set entry.app
-    // config.entry.app = resolve('app.js')
-    // plugins: [
-    //   new MiniCssExtractPlugin({
-    //     filename: '[name].css',
-    //   }),
-    //   new webpack.HotModuleReplacementPlugin(),
-    // ].concat(htmlPlugins),
-    // },
-  }
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build,
+  // extend(config, { isClient }) {
+  //   if (isClient) {
+  //     console.log(config.entry) // { app: [ "path/to/client.js", "eventsource-polyfill", "etc..." ] } (currently undefined)
+  //   } else {
+  //     console.log(config.entry) // { app: [ "path/to/server.js" ] } (currently undefined)
+  //   }
+  // config.entry = {
+  // ...entries,
+  // hot: 'webpack/hot/dev-server.js',
+  // client: 'webpack-dev-server/client/index.js?hot=true&live-reload=true',
+  // }
+  // This is ok
+  // for (const [key, value] of Object.entries(entries)) {
+  //   config.entry[key] = resolve(value)
+  // }
+  // config.entry.custom = resolve('custom-entry.js')
+  // Throws error "entry.app is reserved by Nuxt"
+  // Could use Object.defineProperty for the
+  // config object passed to build.extend to
+  // throw an error when attempting to set entry.app
+  // config.entry.app = resolve('app.js')
+  // plugins: [
+  //   new MiniCssExtractPlugin({
+  //     filename: '[name].css',
+  //   }),
+  //   new webpack.HotModuleReplacementPlugin(),
+  // ].concat(htmlPlugins),
+  // },
 }

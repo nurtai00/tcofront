@@ -2,16 +2,20 @@
   <div class="join">
     <div class="container">
       <MoleculesBreadcrumbs class="join__breadcrumbs">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
-        <AtomsBreadOption to="/kazakhstani-content">
-          Казахстанское содержание
+        <AtomsBreadOption :to="localePath('/')">
+          {{ $t('kazContent.breadcrumbs.main') }}
         </AtomsBreadOption>
-        <AtomsBreadOption to="/kazakhstani-content/join-tco-program">
-          Программы развития поставщиков
+        <AtomsBreadOption :to="localePath('/kazakhstani-content')">
+          {{ $t('kazContent.breadcrumbs.kazContent') }}
+        </AtomsBreadOption>
+        <AtomsBreadOption
+          :to="localePath('/kazakhstani-content/join-tco-program')"
+        >
+          {{ $t('kazContent.breadcrumbs.devProgram') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="join__title">
-        Программы развития поставщиков
+        {{ $t('kazContent.breadcrumbs.devProgram') }}
       </AtomsTitle>
     </div>
     <div class="gray">
@@ -22,7 +26,7 @@
     <div class="container">
       <div class="join__content">
         <div class="join__subtitle">
-          Целевой список на развитие производителей по внутренней программе ТШО:
+          {{ $t('kazContent.targetListDev.title') }}
         </div>
         <div class="join__grid gray__grid">
           <OrganismsSectionKazakhstaniCard1
@@ -36,7 +40,7 @@
     <OrganismsSectionOperationSlide :data="slide[0]" class="slide gray" />
     <div class="container">
       <div class="join__content">
-        <div class="join__subtitle">Итоги за 2015-2019 гг.</div>
+        <div class="join__subtitle">{{ $t('kazContent.results.title') }}</div>
         <div class="join__grid">
           <div
             v-for="(item, key) in cardsIcon"
@@ -52,21 +56,18 @@
     <OrganismsSectionOperationSlide :data="slide[1]" class="slide gray">
       <div class="slide__contentt">
         <p>
-          ТШО, совместно с другими нефтегазовые операторами является участником
-          «Международного Центра Развития Машиностроения. Участниками, были
-          определены следующие товарные группы на развитее:
+          {{ $t('kazContent.nationalCarProgram.title') }}
         </p>
         <ul class="bold">
-          <li>Электрооборудование</li>
-          <li>Оборудование «КИПиА»</li>
-          <li>Запорная арматура</li>
-          <li>Магистральные трубы</li>
-          <li>Системы ОВКВ</li>
-          <li>Производственные фильтры</li>
-          <li>Уплотнители</li>
+          <li
+            v-for="item of $t('kazContent.nationalCarProgram.list')"
+            :key="item"
+          >
+            {{ item }}
+          </li>
         </ul>
         <p>
-          Ссылка на IMBC сайт
+          {{ $t('kazContent.nationalCarProgram.link') }}
           <a href="https://www.imbc.kz/">https://www.imbc.kz/</a>
         </p>
       </div>
@@ -74,7 +75,7 @@
     <OrganismsSectionOperationSlide side :data="slide[2]" class="slide gray">
       <div class="slide__dropdown">
         <div
-          v-for="(dropdown, key) in dropdowns"
+          v-for="(dropdown, key) in $t('kazContent.accordions')"
           :key="key"
           class="slide__dropdown_item"
           :class="{ active: dropdownActive === key }"
@@ -99,15 +100,14 @@
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSlide :data="slide[3]" class="slide">
       <div class="slide__contentt">
-        <p class="bold">7 тренингов и семинаров; более 250 участников:</p>
+        <p class="bold">{{ $t('kazContent.motivations.title') }}</p>
         <ul>
-          <li>по основам спецификации API Q1 & Q2</li>
-          <li>по основам культуры безопасности по стандартам EOSH & IOSH</li>
-          <li>по подготовке к закупкам</li>
+          <li v-for="item of $t('kazContent.motivations.list')" :key="item">
+            {{ item }}
+          </li>
         </ul>
         <p class="bold">
-          15 инструкторов по технике безопасности и охране труда сертифицированы
-          по программе Международной организации труда
+          {{ $t('kazContent.motivations.instructions') }}
         </p>
       </div>
     </OrganismsSectionOperationSlide>
@@ -119,24 +119,17 @@
         >
           <template #description>
             <div class="card-svg">
-              <p class="title">Улучшение доступа к ноу-хау</p>
-              <p>
-                Консультационные услуги для бизнеса дают предприятиям с высоким
-                потенциалом роста, возможность получить помощь местных
-                консультантов и/или международных экспертов, а семинары и
-                тренинги помогают улучшить знания в различных областях, таких
-                как, стратегия,оперативное управление и управление качеством,
-                финансы и бухгалтерский учет. Кроме того, компании, которые
-                предлагают товары и/или услуги для нефтегазовой отрасли,
-                работают с местными и международными консультантами на основе
-                совместного разделения расходов с ЕБРР (Банк возмещает до 75 %
-                от цены проекта) с целью улучшения производительности
-                предприятий в различных направлениях их деятельности.
+              <p class="title">
+                {{ $t('kazContent.offerEnterprise.subtitle') }}
               </p>
-              <p class="title">Расширение доступа к финансированию</p>
               <p>
-                Программа направлена на улучшение доступа предприятий к
-                финансовым ресурсам, необходимым для роста и развития.
+                {{ $t('kazContent.offerEnterprise.description') }}
+              </p>
+              <p class="title">
+                {{ $t('kazContent.offerEnterprise.helpFinance') }}
+              </p>
+              <p>
+                {{ $t('kazContent.offerEnterprise.footerText') }}
               </p>
             </div>
           </template>
@@ -145,10 +138,10 @@
     </div>
     <div class="container">
       <div class="join__content">
-        <div class="join__subtitle">Условия участия</div>
+        <div class="join__subtitle">{{ $t('kazContent.joinRules.title') }}</div>
         <div class="join__grid">
           <div
-            v-for="(item, key) in cardsIcon2"
+            v-for="(item, key) in $t('kazContent.joinRules.cardIcons')"
             :key="key"
             class="join__grid_icon"
           >
@@ -161,18 +154,17 @@
     </div>
     <div class="container">
       <div class="contacts">
-        <div class="contacts__title">ЕБРР в Казахстане:</div>
+        <div class="contacts__title">{{ $t('kazContent.address.title') }}</div>
         <div class="contacts__group">
           <div class="contacts__city">
-            <p>Алматы</p>
-            <p>050010, ул. Казыбек Би 41</p>
-            <p>тел: +7 727 3320007; факс: +7 727 2584632</p>
-            <p>tcoinfo@tengizchevroil.com</p>
+            <p v-for="item of $t('kazContent.address.almaty')" :key="item">
+              {{ item }}
+            </p>
           </div>
           <div class="contacts__city">
-            <p>Нур-Султан</p>
-            <p>010000, ул. Достык 2, БЦ ‘SAAD’</p>
-            <p>тел: +7 (7172) 554270</p>
+            <p v-for="item of $t('kazContent.address.nursultan')" :key="item">
+              {{ item }}
+            </p>
           </div>
         </div>
       </div>
@@ -186,29 +178,25 @@ export default {
     return {
       sideSvg: [
         {
-          title: 'Внутренняя развития производителей ',
-          description:
-            'Внутренняя программа ТШО заключается в анализе предстоящих закупок и поиске потенциальных поставщиков совместно с техническими экспертами ТШО. В результате анализа выявляется список «целевых товаров и услуг», по которым мы проверяем и квалифицируем поставщиков, а также размещаем у них пробные заказы. Ниже приведен список наименований с высоким потенциалом, включающий электрические услуги, химическое производство, техобслуживание, ремонт и эксплуатацию (ТОРЕ), а также многое другое. В течение 2021 года сразу несколько отделов ТШО развивали возможности поставщиков, которые поставляют более 18 продуктов в таких категориях, как аварийно-спасательное оборудование, электрооборудование, буровые материалы, услуги по техобслуживанию, телекоммуникационное оборудование, а также материалы для техобслуживания, ремонта и эксплуатации (ТОРЭ) и другое телекоммуникационное оборудование, а также материалы для техобслуживания, ремонта и эксплуатации (ТОРЭ) и другое.',
+          title: this.$t('kazContent.devManufacture.title'),
+          description: this.$t('kazContent.devManufacture.description'),
           icon: 'production',
         },
         {
-          title: 'Что мы предлагаем предприятиям',
+          title: this.$t('kazContent.offerEnterprise.title'),
           icon: 'sheep',
         },
       ],
       slide: [
         {
-          title:
-            'Совместная инициатива по поддержке и укреплению потенциала местных предприятий',
+          title: this.$t('kazContent.supportOriginBusiness.title'),
           description: [
-            `Специалисты ЕБРР помогают реализовать консультационный проект с привлечением местных и международных консультантов, а предприятие получает возмещение части расходов на привлечение консультанта. Также в рамках программы проводятся тренинги и семинары для местных поставщиков.
-
-Действующие поставщики ТШО, а также потенциальные, не имеющие прямых контактов с данным сектором, будут участвовать в программе, чтобы повысить свои возможности сотрудничества с ТШО и налаживания поставок для нужд нефтегазового сектора Казахстана.`,
+            this.$t('kazContent.supportOriginBusiness.description'),
           ],
           image: 'kazakhstani/kazakhstani2.png',
         },
         {
-          title: 'Программа Международный центр развития машиностроения',
+          title: this.$t('kazContent.nationalCarProgram.title'),
           image: 'operation/operations6.png',
         },
         {
@@ -216,7 +204,7 @@ export default {
           image: 'operation/operations2.png',
         },
         {
-          title: 'Мотивация сотрудников',
+          title: this.$t('kazContent.motivations.title'),
           image: 'operation/operations7.png',
         },
       ],
@@ -224,75 +212,78 @@ export default {
         {
           icon: 'tools',
           number: '01',
-          title: 'Строительство',
+          title: this.$t('kazContent.targetListDev.cards')[0].title,
           html: `<ul>
-<li>Теплоизоляционные материалы</li>
-<li>Воздуховоды</li>
+<li>${this.$t('kazContent.targetListDev.cards')[0].list[0]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[0].list[1]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[0].list[2]}</li>
 </ul>`,
         },
         {
           icon: 'mask',
           number: '02',
-          title: 'БиОТиООС',
+          title: this.$t('kazContent.targetListDev.cards')[1].title,
           html: `<ul>
-<li>Огнетушители</li>
-<li>Пожарные машины</li>
-<li>Противопожарные одеяла</li>
+<li>${this.$t('kazContent.targetListDev.cards')[1].list[0]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[1].list[1]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[1].list[2]}</li>
 </ul>`,
         },
         {
           icon: 'spinner',
           number: '03',
-          title: 'Бурение',
+          title: this.$t('kazContent.targetListDev.cards')[2].title,
           html: `<ul>
-<li>Поставка буровых долот/восстановление</li>
+<li>${this.$t('kazContent.targetListDev.cards')[2].list[0]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[2].list[1]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[2].list[2]}</li>
 </ul>`,
         },
         {
           icon: 'hardwork',
           number: '04',
-          title: 'Эксплуатация, ремонт и техобслуживание ',
+          title: this.$t('kazContent.targetListDev.cards')[3].title,
           html: `<ul>
-<li>Обтюраторы/промставки/межфланцевые заглушки</li>
-<li>Фитинги и фланцы трубопроводов</li>
-<li>Шаровые краны</li>
-<li>Шпильки и болты</li>
+<li>${this.$t('kazContent.targetListDev.cards')[3].list[0]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[3].list[1]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[3].list[2]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[3].list[3]}</li>
 </ul>`,
         },
         {
           icon: 'closure',
           number: '05',
-          title: 'Энергоснабжение',
+          title: this.$t('kazContent.targetListDev.cards')[4].title,
           html: `<ul>
-<li>Распределительные щиты</li>
-<li>Соединительная монтажная коробка</li>
-<li>Кабельные лотки и аксессуары</li>
-<li>Подстанция</li>
-<li>Комплект по соединению кабеля</li>
-<li>Электрические кабеля</li>
+<li>${this.$t('kazContent.targetListDev.cards')[4].list[0]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[4].list[1]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[4].list[2]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[4].list[3]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[4].list[4]}</li>
+<li>${this.$t('kazContent.targetListDev.cards')[4].list[5]}</li>
 </ul>`,
         },
       ],
       cardsIcon: [
         {
           icon: 'planning',
-          text: '27 проектов с местными консультантами',
+          text: this.$t('kazContent.results.cards')[0],
         },
         {
           icon: 'worldwide',
-          text: '7 проектов с международными экспертами',
+          text: this.$t('kazContent.results.cards')[1],
         },
         {
           icon: 'coins',
-          text: '77% компаний увеличили оборот более чем в два раза',
+          text: this.$t('kazContent.results.cards')[2],
         },
         {
           icon: 'working',
-          text: 'создано 187 новых рабочих мест',
+          text: this.$t('kazContent.results.cards')[3],
         },
         {
           icon: 'employee',
-          text: '50% компаний увеличили количество сотрудников–женщин на 20%',
+          text: this.$t('kazContent.results.cards')[4],
         },
       ],
       cardsIcon2: [

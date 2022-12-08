@@ -2,13 +2,15 @@
   <div class="kazakhstani">
     <div class="container">
       <MoleculesBreadcrumbs class="kazakhstani__breadcrumbs">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
-        <AtomsBreadOption to="/kazakhstani-content">
-          Казахстанское содержание
+        <AtomsBreadOption :to="localePath('/')">
+          {{ $t('kazContent.breadcrumbs.main') }}
+        </AtomsBreadOption>
+        <AtomsBreadOption :to="localePath('/kazakhstani-content')">
+          {{ $t('kazContent.title') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="kazakhstani__title">
-        Казахстанское содержание
+        {{ $t('kazContent.title') }}
       </AtomsTitle>
       <div class="kazakhstani__tags">
         <AtomsTag
@@ -26,40 +28,25 @@
           :series="series"
         />
         <p>
-          Совокупные затраты ТШО на закупку местных товаров и услуг превысили
-          39,3 млрд долларов США. Это позволяет нам удерживать лидирующие
-          позиции в сфере развития казахстанского содержания
+          {{ $t('kazContent.section1.chartInfo') }}
         </p>
       </div>
     </div>
     <div class="kazakhstani__content gray">
       <div class="container">
         <div class="kazakhstani__titlee">
-          В ТШО мы ищем, находим и развиваем местных поставщиков для проектов
-          мирового уровня, таких как Тенгиз.
+          {{ $t('kazContent.section2.title') }}
         </div>
         <p>
-          ТШО осуществляет свою деятельность на одном из самых крупных и
-          технологически сложных месторождений нефти в мире. Обеспечение
-          безопасности и надежности операций по разведке и добыче на Тенгизе
-          являются ключевыми факторами, способствующими успешному развитию
-          экономики Казахстана и удовлетворению мирового спроса на
-          энергоносители.
-        </p>
-        <p>
-          Наша основная задача заключается в поиске товаров и услуг, которые
-          отвечают международным стандартам, при этом предоставляя возможности
-          для местных поставщиков и квалифицированных специалистов.
-        </p>
-        <p>
-          Посмотрите этот видеоролик, чтобы узнать как ТШО создает возможности
-          для местного рынка услуг.
+          {{ $t('kazContent.section2.description') }}
         </p>
       </div>
     </div>
     <div class="container">
       <div class="kazakhstani__map">
-        <div class="kazakhstani__titlee">Вклад ТШО в экономику РК</div>
+        <div class="kazakhstani__titlee">
+          {{ $t('kazContent.contributionTco') }}
+        </div>
         <Map class="map" @click="mapModal" />
       </div>
     </div>
@@ -67,62 +54,54 @@
     <OrganismsSectionOperationSlide :data="slide[0]" class="slide gray">
       <div class="slide__body">
         <hr />
-        <p class="subtitle">План контрактов и закупок</p>
+        <p class="subtitle">{{ $t('kazContent.cooperationTco.subtitle') }}</p>
         <p>
-          Наш план по контрактам и закупкам отражает возможные потребности ТШО в
-          части поставок товаров и услуг для обеспечения различных областей
-          своей деятельности.
+          {{ $t('kazContent.cooperationTco.description') }}
         </p>
         <AtomsFile
           file="@/assets/files/Квалификационная анкета по процессу CHESM для потенциальных бизнес-партнеров.xls"
-          text="План контрактов и закупок на 2022 год"
+          :text="$t('kazContent.cooperationTco.files')[0]"
           icon="xls"
         />
         <AtomsFile
           file="@/assets/files/statistics.pdf"
-          text="Обновленный план контрактов и закупок на 2021 год"
+          :text="$t('kazContent.cooperationTco.files')[1]"
           icon="xls"
         />
         <div class="slide__content_more">
           <div v-if="more" class="slide__content_more__text">
-            Информация, содержащаяся в Плане по контрактам и закупкам ТШО,
-            является предварительным прогнозом потребностей ТОО «Тенгизшевройл»
-            (далее - ТШО) в товарах, работах или услугах на предстоящий период,
-            упомянутый в нем. Публикация данных, относящихся к этой
-            прогнозируемой деятельности по поиску поставщиков, контрактам и/или
-            закупкам, предоставляется только для сведения и не должна
-            рассматриваться как обязательство ТШО провести какую-либо конкретную
-            деятельность или предложение (офферта) ТШО какому-либо лицу принять
-            в ней участие. Опубликованные ранее мероприятия по поиску
-            поставщиков, контрактам и/или закупкам могут быть отложены, изменены
-            или отменены по собственному усмотрению ТШО без предварительного
-            уведомления. Просим регулярно следить за обновлениями этого
-            веб-сайта. ТШО в явной форме отказывается от какой-либо
-            ответственности или обязательства за какой-либо ущерб или убытки,
-            которые могут быть понесены каким-либо лицом в результате того или в
-            связи с тем, что такое лицо полагается на данные, опубликованные в
-            Плане контрактам и закупкам ТШО.
+            {{ $t('kazContent.cooperationTco.accordion.description') }}
           </div>
           <div class="slide__content_more__link" @click="more = !more">
-            Правовая оговорка <i class="icon-arrow-left" :class="{ more }" />
+            {{ $t('kazContent.cooperationTco.accordion.title') }}
+            <i class="icon-arrow-left" :class="{ more }" />
           </div>
         </div>
-        <p class="subtitle">Выражение заинтересованности поставщика</p>
-        <p>
-          Поставщику, заинтересованному работать с ТШО, следует подать заявку
-          перейдя по ссылке ниже:
-          <a href="#">Ссылка на сайт для выражения заинтересованности поставщика
-            (SEOI)</a>
+        <p class="subtitle">
+          {{ $t('kazContent.cooperationTco.providerInterest.title') }}
         </p>
         <p>
-          Примечание: ТШО также использует базу данных нефтегазовой индустрии
-          «Алаш» (www.alash-kz.com) для определения перспективных поставщиков.
+          {{
+            $t('kazContent.cooperationTco.providerInterest.descriptions.first')
+          }}
+          <a href="#">
+            {{
+              $t('kazContent.cooperationTco.providerInterest.descriptions.link')
+            }}</a
+          >
+        </p>
+        <p>
+          {{
+            $t('kazContent.cooperationTco.providerInterest.descriptions.second')
+          }}
         </p>
       </div>
     </OrganismsSectionOperationSlide>
     <div class="container">
       <div class="kazakhstani__content">
-        <div class="kazakhstani__titlee">Ближайшие мероприятие</div>
+        <div class="kazakhstani__titlee">
+          {{ $t('kazContent.coomingEvent.title') }}
+        </div>
         <div class="kazakhstani__times">
           <div
             v-for="(item, key) in times"
@@ -147,13 +126,16 @@
         <div>
           <div class="kazakhstani__working_content">
             <div class="title">
-              Мы заинтересованы в сотрудничестве с местными поставщиками,
-              осуществляющими свою деятельность в следующих областях:
+              {{ $t('kazContent.cooperationInterest.title') }}
             </div>
-            <div class="title">Думаете, что подходите?</div>
+            <div class="title">
+              {{ $t('kazContent.cooperationInterest.subtitle') }}
+            </div>
             <p>
-              Свяжитесь с нами по адресу электронной почты
-              <a href="mailto:kcdsearch@tengizchevroil.com">kcdsearch@tengizchevroil.com</a>
+              {{ $t('kazContent.cooperationInterest.link')[0] }}
+              <a href="mailto:kcdsearch@tengizchevroil.com">
+                {{ $t('kazContent.cooperationInterest.link')[1] }}</a
+              >
             </p>
           </div>
           <div class="kazakhstani__working_cards">
@@ -178,18 +160,13 @@
         <div class="strategy">
           <div class="strategy__content">
             <div class="strategy__title">
-              Как работает долгосрочная стратегия заключения контрактов?
+              {{ $t('kazContent.longStrategy.title') }}
             </div>
             <p>
-              Только в 2019 году компания ТШО и ее поставщики выполнили 13 плана
-              по казахстанскому содержанию в рамках долгосрочных соглашений
+              {{ $t('kazContent.longStrategy.descriptions')[0] }}
             </p>
             <p>
-              В ТШО твердо убеждены в том, что для достижения хороших
-              результатов необходимо время и целенаправленные усилия. Наша
-              долгосрочная стратегия заключения контрактов предоставляет ТШО и
-              поставщикам целый ряд возможностей продолжать инвестировать в
-              развитие потенциала местного рынка услуг.
+              {{ $t('kazContent.longStrategy.descriptions')[1] }}
             </p>
           </div>
           <div class="strategy__cards">
@@ -208,24 +185,13 @@
       <div class="slide__body">
         <hr />
         <p>
-          В отношении казахстанского содержания определение показателей нашей
-          работы является важным фактором отслеживания нашего успеха.
-          <br />
-          Расчет и отчетность по затратам на казахстанское содержание – это одно
-          из законодательных тебований для ТШО. И мы напрямую заинтересованы в
-          том, чтобы обеспечить ознакомление поставщиков ТШО с методологией
-          расчета доли казахстанского содержания. Мы организуем соответствующие
-          курсы обучения для наших текущих бизнес-партнеров на ежеквартальной
-          основе. Эти курсы охватывают определенные аспекты законодательства о
-          недропользовании и постановлений правительства, которые регулируют
-          вопросы расчета доли местного содержания и где приведены основные
-          термины и определения и примеры расчета доли КС при закупке товаров и
-          услуг. Напоминаем, что данные тренинги доступны для текущих
-          поставщиков и подрядчиков ТШО.
+          {{ $t('kazContent.rightWay.description') }}
         </p>
         <p class="subtitle">
-          Свяжитесь с нами по электронной почте
-          <a href="mailto:kcdsearch@tengizchevroil.com">kcdsearch@tengizchevroil.com</a>, если заинтересованы в курсах
+          {{ $t('kazContent.rightWay.link')[0] }}
+          <a href="mailto:kcdsearch@tengizchevroil.com">{{
+            $t('kazContent.rightWay.link')[1]
+          }}</a>
         </p>
       </div>
     </OrganismsSectionOperationSlide>
@@ -247,23 +213,23 @@ export default {
       tags: [
         {
           id: 1,
-          text: 'Развитие потенциальных поставщиков ТШО',
-          url: '/kazakhstani-content/join-tco-program',
+          text: this.$t('kazContent.section1.tags')[0],
+          url: this.localePath('/kazakhstani-content/join-tco-program'),
         },
         {
           id: 2,
-          text: 'Как стать поставщиком',
-          url: '/kazakhstani-content',
+          text: this.$t('kazContent.section1.tags')[1],
+          url: this.localePath('/kazakhstani-content'),
         },
         {
           id: 3,
-          text: 'Создание электронного каталога и загрузка счета-фактуры',
-          url: '/kazakhstani-content/electronic-catalog',
+          text: this.$t('kazContent.section1.tags')[2],
+          url: this.localePath('/kazakhstani-content/electronic-catalog'),
         },
         {
           id: 4,
-          text: 'Льготы',
-          url: '/kazakhstani-content/benefits',
+          text: this.$t('kazContent.section1.tags')[3],
+          url: this.localePath('/kazakhstani-content/benefits'),
         },
       ],
       series: [
@@ -311,25 +277,21 @@ export default {
       },
       slide: [
         {
-          title: 'Сотрудничество с ТШО',
+          title: this.$t('kazContent.cooperationTco.title'),
           image: 'kazakhstani/kazakhstani1.png',
         },
         {
-          title: 'Создаем возможности для местных поставщиков',
-          description: [
-            'Критически важным аспектом успешного сотрудничества ТШО с местными поставщиками является понимание ими международных стандартов и соответствие требованиям по обеспечению техники безопасности и качества мирового уровня. Мы постоянно рассматриваем возможности оказания поддержки и инвестирования наших ресурсов в устойчивое развитие поставщиков для достижения ими более высокого уровня производственной деятельности.',
-          ],
+          title: this.$t('kazContent.localeSuppliers.title'),
+          description: [this.$t('kazContent.localeSuppliers.description')],
           image: 'kazakhstani/kazakhstani2.png',
         },
         {
-          title: 'Локализация зарубежного оборудования',
-          description: [
-            'ТШО работает с признанными во всем мире фирмами-изготовителями оборудования в целях обеспечения безопасной, надежной и бесперебойной производственной деятельности и реализации проекта ПБР/ПУУД. Мы начали сотрудничество с несколькими фирмами-изготовителями оборудования, которое в долгосрочной перспективе принесет пользу для экономики Казахстана благодаря строительству объектов инфраструктуры, трансферту технологий и подготовке кадрового резерва.',
-          ],
+          title: this.$t('kazContent.foreignTools.title'),
+          description: [this.$t('kazContent.foreignTools.description')],
           image: 'kazakhstani/kazakhstani2.png',
         },
         {
-          title: 'Правильный способ ведения деятельности',
+          title: this.$t('kazContent.rightWay.title'),
           image: 'kazakhstani/kazakhstani1.png',
         },
       ],
@@ -337,96 +299,97 @@ export default {
         {
           number: '15 июня, в 15:00',
           html: '<ul><li>Краткое содержание планируемого мероприятия и фото. Краткое содержание планируемого мероприятия. Краткое содержание планируемого мероприятия.</li></ul>',
-          date: '15 июня',
+          date: this.$t('kazContent.coomingEvent.date'),
           time: '15:00',
-          name: 'Семинар',
+          name: this.$t('kazContent.coomingEvent.name'),
         },
         {
           number: '15 июня, в 15:00',
           html: '<ul><li>Краткое содержание планируемого мероприятия и фото. Краткое содержание планируемого мероприятия. Краткое содержание планируемого мероприятия.</li></ul>',
-          date: '1 июня',
-          time: '12:00',
-          name: 'Семинар',
+          date: this.$t('kazContent.coomingEvent.date'),
+          time: '15:00',
+          name: this.$t('kazContent.coomingEvent.name'),
         },
         {
           number: '15 июня, в 15:00',
           html: '<ul><li>Краткое содержание планируемого мероприятия и фото. Краткое содержание планируемого мероприятия. Краткое содержание планируемого мероприятия.</li></ul>',
-          date: '29 июня',
-          time: '09:00',
-          name: 'Семинар',
+          date: this.$t('kazContent.coomingEvent.date'),
+          time: '15:00',
+          name: this.$t('kazContent.coomingEvent.name'),
         },
       ],
       cards: [
         {
           icon: 'fork',
           number: '01',
-          title: 'Электрооборудование',
-          description:
-            'Кабели высокого напряжения, распредщиты низкого напряжения, трансформаторы, подстанции, удаленные терминалы',
+          title: this.$t('kazContent.cooperationInterest.cards')[0].title,
+          description: this.$t('kazContent.cooperationInterest.cards')[0]
+            .description,
         },
         {
           icon: 'tool',
           number: '02',
-          title: 'Услуги по техобслуживанию',
-          description:
-            'Услуги по ремонту высоковольтных двигателей, цех по замене труб теплообменников',
+          title: this.$t('kazContent.cooperationInterest.cards')[1].title,
+          description: this.$t('kazContent.cooperationInterest.cards')[1]
+            .description,
         },
         {
           icon: 'spinner',
           number: '03',
-          title: 'Строительство',
-          description: 'Резервуары и сосуды',
+          title: this.$t('kazContent.cooperationInterest.cards')[2].title,
+          description: this.$t('kazContent.cooperationInterest.cards')[2]
+            .description,
         },
         {
           icon: 'screwdriver',
           number: '04',
-          title: 'Текущий ремонт и эксплуатация',
-          description:
-            'Клапаны, фланцы и фитинги, шпильки резьбовые, обтюраторы и распорки',
+          title: this.$t('kazContent.cooperationInterest.cards')[3].title,
+          description: this.$t('kazContent.cooperationInterest.cards')[3]
+            .description,
         },
         {
           icon: 'closure',
           number: '05',
-          title: 'ИТ/ТЕЛЕКОМ',
-          description: 'Волоконно-оптический кабель',
+          title: this.$t('kazContent.cooperationInterest.cards')[4].title,
+          description: this.$t('kazContent.cooperationInterest.cards')[4]
+            .description,
         },
         {
           icon: 'danger.svg',
           number: '06',
-          title: 'БиОТ/ООС',
-          description:
-            'Утилизация отходов, дистанционное обучение по ТБ и соответствию нормативным требованиям, утилизация отходов деревообработки, защитная одежда',
+          title: this.$t('kazContent.cooperationInterest.cards')[5].title,
+          description: this.$t('kazContent.cooperationInterest.cards')[5]
+            .description,
         },
       ],
       strategy: [
         {
           icon: 'loop',
           number: '01',
-          description:
-            'ТШО определяет возможности развития казахстанского содержания с действующими и потенциальными поставщиками ',
+          description: this.$t('kazContent.longStrategy.cards')[0],
         },
         {
           icon: 'messages',
           number: '02',
-          description:
-            'ТШО и поставщики обсуждают условия предоставления таких возможностей и разрабатывают план казахстанского содержания',
+          description: this.$t('kazContent.longStrategy.cards')[1],
           dark: true,
         },
         {
           icon: 'friendly',
           number: '03',
-          description:
-            'ТШО и поставщики официально оформляют планы КС в рамках договоров ',
+          description: this.$t('kazContent.longStrategy.cards')[2],
           dark: true,
         },
         {
           icon: 'setting',
           number: '04',
-          description:
-            'ТШО проводит постоянный контроль соответствия требованиям и отслеживает показатели работы',
+          description: this.$t('kazContent.longStrategy.cards')[3],
         },
       ],
     }
+  },
+  mounted() {
+    console.log(this.localePath('/kazakhstani-content/join-tco-program'))
   },
   methods: {
     onTag() {

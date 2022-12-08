@@ -2,30 +2,29 @@
   <div class="electronic">
     <div class="container">
       <MoleculesBreadcrumbs class="electronic__breadcrumbs">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
-        <AtomsBreadOption to="/kazakhstani-content">
-          Казахстанское содержание
+        <AtomsBreadOption :to="localePath('/')">Главная</AtomsBreadOption>
+        <AtomsBreadOption :to="localePath('/kazakhstani-content')">
+          {{ $t('kazContent.breadcrumbs.kazContent') }}
         </AtomsBreadOption>
-        <AtomsBreadOption to="/kazakhstani-content/electronic-catalog">
-          Электронный каталог
+        <AtomsBreadOption
+          :to="localePath('/kazakhstani-content/electronic-catalog')"
+        >
+          {{ $t('kazContent.breadcrumbs.electricCatalog') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="electronic__title">
-        Cоздание электронного каталога и загрузка счета-фактуры
+        {{ $t('kazContent.electricCatalog.title') }}
       </AtomsTitle>
     </div>
     <div class="gray">
       <div class="container">
         <div class="content">
           <p>
-            На данной странице представлен материал, предназначенный для
-            обучения и разьяснения процедуры оплаты в ТШО для существующих
-            поставщиков компании. Пошаговая инструкция и видео материал подробно
-            описывают процесс оплаты и регистарции в системе ТШО.
+            {{ $t('kazContent.electricCatalog.description') }}
           </p>
           <AtomsFile
             file="@/assets/files/Квалификационная анкета по процессу CHESM для потенциальных бизнес-партнеров.xls"
-            text="Руководство для пользователей"
+            :text="$t('kazContent.electricCatalog.file')"
             icon="zip"
           />
         </div>
@@ -34,7 +33,7 @@
     <div class="container">
       <div class="content">
         <div class="content__title">
-          Загрузка счета-фактуры для Тенгизшевройл
+          {{ $t('kazContent.electricCatalog.invoiceTco') }}
         </div>
         <div class="content__video">
           <img src="~/assets/img/projects/projects4.png" alt="" />
@@ -45,7 +44,7 @@
       <div class="container">
         <div class="content">
           <div class="content__title">
-            Создание и загрузка электронного каталога
+            {{ $t('kazContent.electricCatalog.createUploadElectricCatalog') }}
           </div>
           <div class="content__video">
             <img src="~/assets/img/projects/projects4.png" alt="" />
