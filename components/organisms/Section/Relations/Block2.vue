@@ -3,19 +3,21 @@
     <div class="information">
       <div class="mobile">
         <img src="@/assets/img/relations/info-1.jpg" alt="" />
-        <AtomsHeading type="h3" color="white"> Полезные ссылки: </AtomsHeading>
+        <AtomsHeading type="h3" color="white">
+          {{ $t('relation.block_2.title') }}
+        </AtomsHeading>
       </div>
       <div class="container">
         <div class="information_content first">
           <AtomsHeading type="h3" color="main" class="mb40">
-            Полезные ссылки:
+            {{ $t('relation.block_2.title') }}
           </AtomsHeading>
-          <a href="">Общее сведения о компании</a>
-          <a href="">ПБР-ПУБД</a>
-          <a href="">Последние цифры и факты</a>
-          <a href="">Показатели области ТБ ООС</a>
-          <a href="">Отчет о корпоративной ответственности</a>
-          <a href="">Итоги года</a>
+          <a href="">{{ $t('relation.block_2.links[0]') }}</a>
+          <a href="">{{ $t('relation.block_2.links[1]') }}</a>
+          <a href="">{{ $t('relation.block_2.links[2]') }}</a>
+          <a href="">{{ $t('relation.block_2.links[3]') }}</a>
+          <a href="">{{ $t('relation.block_2.links[4]') }}</a>
+          <a href="">{{ $t('relation.block_2.links[5]') }}</a>
         </div>
       </div>
       <img
@@ -28,27 +30,17 @@
     <div class="information reverse">
       <div class="mobile">
         <img src="@/assets/img/relations/info-2.jpg" alt="" />
-        <AtomsHeading type="h3" color="white"> Обзор </AtomsHeading>
+        <AtomsHeading type="h3" color="white">
+          {{ $t('relation.block_3.title') }}
+        </AtomsHeading>
       </div>
       <div class="container">
         <div class="information_content second">
           <AtomsHeading type="h3" color="main" class="mb40">
-            Обзор
+            {{ $t('relation.block_3.title') }}
           </AtomsHeading>
           <p>
-            Связь с кредиторами ТШО были созданы для улучшения связи с нашими
-            кредиторами.
-          </p>
-          <p>
-            Общие сведения о компании и другая соответствующая информация
-            доступны в разделе полезных ссылок.
-          </p>
-          <p>
-            Текущие держатели облигаций, кредиторы и потенциальные инвесторы
-            могут связаться с нами для получения доступа к финансовым сведениям
-            Компании, которые хранятся в защищенной сторонней организацией
-            онлайн-базе данных, Merril Datasite. Для запроса на доступ,
-            обратитесь к разделу «Контактная информация».
+            {{ $t('relation.block_3.text') }}
           </p>
         </div>
       </div>
@@ -63,25 +55,23 @@
       <div class="mobile">
         <img src="@/assets/img/relations/info-4.jpg" alt="" />
         <AtomsHeading type="h3" color="white">
-          Контактная информация
+          {{ $t('relation.block_4.title') }}
         </AtomsHeading>
       </div>
       <div class="container">
         <div class="information_content third">
           <AtomsHeading type="h3" color="main" class="mb40">
-            Контактная информация
+            {{ $t('relation.block_4.title') }}
           </AtomsHeading>
           <p class="mb30">
-            Электронный адрес для связи:
+            {{ $t('relation.block_4.p_1') }}
             <br />
             <a href="mailto:tcolr@tengizchevroil.com"
               >tcolr@tengizchevroil.com</a
             >
           </p>
           <p>
-            Текущие держатели облигаций отправляют письмо <br />
-            доверительному управляющему по облигационному <br />
-            займу на эл.адрес:
+            {{ $t('relation.block_4.p_2') }}
           </p>
           <div class="mb30">
             <svg
@@ -108,7 +98,7 @@
             </svg>
             <a href="mailto:emea.at.debt@citi.com">emea.at.debt@citi.com</a>
           </div>
-          <p>Кредиторы отправляют письмо банку-агенту на эл.адрес:</p>
+          <p>{{ $t('relation.block_4.p_3') }}</p>
           <div>
             <svg
               width="24"

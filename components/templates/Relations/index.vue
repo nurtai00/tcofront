@@ -2,15 +2,19 @@
   <div class="relations">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb40">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
-        <AtomsBreadOption to="/career">Кредиторам</AtomsBreadOption>
+        <AtomsBreadOption to="/">{{
+          $t('relation.breadcrumbs[0]')
+        }}</AtomsBreadOption>
+        <AtomsBreadOption to="/career">{{
+          $t('relation.breadcrumbs[1]')
+        }}</AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="mb40">Кредиторам</AtomsTitle>
+      <AtomsTitle class="mb40">{{ $t('relation.breadcrumbs[1]') }}</AtomsTitle>
     </div>
     <OrganismsSectionRelationsBlock1 />
     <OrganismsSectionRelationsBlock2 />
     <OrganismsSectionRelationsBlock3 />
-    <OrganismsSectionRelationsBlock4 />
+    <OrganismsSectionMainBlock2 />
   </div>
 </template>
 

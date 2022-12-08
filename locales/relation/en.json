@@ -1,0 +1,54 @@
+{
+  "breadcrumbs": ["Home", "Lender Relations"],
+  "title": "Lender Relations",
+  "block_1": {
+    "title": "FGP-WPMP External Lender Relations",
+    "text": "In July 2016, TCO Partners announced approval for the final investment decision of the Future Growth Project-Wellhead Pressure Management Project (FGP-WPMP), the next major expansion of the Tengiz oil field.As part of FGP-WPMP project plans it is important for us to keep transparent two-way communication with our lenders. TCO is implementing a lender relations process to ensure that stakeholders will have ongoing opportunities to ask questions, comment and provide feedback.Our focus is to keep an open dialogue with our lender base and timely respond on questions. In addition to the information found under the Company tab, we are happy to assist you with quick and reliable responses."
+  },
+  "block_2": {
+    "title": "Useful links:",
+    "links": [
+      "Company Overview",
+      "FGP-WPMP",
+      "Latest Factsheet",
+      "Safety and Environmental Performance",
+      "Corporate Responsibility Report",
+      "Year in review"
+    ]
+  },
+  "block_3": {
+    "title": "Overview",
+    "text": "TCO Lender Relations was established to enhance communication with our lenders.Company overview and other related information are available under the useful links section.Current bondholders, lenders can contact us to obtain access to the Company's financial information which is stored in a third-party secured online database, the Merril Datasite If you require an access, please refer to Contact Information section."
+  },
+  "block_4": {
+    "title": "Contact Information",
+    "p_1": "Contact us at:",
+    "p_2": "Current Bondholders email the Indenture Trustee at",
+    "p_3": "Lenders email the Agent bank at"
+  },
+  "block5": {
+    "title": "Debt Rating",
+    "items": [
+      {
+        "title": "Rating agency",
+        "items": ["Standard & Poor’s", "Moody’s"]
+      },
+      {
+        "title": "Latest revision",
+        "items": ["07/10/2022", "30/06/2021"]
+      },
+      {
+        "title": "Global rating",
+        "items": ["BB+", "Baa2"]
+      },
+      {
+        "title": "Outlook",
+        "items": ["Negative", "Stable"]
+      },
+      {
+        "title": "Webpage",
+        "items": ["S & P", "Moody's"]
+      }
+    ]
+  }
+}

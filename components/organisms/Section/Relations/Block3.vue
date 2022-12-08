@@ -1,41 +1,48 @@
 <template>
   <div class="creditors">
     <div class="container">
-      <AtomsTitle class="mb40" small> Кредиторам </AtomsTitle>
+      <AtomsTitle class="mb40" small>
+        {{ $t('relation.block5.title') }}
+      </AtomsTitle>
       <div class="creditors_info">
         <div class="info_block">
-          <span>Рейтинговое агенства</span>
+          <span>{{ $t('relation.block5.items[0].title') }}</span>
           <div class="info_block__footer">
-            <span>Standard & Poors`s</span>
-            <span>Moody`s</span>
+            <span>{{ $t('relation.block5.items[0].items[0]') }}</span>
+            <span>{{ $t('relation.block5.items[0].items[1]') }}</span>
           </div>
         </div>
         <div class="info_block">
-          <span>Последняя редакция</span>
+          <span>{{ $t('relation.block5.items[1].title') }}</span>
           <div class="info_block__footer">
-            <span>07/10/2022</span>
-            <span>30/06/2021</span>
+            <span>{{ $t('relation.block5.items[1].items[0]') }}</span>
+            <span>{{ $t('relation.block5.items[1].items[1]') }}</span>
           </div>
         </div>
         <div class="info_block">
-          <span>Мировой рейтинг</span>
+          <span>{{ $t('relation.block5.items[2].title') }}</span>
           <div class="info_block__footer">
-            <span>BB+</span>
-            <span>Baa2</span>
+            <span>{{ $t('relation.block5.items[2].items[0]') }}</span>
+            <span>{{ $t('relation.block5.items[2].items[1]') }}</span>
           </div>
         </div>
         <div class="info_block">
-          <span>Перспектива</span>
+          <span>{{ $t('relation.block5.items[3].title') }}</span>
           <div class="info_block__footer">
-            <span>Отрицательный</span>
-            <span>Устойчивый</span>
+            <span>{{ $t('relation.block5.items[3].items[0]') }}</span>
+            <span>{{ $t('relation.block5.items[3].items[1]') }}</span>
           </div>
         </div>
         <div class="info_block">
-          <span>Веб-страница</span>
+          <span>{{ $t('relation.block5.items[4].title') }}</span>
           <div class="info_block__footer">
-            <a href="https://www.spglobal.com/ratings/en/">S & P</a>
-            <a href="https://www.moodys.com/research/Moodys-assigns-PBaa2-rating-to-Tengizchevroil-Finance-Company-International-Ltds--PR_351572">Moody`s</a>
+            <a href="https://www.spglobal.com/ratings/en/">{{
+              $t('relation.block5.items[4].items[0]')
+            }}</a>
+            <a
+              href="https://www.moodys.com/research/Moodys-assigns-PBaa2-rating-to-Tengizchevroil-Finance-Company-International-Ltds--PR_351572"
+              >{{ $t('relation.block5.items[4].items[1]') }}</a
+            >
           </div>
         </div>
       </div>
