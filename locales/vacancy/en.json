@@ -1,0 +1,50 @@
+{
+  "breadcrumbs": ["Home", "Career", "Vacancy"],
+  "block_1": {
+    "title": "Список доступных вакансий",
+    "text": "You can search and apply for available positions at this page. If you meet the criteria we are looking for, please proceed to “Apply” to submit your details and CV by completing the application form.<br>For technical support please contact us via rectechsup@tengizchevroil.com<br><strong>ATTENTION!</strong> If you have @mail.ru, bk.ru, list.ru and other .ru accounts linked to your profile, we recommend recreating your profile with another .com mail service (gmail; yahoo etc.) to avoid technical issues with logging into your profile."
+  },
+  "block_2": {
+    "title": "Recruiting Fraud",
+    "text": "Recruitment fraud from individuals/or groups claiming to represent Tengizchevroil may be presented through different information sources including e-mail, SMS texts or letters. <br>Please do not send money or share any personal data to anyone offering they can provide employment with Tengizchevroil. If you have applied for a position through TCO website, we will have information needed.",
+    "more": "More",
+    "more_text": "If you are not confident about communication received, please keep in mind the below listed information:<br>1. TCO never makes job offers without performing a formal interview process<br>2. No money transfers or payments of any kind will ever be requested by Tengizchevroil as part of the recruitment process<br>3. Tengizchevroil website pages always include http://www.tengizchevroil.com<br>4. Verify the e-mail address. Tengizchevroil e-mails end only in '@tengizchevroil.com'<br>Should you happen you have received a fraudulent communication, please forward it to TCO Hotline web-site."
+  },
+  "block_3": {
+    "title": "Departments in TCO",
+    "list": [
+      {
+        "title": "Well Department",
+        "p_1": "There will be a mini description",
+        "p_11": "Mini description goes here Mini description goes here Mini description goes here Mini description goes here Mini description goes here Mini description goes here",
+        "p_2": "Required work experience",
+        "p_21": "From 3 to 6 years",
+        "p_22": "Full time",
+        "p_23": "Shift work",
+        "subtitle": "Respond",
+        "subtitle_text": "If you are interested in the vacancy, please attach and send your CV indicating the field of activity you are interested in and the expected salary",
+        "name": "Your name",
+        "phone": "Phone number",
+        "resume": "Attach resume",
+        "label": "By clicking the 'Submit' button, you accept the terms of the Privacy Policy and the processing of personal data",
+        "button": "Submit"
+      },
+      {
+        "title": "Facilities Engineering "
+      },
+      {
+        "title": "Finance"
+      },
+      {
+        "title": "Human Resources"
+      },
+      {
+        "title": "Digital Department"
+      }
+    ]
+  },
+  "block_4": {
+    "title": "We are committed to developing your talent",
+    "text": "TCO Job Fairs have become one of the primary employment and networking events. Each year TCO hires outstanding graduates for engineering and analytical positions for Atyrau and Tengiz locations. TCO Job Fair is open to students and alumni from all majors and at the undergraduate, graduate, and degree levels at the RoK and foreign universities and Bolashak Scholarship Program.<br>TCO Departments such as Facilities Engineering, Health, Environment & Safety, Finance, Supply Chain Management, and Information Technologies along with Human Resources are ongoing Job Fair participants. Job Fairs are organized and conducted on regular basis at the premises of universities. It is 2-3 days event that includes aptitude tests and preliminary interview sessions.<br>  <strong>Eligible criteria to participate in TCO Job Fair:</strong><br>• <strong>final year student of bachelor's / master’s studies</strong><br>• <strong>GPA 3.0 and above</strong> "
+  }
+}

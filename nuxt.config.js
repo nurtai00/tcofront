@@ -190,6 +190,7 @@ export default {
           header: require('./locales/header/kk.json'),
           project: require('./locales/project/kk.json'),
           privacy: require('./locales/privacy/kk.json'),
+          vacancy: require('./locales/vacancy/kk.json'),
         },
         ru: {
           suistainability: require('./locales/Suistainability/ru.json'),
@@ -205,6 +206,7 @@ export default {
           header: require('./locales/header/ru.json'),
           project: require('./locales/project/ru.json'),
           privacy: require('./locales/privacy/en.json'),
+          vacancy: require('./locales/vacancy/ru.json'),
         },
         en: {
           suistainability: require('./locales/Suistainability/en.json'),
@@ -220,6 +222,7 @@ export default {
           header: require('./locales/header/en.json'),
           project: require('./locales/project/en.json'),
           privacy: require('./locales/privacy/en.json'),
+          vacancy: require('./locales/vacancy/en.json'),
         },
       },
       loadLanguagesAsync: true,
