@@ -2,8 +2,12 @@
   <div>
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
-        <AtomsBreadOption to="/about">Компания</AtomsBreadOption>
+        <AtomsBreadOption to="/">{{
+          $t('company.breadcrumbs[0]')
+        }}</AtomsBreadOption>
+        <AtomsBreadOption to="/about">{{
+          $t('company.breadcrumbs[1]')
+        }}</AtomsBreadOption>
       </MoleculesBreadcrumbs>
     </div>
     <OrganismsSectionAboutBlock1 />
