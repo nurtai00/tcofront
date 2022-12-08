@@ -1,10 +1,30 @@
 {
-  "block_11": {
-    "title": "Tengizchevroil Announces 2021 Results",
-    "text": "In 2021, TCO remained the largest contributor to the national economy, with over $9 billion in direct payments to the Republic of Kazakhstan",
-    "button": "Read more",
-    "date": "22 February 2022"
-  },
+  "block_11": [
+    {
+      "title": "A new kindergarten for 280 places has been opened in Atyrau",
+      "text": "A new kindergarten for 280 places has been built within the framework of Tengizchevroil LLP (TCO) “Egilik”voluntary social infrastructure program in Rakusha village near Atyrau.",
+      "button": "Read More",
+      "date": "14 december 2021"
+    },
+    {
+      "title": "Tengizchevroil Announces 2021 Results",
+      "text": "In 2021, TCO remained the largest contributor to the national economy, with over $9 billion in direct payments to the Republic of Kazakhstan",
+      "button": "Read More",
+      "date": "22 February 2022"
+    },
+    {
+      "title": "Ministry of Ecology: I believe that perfection knows no limits",
+      "text": "Minister of Ecology, Geology and Natural Resources of the Republic of Kazakhstan, Serikkali Brekeshev, visited the Tengiz field and got acquainted with Tengizchevroil’s (TCO) environmental protection measures.",
+      "button": "Read More",
+      "date": "28 February 2022"
+    },
+    {
+      "title": "A 3,000-seat central stadium was opened in Kulsary",
+      "text": "A new central stadium for 3,000 seats was opened in honor of celebration of Kulsary city day, constructed by TCO within “Egilik” voluntary social and infrastructure program.",
+      "button": "Read More",
+      "date": "26 September 2022"
+    }
+  ],
   "block_12": {
     "title": "Ministry of Ecology: I believe that perfection knows no limits",
     "text": "Minister of Ecology, Geology and Natural Resources of the Republic of Kazakhstan, Serikkali Brekeshev, visited the Tengiz field and got acquainted with Tengizchevroil’s (TCO) environmental protection measures.",

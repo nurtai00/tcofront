@@ -40,7 +40,7 @@
       <div v-for="(route, idx) in routes" :key="idx">
         <NuxtLink
           :class="{ active_link: $route.path === route.link }"
-          :to="route.link"
+          :to="localePath(route.link)"
         >
           {{ route.name }}
         </NuxtLink>
@@ -56,36 +56,36 @@ export default {
       show_nav: false,
       routes: [
         {
-          name: 'Главная',
-          link: '/',
+          name: this.$t('header.header_links[0]'),
+          link: this.localePath('/'),
         },
         {
-          name: 'Компания',
-          link: '/about',
+          name: this.$t('header.header_links[1]'),
+          link: this.localePath('/about'),
         },
         {
-          name: 'Операции',
-          link: '/operations',
+          name: this.$t('header.header_links[2]'),
+          link: this.localePath('/operations'),
         },
         {
-          name: 'Проекты',
-          link: '/projects',
+          name: this.$t('header.header_links[3]'),
+          link: this.localePath('/projects'),
         },
         {
-          name: 'Казахстанское содержание',
-          link: '/kazakhstani-content',
+          name: this.$t('header.header_links[4]'),
+          link: this.localePath('/kazakhstani-content'),
         },
         {
-          name: 'Устойчивость',
-          link: '/sustainability',
+          name: this.$t('header.header_links[5]'),
+          link: this.localePath('/sustainability'),
         },
         {
-          name: 'Карьера',
-          link: '/career',
+          name: this.$t('header.header_links[6]'),
+          link: this.localePath('/career'),
         },
         {
-          name: 'Кредиторам',
-          link: '/relations',
+          name: this.$t('header.header_links[7]'),
+          link: this.localePath('/relations'),
         },
       ],
       defaultItem: 'RU',
@@ -107,6 +107,44 @@ export default {
         },
       ],
     }
+  },
+  watch: {
+    '$route.path'() {
+      this.routes = [
+        {
+          name: this.$t('header.header_links[0]'),
+          link: this.localePath('/'),
+        },
+        {
+          name: this.$t('header.header_links[1]'),
+          link: this.localePath('/about'),
+        },
+        {
+          name: this.$t('header.header_links[2]'),
+          link: this.localePath('/operations'),
+        },
+        {
+          name: this.$t('header.header_links[3]'),
+          link: this.localePath('/projects'),
+        },
+        {
+          name: this.$t('header.header_links[4]'),
+          link: this.localePath('/kazakhstani-content'),
+        },
+        {
+          name: this.$t('header.header_links[5]'),
+          link: this.localePath('/sustainability'),
+        },
+        {
+          name: this.$t('header.header_links[6]'),
+          link: this.localePath('/career'),
+        },
+        {
+          name: this.$t('header.header_links[7]'),
+          link: this.localePath('/relations'),
+        },
+      ]
+    },
   },
   methods: {
     showNav() {

@@ -25,67 +25,67 @@ const webpack = require('webpack')
 const build =
   process.env.NODE_ENV === 'production'
     ? {
-      extend(config, ctx) {
-        if (ctx && ctx.isClient) {
-          // config.optimization.splitChunks.maxSize = 4096
-          // config.output.globalObject = 'this'
-          if (!this.dev) {
-            config.plugins.push(
-              new webpack.optimize.LimitChunkCountPlugin({
-                maxChunks: 1,
-              })
-            )
+        extend(config, ctx) {
+          if (ctx && ctx.isClient) {
+            // config.optimization.splitChunks.maxSize = 4096
+            // config.output.globalObject = 'this'
+            if (!this.dev) {
+              config.plugins.push(
+                new webpack.optimize.LimitChunkCountPlugin({
+                  maxChunks: 1,
+                })
+              )
+            }
           }
-        }
-      },
-      loaders: {
-        cssModules: {
-          modules: true,
-          localIdentName: '[local]',
         },
-      },
-      scss: {
-        cssModules: {
-          modules: true,
-          localIdentName: '[local]',
+        loaders: {
+          cssModules: {
+            modules: true,
+            localIdentName: '[local]',
+          },
         },
-      },
-      optimization: {
+        scss: {
+          cssModules: {
+            modules: true,
+            localIdentName: '[local]',
+          },
+        },
+        optimization: {
+          splitChunks: {
+            chunks: 'async',
+            automaticNameDelimiter: '.',
+          },
+        },
         splitChunks: {
-          chunks: 'async',
-          automaticNameDelimiter: '.',
+          pages: false,
+          vendor: false,
+          commons: false,
+          runtime: false,
+          layouts: false,
         },
-      },
-      splitChunks: {
-        pages: false,
-        vendor: false,
-        commons: false,
-        runtime: false,
-        layouts: false,
-      },
-      filenames: {
-        app: () => '[name].js',
-        font: () => '[name].[ext]',
-        img: () => '[name].[ext]',
-      },
-      extractCSS: true,
-      // optimization: {
-      //   splitChunks: {
-      //     cacheGroups: {
-      //       styles: {
-      //         name: 'styles',
-      //         test: /\.(css|vue)$/,
-      //         chunks: 'all',
-      //         enforce: true,
-      //       },
-      //     },
-      //     chunks: 'all',
-      //     automaticNameDelimiter: '.',
-      //     name: undefined,
-      //   },
-      //   minimize: true,
-      // },
-    }
+        filenames: {
+          app: () => '[name].js',
+          font: () => '[name].[ext]',
+          img: () => '[name].[ext]',
+        },
+        extractCSS: true,
+        // optimization: {
+        //   splitChunks: {
+        //     cacheGroups: {
+        //       styles: {
+        //         name: 'styles',
+        //         test: /\.(css|vue)$/,
+        //         chunks: 'all',
+        //         enforce: true,
+        //       },
+        //     },
+        //     chunks: 'all',
+        //     automaticNameDelimiter: '.',
+        //     name: undefined,
+        //   },
+        //   minimize: true,
+        // },
+      }
     : {}
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -178,28 +178,48 @@ export default {
       messages: {
         kk: {
           suistainability: require('./locales/Suistainability/kk.json'),
+          kazContent: require('./locales/KazContent/kk.json'),
           home: require('./locales/home/kk.json'),
           news: require('./locales/news/kk.json'),
           relation: require('./locales/relation/kk.json'),
+          company: require('./locales/company/kk.json'),
           contact: require('./locales/Contact/kk.json'),
           career: require('./locales/career/kk.json'),
           operation: require('./locales/operations/kk.json'),
+          products: require('./locales/Products/kk.json'),
+          header: require('./locales/header/kk.json'),
+          project: require('./locales/project/kk.json'),
+          privacy: require('./locales/privacy/kk.json'),
         },
         ru: {
           suistainability: require('./locales/Suistainability/ru.json'),
+          kazContent: require('./locales/KazContent/ru.json'),
           home: require('./locales/home/ru.json'),
           news: require('./locales/news/ru.json'),
           relation: require('./locales/relation/ru.json'),
+          company: require('./locales/company/ru.json'),
           contact: require('./locales/Contact/ru.json'),
+          career: require('./locales/career/ru.json'),
           operation: require('./locales/operations/ru.json'),
+          products: require('./locales/Products/ru.json'),
+          header: require('./locales/header/ru.json'),
+          project: require('./locales/project/ru.json'),
+          privacy: require('./locales/privacy/en.json'),
         },
         en: {
           suistainability: require('./locales/Suistainability/en.json'),
+          kazContent: require('./locales/KazContent/en.json'),
           home: require('./locales/home/en.json'),
           news: require('./locales/news/en.json'),
           relation: require('./locales/relation/en.json'),
+          company: require('./locales/company/en.json'),
           contact: require('./locales/Contact/en.json'),
+          career: require('./locales/career/en.json'),
           operation: require('./locales/operations/en.json'),
+          products: require('./locales/Products/en.json'),
+          header: require('./locales/header/en.json'),
+          project: require('./locales/project/en.json'),
+          privacy: require('./locales/privacy/en.json'),
         },
       },
       loadLanguagesAsync: true,

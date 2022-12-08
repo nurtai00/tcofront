@@ -23,7 +23,7 @@
       </template>
       <template v-if="data.link">
         <div class="slide__link" @click="data.link()">
-          <span>Читать дальше</span> <i class="icon-arrow-left" />
+          <span>{{ $t('products.more') }}</span> <i class="icon-arrow-left" />
         </div>
       </template>
     </div>

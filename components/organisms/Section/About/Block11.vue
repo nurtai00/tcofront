@@ -4,7 +4,7 @@
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
         <div class="double-block tco__partners">
           <div class="tco__partners-wrapper">
-            <h1>Стратегии</h1>
+            <h1>{{ $t('company.slider_6[0].title') }}</h1>
             <div class="underline"></div>
             <span style="font-weight: bolder" v-text="slide.title"></span>
             <p v-text="slide.text"></p>
@@ -51,20 +51,20 @@ export default {
       },
       slides: [
         {
-          title: 'Люди',
-          text: 'Инвестировать в человеческие ресурсы для развития и поддержки высококвалифицированных сотрудников, которые обеспечивают достижение результатов должным образом.',
+          title: this.$t('company.slider_6[0].title_1'),
+          text: this.$t('company.slider_6[0].text'),
         },
         {
-          title: 'Реализация',
-          text: 'Достигать исключительных результатов посредством неукоснительного применения систем обеспечения наивысших производственных показателей, эффективности инвестиций и оптимизации расходов.',
+          title: this.$t('company.slider_6[1].title_1'),
+          text: this.$t('company.slider_6[1].text'),
         },
         {
-          title: 'Рост',
-          text: 'Разрабатывать запасы с целью повышения рентабельности и доходов, используя наши конкурентные преимущества и модель поведения для достижения высоких результатов.',
+          title: this.$t('company.slider_6[2].title_1'),
+          text: this.$t('company.slider_6[2].text'),
         },
         {
-          title: 'Технологии и функциональная эффективность',
-          text: 'Добиваться уникальных результатов за счет использования технологий, инноваций и профильных знаний.',
+          title: this.$t('company.slider_6[3].title_1'),
+          text: this.$t('company.slider_6[3].text'),
         },
       ],
     }

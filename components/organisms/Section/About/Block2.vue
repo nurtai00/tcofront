@@ -1,13 +1,11 @@
 <template>
   <section>
     <div class="container">
-      <AtomsTitle small :point="false"> Месторождение </AtomsTitle>
+      <AtomsTitle small :point="false">
+        {{ $t('company.block_1.title') }}
+      </AtomsTitle>
       <p class="mt20 mb40">
-        «Тенгизшевройл» расположен на территории лицензионного участка площадью
-        2500 квадратных километров или 1600 квадратных миль, включающего
-        супергигантское Тенгизское месторождение и меньшее, но крупное по
-        запасам Королевское месторождение, а также несколько перспективных
-        участков для ведения разведки.
+        {{ $t('company.block_1.p_1') }}
       </p>
     </div>
     <div class="double-block tco__partners">
@@ -15,9 +13,9 @@
         <div class="tco__barrels-wrapper" style="width: 100%">
           <img src="@/assets/img/barrels.svg" />
           <div>
-            <h4>Тенгизское месторождение</h4>
-            <span>3,2 млрд тонн</span>
-            <p>(25 млрд баррелей)</p>
+            <h4>{{ $t('company.block_1.items[0].title') }}</h4>
+            <span>{{ $t('company.block_1.items[0].count') }}</span>
+            <p>{{ $t('company.block_1.items[0].p') }}</p>
           </div>
         </div>
       </div>
@@ -25,21 +23,16 @@
         <div class="tco__barrels-wrapper" style="width: 100%">
           <img src="@/assets/img/barrels.svg" />
           <div>
-            <h4>Королевское месторождение</h4>
-            <span>200 млн тонн</span>
-            <p>(1,6 млрд баррелей)</p>
+            <h4>{{ $t('company.block_1.items[1].title') }}</h4>
+            <span>{{ $t('company.block_1.items[1].count') }}</span>
+            <p>{{ $t('company.block_1.items[1].p') }}</p>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
       <p class="mt40">
-        Извлекаемые запасы нефти Тенгизского и Королевского месторождений
-        составляют 1,4 миллиарда тонн. Тенгизское месторождение - это самое
-        глубокое в мире нефтяное месторождение-супергигант, верхний нефтеносный
-        коллектор которого залегает на глубине около 4000 метров. Тенгизский
-        коллектор протянулся на 19 километров в длину и 21 километр в ширину, а
-        высота нефтеносного пласта составляет 1,6 километра.
+        {{ $t('company.block_1.p_2') }}
       </p>
     </div>
   </section>

@@ -1,19 +1,21 @@
 <template>
   <section class="section--blue">
     <div class="container">
-      <AtomsTitle small :point="false"> Ключевые цифры за 2022 г.: </AtomsTitle>
+      <AtomsTitle small :point="false">
+        {{ $t('company.block_4.title') }}
+      </AtomsTitle>
       <div class="tco__files">
         <a class="item" href="">
           <img src="@/assets/img/pdf.svg" />
-          3 Квартал 2022
+          {{ $t('company.block_4.items[0]') }}
         </a>
         <a class="item" href="">
           <img src="@/assets/img/pdf.svg" />
-          Все цифры и факты
+          {{ $t('company.block_4.items[1]') }}
         </a>
         <a class="item" href="">
           <img src="@/assets/img/pdf.svg" />
-          Отчет о корпоративной ответственности за 2019-2020 гг
+          {{ $t('company.block_4.items[2]') }}
         </a>
       </div>
     </div>
