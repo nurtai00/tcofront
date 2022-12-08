@@ -12,32 +12,32 @@ export default {
         {
           img: require('@/assets/img/career/news1.png'),
           tag: {
-            text: '#Экономика',
+            text: this.$t('home.block_2.items[0].tag'), // '#Экономика',
             color: '#D01D12',
           },
-          date: '03/05/2022',
-          title: 'Тенгизшевройл объявляет о Хакатоне',
-          text: 'ТОО «Тенгизшевройл»  в поисках лучшего цифрового продукта объявляет о Хакатоне, который состоится...',
+          date: this.$t('home.block_2.items[0].date'),
+          title: this.$t('home.block_2.items[0].title'),
+          text: this.$t('home.block_2.items[0].text'),
         },
         {
           img: require('@/assets/img/career/news2.png'),
           tag: {
-            text: '#Технология',
+            text: this.$t('home.block_2.items[1].tag'),
             color: '#0DA9D7',
           },
-          date: '03/05/2022',
-          title: 'Вниманию пользователей Интернет',
-          text: 'Тенгизшевройл (ТШО) стало известно о распространяемой в социальных сетях ложной инфор...',
+          date: this.$t('home.block_2.items[1].date'),
+          title: this.$t('home.block_2.items[1].title'),
+          text: this.$t('home.block_2.items[1].text'),
         },
         {
           img: require('@/assets/img/career/news3.png'),
           tag: {
-            text: '#Окружающая среда',
+            text: this.$t('home.block_2.items[2].tag'),
             color: '#EDA210',
           },
-          date: '03/05/2022',
-          title: 'Тенгизшевройл продолжит оказывать ...',
-          text: 'Генеральный директор ТОО «Тенгизшевройл» (ТШО) Кевин Лайон и Аким Жылыойского района Атырауско...',
+          date: this.$t('home.block_2.items[2].date'),
+          title: this.$t('home.block_2.items[2].title'),
+          text: this.$t('home.block_2.items[2].text'),
         },
       ],
     }
@@ -50,12 +50,14 @@ export default {
     <section :class="white ? 'section' : 'section--blue'">
       <div class="container">
         <div class="news_title">
-          <AtomsTitle class="atoms_title" small> Новости ТШО </AtomsTitle>
-          <nuxt-link to="/news">Все Новости ТШО</nuxt-link>
+          <AtomsTitle class="atoms_title" small>{{
+            $t('home.block_2.title')
+          }}</AtomsTitle>
+          <nuxt-link to="/news">{{ $t('home.block_2.all_title') }}</nuxt-link>
         </div>
         <AtomsTag
           :tag="{
-            text: 'Карьера',
+            text: $t('home.block_2.tag_1'),
             selected: false,
           }"
           class="atoms_tag"

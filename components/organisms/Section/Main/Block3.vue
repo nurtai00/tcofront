@@ -10,28 +10,28 @@ export default {}
           <div class="lines">
             <div class="section__title">
               <AtomsTitle class="atoms_title mb20" small>
-                Отчет и цифры за 2022 г.
+                {{ $t('home.block_3.title') }}
               </AtomsTitle>
-              <a href="/projects#pbr">Подробнее</a>
+              <a href="/projects#pbr">{{ $t('home.block_3.link') }}</a>
             </div>
             <div class="line">
               <div>
-                <span> 3,8 млрд (в долларах США) </span>
-                <p>Затраты на товары и услуги казахстанских производителей</p>
+                <span> {{ $t('home.block_3.items[0].title') }} </span>
+                <p>{{ $t('home.block_3.items[0].text') }}</p>
               </div>
               <img src="@/assets/img/document-2.svg" alt="" />
             </div>
             <div class="line">
               <div>
-                <span> 10,9 млрд (в долларах США) </span>
-                <p>Прямые выплаты Республике Казахстан</p>
+                <span> {{ $t('home.block_3.items[1].title') }} </span>
+                <p>{{ $t('home.block_3.items[1].text') }}</p>
               </div>
               <img src="@/assets/img/barrels-2.svg" alt="" />
             </div>
             <div class="line">
               <div>
-                <span> 21,5 млн (в тоннах) </span>
-                <p>Производство сырой нефти</p>
+                <span>{{ $t('home.block_3.items[2].title') }}</span>
+                <p>{{ $t('home.block_3.items[2].text') }}</p>
               </div>
               <img src="@/assets/img/oil-pump-2.svg" alt="" />
             </div>
@@ -39,16 +39,14 @@ export default {}
           <div class="card">
             <img src="@/assets/img/Rectangle 27.png" />
             <p>
-              ПБР-ПУУД, на котором уже зайдествовано более 35 тысяч
-              казахстанцев, привнесет значительный вклад в развитие Республки
-              Казахстан в следующие несколько лет.
+              {{ $t('home.block_3.right.text') }}
             </p>
             <a href="/">
-              Узнайте больше о вкладе ПБР-ПУУД в экономику Казахстана
+              {{ $t('home.block_3.right.link_1') }}
             </a>
             <Nuxt-link to="" class="file">
               <img src="@/assets/img/pdf.svg" />
-              Отчет о корпоративной ответственности за 2019-2020 гг
+              {{ $t('home.block_3.right.link_2') }}
             </Nuxt-link>
           </div>
         </div>

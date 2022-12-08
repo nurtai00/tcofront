@@ -1,0 +1,74 @@
+{
+  "block_11": {
+    "title": "Tengizchevroil Announces 2021 Results",
+    "text": "In 2021, TCO remained the largest contributor to the national economy, with over $9 billion in direct payments to the Republic of Kazakhstan",
+    "button": "Read more",
+    "date": "22 February 2022"
+  },
+  "block_12": {
+    "title": "Ministry of Ecology: I believe that perfection knows no limits",
+    "text": "Minister of Ecology, Geology and Natural Resources of the Republic of Kazakhstan, Serikkali Brekeshev, visited the Tengiz field and got acquainted with Tengizchevroil’s (TCO) environmental protection measures.",
+    "button": "Read more",
+    "date": "28 February 2022"
+  },
+  "block_13": {
+    "title": "A 3,000-seat central stadium was opened in Kulsary",
+    "text": "A new central stadium for 3,000 seats was opened in honor of celebration of Kulsary city day, constructed by TCO within “Egilik” voluntary social and infrastructure program.",
+    "button": "Read more",
+    "date": "26 September 2022"
+  },
+  "block_2": {
+    "title": "TCO News",
+    "all_title": "All TCO News",
+    "tag_1": "Production",
+    "items": [
+      {
+        "title": "Oil and gas companies drive diversity and in...",
+        "text": "The forum was organized to promote gender diversity and inclusion in the still male-dominated oil and gas industry, t...",
+        "tag": "#Production",
+        "date": "27/10/2022"
+      },
+      {
+        "title": "30% of middle managers at Tengizchevroil ar...",
+        "text": "On the sidelines of the World Petroleum Council Youth Forum in Almaty, oil and gas industry professionals discu ...",
+        "tag": "#Career",
+        "date": "04/10/2022"
+      },
+      {
+        "title": "Tengizchevroil participated in KIOGE-2022",
+        "text": "The 28th International Oil and Gas Exhibition and Conference, KIOGE-22 has been launched in Almaty. The to...",
+        "tag": "#TCO",
+        "date": "28/09/2022"
+      }
+    ]
+  },
+  "block_3": {
+    "title": "Report and figures for 2022",
+    "link": "More",
+    "right": {
+      "text": "With over 35 000 workers engaged, FGP-WPMP project will make significant contributions to the Republic of Kazakhstan in many years to come.",
+      "link_1": "Learn how FGP-WPMP impacts Kazakhstani economy",
+      "link_2": "Corporate Responsibility Report 2019-2020"
+    },
+    "items": [
+      {
+        "title": "3,8 billion (US dollars)",
+        "text": "Kazakhstani Goods & Services spent"
+      },
+      {
+        "title": "10,9 billion (US dollars)",
+        "text": "Direct payments to Kazakhstan"
+      },
+      {
+        "title": "21,5 million (tonnes)",
+        "text": "Crude production"
+      }
+    ]
+  },
+  "block_4": {
+    "title": "Kazakhstani content",
+    "subtitle": "At TCO we search, identify and develop local suppliers for world-class projects like Tengiz",
+    "text": "TCO operates one of the largest and technologically challenging oilfields in the world. Safety and reliability of exploration and production operations in Tengiz are the key to success in fueling Kazakhstani’s economic progress and fulfilling global energy demand.",
+    "button": "Read more"
+  }
+}

@@ -7,9 +7,9 @@ export default {}
     <section style="padding: 0">
       <div class="double-block" style="justify-content: flex-end">
         <div class="tco__partners-wrapper">
-          <time>16 февраля 2020</time>
-          <h1>В Атырау открыл двери новый детский сад на 280 мест</h1>
-          <p>
+          <time>{{ $t('home.block_11.date') }}</time>
+          <h1 v-text="$t('home.block_11.title')"></h1>
+          <p v-text="$t('home.block_11.text')">
             В селе Ракуша близ города Атырау введен в эксплуатацию новый детский
             сад на 280 мест, построенный ТОО «Тенгизшевройл» в рамках своей
             добровольной программы социальных инфраструктурных проектов

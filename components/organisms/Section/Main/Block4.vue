@@ -1,12 +1,18 @@
 <script>
-export default {}
+export default {
+  methods: {
+    nav() {
+      this.$router.push('/kazakhstani-content')
+    },
+  },
+}
 </script>
 
 <template>
   <div>
     <section class="section--blue">
       <div class="container">
-        <AtomsTitle small>Казахстанское содержание</AtomsTitle>
+        <AtomsTitle small>{{ $t('home.block_4.title') }}</AtomsTitle>
       </div>
       <div class="double-block">
         <div class="tco__partners-wrapper tco__maintenance">
@@ -14,19 +20,13 @@ export default {}
         </div>
         <div class="tco__partners-wrapper tco__maintenance">
           <h2>
-            В ТШО мы ищем, находим и развиваем местных поставщиков для проектов
-            мирового уровня, таких как Тенгиз.
+            {{ $t('home.block_4.subtitle') }}
           </h2>
           <p>
-            ТШО осуществляет свою деятельность на одном из самых крупных и
-            технологически сложных месторождений нефти в мире. Обеспечение
-            безопасности и надежности операций по разведке и добыче на Тенгизе
-            являются ключевыми факторами, способствующими успешному развитию
-            экономики Казахстана и удовлетворению мирового спроса на
-            энергоносители.
+            {{ $t('home.block_4.text') }}
           </p>
-          <AtomsButton>
-            Читать дальше
+          <AtomsButton @click="nav">
+            {{ $t('home.block_4.button') }}
             <img
               src="@/assets/icons/chevron-right.svg"
               alt="chevron-right"
