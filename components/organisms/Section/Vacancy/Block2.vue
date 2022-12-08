@@ -1,20 +1,12 @@
 <template>
   <div class="vacancy">
     <div class="container">
-      <AtomsHeading type="h3"> Мошенничество при найме на работу </AtomsHeading>
+      <AtomsHeading type="h3"> {{ $t('vacancy.block_2.title') }} </AtomsHeading>
       <div class="content">
         <div>
-          <p>
-            Мошенничество при найме на работу может быть в виде различных
-            информационных ресурсов таких, как электронные сообщения, SMS
-            сообщения или письма, поступающие от имени лиц/групп, которые якобы
-            представляют компанию «Тенгизшевройл». Не отправляйте деньги и не
-            передавайте личные данные лицам, предлагающим работу в компании
-            «Тенгизшевройл». Если вы подали заявку на вакансию через сайт
-            компании ТШО, мы будем располагать всей необходимой информацией.
-          </p>
+          <p v-html="$t('vacancy.block_2.text')"></p>
           <button @click="showModal">
-            <p>Подробнее</p>
+            <p>{{ $t('vacancy.block_2.more') }}</p>
             <svg
               width="24"
               height="24"
@@ -91,7 +83,6 @@ export default {
   h3 {
     text-align: center;
     @include tablet() {
-      width: max-content;
     }
   }
 }

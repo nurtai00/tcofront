@@ -1,12 +1,16 @@
 <template>
   <div class="department">
     <div class="mobile_info">
-      <AtomsHeading type="h3" color="text"> Департаменты ТШО </AtomsHeading>
+      <AtomsHeading type="h3" color="text">
+        {{ $t('vacancy.block_3.title') }}
+      </AtomsHeading>
       <img src="@/assets/img/vacancy/block4.jpg" />
     </div>
     <div class="container">
       <div class="department__info">
-        <AtomsHeading type="h3" color="text"> Департаменты ТШО </AtomsHeading>
+        <AtomsHeading type="h3" color="text">
+          {{ $t('vacancy.block_3.title') }}
+        </AtomsHeading>
         <img src="@/assets/img/vacancy/block4.jpg" />
       </div>
       <div class="department__accordion">
@@ -16,40 +20,52 @@
         >
           <template #title>
             <AtomsHeading type="h4" color="text">
-              Управление скважинами</AtomsHeading
+              {{ $t('vacancy.block_3.list[0].title') }}</AtomsHeading
             >
           </template>
           <template #content>
             <div class="instruction">
               <div class="block">
-                <p class="title">Здесь будет мини-описание</p>
-                <p class="subtitle">
-                  Здесь будет мини-описание Здесь будет мини-описание Здесь
-                  будет мини-описание Здесь будет мини-описание Здесь будет
-                  мини-описание Здесь будет мини-описание
-                </p>
+                <p class="title" v-text="$t('vacancy.block_3.list[0].p_1')"></p>
+                <p
+                  class="subtitle"
+                  v-text="$t('vacancy.block_3.list[0].p_11')"
+                ></p>
               </div>
               <div class="instruction__experience block">
-                <p class="title">Требуемый опыт работы</p>
-                <p class="subtitle">От 3 до 6 лет</p>
-                <p class="subtitle">Полная занятость</p>
-                <p class="subtitle">Вахтовый метод работы</p>
+                <p class="title" v-text="$t('vacancy.block_3.list[0].p_2')"></p>
+                <p
+                  class="subtitle"
+                  v-text="$t('vacancy.block_3.list[0].p_21')"
+                ></p>
+                <p
+                  class="subtitle"
+                  v-text="$t('vacancy.block_3.list[0].p_22')"
+                ></p>
+                <p
+                  class="subtitle"
+                  v-text="$t('vacancy.block_3.list[0].p_23')"
+                ></p>
               </div>
             </div>
             <div class="respond">
-              <AtomsHeading type="h4" color="text"> Откликнуться </AtomsHeading>
+              <AtomsHeading
+                type="h4"
+                color="text"
+                v-text="$t('vacancy.block_3.list[0].subtitle')"
+              >
+              </AtomsHeading>
               <div class="divider" />
-              <p class="respond__description">
-                Если вас заинтересовала вакансия, приложите и отправьте резюме с
-                указанием интересующей вас сферы деятельности и ожидаемой
-                заработной платы
-              </p>
+              <p
+                class="respond__description"
+                v-text="$t('vacancy.block_3.list[0].subtitle_text')"
+              ></p>
               <form class="respond__form">
                 <AtomsInput
                   v-model="formData.name"
                   rules="required|min:3"
                   outlined
-                  placeholder="Ваше имя"
+                  :placeholder="$t('vacancy.block_3.list[0].name')"
                   @error="setFormErrors"
                 />
                 <AtomsInput
@@ -57,7 +73,7 @@
                   rules="required|tel"
                   :mask="'+7 (###) ###-##-##'"
                   outlined
-                  placeholder="Номер телефона"
+                  :placeholder="$t('vacancy.block_3.list[0].phone')"
                   @error="setFormErrors"
                 />
                 <AtomsInput
@@ -66,7 +82,7 @@
                   name="file"
                   outlined
                   type="file"
-                  placeholder="Прикрепить резюме"
+                  :placeholder="$t('vacancy.block_3.list[0].resume')"
                   rules="required|file"
                   @change="onUploadFileHandler"
                 >
@@ -94,11 +110,10 @@
                   </template>
                 </AtomsInput>
                 <div class="action">
-                  <p>
-                    Нажимая кнопку "Отправить", вы принимаете условия Политики
-                    конфиденциальности и обработки персональных данных
-                  </p>
-                  <AtomsButton> Send </AtomsButton>
+                  <p v-text="$t('vacancy.block_3.list[0].label')"></p>
+                  <AtomsButton v-text="$t('vacancy.block_3.list[0].button')">
+                    Send
+                  </AtomsButton>
                 </div>
               </form>
             </div>
@@ -107,23 +122,29 @@
         <AtomsAccordion>
           <template #title>
             <AtomsHeading type="h4" color="text">
-              Инженерно-техническое обеспечение
+              {{ $t('vacancy.block_3.list[1].title') }}
             </AtomsHeading>
           </template>
         </AtomsAccordion>
         <AtomsAccordion>
           <template #title>
-            <AtomsHeading type="h4" color="text">Финансы</AtomsHeading>
+            <AtomsHeading type="h4" color="text">{{
+              $t('vacancy.block_3.list[2].title')
+            }}</AtomsHeading>
           </template>
         </AtomsAccordion>
         <AtomsAccordion>
           <template #title>
-            <AtomsHeading type="h4" color="text">Отдел кадров</AtomsHeading>
+            <AtomsHeading type="h4" color="text">{{
+              $t('vacancy.block_3.list[3].title')
+            }}</AtomsHeading>
           </template>
         </AtomsAccordion>
         <AtomsAccordion>
           <template #title>
-            <AtomsHeading type="h4" color="text">Отдел кадров</AtomsHeading>
+            <AtomsHeading type="h4" color="text">{{
+              $t('vacancy.block_3.list[4].title')
+            }}</AtomsHeading>
           </template>
         </AtomsAccordion>
       </div>

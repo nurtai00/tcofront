@@ -187,6 +187,7 @@ export default {
           products: require('./locales/Products/kk.json'),
           header: require('./locales/header/kk.json'),
           project: require('./locales/project/kk.json'),
+          vacancy: require('./locales/vacancy/kk.json'),
         },
         ru: {
           suistainability: require('./locales/Suistainability/ru.json'),
@@ -199,6 +200,7 @@ export default {
           products: require('./locales/Products/ru.json'),
           header: require('./locales/header/ru.json'),
           project: require('./locales/project/ru.json'),
+          vacancy: require('./locales/vacancy/ru.json'),
         },
         en: {
           suistainability: require('./locales/Suistainability/en.json'),
@@ -211,6 +213,7 @@ export default {
           products: require('./locales/Products/en.json'),
           header: require('./locales/header/en.json'),
           project: require('./locales/project/en.json'),
+          vacancy: require('./locales/vacancy/en.json'),
         },
       },
       loadLanguagesAsync: true,
