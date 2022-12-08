@@ -5,12 +5,8 @@
         {{ data.title }}
       </AtomsHeading>
       <div v-if="data.description" class="slide__description">
-        <div
-          v-for="(text, key) in data.description"
-          :key="key"
-          class="slide__description_item"
-        >
-          {{ text }}
+        <div v-text="data.description" class="slide__description_item">
+          {{ data.description }}
         </div>
       </div>
       <template v-else>

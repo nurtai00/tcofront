@@ -186,6 +186,7 @@ export default {
           contact: require('./locales/Contact/kk.json'),
           products: require('./locales/Products/kk.json'),
           header: require('./locales/header/kk.json'),
+          project: require('./locales/project/kk.json'),
           privacy: require('./locales/privacy/kk.json'),
         },
         ru: {
@@ -198,6 +199,7 @@ export default {
           contact: require('./locales/Contact/ru.json'),
           products: require('./locales/Products/ru.json'),
           header: require('./locales/header/ru.json'),
+          project: require('./locales/project/ru.json'),
           privacy: require('./locales/privacy/en.json'),
         },
         en: {
@@ -210,6 +212,7 @@ export default {
           contact: require('./locales/Contact/en.json'),
           products: require('./locales/Products/en.json'),
           header: require('./locales/header/en.json'),
+          project: require('./locales/project/en.json'),
           privacy: require('./locales/privacy/en.json'),
         },
       },
