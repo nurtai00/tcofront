@@ -2,7 +2,7 @@
   <div class="about_career">
     <div class="container">
       <AtomsHeading type="h3" color="main">
-        Стратегическое планирование персонала
+        {{ $t('career.block3_header') }}
       </AtomsHeading>
       <div class="statistic">
         <div
@@ -27,22 +27,22 @@ export default {
         {
           img: require('@/assets/icons/statistic1.svg'),
           title: '50%',
-          text: 'Доля штатных казахстанских работников в 1993 г.',
+          text: this.$t('career.block3_static1'),
         },
         {
           img: require('@/assets/icons/statistic2.svg'),
           title: '94,7%',
-          text: 'Доля штатных казахстанских работников, без учета персонала ПБР-ПУУД',
+          text: this.$t('career.block3_static2'),
         },
         {
           img: require('@/assets/icons/statistic3.svg'),
           title: '89,9%',
-          text: 'Общая доля казахстанских работников на данный момент',
+          text: this.$t('career.block3_static3'),
         },
         {
           img: require('@/assets/icons/statistic4.svg'),
           title: '76,6%',
-          text: 'Доля казахстанцев на руководящих постах от общего числа руководящего состава',
+          text: this.$t('career.block3_static4'),
         },
       ],
     }

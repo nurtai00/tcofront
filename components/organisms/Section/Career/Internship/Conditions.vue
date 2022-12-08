@@ -1,13 +1,12 @@
 <template>
   <div class="conditions container">
     <AtomsHeading type="h3" color="main">
-      Обязательные условия для прохождения учебной практики в ТОО
-      «ТЕНГИЗШЕВРОЙЛ»
+      {{ $t('career.conditions_header') }}
     </AtomsHeading>
     <AtomsTag
       class="tag"
       :tag="{
-        text: 'Проверить на соответствие критериям',
+        text: $t('career.conditions_tag'),
         selected: true,
       }"
       @click="showMod"
@@ -21,16 +20,15 @@
     </div>
     <div class="conditions_small_info">
       <p>
-        *Пожалуйста, ознакомьтесь с критериями для прохождения онлайн практики и
-        предоставьте необходимые документы. См. во вложениях.
+        {{ $t('career.conditions_info')[0] }}
       </p>
       <p>
-        Все документы необходимо выслать на эл. адрес –
+        {{ $t('career.conditions_info')[1] }}
         <span>tcointern@tengizchevroil.com</span>
       </p>
       <ul>
-        <li>Заявление должно быть подписано</li>
-        <li>Транскрипт- официальная версия с печатью и подписью</li>
+        <li>{{ $t('career.conditions_info')[2] }}</li>
+        <li>{{ $t('career.conditions_info')[3] }}</li>
       </ul>
     </div>
   </div>
@@ -43,21 +41,20 @@ export default {
       conditions: [
         {
           id: '01',
-          title:
-            'Критерии кандидата для получения возможности прохождения учебной практики',
-          text: '<ol><li>Гражданин Республики Казахстан, достигший 18-ти лет</li><li>Студент ВУЗа (Республики Казахстан, Российской Федерации, <br/>дальнего зарубежья) окончивший 2-ой / 3-ий курс очной формы обучения;</li><li>Средний балл успеваемости (GPA) в транскрипте  последней сессии  академического года должен составлять не ниже 3-х баллов из 4-х.</li></ol>',
+          title: this.$t('career.conditions_title')[0],
+          text: `<ol><li>${this.$t('career.conditions_list')[0][0]}</li><li>${this.$t('career.conditions_list')[0][1]} <br/>${this.$t('career.conditions_list')[0][2]}</li><li>${this.$t('career.conditions_list')[0][3]}</li></ol>`,
           modal: 'Default',
         },
         {
           id: '02',
-          title: 'Необходимые документы кандидата–сканированные копии',
-          text: '<ol><li>Заявление по форме – (см. во вложении)</li><li>Удостоверение личности / паспорт – электронная сканированная версия;</li><li>Подтверждение о месте регистрации (выписка с eGoV)</li><li>Транскрипт с оценками со средним баллом GPA за последний академический год, включая последнюю сессию;</li><li>Справка о прохождении медосмотра по форме №075 – Предоставить после получения уведомления ТШО о принятии на учебную практику– срок прохождения не позже 2 недель до начала практики.</li></ol>',
+          title: this.$t('career.conditions_title')[1],
+          text: `<ol><li>${this.$t('career.conditions_list')[1][0]}</li><li>${this.$t('career.conditions_list')[1][1]}</li><li>${this.$t('career.conditions_list')[1][2]}</li><li>${this.$t('career.conditions_list')[1][3]}</li><li>${this.$t('career.conditions_list')[1][4]}</li></ol>`,
           modal: 'Default',
         },
         {
           id: '03',
-          title: 'Необходимое оборудование для прохождения онлайн практики:',
-          text: '<ol><li>Персональный компьютер с официальной версией Windows 10, с последними обновлениями.</li> <li>Высокая скорость интернета</li> <li>Смартфон (Android, IOS)</li></ol>',
+          title: this.$t('career.conditions_title')[2],
+          text: `<ol><li>${this.$t('career.conditions_list')[2][0]}</li> <li>${this.$t('career.conditions_list')[2][1]}</li> <li>${this.$t('career.conditions_list')[2][2]}</li></ol>`,
           modal: 'Default',
         },
       ],

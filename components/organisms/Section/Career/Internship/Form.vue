@@ -3,19 +3,17 @@
     <div class="mobile">
       <img src="@/assets/img/career/programm_mobile.png" alt="" />
       <AtomsHeading type="h3" color="white">
-        ФОРМА СОГЛАСИЯ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ
+        {{ $t('career.form_header') }}
       </AtomsHeading>
     </div>
     <div class="container">
       <div class="form_content">
         <AtomsHeading type="h3" color="main">
-          ФОРМА СОГЛАСИЯ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ
+          {{ $t('career.form_header') }}
         </AtomsHeading>
         <div>
           <p>
-            Настоящим я даю согласие на обработку уполномоченным лицам ТШО моих
-            персональных данных и справки о прохождении мед.осмотра по форме
-            №086 , связанных с целью участия в программе учебной практики ТШО.
+            {{ $t('career.form_description') }}
           </p>
           <AtomsCheckbox
             id="checked"
@@ -27,14 +25,10 @@
               }
             "
           >
-            Я осведомлен(а), что мои персональные данные будут уничтожены по
-            умолчанию через 6 месяцев с момента подачи заявки на учебную
-            практику. Настоящим я подтверждаю, что ознакомился(лась) с Формой
-            согласия на обработку персональных данных ТОО "Тенгизшевройл" и
-            соглашаюсь со всеми его условиями.
+            {{ $t('career.form_agreement') }}
           </AtomsCheckbox>
           <AtomsButton :disabled="disabled">
-            Сохранить и продолжить
+            {{ $t('career.form_save') }}
           </AtomsButton>
         </div>
       </div>

@@ -2,10 +2,10 @@
   <div class="career">
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">Главная</AtomsBreadOption>
-        <AtomsBreadOption to="/career">Карьера</AtomsBreadOption>
+        <AtomsBreadOption to="/">{{ $t('career.main') }}</AtomsBreadOption>
+        <AtomsBreadOption to="/career">{{ $t('career.career') }}</AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="mb20"> Карьера </AtomsTitle>
+      <AtomsTitle class="mb20"> {{ $t('career.career') }} </AtomsTitle>
       <AtomsTag v-for="(tag, idx) in tags" :key="idx" :tag="tag" />
     </div>
     <OrganismsSectionCareerBlock1 />
@@ -26,21 +26,21 @@ export default {
     return {
       tags: [
         {
-          text: 'Вакансии',
-          url: '/vacancy',
+          text: this.$t('career.vacancy'),
+          url: this.localePath('/vacancy'),
         },
         {
-          text: 'Стажировка В ТШО',
-          url: '/career/internship',
+          text: this.$t('career.internship'),
+          url: this.localePath('/career/internship'),
         },
       ],
       content1: {
-        title: 'Программа адаптации',
-        text: '<p>Программа адаптации ТШО предназначена для ускоренной интеграции новых сотрудников в новую среду и обеспечения их успеха в новой роли. Программа представляет собой обзор всей необходимой информации об организации, требованиях к безопасности и соответствию, политиках и процедурах, корпоративной культуре, ценностях, управлении деятельностью работников и ожиданиях в отношении поведения.</p>',
+        title: this.$t('career.content1'),
+        text: `<p>${this.$t('career.content1_description')}</p>'`,
       },
       content2: {
-        title: 'Постройте свое будущее с TCO',
-        text: '<ul type="disc"><li>Один из крупнейших работодателей в Казахстане на протяжении 25 лет</li><li>Опыт работы в разнообразной и международной <br/> среде</li><li>Стабильность</li><li>Сильная приверженность безопасности</li><li>Конкурентоспособный пакет и льготы</li><li>Вознаграждение по результатам работы</li><li>Возможности для развития, роста и построения <br/> карьеры</li></ul>',
+        title: this.$t('career.content2'),
+        text: `<ul type="disc"><li>${this.$t('career.content2_description')[0]}</li><li>${this.$t('career.content2_description')[1]} <br/> ${this.$t('career.content2_description')[2]}</li><li>${this.$t('career.content2_description')[3]}</li><li>${this.$t('career.content2_description')[4]}</li><li>${this.$t('career.content2_description')[5]}</li><li>${this.$t('career.content2_description')[6]}</li><li>${this.$t('career.content2_description')[7]} <br/> ${this.$t('career.content2_description')[8]}</li></ul>`,
       },
     }
   },
