@@ -2,7 +2,7 @@
   <div>
     <header class="container">
       <NuxtLink to="/" class="logo">
-        <img src="@/assets/img/logo.svg" />
+        <img src="@/assets/img/logo.png" />
       </NuxtLink>
       <MoleculesSearchBar />
       <div class="lang">
@@ -17,7 +17,7 @@
     </header>
     <div class="mobile-nav">
       <NuxtLink to="/" class="logo">
-        <img src="@/assets/img/logo.svg" />
+        <img src="@/assets/img/logo.png" />
       </NuxtLink>
       <MoleculesSelect
         :model="defaultItem"
@@ -27,7 +27,7 @@
         class="lang_btn"
         @change="selectLang"
       />
-      <img src="@/assets/icons/search.svg" class="search_btn" />
+      <img src="@/assets/icons/search.png" class="search_btn" />
       <div
         class="menu_btn"
         :class="{ burger_close: show_nav }"

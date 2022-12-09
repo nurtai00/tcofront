@@ -3,9 +3,13 @@
     <div class="container">
       <MoleculesBreadcrumbs class="operations__breadcrumbs">
         <AtomsBreadOption to="/">{{ $t('operation.home') }}</AtomsBreadOption>
-        <AtomsBreadOption to="/operations">{{ $t('operation.operatinos') }}</AtomsBreadOption>
+        <AtomsBreadOption to="/operations">{{
+          $t('operation.operatinos')
+        }}</AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="operations__title">{{ $t('operation.operatinos') }}</AtomsTitle>
+      <AtomsTitle class="operations__title">{{
+        $t('operation.operatinos')
+      }}</AtomsTitle>
       <div class="operations__tags">
         <AtomsTag
           v-for="(tag, index) of tags"
@@ -103,27 +107,33 @@ export default {
         {
           title: this.$t('operation.sideSvg')[0].name,
           description: this.$t('operation.sideSvg')[0].description,
-          icon: 'production',
+          icon: require('@/assets/icons/production.png'),
         },
         {
           title: this.$t('operation.sideSvg')[1].name,
           description: this.$t('operation.sideSvg')[1].description,
-          icon: 'production_security',
+          icon: require('@/assets/icons/production_security.png'),
         },
         {
           title: this.$t('operation.sideSvg')[2].name,
-          icon: 'process-control',
+          icon: require('@/assets/icons/process-control.png'),
         },
       ],
       textSlide: [
         {
           title: this.$t('operation.textSlide')[0].title,
-          description: [this.$t('operation.textSlide')[0].description[0], this.$t('operation.textSlide')[0].description[1]],
+          description: [
+            this.$t('operation.textSlide')[0].description[0],
+            this.$t('operation.textSlide')[0].description[1],
+          ],
           image: 'operation/operations1.png',
         },
         {
           title: this.$t('operation.textSlide')[1].title,
-          description: [this.$t('operation.textSlide')[1].description[0], this.$t('operation.textSlide')[1].description[1]],
+          description: [
+            this.$t('operation.textSlide')[1].description[0],
+            this.$t('operation.textSlide')[1].description[1],
+          ],
           image: 'operation/operations2.png',
         },
         {
@@ -144,7 +154,7 @@ export default {
           image: 'operation/operations5.png',
           link: () => {
             this.$store.commit('side/open', {
-              description: this.$t('operation.textSlide2')[0].link
+              description: this.$t('operation.textSlide2')[0].link,
             })
           },
           background: true,

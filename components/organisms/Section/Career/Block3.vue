@@ -25,22 +25,22 @@ export default {
     return {
       statistics: [
         {
-          img: require('@/assets/icons/statistic1.svg'),
+          img: require('@/assets/icons/statistic1.png'),
           title: '50%',
           text: this.$t('career.block3_static1'),
         },
         {
-          img: require('@/assets/icons/statistic2.svg'),
+          img: require('@/assets/icons/statistic2.png'),
           title: '94,7%',
           text: this.$t('career.block3_static2'),
         },
         {
-          img: require('@/assets/icons/statistic3.svg'),
+          img: require('@/assets/icons/statistic3.png'),
           title: '89,9%',
           text: this.$t('career.block3_static3'),
         },
         {
-          img: require('@/assets/icons/statistic4.svg'),
+          img: require('@/assets/icons/statistic4.png'),
           title: '76,6%',
           text: this.$t('career.block3_static4'),
         },

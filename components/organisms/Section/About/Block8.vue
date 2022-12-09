@@ -12,7 +12,7 @@
             <p v-text="slide.text"></p>
             <div v-if="slide.pdf">
               <img
-                src="@/assets/icons/pdf.svg"
+                src="@/assets/icons/pdf.png"
                 alt="pdf"
                 width="30"
                 height="40"
@@ -28,14 +28,14 @@
     <div class="main_b8_actions">
       <img
         class="main_b8_actions_prev"
-        src="../../../../assets/icons/small-chevron-left.svg"
+        src="../../../../assets/icons/small-chevron-left.png"
         alt="small-chevron-left"
         width="44px"
         height="44px"
       />
       <img
         class="main_b8_actions_next"
-        src="../../../../assets/icons/small-chevron-right.svg"
+        src="../../../../assets/icons/small-chevron-right.png"
         alt="small-chevron-right"
         width="44px"
         height="44px"

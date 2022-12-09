@@ -28,12 +28,12 @@
     <div class="main_b4_actions">
       <img
         class="main_b4_actions_prev"
-        src="../../../../assets/icons/small-chevron-left.svg"
+        src="../../../../assets/icons/small-chevron-left.png"
         alt="small-chevron-left"
       />
       <img
         class="main_b4_actions_next"
-        src="../../../../assets/icons/small-chevron-right.svg"
+        src="../../../../assets/icons/small-chevron-right.png"
         alt="small-chevron-right"
       />
     </div>

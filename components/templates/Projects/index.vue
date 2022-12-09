@@ -2,16 +2,16 @@
   <div class="projects">
     <div class="container">
       <MoleculesBreadcrumbs class="projects__breadcrumbs">
-        <AtomsBreadOption to="/">{{
-          $t('project.breadcrumbs_1[0]')
-        }}</AtomsBreadOption>
-        <AtomsBreadOption to="/projects">{{
-          $t('project.breadcrumbs_1[1]')
-        }}</AtomsBreadOption>
+        <AtomsBreadOption to="/">
+          {{ $t('project.breadcrumbs_1[0]') }}
+        </AtomsBreadOption>
+        <AtomsBreadOption to="/projects">
+          {{ $t('project.breadcrumbs_1[1]') }}
+        </AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="projects__title">{{
-        $t('project.breadcrumbs_1[1]')
-      }}</AtomsTitle>
+      <AtomsTitle class="projects__title">
+        {{ $t('project.breadcrumbs_1[1]') }}
+      </AtomsTitle>
       <div class="projects__tags">
         <AtomsTag
           v-for="(tag, index) of tags"
@@ -67,9 +67,9 @@
       <div class="container">
         <div class="projects__protocols">
           <div class="projects__protocols_header">
-            <AtomsTitle class="projects__title">{{
-              $t('project.protocols.title')
-            }}</AtomsTitle>
+            <AtomsTitle class="projects__title">
+              {{ $t('project.protocols.title') }}
+            </AtomsTitle>
             <nuxt-link :to="localePath('/projects/protocols')" class="more">
               {{ $t('project.protocols.all') }}
             </nuxt-link>
@@ -122,7 +122,7 @@ export default {
       sideSvg: [
         {
           title: this.$t('project.block_1.title'),
-          icon: 'production',
+          icon: require('@/assets/icons/production.png'),
         },
       ],
       cards1: [

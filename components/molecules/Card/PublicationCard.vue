@@ -8,7 +8,7 @@
     <div>
       <img
         loading="lazy"
-        src="@/assets/icons/pdf.svg"
+        src="@/assets/icons/pdf.png"
         alt="pdf"
         width="21"
         height="28"

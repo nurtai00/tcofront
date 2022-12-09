@@ -50,7 +50,7 @@ export default {
         {
           id: 1,
           title: this.$t('suistainability.impactPopulation.cards.card1'),
-          imgSrc: 'block1-1.svg',
+          imgSrc: 'block1-1.png',
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card1'
           ),
@@ -58,7 +58,7 @@ export default {
         {
           id: 2,
           title: this.$t('suistainability.impactPopulation.cards.card2'),
-          imgSrc: 'block1-2.svg',
+          imgSrc: 'block1-2.png',
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card2'
           ),
@@ -66,7 +66,7 @@ export default {
         {
           id: 3,
           title: this.$t('suistainability.impactPopulation.cards.card3'),
-          imgSrc: 'block1-3.svg',
+          imgSrc: 'block1-3.png',
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card3'
           ),
@@ -74,7 +74,7 @@ export default {
         {
           id: 4,
           title: this.$t('suistainability.impactPopulation.cards.card4'),
-          imgSrc: 'block1-4.svg',
+          imgSrc: 'block1-4.png',
           popupText: '',
         },
       ],

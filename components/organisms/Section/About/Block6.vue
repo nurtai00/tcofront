@@ -6,15 +6,15 @@
       </AtomsTitle>
       <div class="tco__files">
         <a class="item" href="">
-          <img src="@/assets/img/pdf.svg" />
+          <img :width="95" src="@/assets/img/pdf.png" />
           {{ $t('company.block_4.items[0]') }}
         </a>
         <a class="item" href="">
-          <img src="@/assets/img/pdf.svg" />
+          <img :width="55" src="@/assets/img/pdf.png" />
           {{ $t('company.block_4.items[1]') }}
         </a>
         <a class="item" href="">
-          <img src="@/assets/img/pdf.svg" />
+          <img :width="55" src="@/assets/img/pdf.png" />
           {{ $t('company.block_4.items[2]') }}
         </a>
       </div>
@@ -77,7 +77,7 @@ export default {
       }
       color: #00b0f0;
       img {
-        width: 176px;
+        width: 120px;
         height: 164px;
         @media (orientation: portrait) {
           width: 50px;

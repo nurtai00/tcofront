@@ -9,7 +9,8 @@
           v-for="(text, key) in data.description"
           :key="key"
           class="slide__description_item"
-        >{{ text }}
+        >
+          {{ text }}
         </div>
       </div>
       <template v-else>
@@ -17,8 +18,20 @@
       </template>
       <template v-if="data.description">
         <div v-if="data.description.length > 1" class="slide__arrow">
-          <i class="icon-arrowDown" @click="onSlide(false)" />
-          <i class="icon-arrowDown" @click="onSlide(true)" />
+          <img
+            role="button"
+            alt="arrow"
+            class="arrow__left"
+            src="@/assets/icons/arrowDown.png"
+            @click="onSlide(false)"
+          />
+          <img
+            role="button"
+            alt="arrow"
+            class="arrow__right"
+            src="@/assets/icons/arrowDown.png"
+            @click="onSlide(true)"
+          />
         </div>
       </template>
       <template v-if="data.link">
@@ -58,6 +71,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.arrow {
+  &__left {
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    border: 1px solid $c-tco3;
+    margin-right: 10px;
+  }
+  &__right {
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    border: 1px solid $c-tco3;
+  }
+}
 .slide {
   display: flex;
   position: relative;

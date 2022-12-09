@@ -16,7 +16,7 @@
           }"
         />
         <div class="info_block">
-          <img src="@/assets/icons/vacancy.svg" alt="" />
+          <img src="@/assets/icons/vacancy.png" alt="" />
           <AtomsHeading type="h5" color="main">
             {{ $t('career.block2_heading') }}
           </AtomsHeading>

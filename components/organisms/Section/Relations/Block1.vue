@@ -10,7 +10,7 @@
             {{ $t('relation.block_1.text') }}
           </p>
         </div>
-        <img src="@/assets/img/relations/factory.svg" alt="factory" />
+        <img src="@/assets/img/relations/factory.png" alt="factory" />
       </div>
     </div>
   </div>

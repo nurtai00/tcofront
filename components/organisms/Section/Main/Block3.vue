@@ -19,21 +19,21 @@ export default {}
                 <span> {{ $t('home.block_3.items[0].title') }} </span>
                 <p>{{ $t('home.block_3.items[0].text') }}</p>
               </div>
-              <img src="@/assets/img/document-2.svg" alt="" />
+              <img src="@/assets/img/document-2.png" alt="" />
             </div>
             <div class="line">
               <div>
                 <span> {{ $t('home.block_3.items[1].title') }} </span>
                 <p>{{ $t('home.block_3.items[1].text') }}</p>
               </div>
-              <img src="@/assets/img/barrels-2.svg" alt="" />
+              <img src="@/assets/img/barrels-2.png" alt="" />
             </div>
             <div class="line">
               <div>
                 <span>{{ $t('home.block_3.items[2].title') }}</span>
                 <p>{{ $t('home.block_3.items[2].text') }}</p>
               </div>
-              <img src="@/assets/img/oil-pump-2.svg" alt="" />
+              <img src="@/assets/img/oil-pump-2.png" alt="" />
             </div>
           </div>
           <div class="card">
@@ -45,7 +45,7 @@ export default {}
               {{ $t('home.block_3.right.link_1') }}
             </a>
             <nuxt-link :to="localePath('/')" class="file">
-              <img src="@/assets/img/pdf.svg" />
+              <img width="24" height="24" src="@/assets/img/pdf.png" />
               {{ $t('home.block_3.right.link_2') }}
             </nuxt-link>
           </div>

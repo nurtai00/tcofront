@@ -3,7 +3,23 @@
     <div class="card__number">{{ content.number }}</div>
     <div class="card__title">{{ content.name }}</div>
     <div class="card__go">
-      <i class="icon-arrow-left" @click="onSideModal" />
+      <!--      <img src="@/assets/icons/arrow-left.png" @click="onSideModal" />-->
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="20" cy="20" r="20" fill="#E4E4E4" />
+        <path
+          d="M23 27.5L15.5 20L23 12.5"
+          stroke="#999999"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
     </div>
   </div>
 </template>
@@ -50,6 +66,14 @@ export default {
 
   &__go {
     color: $c-tco3;
+    svg {
+      circle {
+        fill: $c-tco3;
+      }
+      path {
+        stroke: white;
+      }
+    }
     font-size: 34px;
     cursor: pointer;
     position: absolute;

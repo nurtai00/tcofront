@@ -2,19 +2,19 @@
   <div class="projects">
     <div class="container">
       <MoleculesBreadcrumbs class="projects__breadcrumbs">
-        <AtomsBreadOption to="/">{{
-          $t('project.breadcrumbs_1[0]')
-        }}</AtomsBreadOption>
-        <AtomsBreadOption to="/projects">{{
-          $t('project.breadcrumbs_1[1]')
-        }}</AtomsBreadOption>
-        <AtomsBreadOption to="/projects/other-projects">{{
-          $t('project.breadcrumbs_1[3]')
-        }}</AtomsBreadOption>
+        <AtomsBreadOption to="/">
+          {{ $t('project.breadcrumbs_1[0]') }}
+        </AtomsBreadOption>
+        <AtomsBreadOption to="/projects">
+          {{ $t('project.breadcrumbs_1[1]') }}
+        </AtomsBreadOption>
+        <AtomsBreadOption to="/projects/other-projects">
+          {{ $t('project.breadcrumbs_1[3]') }}
+        </AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="projects__title">{{
-        $t('project.breadcrumbs_1[3]')
-      }}</AtomsTitle>
+      <AtomsTitle class="projects__title">
+        {{ $t('project.breadcrumbs_1[3]') }}
+      </AtomsTitle>
       <div class="projects__tags">
         <AtomsTag
           v-for="(tag, index) of tags"
@@ -55,7 +55,7 @@ export default {
         {
           title: this.$t('project.breadcrumbs_1[3]'),
           description: this.$t('project.other.descriprtion'),
-          icon: 'other-projects',
+          icon: require('@/assets/icons/other-projects.png'),
         },
       ],
       slide: [

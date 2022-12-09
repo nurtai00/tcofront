@@ -6,7 +6,7 @@
           {{ data.title }}
         </AtomsHeading>
         <div class="block__content_icon">
-          <i :class="`icon-${data.icon}`" />
+          <img :src="data.icon" alt="icon" />
         </div>
         <div class="block__description">
           <template v-if="data.description">
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="block__icon">
-        <i :class="`icon-${data.icon}`" />
+        <img :src="data.icon" alt="icon" />
       </div>
     </div>
     <div class="container footer">

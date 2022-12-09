@@ -10,7 +10,7 @@
     </div>
     <img
       class="card__show"
-      src="@/assets/img/career/arrow_next.svg"
+      src="@/assets/img/career/arrow_next.png"
       alt=""
       @click="$emit('click', item)"
     />

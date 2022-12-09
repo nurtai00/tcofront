@@ -4,7 +4,7 @@
       <AtomsTitle small>{{ $t('company.block_2.title') }}</AtomsTitle>
       <div class="tco__items">
         <div class="item">
-          <img src="@/assets/img/item1.svg" />
+          <img src="@/assets/img/item1.png" />
           <span>{{ $t('company.block_2.items[0].title') }}</span>
           <p>
             {{ $t('company.block_2.items[0].p_1') }} <br />{{
@@ -13,7 +13,7 @@
           </p>
         </div>
         <div class="item">
-          <img src="@/assets/img/item2.svg" />
+          <img src="@/assets/img/item2.png" />
           <span>{{ $t('company.block_2.items[1].title') }}</span>
           <p>
             {{ $t('company.block_2.items[1].p_1') }} <br />{{
@@ -22,7 +22,7 @@
           </p>
         </div>
         <div class="item">
-          <img src="@/assets/img/item3.svg" />
+          <img src="@/assets/img/item3.png" />
           <span>{{ $t('company.block_2.items[2].title') }}</span>
           <p>
             {{ $t('company.block_2.items[2].p_1') }} <br />{{
@@ -31,7 +31,7 @@
           </p>
         </div>
         <div class="item">
-          <img src="@/assets/img/item4.svg" />
+          <img src="@/assets/img/item4.png" />
           <span>{{ $t('company.block_2.items[3].title') }}</span>
           <p>
             {{ $t('company.block_2.items[3].p_1') }} <br />{{

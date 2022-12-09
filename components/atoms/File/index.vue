@@ -1,7 +1,7 @@
 <template>
   <div class="file">
     <div class="file__image">
-      <img :src="`${require(`@/assets/img/${icon}.svg`)}`" alt="file format" />
+      <img :src="`${require(`@/assets/img/${icon}.png`)}`" alt="file format" />
     </div>
     <a :href="file" class="file__name">
       {{ text }}

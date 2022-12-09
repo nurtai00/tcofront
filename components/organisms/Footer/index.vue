@@ -2,34 +2,34 @@
   <footer>
     <div class="container">
       <NuxtLink to="/" class="mobile_logo">
-        <img src="@/assets/img/logo.svg" />
+        <img src="@/assets/img/logo.png" />
       </NuxtLink>
       <div class="footer_content">
         <NuxtLink to="/" class="logo">
-          <img src="@/assets/img/logo.svg" />
+          <img src="@/assets/img/logo.png" />
         </NuxtLink>
         <div class="block">
-          <nuxt-link :to="localePath('/')">{{
-            $t('header.header_links[0]')
-          }}</nuxt-link>
-          <nuxt-link :to="localePath('/about')">{{
-            $t('header.header_links[1]')
-          }}</nuxt-link>
-          <nuxt-link :to="localePath('/operations')">{{
-            $t('header.header_links[2]')
-          }}</nuxt-link>
-          <nuxt-link :to="localePath('/kazakhstani_content')">{{
-            $t('header.header_links[4]')
-          }}</nuxt-link>
-          <nuxt-link :to="localePath('/sustainability')">{{
-            $t('header.header_links[5]')
-          }}</nuxt-link>
-          <nuxt-link :to="localePath('/career')">{{
-            $t('header.header_links[6]')
-          }}</nuxt-link>
-          <nuxt-link :to="localePath('/relations')">{{
-            $t('header.header_links[7]')
-          }}</nuxt-link>
+          <nuxt-link :to="localePath('/')">
+            {{ $t('header.header_links[0]') }}
+          </nuxt-link>
+          <nuxt-link :to="localePath('/about')">
+            {{ $t('header.header_links[1]') }}
+          </nuxt-link>
+          <nuxt-link :to="localePath('/operations')">
+            {{ $t('header.header_links[2]') }}
+          </nuxt-link>
+          <nuxt-link :to="localePath('/kazakhstani_content')">
+            {{ $t('header.header_links[4]') }}
+          </nuxt-link>
+          <nuxt-link :to="localePath('/sustainability')">
+            {{ $t('header.header_links[5]') }}
+          </nuxt-link>
+          <nuxt-link :to="localePath('/career')">
+            {{ $t('header.header_links[6]') }}
+          </nuxt-link>
+          <nuxt-link :to="localePath('/relations')">
+            {{ $t('header.header_links[7]') }}
+          </nuxt-link>
         </div>
         <div class="block">
           <h6>{{ $t('header.footer.contact') }}</h6>
@@ -44,16 +44,16 @@
           </nuxt-link>
           <div class="socials">
             <a href="http://">
-              <img src="@/assets/img/facebook.svg" />
+              <img src="@/assets/img/facebook.png" />
             </a>
             <a href="http://">
-              <img src="@/assets/img/instagram.svg" />
+              <img src="@/assets/img/instagram.png" />
             </a>
             <a href="http://">
-              <img src="@/assets/img/linked.svg" />
+              <img src="@/assets/img/linked.png" />
             </a>
             <a href="http://">
-              <img src="@/assets/img/youtube.svg" />
+              <img src="@/assets/img/youtube.png" />
             </a>
           </div>
         </div>
@@ -61,10 +61,10 @@
           <h6>{{ $t('header.footer.mobile') }}</h6>
           <div class="links">
             <a href="/">
-              <img src="@/assets/img/appstore.svg" />
+              <img src="@/assets/img/appstore.png" />
             </a>
             <a href="/">
-              <img src="@/assets/img/playmarket.svg" />
+              <img src="@/assets/img/playmarket.png" />
             </a>
           </div>
         </div>

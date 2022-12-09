@@ -47,7 +47,7 @@
             :key="key"
             class="join__grid_icon"
           >
-            <i :class="`icon-${item.icon}`" />
+            <img :src="require(`@/assets/icons/${item.icon}.png`)" alt="icon" />
             <p>{{ item.text }}</p>
           </div>
         </div>
@@ -89,7 +89,7 @@
                 }
               "
             >
-              <i class="icon-arrowDown" />
+              <img src="@/assets/icons/arrowDown.png" alt="icon" />
             </div>
           </div>
           <div class="slide__dropdown_text">
@@ -145,7 +145,7 @@
             :key="key"
             class="join__grid_icon"
           >
-            <i :class="`icon-${item.icon}`" />
+            <img :src="require(`@/assets/icons/${item.icon}.png`)" />
             <p>{{ item.title }}</p>
             <p class="desc">{{ item.text }}</p>
           </div>
@@ -180,11 +180,11 @@ export default {
         {
           title: this.$t('kazContent.devManufacture.title'),
           description: this.$t('kazContent.devManufacture.description'),
-          icon: 'production',
+          icon: require('@/assets/icons/production.png'),
         },
         {
           title: this.$t('kazContent.offerEnterprise.title'),
-          icon: 'sheep',
+          icon: require('@/assets/icons/sheep.png'),
         },
       ],
       slide: [
@@ -210,7 +210,7 @@ export default {
       ],
       cards: [
         {
-          icon: 'tools',
+          icon: require('@/assets/icons/tool.png'),
           number: '01',
           title: this.$t('kazContent.targetListDev.cards')[0].title,
           html: `<ul>
@@ -220,7 +220,7 @@ export default {
 </ul>`,
         },
         {
-          icon: 'mask',
+          icon: require('@/assets/icons/mask.png'),
           number: '02',
           title: this.$t('kazContent.targetListDev.cards')[1].title,
           html: `<ul>
@@ -230,7 +230,7 @@ export default {
 </ul>`,
         },
         {
-          icon: 'spinner',
+          icon: require('@/assets/icons/spinner.png'),
           number: '03',
           title: this.$t('kazContent.targetListDev.cards')[2].title,
           html: `<ul>
@@ -240,7 +240,7 @@ export default {
 </ul>`,
         },
         {
-          icon: 'hardwork',
+          icon: require('@/assets/icons/hardwork.png'),
           number: '04',
           title: this.$t('kazContent.targetListDev.cards')[3].title,
           html: `<ul>
@@ -251,7 +251,7 @@ export default {
 </ul>`,
         },
         {
-          icon: 'closure',
+          icon: require('@/assets/icons/closure.png'),
           number: '05',
           title: this.$t('kazContent.targetListDev.cards')[4].title,
           html: `<ul>

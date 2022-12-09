@@ -7,11 +7,11 @@
       {{ $t('career.block6_description') }}
     </p>
     <div class="map">
-      <img src="@/assets/img/career/map.svg" alt="" class="map_back" />
-      <img src="@/assets/img/career/blue.svg" alt="" class="blue" />
-      <img src="@/assets/img/career/yellow.svg" alt="" class="yellow" />
-      <img src="@/assets/img/career/golub.svg" alt="" class="golub" />
-      <img src="@/assets/img/career/grey.svg" alt="" class="grey" />
+      <img src="@/assets/img/career/map.png" alt="" class="map_back" />
+      <img src="@/assets/img/career/blue.png" alt="" class="blue" />
+      <img src="@/assets/img/career/yellow.png" alt="" class="yellow" />
+      <img src="@/assets/img/career/golub.png" alt="" class="golub" />
+      <img src="@/assets/img/career/grey.png" alt="" class="grey" />
     </div>
     <div class="statistic">
       <div class="statistic_info">

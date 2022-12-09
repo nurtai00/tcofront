@@ -170,17 +170,17 @@ export default {
       sideSvg: [
         {
           title: this.$t('products.sideSvg.1.title'),
-          icon: 'products1',
+          icon: require('@/assets/icons/products1.png'),
         },
         {
           title: this.$t('products.sideSvg.2.title'),
           description: this.$t('products.sideSvg.2.description'),
-          icon: 'products2',
+          icon: require('@/assets/icons/products2.png'),
         },
         {
           title: this.$t('products.sideSvg.3.title'),
           description: this.$t('products.sideSvg.3.description'),
-          icon: 'products3',
+          icon: require('@/assets/icons/products3.png'),
         },
       ],
       cards1: [

@@ -28,7 +28,7 @@ export default {
           <AtomsButton @click="nav">
             {{ $t('home.block_4.button') }}
             <img
-              src="@/assets/icons/chevron-right.svg"
+              src="@/assets/icons/chevron-right.png"
               alt="chevron-right"
               width="14"
               height="14"

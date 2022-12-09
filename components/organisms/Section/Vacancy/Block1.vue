@@ -7,7 +7,7 @@
           <p v-html="$t('vacancy.block_1.text')"></p>
         </div>
       </div>
-      <img src="@/assets/img/vacancy/block1.svg" alt="person" />
+      <img src="@/assets/img/vacancy/block1.png" alt="person" />
     </div>
   </div>
 </template>

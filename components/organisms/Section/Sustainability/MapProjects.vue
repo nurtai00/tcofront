@@ -6,18 +6,12 @@
       </AtomsHeading>
       <img
         class="map__img"
-        src="@/assets/img/sustainability/map-projects/map.svg"
+        src="@/assets/img/sustainability/map-projects/map.png"
         alt="map"
       />
       <div class="map__markers">
         <div class="map__marker">
-          <svg
-            width="23"
-            height="32"
-            viewBox="0 0 23 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="23" height="32" viewBox="0 0 23 32" fill="none">
             <path
               d="M11.7124 0.0458984C5.60316 0.0458984 0.632812 5.01625 0.632812 11.1255C0.632812 18.8042 11.7233 31.9209 11.7233 31.9209C11.7233 31.9209 22.792 18.4265 22.792 11.1255C22.792 5.01625 17.8218 0.0458984 11.7124 0.0458984ZM15.0554 14.3696C14.1336 15.2912 12.9231 15.7521 11.7124 15.7521C10.5019 15.7521 9.29105 15.2912 8.36966 14.3696C6.5263 12.5264 6.5263 9.52727 8.36966 7.68391C9.26225 6.79093 10.4496 6.29911 11.7124 6.29911C12.9752 6.29911 14.1624 6.79113 15.0554 7.68391C16.8987 9.52727 16.8987 12.5264 15.0554 14.3696Z"
               fill="#44D0F7"
@@ -26,13 +20,7 @@
           <span> {{ $t('suistainability.mapProjects.tags.one') }}</span>
         </div>
         <div class="map__marker">
-          <svg
-            width="23"
-            height="32"
-            viewBox="0 0 23 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="23" height="32" viewBox="0 0 23 32" fill="none">
             <path
               d="M11.7124 0.0458984C5.60316 0.0458984 0.632812 5.01625 0.632812 11.1255C0.632812 18.8042 11.7233 31.9209 11.7233 31.9209C11.7233 31.9209 22.792 18.4265 22.792 11.1255C22.792 5.01625 17.8218 0.0458984 11.7124 0.0458984ZM15.0554 14.3696C14.1336 15.2912 12.9231 15.7521 11.7124 15.7521C10.5019 15.7521 9.29105 15.2912 8.36966 14.3696C6.5263 12.5264 6.5263 9.52727 8.36966 7.68391C9.26225 6.79093 10.4496 6.29911 11.7124 6.29911C12.9752 6.29911 14.1624 6.79113 15.0554 7.68391C16.8987 9.52727 16.8987 12.5264 15.0554 14.3696Z"
               fill="#FFC000"
@@ -41,13 +29,7 @@
           <span>{{ $t('suistainability.mapProjects.tags.two') }}</span>
         </div>
         <div class="map__marker">
-          <svg
-            width="23"
-            height="32"
-            viewBox="0 0 23 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="23" height="32" viewBox="0 0 23 32" fill="none">
             <path
               d="M11.7124 0.0458984C5.60316 0.0458984 0.632812 5.01625 0.632812 11.1255C0.632812 18.8042 11.7233 31.9209 11.7233 31.9209C11.7233 31.9209 22.792 18.4265 22.792 11.1255C22.792 5.01625 17.8218 0.0458984 11.7124 0.0458984ZM15.0554 14.3696C14.1336 15.2912 12.9231 15.7521 11.7124 15.7521C10.5019 15.7521 9.29105 15.2912 8.36966 14.3696C6.5263 12.5264 6.5263 9.52727 8.36966 7.68391C9.26225 6.79093 10.4496 6.29911 11.7124 6.29911C12.9752 6.29911 14.1624 6.79113 15.0554 7.68391C16.8987 9.52727 16.8987 12.5264 15.0554 14.3696Z"
               fill="#015467"
@@ -88,7 +70,7 @@ export default {
           description: this.$t(
             'suistainability.mapProjects.cards.card1.description'
           ),
-          img: 'sustainability/map-projects/document.svg',
+          img: 'sustainability/map-projects/document.png',
         },
         {
           id: 2,
@@ -96,7 +78,7 @@ export default {
           description: this.$t(
             'suistainability.mapProjects.cards.card2.description'
           ),
-          img: 'sustainability/map-projects/build.svg',
+          img: 'sustainability/map-projects/build.png',
         },
       ],
     }
@@ -161,7 +143,7 @@ export default {
       span {
         font-size: 14px;
       }
-      svg {
+      png {
         width: 8px;
         height: 11px;
       }

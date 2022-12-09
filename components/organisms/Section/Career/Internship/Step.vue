@@ -5,7 +5,7 @@
         {{ $t('career.step_header') }}
       </AtomsHeading>
       <img
-        src="@/assets/img/career/stepper_img.svg"
+        src="@/assets/img/career/stepper_img.png"
         alt=""
         class="mobile_img"
       />
@@ -16,14 +16,14 @@
         >
           Шаг 1
         </div>
-        <img src="@/assets/img/career/arrow_step.svg" alt="" />
+        <img src="@/assets/img/career/arrow_step.png" alt="" />
         <div
           :class="{ active_step: active_step == 2 }"
           @click="active_step = 2"
         >
           Шаг 2
         </div>
-        <img src="@/assets/img/career/arrow_step.svg" alt="" />
+        <img src="@/assets/img/career/arrow_step.png" alt="" />
         <div
           :class="{ active_step: active_step == 3 }"
           @click="active_step = 3"
@@ -33,7 +33,7 @@
       </div>
       <div class="content">
         <div class="content_step_text" v-html="text[active_step]"></div>
-        <img src="@/assets/img/career/stepper_img.svg" alt="" />
+        <img src="@/assets/img/career/stepper_img.png" alt="" />
       </div>
     </div>
   </div>
@@ -45,9 +45,15 @@ export default {
     return {
       active_step: 1,
       text: {
-        1: `<p style="margin-bottom: 8px">${this.$t('career.step_text')[0]}</p>`,
-        2: `<p style="margin-bottom: 8px">${this.$t('career.step_text')[1]}</p>`,
-        3: `<p style="margin-bottom: 8px">${this.$t('career.step_text')[2]}</p>`,
+        1: `<p style="margin-bottom: 8px">${
+          this.$t('career.step_text')[0]
+        }</p>`,
+        2: `<p style="margin-bottom: 8px">${
+          this.$t('career.step_text')[1]
+        }</p>`,
+        3: `<p style="margin-bottom: 8px">${
+          this.$t('career.step_text')[2]
+        }</p>`,
       },
     }
   },

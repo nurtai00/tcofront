@@ -45,21 +45,21 @@ export default {
           text: 'Пример',
           description:
             'Описание Описание Описание ОписаниеОписаниеОписаниеОписаниеОписание Описание Описание ОписаниеОписаниеОписаниеОписание',
-          img: 'sustainability/map-projects/document.svg',
+          img: 'sustainability/map-projects/document.png',
         },
         {
           id: 2,
           text: 'Пример',
           description:
             'Описание Описание Описание ОписаниеОписаниеОписаниеОписаниеОписание Описание Описание ОписаниеОписаниеОписаниеОписание',
-          img: 'sustainability/map-projects/document.svg',
+          img: 'sustainability/map-projects/document.png',
         },
         {
           id: 3,
           text: 'Пример',
           description:
             'Описание Описание Описание ОписаниеОписаниеОписаниеОписаниеОписание Описание Описание ОписаниеОписаниеОписаниеОписание',
-          img: 'sustainability/map-projects/document.svg',
+          img: 'sustainability/map-projects/document.png',
         },
       ],
     }

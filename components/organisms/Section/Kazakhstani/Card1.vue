@@ -1,7 +1,7 @@
 <template>
   <div class="card" :class="{ dark }">
     <div class="card__icon">
-      <i :class="`icon-${card.icon}`" />
+      <img :src="card.icon" />
       <div class="card__num">{{ card.number }}</div>
     </div>
     <div class="card__title">{{ card.title }}</div>

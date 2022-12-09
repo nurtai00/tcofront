@@ -19,14 +19,14 @@
     <div class="main_b9_actions">
       <img
         class="main_b9_actions_prev"
-        src="../../../../assets/icons/small-chevron-left.svg"
+        src="../../../../assets/icons/small-chevron-left.png"
         alt="small-chevron-left"
         width="44px"
         height="44px"
       />
       <img
         class="main_b9_actions_next"
-        src="../../../../assets/icons/small-chevron-right.svg"
+        src="../../../../assets/icons/small-chevron-right.png"
         alt="small-chevron-right"
         width="44px"
         height="44px"

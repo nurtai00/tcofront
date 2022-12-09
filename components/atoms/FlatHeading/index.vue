@@ -4,7 +4,7 @@
       {{ title }}
     </AtomsHeading>
     <img
-      src="@/assets/icons/chevron-right.svg"
+      src="@/assets/icons/chevron-right.png"
       alt="chevron-right"
       width="48"
       height="48"

@@ -1,13 +1,15 @@
 <template>
   <div class="motivation_career container">
-    <AtomsHeading type="h3" color="main"> {{ $t('career.block7_header') }} </AtomsHeading>
+    <AtomsHeading type="h3" color="main">
+      {{ $t('career.block7_header') }}
+    </AtomsHeading>
     <div class="motivation_career_header">
       <p>
         {{ $t('career.block7_description') }}
-         <br />
+        <br />
         {{ $t('career.block7_motivations') }}
       </p>
-      <img src="@/assets/img/career/motivation_img.svg" alt="" />
+      <img src="@/assets/img/career/motivation_img.png" alt="" />
     </div>
     <div class="motivation_career_cards">
       <MoleculesCardPopUpCard

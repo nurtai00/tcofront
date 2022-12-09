@@ -37,32 +37,32 @@ export default {
         {
           id: 1,
           text: this.$t('suistainability.workPlaces.cards.card1'),
-          img: 'sustainability/work-places/hospital.svg',
+          img: 'sustainability/work-places/hospital.png',
         },
         {
           id: 2,
           text: this.$t('suistainability.workPlaces.cards.card2'),
-          img: 'sustainability/work-places/stadion.svg',
+          img: 'sustainability/work-places/stadion.png',
         },
         {
           id: 3,
           text: this.$t('suistainability.workPlaces.cards.card3'),
-          img: 'sustainability/work-places/home.svg',
+          img: 'sustainability/work-places/home.png',
         },
         {
           id: 4,
           text: this.$t('suistainability.workPlaces.cards.card4'),
-          img: 'sustainability/work-places/home.svg',
+          img: 'sustainability/work-places/home.png',
         },
         {
           id: 5,
           text: this.$t('suistainability.workPlaces.cards.card5'),
-          img: 'sustainability/work-places/school.svg',
+          img: 'sustainability/work-places/school.png',
         },
         {
           id: 6,
           text: this.$t('suistainability.workPlaces.cards.card6'),
-          img: 'sustainability/work-places/school.svg',
+          img: 'sustainability/work-places/school.png',
         },
       ],
     }

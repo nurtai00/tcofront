@@ -8,7 +8,7 @@
     <div class="double-block tco__partners" style="justify-content: center">
       <div class="tco__barrels-item">
         <div class="tco__barrels-wrapper" style="width: 100%">
-          <img src="@/assets/img/fees.svg" />
+          <img src="@/assets/img/fees.png" />
           <div>
             <h4>{{ $t('company.block_3.items[0].title') }}</h4>
             <span>{{ $t('company.block_3.items[0].p_1') }}</span>
@@ -18,7 +18,7 @@
       </div>
       <div class="tco__barrels-item">
         <div class="tco__barrels-wrapper" style="width: 100%">
-          <img src="@/assets/img/fees2.svg" />
+          <img src="@/assets/img/fees2.png" />
           <div>
             <h4>{{ $t('company.block_3.items[1].title') }}</h4>
             <span>{{ $t('company.block_3.items[1].p_1') }}</span>
