@@ -20,8 +20,8 @@
         >
           <template #title>
             <AtomsHeading type="h4" color="text">
-              {{ $t('vacancy.block_3.list[0].title') }}</AtomsHeading
-            >
+              {{ $t('vacancy.block_3.list[0].title') }}
+            </AtomsHeading>
           </template>
           <template #content>
             <div class="instruction">
@@ -89,7 +89,7 @@
                   <template v-if="!!fileInfo" #info>
                     <span>{{ fileInfo.name }}</span>
                     <button type="button" @click.stop="onRemoveFileHandler">
-                      <img src="~icons/delete.svg" alt="delete icon" />
+                      <img src="~icons/delete.png" alt="delete icon" />
                     </button>
                   </template>
                   <template #append>
@@ -128,23 +128,23 @@
         </AtomsAccordion>
         <AtomsAccordion>
           <template #title>
-            <AtomsHeading type="h4" color="text">{{
-              $t('vacancy.block_3.list[2].title')
-            }}</AtomsHeading>
+            <AtomsHeading type="h4" color="text">
+              {{ $t('vacancy.block_3.list[2].title') }}
+            </AtomsHeading>
           </template>
         </AtomsAccordion>
         <AtomsAccordion>
           <template #title>
-            <AtomsHeading type="h4" color="text">{{
-              $t('vacancy.block_3.list[3].title')
-            }}</AtomsHeading>
+            <AtomsHeading type="h4" color="text">
+              {{ $t('vacancy.block_3.list[3].title') }}
+            </AtomsHeading>
           </template>
         </AtomsAccordion>
         <AtomsAccordion>
           <template #title>
-            <AtomsHeading type="h4" color="text">{{
-              $t('vacancy.block_3.list[4].title')
-            }}</AtomsHeading>
+            <AtomsHeading type="h4" color="text">
+              {{ $t('vacancy.block_3.list[4].title') }}
+            </AtomsHeading>
           </template>
         </AtomsAccordion>
       </div>

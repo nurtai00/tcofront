@@ -82,10 +82,10 @@ li {
         height: 30px;
       }
 
-      @include bg-size('icons/arrow-right.svg', 40px 40px, center/contain);
+      @include bg-size('icons/arrow-right.png', 40px 40px, center/contain);
 
       &.left {
-        @include bg-size('icons/arrow-left.svg', 40px 40px, center/contain);
+        @include bg-size('icons/arrow-left.png', 40px 40px, center/contain);
       }
     }
     &:active {

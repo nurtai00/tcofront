@@ -68,7 +68,7 @@
 
     <!-- Clear icon for clearable input -->
     <span v-if="clearable && type !== 'password'" class="clear" @click="clear">
-      <img src="~icons/delete.svg" alt="delete icon" />
+      <img src="~icons/delete.png" alt="delete icon" />
     </span>
 
     <!-- Eye icon for password show toggle -->
@@ -77,13 +77,13 @@
       class="password"
       @click="togglePasswordType"
     >
-      <img :src="require(`icons/${passwordType}-password.svg`)" />
+      <img :src="require(`icons/${passwordType}-password.png`)" />
     </span>
 
     <!-- Error text show under input -->
     <template v-if="error.length">
       <span class="errors">
-        <img src="~icons/error_input.svg" alt="error icon" />
+        <img src="~icons/error_input.png" alt="error icon" />
         <span class="errors_text">
           {{ error[0].message }}
         </span>

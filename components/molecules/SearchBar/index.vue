@@ -6,7 +6,7 @@
         autocomplete="false"
         :placeholder="$t('header.header_search')"
       />
-      <button type="submit"><img src="@/assets/icons/search.svg" /></button>
+      <button type="submit"><img src="@/assets/icons/search.png" /></button>
     </form>
   </div>
 </template>

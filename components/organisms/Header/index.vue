@@ -215,7 +215,7 @@ header {
       display: block;
       bottom: -5px;
       left: 0;
-      background: url('@/assets/img/home/mobile_line.svg') repeat-x;
+      background: url('@/assets/img/home/mobile_line.png') repeat-x;
       transition: 0.3s;
       content: '';
     }

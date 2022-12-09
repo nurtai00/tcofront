@@ -156,7 +156,6 @@ export default {
     '@nuxtjs/stylelint-module',
 
     '@nuxt/typescript-build',
-    '@nuxtjs/svg',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

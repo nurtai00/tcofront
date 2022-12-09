@@ -64,7 +64,7 @@ li {
       content: '';
 
       @include block(18px, 14px);
-      @include bg('icons/arrow-right-grey.svg', center center/contain);
+      @include bg('icons/arrow-right-grey.png', center center/contain);
       margin: 0 11px;
     }
   }

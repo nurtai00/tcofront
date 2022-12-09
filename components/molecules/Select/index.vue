@@ -26,7 +26,7 @@
       <div
         :class="['select-arrow-down', isOpen && 'select-arrow-down--active']"
       >
-        <img src="~/assets/icons/arrowDown_black.svg" alt="#" />
+        <img src="~/assets/icons/arrowDown.png" alt="#" />
       </div>
     </button>
     <transition name="fade">

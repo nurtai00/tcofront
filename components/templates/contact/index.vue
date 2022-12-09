@@ -75,22 +75,22 @@ export default {
           lists: [
             {
               id: 11,
-              iconName: 'map.svg',
+              iconName: 'map.png',
               text: this.$t('contact.contents.1.text'),
             },
             {
               id: 12,
-              iconName: 'phone.svg',
+              iconName: 'phone.png',
               text: '+7 712 227 1212 +7 712 302 6000',
             },
             {
               id: 13,
-              iconName: 'inbox.svg',
+              iconName: 'inbox.png',
               text: '+7 712 302 6752',
             },
             {
               id: 14,
-              iconName: 'mail.svg',
+              iconName: 'mail.png',
               text: 'tcoinfo@tengizchevroil.com',
             },
           ],
@@ -102,17 +102,17 @@ export default {
           lists: [
             {
               id: 15,
-              iconName: 'map.svg',
+              iconName: 'map.png',
               text: this.$t('contact.contents.2.text'),
             },
             {
               id: 16,
-              iconName: 'phone.svg',
+              iconName: 'phone.png',
               text: '+7 7172 620333',
             },
             {
               id: 17,
-              iconName: 'inbox.svg',
+              iconName: 'inbox.png',
               text: '+7 7172 620336',
             },
           ],
@@ -137,7 +137,7 @@ export default {
             },
             {
               id: 18,
-              iconName: 'mail.svg',
+              iconName: 'mail.png',
               text: 'tcoinfo@tengizchevroil.com',
             },
           ],
@@ -150,12 +150,12 @@ export default {
             {
               id: 19,
               text: '+7 712 302 6819',
-              iconName: 'phone.svg',
+              iconName: 'phone.png',
             },
             {
               id: 20,
               text: 'tcoinfo@tengizchevroil.com',
-              iconName: 'mail.svg',
+              iconName: 'mail.png',
             },
           ],
         },
@@ -171,12 +171,12 @@ export default {
             {
               id: 22,
               text: 'tcoinfo@tengizchevroil.com',
-              iconName: 'mail.svg',
+              iconName: 'mail.png',
             },
             {
               id: 23,
               text: '+7712 2 33 32 11 +7712 2 33 32 13',
-              iconName: 'phone.svg',
+              iconName: 'phone.png',
             },
             {
               id: 24,

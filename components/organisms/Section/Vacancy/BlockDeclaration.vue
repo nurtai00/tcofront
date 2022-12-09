@@ -77,13 +77,13 @@
           </div>
           <AtomsButton
             :disabled="!isAgree"
-            @click="saveAndNext"
             :class="{ disabled: !isAgree }"
+            @click="saveAndNext"
           >
             Сохранить и продолжить
           </AtomsButton>
         </div>
-        <img src="@/assets/img/vacancy/declaration-note.svg" alt="note" />
+        <img src="@/assets/img/vacancy/declaration-note.png" alt="note" />
       </div>
     </div>
   </div>

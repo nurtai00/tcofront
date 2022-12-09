@@ -23,7 +23,7 @@
           </p>
         </div>
         <img
-          src="@/assets/img/sustainability/project/background.svg"
+          src="@/assets/img/sustainability/project/background.png"
           alt="skvazhina"
         />
       </div>

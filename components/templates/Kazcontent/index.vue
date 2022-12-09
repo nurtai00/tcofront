@@ -47,7 +47,11 @@
         <div class="kazakhstani__titlee">
           {{ $t('kazContent.contributionTco') }}
         </div>
-        <Map class="map" @click="mapModal" />
+        <img
+          class="map"
+          src="~/assets/img/kazakhstani/map.png"
+          @click="mapModal"
+        />
       </div>
     </div>
 
@@ -200,11 +204,8 @@
 </template>
 
 <script>
-import Map from '~/assets/img/kazakhstani/map.svg?inline'
-
 export default {
   components: {
-    Map,
     [process.browser && 'VueApexCharts']: () => import('vue-apexcharts'),
   },
   data() {

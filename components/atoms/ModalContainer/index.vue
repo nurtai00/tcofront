@@ -75,7 +75,7 @@ export default {
 }
 .modal-close {
   @include size(44px);
-  @include bg('~assets/icons/close_popup.svg', center center/contain);
+  @include bg('~assets/icons/close_popup.png', center center/contain);
   margin-left: auto;
   transition: transform 0.5s ease;
   cursor: pointer;
