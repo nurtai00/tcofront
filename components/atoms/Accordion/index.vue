@@ -52,7 +52,7 @@ export default {
   flex-direction: column;
   cursor: pointer;
   &__content {
-    padding: 20px 0;
+    padding: 24px;
     border-bottom: 1px solid rgba($c-text, 20%);
     &.filled {
       padding: 0;
@@ -61,7 +61,7 @@ export default {
   }
   &__title {
     display: flex;
-    padding: 20px 0;
+        padding: 24px 0 40px 24px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba($c-text, 20%);

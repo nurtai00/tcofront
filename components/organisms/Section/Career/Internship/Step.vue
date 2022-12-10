@@ -14,21 +14,21 @@
           :class="{ active_step: active_step == 1 }"
           @click="active_step = 1"
         >
-          Шаг 1
+          {{ $t('career.intern.step') }} 1
         </div>
         <img src="@/assets/img/career/arrow_step.png" alt="" />
         <div
           :class="{ active_step: active_step == 2 }"
           @click="active_step = 2"
         >
-          Шаг 2
+          {{ $t('career.intern.step') }} 2
         </div>
         <img src="@/assets/img/career/arrow_step.png" alt="" />
         <div
           :class="{ active_step: active_step == 3 }"
           @click="active_step = 3"
         >
-          Шаг 3
+          {{ $t('career.intern.step') }} 3
         </div>
       </div>
       <div class="content">
