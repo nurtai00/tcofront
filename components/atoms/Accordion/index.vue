@@ -54,6 +54,9 @@ export default {
   &__content {
     padding: 24px;
     border-bottom: 1px solid rgba($c-text, 20%);
+    @include tablet() {
+      padding: 20px 0;
+    }
     &.filled {
       padding: 0;
       border-bottom: none;
@@ -61,10 +64,13 @@ export default {
   }
   &__title {
     display: flex;
-        padding: 24px 0 40px 24px;
+    padding: 24px 0 40px 24px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba($c-text, 20%);
+    @include tablet() {
+      padding: 18px 0 20px;
+    }
     &.filled {
       background-color: #f2f6f7;
       padding: 20px 10px;

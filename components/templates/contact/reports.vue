@@ -13,7 +13,7 @@
           {{ $t('contact.reports.reports') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="mb20">
+      <AtomsTitle class="mb20" small>
         {{ $t('contact.reports.title') }}
       </AtomsTitle>
       <div class="reports__docs">

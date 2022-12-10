@@ -22,7 +22,8 @@
                   v-if="list.type === 'link'"
                   class="list__item-link"
                   :href="list.href"
-                >{{ list.text }}</a>
+                  >{{ list.text }}</a
+                >
                 <p v-else class="list__item-description">{{ list.text }}</p>
               </div>
             </li>
@@ -117,8 +118,8 @@ export default {
   }
   @include phone() {
     width: auto;
-    padding: 0 16px 100px;
-    margin-top: 0;
+    padding: 0 16px 40px;
+    margin: 0;
     h3 {
       display: none;
     }
@@ -157,9 +158,11 @@ export default {
         @include phone() {
           &-link {
             font-size: 16px;
+            line-height: 20px;
           }
           &-description {
             font-size: 16px;
+            line-height: 20px;
           }
         }
       }

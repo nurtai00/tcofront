@@ -72,7 +72,7 @@
 </template>
 <style lang="scss" scoped>
 .document-title {
-  @include phone() {
+  @include tablet() {
     font-size: 24px;
     line-height: 28px;
   }
@@ -83,16 +83,25 @@
   display: flex;
   gap: 24px;
   padding-bottom: 80px;
-  @include phone() {
+  @include tablet() {
     width: 100%;
     font-size: 16px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   a {
     width: 280px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
     color: #00b0f0;
-    text-decoration: underline;
+    @include tablet() {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 .feedback {
@@ -103,14 +112,29 @@
       li {
         margin-top: 5px;
         list-style: disc;
-        color: black;
+        font-family: 'Roboto';
+        font-style: normal;
         font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #30454e;
+        @include tablet() {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
     }
     p {
-      font-family: Roboto, sans-serif;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
       font-size: 20px;
-      color: $c-text !important;
+      line-height: 28px;
+      color: #30454e;
+      @include tablet() {
+        font-size: 16px;
+        line-height: 20px;
+      }
       &:not(:first-child) {
         margin-top: 10px;
       }
@@ -121,8 +145,11 @@
     padding: 40px 0;
     background-color: #ecfafe;
     p {
-      font-size: 20px;
-      line-height: 28px;
+      font-weight: 400;
+      @include tablet() {
+        font-size: 16px;
+        line-height: 20px;
+      }
       a {
         color: #00b0f0;
       }
