@@ -80,6 +80,7 @@ export default {
   background-color: #30454e;
   &__wrapper {
     display: flex;
+    gap: 60px;
   }
   &__content {
     padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
@@ -88,7 +89,7 @@ export default {
   &__description {
     margin-top: 40px;
     color: white;
-    line-height: 38px;
+    line-height: 28px;
     font-size: 20px;
     font-weight: 400;
   }

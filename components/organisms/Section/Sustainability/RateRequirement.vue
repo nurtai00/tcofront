@@ -63,6 +63,8 @@
   }
   &__description {
     margin-top: 60px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
     p {
       font-size: 20px;
       line-height: 28px;

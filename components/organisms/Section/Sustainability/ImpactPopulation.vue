@@ -103,6 +103,9 @@ export default {
   margin-top: 40px;
   background-color: #f2f6f7;
   padding: 80px 0;
+  &__title {
+    text-align: center;
+  }
   &__content {
     margin-top: 40px;
     display: flex;
@@ -144,6 +147,7 @@ export default {
       margin-right: 0;
       &-description {
         font-size: 16px;
+        font-weight: 400;
       }
     }
   }

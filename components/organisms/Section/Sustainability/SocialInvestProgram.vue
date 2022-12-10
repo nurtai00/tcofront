@@ -22,6 +22,8 @@
 <style lang="scss" scoped>
 .program {
   display: flex;
+  gap: 72px;
+  max-height: 650px;
   &__content {
     padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
   }
@@ -29,13 +31,13 @@
     margin-top: 40px;
     color: $c-text;
     font-size: 20px;
+    font-weight: 400;
     p:not(:first-child) {
       margin-top: 20px;
     }
   }
   img {
-    width: 100%;
-    height: auto;
+    width: 50%;
   }
   @include tablet {
     flex-direction: column-reverse;

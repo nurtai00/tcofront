@@ -5,7 +5,7 @@ $fontLinks: ExtraLight 100 normal, Light 300 normal, Regular 400 normal,
   Black 900 normal, ExtraLightItalic 100 italic, LightItalic 300 italic,
   Italic 400 italic, MediumItalic 500 italic, SemiBoldItalic 600 italic,
   BoldItalic 700 italic, ExtraBoldItalic 800 italic, BlackItalic 900 italic;
-
+$fontLinks2: Regular 400 normal, Bold 700 normal, Medium 500 normal;
 @each $font in $fontLinks {
   @font-face {
     font-family: $font-family;
@@ -14,5 +14,16 @@ $fontLinks: ExtraLight 100 normal, Light 300 normal, Regular 400 normal,
     src: local($font-family), local(#{$font-family}-#{nth($font, 1)}),
       url('~/assets/fonts/#{$font-family}-#{nth($font, 1)}.ttf')
         format('truetype');
+  }
+}
+
+@each $font2 in $fontLinks2 {
+  @font-face {
+    font-family: $font-family2;
+    font-weight: #{nth($font2, 2)};
+    font-style: #{nth($font2, 3)};
+    src: local($font-family2), local(#{$font-family2}-#{nth($font2, 1)}),
+    url('~/assets/fonts/#{$font-family2}-#{nth($font2, 1)}.ttf')
+    format('truetype');
   }
 }

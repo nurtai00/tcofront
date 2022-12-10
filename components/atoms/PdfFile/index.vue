@@ -66,8 +66,10 @@ export default {
     text-align: center;
   }
   a {
+    font-family: Roboto, sans-serif;
     text-decoration: underline;
     color: #262728;
+    font-weight: 400;
   }
 }
 </style>

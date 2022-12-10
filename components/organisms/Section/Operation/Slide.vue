@@ -1,10 +1,20 @@
 <template>
-  <div class="slide" :class="{ side, background: data.background }">
-    <div class="slide__content container" :class="{ slided: slide }">
+  <div
+    class="slide"
+    :class="{ side, background: data.background, reverse: isReverse }"
+  >
+    <div
+      class="slide__content container"
+      :class="{ slided: slide, reverse: isReverse }"
+    >
       <AtomsHeading type="h3" class="slide__title title">
         {{ data.title }}
       </AtomsHeading>
-      <div v-if="data.description" class="slide__description">
+      <div
+        v-if="data.description"
+        class="slide__description"
+        :class="{ reverse: isReverse }"
+      >
         <div
           v-for="(text, key) in data.description"
           :key="key"
@@ -58,6 +68,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    isReverse: {
+      type: Boolean,
+      default: false,
+    },
   },
   data: () => ({
     slide: false,
@@ -91,11 +105,15 @@ export default {
 .slide {
   display: flex;
   position: relative;
-
+  &.reverse {
+    flex-direction: row-reverse;
+  }
   &__content {
     width: 50%;
     padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
-
+    &.reverse {
+      padding: 80px calc((var(--width-container) - 100vw) / 2) 80px 60px;
+    }
     &.slided {
       .slide {
         &__arrow {
@@ -113,6 +131,8 @@ export default {
         &__description {
           &_item {
             transform: translateX(-100%);
+            font-family: Roboto, sans-serif;
+            font-weight: 400;
           }
         }
       }
@@ -158,8 +178,12 @@ export default {
     display: flex;
     overflow: hidden;
     color: $c-tco1;
-
+    &.reverse {
+      margin-right: 60px;
+    }
     &_item {
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
       min-width: 100%;
       height: 100%;
       font-size: 20px;

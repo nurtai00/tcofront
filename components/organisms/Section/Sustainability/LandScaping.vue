@@ -6,6 +6,7 @@
         <OperationSlide
           v-for="(slide, index) of slides"
           :key="index + 'key'"
+          is-reverse
           :side="!!(index % 2)"
           :data="slide"
         />

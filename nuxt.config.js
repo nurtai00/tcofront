@@ -164,6 +164,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
     '@nuxtjs/i18n',
+    '@nuxtjs/svg',
   ],
   i18n: {
     locales: ['en', 'ru', 'kk'],

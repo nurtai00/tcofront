@@ -71,6 +71,8 @@ export default {
   padding-bottom: 80px;
   &__wrapper {
     display: flex;
+    gap: 72px;
+    height: 650px;
   }
   &__content {
     padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
@@ -79,12 +81,14 @@ export default {
     margin-top: 40px;
     color: $c-text;
     font-size: 20px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
     p:not(:first-child) {
       margin-top: 20px;
     }
   }
   &__img {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
   &__cards {
