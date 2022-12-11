@@ -37,7 +37,7 @@ export default {}
             </div>
           </div>
           <div class="card">
-            <img src="@/assets/img/Rectangle 27.png" />
+            <img src="@/assets/img/Rectangle 27.png" class="card__image" />
             <p>
               {{ $t('home.block_3.right.text') }}
             </p>
@@ -56,11 +56,20 @@ export default {}
 </template>
 
 <style scoped lang="scss">
+
+%card-text-style {
+  font-size: 18px;
+  line-height: 22px;
+  @media (max-width: 730px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 .tco {
   &__numbers {
     display: flex;
     justify-content: space-between;
-    gap: 25px;
+    gap: 36px;
     @media (max-width: 730px) {
       flex-direction: column;
     }
@@ -68,13 +77,23 @@ export default {}
       display: flex;
       flex-direction: column;
       width: 40%;
+      row-gap: 12px;
       @media (max-width: 730px) {
         width: 100%;
       }
+      &__image {
+        aspect-ratio: 1.9/1;
+        object-fit: cover;
+        flex: 1;
+      }
+      p {
+        @extend %card-text-style;
+        font-weight: 500;
+      }
       a {
+        @extend %card-text-style;
         display: flex;
-        gap: 15px;
-        margin-top: 15px;
+        gap: 12px;
         text-decoration-line: underline;
         color: #00b0f0;
         img {
@@ -82,13 +101,14 @@ export default {}
         }
       }
       a:last-child {
+        margin-top: 15px;
         color: #30454e;
       }
     }
     .lines {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 20px;
       width: 60%;
       @media (max-width: 730px) {
         width: 100%;
@@ -104,6 +124,7 @@ export default {}
         div {
           display: flex;
           flex-direction: column;
+          row-gap: 12px;
           span {
             font-family: 'Montserrat';
             font-style: normal;
