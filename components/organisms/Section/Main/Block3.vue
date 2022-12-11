@@ -45,7 +45,7 @@ export default {}
               {{ $t('home.block_3.right.link_1') }}
             </a>
             <nuxt-link :to="localePath('/')" class="file">
-              <img width="24" height="24" src="@/assets/img/pdf.png" />
+              <img width="30" height="40" src="@/assets/img/pdf.png" />
               {{ $t('home.block_3.right.link_2') }}
             </nuxt-link>
           </div>
@@ -78,7 +78,7 @@ export default {}
         text-decoration-line: underline;
         color: #00b0f0;
         img {
-          width: 15px;
+          width: 30px;
         }
       }
       a:last-child {
