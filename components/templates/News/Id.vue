@@ -1,3 +1,12 @@
+<script>
+export default {
+  computed: {
+    id() {
+      return this.$route.params.id
+    }
+  }
+}
+</script>
 <template>
   <div class="news container">
     <MoleculesBreadcrumbs class="mt40 mb40">
@@ -10,19 +19,19 @@
     </MoleculesBreadcrumbs>
     <div class="content">
       <AtomsHeading type="h3" color="main" class="mb20">
-        {{ $t('news.new.title') }}
+        {{ $t(`news.new_${id}.title`) }}
       </AtomsHeading>
       <AtomsTag
         :tag="{
-          text: $t('news.new.tag'),
+          text: $t(`news.new_${id}.tag`),
           selected: true,
         }"
         class="tag"
       />
-      <p class="content_date">{{ $t('news.new.date') }}</p>
-      <img src="@/assets/img/new_card.png" />
+      <p class="content_date">{{ $t(`news.new_${id}.date`) }}</p>
+      <img :src="`${require(`@/assets/img/new/new_${id}.jpeg`)}`" />
       <p class="content_text">
-        {{ $t('news.new_1_text') }}
+        {{ $t(`news.new_${id}_text`) }}
       </p>
     </div>
   </div>

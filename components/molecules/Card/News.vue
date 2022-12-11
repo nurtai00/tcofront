@@ -27,7 +27,7 @@ export default {
   methods: {
     navNew() {
       if (this.isNew) {
-        this.$router.push(this.localePath('/news/1'))
+        this.$router.push(this.localePath('/news/' + this.news.id))
       }
     },
   },
@@ -47,6 +47,8 @@ export default {
   }
   img {
     width: 100%;
+    aspect-ratio: 1.8/1;
+    object-fit: cover;
     height: auto;
     margin-bottom: 12px;
     @include tablet() {
