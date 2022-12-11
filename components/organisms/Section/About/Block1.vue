@@ -1,11 +1,11 @@
 <template>
-  <section>
+  <section class="about">
     <div class="container">
-      <AtomsTitle class="mb20"> {{ $t('company.breadcrumbs[1]') }} </AtomsTitle>
+      <AtomsTitle class=""> {{ $t('company.breadcrumbs[1]') }} </AtomsTitle>
     </div>
     <img class="player__preview" src="@/assets/img/player-prev.png" />
     <div class="container block">
-      <p class="mt40 mb80">
+      <p class="mt40 mb40">
         {{ $t('company.p_1') }}
       </p>
     </div>
@@ -27,10 +27,13 @@ export default {
 </script>
 
 <style lang="scss" v-deep scoped>
+.about {
+  padding-top: 0;
+}
 .tco {
   &__partners {
     &-wrapper {
-      padding: 40px 40px 40px 0;
+      padding: 20px 40px 40px 0;
       max-width: 572px;
       display: flex;
       flex-direction: column;

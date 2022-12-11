@@ -66,6 +66,7 @@ export default {
   &__description {
     font-size: 20px;
     line-height: 28px;
+    color: $c-tco1;
   }
 
   &__icon {

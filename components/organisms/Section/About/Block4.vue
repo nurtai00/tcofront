@@ -24,7 +24,9 @@
         </div>
       </MoleculesSlide>
     </OrganismsSlider>
-
+    <div id="step" class="steps">
+      <span v-for="line in 2" :key="line"></span>
+    </div>
     <div class="main_b4_actions">
       <img
         class="main_b4_actions_prev"
@@ -47,6 +49,7 @@ export default {
   data() {
     return {
       options: {
+        pagination: '#step > span',
         navigation: {
           previous: '.main_b4_actions_prev',
           next: '.main_b4_actions_next',
@@ -239,5 +242,30 @@ export default {
   //   touch-action: none;
   //   background: #ffffff;
   // }
+}
+.steps {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+  left: calc((100vw - 1176px) / 2);
+  top: -30px;
+  z-index: 999;
+  @media (orientation: portrait) {
+    left: 16px;
+    top: -20px;
+    width: calc(100vw - 32px);
+  }
+  span {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: rgba(1, 84, 103, 0.1);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .current {
+    background: #5e8698;
+  }
 }
 </style>

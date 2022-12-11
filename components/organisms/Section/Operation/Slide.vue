@@ -147,7 +147,7 @@ export default {
     color: $c-tco5;
     display: flex;
     align-items: center;
-
+    cursor: pointer;
     span {
       text-decoration: underline;
     }

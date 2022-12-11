@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <AtomsTitle class="mb20" small :point="false">
+      <AtomsTitle class="mb20 mt40" small :point="false">
         {{ $t('company.block_3.title') }}
       </AtomsTitle>
     </div>
@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="container main_b_5 mt40">
+    <div class="container main_b_5 mt40 mb40">
       <p>
         {{ $t('company.block_3.text') }}
       </p>

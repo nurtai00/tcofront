@@ -3,13 +3,13 @@
     <div class="container">
       <MoleculesBreadcrumbs class="operations__breadcrumbs">
         <AtomsBreadOption to="/">{{ $t('operation.home') }}</AtomsBreadOption>
-        <AtomsBreadOption to="/operations">{{
-          $t('operation.operatinos')
-        }}</AtomsBreadOption>
+        <AtomsBreadOption to="/operations">
+          {{ $t('operation.operatinos') }}
+        </AtomsBreadOption>
       </MoleculesBreadcrumbs>
-      <AtomsTitle class="operations__title">{{
-        $t('operation.operatinos')
-      }}</AtomsTitle>
+      <AtomsTitle class="operations__title">
+        {{ $t('operation.operatinos') }}
+      </AtomsTitle>
       <div class="operations__tags">
         <AtomsTag
           v-for="(tag, index) of tags"
@@ -183,6 +183,8 @@ export default {
 
 <style lang="scss" scoped>
 .operations {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
   &__breadcrumbs {
     margin: 42px 0 22px;
   }

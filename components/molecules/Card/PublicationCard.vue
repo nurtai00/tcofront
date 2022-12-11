@@ -1,10 +1,6 @@
 <template>
   <div class="p_card">
-    <img
-      loading="lazy"
-      src="@/assets/img/publication_card.png"
-      alt="publication_card"
-    />
+    <img loading="lazy" :src="img" alt="publication_card" />
     <div>
       <img
         loading="lazy"
@@ -13,13 +9,24 @@
         width="21"
         height="28"
       />
-      <p>{{ $t('news.pubs[0]') }}</p>
+      <p>{{ text }}</p>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    img: {
+      type: String,
+      required: true,
+    },
+    text: {
+      type: String,
+      default: '',
+    },
+  },
+}
 </script>
 
 <style scoped lang="scss">

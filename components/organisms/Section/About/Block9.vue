@@ -1,5 +1,5 @@
 <template>
-  <section style="padding: 0">
+  <div class="main">
     <OrganismsSlider :options="options">
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
         <div
@@ -15,7 +15,6 @@
         </div>
       </MoleculesSlide>
     </OrganismsSlider>
-
     <div class="main_b9_actions">
       <img
         class="main_b9_actions_prev"
@@ -32,7 +31,7 @@
         height="44px"
       />
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -93,6 +92,10 @@ export default {
 </script>
 
 <style lang="scss" v-deep scoped>
+.main {
+  padding: 0;
+  height: 790px;
+}
 .tco {
   &__partners {
     &-wrapper {
@@ -101,9 +104,10 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: center;
-      gap: 25px;
+      justify-content: flex-start;
+      gap: 30px;
       text-align: left;
+      margin-top: 80px;
       @media (max-width: 1200px) {
         padding: 15px;
       }
@@ -184,7 +188,7 @@ section {
   align-items: center;
   position: relative;
   left: calc(50% + 40px);
-  top: -85px;
+  bottom: 80px;
   @media (orientation: portrait) {
     left: 16px;
     position: absolute;

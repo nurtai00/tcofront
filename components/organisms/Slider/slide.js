@@ -15,7 +15,7 @@ export default class Slide {
       this.paginationInit()
     }
     if (this.options.navigation?.previous && this.options.navigation?.next) {
-      this.previous = document.querySelector(this.options.navigation.previous)
+      this.previous = document.querySelector(this.options.navigation?.previous)
       this.next = document.querySelector(this.options.navigation.next)
       this.navigationInit()
     }
@@ -35,7 +35,7 @@ export default class Slide {
   makeLoop() {
     this.interval = setInterval(() => {
       this._handleGesture(200, 0)
-    }, 2000)
+    }, this.options.interval ?? 2000)
   }
 
   destroyLoop() {

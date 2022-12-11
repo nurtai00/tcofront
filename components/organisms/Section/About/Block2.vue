@@ -30,8 +30,8 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <p class="mt40">
+    <div class="container mb40">
+      <p>
         {{ $t('company.block_1.p_2') }}
       </p>
     </div>
@@ -53,6 +53,9 @@ export default {
 </script>
 
 <style lang="scss" v-deep scoped>
+section {
+  padding: 80px 0 40px;
+}
 .tco {
   &__partners {
     &-wrapper {
@@ -210,7 +213,7 @@ export default {
       max-width: 572px;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      gap: 40px;
 
       @media (max-width: 450px) {
         flex-direction: column;

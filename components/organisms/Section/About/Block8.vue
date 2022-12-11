@@ -1,5 +1,5 @@
 <template>
-  <section class="section--blue" style="padding: 0; position: relative">
+  <div class="section--blue" style="padding: 0; position: relative">
     <OrganismsSlider :options="options">
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
         <div
@@ -24,7 +24,6 @@
         </div>
       </MoleculesSlide>
     </OrganismsSlider>
-
     <div class="main_b8_actions">
       <img
         class="main_b8_actions_prev"
@@ -41,7 +40,7 @@
         height="44px"
       />
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -51,6 +50,7 @@ export default {
   data() {
     return {
       options: {
+        interval: 3000,
         navigation: {
           previous: '.main_b8_actions_prev',
           next: '.main_b8_actions_next',
@@ -87,6 +87,9 @@ export default {
 </script>
 
 <style lang="scss" v-deep scoped>
+.section--blue {
+  height: 650px;
+}
 .double-block {
   @media (orientation: portrait) {
     flex-direction: column-reverse;
@@ -107,14 +110,17 @@ export default {
 .tco {
   &__partners {
     &-wrapper {
-      padding: 40px 40px 40px 0;
+      padding: 40px 40px 60px 0;
       max-width: 590px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: center;
-      gap: 25px;
+      justify-content: flex-start;
       text-align: left;
+      gap: 30px;
+      h1 {
+        margin-top: 60px;
+      }
       @media (max-width: 1200px) {
         padding: 15px;
       }
@@ -221,7 +227,7 @@ export default {
   align-items: center;
   position: relative;
   left: calc((100vw - 1176px) / 2);
-  top: -140px;
+  bottom: 400px;
   @media (orientation: portrait) {
     left: 16px;
     position: absolute;

@@ -150,6 +150,7 @@ footer {
   width: 276px;
   display: flex;
   flex-direction: column;
+  font-weight: 400;
   @include tablet() {
     width: 100%;
     max-width: 276px;

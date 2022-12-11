@@ -2,12 +2,17 @@
   <div class="p_block">
     <div class="p_block_title">
       <AtomsTitle small> {{ $t('news.pub') }} </AtomsTitle>
-      <nuxt-link :to="localePath('/news/publications')">{{
-        $t('news.pub_all')
-      }}</nuxt-link>
+      <nuxt-link :to="localePath('/news/publications')">
+        {{ $t('news.pub_all') }}
+      </nuxt-link>
     </div>
     <div class="p_block_list">
-      <MoleculesCardPublicationCard v-for="item in 4" :key="item" />
+      <MoleculesCardPublicationCard
+        v-for="item in 4"
+        :key="item"
+        :text="$t('news.pubs')[item - 1]"
+        :img="require(`@/assets/img/pub${item}.png`)"
+      />
     </div>
   </div>
 </template>
