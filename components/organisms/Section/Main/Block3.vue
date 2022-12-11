@@ -12,7 +12,7 @@ export default {}
               <AtomsTitle class="atoms_title mb20" small>
                 {{ $t('home.block_3.title') }}
               </AtomsTitle>
-              <a href="/projects#pbr">{{ $t('home.block_3.link') }}</a>
+              <a href="/projects#pbr" class="mb20">{{ $t('home.block_3.link') }}</a>
             </div>
             <div class="line">
               <div>
