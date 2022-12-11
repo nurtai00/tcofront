@@ -61,6 +61,7 @@ export default {
   }
   &__text {
     font-weight: 600;
+    font-size: 24px;
     line-height: 28px;
     color: #015467;
     margin-bottom: 44px;

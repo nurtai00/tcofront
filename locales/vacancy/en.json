@@ -1,7 +1,11 @@
 {
-  "breadcrumbs": ["Home", "Career", "Vacancy"],
+  "breadcrumbs": [
+    "Home",
+    "Career",
+    "Vacancy"
+  ],
   "block_1": {
-    "title": "Список доступных вакансий",
+    "title": "List of available vacancies",
     "text": "You can search and apply for available positions at this page. If you meet the criteria we are looking for, please proceed to “Apply” to submit your details and CV by completing the application form.<br>For technical support please contact us via rectechsup@tengizchevroil.com<br><strong>ATTENTION!</strong> If you have @mail.ru, bk.ru, list.ru and other .ru accounts linked to your profile, we recommend recreating your profile with another .com mail service (gmail; yahoo etc.) to avoid technical issues with logging into your profile."
   },
   "block_2": {
@@ -45,6 +49,16 @@
   },
   "block_4": {
     "title": "We are committed to developing your talent",
-    "text": "TCO Job Fairs have become one of the primary employment and networking events. Each year TCO hires outstanding graduates for engineering and analytical positions for Atyrau and Tengiz locations. TCO Job Fair is open to students and alumni from all majors and at the undergraduate, graduate, and degree levels at the RoK and foreign universities and Bolashak Scholarship Program.<br>TCO Departments such as Facilities Engineering, Health, Environment & Safety, Finance, Supply Chain Management, and Information Technologies along with Human Resources are ongoing Job Fair participants. Job Fairs are organized and conducted on regular basis at the premises of universities. It is 2-3 days event that includes aptitude tests and preliminary interview sessions.<br>  <strong>Eligible criteria to participate in TCO Job Fair:</strong><br>• <strong>final year student of bachelor's / master’s studies</strong><br>• <strong>GPA 3.0 and above</strong> "
+    "text": "TCO Job Fairs have become one of the primary employment and networking events. Each year TCO hires outstanding graduates for engineering and analytical positions for Atyrau and Tengiz locations. TCO Job Fair is open to students and alumni from all majors and at the undergraduate, graduate, and degree levels at the RoK and foreign universities and Bolashak Scholarship Program.<br>TCO Departments such as Facilities Engineering, Health, Environment & Safety, Finance, Supply Chain Management, and Information Technologies along with Human Resources are ongoing Job Fair participants. Job Fairs are organized and conducted on regular basis at the premises of universities. It is 2-3 days event that includes aptitude tests and preliminary interview sessions.<br><br><strong>Eligible criteria to participate in TCO Job Fair:</strong><br>• <strong>final year student of bachelor's / master’s studies</strong><br>• <strong>GPA 3.0 and above</strong> "
+  },
+  "payload": {
+    "title": "If you are not confident about communication received, please keep in mind the below listed information:",
+    "list": [
+      "TCO never makes job offers without performing a formal interview process",
+      "No money transfers or payments of any kind will ever be requested by Tengizchevroil as part of the recruitment process",
+      "Tengizchevroil website pages always include:",
+      "Verify the e-mail address. Tengizchevroil e-mails end only in '@tengizchevroil.com'"
+    ],
+    "subtitle": "Should you happen you have received a fraudulent communication, please forward it to <a href='#''>TCO Hotline web-site.</a>"
   }
 }

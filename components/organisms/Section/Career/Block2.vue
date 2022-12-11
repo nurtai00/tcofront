@@ -4,14 +4,14 @@
       {{ $t('career.block2_header') }}
     </AtomsHeading>
     <div class="about_career_block">
-      <p>
+      <p class="block_p">
         {{ $t('career.block2_about') }}
       </p>
       <div class="info">
         <AtomsTag
           :tag="{
             text: $t('career.block2_tag'),
-            url: '123',
+            url: '/about',
             selected: true,
           }"
         />
@@ -48,18 +48,20 @@ export default {}
   &_block {
     display: flex;
     flex-direction: row;
-    p {
+    .block_p {
+      font-family: 'Roboto';
+      font-style: normal;
       font-weight: 400;
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 20px;
+      line-height: 28px;
       color: #30454e;
-    }
-    @include tablet() {
-      flex-direction: column-reverse;
-      p {
+      @include tablet() {
         font-size: 16px;
         line-height: 22px;
       }
+    }
+    @include tablet() {
+      flex-direction: column-reverse;
     }
   }
 }
@@ -91,6 +93,16 @@ export default {}
   }
   h5 {
     margin: 20px 0;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #30454e;
+    @include tablet() {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 }
 </style>

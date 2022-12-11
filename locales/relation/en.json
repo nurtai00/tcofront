@@ -1,9 +1,12 @@
 {
-  "breadcrumbs": ["Home", "Lender Relations"],
+  "breadcrumbs": [
+    "Home",
+    "Lender Relations"
+  ],
   "title": "Lender Relations",
   "block_1": {
     "title": "FGP-WPMP External Lender Relations",
-    "text": "In July 2016, TCO Partners announced approval for the final investment decision of the Future Growth Project-Wellhead Pressure Management Project (FGP-WPMP), the next major expansion of the Tengiz oil field.As part of FGP-WPMP project plans it is important for us to keep transparent two-way communication with our lenders. TCO is implementing a lender relations process to ensure that stakeholders will have ongoing opportunities to ask questions, comment and provide feedback.Our focus is to keep an open dialogue with our lender base and timely respond on questions. In addition to the information found under the Company tab, we are happy to assist you with quick and reliable responses."
+    "text": "In July 2016, TCO Partners announced approval for the final investment decision of the Future Growth Project-Wellhead Pressure Management Project (FGP-WPMP), the next major expansion of the Tengiz oil field.<br/><br/> As part of FGP-WPMP project plans it is important for us to keep transparent two-way communication with our lenders. TCO is implementing a lender relations process to ensure that stakeholders will have ongoing opportunities to ask questions, comment and provide feedback.<br/><br/>Our focus is to keep an open dialogue with our lender base and timely respond on questions. In addition to the information found under the <a href='/#/about' style='color: #00B0F0;  text-decoration: underline'>Company</a> tab, we are happy to assist you with quick and reliable responses."
   },
   "block_2": {
     "title": "Useful links:",
@@ -31,23 +34,38 @@
     "items": [
       {
         "title": "Rating agency",
-        "items": ["Standard & Poor’s", "Moody’s"]
+        "items": [
+          "Standard & Poor’s",
+          "Moody’s"
+        ]
       },
       {
         "title": "Latest revision",
-        "items": ["07/10/2022", "30/06/2021"]
+        "items": [
+          "07/10/2022",
+          "30/06/2021"
+        ]
       },
       {
         "title": "Global rating",
-        "items": ["BB+", "Baa2"]
+        "items": [
+          "BB+",
+          "Baa2"
+        ]
       },
       {
         "title": "Outlook",
-        "items": ["Negative", "Stable"]
+        "items": [
+          "Negative",
+          "Stable"
+        ]
       },
       {
         "title": "Webpage",
-        "items": ["S & P", "Moody's"]
+        "items": [
+          "S & P",
+          "Moody's"
+        ]
       }
     ]
   }

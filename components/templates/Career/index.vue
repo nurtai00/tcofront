@@ -3,7 +3,9 @@
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
         <AtomsBreadOption to="/">{{ $t('career.main') }}</AtomsBreadOption>
-        <AtomsBreadOption to="/career">{{ $t('career.career') }}</AtomsBreadOption>
+        <AtomsBreadOption to="/career">{{
+          $t('career.career')
+        }}</AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20"> {{ $t('career.career') }} </AtomsTitle>
       <AtomsTag v-for="(tag, idx) in tags" :key="idx" :tag="tag" />
@@ -40,7 +42,17 @@ export default {
       },
       content2: {
         title: this.$t('career.content2'),
-        text: `<ul type="disc"><li>${this.$t('career.content2_description')[0]}</li><li>${this.$t('career.content2_description')[1]} <br/> ${this.$t('career.content2_description')[2]}</li><li>${this.$t('career.content2_description')[3]}</li><li>${this.$t('career.content2_description')[4]}</li><li>${this.$t('career.content2_description')[5]}</li><li>${this.$t('career.content2_description')[6]}</li><li>${this.$t('career.content2_description')[7]} <br/> ${this.$t('career.content2_description')[8]}</li></ul>`,
+        text: `<ul type="disc">
+          <li>${this.$t('career.content2_description')[0]}</li>
+          <li>${this.$t('career.content2_description')[1]}
+          <br/> ${this.$t('career.content2_description')[2]}</li>
+          <li>${this.$t('career.content2_description')[3]}</li>
+          <li>${this.$t('career.content2_description')[4]}</li>
+          <li>${this.$t('career.content2_description')[5]}</li>
+          <li>${this.$t('career.content2_description')[6]}</li>
+          <li>${this.$t('career.content2_description')[7]}
+          <br/> ${this.$t('career.content2_description')[8]}</li>
+        </ul>`,
       },
     }
   },

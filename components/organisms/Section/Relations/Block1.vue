@@ -6,9 +6,7 @@
       </AtomsHeading>
       <div class="connect_content">
         <div>
-          <p>
-            {{ $t('relation.block_1.text') }}
-          </p>
+          <p v-html="text"></p>
         </div>
         <img src="@/assets/img/relations/factory.png" alt="factory" />
       </div>
@@ -17,7 +15,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      text: this.$t('relation.block_1.text'),
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -61,7 +65,7 @@ export default {}
     }
 
     img {
-      margin-top: -132px;
+      margin-top: -6%;
       @include tablet() {
         width: 250.0436553955078px;
         height: 217px;

@@ -391,9 +391,9 @@ export default {
     @include wide-tablet() {
       padding: 0 16px;
     }
-    gap: 50px;
+    gap: 54px;
     &__left {
-      flex-basis: 50%;
+      max-width: 600px;
       &-title {
       }
       &-subtitle {
@@ -426,7 +426,6 @@ export default {
         }
       }
       &-inner {
-        padding: 24px;
         & .subtitle {
           display: inline-block;
           margin-bottom: 24px;

@@ -23,11 +23,19 @@ export default {
 <style lang="scss" scoped>
 .list {
   max-width: 696px;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 20px;
+  margin-top: 40px;
+  span,
+  li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #30454e;
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -35,21 +43,8 @@ export default {
     li {
       display: flex;
       gap: 10px;
-      font-size: 20px;
-      font-family: Roboto, sans-serif;
-      font-weight: 300;
-      span {
-        color: black;
-        a {
-          color: $c-base;
-        }
-      }
     }
   }
-  &__subtitle {
-    a {
-      color: $c-base;
-    }
-  }
+
 }
 </style>

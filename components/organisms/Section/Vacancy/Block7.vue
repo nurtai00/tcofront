@@ -17,9 +17,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .vacancy {
-  background-color: #f2f6f7;
-  margin-top: 80px;
-  padding: 80px 0;
+  background: #ffffff;
+  // margin-top: 80px;
+  padding: 80px 0 88px;
   @include tablet() {
     margin-top: 40px;
     padding: 40px 0;

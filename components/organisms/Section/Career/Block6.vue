@@ -7,7 +7,7 @@
       {{ $t('career.block6_description') }}
     </p>
     <div class="map">
-      <img src="@/assets/img/career/map.png" alt="" class="map_back" />
+      <img src="@/assets/img/career/map_career.png" alt="" class="map_back" />
       <img src="@/assets/img/career/blue.png" alt="" class="blue" />
       <img src="@/assets/img/career/yellow.png" alt="" class="yellow" />
       <img src="@/assets/img/career/golub.png" alt="" class="golub" />

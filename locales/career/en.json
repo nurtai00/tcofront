@@ -144,5 +144,9 @@
       "High internet speed",
       "Smartphone (Android, IOS)"
     ]
-  ]
+  ],
+  "intern": {
+    "title": "Internship",
+    "step": "Step"
+  }
 }

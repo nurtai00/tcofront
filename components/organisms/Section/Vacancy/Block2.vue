@@ -43,28 +43,28 @@ export default {
       this.$modal.add({
         title: 'ListPopup',
         payload: {
-          title:
-            'Если вы не уверены в подлинности полученного сообщения, то, пожалуйста, примите во внимание нижеследующую информацию:',
+          title: this.$t('vacancy.payload.title'),
           list: [
             {
               id: 1,
-              text: 'ТШО никогда не делает предложение о работе без проведения официального собеседования',
+              text: this.$t('vacancy.payload.list[0]'),
             },
             {
               id: 2,
-              text: '<span>Компания Тенгизшевройл никогда не требует денег или плату любого вида в процессе отбора и найма</span>',
+              text: this.$t('vacancy.payload.list[1]'),
             },
             {
               id: 3,
-              text: '<span> Адрес веб-страниц компании Тенгизшевройл всегда содержит: <a href="#">http://www.tengizchevroil.com</a></span>',
+              text: `${this.$t(
+                'vacancy.payload.list[2]'
+              )} <a href="#">http://www.tengizchevroil.com</a>`,
             },
             {
               id: 4,
-              text: '<span> Проверяйте адреса электронной почты. Адреса электронной почты компании «Тенгизшевройл» должны заканчиваться на "@tengizchevroil.com"</span>',
+              text: this.$t('vacancy.payload.list[3]'),
             },
           ],
-          subtitle:
-            'При возникновении каких-либо сомнений в подлинности полученного сообщения, пожалуйста, <a href="#">обратитесь в Горячую линию ТШО</a>.',
+          subtitle: this.$t('vacancy.payload.subtitle'),
         },
       })
     },

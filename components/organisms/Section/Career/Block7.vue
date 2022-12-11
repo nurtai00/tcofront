@@ -5,9 +5,9 @@
     </AtomsHeading>
     <div class="motivation_career_header">
       <p>
-        {{ $t('career.block7_description') }}
+        {{ $t('career.block7_description')[0] }}
         <br />
-        {{ $t('career.block7_motivations') }}
+        {{ $t('career.block7_description')[1] }}
       </p>
       <img src="@/assets/img/career/motivation_img.png" alt="" />
     </div>

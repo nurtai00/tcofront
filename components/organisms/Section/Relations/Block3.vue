@@ -36,12 +36,16 @@
         <div class="info_block">
           <span>{{ $t('relation.block5.items[4].title') }}</span>
           <div class="info_block__footer">
-            <a href="https://www.spglobal.com/ratings/en/">{{
-              $t('relation.block5.items[4].items[0]')
-            }}</a>
-            <a
-              href="https://www.moodys.com/research/Moodys-assigns-PBaa2-rating-to-Tengizchevroil-Finance-Company-International-Ltds--PR_351572"
-              >{{ $t('relation.block5.items[4].items[1]') }}</a
+            <span
+              ><a href="https://www.spglobal.com/ratings/en/">{{
+                $t('relation.block5.items[4].items[0]')
+              }}</a></span
+            >
+            <span
+              ><a
+                href="https://www.moodys.com/research/Moodys-assigns-PBaa2-rating-to-Tengizchevroil-Finance-Company-International-Ltds--PR_351572"
+                >{{ $t('relation.block5.items[4].items[1]') }}123123</a
+              ></span
             >
           </div>
         </div>
@@ -101,8 +105,10 @@ export default {}
     @include tablet() {
       margin-top: 12px;
     }
-    span {
+    span,
+    a {
       font-weight: 300;
+      color: #30454e;
     }
   }
 }
