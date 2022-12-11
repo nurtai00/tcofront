@@ -12,7 +12,7 @@ export default {}
               <AtomsTitle class="atoms_title mb20" small>
                 {{ $t('home.block_3.title') }}
               </AtomsTitle>
-              <a href="/projects#pbr">{{ $t('home.block_3.link') }}</a>
+              <a :href="localePath('/projects')" class="mb20">{{ $t('home.block_3.link') }}</a>
             </div>
             <div class="line">
               <div>
@@ -37,7 +37,7 @@ export default {}
             </div>
           </div>
           <div class="card">
-            <img src="@/assets/img/Rectangle 27.png" />
+            <img src="@/assets/img/Rectangle 27.png" class="card__image" />
             <p>
               {{ $t('home.block_3.right.text') }}
             </p>
@@ -45,7 +45,7 @@ export default {}
               {{ $t('home.block_3.right.link_1') }}
             </a>
             <nuxt-link :to="localePath('/')" class="file">
-              <img width="24" height="24" src="@/assets/img/pdf.png" />
+              <img width="30" height="40" src="@/assets/img/pdf.png" />
               {{ $t('home.block_3.right.link_2') }}
             </nuxt-link>
           </div>
@@ -56,11 +56,20 @@ export default {}
 </template>
 
 <style scoped lang="scss">
+
+%card-text-style {
+  font-size: 18px;
+  line-height: 22px;
+  @media (max-width: 730px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 .tco {
   &__numbers {
     display: flex;
     justify-content: space-between;
-    gap: 25px;
+    gap: 36px;
     @media (max-width: 730px) {
       flex-direction: column;
     }
@@ -68,27 +77,38 @@ export default {}
       display: flex;
       flex-direction: column;
       width: 40%;
+      row-gap: 12px;
       @media (max-width: 730px) {
         width: 100%;
       }
+      &__image {
+        aspect-ratio: 1.9/1;
+        object-fit: cover;
+        flex: 1;
+      }
+      p {
+        @extend %card-text-style;
+        font-weight: 500;
+      }
       a {
+        @extend %card-text-style;
         display: flex;
-        gap: 15px;
-        margin-top: 15px;
+        gap: 12px;
         text-decoration-line: underline;
         color: #00b0f0;
         img {
-          width: 15px;
+          width: 30px;
         }
       }
       a:last-child {
+        margin-top: 15px;
         color: #30454e;
       }
     }
     .lines {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 20px;
       width: 60%;
       @media (max-width: 730px) {
         width: 100%;
@@ -104,6 +124,7 @@ export default {}
         div {
           display: flex;
           flex-direction: column;
+          row-gap: 12px;
           span {
             font-family: 'Montserrat';
             font-style: normal;
