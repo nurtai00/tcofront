@@ -103,6 +103,7 @@ export default {
 .slide {
   display: flex;
   position: relative;
+  text-align: left;
   &.reverse {
     flex-direction: row-reverse;
   }
