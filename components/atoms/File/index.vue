@@ -54,8 +54,8 @@ export default {
     text-decoration: underline;
 
     @include phone {
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 14px;
+      line-height: 18px;
       color: #00b0f0;
     }
   }

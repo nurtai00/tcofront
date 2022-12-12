@@ -269,8 +269,9 @@ export default {
     &__title {
       position: absolute;
       top: 20px;
-      color: white;
+      color: white !important;
       width: 70%;
+      z-index: 1;
     }
 
     &__arrow {

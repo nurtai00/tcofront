@@ -447,7 +447,7 @@ export default {
     }
 
     h3 {
-      color: #015467 !important;
+      color: #015467;
     }
 
     .slide {
@@ -580,6 +580,109 @@ export default {
 
       p {
         margin-bottom: 12px;
+      }
+    }
+  }
+
+  @include phone {
+    &__svg::v-deep {
+      padding-bottom: 40px;
+
+      .block__content_icon img {
+        width: 85px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &__content {
+      padding: 40px 0;
+    }
+
+    &__grid {
+      .card {
+        width: 100%;
+        margin-right: 0 !important;
+      }
+
+      & > div {
+        width: 100%;
+        margin-right: 0 !important;
+      }
+
+      &_icon p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 0;
+
+        &.desc {
+          font-size: 14px;
+          line-height: 18px;
+          margin-top: 12px;
+        }
+      }
+    }
+    .slide::v-deep {
+
+      .slide {
+
+        &__contentt {
+          ul li, p {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        &__dropdown_header {
+          font-size: 14px;
+          line-height: 20px;
+
+          div {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    .pt-80 {
+      padding-top: 40px;
+    }
+
+    .card-svg {
+      p {
+        font-size: 14px;
+        line-height: 18px;
+
+        &.title {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .contacts {
+      padding-bottom: 40px;
+
+      &__title {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &__group {
+        flex-direction: column;
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      &__city:first-child {
+        margin-bottom: 20px;
       }
     }
   }

@@ -6,7 +6,7 @@
         <div class="side__content_header">
           <div class="side__content_number">{{ side.number }}</div>
           <div class="side__content_close" @click="close">
-            <i class="icon-close" />
+            <img class="close" src="@/assets/icons/close.png" @click="close" />
           </div>
         </div>
         <div class="side__content_name">{{ side.name }}</div>
@@ -90,6 +90,9 @@ export default {
       font-size: 22px;
       color: #ccdde1;
       cursor: pointer;
+      img.close {
+        margin-bottom: 0;
+      }
     }
 
     &_name {
