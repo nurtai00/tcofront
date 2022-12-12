@@ -45,15 +45,9 @@ export default {
     return {
       active_step: 1,
       text: {
-        1: `<p style="margin-bottom: 8px">${
-          this.$t('career.step_text')[0]
-        }</p>`,
-        2: `<p style="margin-bottom: 8px">${
-          this.$t('career.step_text')[1]
-        }</p>`,
-        3: `<p style="margin-bottom: 8px">${
-          this.$t('career.step_text')[2]
-        }</p>`,
+        1: this.$t('career.step_text')[0],
+        2: this.$t('career.step_text')[1],
+        3: this.$t('career.step_text')[2],
       },
     }
   },
