@@ -37,8 +37,9 @@ export default {
   svg {
     margin-top: 14px;
     margin-right: 12px;
+    min-width: 12px;
     @include tablet() {
-      width: 10px;
+      min-width: 10px;
       height: 10px;
       margin-top: 8px;
       margin-right: 8px;

@@ -63,6 +63,9 @@
 
   &__title {
     margin-bottom: 40px;
+    &::v-deep .main {
+      color: $c-tco1
+    }
   }
 
   .gray {
@@ -81,6 +84,7 @@
       line-height: 46px;
       font-weight: 700;
       margin-bottom: 20px;
+      color: $c-tco1;
     }
 
     &__video {

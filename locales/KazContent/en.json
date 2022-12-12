@@ -278,5 +278,101 @@
       "TCO welcomes government support for local manufacturers to maintain competitiveness with foreign manufacturers.",
       "TCO's local content development department continuously seeks to find and attract local suppliers of goods and services capable of providing high quality services in various areas."
     ]
-  }
+  },
+  "map": [
+    {
+      "name": "Akmola region/Astana",
+      "content": [
+        "PIPELINE TRANSPORT RAILWAY RENTAL CATERING",
+        "CUSTOMS BROKER SERVICES TAXI/LIMOUSINE RENTAL SERVICES"
+      ]
+    },
+    {
+      "name": "Aktobe region",
+      "content": [
+        "BUILDING MATERIALS (GRAVEL) DESIGN AND SURVEY WORKS",
+        "RENTAL OF RAILWAY CARS"
+      ]
+    },
+    {
+      "name": "Almaty region/Almaty",
+      "content": [
+        "PRODUCTION SUPPORT OFFICE RAIL CAR RENTAL PIPELINE TRANSPORT ACCOMMODATION/HOTELS",
+        "TRANSPORTATION OF PETROLEUM PRODUCTS BY ROAD TRANSPORT",
+        "RENTAL PROPERTY",
+        "CUSTOMS BROKER SERVICES STAFFING ASSEMBLY-TYPE SUBSTATIONS HVAC INSTRUMENTS (VALVES),",
+        "FACTORY-MADE APPARATUS AND STEEL SHEETS ENGINEERING SERVICES (FOR BUILDINGS AND ASSEMBLY SYSTEMS) BUILDING WALL MASONRY"
+      ]
+    },
+    {
+      "name": "Atyrau region",
+      "content": [
+        "PIPELINE TRANSPORT STAFFING",
+        "PROJECT MANAGEMENT SERVICES BUILDING MAINTENANCE CIVIL WORKS",
+        "RENTAL OF RAILWAY CARS RENTAL OF MINING EQUIPMENT OIL AND GAS PROCESS DEVELOPMENT EQUIPMENT RENTAL",
+        "DEVICES AND VESSELS OF FACTORY PRODUCTION",
+        "GAS CONTROL UNIT GROUP STRUCTURAL STEEL PRODUCTION THREADED STUD"
+      ]
+    },
+    {
+      "name": "Karagandy region",
+      "content": []
+    },
+    {
+      "name": "Kostanay region",
+      "content": [
+        "MEDICAL EQUIPMENT/ CONSUMABLES"
+      ]
+    },
+    {
+      "name": "Mangistau region",
+      "content": [
+        "GENERAL CONSTRUCTION, MARINE WORKS AND REGULATORY AND LEGAL SUPPORT",
+        "STAFFING TECH.",
+        "OIL AND GAS PROCESS DEVELOPMENT",
+        "POWER PLANT CONSTRUCTION TRANSPORTATION-CONSTRUCTION AND MAINTENANCE CHEMICAL PLANT DEVELOPMENT",
+        "EARTHWORKS/SITE PREPARATION CONSTRUCTION AND REPAIR OF SHIP DOCKS REMOTE INSTRUMENT UNITS",
+        "EARTHWORKS"
+      ]
+    },
+    {
+      "name": "Pavlodar region",
+      "content": []
+    },
+    {
+      "name": "North-Kazakhstan region",
+      "content": [
+        "SECURITY EQUIPMENT SYSTEM AND SOFTWARE DEVELOPMENT ENVIRONMENTAL MANAGEMENT"
+      ]
+    },
+    {
+      "name": "East Kazakhstan region",
+      "content": [
+        "INSPECTION SERVICES MATERIALS/PRODUCTS",
+        "REPAIR OF ELECTRICAL EQUIPMENT MEDICAL EQUIPMENT BUILDING MATERIALS (CEMENT)"
+      ]
+    },
+    {
+      "name": "South Kazakhstan (Turkestan) region",
+      "content": [
+        "LUBRICANTS PROTECTION ELECTRIC CIRCUIT BUILDING MATERIALS (CEMENT)"
+      ]
+    },
+    {
+      "name": "West-Kazakhstan region",
+      "content": [
+        "STAFFING EARTHWORK/SITE PREPARATION PERSONAL SAFETY/PROTECTION EQUIPMENT RENTAL",
+        "NITROGEN TANK CLEANING SERVICES",
+        "FENCES",
+        "ASSEMBLY BALL VALVES"
+      ]
+    },
+    {
+      "name": "Jambyl Region",
+      "content": [
+        "HVAC SERVICES",
+        "AIR COMPRESSOR RENTAL CAR RENTAL CIVIL WORKS"
+      ]
+    }
+  ]
 }
