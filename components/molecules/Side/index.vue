@@ -105,8 +105,7 @@ export default {
       font-size: 20px;
       line-height: 28px;
       color: $c-tco1;
-      user-modify: read-write-plaintext-only;
-      -webkit-user-modify: read-write-plaintext-only;
+      white-space: pre-line;
 
       &::-webkit-scrollbar {
         display: none;

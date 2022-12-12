@@ -193,6 +193,7 @@ export default {
           description: [
             this.$t('kazContent.supportOriginBusiness.description'),
           ],
+          desciptionSolo: true,
           image: 'kazakhstani/kazakhstani2.png',
         },
         {
@@ -376,6 +377,7 @@ export default {
         font-size: 28px;
         font-weight: 700;
         margin-bottom: 20px;
+        color: $c-tco3;
       }
     }
   }
@@ -389,7 +391,7 @@ export default {
     line-height: 46px;
     font-weight: 700;
     margin-bottom: 40px;
-    color: $c-tco1;
+    color: $c-tco3;
   }
 
   &__svg::v-deep {
@@ -410,9 +412,9 @@ export default {
       box-shadow: 0 6px 30px 0 #30454e1a;
       color: $c-tco1;
 
-      i {
+      img {
         display: block;
-        font-size: 80px;
+        width: 80px;
         margin-bottom: 20px;
         color: #00b0f0;
       }
@@ -444,6 +446,10 @@ export default {
       background: $c-tco33;
     }
 
+    h3 {
+      color: #015467 !important;
+    }
+
     .slide {
       &__title {
         margin-bottom: 32px;
@@ -471,6 +477,10 @@ export default {
         &_item {
           overflow: hidden;
           position: relative;
+
+          &:first-child .slide__dropdown_header {
+            padding-top: 0;
+          }
 
           &.active .slide__dropdown {
             &_header {
@@ -558,6 +568,7 @@ export default {
       font-size: 24px;
       font-weight: 700;
       margin-bottom: 20px;
+      color: $c-tco3;
     }
 
     &__group {
