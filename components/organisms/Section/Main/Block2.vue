@@ -111,7 +111,7 @@ export default {
   grid-gap: 24px;
   &_item {
     width: 100%;
-    max-width: 376px;
+    max-width: 362px;
   }
 }
 </style>

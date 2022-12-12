@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main" style="position: relative">
     <OrganismsSlider :options="options">
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
         <div
@@ -75,10 +75,6 @@ export default {
           title: this.$t('company.slider_5[5].title'),
           text: this.$t('company.slider_5[5].text'),
         },
-        {
-          title: this.$t('company.slider_5[6].title'),
-          text: this.$t('company.slider_5[6].text'),
-        },
       ],
     }
   },
@@ -94,7 +90,7 @@ export default {
 <style lang="scss" v-deep scoped>
 .main {
   padding: 0;
-  height: 790px;
+  // height: 790px;
 }
 .tco {
   &__partners {
@@ -186,13 +182,14 @@ section {
 .main_b9_actions {
   display: flex;
   align-items: center;
-  position: relative;
+  position: absolute;
   left: calc(50% + 40px);
-  bottom: 80px;
+  bottom: 25px;
   @media (orientation: portrait) {
     left: 16px;
     position: absolute;
     top: 175px;
+    bottom: auto;
   }
   img {
     padding: 12px 18px 12px 14px;

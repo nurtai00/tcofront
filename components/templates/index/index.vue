@@ -3,6 +3,7 @@
     <OrganismsSectionMainBlock1 />
     <OrganismsSectionMainBlock2 />
     <OrganismsSectionMainBlock3 />
+    <OrganismsSectionMainBlock32 />
     <OrganismsSectionMainBlock4 />
   </div>
 </template>

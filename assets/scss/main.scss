@@ -178,6 +178,10 @@
     color: #00b0f0;
     position: absolute;
     right: 0px;
+    @media (orientation: portrait) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
 

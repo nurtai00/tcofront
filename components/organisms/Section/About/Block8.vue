@@ -88,7 +88,7 @@ export default {
 
 <style lang="scss" v-deep scoped>
 .section--blue {
-  height: 650px;
+  // height: 650px;
 }
 .double-block {
   @media (orientation: portrait) {
@@ -225,13 +225,14 @@ export default {
 .main_b8_actions {
   display: flex;
   align-items: center;
-  position: relative;
+  position: absolute;
   left: calc((100vw - 1176px) / 2);
-  bottom: 400px;
+  bottom: 140px;
   @media (orientation: portrait) {
     left: 16px;
     position: absolute;
-    top: 175px;
+    top: 180px;
+    bottom: auto;
   }
   img {
     padding: 12px 18px 12px 14px;
