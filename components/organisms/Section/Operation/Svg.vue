@@ -98,12 +98,18 @@ export default {
 
   @include phone {
     &__description {
-      font-size: 16px;
-      line-height: 20px;
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
 
     &__content_icon {
-      font-size: 125px;
+      font-size: 80px;
+
+      img {
+        width: 85px;
+      }
     }
   }
 }

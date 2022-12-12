@@ -578,6 +578,14 @@ export default {
       font-size: 20px;
       color: $c-tco1;
     }
+
+    @media screen and (max-width: 572px) {
+      padding: 40px 0;
+
+      p {
+        font-size: 14px;
+      }
+    }
   }
 
   .strategy {
@@ -615,6 +623,41 @@ export default {
         box-shadow: 0 10px 30px 0 #8a959e1a;
       }
     }
+
+    @media screen and (max-width: 1025px) {
+      flex-direction: column;
+
+      & > div {
+        width: 100%;
+      }
+
+      &__content {
+        padding-right: 0;
+      }
+    }
+
+    @include phone {
+      padding: 40px 0;
+
+      &__title {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &__cards {
+
+        & > div {
+          width: 100%;
+
+          &:nth-child(3) {order: 4}
+        }
+      }
+    }
   }
 
   &__titlee {
@@ -623,6 +666,11 @@ export default {
     line-height: 46px;
     color: $c-tco3;
     font-weight: 700;
+
+    @media screen and (max-width: 572px) {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &__working {
@@ -639,7 +687,16 @@ export default {
           & > div {
             width: calc(50% - 12px);
           }
+
+          @media screen and (max-width: 1025px) {
+            width: 100%;
+          }
         }
+      }
+
+      @media screen and (max-width: 1025px) {
+        flex-wrap: wrap;
+        margin-bottom: 0;
       }
     }
 
@@ -649,6 +706,11 @@ export default {
 
       & > div {
         width: calc(100% / 4 - 24px);
+
+        @media screen and (max-width: 1025px) {
+          width: calc(100% / 2 - 12px);
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -672,6 +734,41 @@ export default {
       p {
         a {
           color: $c-tco5;
+        }
+      }
+
+      @media screen and (max-width: 1025px) {
+        width: 100%;
+        margin-right: 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (max-width: 572px) {
+      padding: 40px 0;
+
+      &_content {
+        .title {
+          font-size: 20px;
+          line-height: 26px;
+
+          &:first-child {
+            margin-bottom: 40px;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      &_cards {
+        flex-wrap: wrap;
+
+        .card {
+          width: 100% !important;
         }
       }
     }
@@ -719,6 +816,36 @@ export default {
         line-height: 28px;
       }
     }
+
+    @include phone {
+      flex-direction: column;
+      padding-bottom: 0;
+
+      &_item {
+        width: 100%;
+        padding: 20px 0;
+
+        .date {
+          img {
+            width: 22px;
+          }
+        }
+
+        .time {
+          font-size: 20px;
+          line-height: 26px;
+        }
+
+        .title {
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
 
   &__content {
@@ -729,6 +856,15 @@ export default {
       font-size: 20px;
       line-height: 28px;
       color: $c-tco1;
+    }
+
+    @media screen and (max-width: 572px) {
+      padding: 40px 0;
+
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
   }
 
@@ -746,6 +882,10 @@ export default {
           fill: #447a85;
         }
       }
+    }
+
+    @media screen and (max-width: 572px) {
+      padding: 40px 0;
     }
   }
 
@@ -817,6 +957,24 @@ export default {
       a {
         color: $c-tco5;
         text-decoration: underline;
+      }
+    }
+
+    @media screen and (max-width: 572px) {
+      hr {
+        display: none;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
       }
     }
   }

@@ -72,5 +72,29 @@
       margin-bottom: 16px;
     }
   }
+
+  @include phone {
+    &__header {
+      padding: 1px 0 40px;
+    }
+
+    &__title {
+      padding: 0;
+    }
+
+    &__content {
+      padding: 40px 0;
+
+      &_title {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
 }
 </style>
