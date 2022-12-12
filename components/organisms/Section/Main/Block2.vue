@@ -10,7 +10,7 @@ export default {
     return {
       news: [
         {
-          id: 1,
+          id: 0,
           img: require('@/assets/img/new/new_1.jpeg'),
           tag: {
             text: this.$t('home.block_2.items[1].tag'), // '#Экономика',
@@ -21,10 +21,10 @@ export default {
           text: this.$t('news.new_1.text'),
         },
         {
-          id: 2,
+          id: 1,
           img: require('@/assets/img/new/new_2.jpeg'),
           tag: {
-            text: this.$t('home.block_2.items[1].tag'),
+            text: this.$t('home.block_2.items[0].tag'),
             color: '#0DA9D7',
           },
           date: this.$t('news.new_2.date'),
@@ -32,7 +32,7 @@ export default {
           text: this.$t('news.new_2.text'),
         },
         {
-          id: 3,
+          id: 2,
           img: require('@/assets/img/new/new_3.jpeg'),
           tag: {
             text: this.$t('home.block_2.items[2].tag'),

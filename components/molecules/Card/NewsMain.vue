@@ -2,31 +2,31 @@
   <div
     class="n_card"
     :class="{
-      n_card_left: [1, 4, 5, 7].includes(index),
-      n_card_right: [2, 3, 6].includes(index),
+      n_card_left: [1, 4, 5, 0, 7, 10].includes(index),
+      n_card_right: [2, 3, 6, 8, 9, 11, 12].includes(index),
       n_card_mobile_img: ![1, 2].includes(index),
     }"
     @click="navigateNew"
   >
     <img
       v-if="[2, 3, 6].includes(index)"
-      src="@/assets/img/news_card.png"
+      :src="require('@/assets/img/new/' + item[lang].img)"
       alt="news_card"
       class="n_card_desktop"
     />
     <img
       v-if="![1, 2].includes(index)"
       class="n_card_mobile"
-      src="@/assets/img/news_card.png"
+      :src="require('@/assets/img/new/' + item[lang].img)"
       alt="news_card"
     />
     <div class="n_card_content">
       <div class="n_card_header">
-        <p class="n_card_type">{{ $t('news.new.tag') }}</p>
-        <p class="n_card_date">{{ $t('news.new.date') }}</p>
+        <p :style="{color: tags[item[lang].category].color }">#{{ tags[item[lang].category].text }}</p>
+        <p class="n_card_date">{{ item[lang].date }}</p>
       </div>
       <AtomsHeading type="h6" color="main">
-        {{ $t('news.new.title') }}
+        {{ item[lang].title }}
       </AtomsHeading>
       <p
         class="n_card_text"
@@ -34,7 +34,7 @@
           '-webkit-line-clamp': [2, 3].includes(index) ? 2 : index == 6 ? 1 : 3,
         }"
       >
-        {{ $t('news.new.text') }}
+        <span v-if="item[lang].img !== 'new_2.jpeg'">{{ item[lang].body.slice(0,50) }}...</span>
       </p>
     </div>
   </div>
@@ -45,11 +45,25 @@ export default {
   props: {
     index: {
       type: Number,
+      default: 0
     },
+    item: {
+      type: Object,
+      default: () => {}
+    },
+    tags: {
+      type: Array,
+      default: () => []
+    }
+  },
+  computed: {
+    lang() {
+      return this.$i18n.locale
+    }
   },
   methods: {
     navigateNew() {
-      this.$router.push(this.localePath('/news/1'))
+      this.$router.push(this.localePath('/news/' + this.index))
     },
   },
 }
