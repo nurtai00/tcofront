@@ -41,11 +41,11 @@ export default {
   data() {
     return {
       tags: [
-        {
-          id: 1,
-          text: this.$t('project.tags_1[0]'),
-          url: '/projects',
-        },
+        // {
+        //   id: 1,
+        //   text: this.$t('project.tags_1[0]'),
+        //   url: '/projects',
+        // },
         {
           id: 2,
           text: this.$t('project.tags_1[1]'),

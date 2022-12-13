@@ -95,5 +95,21 @@
       }
     }
   }
+
+  @include phone {
+    .content {
+      padding: 40px 0;
+
+      p {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &__title {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
 }
 </style>

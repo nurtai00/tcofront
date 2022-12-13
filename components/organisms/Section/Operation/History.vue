@@ -43,9 +43,9 @@ export default {
           <AtomsTitle class="atoms_title" small>{{
             $t('project.block_5.title')
           }}</AtomsTitle>
-          <nuxt-link :to="localePath('/projects/other-projects')">{{
-            $t('project.block_5.all')
-          }}</nuxt-link>
+<!--          <nuxt-link :to="localePath('/projects/other-projects')">{{-->
+<!--            $t('project.block_5.all')-->
+<!--          }}</nuxt-link>-->
         </div>
         <!-- <AtomsTag
           :tag="{
