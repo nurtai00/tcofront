@@ -282,7 +282,7 @@ ${this.$t('products.cards2.1.description3')}`,
       ],
       slide: {
         title: this.$t('products.slide'),
-        image: 'products/products1.png',
+        image: 'products/products_1.png',
       },
     }
   },
