@@ -245,6 +245,7 @@ export default {
     display: flex;
     align-items: center;
     position: relative;
+    left: -100px;
   }
 }
 .marker {
