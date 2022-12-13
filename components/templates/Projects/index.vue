@@ -36,14 +36,14 @@
       </template>
     </OrganismsSectionOperationSvg>
 
-    <OrganismsSectionOperationSlide side :data="slide" class="slide">
+    <OrganismsSectionOperationSlide side :data="slide" class="slide" id="projectSlide">
       <div class="projects__slide">
         <div class="left">
           <div
             v-for="(item, key) in slider.left"
             :key="key"
-            :class="{ active: key === activeSlide }"
-            @click="activeSlide = key"
+            :class="{ active: key === animationProgress, inactive: key < animationProgress }"
+            @click="animationProgress = key"
           >
             {{ item }}
           </div>
@@ -52,7 +52,7 @@
           <div
             v-for="(item, key) in slider.right"
             :key="key"
-            :class="{ active: key === activeSlide }"
+            :class="{ active: key === animationProgress }"
           >
             {{ item }}
           </div>
@@ -108,12 +108,12 @@
 export default {
   data() {
     return {
-      activeSlide: 0,
+      animationProgress: 0,
       tags: [
-        {
-          id: 1,
-          text: this.$t('project.tags_1[0]'),
-        },
+        // {
+        //   id: 1,
+        //   text: this.$t('project.tags_1[0]'),
+        // },
         {
           id: 2,
           text: this.$t('project.tags_1[1]'),
@@ -213,6 +213,17 @@ export default {
         ],
       },
     }
+  },
+  mounted() {
+    const element = document.getElementById('projectSlide')
+    element.style.height = element.offsetHeight + 'px'
+    element.addEventListener('wheel', (e) => {
+      if (e.wheelDelta > 0 && this.animationProgress !== 0) {
+        this.animationProgress -= 1
+      } else if (e.wheelDelta < 0 && this.animationProgress !== 2) {
+        this.animationProgress += 1
+      }
+    })
   },
   methods: {
     onTag() {
@@ -327,10 +338,17 @@ export default {
         margin-bottom: 46px;
         cursor: pointer;
         transition: 0.2s ease-in-out;
+        max-height: 300px;
 
         &:not(.active) {
           color: #30454e;
           opacity: 0.1;
+        }
+
+        &.inactive {
+          max-height: 0;
+          margin-bottom: 0;
+          opacity: 0;
         }
       }
 
