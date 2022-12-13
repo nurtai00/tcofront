@@ -72,6 +72,10 @@ export default {
   &__go {
     color: $c-tco3;
     svg {
+      transition: transform 0.2s ease;
+      &:hover {
+        transform: translateX(-10px);
+      }
       circle {
         fill: $c-tco3;
       }

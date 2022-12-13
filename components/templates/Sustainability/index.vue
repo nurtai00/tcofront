@@ -10,12 +10,17 @@
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20"> {{ $t('suistainability.title') }}</AtomsTitle>
-      <AtomsTag v-for="tag of tags" :key="tag.id" :tag="tag" />
+      <AtomsTag
+        v-for="tag of tags"
+        :key="tag.id"
+        :tag="tag"
+        @click="onTag(tag.offsetTop)"
+      />
     </div>
     <OrganismsSectionSustainabilityImpactPopulation />
-    <OrganismsSectionSustainabilityEcology />
+    <OrganismsSectionSustainabilityEcology ref="ecology" />
     <OrganismsSectionSustainabilityLandScaping />
-    <OrganismsSectionSustainabilitySocialInvest />
+    <OrganismsSectionSustainabilitySocialInvest ref="socialInvest" />
     <OrganismsSectionSustainabilitySocialInvestProgram />
     <OrganismsSectionSustainabilityWorkPlaces />
     <OrganismsSectionSustainabilityMapProjects />
@@ -31,10 +36,30 @@ export default {
   data() {
     return {
       tags: [
-        { id: 1, text: this.$t('suistainability.ecologyText') },
-        { id: 2, text: this.$t('suistainability.invest') },
+        {
+          id: 1,
+          text: this.$t('suistainability.ecologyText'),
+          offsetTop: null,
+        },
+        {
+          id: 2,
+          text: this.$t('suistainability.invest'),
+          offsetTop: null,
+        },
       ],
     }
+  },
+  mounted() {
+    this.tags[0].offsetTop = this.$refs?.ecology?.$el?.offsetTop
+    this.tags[1].offsetTop = this.$refs?.socialInvest?.$el?.offsetTop
+  },
+  methods: {
+    onTag(offsetTop) {
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth',
+      })
+    },
   },
 }
 </script>

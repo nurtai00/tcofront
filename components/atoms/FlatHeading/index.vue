@@ -35,7 +35,8 @@ export default {
     word-wrap: break-word;
   }
   img {
-    transform: rotate(-5deg);
+    height: 60px;
+    width: 60px;
   }
   @include phone {
     &__title {

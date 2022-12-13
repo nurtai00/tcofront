@@ -75,7 +75,7 @@ export default {
           lists: [
             {
               id: 11,
-              iconName: 'map.png',
+              iconName: 'map_igilik.png',
               text: this.$t('contact.contents.1.text'),
             },
             {
@@ -102,7 +102,7 @@ export default {
           lists: [
             {
               id: 15,
-              iconName: 'map.png',
+              iconName: 'map_igilik.png',
               text: this.$t('contact.contents.2.text'),
             },
             {

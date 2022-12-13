@@ -6,7 +6,7 @@
       </AtomsHeading>
       <img
         class="map__img"
-        src="@/assets/img/sustainability/map-projects/map.png"
+        src="@/assets/img/sustainability/map-projects/map_igilik.png"
         alt="map"
       />
       <div class="map__markers">

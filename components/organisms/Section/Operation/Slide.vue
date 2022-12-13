@@ -39,7 +39,7 @@
       <template v-if="data.link">
         <div class="slide__link" @click="data.link()">
           <span>{{ $t('products.more') }}</span>
-          <img src="@/assets/img/operation/arrow_next.png" alt="" />
+          <img src="@/assets/img/operation/arrow_next.png" />
         </div>
       </template>
     </div>
