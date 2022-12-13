@@ -27,6 +27,7 @@
       :data="item"
     />
     <OrganismsSectionOperationSvg
+      ref="security"
       class="operations__production-security"
       :data="sideSvg[1]"
     />
@@ -63,7 +64,7 @@
         </div>
       </template>
     </OrganismsSectionOperationSvg>
-    <OrganismsSectionAboutBlock12 class="operations__news" />
+    <OrganismsSectionMainBlock2 class="operations__news" />
   </div>
 </template>
 
@@ -175,7 +176,10 @@ export default {
   },
   methods: {
     onTag() {
-      console.log('works')
+      window.scrollTo({
+        top: this.$refs.security.$el.offsetTop,
+        behavior: 'smooth',
+      })
     },
   },
 }
@@ -214,6 +218,7 @@ export default {
   }
 
   &__news {
+    padding-top: 40px;
     background: #f2f6f7;
   }
 }

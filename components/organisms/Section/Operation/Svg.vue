@@ -60,6 +60,7 @@ export default {
   }
 
   &__title {
+    margin-left: 10px;
     margin-bottom: 40px;
   }
 

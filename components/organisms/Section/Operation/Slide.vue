@@ -19,27 +19,21 @@
           v-for="(text, key) in data.description"
           :key="key"
           class="slide__description_item"
-        >{{ text }}</div>
+        >
+          {{ text }}
+        </div>
       </div>
       <template v-else>
         <slot />
       </template>
       <template v-if="data.description">
         <div v-if="data.description.length > 1" class="slide__arrow">
-          <img
-            role="button"
-            alt="arrow"
-            class="arrow__left"
-            src="@/assets/icons/arrowDown.png"
-            @click="onSlide(false)"
-          />
-          <img
-            role="button"
-            alt="arrow"
-            class="arrow__right"
-            src="@/assets/icons/arrowDown.png"
-            @click="onSlide(true)"
-          />
+          <div role="button" class="arrow__left" @click="onSlide(false)">
+            <img alt="arrow" src="@/assets/icons/arrowDown.png" />
+          </div>
+          <div role="button" class="arrow__right" @click="onSlide(true)">
+            <img alt="arrow" src="@/assets/icons/arrowDown.png" />
+          </div>
         </div>
       </template>
       <template v-if="data.link">
@@ -86,18 +80,42 @@ export default {
 .arrow {
   &__left {
     cursor: pointer;
-    padding: 10px 5px;
     border-radius: 50%;
     transform: rotate(90deg);
     border: 1px solid $c-tco3;
     margin-right: 10px;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #e6eef0;
+    }
+    transition: background-color 0.3s linear;
+    img {
+      height: 11px;
+      width: 18px;
+    }
   }
   &__right {
     cursor: pointer;
-    padding: 10px 5px;
     border-radius: 50%;
     transform: rotate(-90deg);
     border: 1px solid $c-tco3;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #e6eef0;
+    }
+    transition: background-color 0.3s linear;
+    img {
+      height: 10px;
+      width: 18px;
+    }
   }
 }
 .slide {
@@ -169,7 +187,6 @@ export default {
 
   &__title {
     margin-bottom: 40px;
-    color: $c-tco1;
   }
 
   &__description {
