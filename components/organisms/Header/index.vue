@@ -31,12 +31,12 @@
       <div
         class="menu_btn"
         :class="{ burger_close: show_nav }"
-        @click="showNav"
+        @click.stop="showNav"
       >
         <div class="menu_btn__burger"></div>
       </div>
     </div>
-    <div class="links container" :class="{ show_nav: show_nav }">
+    <div class="links container" :class="{ show_nav: show_nav }" ref="links_container">
       <div v-for="(route, idx) in routes" :key="idx">
         <NuxtLink
           :class="{ active_link: $route.path === route.link }"
@@ -88,22 +88,25 @@ export default {
           link: this.localePath('/relations'),
         },
       ],
-      defaultItem: 'RU',
+      defaultItem: 'ru',
       langs: [
         {
           name: 'RU',
           code: 'ru',
           label: 'Рус',
+          id: 'ru',
         },
         {
           name: 'KZ',
           code: 'kk',
           label: 'Қаз',
+          id: 'kk'
         },
         {
           name: 'EN',
           code: 'en',
           label: 'Eng',
+          id: 'en'
         },
       ],
     }
@@ -144,18 +147,40 @@ export default {
           link: this.localePath('/relations'),
         },
       ]
+      setTimeout(() => {
+        this.show_nav = false
+      }, 0)
     },
   },
+  mounted() {
+    document.body.addEventListener('click', this.closeOutsideHandler)
+  },
+  destroyed() {
+    document.body.removeEventListener('click', this.closeOutsideHandler)
+  },
   methods: {
+    closeOutsideHandler(event) {
+      if (
+        !(
+          (this.$refs.links_container === event.target ||
+          this.$refs.links_container?.contains(event.target))
+        ) && this.show_nav
+      ) {
+        this.show_nav = false
+      } else {
+        this.show_nav = true
+      }
+    },
     showNav() {
       this.show_nav = !this.show_nav
     },
     selectLang(lang) {
-      this.$i18n.setLocale(lang.code)
-      if (this.defaultItem === lang) {
+      const lang_1 = lang.code || lang
+      this.$i18n.setLocale(lang_1)
+      if (this.defaultItem === lang_1) {
         return
       }
-      this.defaultItem = lang
+      this.defaultItem = lang_1
       // lang = lang.toLowerCase()
       // if (lang == 'kz') lang = 'kk'
       // if (this.$route.path != this.switchLocalePath(lang))
