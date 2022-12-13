@@ -61,11 +61,12 @@ export default {
   }
 
   &__title {
-    margin-bottom: 40px;
-    color: $c-tco3;
+    font-family: 'Roboto';
     font-size: 22px;
     line-height: 28px;
     font-weight: 600;
+    color: $c-tco3;
+    margin-bottom: 40px;
   }
 
   &__go {

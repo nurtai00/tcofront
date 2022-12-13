@@ -3,6 +3,9 @@
     <div class="container">
       <MoleculesBreadcrumbs class="products__breadcrumbs">
         <AtomsBreadOption to="/">{{ $t('products.main') }}</AtomsBreadOption>
+        <AtomsBreadOption to="/operations">
+          {{ $t('operation.operatinos') }}
+        </AtomsBreadOption>
         <AtomsBreadOption to="/products">
           {{ $t('products.products') }}
         </AtomsBreadOption>
@@ -18,7 +21,7 @@
           v-for="(tag, index) of tags"
           :key="index"
           :tag="tag"
-          @click="onTag"
+          @click="onTag(tag.id == 2 ? 'gas' : tag.id == 3 ? 'sera' : '')"
         />
       </div>
     </div>
@@ -47,6 +50,7 @@
       </div>
     </div>
     <OrganismsSectionOperationSvg
+      ref="gas"
       class="products__production-security svgs"
       :data="sideSvg[1]"
     />
@@ -86,6 +90,7 @@
       </p>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSvg
+      ref="sera"
       class="products__production-security chesm svgs"
       :data="sideSvg[2]"
     />
@@ -282,8 +287,11 @@ ${this.$t('products.cards2.1.description3')}`,
     }
   },
   methods: {
-    onTag() {
-      console.log('works')
+    onTag(type) {
+      window.scrollTo({
+        top: this.$refs[type].$el.offsetTop,
+        behavior: 'smooth',
+      })
     },
   },
 }
@@ -292,10 +300,15 @@ ${this.$t('products.cards2.1.description3')}`,
 <style lang="scss" scoped>
 .products {
   &__breadcrumbs {
-    margin: 42px 0 22px;
+    margin: 40px 0 20px;
+  }
+
+  &__title {
+    margin-bottom: 36px;
   }
 
   &__description {
+    max-width: 1100px;
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 20px;
@@ -305,10 +318,6 @@ ${this.$t('products.cards2.1.description3')}`,
       font-size: 14px;
       line-height: 18px;
     }
-  }
-
-  &__title {
-    margin-bottom: 36px;
   }
 
   &__tags {
@@ -402,7 +411,7 @@ ${this.$t('products.cards2.1.description3')}`,
   & > * {
     width: calc((100% - 48px) / 3);
     margin-bottom: 24px;
-    height: 300px;
+    min-height: 270px;
 
     @media screen and (min-width: 1025px) {
       &:not(:nth-child(3n)) {

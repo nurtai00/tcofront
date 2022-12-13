@@ -61,9 +61,9 @@ export default {
   }
 
   &__content {
-    padding: 52px 80px;
+    padding: 52px 132px 52px 80px;
     background-color: white;
-    width: 65%;
+    width: 63%;
     float: right;
     height: 100%;
     position: relative;
@@ -168,6 +168,8 @@ export default {
     margin-bottom: 20px;
 
     li {
+      font-family: 'Roboto';
+      font-style: normal;
       list-style-type: disc;
       font-size: 20px;
       line-height: 28px;

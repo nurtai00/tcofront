@@ -65,9 +65,15 @@ export default {
   }
 
   &__description {
+    font-family: 'Roboto';
+    font-style: normal;
     font-size: 20px;
     line-height: 28px;
     color: $c-tco1;
+    @include tablet() {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__icon {
