@@ -18,11 +18,11 @@
           v-for="(tag, index) of tags"
           :key="index"
           :tag="tag"
-          @click="onTag"
+          @click="onTag(tag.offsetTop)"
         />
       </div>
     </div>
-    <OrganismsSectionOperationSvg class="svgs" :data="sideSvg[0]">
+    <OrganismsSectionOperationSvg ref="sgu" class="svgs" :data="sideSvg[0]">
       <template #description>
         <ul class="products__list">
           <li class="products__list_item">
@@ -47,6 +47,7 @@
       </div>
     </div>
     <OrganismsSectionOperationSvg
+      ref="natureGas"
       class="products__production-security svgs"
       :data="sideSvg[1]"
     />
@@ -86,6 +87,7 @@
       </p>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSvg
+      ref="sulfur"
       class="products__production-security chesm svgs"
       :data="sideSvg[2]"
     />
@@ -281,9 +283,19 @@ ${this.$t('products.cards2.1.description3')}`,
       },
     }
   },
+  mounted() {
+    this.tags[1].offsetTop = this.$refs.natureGas.$el.offsetTop
+
+    this.tags[0].offsetTop = this.$refs.sgu.$el.offsetTop
+
+    this.tags[2].offsetTop = this.$refs.sulfur.$el.offsetTop
+  },
   methods: {
-    onTag() {
-      console.log('works')
+    onTag(offsetTop) {
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth',
+      })
     },
   },
 }

@@ -38,7 +38,8 @@
       </template>
       <template v-if="data.link">
         <div class="slide__link" @click="data.link()">
-          <span>{{ $t('products.more') }}</span> <i class="icon-arrow-left" />
+          <span>{{ $t('products.more') }}</span>
+          <img src="@/assets/img/operation/arrow_next.png" />
         </div>
       </template>
     </div>
@@ -168,12 +169,8 @@ export default {
     span {
       text-decoration: underline;
     }
-
-    i {
-      margin-left: 12px;
-      font-size: 20px;
-      transform: rotate(180deg);
-      transform-origin: center;
+    img {
+      margin-left: 10px;
     }
   }
 

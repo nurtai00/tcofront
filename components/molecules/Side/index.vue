@@ -1,5 +1,5 @@
 <template>
-  <transition v-if="isOpen" name="side">
+  <transition v-if="isOpen" name="side" type="animation">
     <div class="side">
       <div class="side__closing" @click="close" />
       <div class="side__content">
@@ -45,7 +45,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  transition: 0.8s ease-in-out;
+  transition: 0.3s ease-in-out;
 
   &__closing {
     width: 100%;
@@ -92,6 +92,10 @@ export default {
       cursor: pointer;
       img.close {
         margin-bottom: 0;
+      }
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: rotate(180deg);
       }
     }
 
