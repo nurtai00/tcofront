@@ -92,6 +92,9 @@ export default {
 .atoms_tag {
   margin-bottom: 20px;
 }
+.atoms_title::v-deep .main {
+  color: $c-tco1;
+}
 .news_cards {
   display: flex;
   flex-direction: row;

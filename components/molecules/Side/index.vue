@@ -1,12 +1,12 @@
 <template>
-  <transition v-if="isOpen" name="side">
+  <transition v-if="isOpen" name="side" type="animation">
     <div class="side">
       <div class="side__closing" @click="close" />
       <div class="side__content">
         <div class="side__content_header">
           <div class="side__content_number">{{ side.number }}</div>
           <div class="side__content_close" @click="close">
-            <i class="icon-close" />
+            <img class="close" src="@/assets/icons/close.png" @click="close" />
           </div>
         </div>
         <div class="side__content_name">{{ side.name }}</div>
@@ -45,7 +45,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  transition: 0.8s ease-in-out;
+  transition: 0.3s ease-in-out;
 
   &__closing {
     width: 100%;
@@ -61,9 +61,9 @@ export default {
   }
 
   &__content {
-    padding: 52px 80px;
+    padding: 52px 132px 52px 80px;
     background-color: white;
-    width: 65%;
+    width: 63%;
     float: right;
     height: 100%;
     position: relative;
@@ -90,6 +90,13 @@ export default {
       font-size: 22px;
       color: #ccdde1;
       cursor: pointer;
+      img.close {
+        margin-bottom: 0;
+      }
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: rotate(180deg);
+      }
     }
 
     &_name {
@@ -105,8 +112,7 @@ export default {
       font-size: 20px;
       line-height: 28px;
       color: $c-tco1;
-      user-modify: read-write-plaintext-only;
-      -webkit-user-modify: read-write-plaintext-only;
+      white-space: pre-line;
 
       &::-webkit-scrollbar {
         display: none;
@@ -166,6 +172,8 @@ export default {
     margin-bottom: 20px;
 
     li {
+      font-family: 'Roboto';
+      font-style: normal;
       list-style-type: disc;
       font-size: 20px;
       line-height: 28px;

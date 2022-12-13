@@ -7,13 +7,13 @@
       class="slide__content container"
       :class="{ slided: slide, reverse: isReverse }"
     >
-      <AtomsHeading type="h3" class="slide__title title">
+      <AtomsHeading v-if="data.title" type="h3" class="slide__title title">
         {{ data.title }}
       </AtomsHeading>
       <div
         v-if="data.description"
         class="slide__description"
-        :class="{ reverse: isReverse }"
+        :class="{ reverse: isReverse, solo: data.desciptionSolo }"
       >
         <div
           v-for="(text, key) in data.description"
@@ -28,25 +28,18 @@
       </template>
       <template v-if="data.description">
         <div v-if="data.description.length > 1" class="slide__arrow">
-          <img
-            role="button"
-            alt="arrow"
-            class="arrow__left"
-            src="@/assets/icons/arrowDown.png"
-            @click="onSlide(false)"
-          />
-          <img
-            role="button"
-            alt="arrow"
-            class="arrow__right"
-            src="@/assets/icons/arrowDown.png"
-            @click="onSlide(true)"
-          />
+          <div role="button" class="arrow__left" @click="onSlide(false)">
+            <img alt="arrow" src="@/assets/icons/arrowDown.png" />
+          </div>
+          <div role="button" class="arrow__right" @click="onSlide(true)">
+            <img alt="arrow" src="@/assets/icons/arrowDown.png" />
+          </div>
         </div>
       </template>
       <template v-if="data.link">
         <div class="slide__link" @click="data.link()">
-          <span>{{ $t('products.more') }}</span> <i class="icon-arrow-left" />
+          <span>{{ $t('products.more') }}</span>
+          <img src="@/assets/img/operation/arrow_next.png" />
         </div>
       </template>
     </div>
@@ -88,23 +81,48 @@ export default {
 .arrow {
   &__left {
     cursor: pointer;
-    padding: 10px 5px;
     border-radius: 50%;
     transform: rotate(90deg);
     border: 1px solid $c-tco3;
     margin-right: 10px;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #e6eef0;
+    }
+    transition: background-color 0.3s linear;
+    img {
+      height: 11px;
+      width: 18px;
+    }
   }
   &__right {
     cursor: pointer;
-    padding: 10px 5px;
     border-radius: 50%;
     transform: rotate(-90deg);
     border: 1px solid $c-tco3;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #e6eef0;
+    }
+    transition: background-color 0.3s linear;
+    img {
+      height: 10px;
+      width: 18px;
+    }
   }
 }
 .slide {
   display: flex;
   position: relative;
+  text-align: left;
   &.reverse {
     flex-direction: row-reverse;
   }
@@ -152,11 +170,10 @@ export default {
       text-decoration: underline;
     }
 
-    i {
+    img {
       margin-left: 12px;
-      font-size: 20px;
-      transform: rotate(180deg);
-      transform-origin: center;
+      width: 24px;
+      height: 24px;
     }
   }
 
@@ -170,7 +187,6 @@ export default {
 
   &__title {
     margin-bottom: 40px;
-    color: $c-tco1;
   }
 
   &__description {
@@ -178,6 +194,10 @@ export default {
     display: flex;
     overflow: hidden;
     color: $c-tco1;
+
+    &.solo {
+      margin-bottom: 0;
+    }
     &.reverse {
       margin-right: 60px;
     }
@@ -188,8 +208,7 @@ export default {
       height: 100%;
       font-size: 20px;
       line-height: 28px;
-      user-modify: read-write-plaintext-only;
-      -webkit-user-modify: read-write-plaintext-only;
+      white-space: pre-line;
       transition: 0.6s ease-in-out;
     }
   }
@@ -222,10 +241,14 @@ export default {
 
   &__image {
     width: 50%;
+    position: relative;
 
     img {
       width: 100%;
       height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
   }
 
@@ -264,8 +287,9 @@ export default {
     &__title {
       position: absolute;
       top: 20px;
-      color: white;
+      color: white !important;
       width: 70%;
+      z-index: 1;
     }
 
     &__arrow {

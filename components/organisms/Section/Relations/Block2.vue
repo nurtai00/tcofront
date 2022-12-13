@@ -12,12 +12,20 @@
           <AtomsHeading type="h3" color="main" class="mb40">
             {{ $t('relation.block_2.title') }}
           </AtomsHeading>
-          <a href="">{{ $t('relation.block_2.links[0]') }}</a>
-          <a href="">{{ $t('relation.block_2.links[1]') }}</a>
-          <a href="">{{ $t('relation.block_2.links[2]') }}</a>
-          <a href="">{{ $t('relation.block_2.links[3]') }}</a>
-          <a href="">{{ $t('relation.block_2.links[4]') }}</a>
-          <a href="">{{ $t('relation.block_2.links[5]') }}</a>
+          <a :href="localePath('/#/about')">{{
+            $t('relation.block_2.links[0]')
+          }}</a>
+          <a :href="localePath('/#/projects')">{{
+            $t('relation.block_2.links[1]')
+          }}</a>
+          <a :href="localePath('/#/about')">{{
+            $t('relation.block_2.links[2]')
+          }}</a>
+          <a :href="localePath('/#/operations')">{{
+            $t('relation.block_2.links[3]')
+          }}</a>
+          <a>{{ $t('relation.block_2.links[4]') }}</a>
+          <a>{{ $t('relation.block_2.links[5]') }}</a>
         </div>
       </div>
       <img

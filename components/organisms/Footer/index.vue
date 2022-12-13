@@ -35,7 +35,7 @@
           <h6>{{ $t('header.footer.contact') }}</h6>
           <a href="tel:+7 712 227 1212">+7 712 227 1212</a>
           <a href="tel:+7 712 302 6000">+7 712 302 6000</a>
-          <a>{{ $t('header.footer.address') }}</a>
+          <a style="color: #fff">{{ $t('header.footer.address') }}</a>
           <a href="mailto:tcoinfo@tengizchevroil.com"
             >tcoinfo@tengizchevroil.com</a
           >
@@ -71,7 +71,7 @@
       </div>
     </div>
     <div class="container">
-      <a>{{ $t('header.footer.c') }}</a>
+      <a style="color: #fff">{{ $t('header.footer.c') }}</a>
       <nuxt-link :to="localePath('/privacy')" class="with_underline">
         {{ $t('header.footer.policy') }}
       </nuxt-link>

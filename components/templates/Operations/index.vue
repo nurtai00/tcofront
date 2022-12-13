@@ -19,14 +19,16 @@
         />
       </div>
     </div>
-    <OrganismsSectionOperationSvg :data="sideSvg[0]" />
+    <OrganismsSectionOperationSvg :data="sideSvg[0]" class="svg1" />
     <OrganismsSectionOperationSlide
       v-for="(item, key) in textSlide"
       :key="key"
       :side="!!(key % 2)"
       :data="item"
+      :class="`slide${key}`"
     />
     <OrganismsSectionOperationSvg
+      ref="security"
       class="operations__production-security"
       :data="sideSvg[1]"
     />
@@ -36,22 +38,15 @@
       :key="'second' + key"
       :side="!(key % 2)"
       :data="item"
+      :class="`slide2${key}`"
     />
     <OrganismsSectionOperationSvg
       class="operations__production-security chesm"
       :data="sideSvg[2]"
     >
       <template #description>
-        <AtomsFile
-          file="@/assets/files/Квалификационная анкета по процессу CHESM для потенциальных бизнес-партнеров.xls"
-          :text="$t('operation.file1')"
-          icon="xls"
-        />
-        <AtomsFile
-          file="@/assets/files/statistics.pdf"
-          :text="$t('operation.file2')"
-          icon="pdf"
-        />
+        <AtomsFile file="" :text="$t('operation.file1')" icon="xls" />
+        <AtomsFile file="" :text="$t('operation.file2')" icon="pdf" />
       </template>
       <template #footer>
         <div class="cards">
@@ -63,7 +58,7 @@
         </div>
       </template>
     </OrganismsSectionOperationSvg>
-    <OrganismsSectionAboutBlock12 class="operations__news" />
+    <OrganismsSectionMainBlock2 class="operations__news" />
   </div>
 </template>
 
@@ -175,7 +170,10 @@ export default {
   },
   methods: {
     onTag() {
-      console.log('works')
+      window.scrollTo({
+        top: this.$refs.security.$el.offsetTop,
+        behavior: 'smooth',
+      })
     },
   },
 }
@@ -186,7 +184,7 @@ export default {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   &__breadcrumbs {
-    margin: 42px 0 22px;
+    margin: 40px 0 20px;
   }
 
   &__title {
@@ -194,7 +192,46 @@ export default {
   }
 
   &__tags {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+  }
+
+  .svg1::v-deep {
+    .block__icon {
+      img {
+        max-width: 137px;
+        height: auto;
+      }
+    }
+    @include tablet() {
+      img {
+        max-width: 200px;
+        height: auto;
+      }
+    }
+    .block__description {
+      max-width: 776px;
+    }
+    .block__content {
+      padding-right: 202px;
+      @include tablet() {
+        padding: 0;
+      }
+    }
+  }
+  .slide0::v-deep {
+    h3 {
+      max-width: 270px;
+      margin-bottom: 0px;
+    }
+  }
+  .slide1::v-deep {
+    h3 {
+      width: 565px;
+      margin-bottom: 0px;
+      @media (max-width: 1350px) {
+        width: auto;
+      }
+    }
   }
 
   &__production-security.block {
@@ -209,12 +246,22 @@ export default {
     }
   }
 
+  .slide22::v-deep {
+    h3 {
+      margin-bottom: 0px;
+    }
+  }
+
   .chesm {
     background: white;
   }
 
   &__news {
+    padding: 40px 0;
     background: #f2f6f7;
+    @include tablet() {
+      padding: 0;
+    }
   }
 }
 

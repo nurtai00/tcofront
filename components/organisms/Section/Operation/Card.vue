@@ -5,11 +5,12 @@
     <div class="card__go">
       <!--      <img src="@/assets/icons/arrow-left.png" @click="onSideModal" />-->
       <svg
-        width="40"
-        height="40"
+        width="34"
+        height="34"
         viewBox="0 0 40 40"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        @click="onSideModal"
       >
         <circle cx="20" cy="20" r="20" fill="#E4E4E4" />
         <path
@@ -50,23 +51,31 @@ export default {
   position: relative;
 
   &__number {
-    color: rgba(1, 84, 103, 0.2);
-    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
     font-size: 28px;
     line-height: 32px;
+    color: rgba(1, 84, 103, 0.2);
+    margin-bottom: 20px;
   }
 
   &__title {
-    margin-bottom: 40px;
-    color: $c-tco3;
+    font-family: 'Roboto';
     font-size: 22px;
     line-height: 28px;
     font-weight: 600;
+    color: $c-tco3;
+    margin-bottom: 40px;
   }
 
   &__go {
     color: $c-tco3;
     svg {
+      transition: transform 0.2s ease;
+      &:hover {
+        transform: translateX(-10px);
+      }
       circle {
         fill: $c-tco3;
       }
@@ -74,7 +83,7 @@ export default {
         stroke: white;
       }
     }
-    font-size: 34px;
+    //font-size: 34px;
     cursor: pointer;
     position: absolute;
     bottom: 30px;

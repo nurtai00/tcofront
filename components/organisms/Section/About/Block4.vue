@@ -251,10 +251,12 @@ export default {
   left: calc((100vw - 1176px) / 2);
   top: -30px;
   z-index: 999;
+  display: none;
   @media (orientation: portrait) {
     left: 16px;
     top: -20px;
     width: calc(100vw - 32px);
+    display: none;
   }
   span {
     display: block;

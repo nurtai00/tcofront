@@ -13,7 +13,9 @@ export const mutations: MutationTree<ModalStateT> = {
   add(state, data: IModal) {
     data.id = 1
     state.modals = [data]
+    console.log(state.type, state.modals)
     state.type = data.type || ModalType.Default
+    console.log(state.type, state.modals)
   },
   // добавление в массив с несколькими модалок
   push(state, data: IModal) {

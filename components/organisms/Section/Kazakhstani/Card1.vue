@@ -103,5 +103,39 @@ export default {
       }
     }
   }
+
+  @include phone {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 8px;
+
+    &__icon {
+      width: 100px;
+      height: 100px;
+      grid-area: 1 / 1 / 3 / 2;
+      margin-bottom: 0;
+
+      img {
+        max-width: 60%;
+        max-height: 60%;
+      }
+    }
+
+    &__num {
+      font-size: 22px;
+      line-height: 28px;
+      left: 0
+    }
+
+    &__title {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    &__description {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+  }
 }
 </style>

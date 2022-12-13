@@ -618,7 +618,7 @@ export default {
       }
     }
     &-text {
-      padding-bottom: 50vw;
+      padding-bottom: 0px; // 50vw;
       @media (orientation: portrait) {
         padding-bottom: 0px;
         padding-top: 40px;

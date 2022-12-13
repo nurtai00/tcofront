@@ -38,6 +38,11 @@ export default {}
       justify-content: flex-start;
       align-items: flex-start;
     }
+    @media (orientation: portrait) {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
     a {
       font-weight: 400;
       font-size: 20px;

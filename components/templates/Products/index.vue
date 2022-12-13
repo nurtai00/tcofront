@@ -3,6 +3,9 @@
     <div class="container">
       <MoleculesBreadcrumbs class="products__breadcrumbs">
         <AtomsBreadOption to="/">{{ $t('products.main') }}</AtomsBreadOption>
+        <AtomsBreadOption to="/operations">
+          {{ $t('operation.operatinos') }}
+        </AtomsBreadOption>
         <AtomsBreadOption to="/products">
           {{ $t('products.products') }}
         </AtomsBreadOption>
@@ -18,11 +21,11 @@
           v-for="(tag, index) of tags"
           :key="index"
           :tag="tag"
-          @click="onTag"
+          @click="onTag(tag.offsetTop)"
         />
       </div>
     </div>
-    <OrganismsSectionOperationSvg class="svgs" :data="sideSvg[0]">
+    <OrganismsSectionOperationSvg ref="sgu" class="svgs" :data="sideSvg[0]">
       <template #description>
         <ul class="products__list">
           <li class="products__list_item">
@@ -47,6 +50,7 @@
       </div>
     </div>
     <OrganismsSectionOperationSvg
+      ref="natureGas"
       class="products__production-security svgs"
       :data="sideSvg[1]"
     />
@@ -86,6 +90,7 @@
       </p>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSvg
+      ref="sulfur"
       class="products__production-security chesm svgs"
       :data="sideSvg[2]"
     />
@@ -277,13 +282,23 @@ ${this.$t('products.cards2.1.description3')}`,
       ],
       slide: {
         title: this.$t('products.slide'),
-        image: 'products/products1.png',
+        image: 'products/products_1.png',
       },
     }
   },
+  mounted() {
+    this.tags[1].offsetTop = this.$refs.natureGas.$el.offsetTop
+
+    this.tags[0].offsetTop = this.$refs.sgu.$el.offsetTop
+
+    this.tags[2].offsetTop = this.$refs.sulfur.$el.offsetTop
+  },
   methods: {
-    onTag() {
-      console.log('works')
+    onTag(offsetTop) {
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth',
+      })
     },
   },
 }
@@ -292,10 +307,15 @@ ${this.$t('products.cards2.1.description3')}`,
 <style lang="scss" scoped>
 .products {
   &__breadcrumbs {
-    margin: 42px 0 22px;
+    margin: 40px 0 20px;
+  }
+
+  &__title {
+    margin-bottom: 36px;
   }
 
   &__description {
+    max-width: 1100px;
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 20px;
@@ -305,10 +325,6 @@ ${this.$t('products.cards2.1.description3')}`,
       font-size: 14px;
       line-height: 18px;
     }
-  }
-
-  &__title {
-    margin-bottom: 36px;
   }
 
   &__tags {
@@ -402,7 +418,7 @@ ${this.$t('products.cards2.1.description3')}`,
   & > * {
     width: calc((100% - 48px) / 3);
     margin-bottom: 24px;
-    height: 300px;
+    min-height: 270px;
 
     @media screen and (min-width: 1025px) {
       &:not(:nth-child(3n)) {

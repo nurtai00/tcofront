@@ -60,13 +60,20 @@ export default {
   }
 
   &__title {
+    // margin-left: 10px;
     margin-bottom: 40px;
   }
 
   &__description {
+    font-family: 'Roboto';
+    font-style: normal;
     font-size: 20px;
     line-height: 28px;
     color: $c-tco1;
+    @include tablet() {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__icon {
@@ -98,12 +105,18 @@ export default {
 
   @include phone {
     &__description {
-      font-size: 16px;
-      line-height: 20px;
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
 
     &__content_icon {
-      font-size: 125px;
+      font-size: 80px;
+
+      img {
+        width: 150px;
+      }
     }
   }
 }

@@ -30,6 +30,7 @@
         <AtomsFile
           file="@/assets/files/statistics.pdf"
           :text="$t('project.block_1.pdf')"
+          class="file"
           icon="pdf"
         />
       </template>
@@ -67,7 +68,7 @@
       <div class="container">
         <div class="projects__protocols">
           <div class="projects__protocols_header">
-            <AtomsTitle class="projects__title">
+            <AtomsTitle class="projects__title protocol">
               {{ $t('project.protocols.title') }}
             </AtomsTitle>
             <nuxt-link :to="localePath('/projects/protocols')" class="more">
@@ -138,7 +139,7 @@ export default {
       },
       slide2: {
         title: this.$t('project.block_3.title'),
-        description: this.$t('project.block_3.text'),
+        description: [this.$t('project.block_3.text')],
         image: 'projects/projects2.png',
         link: () => {
           this.$store.commit('side/open', {
@@ -316,11 +317,8 @@ export default {
     overflow: hidden;
     gap: 20px;
 
-    & > * {
-      width: 50%;
-    }
-
     .left {
+      width: 270px;
       font-size: 48px;
       font-weight: 700;
       line-height: 56px;
@@ -339,9 +337,19 @@ export default {
       .active {
         color: #0282a0;
       }
+
+      @include phone {
+        & > div {
+          font-size: 24px;
+          margin-bottom: 22px;
+          line-height: 110%;
+        }
+      }
     }
 
     .right {
+      padding-top: 3px;
+      flex: 1;
       text-align: right;
 
       & > div {
@@ -350,12 +358,27 @@ export default {
 
       .active {
         display: block;
+        font-size: 20px;
+        color: $c-tco1;
+        margin-left: 37px;
       }
     }
   }
 
   &__title {
     margin-bottom: 36px;
+
+    &.protocol::v-deep {
+      align-items: center;
+
+      .main {
+        color: $c-tco1;
+      }
+
+      svg {
+        margin-top: 0;
+      }
+    }
   }
 
   &__tags {
@@ -385,6 +408,10 @@ export default {
   .svgs {
     &::v-deep .block__icon i {
       font-size: 260px;
+    }
+
+    .file::v-deep a {
+      color: #00B0F0;
     }
   }
 
@@ -437,6 +464,10 @@ export default {
 
     .slide__content {
       background-color: $c-tco33;
+
+      .slide__title {
+        color: $c-tco3;
+      }
     }
   }
 

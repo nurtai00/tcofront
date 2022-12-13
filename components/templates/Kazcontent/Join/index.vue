@@ -193,6 +193,7 @@ export default {
           description: [
             this.$t('kazContent.supportOriginBusiness.description'),
           ],
+          desciptionSolo: true,
           image: 'kazakhstani/kazakhstani2.png',
         },
         {
@@ -376,6 +377,7 @@ export default {
         font-size: 28px;
         font-weight: 700;
         margin-bottom: 20px;
+        color: $c-tco3;
       }
     }
   }
@@ -389,7 +391,7 @@ export default {
     line-height: 46px;
     font-weight: 700;
     margin-bottom: 40px;
-    color: $c-tco1;
+    color: $c-tco3;
   }
 
   &__svg::v-deep {
@@ -410,9 +412,9 @@ export default {
       box-shadow: 0 6px 30px 0 #30454e1a;
       color: $c-tco1;
 
-      i {
+      img {
         display: block;
-        font-size: 80px;
+        width: 80px;
         margin-bottom: 20px;
         color: #00b0f0;
       }
@@ -444,6 +446,10 @@ export default {
       background: $c-tco33;
     }
 
+    h3 {
+      color: #015467;
+    }
+
     .slide {
       &__title {
         margin-bottom: 32px;
@@ -471,6 +477,10 @@ export default {
         &_item {
           overflow: hidden;
           position: relative;
+
+          &:first-child .slide__dropdown_header {
+            padding-top: 0;
+          }
 
           &.active .slide__dropdown {
             &_header {
@@ -558,6 +568,7 @@ export default {
       font-size: 24px;
       font-weight: 700;
       margin-bottom: 20px;
+      color: $c-tco3;
     }
 
     &__group {
@@ -569,6 +580,109 @@ export default {
 
       p {
         margin-bottom: 12px;
+      }
+    }
+  }
+
+  @include phone {
+    &__svg::v-deep {
+      padding-bottom: 40px;
+
+      .block__content_icon img {
+        width: 85px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &__content {
+      padding: 40px 0;
+    }
+
+    &__grid {
+      .card {
+        width: 100%;
+        margin-right: 0 !important;
+      }
+
+      & > div {
+        width: 100%;
+        margin-right: 0 !important;
+      }
+
+      &_icon p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 0;
+
+        &.desc {
+          font-size: 14px;
+          line-height: 18px;
+          margin-top: 12px;
+        }
+      }
+    }
+    .slide::v-deep {
+
+      .slide {
+
+        &__contentt {
+          ul li, p {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        &__dropdown_header {
+          font-size: 14px;
+          line-height: 20px;
+
+          div {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    .pt-80 {
+      padding-top: 40px;
+    }
+
+    .card-svg {
+      p {
+        font-size: 14px;
+        line-height: 18px;
+
+        &.title {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .contacts {
+      padding-bottom: 40px;
+
+      &__title {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &__group {
+        flex-direction: column;
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      &__city:first-child {
+        margin-bottom: 20px;
       }
     }
   }

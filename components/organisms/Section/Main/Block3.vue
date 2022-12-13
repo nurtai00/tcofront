@@ -3,8 +3,8 @@ export default {}
 </script>
 
 <template>
-  <div>
-    <section>
+  <div class="organismsSectionMainBlock3">
+    <section style="padding: 80px 0 50px">
       <div class="container">
         <div class="tco__numbers">
           <div class="lines">
@@ -12,7 +12,12 @@ export default {}
               <AtomsTitle class="atoms_title mb20" small>
                 {{ $t('home.block_3.title') }}
               </AtomsTitle>
-              <a :href="localePath('/projects')" class="mb20">{{ $t('home.block_3.link') }}</a>
+              <AtomsTitle class="atoms_title mb20 mobile" small>
+                {{ $t('home.block_3.title_mobile_1') }}
+              </AtomsTitle>
+              <a :href="localePath('/#/about')" class="mb20">{{
+                $t('home.block_3.link')
+              }}</a>
             </div>
             <div class="line">
               <div>
@@ -41,10 +46,14 @@ export default {}
             <p>
               {{ $t('home.block_3.right.text') }}
             </p>
-            <a href="/">
+            <a :href="localePath('/#/projects')" style="font-family: Roboto, sans-serif">
               {{ $t('home.block_3.right.link_1') }}
             </a>
-            <nuxt-link :to="localePath('/')" class="file">
+            <nuxt-link
+              :to="localePath('/')"
+              class="file"
+              style="font-family: Roboto, sans-serif"
+            >
               <img width="30" height="40" src="@/assets/img/pdf.png" />
               {{ $t('home.block_3.right.link_2') }}
             </nuxt-link>
@@ -56,10 +65,9 @@ export default {}
 </template>
 
 <style scoped lang="scss">
-
 %card-text-style {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 20px;
   @media (max-width: 730px) {
     font-size: 16px;
     line-height: 20px;
@@ -90,19 +98,22 @@ export default {}
         @extend %card-text-style;
         font-weight: 500;
       }
+      .mobile {
+        display: none;
+      }
       a {
         @extend %card-text-style;
         display: flex;
         gap: 12px;
         text-decoration-line: underline;
-        color: #00b0f0;
+        color: #00b0f0 !important;
         img {
           width: 30px;
         }
       }
       a:last-child {
         margin-top: 15px;
-        color: #30454e;
+        color: #30454e !important;
       }
     }
     .lines {
@@ -144,6 +155,51 @@ export default {}
         }
       }
     }
+  }
+}
+.organismsSectionMainBlock3 {
+  @media (orientation: portrait) {
+    .tco__numbers {
+      gap: 0px;
+      grid-gap: 0px;
+    }
+    .lines > * {
+      display: none !important;
+    }
+    .lines .section__title {
+      display: flex !important;
+      a,
+      .atoms_title {
+        display: none !important;
+      }
+      .mobile {
+        display: flex !important;
+        margin-bottom: 0px !important;
+      }
+    }
+    .card > * {
+      display: none !important;
+    }
+    .card .file {
+      display: flex !important;
+      background: rgba(1, 84, 103, 0.15);
+      padding: 16px;
+      font-family: 'Montserrat', sans-serif !important;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      color: #015467 !important;
+      text-decoration: none;
+      align-items: center;
+      margin-top: 0px !important;
+      img {
+        width: 26vw;
+        height: 14vh;
+      }
+    }
+  }
+  .mobile {
+    display: none;
   }
 }
 </style>
