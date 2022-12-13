@@ -15,7 +15,7 @@ export default {}
               <AtomsTitle class="atoms_title mb20 mobile" small>
                 {{ $t('home.block_3.title_mobile_1') }}
               </AtomsTitle>
-              <a :href="localePath('/projects')" class="mb20">{{
+              <a :href="localePath('/#/about')" class="mb20">{{
                 $t('home.block_3.link')
               }}</a>
             </div>
@@ -46,7 +46,7 @@ export default {}
             <p>
               {{ $t('home.block_3.right.text') }}
             </p>
-            <a href="/" style="font-family: Roboto, sans-serif">
+            <a :href="localePath('/#/projects')" style="font-family: Roboto, sans-serif">
               {{ $t('home.block_3.right.link_1') }}
             </a>
             <nuxt-link

@@ -60,7 +60,7 @@ export default {
   }
 
   &__title {
-    margin-left: 10px;
+    // margin-left: 10px;
     margin-bottom: 40px;
   }
 
@@ -109,7 +109,7 @@ export default {
       font-size: 80px;
 
       img {
-        width: 85px;
+        width: 150px;
       }
     }
   }

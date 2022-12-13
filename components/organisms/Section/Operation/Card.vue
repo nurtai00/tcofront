@@ -51,11 +51,13 @@ export default {
   position: relative;
 
   &__number {
-    color: rgba(1, 84, 103, 0.2);
-    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
     font-size: 28px;
     line-height: 32px;
-    font-weight: 700;
+    color: rgba(1, 84, 103, 0.2);
+    margin-bottom: 20px;
   }
 
   &__title {
