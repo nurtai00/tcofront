@@ -2,8 +2,8 @@
   <div
     class="n_card"
     :class="{
-      n_card_left: [1, 4, 5, 0, 7, 10].includes(index),
-      n_card_right: [2, 3, 6, 8, 9, 11, 12].includes(index),
+      n_card_left: [1, 4, 5, 0, 7, 10, 13, 16, 19].includes(index),
+      n_card_right: [2, 3, 6, 8, 9,11,12, 14, 15, 17, 18].includes(index),
       n_card_mobile_img: ![1, 2].includes(index),
     }"
     @click="navigateNew"
@@ -26,7 +26,8 @@
         <p class="n_card_date">{{ item[lang].date }}</p>
       </div>
       <AtomsHeading type="h6" color="main">
-        {{ item[lang].title }}
+        <span v-if="item[lang].title.length > 70">{{ item[lang].title.slice(0, 70) }}...</span>
+        <span v-else>{{ item[lang].title }}</span>
       </AtomsHeading>
       <p
         class="n_card_text"
@@ -34,7 +35,7 @@
           '-webkit-line-clamp': [2, 3].includes(index) ? 2 : index == 6 ? 1 : 3,
         }"
       >
-        <span v-if="item[lang].img !== 'new_2.jpeg'">{{ item[lang].body.slice(0,50) }}...</span>
+        <span>{{ item[lang].body.slice(0,50) }}...</span>
       </p>
     </div>
   </div>
