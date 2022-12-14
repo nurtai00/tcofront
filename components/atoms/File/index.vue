@@ -3,7 +3,12 @@
     <div class="file__image">
       <img :src="`${require(`@/assets/img/${icon}.png`)}`" alt="file format" />
     </div>
-    <a :href="file" class="file__name">
+    <a
+      :href="file"
+      class="file__name"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {{ text }}
     </a>
   </div>

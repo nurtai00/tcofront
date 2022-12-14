@@ -23,7 +23,7 @@
             {{ $t('kazContent.electricCatalog.description') }}
           </p>
           <AtomsFile
-            file="@/assets/files/Квалификационная анкета по процессу CHESM для потенциальных бизнес-партнеров.xls"
+            file="https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=a9630768%2Da362%2D4cf9%2Da09c%2Dabab83a77b20"
             :text="$t('kazContent.electricCatalog.file')"
             icon="zip"
           />
@@ -64,7 +64,7 @@
   &__title {
     margin-bottom: 40px;
     &::v-deep .main {
-      color: $c-tco1
+      color: $c-tco1;
     }
   }
 
