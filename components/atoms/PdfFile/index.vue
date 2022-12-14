@@ -27,7 +27,7 @@
         />
       </svg>
     </div>
-    <a :href="href">{{ text }}</a>
+    <a :href="href" target="_blank">{{ text }}</a>
   </div>
 </template>
 <script>
