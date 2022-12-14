@@ -1,9 +1,14 @@
 <template>
   <section class="section--blue">
     <div class="container">
-      <AtomsTitle small :point="false">
-        {{ $t('company.block_4.title') }}
-      </AtomsTitle>
+      <div class="about_block6">
+        <AtomsTitle small :point="false">
+          {{ $t('company.block_4.title') }}
+        </AtomsTitle>
+        <nuxt-link :to="localePath('/about/figures')">{{
+          $t('home.block_3.link')
+        }}</nuxt-link>
+      </div>
       <div class="tco__files">
         <a class="item" :href="links[$i18n.locale][0].link" target="_blank">
           <img :width="95" src="@/assets/img/pdf.png" />
@@ -82,6 +87,19 @@ export default {
 </script>
 
 <style lang="scss" v-deep scoped>
+.about_block6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #00b0f0;
+  }
+}
 .tco {
   &__files {
     display: flex;
