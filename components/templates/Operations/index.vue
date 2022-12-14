@@ -100,6 +100,7 @@ export default {
         {
           number: '04',
           name: this.$t('operation.cards')[3].name,
+          description: this.$t('operation.cards')[3].description,
         },
       ],
       sideSvg: [
