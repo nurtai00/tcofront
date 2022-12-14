@@ -42,7 +42,7 @@
       </a>
     </div>
     <img
-      src="@/assets/img/operation/operations1.png"
+      src="@/assets/img/sustainability/slide1.png"
       alt="bg"
       class="gif__img"
     />
@@ -67,6 +67,7 @@ export default {
 .gift {
   display: flex;
   &__content {
+    width: 50%;
     padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
   }
   &__description {
@@ -85,7 +86,7 @@ export default {
     color: $c-tco5;
   }
   img {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
   @include tablet {

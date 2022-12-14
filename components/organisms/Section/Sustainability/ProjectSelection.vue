@@ -257,6 +257,7 @@ export default {
       align-items: center;
       height: auto;
       left: 0;
+      overflow: hidden;
     }
   }
 }
