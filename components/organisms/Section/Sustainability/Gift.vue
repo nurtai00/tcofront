@@ -67,6 +67,7 @@ export default {
 .gift {
   display: flex;
   &__content {
+    background-color: $c-tco33;
     width: 50%;
     padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
   }
