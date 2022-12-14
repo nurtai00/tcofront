@@ -72,7 +72,7 @@ export default {
   &__wrapper {
     display: flex;
     gap: 72px;
-    height: 650px;
+    max-height: 650px;
   }
   &__content {
     padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
@@ -87,8 +87,8 @@ export default {
       margin-top: 20px;
     }
   }
-  &__img {
-    width: 50%;
+  img {
+    width: 100%;
     height: auto;
   }
   &__cards {
@@ -100,6 +100,8 @@ export default {
   @include tablet {
     &__wrapper {
       flex-direction: column-reverse;
+      max-height: 100%;
+      gap: 15px;
     }
     &__content {
       padding: 40px 16px;
@@ -110,8 +112,8 @@ export default {
       }
     }
     &__img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      height: 50%;
     }
     &__cards {
       grid-template-columns: repeat(1, 1fr);

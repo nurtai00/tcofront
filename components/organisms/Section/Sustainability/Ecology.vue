@@ -6,7 +6,7 @@
           {{ $t('suistainability.ecology.title') }}
         </AtomsHeading>
         <p class="ecology__description">
-          {{ $t('suistainability.ecology.description') }}}
+          {{ $t('suistainability.ecology.description') }}
         </p>
       </div>
       <div class="ecology__img">
@@ -117,12 +117,14 @@ export default {
   @include tablet {
     &__wrapper {
       flex-direction: column-reverse;
+      gap: 15px;
     }
 
     &__content {
       padding: 20px 16px;
     }
     &__description {
+      margin-top: 0px;
       font-size: 16px;
     }
     &__title {

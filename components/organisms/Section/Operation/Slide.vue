@@ -98,6 +98,13 @@ export default {
       height: 11px;
       width: 18px;
     }
+    @include tablet {
+      border: transparent;
+      background-color: #fff;
+      height: 32px;
+      width: 32px;
+      z-index: 100;
+    }
   }
   &__right {
     cursor: pointer;
@@ -117,6 +124,13 @@ export default {
       height: 10px;
       width: 18px;
     }
+    @include tablet {
+      background-color: #fff;
+      border: transparent;
+      height: 32px;
+      width: 32px;
+      z-index: 100;
+    }
   }
 }
 .slide {
@@ -125,6 +139,9 @@ export default {
   text-align: left;
   &.reverse {
     flex-direction: row-reverse;
+    @include tablet {
+      flex-direction: column-reverse;
+    }
   }
   &__content {
     width: 50%;

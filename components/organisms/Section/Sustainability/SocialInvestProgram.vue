@@ -37,10 +37,13 @@
     }
   }
   img {
-    width: 50%;
+    width: 100%;
+    height: auto;
   }
   @include tablet {
     flex-direction: column-reverse;
+    gap: 15px;
+    max-height: 100%;
     &__content {
       padding: 40px 16px;
     }
