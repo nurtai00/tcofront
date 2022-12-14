@@ -2,7 +2,7 @@
   <div>
     <div class="information">
       <div class="mobile">
-        <img src="@/assets/img/relations/info-1.jpg" alt="" />
+        <img src="@/assets/img/relations/relations3.png" alt="" />
         <AtomsHeading type="h3" color="white">
           {{ $t('relation.block_2.title') }}
         </AtomsHeading>
@@ -25,7 +25,7 @@
         </div>
       </div>
       <img
-        src="@/assets/img/relations/relations1.png"
+        src="@/assets/img/relations/relations3.png"
         alt=""
         srcset=""
         class="block_img"
@@ -55,7 +55,7 @@
     </div>
     <div class="information">
       <div class="mobile">
-        <img src="@/assets/img/relations/info-4.jpg" alt="" />
+        <img src="@/assets/img/relations/relations1.png" alt="" />
         <AtomsHeading type="h3" color="white">
           {{ $t('relation.block_4.title') }}
         </AtomsHeading>
@@ -129,7 +129,7 @@
         </div>
       </div>
       <img
-        src="@/assets/img/relations/info-1.jpg"
+        src="@/assets/img/relations/relations1.png"
         alt=""
         srcset=""
         class="block_img"
