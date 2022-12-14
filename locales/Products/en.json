@@ -100,5 +100,12 @@
         }
     },
     "slide": "Documents to be submitted",
-    "more": "Read more"
+    "more": "Read more",
+    "slide2": {
+      "title": "Documents to be submitted",
+      "description": "TCO needs to understand the participants in the full sales chain from TCO through intermediate marketing support companies, if required by end users, to the end users that consume TCO sulfur in order to meet TCO business review requirements. The TCO business review process is an integral element of the sulfur sales strategy. The TCO Sulfur Sales Questionnaire and Business Questionnaire are required to be filled out as a part of business review process.",
+      "file1": "Sulfur Sales Questionnaire (doc)",
+      "file2": "Business Questionnaire (xlsx)",
+      "address": "Please send all your filled in documents at"
+    }
 }

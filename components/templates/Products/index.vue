@@ -105,6 +105,26 @@
         </div>
       </div>
     </div>
+    <OrganismsSectionOperationSlide :side="false" :data="slide2" class="slide chesm">
+      <p style="margin-bottom: 20px;">{{ $t('products.slide2.description') }}</p>
+      <AtomsFile
+        :file="file1"
+        :text="$t('products.slide2.file1')"
+        icon="xls"
+      />
+      <AtomsFile
+        :file="file2"
+        :text="$t('products.slide2.file2')"
+        icon="doc"
+      />
+      <p class="slide_text">
+        {{ $t('products.slide2.address') }}
+        <a href="mailto:mtadmin@tengizchevroil.com"
+        >mtadmin@tengizchevroil.com</a
+        >
+        {{ $t('products.slide2.address2') }}
+      </p>
+    </OrganismsSectionOperationSlide>
 
     <!-- <OrganismsSectionOperationSlide
       v-for="(item, key) in textSlide"
@@ -284,6 +304,10 @@ ${this.$t('products.cards2.1.description3')}`,
         title: this.$t('products.slide'),
         image: 'products/products_1.png',
       },
+      slide2: {
+        title: this.$t('products.slide2.title'),
+        image: 'products/products_1.png',
+      },
     }
   },
   computed: {
@@ -300,6 +324,22 @@ ${this.$t('products.cards2.1.description3')}`,
         en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=68f6d113%2Da138%2D432a%2D9b00%2D770c21f5c4db',
         ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=870b2035%2Ddc5b%2D41a9%2Da73b%2Daa97e84fbd09',
         kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=ea83244f%2D675b%2D44eb%2Da5d7%2Dbe83d00598eb',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+    file1() {
+      const mapOfFileLink = {
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/:x:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7B365CBA1D-397B-4A24-A603-F928331B4FC5%7D&file=updated-business-questionnaire-for-customers%20(6).xlsx&action=default&mobileredirect=true',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/:x:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7B1468994F-3597-40ED-9DB1-ED03A5E97FA2%7D&file=updated-business-questionnaire-for-customers%20(3).xlsx&action=default&mobileredirect=true',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/:x:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7B7FB40FC8-A5EE-4A59-AFCA-A7804ACF2521%7D&file=%D0%86%D1%81%D0%BA%D0%B5%D1%80%D0%BB%D1%96%D0%BA%20%D1%81%D2%B1%D1%80%D0%B0%D1%83%D0%BD%D0%B0%D0%BC%D0%B0%20(%D0%BE%D1%80%D1%8B%D1%81%D1%88%D0%B0).xlsx&action=default&mobileredirect=true',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+    file2() {
+      const mapOfFileLink = {
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/:w:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7B5B8483CE-6E77-40FC-9479-6592DC3BDED9%7D&file=sulfur-sales-questionnaire.doc&action=default&mobileredirect=true',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/:w:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7BD4116BE3-27CD-4AAE-BCDD-F6BAC1166D05%7D&file=%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BD%D0%B8%D0%BA-%D0%BF%D0%BE-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0%D0%BC-%D1%81%D0%B5%D1%80%D1%8B.doc&action=default&mobileredirect=true',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/:w:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7BF22E75FB-3033-4BD0-B5C0-5217004ECC08%7D&file=%D0%BA%D2%AF%D0%BA%D1%96%D1%80%D1%82-%D1%81%D0%B0%D1%82%D1%8B%D0%BB%D1%8B%D0%BC%D1%8B-%D0%B6%D3%A9%D0%BD%D1%96%D0%BD%D0%B4%D0%B5%D0%B3%D1%96-%D1%81%D2%B1%D1%80%D0%B0%D1%83%D0%BD%D0%B0%D0%BC%D0%B0%D1%81%D1%8B.doc&action=default&mobileredirect=true',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
@@ -363,6 +403,12 @@ ${this.$t('products.cards2.1.description3')}`,
 
   .chesm {
     background: white;
+
+    &.slide::v-deep {
+      .slide__content {
+        background-color: white;
+      }
+    }
   }
 
   .grey {
