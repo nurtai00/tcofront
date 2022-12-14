@@ -49,6 +49,39 @@
         />
       </div>
     </div>
+    <OrganismsSectionOperationSlide :side="false" :data="slide1" class="slide">
+      <ul class="products__list_num">
+        <li v-for="item of $t('products.slide1list')" :key="item">
+          {{ item }}
+        </li>
+      </ul>
+      <AtomsFile
+        :file="skgBuisinessAnket"
+        :text="$t('products.file1')"
+        icon="xls"
+      />
+      <AtomsFile
+        :file="commercialSurveyLink"
+        :text="$t('products.slide1File1')"
+        icon="doc"
+      />
+      <AtomsFile
+        :file="technicalSurveyLink"
+        :text="$t('products.slide1File2')"
+        icon="doc"
+      />
+      <AtomsFile
+        :file="skgListRegisterDocs"
+        :text="$t('products.file2')"
+        icon="doc"
+      />
+      <p class="slide_text">
+        {{ $t('products.slide_text') }}
+        <a href="mailto:mtadmin@tengizchevroil.com"
+          >mtadmin@tengizchevroil.com</a
+        >
+      </p>
+    </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSvg
       ref="natureGas"
       class="products__production-security svgs"
@@ -63,7 +96,7 @@
         />
       </div>
     </div>
-    <OrganismsSectionOperationSlide :side="false" :data="slide" class="slide">
+    <OrganismsSectionOperationSlide :side="false" :data="slide2" class="slide">
       <ul class="products__list_num">
         <li>
           {{ $t('products.list_num1') }}
@@ -104,6 +137,35 @@
           />
         </div>
       </div>
+      <OrganismsSectionOperationSlide
+        :side="false"
+        :data="slide3"
+        class="slide"
+      >
+        <ul class="products__list_num">
+          <ul class="products__list_num">
+            <li v-for="item of $t('products.slide3list')" :key="item">
+              {{ item }}
+            </li>
+          </ul>
+        </ul>
+        <AtomsFile
+          :file="buisinessAnket"
+          :text="$t('products.file1')"
+          icon="xls"
+        />
+        <AtomsFile
+          :file="listRegisterDocs"
+          :text="$t('products.file2')"
+          icon="doc"
+        />
+        <p class="slide_text">
+          {{ $t('products.slide_text') }}
+          <a href="mailto:mtadmin@tengizchevroil.com"
+            >mtadmin@tengizchevroil.com</a
+          >
+        </p>
+      </OrganismsSectionOperationSlide>
     </div>
 
     <!-- <OrganismsSectionOperationSlide
@@ -280,8 +342,16 @@ ${this.$t('products.cards2.1.description3')}`,
 </ul>`,
         },
       ],
-      slide: {
-        title: this.$t('products.slide'),
+      slide1: {
+        title: this.$t('products.slide1'),
+        image: 'products/products_1.png',
+      },
+      slide2: {
+        title: this.$t('products.slide2'),
+        image: 'products/products_1.png',
+      },
+      slide3: {
+        title: this.$t('products.slide3'),
         image: 'products/products_1.png',
       },
     }
@@ -300,6 +370,38 @@ ${this.$t('products.cards2.1.description3')}`,
         en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=68f6d113%2Da138%2D432a%2D9b00%2D770c21f5c4db',
         ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=870b2035%2Ddc5b%2D41a9%2Da73b%2Daa97e84fbd09',
         kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=ea83244f%2D675b%2D44eb%2Da5d7%2Dbe83d00598eb',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+    skgBuisinessAnket() {
+      const mapOfFileLink = {
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=949f3388%2D4f61%2D424f%2Da37e%2De72d0f627e83',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=e9b32230%2D255e%2D4277%2Dabb0%2D4a74bf6932db',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=ea83244f%2D675b%2D44eb%2Da5d7%2Dbe83d00598eb',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+    skgListRegisterDocs() {
+      const mapOfFileLink = {
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=10a60ce2%2Dec00%2D4ff8%2Da3b7%2Dd590e3e0672b',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=abd22284%2D4f74%2D4af4%2Db562%2D15e681f524d6',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=cc5f5966%2D8428%2D47b1%2D8bb7%2D61d6678c059c',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+    commercialSurveyLink() {
+      const mapOfFileLink = {
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1505ae45%2D2971%2D44e9%2D9c9d%2D56a229d600c2',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=50b1eb71%2D4deb%2D432e%2Da6ba%2Da687f8f727f4',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=c1a79473%2D72cd%2D40ea%2Da1f0%2Dd627bd9bc3c3',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+    technicalSurveyLink() {
+      const mapOfFileLink = {
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=b27cfe43%2D3ba4%2D43a3%2D8348%2D756b16d54fde',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=db73de8f%2D0fe6%2D4a16%2D876b%2Defabd6b4b69a',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1284695c%2D910a%2D47bb%2D88ff%2Db6d917e44b81',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
