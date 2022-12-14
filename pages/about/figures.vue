@@ -53,7 +53,7 @@ export default {
           text: 2022,
         },
       ],
-      selected_tag: 1,
+      selected_tag: 2011,
       files: {
         en: {
           2011: [
@@ -274,14 +274,15 @@ export default {
           ],
         },
       },
+      // в files осталось добавить kk и ru
     }
   },
   methods: {
     onTag(item) {
-      console.log(item)
       this.tags.forEach((tag) => {
         if (tag.id === item.id) {
           tag.selected = true
+          this.selected_tag = tag.text
         } else {
           tag.selected = false
         }
@@ -313,6 +314,13 @@ export default {
           :tag="tag"
           @click="onTag"
         />
+      </div>
+      <div class="figures_list">
+        <div v-for="file in files.en[selected_tag]" :key="file.link">
+          <!-- осталось изменить en на $i18n.locale -->
+          <img src="@/assets/img/pdf.png" alt="pdf" width="30" height="40">
+          <a :href="file.link" target="_blank" v-text="file.name"></a>
+        </div>
       </div>
     </div>
   </div>
@@ -538,6 +546,28 @@ export default {
         }
       }
     }
+  }
+}
+.figures_list{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  @media (orientation: portrait) {
+    grid-template-columns: repeat(2, 50%);
+  }
+  div {
+    margin-bottom: 30px;
+  }
+  a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #181716;
+    display: block;
   }
 }
 </style>
