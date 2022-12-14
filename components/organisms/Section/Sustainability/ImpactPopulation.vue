@@ -76,7 +76,9 @@ export default {
           id: 4,
           title: this.$t('suistainability.impactPopulation.cards.card4'),
           imgSrc: 'block1-4.png',
-          popupText: '',
+          popupText: this.$t(
+            'suistainability.impactPopulation.popupText.card4'
+          ),
         },
       ],
     }
