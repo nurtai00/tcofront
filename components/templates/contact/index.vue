@@ -130,6 +130,7 @@ export default {
               id: 16,
               type: 'link',
               text: this.$t('contact.contents.3.text2'),
+              href: this.localePath('/#/vacancy'),
             },
             {
               id: 17,
@@ -182,6 +183,7 @@ export default {
               id: 24,
               text: this.$t('contact.contents.5.text2'),
               type: 'link',
+              href: this.localePath('/#/projects'),
             },
           ],
         },
@@ -198,6 +200,7 @@ export default {
               id: 26,
               text: this.$t('contact.contents.6.text2'),
               type: 'link',
+              href: 'https://seoi.tengizchevroil.com',
             },
           ],
         },
