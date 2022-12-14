@@ -105,6 +105,26 @@
         </div>
       </div>
     </div>
+    <OrganismsSectionOperationSlide :side="false" :data="slide2" class="slide chesm">
+      <p style="margin-bottom: 20px;">{{ $t('products.slide2.description') }}</p>
+      <AtomsFile
+        file="@/assets/files/Квалификационная анкета по процессу CHESM для потенциальных бизнес-партнеров.xls"
+        :text="$t('products.slide2.file1')"
+        icon="xls"
+      />
+      <AtomsFile
+        file="@/assets/files/statistics.pdf"
+        :text="$t('products.slide2.file2')"
+        icon="doc"
+      />
+      <p class="slide_text">
+        {{ $t('products.slide2.address') }}
+        <a href="mailto:mtadmin@tengizchevroil.com"
+        >mtadmin@tengizchevroil.com</a
+        >
+        {{ $t('products.slide2.address2') }}
+      </p>
+    </OrganismsSectionOperationSlide>
 
     <!-- <OrganismsSectionOperationSlide
       v-for="(item, key) in textSlide"
@@ -284,6 +304,10 @@ ${this.$t('products.cards2.1.description3')}`,
         title: this.$t('products.slide'),
         image: 'products/products_1.png',
       },
+      slide2: {
+        title: this.$t('products.slide2.title'),
+        image: 'products/products_1.png',
+      },
     }
   },
   mounted() {
@@ -345,6 +369,12 @@ ${this.$t('products.cards2.1.description3')}`,
 
   .chesm {
     background: white;
+
+    &.slide::v-deep {
+      .slide__content {
+        background-color: white;
+      }
+    }
   }
 
   .grey {

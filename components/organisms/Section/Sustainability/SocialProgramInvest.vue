@@ -42,23 +42,14 @@ export default {
       cards: [
         {
           id: 1,
-          text: 'Пример',
-          description:
-            'Описание Описание Описание ОписаниеОписаниеОписаниеОписаниеОписание Описание Описание ОписаниеОписаниеОписаниеОписание',
+          text: this.$t('suistainability.socialProgrammingInvest.cards')[0].title,
+          description: this.$t('suistainability.socialProgrammingInvest.cards')[0].description,
           img: 'sustainability/map-projects/document.png',
         },
         {
           id: 2,
-          text: 'Пример',
-          description:
-            'Описание Описание Описание ОписаниеОписаниеОписаниеОписаниеОписание Описание Описание ОписаниеОписаниеОписаниеОписание',
-          img: 'sustainability/map-projects/document.png',
-        },
-        {
-          id: 3,
-          text: 'Пример',
-          description:
-            'Описание Описание Описание ОписаниеОписаниеОписаниеОписаниеОписание Описание Описание ОписаниеОписаниеОписаниеОписание',
+          text: this.$t('suistainability.socialProgrammingInvest.cards')[1].title,
+          description: this.$t('suistainability.socialProgrammingInvest.cards')[1].description,
           img: 'sustainability/map-projects/document.png',
         },
       ],
