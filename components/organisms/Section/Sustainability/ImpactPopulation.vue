@@ -120,22 +120,26 @@ export default {
   &__content {
     margin-top: 40px;
     display: flex;
-    gap: 20px;
   }
   &__info {
-    margin-right: calc((var(--width-container) - 90vw) / 2);
     display: flex;
     flex-direction: column;
+    min-width: 50%;
+    padding-right: 20px;
     gap: 15px;
   }
   &__img {
     position: relative;
-    right: calc((var(--width-container) - 100vw) / 2);
-    width: 100%;
-    height: 50%;
+    min-width: calc(50% + (100vw - var(--width-container)) / 2);
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
     img {
-      object-fit: cover;
-      object-position: bottom;
+      object-fit: contain;
+      width: 100%;
+      position: absolute;
     }
   }
   @include tablet {
@@ -152,6 +156,8 @@ export default {
       img {
         width: 100%;
         height: 100%;
+        position: inherit;
+        margin-bottom: 20px;
       }
     }
     &__info {

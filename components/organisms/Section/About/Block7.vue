@@ -544,7 +544,7 @@ export default {
       }
     }
     img {
-      width: 550px;
+      width: 450px;
       @media (max-width: 886px) {
         width: 100%;
         max-width: inherit;
