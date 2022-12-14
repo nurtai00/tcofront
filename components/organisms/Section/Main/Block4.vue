@@ -14,7 +14,7 @@ export default {
       <div class="container">
         <AtomsTitle small>{{ $t('home.block_4.title') }}</AtomsTitle>
       </div>
-      <div class="double-block">
+      <div class="double-block container">
         <div class="tco__partners-wrapper tco__maintenance">
           <img src="@/assets/img/video_screen.png" alt="" />
         </div>
@@ -28,10 +28,7 @@ export default {
           <AtomsButton @click="nav">
             {{ $t('home.block_4.button') }}
             <img
-              src="@/assets/icons/chevron-right.png"
-              alt="chevron-right"
-              width="14"
-              height="14"
+              src="@/assets/img/right-Arrow.png"
             />
           </AtomsButton>
         </div>
@@ -41,6 +38,12 @@ export default {
 </template>
 
 <style scoped lang="scss">
+.double-block {
+  justify-content: space-between;
+  @include tablet() {
+    justify-content: flex-start;
+  }
+}
 .tco {
   &__partners {
     &-wrapper {
@@ -151,8 +154,8 @@ export default {
     }
     button img {
       margin-left: 8px;
-      width: 14px;
-      height: 14px;
+      width: 20px;
+      height: 20px;
     }
   }
 }

@@ -15,6 +15,7 @@
               direction="row"
               :width="30"
               :height="40"
+              :href="keyEnvironmentalIndicators"
             />
             <AtomsPdfFile
               class="mt20"
@@ -79,6 +80,16 @@ export default {
         },
       ],
     }
+  },
+  computed: {
+    keyEnvironmentalIndicators() {
+      const mapOfFileLink = {
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=062a4a18%2D5429%2D4ea9%2Dbaa1%2Da0df4ba3d946',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1b498f48%2D94e5%2D408e%2D8cb7%2D3f7a43425bba',
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=00bf1b5c%2D5e9a%2D4864%2D948c%2D99a17f6fa156',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
   },
   mounted() {
     console.log(this.$t('suistainability.impactPopulation.cards.card2'))

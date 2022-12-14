@@ -73,12 +73,12 @@
         </li>
       </ul>
       <AtomsFile
-        file="@/assets/files/Квалификационная анкета по процессу CHESM для потенциальных бизнес-партнеров.xls"
+        :file="buisinessAnket"
         :text="$t('products.file1')"
         icon="xls"
       />
       <AtomsFile
-        file="@/assets/files/statistics.pdf"
+        :file="listRegisterDocs"
         :text="$t('products.file2')"
         icon="doc"
       />
@@ -309,6 +309,24 @@ ${this.$t('products.cards2.1.description3')}`,
         image: 'products/products_1.png',
       },
     }
+  },
+  computed: {
+    listRegisterDocs() {
+      const mapOfFileLink = {
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=dfcbbe20%2De708%2D4d85%2Da26a%2D16a085ee6986',
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=227bec33%2Db2f4%2D42f5%2Dbdf2%2Df2ba224c2a80',
+        kz: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=cc5f5966%2D8428%2D47b1%2D8bb7%2D61d6678c059c',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+    buisinessAnket() {
+      const mapOfFileLink = {
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=68f6d113%2Da138%2D432a%2D9b00%2D770c21f5c4db',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=870b2035%2Ddc5b%2D41a9%2Da73b%2Daa97e84fbd09',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=ea83244f%2D675b%2D44eb%2Da5d7%2Dbe83d00598eb',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
   },
   mounted() {
     this.tags[1].offsetTop = this.$refs.natureGas.$el.offsetTop

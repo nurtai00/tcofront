@@ -36,13 +36,21 @@
       </template>
     </OrganismsSectionOperationSvg>
 
-    <OrganismsSectionOperationSlide side :data="slide" class="slide" id="projectSlide">
+    <OrganismsSectionOperationSlide
+      id="projectSlide"
+      side
+      :data="slide"
+      class="slide"
+    >
       <div class="projects__slide">
         <div class="left">
           <div
             v-for="(item, key) in slider.left"
             :key="key"
-            :class="{ active: key === animationProgress, inactive: key < animationProgress }"
+            :class="{
+              active: key === animationProgress,
+              inactive: key < animationProgress,
+            }"
             @click="animationProgress = key"
           >
             {{ item }}
@@ -90,7 +98,7 @@
         {{ $t('project.block_4.text') }}
       </p>
       <AtomsFile
-        file="@/assets/files/statistics.pdf"
+        :file="docPubr"
         :text="$t('project.block_4.pdf_1')"
         icon="pdf"
       />
@@ -213,6 +221,16 @@ export default {
         ],
       },
     }
+  },
+  computed: {
+    docPubr() {
+      const mapOfFileLink = {
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=f9483194%2D7bb6%2D4908%2D8b29%2D50f1341a70da',
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=06386e07%2Dae83%2D4e3e%2Da6b0%2D61c0bb0d2348',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=69605ed9%2D5d36%2D4936%2Da897%2D6c88732a408d',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
   },
   mounted() {
     const element = document.getElementById('projectSlide')
@@ -429,7 +447,7 @@ export default {
     }
 
     .file::v-deep a {
-      color: #00B0F0;
+      color: #00b0f0;
     }
   }
 
