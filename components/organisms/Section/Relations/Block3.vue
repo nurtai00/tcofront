@@ -44,7 +44,7 @@
             <span
               ><a
                 href="https://www.moodys.com/research/Moodys-assigns-PBaa2-rating-to-Tengizchevroil-Finance-Company-International-Ltds--PR_351572"
-                >{{ $t('relation.block5.items[4].items[1]') }}123123</a
+                >{{ $t('relation.block5.items[4].items[1]') }}</a
               ></span
             >
           </div>
