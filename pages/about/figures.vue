@@ -273,8 +273,443 @@ export default {
             // },
           ],
         },
+        kk: {
+          2011: [
+            {
+              name: 'қантар---наурыз-2011.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011',
+            },
+            {
+              name: 'қантар---маусым-2011.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011',
+            },
+            {
+              name: 'қантар---қыркүйек-2011.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011',
+            },
+            {
+              name: 'қантар---желтоқсан-2011.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011',
+            }
+          ],
+          2012: [
+            {
+              name: 'қантар---наурыз-2012.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012',
+            },
+            {
+              name: 'қантар---маусым-2012.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012',
+            },
+            {
+              name: 'қантар---қыркүйек-2012.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012',
+            },
+            {
+              name: 'қантар---желтоқсан-2012.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012',
+            }
+          ],
+          2013: [
+            {
+              name: 'қантар---наурыз-2013.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013',
+            },
+            {
+              name: 'қантар---маусым-2013.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013',
+            },
+            {
+              name: 'қантар---қыркүйек-2013.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013',
+            },
+            {
+              name: 'қантар---желтоқсан-2013.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013',
+            }
+          ],
+          2014: [
+            {
+              name: 'қантар---наурыз-2014.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014',
+            },
+            {
+              name: 'қантар---маусым-2014.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014',
+            },
+            {
+              name: 'қантар---қыркүйек-2014.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014',
+            },
+            {
+              name: 'қантар---желтоқсан-2014.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014',
+            }
+          ],
+          2015: [
+            {
+              name: 'қантар---наурыз-2015.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015',
+            },
+            {
+              name: 'қантар---маусым-2015.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015',
+            },
+            {
+              name: 'қантар---қыркүйек-2015.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015',
+            },
+            {
+              name: 'қантар---желтоқсан-2015.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015',
+            }
+          ],
+          2016: [
+            {
+              name: 'қантар---наурыз-2016.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016',
+            },
+            {
+              name: 'қантар---маусым-2016.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016',
+            },
+            {
+              name: 'қантар---қыркүйек-2016.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016',
+            },
+            {
+              name: 'қантар---желтоқсан-2016.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016',
+            }
+          ],
+          2017: [
+            {
+              name: 'қантар---наурыз-2017.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017',
+            },
+            {
+              name: 'қантар---маусым-2017.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017',
+            },
+            {
+              name: 'қантар---қыркүйек-2017.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017',
+            },
+            {
+              name: 'қантар---желтоқсан-2017.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017',
+            }
+          ],
+          2018: [
+            {
+              name: 'қантар---наурыз-2018.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018%2Ftco%2Dfact%2Dsheet%2D1q%2D2018%5Fk%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018',
+            },
+            {
+              name: 'қантар---маусым-2018.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018%2F2%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018',
+            },
+            {
+              name: 'қантар---қыркүйек-2018.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018%2F3%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018',
+            },
+            {
+              name: 'қантар---желтоқсан-2018.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018%2F4%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018',
+            }
+          ],
+          2019: [
+            {
+              name: 'қантар---наурыз-2019.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019%2F1%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019',
+            },
+            {
+              name: 'қантар---маусым-2019.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019%2Ftco%2Dfact%2Dsheet%2D1h%2D2019%5Fk%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019',
+            },
+            {
+              name: 'қантар---қыркүйек-2019.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019%2F3%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019',
+            },
+            {
+              name: 'қантар---желтоқсан-2019.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019%2F4%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019',
+            }
+          ],
+          2020: [
+            {
+              name: 'қантар---наурыз-2020.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020%2F1%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020',
+            },
+            {
+              name: 'қантар---маусым-2020.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020%2F2%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020',
+            },
+            {
+              name: 'қантар---қыркүйек-2020.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020%2F3%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020',
+            },
+            {
+              name: 'қантар---желтоқсан-2020.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020%2F4%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020',
+            }
+          ],
+          2021: [
+            {
+              name: 'қантар---наурыз-2021.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021%2F1%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021',
+            },
+            {
+              name: 'қантар---маусым-2021.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021%2F2%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021',
+            },
+            {
+              name: 'қантар---қыркүйек-2021.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021%2F3%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%284%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021',
+            },
+            {
+              name: 'қантар---желтоқсан-2021.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021%2F4%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021',
+            }
+          ],
+          2022: [
+            {
+              name: 'қантар---наурыз-2022.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022%2F1%2D%D1%88i%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022',
+            },
+            {
+              name: 'қантар---маусым-2022.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022%2F2%2D%D1%88i%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022',
+            },
+            {
+              name: 'қантар---қыркүйек-2022.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022%2F3%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%285%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022',
+            },
+            // {
+            //   name: 'қантар---желтоқсан-2022.pdf',
+            //   link: '',
+            // }
+          ]
+        },
+        ru: {
+          2011: [
+            {
+              name: 'январь--март-2011.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011'
+            },
+            {
+              name: 'январь--июнь-2011.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011'
+            },
+            {
+              name: 'январь--сентябрь-2011.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011'
+            },
+            {
+              name: 'январь--декабрь-2011.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011'
+            },
+          ],
+          2012: [
+            {
+              name: 'январь--март-2012.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012'
+            },
+            {
+              name: 'январь--июнь-2012.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012'
+            },
+            {
+              name: 'январь--сентябрь-2012.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012'
+            },
+            {
+              name: 'январь--декабрь-2012.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012'
+            },
+          ],
+          2013: [
+            {
+              name: 'январь--март-2013.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013'
+            },
+            {
+              name: 'январь--июнь-2013.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013'
+            },
+            {
+              name: 'январь--сентябрь-2013.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013'
+            },
+            {
+              name: 'январь--декабрь-2013.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013'
+            },
+          ],
+          2014: [
+            {
+              name: 'январь--март-2014.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014'
+            },
+            {
+              name: 'январь--июнь-2014.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014'
+            },
+            {
+              name: 'январь--сентябрь-2014.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014'
+            },
+            {
+              name: 'январь--декабрь-2014.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014'
+            },
+          ],
+          2015: [
+            {
+              name: 'январь--март-2015.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015'
+            },
+            {
+              name: 'январь--июнь-2015.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015'
+            },
+            {
+              name: 'январь--сентябрь-2015.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015'
+            },
+            {
+              name: 'январь--декабрь-2015.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015'
+            },
+          ],
+          2016: [
+            {
+              name: 'январь--март-2016.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016'
+            },
+            {
+              name: 'январь--июнь-2016.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016'
+            },
+            {
+              name: 'январь--сентябрь-2016.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016'
+            },
+            {
+              name: 'январь--декабрь-2016.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016'
+            },
+          ],
+          2017: [
+            {
+              name: 'январь--март-2017.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017'
+            },
+            {
+              name: 'январь--июнь-2017.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017'
+            },
+            {
+              name: 'январь--сентябрь-2017.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017'
+            },
+            {
+              name: 'январь--декабрь-2017.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017'
+            },
+          ],
+          2018: [
+            {
+              name: 'январь--март-2018.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018%2Ftco%2Dfact%2Dsheet%2D1q%2D2018%5Fr%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018'
+            },
+            {
+              name: 'январь--июнь-2018.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018%2F2%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018'
+            },
+            {
+              name: 'январь--сентябрь-2018.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018%2F3%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018'
+            },
+            {
+              name: 'январь--декабрь-2018.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018%2F4%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018'
+            },
+          ],
+          2019: [
+            {
+              name: 'январь--март-2019.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019%2F1%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019'
+            },
+            {
+              name: 'январь--июнь-2019.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019%2F1%2D%D0%BF%D0%BE%D0%BB%D1%83%D0%B3%D0%BE%D0%B4%D0%B8%D0%B5%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019'
+            },
+            {
+              name: 'январь--сентябрь-2019.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019%2F3%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019'
+            },
+            {
+              name: 'январь--декабрь-2019.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019%2F4%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019'
+            },
+          ],
+          2020: [
+            {
+              name: 'январь--март-2020.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020%2F1%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020'
+            },
+            {
+              name: 'январь--июнь-2020.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020%2F2%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020'
+            },
+            {
+              name: 'январь--сентябрь-2020.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020%2F3%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020'
+            },
+            {
+              name: 'январь--декабрь-2020.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020%2F4%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020'
+            },
+          ],
+          2021: [
+            {
+              name: 'январь--март-2021.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021%2F1%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021'
+            },
+            {
+              name: 'январь--июнь-2021.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021%2F2%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021'
+            },
+            {
+              name: 'январь--сентябрь-2021.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021%2F3%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%284%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021'
+            },
+            {
+              name: 'январь--декабрь-2021.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021%2F4%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021'
+            },
+          ],
+          2022: [
+            {
+              name: 'январь--март-2022.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022%2F1%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022'
+            },
+            {
+              name: 'январь--июнь-2022.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022%2F2%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022'
+            },
+            {
+              name: 'январь--сентябрь-2022.pdf',
+              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022%2F3%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%285%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022'
+            },
+            // {
+            //   name: 'январь--декабрь-2022.pdf',
+            //   link: ''
+            // },
+          ],
+        }
       },
-      // в files осталось добавить kk и ru
     }
   },
   methods: {
@@ -316,8 +751,7 @@ export default {
         />
       </div>
       <div class="figures_list">
-        <div v-for="file in files.en[selected_tag]" :key="file.link">
-          <!-- осталось изменить en на $i18n.locale -->
+        <div v-for="file in files[$i18n.locale][selected_tag]" :key="file.link">
           <img src="@/assets/img/pdf.png" alt="pdf" width="30" height="40">
           <a :href="file.link" target="_blank" v-text="file.name"></a>
         </div>
@@ -568,6 +1002,10 @@ export default {
     text-decoration-line: underline;
     color: #181716;
     display: block;
+    @media (orientation: portrait) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
 </style>

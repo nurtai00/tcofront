@@ -49,6 +49,39 @@
         />
       </div>
     </div>
+    <OrganismsSectionOperationSlide :side="false" :data="slide1" class="slide">
+      <ul class="products__list_num">
+        <li v-for="item of $t('products.slide1list')" :key="item">
+          {{ item }}
+        </li>
+      </ul>
+      <AtomsFile
+        :file="skgBuisinessAnket"
+        :text="$t('products.file1')"
+        icon="xls"
+      />
+      <AtomsFile
+        :file="commercialSurveyLink"
+        :text="$t('products.slide1File1')"
+        icon="doc"
+      />
+      <AtomsFile
+        :file="technicalSurveyLink"
+        :text="$t('products.slide1File2')"
+        icon="doc"
+      />
+      <AtomsFile
+        :file="skgListRegisterDocs"
+        :text="$t('products.file2')"
+        icon="doc"
+      />
+      <p class="slide_text">
+        {{ $t('products.slide_text') }}
+        <a href="mailto:mtadmin@tengizchevroil.com"
+          >mtadmin@tengizchevroil.com</a
+        >
+      </p>
+    </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSvg
       ref="natureGas"
       class="products__production-security svgs"
@@ -63,7 +96,7 @@
         />
       </div>
     </div>
-    <OrganismsSectionOperationSlide :side="false" :data="slide" class="slide">
+    <OrganismsSectionOperationSlide :side="false" :data="slide2" class="slide">
       <ul class="products__list_num">
         <li>
           {{ $t('products.list_num1') }}
@@ -104,27 +137,36 @@
           />
         </div>
       </div>
+      <OrganismsSectionOperationSlide
+        :side="false"
+        :data="slide3"
+        class="slide"
+      >
+        <ul class="products__list_num">
+          <ul class="products__list_num">
+            <li v-for="item of $t('products.slide3list')" :key="item">
+              {{ item }}
+            </li>
+          </ul>
+        </ul>
+        <AtomsFile
+          :file="buisinessAnket"
+          :text="$t('products.file1')"
+          icon="xls"
+        />
+        <AtomsFile
+          :file="listRegisterDocs"
+          :text="$t('products.file2')"
+          icon="doc"
+        />
+        <p class="slide_text">
+          {{ $t('products.slide_text') }}
+          <a href="mailto:mtadmin@tengizchevroil.com"
+            >mtadmin@tengizchevroil.com</a
+          >
+        </p>
+      </OrganismsSectionOperationSlide>
     </div>
-    <OrganismsSectionOperationSlide :side="false" :data="slide2" class="slide chesm">
-      <p style="margin-bottom: 20px;">{{ $t('products.slide2.description') }}</p>
-      <AtomsFile
-        :file="file1"
-        :text="$t('products.slide2.file1')"
-        icon="xls"
-      />
-      <AtomsFile
-        :file="file2"
-        :text="$t('products.slide2.file2')"
-        icon="doc"
-      />
-      <p class="slide_text">
-        {{ $t('products.slide2.address') }}
-        <a href="mailto:mtadmin@tengizchevroil.com"
-        >mtadmin@tengizchevroil.com</a
-        >
-        {{ $t('products.slide2.address2') }}
-      </p>
-    </OrganismsSectionOperationSlide>
 
     <!-- <OrganismsSectionOperationSlide
       v-for="(item, key) in textSlide"
@@ -300,12 +342,16 @@ ${this.$t('products.cards2.1.description3')}`,
 </ul>`,
         },
       ],
-      slide: {
-        title: this.$t('products.slide'),
+      slide1: {
+        title: this.$t('products.slide1'),
         image: 'products/products_1.png',
       },
       slide2: {
-        title: this.$t('products.slide2.title'),
+        title: this.$t('products.slide2'),
+        image: 'products/products_1.png',
+      },
+      slide3: {
+        title: this.$t('products.slide3'),
         image: 'products/products_1.png',
       },
     }
@@ -327,19 +373,35 @@ ${this.$t('products.cards2.1.description3')}`,
       }
       return mapOfFileLink[this.$i18n.locale]
     },
-    file1() {
+    skgBuisinessAnket() {
       const mapOfFileLink = {
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/:x:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7B365CBA1D-397B-4A24-A603-F928331B4FC5%7D&file=updated-business-questionnaire-for-customers%20(6).xlsx&action=default&mobileredirect=true',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/:x:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7B1468994F-3597-40ED-9DB1-ED03A5E97FA2%7D&file=updated-business-questionnaire-for-customers%20(3).xlsx&action=default&mobileredirect=true',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/:x:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7B7FB40FC8-A5EE-4A59-AFCA-A7804ACF2521%7D&file=%D0%86%D1%81%D0%BA%D0%B5%D1%80%D0%BB%D1%96%D0%BA%20%D1%81%D2%B1%D1%80%D0%B0%D1%83%D0%BD%D0%B0%D0%BC%D0%B0%20(%D0%BE%D1%80%D1%8B%D1%81%D1%88%D0%B0).xlsx&action=default&mobileredirect=true',
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=949f3388%2D4f61%2D424f%2Da37e%2De72d0f627e83',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=e9b32230%2D255e%2D4277%2Dabb0%2D4a74bf6932db',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=ea83244f%2D675b%2D44eb%2Da5d7%2Dbe83d00598eb',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
-    file2() {
+    skgListRegisterDocs() {
       const mapOfFileLink = {
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/:w:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7B5B8483CE-6E77-40FC-9479-6592DC3BDED9%7D&file=sulfur-sales-questionnaire.doc&action=default&mobileredirect=true',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/:w:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7BD4116BE3-27CD-4AAE-BCDD-F6BAC1166D05%7D&file=%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BD%D0%B8%D0%BA-%D0%BF%D0%BE-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0%D0%BC-%D1%81%D0%B5%D1%80%D1%8B.doc&action=default&mobileredirect=true',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/:w:/r/personal/n_nudiyev_norsec_kz/_layouts/15/Doc.aspx?sourcedoc=%7BF22E75FB-3033-4BD0-B5C0-5217004ECC08%7D&file=%D0%BA%D2%AF%D0%BA%D1%96%D1%80%D1%82-%D1%81%D0%B0%D1%82%D1%8B%D0%BB%D1%8B%D0%BC%D1%8B-%D0%B6%D3%A9%D0%BD%D1%96%D0%BD%D0%B4%D0%B5%D0%B3%D1%96-%D1%81%D2%B1%D1%80%D0%B0%D1%83%D0%BD%D0%B0%D0%BC%D0%B0%D1%81%D1%8B.doc&action=default&mobileredirect=true',
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=10a60ce2%2Dec00%2D4ff8%2Da3b7%2Dd590e3e0672b',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=abd22284%2D4f74%2D4af4%2Db562%2D15e681f524d6',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=cc5f5966%2D8428%2D47b1%2D8bb7%2D61d6678c059c',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+    commercialSurveyLink() {
+      const mapOfFileLink = {
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1505ae45%2D2971%2D44e9%2D9c9d%2D56a229d600c2',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=50b1eb71%2D4deb%2D432e%2Da6ba%2Da687f8f727f4',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=c1a79473%2D72cd%2D40ea%2Da1f0%2Dd627bd9bc3c3',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+    technicalSurveyLink() {
+      const mapOfFileLink = {
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=b27cfe43%2D3ba4%2D43a3%2D8348%2D756b16d54fde',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=db73de8f%2D0fe6%2D4a16%2D876b%2Defabd6b4b69a',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1284695c%2D910a%2D47bb%2D88ff%2Db6d917e44b81',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
@@ -403,12 +465,6 @@ ${this.$t('products.cards2.1.description3')}`,
 
   .chesm {
     background: white;
-
-    &.slide::v-deep {
-      .slide__content {
-        background-color: white;
-      }
-    }
   }
 
   .grey {
