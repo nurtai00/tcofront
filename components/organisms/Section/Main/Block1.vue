@@ -62,7 +62,8 @@ export default {
             <h3 class="tco__partners-title" v-text="slide.title"></h3>
             <p class="tco__partners-text" v-text="slide.text"></p>
             <a class="slide__link" :href="slide.link" target="_blank">
-              <span>{{ slide.button }}</span> <i class="icon-arrow-left" />
+              <span>{{ slide.button }}</span>
+              <img src="@/assets/img/right-Arrow.png" />
             </a>
           </div>
           <img :src="slide.img" alt="kazmunaylogo" />
@@ -184,13 +185,10 @@ export default {
       display: inline-block;
       height: 20px;
     }
-    i {
+    img {
       margin-left: 12px;
-      font-size: 18px;
-      margin-bottom: 7px;
-      &::before {
-        content: '\2192';
-      }
+      width: 20px;
+      height: 20px;
     }
   }
 }
