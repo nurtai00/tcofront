@@ -1,111 +1,117 @@
 {
-    "main": "Home",
-    "products": "Products",
-    "title": "Products",
-    "description": "Tengizchevroil produces liquefied petroleum gas (LPG), dry gas and sulfur in addition to crude oil.",
-    "item1": "TCO focuses LPG sales to the wholesale term market under long-term contracts to pre-qualified customers.",
-    "item2": "TCO sells to the wholesale spot market only on an 'as needed' basis when additional production quantities are made available to pre-qualified customers.",
-    "item3": "TCO does not operate in the retail market.",
-    "list_num1": "To enable initial business review, TCO will request all buyers to fill out, in detail, the Business Questionnaire",
-    "list_num2": "To enable performing a credit and business review assessment, TCO will require buyer's company registration documents, financial reports, bank reference, and other documents that TCO deems necessary to complete the assessment. Please see the Customer Credit Checklist for full list of required documents",
-    "file1": "Business Questionnaire (xlsx)",
-    "file2": "Sulfur Sales Questionnaire (doc)",
-    "slide_text": "Please send all your filled in documents at",
-    "tags": {
-        "1": "LPG",
-        "2": "Natural gas sales",
-        "3": "Sulfur sales strategy"
+  "main": "Home",
+  "products": "Products",
+  "title": "Products",
+  "description": "Tengizchevroil produces liquefied petroleum gas (LPG), dry gas and sulfur in addition to crude oil.",
+  "item1": "TCO focuses LPG sales to the wholesale term market under long-term contracts to pre-qualified customers.",
+  "item2": "TCO sells to the wholesale spot market only on an 'as needed' basis when additional production quantities are made available to pre-qualified customers.",
+  "item3": "TCO does not operate in the retail market.",
+  "list_num1": "To enable initial business review, TCO will request all buyers to fill out, in detail, the Business Questionnaire",
+  "list_num2": "To enable performing a credit and business review assessment, TCO will require buyer's company registration documents, financial reports, bank reference, and other documents that TCO deems necessary to complete the assessment. Please see the Customer Credit Checklist for full list of required documents",
+  "file1": "Business Questionnaire (xlsx)",
+  "file2": "Sulfur Sales Questionnaire (doc)",
+  "slide_text": "Please send all your filled in documents at",
+  "tags": {
+    "1": "LPG",
+    "2": "Natural gas sales",
+    "3": "Sulfur sales strategy"
+  },
+  "sideSvg": {
+    "1": {
+      "title": "Liquefied Petroleum Gas (LPG)"
     },
-    "sideSvg": {
-        "1": {
-            "title": "Liquefied Petroleum Gas (LPG)"
-        },
-        "2": {
-            "title": "Dry Gas Sales",
-            "description": "TCO prefers to sell dry gas under medium and long-term contracts to customers who are consumers of dry gas in their owned-facilities or owners of distribution pipeline systems which they use to deliver dry gas to retail consumers."
-        },
-        "3": {
-            "title": "Sulfur Sales Strategy",
-            "description": "TCO developed its sulfur sales strategy based on best industry practice to ensure that TCO treats all potential consumers of TCO sulfur and intermediate marketing support companies in a structured and equitable manner."
-        }
+    "2": {
+      "title": "Dry Gas Sales",
+      "description": "TCO prefers to sell dry gas under medium and long-term contracts to customers who are consumers of dry gas in their owned-facilities or owners of distribution pipeline systems which they use to deliver dry gas to retail consumers."
     },
-    "cards1": {
-        "1": {
-            "name": "Customers",
-            "description": "TCO has established a long-term, diverse and capable customer base which support reliable product off take under term sales agreements."
-        },
-        "2": {
-            "name": "Markets",
-            "html1": "TCO sells LPG to Kazakhstan and to export markets using rail and seaborne deliveries. Export sales are based on Incoterms 2000, typically as delivered at frontier (DAF), Carriage Paid To (CPT) and Delivered At Point ( DAP), free on board (FOB) sales to TCO's pre-qualified customers.",
-            "html2": "Sales to Kazakhstani customers",
-            "html3": "TCO sells LPG inside Kazakhstan. Sales are made using a monthly request for proposals (a tender process). TCO delivers LPG to end destinations of Kazakhstani customers to ensure that TCO meets its product stewardship commitments. TCO's tender is open to all customers which meet TCO's pre-qualification criteria.",
-            "html4": "TCO tender award criteria include, but are not limited to, the following considerations:",
-            "html5": "Prior lifting and contract performance",
-            "html6": "Tender price for each product grade",
-            "html7": "Quantities - which must be within the tender requirements and shall be consumed solely within Kazakhstan",
-            "html8": "Export sales",
-            "html9": "TCO sells LPG by",
-            "html10": "Rail deliveries to regions of Europe bordering CIS countries and",
-            "html11": "Seaborne deliveries are made to Black Sea and Mediterranean Sea region countries (from Black Sea terminal)",
-            "html12": "Rail Transportation:",
-            "html13": "TCO leases a fleet of LPG rail tank cars to transport all production safely and reliably. TCO obtains rail plans through freight forwarders for shipments from Kulsary to end destinations.",
-            "html14": "Seaborne Transportation:",
-            "html15": "Term sales customers typically lift LPG on vessels that customers own or charter. The vessels must meet TCO requirements and the marine terminal from which the lifting is made. Most spot sales customers also own or charter vessels."
-        },
-        "3": {
-            "name": "Prices",
-            "description": "TCO sells LPG based on market prices using LPG price quotations published by Argus which are leading global providers of energy industry information and price assessments. When negotiating LPG prices, TCO considers the competitive environment in each market place."
-        },
-        "4": {
-            "name": "Potential Customer's Pre-Qualification Criteria",
-            "html1": "TCO assesses all potential customers from commercial, financial, logistical, and technical perspectives. All potential customers must meet TCO's requirements under its business review process. TCO gives strong preference to establishing commercial business relationships with buyers. All potential customers must demonstrate organizational capability and meet these criteria:",
-            "html2": "Understand and meet LPG product stewardship and safety requirements",
-            "html3": "Achieved medium to large size as an end user and/or a LPG distributor",
-            "html4": "Achieved a minimum of 3-5 years of practical and recent experience in the LPG industry",
-            "html5": "Established and sustained safe and reliable LPG receiving, handling, storage and distribution operations",
-            "html6": "Own or lease assets including rail tank car discharging facilities, gas bottle filling stations, auto gas stations, rail tank cars, vehicles, rail terminals, marine terminals, and/or related facilities that will support steady and sustained LPG purchases",
-            "html7": "Developed and retained employees with substantial LPG handling, transportation, sales, and logistics experience",
-            "html8": "Developed a permanent, long-term customer base, if a distributor",
-            "html9": "Developed sustained financial performance for the last 3 financial years and demonstrated the financial capability to make pre-payments or open Letters of Credit to secure contract sales quantities"
-        }
-    },
-    "cards2": {
-        "1": {
-            "name": "Customers",
-            "description1": "TCO delivers dry gas to customers in domestic and export markets by shipping through pipelines. Domestic sales are made 'free carrier' (FCA) and export sales are made 'delivered at frontier' (DAF) to TCO's pre-qualified customers.",
-            "description2": "In the Kazakhstan market, TCO supplies dry gas to local communal and industrial customers located in Atyrau oblast.",
-            "description3": "TCO plans to continue supplying gas under long-term sales agreements for both export and domestic customers. TCO is focused on maintaining access to existing customers in the market and also tries to diversify customers."
-        },
-        "2": {
-            "name": "Pre-Qualification Criteria for Potential Customers",
-            "description1": "TCO assesses all potential customers from commercial, financial, and technical perspective. All potential customers must meet TCO's requirements under its business review process. TCO gives strong preference to establishing commercial business relationships with end users who consume dry gas in their facilities or own pipeline distribution networks used to deliver dry gas to retail customers. All potential customers must demonstrate organizational capability to qualify as TCO customer."
-        }
-    },
-    "cards3": {
-        "1": {
-            "name": "Customers",
-            "html1": "TCO prefers to sell sulfur directly to end users",
-            "html2": "TCO will sell sulfur through an intermediary marketing support company if:",
-            "html3": "The end user lacks organizational, logistical, and/or financial capability to buy TCO sulfur directly",
-            "html4": "The end user requests a single intermediary marketing support company with which the end user is willing to work through to purchase TCO sulfur",
-            "html5": "TCO approves the intermediary marketing support company based on its proficiency, sulfur trading expertise, proven track of record of sulfur marketing, organizational, logistical, and/or financial capability as the sole intermediary between TCO and the end user"
-        },
-        "2": {
-            "name": "TCO sells for export from the following priorities:",
-            "html1": "TCO sells for export from the following priorities:",
-            "html2": "Kazakhstan end users based on their demand",
-            "html3": "CIS end users that consume liquid sulfur based on the capacity of TCO and third party owned liquid sulfur rail tank cars",
-            "html4": "Offshore and CIS end users that consume GX granulated sulfur to a limit of granulated sulfur production capacity or export terminal capacity to ship granulated sulfur",
-            "html5": "Kazakhstan end users and CIS end users that consume crushed block sulfur (CBS) to a limit of recovery capacity at Tengiz or a railway capacity limit"
-        }
-    },
-    "slide": "Documents to be submitted",
-    "more": "Read more",
-    "slide2": {
-      "title": "Documents to be submitted",
-      "description": "TCO needs to understand the participants in the full sales chain from TCO through intermediate marketing support companies, if required by end users, to the end users that consume TCO sulfur in order to meet TCO business review requirements. The TCO business review process is an integral element of the sulfur sales strategy. The TCO Sulfur Sales Questionnaire and Business Questionnaire are required to be filled out as a part of business review process.",
-      "file1": "Sulfur Sales Questionnaire (doc)",
-      "file2": "Business Questionnaire (xlsx)",
-      "address": "Please send all your filled in documents at"
+    "3": {
+      "title": "Sulfur Sales Strategy",
+      "description": "TCO developed its sulfur sales strategy based on best industry practice to ensure that TCO treats all potential consumers of TCO sulfur and intermediate marketing support companies in a structured and equitable manner."
     }
+  },
+  "cards1": {
+    "1": {
+      "name": "Customers",
+      "description": "TCO has established a long-term, diverse and capable customer base which support reliable product off take under term sales agreements."
+    },
+    "2": {
+      "name": "Markets",
+      "html1": "TCO sells LPG to Kazakhstan and to export markets using rail and seaborne deliveries. Export sales are based on Incoterms 2000, typically as delivered at frontier (DAF), Carriage Paid To (CPT) and Delivered At Point ( DAP), free on board (FOB) sales to TCO's pre-qualified customers.",
+      "html2": "Sales to Kazakhstani customers",
+      "html3": "TCO sells LPG inside Kazakhstan. Sales are made using a monthly request for proposals (a tender process). TCO delivers LPG to end destinations of Kazakhstani customers to ensure that TCO meets its product stewardship commitments. TCO's tender is open to all customers which meet TCO's pre-qualification criteria.",
+      "html4": "TCO tender award criteria include, but are not limited to, the following considerations:",
+      "html5": "Prior lifting and contract performance",
+      "html6": "Tender price for each product grade",
+      "html7": "Quantities - which must be within the tender requirements and shall be consumed solely within Kazakhstan",
+      "html8": "Export sales",
+      "html9": "TCO sells LPG by",
+      "html10": "Rail deliveries to regions of Europe bordering CIS countries and",
+      "html11": "Seaborne deliveries are made to Black Sea and Mediterranean Sea region countries (from Black Sea terminal)",
+      "html12": "Rail Transportation:",
+      "html13": "TCO leases a fleet of LPG rail tank cars to transport all production safely and reliably. TCO obtains rail plans through freight forwarders for shipments from Kulsary to end destinations.",
+      "html14": "Seaborne Transportation:",
+      "html15": "Term sales customers typically lift LPG on vessels that customers own or charter. The vessels must meet TCO requirements and the marine terminal from which the lifting is made. Most spot sales customers also own or charter vessels."
+    },
+    "3": {
+      "name": "Prices",
+      "description": "TCO sells LPG based on market prices using LPG price quotations published by Argus which are leading global providers of energy industry information and price assessments. When negotiating LPG prices, TCO considers the competitive environment in each market place."
+    },
+    "4": {
+      "name": "Potential Customer's Pre-Qualification Criteria",
+      "html1": "TCO assesses all potential customers from commercial, financial, logistical, and technical perspectives. All potential customers must meet TCO's requirements under its business review process. TCO gives strong preference to establishing commercial business relationships with buyers. All potential customers must demonstrate organizational capability and meet these criteria:",
+      "html2": "Understand and meet LPG product stewardship and safety requirements",
+      "html3": "Achieved medium to large size as an end user and/or a LPG distributor",
+      "html4": "Achieved a minimum of 3-5 years of practical and recent experience in the LPG industry",
+      "html5": "Established and sustained safe and reliable LPG receiving, handling, storage and distribution operations",
+      "html6": "Own or lease assets including rail tank car discharging facilities, gas bottle filling stations, auto gas stations, rail tank cars, vehicles, rail terminals, marine terminals, and/or related facilities that will support steady and sustained LPG purchases",
+      "html7": "Developed and retained employees with substantial LPG handling, transportation, sales, and logistics experience",
+      "html8": "Developed a permanent, long-term customer base, if a distributor",
+      "html9": "Developed sustained financial performance for the last 3 financial years and demonstrated the financial capability to make pre-payments or open Letters of Credit to secure contract sales quantities"
+    }
+  },
+  "cards2": {
+    "1": {
+      "name": "Customers",
+      "description1": "TCO delivers dry gas to customers in domestic and export markets by shipping through pipelines. Domestic sales are made 'free carrier' (FCA) and export sales are made 'delivered at frontier' (DAF) to TCO's pre-qualified customers.",
+      "description2": "In the Kazakhstan market, TCO supplies dry gas to local communal and industrial customers located in Atyrau oblast.",
+      "description3": "TCO plans to continue supplying gas under long-term sales agreements for both export and domestic customers. TCO is focused on maintaining access to existing customers in the market and also tries to diversify customers."
+    },
+    "2": {
+      "name": "Pre-Qualification Criteria for Potential Customers",
+      "description1": "TCO assesses all potential customers from commercial, financial, and technical perspective. All potential customers must meet TCO's requirements under its business review process. TCO gives strong preference to establishing commercial business relationships with end users who consume dry gas in their facilities or own pipeline distribution networks used to deliver dry gas to retail customers. All potential customers must demonstrate organizational capability to qualify as TCO customer."
+    }
+  },
+  "cards3": {
+    "1": {
+      "name": "Customers",
+      "html1": "TCO prefers to sell sulfur directly to end users",
+      "html2": "TCO will sell sulfur through an intermediary marketing support company if:",
+      "html3": "The end user lacks organizational, logistical, and/or financial capability to buy TCO sulfur directly",
+      "html4": "The end user requests a single intermediary marketing support company with which the end user is willing to work through to purchase TCO sulfur",
+      "html5": "TCO approves the intermediary marketing support company based on its proficiency, sulfur trading expertise, proven track of record of sulfur marketing, organizational, logistical, and/or financial capability as the sole intermediary between TCO and the end user"
+    },
+    "2": {
+      "name": "TCO sells for export from the following priorities:",
+      "html1": "TCO sells for export from the following priorities:",
+      "html2": "Kazakhstan end users based on their demand",
+      "html3": "CIS end users that consume liquid sulfur based on the capacity of TCO and third party owned liquid sulfur rail tank cars",
+      "html4": "Offshore and CIS end users that consume GX granulated sulfur to a limit of granulated sulfur production capacity or export terminal capacity to ship granulated sulfur",
+      "html5": "Kazakhstan end users and CIS end users that consume crushed block sulfur (CBS) to a limit of recovery capacity at Tengiz or a railway capacity limit"
+    }
+  },
+  "slide1": "Documents to be submitted to assess LPG inquiry",
+  "slide2": "Documents to be submitted to assess dry gas inquiry",
+  "slide3": "Documents to be submitted",
+  "slide1list": [
+    "To enable commercial assessment of the potential consumer, TCO will require all potential buyers to fill out the Commercial Questionnaire.",
+    "To enable initial business review, TCO will request all buyers to fill out the Business Questionnaire.",
+    "To enable technical pre-qualification of the buyer's operating facilities and related assets, TCO will perform a safety visit to the facilities, using the Technical Questionnaire for an assessment",
+    "To enable performing a credit and business review assessment, TCO will require buyer's company registration documents, financial reports, bank reference, and other documents that TCO deems necessary to complete the assessment. Please see the Customer Credit Checklist for full list of required documents."
+  ],
+  "slide3list": [
+    "TCO needs to understand the participants in the full sales chain from TCO through intermediate marketing support companies, if required by end users, to the end users that consume TCO sulfur in order to meet TCO business review requirements. The TCO business review process is an integral element of the sulfur sales strategy. The TCO Sulfur Sales Questionnaire and Business Questionnaire are required to be filled out as a part of business review process."
+  ],
+  "slide1File1": "Commercial Questionnaire (doc)",
+  "slide1File2": "Technical Questionnaire (doc)",
+  "more": "Read more"
 }

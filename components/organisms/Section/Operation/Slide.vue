@@ -263,9 +263,9 @@ export default {
     img {
       width: 100%;
       height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
+      //position: absolute;
+      //left: 0;
+      //top: 0;
     }
   }
 
@@ -278,10 +278,9 @@ export default {
 
     &__image {
       width: 100%;
-      height: 412px;
+      height: 50%;
       display: flex;
       align-items: center;
-      overflow: hidden;
 
       img {
         max-width: 100%;
@@ -317,7 +316,7 @@ export default {
 
   @include phone {
     &__image {
-      height: 218px;
+      height: auto;
     }
 
     &__title {
