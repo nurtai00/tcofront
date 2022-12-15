@@ -9,7 +9,7 @@
             <span style="font-weight: bolder" v-text="slide.title"></span>
             <p v-text="slide.text"></p>
           </div>
-          <img src="@/assets/img/Rectangle 182.png" />
+          <img :style="options.style" src="@/assets/img/Rectangle 182.png" />
         </div>
       </MoleculesSlide>
     </OrganismsSlider>
@@ -48,6 +48,7 @@ export default {
         slidesPerView: 1,
         id: 'main_b11',
         slide: this.slideTo,
+        style: 'max-height: 600px',
       },
       slides: [
         {

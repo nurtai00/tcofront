@@ -458,21 +458,25 @@ export default {
       },
       slide: [
         {
+          style: 'width: 50vw; max-width:50vw',
           title: this.$t('kazContent.cooperationTco.title'),
           image: 'kazakhstani/kazakhstani1.png',
         },
         {
+          style: 'width: 50vw; max-width:50vw',
           title: this.$t('kazContent.localeSuppliers.title'),
           description: [this.$t('kazContent.localeSuppliers.description')],
           image: 'kazakhstani/kazakhstani2.png',
         },
         {
+          style: 'width: 50vw; max-width:50vw',
           title: this.$t('kazContent.foreignTools.title'),
           description: [this.$t('kazContent.foreignTools.description')],
           desciptionSolo: true,
           image: 'kazakhstani/kazakhstani2.png',
         },
         {
+          style: 'width: 50vw; max-width:50vw',
           title: this.$t('kazContent.rightWay.title'),
           image: 'kazakhstani/kazakhstani1.png',
         },

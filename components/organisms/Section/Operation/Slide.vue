@@ -6,6 +6,7 @@
     <div
       class="slide__content container"
       :class="{ slided: slide, reverse: isReverse }"
+      :style="data.style"
     >
       <AtomsHeading v-if="data.title" type="h3" class="slide__title title">
         {{ data.title }}
@@ -144,7 +145,7 @@ export default {
     }
   }
   &__content {
-    width: 50%;
+    min-width: 50%;
     padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
     &.reverse {
       padding: 80px calc((var(--width-container) - 100vw) / 2) 80px 60px;
@@ -257,15 +258,26 @@ export default {
   }
 
   &__image {
-    width: 50%;
+    min-width: 50%;
     position: relative;
 
     img {
       width: 100%;
       height: 100%;
-      //position: absolute;
-      //left: 0;
-      //top: 0;
+      object-fit: cover;
+      @include tablet {
+        max-height: 250px;
+      }
+    }
+    @media (min-width: 1600px) {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
 
@@ -289,13 +301,13 @@ export default {
     }
 
     &__content {
-      max-width: 100%;
+      max-width: 100% !important;
       padding: 20px 16px;
     }
 
     &.slide {
       .slide__content {
-        width: 100%;
+        width: 100% !important;
         padding: 20px 16px;
       }
     }

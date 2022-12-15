@@ -36,7 +36,11 @@
         <div class="menu_btn__burger"></div>
       </div>
     </div>
-    <div class="links container" :class="{ show_nav: show_nav }" ref="links_container">
+    <div
+      class="links container"
+      :class="{ show_nav: show_nav }"
+      ref="links_container"
+    >
       <div v-for="(route, idx) in routes" :key="idx">
         <NuxtLink
           :class="{ active_link: $route.path === route.link }"
@@ -100,13 +104,13 @@ export default {
           name: 'KZ',
           code: 'kk',
           label: 'Қаз',
-          id: 'kk'
+          id: 'kk',
         },
         {
           name: 'EN',
           code: 'en',
           label: 'Eng',
-          id: 'en'
+          id: 'en',
         },
       ],
     }
@@ -162,13 +166,12 @@ export default {
     closeOutsideHandler(event) {
       if (
         !(
-          (this.$refs.links_container === event.target ||
-          this.$refs.links_container?.contains(event.target))
-        ) && this.show_nav
+          this.$refs.links_container === event.target ||
+          this.$refs.links_container?.contains(event.target)
+        ) &&
+        this.show_nav
       ) {
         this.show_nav = false
-      } else {
-        this.show_nav = true
       }
     },
     showNav() {

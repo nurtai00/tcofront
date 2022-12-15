@@ -37,7 +37,7 @@
   }
 
   &__breadcrumbs {
-    margin: 42px 0 22px;
+    margin: 0 0 20px;
 
     &::v-deep {
       a.nuxt-link-exact-active {
@@ -47,9 +47,7 @@
   }
 
   &__title {
-    padding: 0 50px;
-    margin-bottom: 20px;
-
+    padding: 0 0 0 100px;
     &::v-deep {
       h1 {
         color: white;
@@ -58,7 +56,7 @@
   }
 
   &__content {
-    padding: 80px 0;
+    padding: 80px 100px;
     color: $c-tco1;
 
     &_title {
@@ -73,9 +71,9 @@
     }
   }
 
-  @include phone {
+  @include tablet {
     &__header {
-      padding: 1px 0 40px;
+      padding: 40px 0;
     }
 
     &__title {

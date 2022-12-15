@@ -127,6 +127,7 @@ export default {
             this.$t('operation.textSlide')[0].description[1],
           ],
           image: 'operation/operations1.png',
+          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[1].title,
@@ -135,16 +136,19 @@ export default {
             this.$t('operation.textSlide')[1].description[1],
           ],
           image: 'operation/operations2.png',
+          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[2].title,
           description: [this.$t('operation.textSlide')[2].description],
           image: 'operation/operations3.png',
+          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[3].title,
           description: [this.$t('operation.textSlide')[3].description],
           image: 'operation/operations4.png',
+          style: 'width:50vw;max-width:50vw',
         },
       ],
       textSlide2: [
@@ -158,17 +162,20 @@ export default {
             })
           },
           background: true,
+          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide2')[1].title,
           description: [this.$t('operation.textSlide2')[1].description],
           image: 'operation/operations6.png',
+          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide2')[2].title,
           description: [this.$t('operation.textSlide2')[2].description],
           image: 'operation/operations7.png',
           background: true,
+          style: 'width:50vw;max-width:50vw',
         },
       ],
     }
