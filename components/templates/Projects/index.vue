@@ -17,14 +17,14 @@
           v-for="(tag, index) of tags"
           :key="index"
           :tag="tag"
-          @click="onTag"
+          @click="onTag(tag.offsetTop)"
         />
       </div>
     </div>
     <div class="projects__video">
       <img src="~/assets/img/projects/projects4.png" alt="" />
     </div>
-    <OrganismsSectionOperationSvg class="svgs" :data="sideSvg[0]">
+    <OrganismsSectionOperationSvg ref="pbr" class="svgs" :data="sideSvg[0]">
       <template #description>
         <p class="mb20" v-text="$t('project.block_1.text')"></p>
         <AtomsFile
@@ -42,7 +42,7 @@
       :data="slide"
       class="slide"
     >
-      <div class="projects__slide">
+      <div class="projects__slide" style="width: 600px; max-width: 600px">
         <div class="left">
           <div
             v-for="(item, key) in slider.left"
@@ -76,7 +76,7 @@
       <div class="container">
         <div class="projects__protocols">
           <div class="projects__protocols_header">
-            <AtomsTitle class="projects__title protocol">
+            <AtomsTitle class="projects__title protocol" style="margin: 0">
               {{ $t('project.protocols.title') }}
             </AtomsTitle>
             <nuxt-link :to="localePath('/projects/protocols')" class="more">
@@ -118,10 +118,11 @@ export default {
     return {
       animationProgress: 0,
       tags: [
-        // {
-        //   id: 1,
-        //   text: this.$t('project.tags_1[0]'),
-        // },
+        {
+          id: 1,
+          text: this.$t('project.tags_1[0]'),
+          offsetTop: null,
+        },
         {
           id: 2,
           text: this.$t('project.tags_1[1]'),
@@ -146,6 +147,7 @@ export default {
         image: 'projects/projects1.png',
       },
       slide2: {
+        style: 'width:50vw;max-width:50vw',
         title: this.$t('project.block_3.title'),
         description: [this.$t('project.block_3.text')],
         image: 'projects/projects2.png',
@@ -165,6 +167,7 @@ export default {
         },
       },
       slide3: {
+        style: 'width:50vw;max-width:50vw',
         title: this.$t('project.block_4.title'),
         image: 'projects/projects3.png',
         link: () => {
@@ -209,6 +212,7 @@ export default {
         },
       ],
       slider: {
+        style: 'width:50vw;max-width:50vw',
         left: [
           this.$t('project.block_2[0].title'),
           this.$t('project.block_2[1].title'),
@@ -233,8 +237,11 @@ export default {
     },
   },
   mounted() {
+    this.tags[0].offsetTop = this.$refs?.pbr?.$el?.offsetTop
     const element = document.getElementById('projectSlide')
-    element.style.height = element.offsetHeight + 'px'
+    if (window.innerWidth > 500) {
+      element.style.height = element.offsetHeight + 'px'
+    }
     element.addEventListener('wheel', (e) => {
       if (e.wheelDelta > 0 && this.animationProgress !== 0) {
         this.animationProgress -= 1
@@ -244,8 +251,13 @@ export default {
     })
   },
   methods: {
-    onTag() {
-      console.log('works')
+    onTag(offsetTop) {
+      if (offsetTop) {
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth',
+        })
+      }
     },
   },
 }
@@ -262,6 +274,8 @@ export default {
 
     img {
       width: 100%;
+      max-height: 600px;
+      object-fit: cover;
     }
   }
 

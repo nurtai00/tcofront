@@ -6,6 +6,7 @@
     <div
       class="slide__content container"
       :class="{ slided: slide, reverse: isReverse }"
+      :style="data.style"
     >
       <AtomsHeading v-if="data.title" type="h3" class="slide__title title">
         {{ data.title }}
@@ -263,6 +264,11 @@ export default {
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
+      max-height: 985px;
+      @media (orientation: portrait) {
+        max-height: 250px;
+      }
       //position: absolute;
       //left: 0;
       //top: 0;
@@ -289,13 +295,13 @@ export default {
     }
 
     &__content {
-      max-width: 100%;
+      max-width: 100% !important;
       padding: 20px 16px;
     }
 
     &.slide {
       .slide__content {
-        width: 100%;
+        width: 100% !important;
         padding: 20px 16px;
       }
     }

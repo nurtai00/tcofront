@@ -42,6 +42,7 @@ export default {
         slidesPerView: 1,
         id: 'main-slider-a1',
         slide: this.slideTo,
+        style: 'max-height: 700px',
       },
     }
   },

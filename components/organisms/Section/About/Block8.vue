@@ -6,7 +6,7 @@
           class="double-block tco__partners"
           style="justify-content: flex-end"
         >
-          <div class="tco__partners-wrapper">
+          <div class="tco__partners-wrapper" style="max-height: 600px">
             <h1 v-text="slide.title"></h1>
             <div class="underline"></div>
             <p v-text="slide.text"></p>
@@ -20,7 +20,7 @@
               <span>{{ $t('company.slider_4[0].pdf') }}</span>
             </div>
           </div>
-          <img src="@/assets/img/photo.png" />
+          <img :style="options.style" src="@/assets/img/photo.png" />
         </div>
       </MoleculesSlide>
     </OrganismsSlider>
@@ -59,6 +59,7 @@ export default {
         slidesPerView: 1,
         id: 'main_b8',
         slide: this.slideTo,
+        style: 'max-height: 730px',
       },
       slides: [
         {

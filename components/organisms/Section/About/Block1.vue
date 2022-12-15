@@ -3,7 +3,11 @@
     <div class="container">
       <AtomsTitle class=""> {{ $t('company.breadcrumbs[1]') }} </AtomsTitle>
     </div>
-    <img class="player__preview" src="@/assets/img/player-prev.png" />
+    <img
+      class="player__preview"
+      style="max-height: 565px"
+      src="@/assets/img/player-prev.png"
+    />
     <div class="container block">
       <p class="mt40 mb40">
         {{ $t('company.p_1') }}

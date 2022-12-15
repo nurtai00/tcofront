@@ -213,6 +213,7 @@ section {
 
 .player__preview {
   max-width: 100%;
+  object-fit: cover;
 }
 
 p {
@@ -253,9 +254,11 @@ p {
   }
   img {
     width: 50%;
+    object-fit: cover;
 
     @media (max-width: 886px) {
       width: 100%;
+      object-fit: cover;
     }
   }
 }
