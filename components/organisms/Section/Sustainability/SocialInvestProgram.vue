@@ -20,11 +20,10 @@
 <style lang="scss" scoped>
 .program {
   display: flex;
-  max-height: 650px;
   position: relative;
   &__content {
-    width: 50%;
-    padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
+    position: relative;
+    padding: 80px 60px 80px calc(var(--width-container) / 3);
   }
   &__description {
     margin-top: 40px;
@@ -38,6 +37,9 @@
   &__img {
     width: 50%;
     position: relative;
+    max-width: calc(var(--width-container) - 50%);
+    //max-height: 700px;
+    right: calc((var(--width-container) - 100vw) / 2);
     img {
       width: 100%;
       height: 100%;
@@ -46,15 +48,22 @@
 
   @include tablet {
     flex-direction: column-reverse;
+    justify-content: space-between;
     gap: 15px;
     max-height: 100%;
     &__content {
       padding: 40px 16px;
+      left: 0;
+      width: 100%;
     }
     &__description {
+      width: 100%;
       p {
         font-size: 16px;
       }
+    }
+    &__img {
+      width: 100%;
     }
     img {
       max-width: 100%;

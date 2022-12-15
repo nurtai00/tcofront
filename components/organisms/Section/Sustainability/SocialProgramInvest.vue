@@ -20,11 +20,9 @@
           </p>
         </div>
       </div>
-      <img
-        class="invest__img"
-        src="@/assets/img/operation/operations1.png"
-        alt="build"
-      />
+      <div class="invest__img">
+        <img src="@/assets/img/operation/operations1.png" alt="build" />
+      </div>
     </div>
     <div class="container invest__cards">
       <MoleculesCardSuistanabilityCard
@@ -42,14 +40,20 @@ export default {
       cards: [
         {
           id: 1,
-          text: this.$t('suistainability.socialProgrammingInvest.cards')[0].title,
-          description: this.$t('suistainability.socialProgrammingInvest.cards')[0].description,
+          text: this.$t('suistainability.socialProgrammingInvest.cards')[0]
+            .title,
+          description: this.$t(
+            'suistainability.socialProgrammingInvest.cards'
+          )[0].description,
           img: 'sustainability/map-projects/document.png',
         },
         {
           id: 2,
-          text: this.$t('suistainability.socialProgrammingInvest.cards')[1].title,
-          description: this.$t('suistainability.socialProgrammingInvest.cards')[1].description,
+          text: this.$t('suistainability.socialProgrammingInvest.cards')[1]
+            .title,
+          description: this.$t(
+            'suistainability.socialProgrammingInvest.cards'
+          )[1].description,
           img: 'sustainability/map-projects/document.png',
         },
       ],
@@ -63,10 +67,10 @@ export default {
   &__wrapper {
     display: flex;
     gap: 72px;
-    max-height: 650px;
+    //max-height: 650px;
   }
   &__content {
-    padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
+    padding: 80px 60px 80px calc(var(--width-container) / 3);
   }
   &__description {
     margin-top: 40px;
@@ -78,9 +82,16 @@ export default {
       margin-top: 20px;
     }
   }
-  img {
-    width: 100%;
-    height: auto;
+  &__img {
+    width: 50%;
+    position: relative;
+    max-width: calc(var(--width-container) - 50%);
+    //max-height: 700px;
+    right: calc((var(--width-container) - 100vw) / 2);
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
   &__cards {
     margin-top: 40px;

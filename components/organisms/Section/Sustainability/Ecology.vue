@@ -11,7 +11,7 @@
       </div>
       <div class="ecology__img">
         <AtomsHeading class="ecology__title-mobile" type="h3" color="white">
-          {{ $t('suistainability.ecology.title') }}}
+          {{ $t('suistainability.ecology.title') }}
         </AtomsHeading>
         <img src="@/assets/img/sustainability/block-2.png" alt="block" />
       </div>
@@ -83,7 +83,9 @@ export default {
     gap: 60px;
   }
   &__content {
-    padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
+    position: relative;
+    padding: 80px 60px 80px calc(var(--width-container) / 3);
+    //left: calc((100vw - var(--width-container)) / 2);
     font-family: Roboto, sans-serif;
   }
   &__description {
@@ -94,10 +96,13 @@ export default {
     font-weight: 400;
   }
   &__img {
-    //width: 50%;
+    width: 50%;
+    position: relative;
+    max-width: calc(var(--width-container) - 50%);
+    right: calc((var(--width-container) - 100vw) / 2);
     img {
       width: 100%;
-      height: 90%;
+      height: 100%;
     }
   }
   &__title-mobile {
@@ -126,6 +131,16 @@ export default {
     &__description {
       margin-top: 0px;
       font-size: 16px;
+    }
+    &__img {
+      width: 100%;
+      position: relative;
+      max-width: calc(var(--width-container) - 50%);
+      right: 0;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
     &__title {
       &-desktop {

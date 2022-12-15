@@ -4,11 +4,12 @@
       <AtomsHeading class="requirement__title-mobile" type="h3">
         {{ $t('suistainability.rateRequirement.title') }}
       </AtomsHeading>
-      <img
-        class="requirement__img"
-        src="@/assets/img/sustainability/requirement/background.jpg"
-        alt="bg"
-      />
+      <div class="requirement__img">
+        <img
+          src="@/assets/img/sustainability/requirement/background.jpg"
+          alt="bg"
+        />
+      </div>
     </div>
 
     <div class="container requirement__content">
@@ -53,8 +54,12 @@
     max-width: 50%;
   }
   &__img {
+    width: 100%;
+    position: relative;
+    max-width: calc(var(--width-container) - 50%);
+    left: calc(100vw - (var(--width-container)) / 2);
     img {
-      max-width: 100%;
+      width: 100%;
       height: 100%;
     }
   }

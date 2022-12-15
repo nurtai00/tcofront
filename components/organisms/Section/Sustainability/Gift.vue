@@ -41,11 +41,9 @@
         </svg>
       </a>
     </div>
-    <img
-      src="@/assets/img/sustainability/slide1.png"
-      alt="bg"
-      class="gif__img"
-    />
+    <div class="gift__img">
+      <img src="@/assets/img/sustainability/slide1.png" alt="bg" />
+    </div>
   </div>
 </template>
 <script>
@@ -66,10 +64,9 @@ export default {
 <style lang="scss" scoped>
 .gift {
   display: flex;
+  background-color: $c-tco33;
   &__content {
-    background-color: $c-tco33;
-    width: 50%;
-    padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
+    padding: 80px 60px 80px calc(var(--width-container) / 3);
   }
   &__description {
     margin-top: 40px;
@@ -86,9 +83,16 @@ export default {
     gap: 10px;
     color: $c-tco5;
   }
-  img {
-    width: 100%;
-    height: auto;
+  &__img {
+    width: 50%;
+    position: relative;
+    max-width: calc(var(--width-container) - 50%);
+    //max-height: 700px;
+    right: calc((var(--width-container) - 100vw) / 2);
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
   @include tablet {
     flex-direction: column-reverse;
@@ -102,8 +106,11 @@ export default {
       }
     }
     &__img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
+      img {
+        width: 100%;
+      }
     }
   }
 }
