@@ -1,6 +1,6 @@
 <template>
   <div :id="options.id" class="slider">
-    <div class="slider-wrapper">
+    <div class="slider-wrapper" :style="options.style">
       <slot />
     </div>
   </div>
@@ -67,6 +67,7 @@ export default {
   animation: 0.5s;
   @media (orientation: portrait) {
     align-items: flex-start;
+    max-height: auto !important;
   }
 }
 

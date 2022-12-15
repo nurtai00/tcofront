@@ -58,6 +58,7 @@ export default {
         slidesPerView: 1,
         id: 'main_b4',
         slide: this.slideTo,
+        style: 'height: 780px',
       },
       slides: [
         {
