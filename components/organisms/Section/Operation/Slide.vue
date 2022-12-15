@@ -145,7 +145,7 @@ export default {
     }
   }
   &__content {
-    width: 50%;
+    min-width: 50%;
     padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
     &.reverse {
       padding: 80px calc((var(--width-container) - 100vw) / 2) 80px 60px;
@@ -258,20 +258,26 @@ export default {
   }
 
   &__image {
-    width: 50%;
+    min-width: 50%;
     position: relative;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      max-height: 985px;
-      @media (orientation: portrait) {
+      @include tablet {
         max-height: 250px;
       }
-      //position: absolute;
-      //left: 0;
-      //top: 0;
+    }
+    @media (min-width: 1600px) {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
 

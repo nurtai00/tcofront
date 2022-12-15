@@ -57,6 +57,8 @@
 
 <style lang="scss" scoped>
 .electronic {
+  min-height: calc(100vh - 785px);
+
   &__breadcrumbs {
     margin: 42px 0 22px;
   }
