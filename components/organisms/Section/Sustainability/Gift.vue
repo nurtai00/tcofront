@@ -87,13 +87,14 @@ export default {
     color: $c-tco5;
   }
   img {
-    width: 50%;
+    width: 100%;
     height: auto;
   }
   @include tablet {
     flex-direction: column-reverse;
     &__content {
       padding: 40px 16px;
+      width: 100%;
     }
     &__description {
       p {

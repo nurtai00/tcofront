@@ -12,19 +12,18 @@
         </p>
       </div>
     </div>
-    <img
-      class="program__img"
-      src="@/assets/img/operation/operations1.png"
-      alt="building"
-    />
+    <div class="program__img">
+      <img src="@/assets/img/operation/operations1.png" alt="building" />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .program {
   display: flex;
-  gap: 72px;
   max-height: 650px;
+  position: relative;
   &__content {
+    width: 50%;
     padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
   }
   &__description {
@@ -36,10 +35,15 @@
       margin-top: 20px;
     }
   }
-  img {
-    width: 100%;
-    height: auto;
+  &__img {
+    width: 50%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
+
   @include tablet {
     flex-direction: column-reverse;
     gap: 15px;
@@ -52,7 +56,7 @@
         font-size: 16px;
       }
     }
-    &__img {
+    img {
       max-width: 100%;
       height: auto;
     }

@@ -245,13 +245,13 @@ export default {
     }
   }
   &__markers {
-    width: 100%;
+    max-width: 100%;
     height: 500px;
     display: flex;
     align-items: center;
     position: relative;
     left: -100px;
-    @include wide-tablet {
+    @include middle-laptop {
       margin-top: 20px;
       flex-direction: column;
       align-items: center;
@@ -296,7 +296,7 @@ export default {
       color: $c-text;
       width: 270px;
       height: 32px;
-      @include wide-tablet {
+      @include middle-laptop {
         display: none;
       }
     }
@@ -398,7 +398,7 @@ export default {
       height: 32px;
     }
   }
-  @include wide-tablet {
+  @include middle-laptop {
     display: flex;
     &:nth-child(1) {
       #{$p}__arrow {

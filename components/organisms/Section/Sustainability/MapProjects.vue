@@ -138,6 +138,7 @@ export default {
     }
     &__markers {
       gap: 5px;
+      flex-direction: column;
     }
     &__marker {
       span {

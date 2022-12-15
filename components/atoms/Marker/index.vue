@@ -52,14 +52,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 .desktop {
-  @include wide-tablet {
+  @include middle-laptop {
     display: none;
   }
 }
 .mobile {
   display: none;
   font-size: 14px;
-  @include wide-tablet {
+  @include middle-laptop {
     display: block;
   }
 }
@@ -72,7 +72,7 @@ export default {
   &.rotate {
     transform: rotate(-120deg);
   }
-  @include wide-tablet {
+  @include middle-laptop {
     font-size: 14px;
     font-weight: 500;
     text-align: center;
