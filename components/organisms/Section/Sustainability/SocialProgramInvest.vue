@@ -70,7 +70,8 @@ export default {
     //max-height: 650px;
   }
   &__content {
-    padding: 80px 60px 80px calc(var(--width-container) / 3);
+    min-width: 50%;
+    padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
   }
   &__description {
     margin-top: 40px;
@@ -83,14 +84,17 @@ export default {
     }
   }
   &__img {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-width: 50%;
     position: relative;
-    max-width: calc(var(--width-container) - 50%);
-    //max-height: 700px;
-    right: calc((var(--width-container) - 100vw) / 2);
     img {
       width: 100%;
       height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
   &__cards {

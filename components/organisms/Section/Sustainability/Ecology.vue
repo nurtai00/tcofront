@@ -83,10 +83,8 @@ export default {
     gap: 60px;
   }
   &__content {
-    position: relative;
-    padding: 80px 60px 80px calc(var(--width-container) / 3);
-    //left: calc((100vw - var(--width-container)) / 2);
-    font-family: Roboto, sans-serif;
+    min-width: 50%;
+    padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
   }
   &__description {
     margin-top: 40px;
@@ -96,13 +94,17 @@ export default {
     font-weight: 400;
   }
   &__img {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-width: 50%;
     position: relative;
-    max-width: calc(var(--width-container) - 50%);
-    right: calc((var(--width-container) - 100vw) / 2);
     img {
       width: 100%;
       height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
   &__title-mobile {
