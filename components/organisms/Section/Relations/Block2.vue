@@ -146,21 +146,21 @@ export default {
       links: [
         {
           link: this.localePath('/about'),
-          title: this.$t('relation.block_2.links[0]')
+          title: this.$t('relation.block_2.links[0]'),
         },
         {
           link: this.localePath('/projects'),
-          title: this.$t('relation.block_2.links[1]')
+          title: this.$t('relation.block_2.links[1]'),
         },
         {
           link: this.localePath('/about'),
-          title: this.$t('relation.block_2.links[2]')
+          title: this.$t('relation.block_2.links[2]'),
         },
         {
           link: this.localePath('/operations'),
-          title: this.$t('relation.block_2.links[3]')
-        }
-      ]
+          title: this.$t('relation.block_2.links[3]'),
+        },
+      ],
     }
   },
   computed: {
@@ -178,8 +178,7 @@ export default {
   .block_img {
     position: absolute;
     width: 50%;
-    height: 100%;
-    object-fit: cover;
+    height: 700px;
     top: 0;
     right: 0;
     @include tablet() {
