@@ -2,7 +2,7 @@
   <div>
     <div class="information">
       <div class="mobile">
-        <img src="@/assets/img/relations/info-1.jpg" alt="" />
+        <img src="@/assets/img/relations/relations3.png" alt="" />
         <AtomsHeading type="h3" color="white">
           {{ $t('relation.block_2.title') }}
         </AtomsHeading>
@@ -12,24 +12,20 @@
           <AtomsHeading type="h3" color="main" class="mb40">
             {{ $t('relation.block_2.title') }}
           </AtomsHeading>
-          <a :href="localePath('/#/about')">{{
-            $t('relation.block_2.links[0]')
-          }}</a>
-          <a :href="localePath('/#/projects')">{{
-            $t('relation.block_2.links[1]')
-          }}</a>
-          <a :href="localePath('/#/about')">{{
-            $t('relation.block_2.links[2]')
-          }}</a>
-          <a :href="localePath('/#/operations')">{{
-            $t('relation.block_2.links[3]')
-          }}</a>
-          <a>{{ $t('relation.block_2.links[4]') }}</a>
-          <a>{{ $t('relation.block_2.links[5]') }}</a>
+          <nuxt-link
+            v-for="(item, key) in links"
+            :key="key"
+            class="link"
+            :to="localePath(item.link)"
+          >
+            {{ item.title }}
+          </nuxt-link>
+          <a class="link">{{ $t('relation.block_2.links[4]') }}</a>
+          <a class="link">{{ $t('relation.block_2.links[5]') }}</a>
         </div>
       </div>
       <img
-        src="@/assets/img/relations/info-1.jpg"
+        src="@/assets/img/relations/relations3.png"
         alt=""
         srcset=""
         class="block_img"
@@ -37,7 +33,7 @@
     </div>
     <div class="information reverse">
       <div class="mobile">
-        <img src="@/assets/img/relations/info-2.jpg" alt="" />
+        <img src="@/assets/img/relations/relations2.png" alt="" />
         <AtomsHeading type="h3" color="white">
           {{ $t('relation.block_3.title') }}
         </AtomsHeading>
@@ -47,13 +43,11 @@
           <AtomsHeading type="h3" color="main" class="mb40">
             {{ $t('relation.block_3.title') }}
           </AtomsHeading>
-          <p>
-            {{ $t('relation.block_3.text') }}
-          </p>
+          <p v-html="$t('relation.block_3.text')" />
         </div>
       </div>
       <img
-        src="@/assets/img/relations/info-2.jpg"
+        src="@/assets/img/relations/relations2.png"
         alt=""
         srcset=""
         class="block_img"
@@ -61,7 +55,7 @@
     </div>
     <div class="information">
       <div class="mobile">
-        <img src="@/assets/img/relations/info-4.jpg" alt="" />
+        <img src="@/assets/img/relations/relations1.png" alt="" />
         <AtomsHeading type="h3" color="white">
           {{ $t('relation.block_4.title') }}
         </AtomsHeading>
@@ -135,7 +129,7 @@
         </div>
       </div>
       <img
-        src="@/assets/img/relations/info-1.jpg"
+        src="@/assets/img/relations/relations1.png"
         alt=""
         srcset=""
         class="block_img"
@@ -149,6 +143,24 @@ export default {
   data() {
     return {
       checked: false,
+      links: [
+        {
+          link: this.localePath('/about'),
+          title: this.$t('relation.block_2.links[0]'),
+        },
+        {
+          link: this.localePath('/projects'),
+          title: this.$t('relation.block_2.links[1]'),
+        },
+        {
+          link: this.localePath('/about'),
+          title: this.$t('relation.block_2.links[2]'),
+        },
+        {
+          link: this.localePath('/operations'),
+          title: this.$t('relation.block_2.links[3]'),
+        },
+      ],
     }
   },
   computed: {
@@ -166,8 +178,7 @@ export default {
   .block_img {
     position: absolute;
     width: 50%;
-    height: 100%;
-    object-fit: cover;
+    height: 700px;
     top: 0;
     right: 0;
     @include tablet() {
@@ -224,7 +235,7 @@ export default {
   }
 }
 .first {
-  a {
+  .link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;

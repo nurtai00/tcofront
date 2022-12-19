@@ -28,7 +28,7 @@
     <OrganismsSectionSustainabilityRateRequirement />
     <OrganismsSectionSustainabilityProjectSelection />
     <OrganismsSectionSustainabilityGift />
-    <OrganismsSectionSustainabilityNews />
+    <OrganismsSectionSustainabilityNews class="news" />
   </div>
 </template>
 <script>
@@ -63,3 +63,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.news::v-deep.news_career {
+  background-color: white;
+}
+</style>

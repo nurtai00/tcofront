@@ -45,8 +45,12 @@
       :data="sideSvg[2]"
     >
       <template #description>
-        <AtomsFile file="" :text="$t('operation.file1')" icon="xls" />
-        <AtomsFile file="" :text="$t('operation.file2')" icon="pdf" />
+        <AtomsFile :file="chesmLink" :text="$t('operation.file1')" icon="xls" />
+        <AtomsFile
+          :file="tbStatisticLink"
+          :text="$t('operation.file2')"
+          icon="pdf"
+        />
       </template>
       <template #footer>
         <div class="cards">
@@ -96,6 +100,7 @@ export default {
         {
           number: '04',
           name: this.$t('operation.cards')[3].name,
+          description: this.$t('operation.cards')[3].description,
         },
       ],
       sideSvg: [
@@ -122,6 +127,7 @@ export default {
             this.$t('operation.textSlide')[0].description[1],
           ],
           image: 'operation/operations1.png',
+          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[1].title,
@@ -130,16 +136,19 @@ export default {
             this.$t('operation.textSlide')[1].description[1],
           ],
           image: 'operation/operations2.png',
+          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[2].title,
           description: [this.$t('operation.textSlide')[2].description],
           image: 'operation/operations3.png',
+          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[3].title,
           description: [this.$t('operation.textSlide')[3].description],
           image: 'operation/operations4.png',
+          style: 'width:50vw;max-width:50vw',
         },
       ],
       textSlide2: [
@@ -153,20 +162,41 @@ export default {
             })
           },
           background: true,
+          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide2')[1].title,
           description: [this.$t('operation.textSlide2')[1].description],
           image: 'operation/operations6.png',
+          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide2')[2].title,
           description: [this.$t('operation.textSlide2')[2].description],
           image: 'operation/operations7.png',
           background: true,
+          style: 'width:50vw;max-width:50vw',
         },
       ],
     }
+  },
+  computed: {
+    chesmLink() {
+      const mapOfFileLink = {
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=37e24b81%2Dfb28%2D4a5b%2Db259%2D16451578adb7',
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=86125821%2Df8d4%2D442a%2Da4ff%2D3cdceda972ab',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=17dc2880%2Df4fe%2D43a4%2D95af%2D683d2d863c42',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+    tbStatisticLink() {
+      const mapOfFileLink = {
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=56254fd9%2Db133%2D44d2%2Dbd55%2D5262eaf49bed',
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=8a89f2c9%2D5733%2D447b%2Da28c%2D976dbaac79e7',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=882bc44e%2De528%2D4deb%2Dab4b%2D6aec461c3b8f',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
   },
   methods: {
     onTag() {

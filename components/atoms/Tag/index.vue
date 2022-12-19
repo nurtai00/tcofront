@@ -44,6 +44,8 @@ export default {
     clickedTag() {
       if (!this.tag.url) {
         this.$emit('click', this.tag)
+      } else if (this.tag.source) {
+        window.location = this.tag.url
       } else {
         this.$router.push(this.localePath(this.tag.url))
       }

@@ -62,7 +62,9 @@
         {{ $t('contact.feedback.text16') }}
       </AtomsHeading>
       <div class="links">
-        <a href="#">{{ $t('contact.feedback.text17') }}</a>
+        <a target="_blank" :href="link[$i18n.locale]">{{
+          $t('contact.feedback.text17')
+        }}</a>
         <nuxt-link :to="localePath('/contact/feedback/reports')">
           {{ $t('contact.feedback.text18') }}
         </nuxt-link>
@@ -70,6 +72,21 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      link: {
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FContacts%20page%2FEN%2Ffeedback%2Dmanagement%2Dprocess%2Dflyer%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FContacts%20page%2FEN',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FContacts%20page%2FKAZ%2Ffeedback%2Dmanagement%2Dprocess%2Dflyer%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FContacts%20page%2FKAZ',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FContacts%20page%2FRU',
+      },
+    }
+  },
+}
+</script>
+
 <style lang="scss" scoped>
 .document-title {
   @include tablet() {

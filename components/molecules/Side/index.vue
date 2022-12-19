@@ -1,22 +1,20 @@
 <template>
-  <transition v-if="isOpen" name="side" type="animation">
-    <div class="side">
-      <div class="side__closing" @click="close" />
-      <div class="side__content">
-        <div class="side__content_header">
-          <div class="side__content_number">{{ side.number }}</div>
-          <div class="side__content_close" @click="close">
-            <img class="close" src="@/assets/icons/close.png" @click="close" />
-          </div>
+  <div class="side" v-if="isOpen">
+    <div class="side__closing" @click="close" />
+    <div class="side__content">
+      <div class="side__content_header">
+        <div class="side__content_number">{{ side.number }}</div>
+        <div class="side__content_close" @click="close">
+          <img class="close" src="@/assets/icons/close.png" @click="close" />
         </div>
-        <div class="side__content_name">{{ side.name }}</div>
-        <div v-if="side.description" class="side__content_description">
-          {{ side.description }}
-        </div>
-        <div v-else v-html="side.html" />
       </div>
+      <div class="side__content_name">{{ side.name }}</div>
+      <div v-if="side.description" class="side__content_description">
+        {{ side.description }}
+      </div>
+      <div v-else v-html="side.html" />
     </div>
-  </transition>
+  </div>
 </template>
 
 <script>
@@ -45,7 +43,17 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  transition: 0.3s ease-in-out;
+  animation: animModal 0.5s cubic-bezier(0.11, 0.72, 0.56, 1.28);
+  @keyframes animModal {
+    from {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
 
   &__closing {
     width: 100%;
@@ -155,11 +163,6 @@ export default {
       }
     }
   }
-}
-
-.side-enter-active,
-.side-leave-active {
-  transform: translateX(100%);
 }
 
 .side::v-deep {

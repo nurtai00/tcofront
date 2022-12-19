@@ -41,11 +41,11 @@ export default {
   data() {
     return {
       tags: [
-        {
-          id: 1,
-          text: this.$t('project.tags_1[0]'),
-          url: '/projects',
-        },
+        // {
+        //   id: 1,
+        //   text: this.$t('project.tags_1[0]'),
+        //   url: '/projects',
+        // },
         {
           id: 2,
           text: this.$t('project.tags_1[1]'),
@@ -61,12 +61,12 @@ export default {
       slide: [
         {
           title: this.$t('project.other.projects[0].title'),
-          description: this.$t('project.other.projects[0].text'),
+          description: [this.$t('project.other.projects[0].text')],
           image: 'projects/projects1.png',
         },
         {
           title: this.$t('project.other.projects[1].title'),
-          description: this.$t('project.other.projects[0].text'),
+          description: [this.$t('project.other.projects[0].text')],
           image: 'projects/projects2.png',
           link: () => {
             this.$store.commit('side/open', {
@@ -76,7 +76,7 @@ export default {
         },
         {
           title: this.$t('project.other.projects[2].title'),
-          description: this.$t('project.other.projects[0].text'),
+          description: [this.$t('project.other.projects[0].text')],
           image: 'projects/projects1.png',
         },
       ],

@@ -20,11 +20,9 @@
           </p>
         </div>
       </div>
-      <img
-        class="invest__img"
-        src="@/assets/img/operation/operations1.png"
-        alt="build"
-      />
+      <div class="invest__img">
+        <img src="@/assets/img/operation/operations1.png" alt="build" />
+      </div>
     </div>
     <div class="container invest__cards">
       <MoleculesCardSuistanabilityCard
@@ -42,23 +40,20 @@ export default {
       cards: [
         {
           id: 1,
-          text: 'Пример',
-          description:
-            'Описание Описание Описание ОписаниеОписаниеОписаниеОписаниеОписание Описание Описание ОписаниеОписаниеОписаниеОписание',
+          text: this.$t('suistainability.socialProgrammingInvest.cards')[0]
+            .title,
+          description: this.$t(
+            'suistainability.socialProgrammingInvest.cards'
+          )[0].description,
           img: 'sustainability/map-projects/document.png',
         },
         {
           id: 2,
-          text: 'Пример',
-          description:
-            'Описание Описание Описание ОписаниеОписаниеОписаниеОписаниеОписание Описание Описание ОписаниеОписаниеОписаниеОписание',
-          img: 'sustainability/map-projects/document.png',
-        },
-        {
-          id: 3,
-          text: 'Пример',
-          description:
-            'Описание Описание Описание ОписаниеОписаниеОписаниеОписаниеОписание Описание Описание ОписаниеОписаниеОписаниеОписание',
+          text: this.$t('suistainability.socialProgrammingInvest.cards')[1]
+            .title,
+          description: this.$t(
+            'suistainability.socialProgrammingInvest.cards'
+          )[1].description,
           img: 'sustainability/map-projects/document.png',
         },
       ],
@@ -72,10 +67,11 @@ export default {
   &__wrapper {
     display: flex;
     gap: 72px;
-    height: 650px;
+    //max-height: 650px;
   }
   &__content {
-    padding: 80px 40px 80px calc((100vw - var(--width-container)) / 2);
+    min-width: 50%;
+    padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
   }
   &__description {
     margin-top: 40px;
@@ -88,8 +84,18 @@ export default {
     }
   }
   &__img {
-    width: 50%;
-    height: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-width: 50%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
   &__cards {
     margin-top: 40px;
@@ -100,6 +106,8 @@ export default {
   @include tablet {
     &__wrapper {
       flex-direction: column-reverse;
+      max-height: 100%;
+      gap: 15px;
     }
     &__content {
       padding: 40px 16px;
@@ -110,8 +118,8 @@ export default {
       }
     }
     &__img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      height: 50%;
     }
     &__cards {
       grid-template-columns: repeat(1, 1fr);

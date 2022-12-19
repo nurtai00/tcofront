@@ -23,7 +23,7 @@
             {{ $t('kazContent.electricCatalog.description') }}
           </p>
           <AtomsFile
-            file="@/assets/files/Квалификационная анкета по процессу CHESM для потенциальных бизнес-партнеров.xls"
+            file="https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=a9630768%2Da362%2D4cf9%2Da09c%2Dabab83a77b20"
             :text="$t('kazContent.electricCatalog.file')"
             icon="zip"
           />
@@ -57,6 +57,8 @@
 
 <style lang="scss" scoped>
 .electronic {
+  min-height: calc(100vh - 785px);
+
   &__breadcrumbs {
     margin: 42px 0 22px;
   }
@@ -64,7 +66,7 @@
   &__title {
     margin-bottom: 40px;
     &::v-deep .main {
-      color: $c-tco1
+      color: $c-tco1;
     }
   }
 
@@ -92,6 +94,22 @@
 
       img {
         width: 100%;
+      }
+    }
+  }
+
+  @include phone {
+    .content {
+      padding: 40px 0;
+
+      p {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &__title {
+        font-size: 18px;
+        line-height: 26px;
       }
     }
   }

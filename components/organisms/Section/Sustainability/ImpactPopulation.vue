@@ -15,6 +15,7 @@
               direction="row"
               :width="30"
               :height="40"
+              :href="keyEnvironmentalIndicators"
             />
             <AtomsPdfFile
               class="mt20"
@@ -75,10 +76,22 @@ export default {
           id: 4,
           title: this.$t('suistainability.impactPopulation.cards.card4'),
           imgSrc: 'block1-4.png',
-          popupText: '',
+          popupText: this.$t(
+            'suistainability.impactPopulation.popupText.card4'
+          ),
         },
       ],
     }
+  },
+  computed: {
+    keyEnvironmentalIndicators() {
+      const mapOfFileLink = {
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=062a4a18%2D5429%2D4ea9%2Dbaa1%2Da0df4ba3d946',
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1b498f48%2D94e5%2D408e%2D8cb7%2D3f7a43425bba',
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=00bf1b5c%2D5e9a%2D4864%2D948c%2D99a17f6fa156',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
   },
   mounted() {
     console.log(this.$t('suistainability.impactPopulation.cards.card2'))
@@ -109,22 +122,26 @@ export default {
   &__content {
     margin-top: 40px;
     display: flex;
-    gap: 20px;
   }
   &__info {
-    margin-right: calc((var(--width-container) - 90vw) / 2);
     display: flex;
     flex-direction: column;
+    min-width: 50%;
+    padding-right: 20px;
     gap: 15px;
   }
   &__img {
     position: relative;
-    right: calc((var(--width-container) - 100vw) / 2);
-    width: 100%;
-    height: 50%;
+    min-width: calc(50% + (100vw - var(--width-container)) / 2);
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
     img {
-      object-fit: cover;
-      object-position: bottom;
+      object-fit: contain;
+      width: 100%;
+      position: absolute;
     }
   }
   @include tablet {
@@ -141,6 +158,8 @@ export default {
       img {
         width: 100%;
         height: 100%;
+        position: inherit;
+        margin-bottom: 20px;
       }
     }
     &__info {

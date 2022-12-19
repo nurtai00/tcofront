@@ -9,7 +9,7 @@
           {{ $t('suistainability.socialInvest.description') }}
         </p>
         <img
-          src="@/assets/img/sustainability/invest/background.png"
+          src="@/assets/img/sustainability/invest/invest_bg.png"
           alt="invest-bg"
         />
       </div>

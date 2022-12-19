@@ -1,16 +1,18 @@
 <template>
   <div class="p_card">
-    <img loading="lazy" :src="img" alt="publication_card" />
-    <div>
-      <img
-        loading="lazy"
-        src="@/assets/icons/pdf.png"
-        alt="pdf"
-        width="21"
-        height="28"
-      />
-      <p>{{ text }}</p>
-    </div>
+    <a :href="link" target="_blank">
+      <img loading="lazy" :src="img" alt="publication_card" />
+      <div>
+        <img
+          loading="lazy"
+          src="@/assets/icons/pdf.png"
+          alt="pdf"
+          width="21"
+          height="28"
+        />
+        <p>{{ text }}</p>
+      </div>
+    </a>
   </div>
 </template>
 
@@ -22,6 +24,10 @@ export default {
       required: true,
     },
     text: {
+      type: String,
+      default: '',
+    },
+    link: {
       type: String,
       default: '',
     },

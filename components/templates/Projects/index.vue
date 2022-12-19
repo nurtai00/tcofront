@@ -17,14 +17,14 @@
           v-for="(tag, index) of tags"
           :key="index"
           :tag="tag"
-          @click="onTag"
+          @click="onTag(tag.offsetTop)"
         />
       </div>
     </div>
     <div class="projects__video">
       <img src="~/assets/img/projects/projects4.png" alt="" />
     </div>
-    <OrganismsSectionOperationSvg class="svgs" :data="sideSvg[0]">
+    <OrganismsSectionOperationSvg ref="pbr" class="svgs" :data="sideSvg[0]">
       <template #description>
         <p class="mb20" v-text="$t('project.block_1.text')"></p>
         <AtomsFile
@@ -36,14 +36,22 @@
       </template>
     </OrganismsSectionOperationSvg>
 
-    <OrganismsSectionOperationSlide side :data="slide" class="slide">
-      <div class="projects__slide">
+    <OrganismsSectionOperationSlide
+      id="projectSlide"
+      side
+      :data="slide"
+      class="slide"
+    >
+      <div class="projects__slide" style="width: 600px; max-width: 600px">
         <div class="left">
           <div
             v-for="(item, key) in slider.left"
             :key="key"
-            :class="{ active: key === activeSlide }"
-            @click="activeSlide = key"
+            :class="{
+              active: key === animationProgress,
+              inactive: key < animationProgress,
+            }"
+            @click="animationProgress = key"
           >
             {{ item }}
           </div>
@@ -52,7 +60,7 @@
           <div
             v-for="(item, key) in slider.right"
             :key="key"
-            :class="{ active: key === activeSlide }"
+            :class="{ active: key === animationProgress }"
           >
             {{ item }}
           </div>
@@ -68,7 +76,7 @@
       <div class="container">
         <div class="projects__protocols">
           <div class="projects__protocols_header">
-            <AtomsTitle class="projects__title protocol">
+            <AtomsTitle class="projects__title protocol" style="margin: 0">
               {{ $t('project.protocols.title') }}
             </AtomsTitle>
             <nuxt-link :to="localePath('/projects/protocols')" class="more">
@@ -90,7 +98,7 @@
         {{ $t('project.block_4.text') }}
       </p>
       <AtomsFile
-        file="@/assets/files/statistics.pdf"
+        :file="docPubr"
         :text="$t('project.block_4.pdf_1')"
         icon="pdf"
       />
@@ -108,11 +116,12 @@
 export default {
   data() {
     return {
-      activeSlide: 0,
+      animationProgress: 0,
       tags: [
         {
           id: 1,
           text: this.$t('project.tags_1[0]'),
+          offsetTop: null,
         },
         {
           id: 2,
@@ -138,6 +147,7 @@ export default {
         image: 'projects/projects1.png',
       },
       slide2: {
+        style: 'width:50vw;max-width:50vw',
         title: this.$t('project.block_3.title'),
         description: [this.$t('project.block_3.text')],
         image: 'projects/projects2.png',
@@ -157,6 +167,7 @@ export default {
         },
       },
       slide3: {
+        style: 'width:50vw;max-width:50vw',
         title: this.$t('project.block_4.title'),
         image: 'projects/projects3.png',
         link: () => {
@@ -201,6 +212,7 @@ export default {
         },
       ],
       slider: {
+        style: 'width:50vw;max-width:50vw',
         left: [
           this.$t('project.block_2[0].title'),
           this.$t('project.block_2[1].title'),
@@ -214,9 +226,38 @@ export default {
       },
     }
   },
+  computed: {
+    docPubr() {
+      const mapOfFileLink = {
+        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=f9483194%2D7bb6%2D4908%2D8b29%2D50f1341a70da',
+        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=06386e07%2Dae83%2D4e3e%2Da6b0%2D61c0bb0d2348',
+        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=69605ed9%2D5d36%2D4936%2Da897%2D6c88732a408d',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+  },
+  mounted() {
+    this.tags[0].offsetTop = this.$refs?.pbr?.$el?.offsetTop
+    const element = document.getElementById('projectSlide')
+    if (window.innerWidth > 500) {
+      element.style.height = element.offsetHeight + 'px'
+    }
+    element.addEventListener('wheel', (e) => {
+      if (e.wheelDelta > 0 && this.animationProgress !== 0) {
+        this.animationProgress -= 1
+      } else if (e.wheelDelta < 0 && this.animationProgress !== 2) {
+        this.animationProgress += 1
+      }
+    })
+  },
   methods: {
-    onTag() {
-      console.log('works')
+    onTag(offsetTop) {
+      if (offsetTop) {
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth',
+        })
+      }
     },
   },
 }
@@ -233,6 +274,8 @@ export default {
 
     img {
       width: 100%;
+      max-height: 600px;
+      object-fit: cover;
     }
   }
 
@@ -327,10 +370,17 @@ export default {
         margin-bottom: 46px;
         cursor: pointer;
         transition: 0.2s ease-in-out;
+        max-height: 300px;
 
         &:not(.active) {
           color: #30454e;
           opacity: 0.1;
+        }
+
+        &.inactive {
+          max-height: 0;
+          margin-bottom: 0;
+          opacity: 0;
         }
       }
 
@@ -411,7 +461,7 @@ export default {
     }
 
     .file::v-deep a {
-      color: #00B0F0;
+      color: #00b0f0;
     }
   }
 

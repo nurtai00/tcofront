@@ -6,7 +6,7 @@
           class="double-block tco__partners"
           style="justify-content: flex-start"
         >
-          <img src="@/assets/img/Rectangle 182.png" />
+          <img :style="options.style" src="@/assets/img/Rectangle 182.png" />
           <div class="tco__partners-wrapper">
             <h1 v-text="slide.title"></h1>
             <div class="underline"></div>
@@ -49,6 +49,7 @@ export default {
         slidesPerView: 1,
         id: 'main_b9',
         slide: this.slideTo,
+        style: 'max-height: 600px',
       },
       slides: [
         {

@@ -2,38 +2,39 @@
   <div class="protocols">
     <div class="container">
       <MoleculesBreadcrumbs class="protocols__breadcrumbs">
-        <AtomsBreadOption to="/">{{
-          $t('project.breadcrumbs_1[0]')
-        }}</AtomsBreadOption>
-        <AtomsBreadOption to="/projects">{{
-          $t('project.breadcrumbs_1[1]')
-        }}</AtomsBreadOption>
-        <AtomsBreadOption to="/projects/protocols">{{
-          $t('project.breadcrumbs_1[2]')
-        }}</AtomsBreadOption>
+        <AtomsBreadOption to="/">
+          {{ $t('project.breadcrumbs_1[0]') }}
+        </AtomsBreadOption>
+        <AtomsBreadOption to="/projects">
+          {{ $t('project.breadcrumbs_1[1]') }}
+        </AtomsBreadOption>
+        <AtomsBreadOption to="/projects/protocols">
+          {{ $t('project.breadcrumbs_1[2]') }}
+        </AtomsBreadOption>
       </MoleculesBreadcrumbs>
     </div>
     <div class="grey">
       <div class="container">
         <div class="protocols__header">
-          <AtomsTitle class="protocols__title">{{
-            $t('project.breadcrumbs_1[2]')
-          }}</AtomsTitle>
+          <AtomsTitle class="protocols__title">
+            {{ $t('project.breadcrumbs_1[2]') }}
+          </AtomsTitle>
           <!-- <nuxt-link class="more" to="/">Все протоколы</nuxt-link> -->
         </div>
         <div class="protocols__tags">
           <AtomsTag
-            v-for="(tag, index) of tags"
-            :key="index"
+            v-for="tag of tags"
+            :key="tag.text"
             :tag="tag"
-            @click="onTag"
+            @click="onTag(tag)"
           />
         </div>
         <div class="protocols__protocols_body">
-          <OrganismsSectionOperationCard
-            v-for="(item, key) in cards"
+          <ProtocolCard
+            v-for="(item, key) in filteredCards"
             :key="key"
             :content="item"
+            @click="onProtocolCardClick"
           />
         </div>
       </div>
@@ -42,13 +43,16 @@
 </template>
 
 <script>
+import ProtocolCard from 'organisms/Section/Protocol/Card'
 export default {
+  components: { ProtocolCard },
   data() {
     return {
       tags: [
         {
           id: 1,
           text: '2016',
+          selected: true,
         },
         {
           id: 2,
@@ -59,59 +63,74 @@ export default {
           text: '2018',
         },
       ],
-      cards: [
-        {
-          number: this.$t('project.protocols.items[0].year'),
-          name: this.$t('project.protocols.items[0].text'),
-          description: this.$t('project.protocols.items[0].description'),
-        },
-        {
-          number: this.$t('project.protocols.items[0].year'),
-          name: this.$t('project.protocols.items[0].text'),
-          description: this.$t('project.protocols.items[0].description'),
-        },
-        {
-          number: this.$t('project.protocols.items[0].year'),
-          name: this.$t('project.protocols.items[0].text'),
-          description: this.$t('project.protocols.items[0].description'),
-        },
-        {
-          number: this.$t('project.protocols.items[0].year'),
-          name: this.$t('project.protocols.items[0].text'),
-          description: this.$t('project.protocols.items[0].description'),
-        },
-        {
-          number: this.$t('project.protocols.items[0].year'),
-          name: this.$t('project.protocols.items[0].text'),
-          description: this.$t('project.protocols.items[0].description'),
-        },
-        {
-          number: this.$t('project.protocols.items[0].year'),
-          name: this.$t('project.protocols.items[0].text'),
-          description: this.$t('project.protocols.items[0].description'),
-        },
-        {
-          number: this.$t('project.protocols.items[0].year'),
-          name: this.$t('project.protocols.items[0].text'),
-          description: this.$t('project.protocols.items[0].description'),
-        },
-        {
-          number: this.$t('project.protocols.items[0].year'),
-          name: this.$t('project.protocols.items[0].text'),
-          description: this.$t('project.protocols.items[0].description'),
-        },
-
-        {
-          number: this.$t('project.protocols.items[0].year'),
-          name: this.$t('project.protocols.items[0].text'),
-          description: this.$t('project.protocols.items[0].description'),
-        },
-      ],
+      currentYear: '2016',
+      cards: this.$t('project.protocols.items'),
+      // cards: [
+      //   {
+      //     number: this.$t('project.protocols.items[0].year'),
+      //     name: this.$t('project.protocols.items[0].text'),
+      //     description: this.$t('project.protocols.items[0].description'),
+      //   },
+      //   {
+      //     number: this.$t('project.protocols.items[0].year'),
+      //     name: this.$t('project.protocols.items[0].text'),
+      //     description: this.$t('project.protocols.items[0].description'),
+      //   },
+      //   {
+      //     number: this.$t('project.protocols.items[0].year'),
+      //     name: this.$t('project.protocols.items[0].text'),
+      //     description: this.$t('project.protocols.items[0].description'),
+      //   },
+      //   {
+      //     number: this.$t('project.protocols.items[0].year'),
+      //     name: this.$t('project.protocols.items[0].text'),
+      //     description: this.$t('project.protocols.items[0].description'),
+      //   },
+      //   {
+      //     number: this.$t('project.protocols.items[0].year'),
+      //     name: this.$t('project.protocols.items[0].text'),
+      //     description: this.$t('project.protocols.items[0].description'),
+      //   },
+      //   {
+      //     number: this.$t('project.protocols.items[0].year'),
+      //     name: this.$t('project.protocols.items[0].text'),
+      //     description: this.$t('project.protocols.items[0].description'),
+      //   },
+      //   {
+      //     number: this.$t('project.protocols.items[0].year'),
+      //     name: this.$t('project.protocols.items[0].text'),
+      //     description: this.$t('project.protocols.items[0].description'),
+      //   },
+      //   {
+      //     number: this.$t('project.protocols.items[0].year'),
+      //     name: this.$t('project.protocols.items[0].text'),
+      //     description: this.$t('project.protocols.items[0].description'),
+      //   },
+      //
+      //   {
+      //     number: this.$t('project.protocols.items[0].year'),
+      //     name: this.$t('project.protocols.items[0].text'),
+      //     description: this.$t('project.protocols.items[0].description'),
+      //   },
+      // ],
     }
   },
+  computed: {
+    filteredCards() {
+      return this.cards.filter((card) => card.year === this.currentYear)
+    },
+  },
   methods: {
-    onTag() {
-      console.log('works')
+    onProtocolCardClick(link) {
+      window.open(link, '_blank')
+    },
+    onTag(tag) {
+      this.currentYear = tag.text
+      this.tags = this.tags.map((tag) => {
+        return tag.text === this.currentYear
+          ? { ...tag, selected: true }
+          : { ...tag, selected: false }
+      })
     },
   },
 }
