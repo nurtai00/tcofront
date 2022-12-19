@@ -178,7 +178,8 @@ export default {
   .block_img {
     position: absolute;
     width: 50%;
-    height: 700px;
+    height: 100%;
+    object-fit: cover;
     top: 0;
     right: 0;
     @include tablet() {
@@ -221,7 +222,7 @@ export default {
 }
 .information_content {
   width: 100%;
-  min-height: 706px;
+  // min-height: 706px;
   display: flex;
   flex-direction: column;
   padding: 80px 0;

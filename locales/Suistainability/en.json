@@ -2,7 +2,8 @@
   "title": "Sustainability",
   "breadcrumbs": {
     "main": "Home",
-    "igilik": "project Игилик"
+    "igilik": "project Игилик",
+    "psi": "project CIP"
   },
   "invest": "Social Investments",
   "ecologyText": "Ecology",
@@ -206,5 +207,77 @@
       "card4": "Makhambet district",
       "card5": "Inderskiy district"
     }
-  }
+  },
+  "psi": [
+    {
+      "title": "Kazakhstan Association of Family Physicians (KAFP)",
+      "title_2": "Strengthening primary care services and access in Zhylyoi",
+      "text": "<strong>Goal</strong>: Strengthening primary care services and access in Zhylyoi.<br><br><strong>Objectives:</strong><br><br>1. To help primary care providers to increase their capacity, capability and responsibility for clinical quality improvement.<br><br>2. To promote health and disease prevention among general public<br><br>The project will include: (a) the refurbishing and upgrade of PHC centers; (b) training for personnel at all levels; (c) introducing population mapping and data driven decision making; (d) campaign and advocacy to improve and expand health, basic sanitation and nutrition education;"
+    },
+    {
+      "title": "Eurasian Foundation of Central Asia (EFCA)",
+      "title_2": "Public Spaces in Zhylyoi district and Borankul",
+      "text": "The proposed program sets the following objective: local communities have increased participation in delivering better public spaces and addressing local problems.<br><br>The team expects to achieve the following outcomes:<br><br>1. Local citizens enjoy improved public spaces;<br><br>2. Trained local community initiative groups improved cooperation with local authorities to solve wider community problems."
+    },
+    {
+      "title": "Eurasian Foundation of Central Asia (EFCA)",
+      "title_2": "Public Spaces in Atyrau",
+      "text": "The proposed program sets the following objective: local communities have increased participation in delivering better public spaces and addressing local problems.<br><br>The team expects to achieve the following outcomes:<br><br>1. Local citizens enjoy improved public spaces;<br><br>2. Trained local community initiative groups improved cooperation with local authorities to solve wider community problems."
+    },
+    {
+      "title": "Bizde Adambyz",
+      "title_2": "Effective rehabilitation of people with disabilities",
+      "text": "To improve the quality of life of people with disabilities who move in wheelchairs in Atyrau region, their adaptation to society, to keep their psychological state under control, to implement their rehabilitation process quickly and effectively.<br><br>Objective No. 1 Integration of wheelchair users into society through independent living skills training;<br><br>Objective No. 2 Creating a pool of instructors of independent living skills from among the project graduates;<br><br>Objective No. 3 Public awareness of the problems of people with disabilities, psychological support and motivation of people with disabilities."
+    },
+    {
+      "title": "Atyrau. Little Country",
+      "title_2": "Horse is the best friend",
+      "text": "Goal: to support people in achieving motorial, psychological freedom and help a person to adapt to new changing circumstances. <br><br>Objectives:<br><br>- teaching children horseback riding to influence their physical, psycho-emotional and personal rehabilitation and adaptation;<br><br>- helping to recover motor functions and lost skills by conducting regular therapeutic horseback riding sessions;<br><br>- having an educational impact on children, introducing them to wildlife with the help of horses (to establish nature-friendly culture, mutual assistance; to explore the environment increasing knowledge about the nature of their region, to acquire new knowledge on how the most enthusiastic children can explore the environment);<br><br>- creating the necessary conditions for children with disabilities to become more integrated in society;<br><br>- to motivate and encourage children to live an active life;<br><br>- helping families with children who have health limitations and impaired posture, general speech underdevelopment and psycho-emotional disorders using recreational activities."
+    },
+    {
+      "title": "Eurasian Foundation of Central Asia (EFCA)",
+      "title_2": "“Zharkyra” Social entrepreneurship program in partnership with Social programs and innovations fund",
+      "text": "Promote innovative social initiatives aimed at providing sustainable business solutions to social, economic and environmental problems of the community in the city of Atyrau and in the Atyrau region."
+    },
+    {
+      "title": "SEZUAL",
+      "title_2": "Braille-alphabetical simulator",
+      "text": "Assistance in the educational process when teaching Kazakh, English and Russian languages, using an electronic technical tool developed by us for blind and visually impaired people"
+    },
+    {
+      "title": "Private Fund named after academician Z. Kabdolov",
+      "title_2": "Kazaksha Saira!",
+      "text": "Goal: further increase in the coverage of the audience, including teachers to teach Kazakh language and promote high-quality production of the project's products based on innovative technologies.<br><br><br>  <br><br>Project objectives:<br><br>- Implementation of effective and proven technologies for the state language study.<br><br>- Production of unique bilingual e-books, video and audio products, filling Kabdolov's website with new materials in its headings 'Customs and traditions of Kazakh people', 'Educational materials', 'Poetry and music', 'Proverbs and sayings of Kazakh people'<br><br>- Placement of products on social networks."
+    },
+    {
+      "title": "Public Foundation “Personal Growth Integrity”",
+      "title_2": "Vocational Counseling - Conscious Choice of Profession",
+      "text": "Goal <br> <br>Identification and development of each child's individual abilities to choose a future profession and to form independent life skills. <br> <br>This goal includes the tasks below:<br><br>- Vocational testing and counseling.<br><br>- Social skills training - communication, teamwork, leadership, emotional intelligence.<br><br>- Management skills training - time management and goal setting, problem solving<br><br>- Life-skills training - financial and legal literacy, introduction to labor market, responsibility and discipline.<br><br>- Information Literacy - effective learning, creative and critical thinking, information search and analysis.<br><br>- Financial literacy - setting a financial goal and planning to achieve it, managing income and expenses, economics.<br><br>- Legal literacy - basics of paperwork, contracts, government relations, employment and labor relations.<br><br>- Communication skills - communication in personal and business relationships, teamwork, public speaking, presentation skills."
+    },
+    {
+      "title": "Atyrau. Little Country",
+      "title_2": "Hippotherapy in Kulsary",
+      "text": "Goal: to support people in achieving motorial, psychological freedom and help a person to adapt to new changing circumstances.<br><br>Objectives:<br><br>- teaching children horseback riding to influence their physical, psycho-emotional and personal rehabilitation and adaptation;<br><br>- helping to recover motor functions and lost skills by conducting regular therapeutic horseback riding sessions;<br><br>- having an educational impact on children, introducing them to wildlife with the help of horses (to establish nature-friendly culture, mutual assistance; to explore the environment increasing knowledge about the nature of their region, to acquire new knowledge on how the most enthusiastic children can explore the environment);<br><br>- creating the necessary conditions for children with disabilities to become more integrated in society;<br><br>- to motivate and encourage children to live an active life;<br><br>- helping families with children who have health limitations and impaired posture, general speech underdevelopment and psycho-emotional disorders using recreational activities."
+    },
+    {
+      "title": "Public Association of psychologists 'Oi-Sana'",
+      "title_2": "Opening of the Montessori Special Education Center for children with special needs",
+      "text": "Through the opening of 'Montessori' Special education center to provide special training and education (free education, adaptation to social life, providing new opportunities for self-development, correction) for 200 children with special needs"
+    },
+    {
+      "title": "Yntymak Atyrau NGO",
+      "title_2": "Community Development Program 'Yntymak'",
+      "text": "Development and implementation of corporate volunteeringa"
+    },
+    {
+      "title": "Eurasian Foundation of Central Asia (EFCA)",
+      "title_2": "NGO School",
+      "text": "Goal: strengthening the potential of NGOs of the Atyrau region in solving social problems of communities and building civil society, through training and experience exchange.<br><br>Objectives:<br><br>- Improve the institutional development indicators of NGOs in the region through exchange of experience;<br><br>- Local trainers are enabled to train rural NGOs."
+    },
+    {
+      "title": "Petrocouncil",
+      "title_2": "Training for entrepreneurs on how to do business better during a pandemic, as well as training for unemployed on start-ups",
+      "text": "Assisting 120 entrepreneurs (training, support/consulting of sole proprietors, LLP) who suffered from the COVID crisis, as well as training 200 unemployed people to run their own start-up business (in groups)."
+    }
+  ]
 }

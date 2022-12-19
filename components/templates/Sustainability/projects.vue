@@ -9,7 +9,13 @@
           {{ $t('suistainability.title') }}
         </AtomsBreadOption>
         <AtomsBreadOption :to="`/sustainability/${$route.params.projects}`">
-          {{ $t('suistainability.breadcrumbs.igilik') }}
+          {{
+            $t(
+              $route.params.projects === 'psi'
+                ? 'suistainability.breadcrumbs.psi'
+                : 'suistainability.breadcrumbs.igilik'
+            )
+          }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
 
@@ -40,37 +46,51 @@
 <script>
 export default {
   data() {
-    return {
-      cardItems: [
-        {
-          id: 1,
-          title: this.$t('suistainability.project.cardPlaces.card1'),
-          modal: 'SustainabilityProject',
-        },
-        {
-          id: 2,
-          title: this.$t('suistainability.project.cardPlaces.card2'),
-          modal: 'SustainabilityProject',
-        },
-        {
-          id: 3,
-          title: this.$t('suistainability.project.cardPlaces.card3'),
-          modal: 'SustainabilityProject',
-        },
-        {
-          id: 4,
-          title: this.$t('suistainability.project.cardPlaces.card4'),
-          modal: 'SustainabilityProject',
-        },
-        {
-          id: 5,
-          title: this.$t('suistainability.project.cardPlaces.card5'),
-          modal: 'SustainabilityProject',
-        },
-      ],
-    }
+    return {}
   },
   computed: {
+    cardItems() {
+      const psiItems = []
+      for (let i = 0; i < 14; i++) {
+        psiItems.push({
+          id: i + 1,
+          title: this.$t(`suistainability.psi[${i}].title`),
+          title_2: this.$t(`suistainability.psi[${i}].title_2`),
+          text: this.$t(`suistainability.psi[${i}].text`),
+          modal: 'SustainabilityPsi',
+          imgSrc: `sustainability/psi/image_${i + 1}.png`,
+        })
+      }
+      return this.$route.params.projects === 'psi'
+        ? psiItems
+        : [
+            {
+              id: 1,
+              title: this.$t('suistainability.project.cardPlaces.card1'),
+              modal: 'SustainabilityProject',
+            },
+            {
+              id: 2,
+              title: this.$t('suistainability.project.cardPlaces.card2'),
+              modal: 'SustainabilityProject',
+            },
+            {
+              id: 3,
+              title: this.$t('suistainability.project.cardPlaces.card3'),
+              modal: 'SustainabilityProject',
+            },
+            {
+              id: 4,
+              title: this.$t('suistainability.project.cardPlaces.card4'),
+              modal: 'SustainabilityProject',
+            },
+            {
+              id: 5,
+              title: this.$t('suistainability.project.cardPlaces.card5'),
+              modal: 'SustainabilityProject',
+            },
+          ]
+    },
     title() {
       const path = this.$route.path.split('/').pop()
       return path === 'igilik'
