@@ -18,6 +18,9 @@
           <nuxt-link :to="localePath('/operations')">
             {{ $t('header.header_links[2]') }}
           </nuxt-link>
+          <nuxt-link :to="localePath('/projects')">
+            {{ $t('header.header_links[3]') }}
+          </nuxt-link>
           <nuxt-link :to="localePath('/kazakhstani_content')">
             {{ $t('header.header_links[4]') }}
           </nuxt-link>
