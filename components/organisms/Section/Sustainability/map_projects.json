@@ -1,341 +1,323 @@
 {
-    "ru": {
-        "markers": {
-            "marker1": {
-              "title": "СРЕДНЕ-ТЕХНИЧЕСКАЯ ГИМНАЗИЯ, г. АТЫРАУ",
-              "description": [
-                "Сроки строительства – 2012-2017 гг.",
-                "Количество учащихся – 624",
-                "Планируемое количество педагогов – 102"
-              ]
-            },
-            "marker2": {
-              "title": "ФЛАГШТОК, г. АТЫРАУ",
-              "description": []
-            },
-            "marker3": {
-              "title": "СРЕДНЯЯ ШКОЛА, г. АТЫРАУ",
-              "description": [
-                "Строительство средней школы №30 в микрорайоне №4 г. Атырау",
-                "Введена в эксплуатацию в 2001 г.",
-                "Количество выпускников с момента открытия – более 10000",
-                "Количество учащихся – 1200",
-                "Создано рабочих мест – более 150"
-              ]
-            },
-            "marker4": {
-              "title": "НАЦИОНАЛЬНАЯ ГИМНАЗИЯ, г. АТЫРАУ",
-              "description": [
-                "Завершено в 2016 г.",
-                "Количество учащихся – 320",
-                "Планируемое количество педагогов – 37"
-              ]
-            },
-            "marker5": {
-              "title": "ДЕТСКИЙ САД, г. АТЫРАУ",
-              "description": [
-                "г. Атырау (создано 60 рабочих мест, количество мест – 280)"
-              ]
-            },
-            "marker6": {
-              "title": "РЕТРО-ПАРК, г. АТЫРАУ",
-              "description": [
-                "Сроки строительства – 2015-2017 гг.",
-                "Площадь застройки – 3,5 га",
-                "Зеленые насаждения – более 700 деревьев"
-              ]
-            },
-            "marker7": {
-              "title": "ДВА ДЕТСКИХ САДА, г. КУЛЬСАРЫ",
-              "description": [
-                "г. Кульсары (количество мест – 290)"
-              ]
-            },
-            "marker8": {
-              "title": "ДЕТСКИЙ САД, п. ЖАНА КАРАТОН",
-              "description": [
-                "п. Жана Каратон (количество мест – 280)"
-              ]
-            },
-            "marker9": {
-              "title": "ШЕСТЬ ФОКов В ЖЫЛЫОЙСКОМ РАЙОНЕ",
-              "description": [
-              ]
-            },
-            "marker10": {
-              "title": "ЧЕТЫРЕ ДЕТСКИХ САДА В ЖЫЛЫОЙСКОМ РАЙОНЕ",
-              "description": [
-                "с. Шокпартогай (создано 43 рабочих места, количество мест – 160)",
-                "с. Аккиизтогай (количество мест – 160)",
-                "с. Тургызба (количество мест – 160)",
-                "п. Косчагил (количество мест – 160)"
-              ]
-            },
-            "marker11": {
-              "title": "ДЕТСКИЙ САД, с. ДОССОР",
-              "description": [
-              ]
-            },
-            "marker12": {
-              "title": "ДОМ КУЛЬТУРЫ, п. ИНДЕР",
-              "description": [
-                "Сроки строительства – 2016-2017 гг.",
-                "Одновременно может вместить до 400 посетителей"
-              ]
-            },
-            "marker13": {
-              "title": "ДОМ КУЛЬТУРЫ, с. ЕСБОЛ",
-              "description": [
-                "Сроки строительства – 2016-2017 гг.",
-                "Одновременно может вместить до 300 посетителей"
-              ]
-            },
-            "marker14": {
-              "title": "ДОМ КУЛЬТУРЫ, с. БОДЕНЕ",
-              "description": [
-                "Сроки строительства – 2016-2017 гг.",
-                "Одновременно может вместить до 200 посетителей"
-              ]
-            },
-            "marker15": {
-              "title": "ШКОЛА, с. ЫНТЫМАК",
-              "description": [
-                "Сроки строительства – 2016-2017 гг.",
-                "Количество учащихся – 120"
-              ]
-            },
-            "marker16": {
-              "title": "ДЕТСКИЙ САД, с. МАХАМБЕТ",
-              "description": [
-                "с. Махамбет (создано 13 рабочих мест, количество мест – 280)"
-              ]
-            }
-          }
-    },
-    "en": {
-        "markers": {
-            "marker1": {
-              "title": "SECONDARY TECHNICAL SCHOOL IN ATYRAU",
-              "description": [
-                "Construction period – 2012-2017",
-                "Number of students – 624",
-                "Planned number of teachers – 102"
-              ]
-            },
-            "marker2": {
-              "title": "FLAGPOLE IN ATYRAU",
-              "description": []
-            },
-            "marker3": {
-              "title": "SECONDARY SCHOOL IN ATYRAU",
-              "description": [
-                "Construction of Secondary School #30 in microdistrict #4 in Atyrau",
-                "Commissioned in 2001",
-                "Number of alumni since the opening – over 10,000",
-                "Number of students – 1,200",
-                "Created workplaces – over 150"
-              ]
-            },
-            "marker4": {
-              "title": "NATIONAL SCHOOL IN ATYRAU",
-              "description": [
-                "Completed in 2016",
-                "Number of students – 320",
-                "Planned number of teachers – 37"
-              ]
-            },
-            "marker5": {
-              "title": "KINDERGARTEN IN ATYRAU",
-              "description": [
-                "Atyrau (60 workplaces created, number of children – 280)"
-              ]
-            },
-            "marker6": {
-              "title": "RETRO PARK IN ATYRAU",
-              "description": [
-                "Construction period – 2015-2017",
-                "Construction area - 3.5 hectares",
-                "Greening - over 700 trees"
-              ]
-            },
-            "marker7": {
-              "title": "TWO KINDERGARTENS IN KULSARY",
-              "description": [
-                "Kulsary (number of children – 290)"
-              ]
-            },
-            "marker8": {
-              "title": "KINDERGARTEN IN ZHANA KARATON",
-              "description": [
-                "Zhana Karaton (number of children – 280)"
-              ]
-            },
-            "marker9": {
-              "title": "SIX HEALTH AND FITNESS CENTERS IN ZHYLYOI DISTRICT",
-              "description": [
-              ]
-            },
-            "marker10": {
-              "title": "FOUR KINDERGARTENS IN ZHYLYOI DISTRICT",
-              "description": [
-                "Shokpartogay (43 workplaces created, number of children – 160)",
-                "Akkiiztogay (number of children – 160)",
-                "Turgyzba (number of children – 160)",
-                "Koschagyl (number of children – 160)"
-              ]
-            },
-            "marker11": {
-              "title": "KINDERGARTEN IN DOSSOR",
-              "description": [
-              ]
-            },
-            "marker12": {
-              "title": "COMMUNITY CENTER IN INDER",
-              "description": [
-                "Құрылыс мерзімі – 2016-2017 жж.",
-                "Бір мезгілде 400-ге дейін келушіні қабылдай алады"
-              ]
-            },
-            "marker13": {
-              "title": "COMMUNITY CENTER IN YESBOL",
-              "description": [
-                "Құрылыс мерзімі – 2016-2017 жж.",
-                "Бір мезгілде 300-ге дейін келушіні қабылдай алады"
-              ]
-            },
-            "marker14": {
-              "title": "COMMUNITY CENTER IN BODENE",
-              "description": [
-                "Құрылыс мерзімі – 2016-2017 жж.",
-                "Бір мезгілде 200-ге дейін келушіні қабылдай алады"
-              ]
-            },
-            "marker15": {
-              "title": "SCHOOL IN YNTYMAK",
-              "description": [
-                "Construction period – 2016-2017",
-                "Number of students – 120"
-              ]
-            },
-            "marker16": {
-              "title": "KINDERGARTEN IN MAKHAMBET",
-              "description": [
-                "Makhambet (13 workplaces created, number of children – 280)"
-              ]
-            }
-          }
-    },
-    "kz": {
-        "markers": {
-            "marker1": {
-              "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ ОРТА-ТЕХНИКАЛЫҚ МЕКТЕП",
-              "description": [
-                "Құрылыс мерзімі – 2012-2017 жж.",
-                "Оқушылар саны – 624",
-                "Жоспарланған педагогтар саны – 102"
-              ]
-            },
-            "marker2": {
-              "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ ТУТҰҒЫР",
-              "description": []
-            },
-            "marker3": {
-              "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ ОРТА МЕКТЕП",
-              "description": [
-                "Атырау қаласындағы №4 ықшамауданда №30 орта мектеп құрылысы",
-                "2001 жылы пайдалануға берілді",
-                "Ашылғаннан бергі түлектер саны – 10 мыңнан астам",
-                "Оқушылар саны – 1200",
-                "Ашылған жұмыс орны – 150-ден астам"
-              ]
-            },
-            "marker4": {
-              "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ ҰЛТТЫҚ ГИМНАЗИЯ",
-              "description": [
-                "Құрылыс мерзімі – 2014-2016 жж.",
-                "Оқушылар саны – 320",
-                "Жоспарланған педагогтар саны – 37"
-              ]
-            },
-            "marker5": {
-              "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ БАЛАБАҚША",
-              "description": [
-                "Атырау қаласы (60 жұмыс орны ашылды, балалар саны - 280)"
-              ]
-            },
-            "marker6": {
-              "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ РЕТРО САЯБАҚ",
-              "description": [
-                "Құрылыс мерзімі – 2015-2017 жж.",
-                "Құрылыс алаңы – 3,5 га",
-                "Жасыл желек – 700-ден астам ағаш көшеттер"
-              ]
-            },
-            "marker7": {
-              "title": "ҚҰЛСАРЫ ҚАЛАСЫНДАҒЫ ЕКІ БАЛАБАҚША",
-              "description": [
-                "Құлсары қаласы (балалар саны - 290)"
-              ]
-            },
-            "marker8": {
-              "title": "ЖАҢА ҚАРАТОН КЕНТІНДЕГІ БАЛАБАҚША",
-              "description": [
-                "Жаңа Қаратон кенті (балалар саны -280)"
-              ]
-            },
-            "marker9": {
-              "title": "ЖЫЛЫОЙ АУДАНЫНДА АЛТЫ ДЕНЕ ШЫНЫҚТЫРУ ЖӘНЕ САУЫҚТЫРУ КЕШЕНІ",
-              "description": [
-              ]
-            },
-            "marker10": {
-              "title": "ЖЫЛЫОЙ АУДАНЫНДАҒЫ ТӨРТ БАЛАБАҚША",
-              "description": [
-                "Шоқпартоғай ауылы (43 жұмыс орны ашылды, балалар саны - 160)",
-                "Ақкиізтоғай ауылы (балалар саны -160)",
-                "Тұрғызба ауылы (балалар саны -160)",
-                "Қосшағыл ауылы (балалар саны -160)"
-              ]
-            },
-            "marker11": {
-              "title": "ДОССОР КЕНТІНДЕГІ БАЛАБАҚША",
-              "description": [
-              ]
-            },
-            "marker12": {
-              "title": "ИНДЕРБОР КЕНТІНДЕГІ МӘДЕНИЕТ ҮЙІ",
-              "description": [
-                "Құрылыс мерзімі – 2016-2017 жж.",
-                "Бір мезгілде 400-ге дейін келушіні қабылдай алады"
-              ]
-            },
-            "marker13": {
-              "title": "ЕСБОЛ АУЫЛЫНДАҒЫ МӘДЕНИЕТ ҮЙІ",
-              "description": [
-                "Құрылыс мерзімі – 2016-2017 жж.",
-                "Бір мезгілде 300-ге дейін келушіні қабылдай алады"
-              ]
-            },
-            "marker14": {
-              "title": "БӨДЕНЕ АУЫЛЫНДАҒЫ МӘДЕНИЕТ ҮЙІ",
-              "description": [
-                "Құрылыс мерзімі – 2016-2017 жж.",
-                "Бір мезгілде 200-ге дейін келушіні қабылдай алады"
-              ]
-            },
-            "marker15": {
-              "title": "ЫНТЫМАҚ АУЫЛЫНДАҒЫ МЕКТЕП",
-              "description": [
-                "Құрылыс мерзімі – 2016-2017 жж.",
-                "Оқушылар саны – 120"
-              ]
-            },
-            "marker16": {
-              "title": "МАХАМБЕТ АУЫЛЫНДАҒЫ БАЛАБАҚША",
-              "description": [
-                "Махамбет ауылы (13 жұмыс орны ашылды, балалар саны - 280)"
-              ]
-            }
-          }
+  "ru": {
+    "markers": {
+      "marker1": {
+        "title": "СРЕДНЕ-ТЕХНИЧЕСКАЯ ГИМНАЗИЯ, г. АТЫРАУ",
+        "description": [
+          "Сроки строительства – 2012-2017 гг.",
+          "Количество учащихся – 624",
+          "Планируемое количество педагогов – 102"
+        ]
+      },
+      "marker2": {
+        "title": "ФЛАГШТОК, г. АТЫРАУ",
+        "description": []
+      },
+      "marker3": {
+        "title": "СРЕДНЯЯ ШКОЛА, г. АТЫРАУ",
+        "description": [
+          "Строительство средней школы №30 в микрорайоне №4 г. Атырау",
+          "Введена в эксплуатацию в 2001 г.",
+          "Количество выпускников с момента открытия – более 10000",
+          "Количество учащихся – 1200",
+          "Создано рабочих мест – более 150"
+        ]
+      },
+      "marker4": {
+        "title": "НАЦИОНАЛЬНАЯ ГИМНАЗИЯ, г. АТЫРАУ",
+        "description": [
+          "Завершено в 2016 г.",
+          "Количество учащихся – 320",
+          "Планируемое количество педагогов – 37"
+        ]
+      },
+      "marker5": {
+        "title": "ДЕТСКИЙ САД, г. АТЫРАУ",
+        "description": [
+          "г. Атырау (создано 60 рабочих мест, количество мест – 280)"
+        ]
+      },
+      "marker6": {
+        "title": "РЕТРО-ПАРК, г. АТЫРАУ",
+        "description": [
+          "Сроки строительства – 2015-2017 гг.",
+          "Площадь застройки – 3,5 га",
+          "Зеленые насаждения – более 700 деревьев"
+        ]
+      },
+      "marker7": {
+        "title": "ДВА ДЕТСКИХ САДА, г. КУЛЬСАРЫ",
+        "description": ["г. Кульсары (количество мест – 290)"]
+      },
+      "marker8": {
+        "title": "ДЕТСКИЙ САД, п. ЖАНА КАРАТОН",
+        "description": ["п. Жана Каратон (количество мест – 280)"]
+      },
+      "marker9": {
+        "title": "ШЕСТЬ ФОКов В ЖЫЛЫОЙСКОМ РАЙОНЕ",
+        "description": []
+      },
+      "marker10": {
+        "title": "ЧЕТЫРЕ ДЕТСКИХ САДА В ЖЫЛЫОЙСКОМ РАЙОНЕ",
+        "description": [
+          "с. Шокпартогай (создано 43 рабочих места, количество мест – 160)",
+          "с. Аккиизтогай (количество мест – 160)",
+          "с. Тургызба (количество мест – 160)",
+          "п. Косчагил (количество мест – 160)"
+        ]
+      },
+      "marker11": {
+        "title": "ДЕТСКИЙ САД, с. ДОССОР",
+        "description": []
+      },
+      "marker12": {
+        "title": "ДОМ КУЛЬТУРЫ, п. ИНДЕР",
+        "description": [
+          "Сроки строительства – 2016-2017 гг.",
+          "Одновременно может вместить до 400 посетителей"
+        ]
+      },
+      "marker13": {
+        "title": "ДОМ КУЛЬТУРЫ, с. ЕСБОЛ",
+        "description": [
+          "Сроки строительства – 2016-2017 гг.",
+          "Одновременно может вместить до 300 посетителей"
+        ]
+      },
+      "marker14": {
+        "title": "ДОМ КУЛЬТУРЫ, с. БОДЕНЕ",
+        "description": [
+          "Сроки строительства – 2016-2017 гг.",
+          "Одновременно может вместить до 200 посетителей"
+        ]
+      },
+      "marker15": {
+        "title": "ШКОЛА, с. ЫНТЫМАК",
+        "description": [
+          "Сроки строительства – 2016-2017 гг.",
+          "Количество учащихся – 120"
+        ]
+      },
+      "marker16": {
+        "title": "ДЕТСКИЙ САД, с. МАХАМБЕТ",
+        "description": [
+          "с. Махамбет (создано 13 рабочих мест, количество мест – 280)"
+        ]
+      }
     }
+  },
+  "en": {
+    "markers": {
+      "marker1": {
+        "title": "SECONDARY TECHNICAL SCHOOL IN ATYRAU",
+        "description": [
+          "Construction period – 2012-2017",
+          "Number of students – 624",
+          "Planned number of teachers – 102"
+        ]
+      },
+      "marker2": {
+        "title": "FLAGPOLE IN ATYRAU",
+        "description": []
+      },
+      "marker3": {
+        "title": "SECONDARY SCHOOL IN ATYRAU",
+        "description": [
+          "Construction of Secondary School #30 in microdistrict #4 in Atyrau",
+          "Commissioned in 2001",
+          "Number of alumni since the opening – over 10,000",
+          "Number of students – 1,200",
+          "Created workplaces – over 150"
+        ]
+      },
+      "marker4": {
+        "title": "NATIONAL SCHOOL IN ATYRAU",
+        "description": [
+          "Completed in 2016",
+          "Number of students – 320",
+          "Planned number of teachers – 37"
+        ]
+      },
+      "marker5": {
+        "title": "KINDERGARTEN IN ATYRAU",
+        "description": [
+          "Atyrau (60 workplaces created, number of children – 280)"
+        ]
+      },
+      "marker6": {
+        "title": "RETRO PARK IN ATYRAU",
+        "description": [
+          "Construction period – 2015-2017",
+          "Construction area - 3.5 hectares",
+          "Greening - over 700 trees"
+        ]
+      },
+      "marker7": {
+        "title": "TWO KINDERGARTENS IN KULSARY",
+        "description": ["Kulsary (number of children – 290)"]
+      },
+      "marker8": {
+        "title": "KINDERGARTEN IN ZHANA KARATON",
+        "description": ["Zhana Karaton (number of children – 280)"]
+      },
+      "marker9": {
+        "title": "SIX HEALTH AND FITNESS CENTERS IN ZHYLYOI DISTRICT",
+        "description": []
+      },
+      "marker10": {
+        "title": "FOUR KINDERGARTENS IN ZHYLYOI DISTRICT",
+        "description": [
+          "Shokpartogay (43 workplaces created, number of children – 160)",
+          "Akkiiztogay (number of children – 160)",
+          "Turgyzba (number of children – 160)",
+          "Koschagyl (number of children – 160)"
+        ]
+      },
+      "marker11": {
+        "title": "KINDERGARTEN IN DOSSOR",
+        "description": []
+      },
+      "marker12": {
+        "title": "COMMUNITY CENTER IN INDER",
+        "description": [
+          "Құрылыс мерзімі – 2016-2017 жж.",
+          "Бір мезгілде 400-ге дейін келушіні қабылдай алады"
+        ]
+      },
+      "marker13": {
+        "title": "COMMUNITY CENTER IN YESBOL",
+        "description": [
+          "Құрылыс мерзімі – 2016-2017 жж.",
+          "Бір мезгілде 300-ге дейін келушіні қабылдай алады"
+        ]
+      },
+      "marker14": {
+        "title": "COMMUNITY CENTER IN BODENE",
+        "description": [
+          "Құрылыс мерзімі – 2016-2017 жж.",
+          "Бір мезгілде 200-ге дейін келушіні қабылдай алады"
+        ]
+      },
+      "marker15": {
+        "title": "SCHOOL IN YNTYMAK",
+        "description": [
+          "Construction period – 2016-2017",
+          "Number of students – 120"
+        ]
+      },
+      "marker16": {
+        "title": "KINDERGARTEN IN MAKHAMBET",
+        "description": [
+          "Makhambet (13 workplaces created, number of children – 280)"
+        ]
+      }
+    }
+  },
+  "kk": {
+    "markers": {
+      "marker1": {
+        "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ ОРТА-ТЕХНИКАЛЫҚ МЕКТЕП",
+        "description": [
+          "Құрылыс мерзімі – 2012-2017 жж.",
+          "Оқушылар саны – 624",
+          "Жоспарланған педагогтар саны – 102"
+        ]
+      },
+      "marker2": {
+        "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ ТУТҰҒЫР",
+        "description": []
+      },
+      "marker3": {
+        "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ ОРТА МЕКТЕП",
+        "description": [
+          "Атырау қаласындағы №4 ықшамауданда №30 орта мектеп құрылысы",
+          "2001 жылы пайдалануға берілді",
+          "Ашылғаннан бергі түлектер саны – 10 мыңнан астам",
+          "Оқушылар саны – 1200",
+          "Ашылған жұмыс орны – 150-ден астам"
+        ]
+      },
+      "marker4": {
+        "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ ҰЛТТЫҚ ГИМНАЗИЯ",
+        "description": [
+          "Құрылыс мерзімі – 2014-2016 жж.",
+          "Оқушылар саны – 320",
+          "Жоспарланған педагогтар саны – 37"
+        ]
+      },
+      "marker5": {
+        "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ БАЛАБАҚША",
+        "description": [
+          "Атырау қаласы (60 жұмыс орны ашылды, балалар саны - 280)"
+        ]
+      },
+      "marker6": {
+        "title": "АТЫРАУ ҚАЛАСЫНДАҒЫ РЕТРО САЯБАҚ",
+        "description": [
+          "Құрылыс мерзімі – 2015-2017 жж.",
+          "Құрылыс алаңы – 3,5 га",
+          "Жасыл желек – 700-ден астам ағаш көшеттер"
+        ]
+      },
+      "marker7": {
+        "title": "ҚҰЛСАРЫ ҚАЛАСЫНДАҒЫ ЕКІ БАЛАБАҚША",
+        "description": ["Құлсары қаласы (балалар саны - 290)"]
+      },
+      "marker8": {
+        "title": "ЖАҢА ҚАРАТОН КЕНТІНДЕГІ БАЛАБАҚША",
+        "description": ["Жаңа Қаратон кенті (балалар саны -280)"]
+      },
+      "marker9": {
+        "title": "ЖЫЛЫОЙ АУДАНЫНДА АЛТЫ ДЕНЕ ШЫНЫҚТЫРУ ЖӘНЕ САУЫҚТЫРУ КЕШЕНІ",
+        "description": []
+      },
+      "marker10": {
+        "title": "ЖЫЛЫОЙ АУДАНЫНДАҒЫ ТӨРТ БАЛАБАҚША",
+        "description": [
+          "Шоқпартоғай ауылы (43 жұмыс орны ашылды, балалар саны - 160)",
+          "Ақкиізтоғай ауылы (балалар саны -160)",
+          "Тұрғызба ауылы (балалар саны -160)",
+          "Қосшағыл ауылы (балалар саны -160)"
+        ]
+      },
+      "marker11": {
+        "title": "ДОССОР КЕНТІНДЕГІ БАЛАБАҚША",
+        "description": []
+      },
+      "marker12": {
+        "title": "ИНДЕРБОР КЕНТІНДЕГІ МӘДЕНИЕТ ҮЙІ",
+        "description": [
+          "Құрылыс мерзімі – 2016-2017 жж.",
+          "Бір мезгілде 400-ге дейін келушіні қабылдай алады"
+        ]
+      },
+      "marker13": {
+        "title": "ЕСБОЛ АУЫЛЫНДАҒЫ МӘДЕНИЕТ ҮЙІ",
+        "description": [
+          "Құрылыс мерзімі – 2016-2017 жж.",
+          "Бір мезгілде 300-ге дейін келушіні қабылдай алады"
+        ]
+      },
+      "marker14": {
+        "title": "БӨДЕНЕ АУЫЛЫНДАҒЫ МӘДЕНИЕТ ҮЙІ",
+        "description": [
+          "Құрылыс мерзімі – 2016-2017 жж.",
+          "Бір мезгілде 200-ге дейін келушіні қабылдай алады"
+        ]
+      },
+      "marker15": {
+        "title": "ЫНТЫМАҚ АУЫЛЫНДАҒЫ МЕКТЕП",
+        "description": [
+          "Құрылыс мерзімі – 2016-2017 жж.",
+          "Оқушылар саны – 120"
+        ]
+      },
+      "marker16": {
+        "title": "МАХАМБЕТ АУЫЛЫНДАҒЫ БАЛАБАҚША",
+        "description": [
+          "Махамбет ауылы (13 жұмыс орны ашылды, балалар саны - 280)"
+        ]
+      }
+    }
+  }
 }
