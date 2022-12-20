@@ -15,7 +15,7 @@
             selected: true,
           }"
         />
-        <div class="info_block">
+        <div class="info_block" @click="navVacancy">
           <img src="@/assets/icons/vacancy.png" alt="" />
           <AtomsHeading type="h5" color="main">
             {{ $t('career.block2_heading') }}
@@ -28,7 +28,14 @@
 </template>
 
 <script>
-export default {}
+
+export default {
+  methods: {
+    navVacancy() {
+      this.$router.push(this.localePath('/vacancy'))
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

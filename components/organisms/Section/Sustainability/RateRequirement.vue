@@ -6,6 +6,7 @@
       </AtomsHeading>
       <div class="img">
         <img
+          style="object-fit: cover"
           src="@/assets/img/sustainability/requirement/background.jpg"
           alt="bg"
         />

@@ -39,7 +39,7 @@ export default {
   }
   img {
     width: 50%;
-    height: 500px;
+    height: 570px;
     object-fit: cover;
     @include tablet() {
       width: 100%;

@@ -30,6 +30,7 @@ export default {
     return {
       news: [
         {
+          id: 1,
           img: require('@/assets/img/career/news1.png'),
           tag: {
             text: `#${this.$t('career.economic')}`,
@@ -40,6 +41,7 @@ export default {
           text: this.$t('career.news_list')[0][1],
         },
         {
+          id: 2,
           img: require('@/assets/img/career/news2.png'),
           tag: {
             text: `#${this.$t('career.techonolgy')}`,
@@ -50,6 +52,7 @@ export default {
           text: this.$t('career.news_list')[1][1],
         },
         {
+          id: 3,
           img: require('@/assets/img/career/news3.png'),
           tag: {
             text: `#${this.$t('career.area')}`,
