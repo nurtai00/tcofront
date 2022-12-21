@@ -7,10 +7,18 @@
       <div class="img-container">
         <img
           class="map__img"
-          src="@/assets/img/sustainability/map-projects/map_igilik.png"
+          :src="
+            require(`@/assets/img/sustainability/map-projects/map_igilik_${lang}.png`)
+          "
           alt="map"
         />
-        <div v-for="marker in markersCoordsAndData" :key="marker.id" class="img-marker" :style="marker.coord" @click="openMarkerPopup(marker)"></div>
+        <div
+          v-for="marker in markersCoordsAndData"
+          :key="marker.id"
+          class="img-marker"
+          :style="marker.coord"
+          @click="openMarkerPopup(marker)"
+        ></div>
       </div>
       <div class="map__markers">
         <div class="map__marker">
@@ -101,115 +109,115 @@ export default {
           coord: 'top: 50%; left: 52%;',
           title: this.mapProjects[this.lang].markers.marker1.title,
           list: this.mapProjects[this.lang].markers.marker1.description,
-          color: 'yellow'
+          color: 'yellow',
         },
         {
           id: 2,
           coord: 'top: 54%; left: 49%;',
           title: this.mapProjects[this.lang].markers.marker2.title,
           list: this.mapProjects[this.lang].markers.marker2.description,
-          color: 'blue'
+          color: 'blue',
         },
         {
           id: 3,
           coord: 'top: 53%; left: 55%;',
           title: this.mapProjects[this.lang].markers.marker3.title,
           list: this.mapProjects[this.lang].markers.marker3.description,
-          color: 'blue'
+          color: 'blue',
         },
         {
           id: 4,
           coord: 'top: 47%; left: 54%;',
           title: this.mapProjects[this.lang].markers.marker4.title,
           list: this.mapProjects[this.lang].markers.marker4.description,
-          color: 'dark'
+          color: 'dark',
         },
         {
           id: 5,
           coord: 'top: 57%; left: 53%;',
           title: this.mapProjects[this.lang].markers.marker5.title,
           list: this.mapProjects[this.lang].markers.marker5.description,
-          color: 'dark'
+          color: 'dark',
         },
         {
           id: 6,
           coord: 'top: 57%; left: 50%;',
           title: this.mapProjects[this.lang].markers.marker6.title,
           list: this.mapProjects[this.lang].markers.marker6.description,
-          color: 'yellow'
+          color: 'yellow',
         },
         {
           id: 7,
           coord: 'top: 53%; left: 82%;',
           title: this.mapProjects[this.lang].markers.marker7.title,
           list: this.mapProjects[this.lang].markers.marker7.description,
-          color: 'yellow'
+          color: 'yellow',
         },
         {
           id: 8,
           coord: 'top: 73%; left: 81%;',
           title: this.mapProjects[this.lang].markers.marker8.title,
           list: this.mapProjects[this.lang].markers.marker8.description,
-          color: 'yellow'
+          color: 'yellow',
         },
         {
           id: 9,
           coord: 'top: 60%; left: 75%;',
           title: this.mapProjects[this.lang].markers.marker9.title,
           list: this.mapProjects[this.lang].markers.marker9.description,
-          color: 'blue'
+          color: 'blue',
         },
         {
           id: 10,
           coord: 'top: 77%; left: 67%;',
           title: this.mapProjects[this.lang].markers.marker10.title,
           list: this.mapProjects[this.lang].markers.marker10.description,
-          color: 'yellow'
+          color: 'yellow',
         },
         {
           id: 11,
           coord: 'top: 48%; left: 67%;',
           title: this.mapProjects[this.lang].markers.marker11.title,
           list: this.mapProjects[this.lang].markers.marker11.description,
-          color: 'blue'
+          color: 'blue',
         },
         {
           id: 12,
           coord: 'top: 17%; left: 42%;',
           title: this.mapProjects[this.lang].markers.marker12.title,
           list: this.mapProjects[this.lang].markers.marker12.description,
-          color: 'yellow'
+          color: 'yellow',
         },
         {
           id: 13,
           coord: 'top: 25%; left: 51%;',
           title: this.mapProjects[this.lang].markers.marker13.title,
           list: this.mapProjects[this.lang].markers.marker13.description,
-          color: 'yellow'
+          color: 'yellow',
         },
         {
           id: 14,
           coord: 'top: 19%; left: 55%;',
           title: this.mapProjects[this.lang].markers.marker14.title,
           list: this.mapProjects[this.lang].markers.marker14.description,
-          color: 'yellow'
+          color: 'yellow',
         },
         {
           id: 15,
           coord: 'top: 15%; left: 48%;',
           title: this.mapProjects[this.lang].markers.marker15.title,
           list: this.mapProjects[this.lang].markers.marker15.description,
-          color: 'blue'
+          color: 'blue',
         },
         {
           id: 16,
           coord: 'top: 40%; left: 50%',
           title: this.mapProjects[this.lang].markers.marker16.title,
           list: this.mapProjects[this.lang].markers.marker16.description,
-          color: 'dark'
+          color: 'dark',
         },
       ]
-    }
+    },
   },
   methods: {
     openPopup() {
@@ -228,7 +236,7 @@ export default {
         payload: {
           list: item.list,
           title: item.title,
-          color: item.color
+          color: item.color,
         },
       })
     },
@@ -309,7 +317,7 @@ export default {
     width: 70%;
 
     .img-marker {
-      cursor:pointer;
+      cursor: pointer;
       position: absolute;
       width: 17px;
       height: 17px;
