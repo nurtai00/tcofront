@@ -19,6 +19,7 @@
             />
             <AtomsPdfFile
               class="mt20"
+              :href="landScapingHref"
               :text="$t('suistainability.impactPopulation.files.file2')"
               direction="row"
               :width="30"
@@ -89,6 +90,15 @@ export default {
         kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=062a4a18%2D5429%2D4ea9%2Dbaa1%2Da0df4ba3d946',
         ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1b498f48%2D94e5%2D408e%2D8cb7%2D3f7a43425bba',
         en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=00bf1b5c%2D5e9a%2D4864%2D948c%2D99a17f6fa156',
+      }
+      return mapOfFileLink[this.$i18n.locale]
+    },
+
+    landScapingHref() {
+      const mapOfFileLink = {
+        kk: 'https://drive.google.com/file/d/1isVDfSVS7MB_KkDXGV0aIkdOGUJ8_r3b/view',
+        ru: 'https://drive.google.com/file/d/1-fEfxsDS7326dTpMHyPexPabrF3L7awJ/view?usp=share_link',
+        en: 'https://drive.google.com/file/d/1WJenbR2GFMgy8f95Ih2AnWYr_VmojzGN/view',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
