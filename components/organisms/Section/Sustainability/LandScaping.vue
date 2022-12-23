@@ -25,7 +25,7 @@ export default {
           title: this.$t('suistainability.landScaping.title'),
           description: [
             this.$t('suistainability.landScaping.description'),
-            this.$t('suistainability.landScaping.description'),
+            this.$t('suistainability.landScaping.description2'),
           ],
           image: 'sustainability/block-2.png',
         },
