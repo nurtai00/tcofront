@@ -1,24 +1,26 @@
 <template>
   <div class="block">
     <div class="container">
-      <div class="block__content">
-        <AtomsHeading type="h3" class="block__title title">
-          {{ data.title }}
-        </AtomsHeading>
-        <div class="block__content_icon">
+      <div class="block__wrapper">
+        <div class="block__content">
+          <AtomsHeading type="h3" class="block__title title">
+            {{ data.title }}
+          </AtomsHeading>
+          <div class="block__content_icon">
+            <img :src="data.icon" alt="icon" />
+          </div>
+          <div class="block__description">
+            <template v-if="data.description">
+              {{ data.description }}
+            </template>
+            <template v-else>
+              <slot name="description" />
+            </template>
+          </div>
+        </div>
+        <div class="block__icon">
           <img :src="data.icon" alt="icon" />
         </div>
-        <div class="block__description">
-          <template v-if="data.description">
-            {{ data.description }}
-          </template>
-          <template v-else>
-            <slot name="description" />
-          </template>
-        </div>
-      </div>
-      <div class="block__icon">
-        <img :src="data.icon" alt="icon" />
       </div>
     </div>
     <div class="container footer">
@@ -44,14 +46,14 @@ export default {
   background-color: $c-tco33;
   padding: 40px 0 48px;
 
-  & > div {
+  &__wrapper {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
   }
 
   &__content {
-    padding-right: 130px;
-
+    padding-right: 40px;
+    width: 70%;
     &_icon {
       display: none;
       font-size: 240px;
@@ -77,6 +79,7 @@ export default {
   }
 
   &__icon {
+    max-width: 500px;
     i {
       font-size: 200px;
       color: $c-tco3;

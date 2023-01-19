@@ -28,7 +28,10 @@
           </div>
         </div>
         <div class="impact__img">
-          <img src="@/assets/img/vacancy/block6-1.jpg" alt="block6-1" />
+          <img
+            src="@/assets/img/sustainability/ecology/bg.png"
+            alt="block6-1"
+          />
         </div>
       </div>
     </div>
@@ -56,6 +59,7 @@ export default {
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card1'
           ),
+          bgSrc: 'popup-1.png',
         },
         {
           id: 2,
@@ -64,6 +68,7 @@ export default {
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card2'
           ),
+          bgSrc: 'popup-2.png',
         },
         {
           id: 3,
@@ -72,6 +77,7 @@ export default {
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card3'
           ),
+          bgSrc: 'popup-3.png',
         },
         {
           id: 4,
@@ -80,6 +86,7 @@ export default {
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card4'
           ),
+          bgSrc: 'popup-1.png',
         },
       ],
     }
@@ -103,9 +110,6 @@ export default {
       return mapOfFileLink[this.$i18n.locale]
     },
   },
-  mounted() {
-    console.log(this.$t('suistainability.impactPopulation.cards.card2'))
-  },
   methods: {
     openPopup(item) {
       this.$modal.add({
@@ -114,7 +118,7 @@ export default {
           title: item.title,
           modal: 'Default',
           text: item.popupText,
-          imgSrc: 'sustainability/popup1.jpg',
+          imgSrc: `sustainability/${item.bgSrc}`,
         },
       })
     },

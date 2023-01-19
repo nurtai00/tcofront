@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="invest__img">
-        <img src="@/assets/img/operation/operations1.png" alt="build" />
+        <img src="@/assets/img/sustainability/block-5.png" alt="build" />
       </div>
     </div>
     <div class="container invest__cards">

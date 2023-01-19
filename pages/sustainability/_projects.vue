@@ -5,10 +5,7 @@
 const availableDynamicProjectPages = ['igilik', 'psi']
 export default {
   validate({ params }) {
-    if (availableDynamicProjectPages.includes(params.projects)) {
-      return true
-    }
-    return false
+    return availableDynamicProjectPages.includes(params.projects)
   },
 }
 </script>

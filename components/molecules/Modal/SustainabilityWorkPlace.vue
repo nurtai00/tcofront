@@ -2,12 +2,14 @@
   <div class="work">
     <img
       class="work__img"
-      src="@/assets/img/sustainability/work-places/popup-bg.jpg"
+      :src="
+        require(`@/assets/img/sustainability/work-places/${payload.imgSrc}`)
+      "
       alt=""
     />
     <div class="work__content container">
       <AtomsHeading type="h3" color="black">
-        Центральная больница в г. Кульсары
+        {{ payload.title }}
       </AtomsHeading>
       <p>
         Будет описание и фото по статусу проекта. Будет описание и фото по
@@ -20,6 +22,15 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    payload: {
+      type: Object,
+    },
+  },
+}
+</script>
 <style lang="scss" scoped>
 .work {
   &__img {

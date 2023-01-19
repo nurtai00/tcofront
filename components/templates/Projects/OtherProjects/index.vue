@@ -241,6 +241,11 @@ export default {
   }
 
   .svgs {
+    &::v-deep .block__icon {
+      img {
+        padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
+      }
+    }
     &::v-deep .block__icon i {
       font-size: 260px;
     }
