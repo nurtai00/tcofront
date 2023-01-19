@@ -24,7 +24,11 @@ export default {
   },
   methods: {
     showMod() {
-      this.$modal.add({ title: this.item.modal, payload: this.item })
+      this.$modal.add({
+        title: this.item.modal,
+        payload: this.item,
+        projects: this.item.projects,
+      })
     },
   },
 }
