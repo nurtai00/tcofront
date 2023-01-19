@@ -9,7 +9,7 @@
             <span style="font-weight: bolder" v-text="slide.title"></span>
             <p v-text="slide.text"></p>
           </div>
-          <img :style="options.style" src="@/assets/img/Rectangle 182.png" />
+          <img :style="options.style" :src="slide.imgSrc" />
         </div>
       </MoleculesSlide>
     </OrganismsSlider>
@@ -54,18 +54,22 @@ export default {
         {
           title: this.$t('company.slider_6[0].title_1'),
           text: this.$t('company.slider_6[0].text'),
+          imgSrc: require('~/assets/img/company/slide_4_1.png'),
         },
         {
           title: this.$t('company.slider_6[1].title_1'),
           text: this.$t('company.slider_6[1].text'),
+          imgSrc: require('~/assets/img/company/slide_4_2.png'),
         },
         {
           title: this.$t('company.slider_6[2].title_1'),
           text: this.$t('company.slider_6[2].text'),
+          imgSrc: require('~/assets/img/company/slide_4_3.png'),
         },
         {
           title: this.$t('company.slider_6[3].title_1'),
           text: this.$t('company.slider_6[3].text'),
+          imgSrc: require('~/assets/img/company/slide_4_4.png'),
         },
       ],
     }

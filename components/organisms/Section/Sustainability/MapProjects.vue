@@ -110,6 +110,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker1.title,
           list: this.mapProjects[this.lang].markers.marker1.description,
           color: 'yellow',
+          imgSrc: 'atyrau/popup-1.png',
         },
         {
           id: 2,
@@ -117,6 +118,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker2.title,
           list: this.mapProjects[this.lang].markers.marker2.description,
           color: 'blue',
+          imgSrc: 'atyrau/popup-2.png',
         },
         {
           id: 3,
@@ -124,6 +126,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker3.title,
           list: this.mapProjects[this.lang].markers.marker3.description,
           color: 'blue',
+          imgSrc: 'atyrau/popup-3.png',
         },
         {
           id: 4,
@@ -131,6 +134,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker4.title,
           list: this.mapProjects[this.lang].markers.marker4.description,
           color: 'dark',
+          imgSrc: 'atyrau/popup-4.png',
         },
         {
           id: 5,
@@ -138,6 +142,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker5.title,
           list: this.mapProjects[this.lang].markers.marker5.description,
           color: 'dark',
+          imgSrc: 'atyrau/popup-3.png',
         },
         {
           id: 6,
@@ -145,6 +150,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker6.title,
           list: this.mapProjects[this.lang].markers.marker6.description,
           color: 'yellow',
+          imgSrc: 'atyrau/popup-5.png',
         },
         {
           id: 7,
@@ -152,6 +158,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker7.title,
           list: this.mapProjects[this.lang].markers.marker7.description,
           color: 'yellow',
+          imgSrc: 'atyrau/popup-3.png',
         },
         {
           id: 8,
@@ -159,6 +166,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker8.title,
           list: this.mapProjects[this.lang].markers.marker8.description,
           color: 'yellow',
+          imgSrc: 'atyrau/popup-3.png',
         },
         {
           id: 9,
@@ -166,6 +174,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker9.title,
           list: this.mapProjects[this.lang].markers.marker9.description,
           color: 'blue',
+          imgSrc: 'jiliskii/popup-1.png',
         },
         {
           id: 10,
@@ -173,6 +182,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker10.title,
           list: this.mapProjects[this.lang].markers.marker10.description,
           color: 'yellow',
+          imgSrc: 'atyrau/popup-3.png',
         },
         {
           id: 11,
@@ -180,6 +190,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker11.title,
           list: this.mapProjects[this.lang].markers.marker11.description,
           color: 'blue',
+          imgSrc: 'atyrau/popup-3.png',
         },
         {
           id: 12,
@@ -187,6 +198,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker12.title,
           list: this.mapProjects[this.lang].markers.marker12.description,
           color: 'yellow',
+          imgSrc: 'inder/popup-1.png',
         },
         {
           id: 13,
@@ -194,6 +206,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker13.title,
           list: this.mapProjects[this.lang].markers.marker13.description,
           color: 'yellow',
+          imgSrc: 'atyrau/popup-3.png',
         },
         {
           id: 14,
@@ -201,6 +214,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker14.title,
           list: this.mapProjects[this.lang].markers.marker14.description,
           color: 'yellow',
+          imgSrc: 'atyrau/popup-3.png',
         },
         {
           id: 15,
@@ -208,6 +222,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker15.title,
           list: this.mapProjects[this.lang].markers.marker15.description,
           color: 'blue',
+          imgSrc: 'atyrau/popup-3.png',
         },
         {
           id: 16,
@@ -215,6 +230,7 @@ export default {
           title: this.mapProjects[this.lang].markers.marker16.title,
           list: this.mapProjects[this.lang].markers.marker16.description,
           color: 'dark',
+          imgSrc: 'atyrau/popup-3.png',
         },
       ]
     },
@@ -230,13 +246,13 @@ export default {
       })
     },
     openMarkerPopup(item) {
-      console.log(item)
       this.$modal.add({
         title: 'SustainabilityMarkers',
         payload: {
           list: item.list,
           title: item.title,
           color: item.color,
+          imgSrc: item.imgSrc,
         },
       })
     },

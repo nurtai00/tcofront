@@ -2,7 +2,9 @@
   <div class="work">
     <img
       class="work__img"
-      src="@/assets/img/sustainability/work-places/popup-bg.jpg"
+      :src="
+        require(`@/assets/img/sustainability/map-projects/${payload.imgSrc}`)
+      "
       alt=""
     />
     <div class="work__content container">

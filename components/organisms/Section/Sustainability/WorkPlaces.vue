@@ -22,7 +22,7 @@
             v-for="card of cards"
             :key="card.id"
             :card="card"
-            @click="openPopup"
+            @click="openPopup(card)"
           />
         </div>
       </div>
@@ -38,42 +38,50 @@ export default {
           id: 1,
           text: this.$t('suistainability.workPlaces.cards.card1'),
           img: 'sustainability/work-places/hospital.png',
+          imgSrc: 'popup-1.png',
         },
         {
           id: 2,
           text: this.$t('suistainability.workPlaces.cards.card2'),
           img: 'sustainability/work-places/stadion.png',
+          imgSrc: 'popup-2.png',
         },
         {
           id: 3,
           text: this.$t('suistainability.workPlaces.cards.card3'),
           img: 'sustainability/work-places/home.png',
+          imgSrc: 'popup-3.png',
         },
         {
           id: 4,
           text: this.$t('suistainability.workPlaces.cards.card4'),
           img: 'sustainability/work-places/home.png',
+          imgSrc: 'popup-3.png',
         },
         {
           id: 5,
           text: this.$t('suistainability.workPlaces.cards.card5'),
           img: 'sustainability/work-places/school.png',
+          imgSrc: 'popup-3.png',
         },
         {
           id: 6,
           text: this.$t('suistainability.workPlaces.cards.card6'),
           img: 'sustainability/work-places/school.png',
+          imgSrc: 'popup-3.png',
         },
       ],
     }
   },
   methods: {
-    openPopup() {
+    openPopup(item) {
+      console.log(item)
       this.$modal.add({
         title: 'SustainabilityWorkPlace',
         payload: {
           modal: 'SustainabilityWorkPlace',
-          title: 'SustainabilityWorkPlace',
+          title: item.text,
+          imgSrc: item.imgSrc,
         },
       })
     },

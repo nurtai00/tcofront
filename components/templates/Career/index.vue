@@ -3,9 +3,9 @@
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
         <AtomsBreadOption to="/">{{ $t('career.main') }}</AtomsBreadOption>
-        <AtomsBreadOption to="/career">{{
-          $t('career.career')
-        }}</AtomsBreadOption>
+        <AtomsBreadOption to="/career">
+          {{ $t('career.career') }}
+        </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20"> {{ $t('career.career') }} </AtomsTitle>
       <AtomsTag v-for="(tag, idx) in tags" :key="idx" :tag="tag" />
@@ -39,6 +39,7 @@ export default {
       content1: {
         title: this.$t('career.content1'),
         text: `<p>${this.$t('career.content1_description')}</p>'`,
+        imgSrc: require('~/assets/img/career/programm_left.png'),
       },
       content2: {
         title: this.$t('career.content2'),
@@ -53,6 +54,7 @@ export default {
           <li>${this.$t('career.content2_description')[7]}
           <br/> ${this.$t('career.content2_description')[8]}</li>
         </ul>`,
+        imgSrc: require('~/assets/img/career/program_left_2.png'),
       },
     }
   },

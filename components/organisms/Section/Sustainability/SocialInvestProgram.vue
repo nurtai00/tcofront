@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="program__img">
-      <img src="@/assets/img/operation/operations1.png" alt="building" />
+      <img src="@/assets/img/sustainability/block-4.png" alt="building" />
     </div>
   </div>
 </template>

@@ -1,8 +1,8 @@
 <template>
   <div class="programm_career">
-    <img src="@/assets/img/career/programm_left.png" alt="" class="desc_img" />
+    <img :src="content.imgSrc" alt="" class="desc_img" />
     <div class="mobile">
-      <img src="@/assets/img/career/programm_mobile.png" alt="" />
+      <img :src="content.imgSrc" alt="" />
       <AtomsHeading type="h3" color="white"> {{ content.title }} </AtomsHeading>
     </div>
     <div class="programm_career_info" :class="{ background: background }">

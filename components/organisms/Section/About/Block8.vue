@@ -20,7 +20,7 @@
               <span>{{ $t('company.slider_4[0].pdf') }}</span>
             </div>
           </div>
-          <img :style="options.style" src="@/assets/img/photo.png" />
+          <img :style="options.style" :src="slide.imgSrc" />
         </div>
       </MoleculesSlide>
     </OrganismsSlider>
@@ -66,14 +66,17 @@ export default {
           title: this.$t('company.slider_4[0].title'),
           text: this.$t('company.slider_4[0].text'),
           pdf: true,
+          imgSrc: require('~/assets/img/photo.png'),
         },
         {
           title: this.$t('company.slider_4[1].title'),
           text: this.$t('company.slider_4[1].text'),
+          imgSrc: require('~/assets/img/company/slide_2_1.png'),
         },
         {
           title: this.$t('company.slider_4[2].title'),
           text: this.$t('company.slider_4[2].text'),
+          imgSrc: require('~/assets/img/company/slide_2_2.png'),
         },
       ],
     }

@@ -5,7 +5,7 @@
     </div>
     <img
       class="player__preview"
-      style="max-height: 565px"
+      style="height: 565px"
       src="@/assets/img/player-prev.png"
     />
     <div class="container block">

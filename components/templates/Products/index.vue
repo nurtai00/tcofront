@@ -348,11 +348,11 @@ ${this.$t('products.cards2.1.description3')}`,
       },
       slide2: {
         title: this.$t('products.slide2'),
-        image: 'products/products_1.png',
+        image: 'products/products_2.png',
       },
       slide3: {
         title: this.$t('products.slide3'),
-        image: 'products/products_1.png',
+        image: 'products/products_3.png',
       },
     }
   },
@@ -472,6 +472,11 @@ ${this.$t('products.cards2.1.description3')}`,
   }
 
   .svgs {
+    &::v-deep .block__icon {
+      //max-width: 736px;
+      //position: relative;
+      //left: calc((100vw - var(--width-container)) / 2);
+    }
     &::v-deep .block__icon i {
       font-size: 260px;
     }

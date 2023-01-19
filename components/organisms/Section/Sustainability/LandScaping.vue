@@ -27,7 +27,7 @@ export default {
             this.$t('suistainability.landScaping.description'),
             this.$t('suistainability.landScaping.description2'),
           ],
-          image: 'sustainability/block-2.png',
+          image: 'sustainability/block-3.png',
         },
       ],
     }

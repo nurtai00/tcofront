@@ -16,11 +16,14 @@ export default {}
   position: relative;
   display: flex;
   margin-top: 32px;
+  overflow: hidden;
+  @include phone {
+    flex-direction: column-reverse;
+  }
   img {
     width: 100%;
     height: auto;
-    max-height: 565px;
-    object-fit: cover;
+    max-height: 1000px;
     @include tablet() {
       min-height: 260px;
       max-height: 100%;
@@ -29,23 +32,34 @@ export default {}
   h3 {
     position: absolute;
     margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 65px;
+    left: 1000px;
+    bottom: 100px;
     text-align: center;
-
-    max-width: 1025px;
+    line-height: 46px;
+    max-width: 900px;
     width: 100%;
-
-    text-align: center;
-    color: #fff !important;
+    color: #fff;
     @media only screen and (max-width: 1025px) {
       max-width: 780px;
       padding: 0 16px;
       bottom: 20px;
+      left: 0;
+      right: 0;
     }
     @include tablet() {
+      left: 0;
+      right: 0;
+      font-size: 26px;
+      line-height: 20px;
       max-width: 560px;
+    }
+    @include phone {
+      position: static;
+      font-size: 18px;
+      line-height: 28px;
+      max-width: 560px;
+      color: $c-tco1;
+      padding-bottom: 20px;
     }
   }
 }

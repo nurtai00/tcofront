@@ -42,7 +42,7 @@
       </a>
     </div>
     <div class="gift__img">
-      <img src="@/assets/img/sustainability/slide1.png" alt="bg" />
+      <img src="@/assets/img/sustainability/block-6.png" alt="bg" />
     </div>
   </div>
 </template>

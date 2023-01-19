@@ -6,7 +6,7 @@
           class="double-block tco__partners"
           style="justify-content: flex-start"
         >
-          <img :style="options.style" src="@/assets/img/Rectangle 182.png" />
+          <img :style="options.style" :src="slide.imgSrc" />
           <div class="tco__partners-wrapper">
             <h1 v-text="slide.title"></h1>
             <div class="underline"></div>
@@ -55,26 +55,32 @@ export default {
         {
           title: this.$t('company.slider_5[0].title'),
           text: this.$t('company.slider_5[0].text'),
+          imgSrc: require('~/assets/img/company/slide_3_1.png'),
         },
         {
           title: this.$t('company.slider_5[1].title'),
           text: this.$t('company.slider_5[1].text'),
+          imgSrc: require('~/assets/img/company/slide_3_2.png'),
         },
         {
           title: this.$t('company.slider_5[2].title'),
           text: this.$t('company.slider_5[2].text'),
+          imgSrc: require('~/assets/img/company/slide_3_3.png'),
         },
         {
           title: this.$t('company.slider_5[3].title'),
           text: this.$t('company.slider_5[3].text'),
+          imgSrc: require('~/assets/img/company/slide_3_4.png'),
         },
         {
           title: this.$t('company.slider_5[4].title'),
           text: this.$t('company.slider_5[4].text'),
+          imgSrc: require('~/assets/img/company/slide_3_5.png'),
         },
         {
           title: this.$t('company.slider_5[5].title'),
           text: this.$t('company.slider_5[5].text'),
+          imgSrc: require('~/assets/img/company/slide_3_6.png'),
         },
       ],
     }
