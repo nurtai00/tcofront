@@ -17,7 +17,7 @@
           v-for="(tag, index) of tags"
           :key="index"
           :tag="tag"
-          @click="onTag"
+          @click="onTag(tag)"
         />
       </div>
       <div class="kazakhstani__chart">
@@ -285,7 +285,7 @@
         <div class="kazakhstani__titlee">
           {{ $t('kazContent.coomingEvent.title') }}
         </div>
-        <div class="kazakhstani__times">
+        <div ref="time" class="kazakhstani__times">
           <div
             v-for="(item, key) in times"
             :key="key"
@@ -396,7 +396,6 @@ export default {
         {
           id: 0,
           text: 'Мероприятия',
-          url: this.localePath('/kazakhstani-content/join-tco-program'),
         },
         {
           id: 1,
@@ -724,8 +723,13 @@ export default {
     },
   },
   methods: {
-    onTag() {
-      console.log('works')
+    onTag(tag) {
+      if (tag.id === 0) {
+        window.scrollTo({
+          top: this.$refs.time.offsetTop - 85,
+          behavior: 'smooth',
+        })
+      }
     },
     timeModal(data) {
       this.$store.commit('side/open', data)
