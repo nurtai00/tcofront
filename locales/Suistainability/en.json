@@ -207,6 +207,13 @@
       "card3": "Isatay district",
       "card4": "Makhambet district",
       "card5": "Inderskiy district"
+    },
+    "popup": {
+      "title": "Projects for {year}",
+      "type": "Type",
+      "year": "Year",
+      "project": "Projects",
+      "settlement": "Locality"
     }
   },
   "psi": [
