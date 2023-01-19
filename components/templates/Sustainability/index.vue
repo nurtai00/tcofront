@@ -28,7 +28,7 @@
     <OrganismsSectionSustainabilityRateRequirement />
     <OrganismsSectionSustainabilityProjectSelection />
     <OrganismsSectionSustainabilityGift />
-    <OrganismsSectionSustainabilityNews class="news" />
+    <OrganismsSectionCareerBlock8 />
   </div>
 </template>
 <script>

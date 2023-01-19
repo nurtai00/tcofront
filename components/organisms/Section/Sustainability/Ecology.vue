@@ -36,38 +36,41 @@ export default {
           title: this.$t('suistainability.ecology.cards.card1'),
           imgSrc: 'ecology/card-1.png',
           popupText: this.$t('suistainability.ecology.popupText.card1'),
+          bgSrc: 'sustainability/ecology/photo-1.jpg',
         },
         {
           id: 2,
           title: this.$t('suistainability.ecology.cards.card2'),
           imgSrc: 'ecology/card-2.png',
           popupText: this.$t('suistainability.ecology.popupText.card2'),
+          bgSrc: 'sustainability/ecology/photo-2.jpg',
         },
         {
           id: 3,
           title: this.$t('suistainability.ecology.cards.card3'),
           imgSrc: 'ecology/card-3.png',
           popupText: this.$t('suistainability.ecology.popupText.card3'),
+          bgSrc: 'sustainability/ecology/photo-3.jpg',
         },
         {
           id: 4,
           title: this.$t('suistainability.ecology.cards.card4'),
           imgSrc: 'ecology/card-4.png',
           popupText: this.$t('suistainability.ecology.popupText.card4'),
+          bgSrc: 'sustainability/ecology/photo-4.jpg',
         },
       ],
     }
   },
   methods: {
     openPopup(item) {
-      console.log()
       this.$modal.add({
         title: 'Default',
         payload: {
           modal: 'Default',
           title: item.title,
           text: item.popupText,
-          imgSrc: 'sustainability/popup1.jpg',
+          imgSrc: item.bgSrc,
         },
       })
     },

@@ -11,14 +11,9 @@
       <AtomsHeading type="h3" color="black">
         {{ payload.title }}
       </AtomsHeading>
-      <p>
-        Будет описание и фото по статусу проекта. Будет описание и фото по
-        статусу проекта. Будет описание и фото по статусу проекта. Будет
-        описание и фото по статусу проекта. Будет описание и фото по статусу
-        проекта. Будет описание и фото по статусу проекта. Будет описание и фото
-        по статусу проекта. Будет описание и фото по статусу проекта. Будет
-        описание и фото по статусу проекта.
-      </p>
+      <ul>
+        <li v-for="(list, index) of payload.lists" :key="index">{{ list }}</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -43,6 +38,18 @@ export default {
       display: block;
       margin-top: 20px;
       font-size: 20px;
+    }
+    ul {
+      margin-top: 20px;
+      padding-left: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    li {
+      list-style: disc;
+      color: #000;
+      font-size: 18px;
     }
   }
   @include phone {

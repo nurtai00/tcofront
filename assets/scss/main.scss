@@ -65,7 +65,11 @@
   }
 }
 .default_modal_text {
+  ul {
+    padding-left: 40px;
+  }
   p,
+
   li {
     font-family: 'Roboto';
     font-style: normal;
@@ -77,6 +81,7 @@
       font-size: 16px;
       line-height: 20px;
     }
+    list-style: disc !important;
   }
   ol {
     padding-left: 30px;
