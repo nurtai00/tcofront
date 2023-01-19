@@ -150,8 +150,6 @@ export default {
     min-height: 100%;
     overflow: hidden;
     display: flex;
-    align-items: center;
-
     img {
       object-fit: contain;
       width: 100%;

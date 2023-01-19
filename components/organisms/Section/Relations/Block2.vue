@@ -68,9 +68,33 @@
           <p class="mb30">
             {{ $t('relation.block_4.p_1') }}
             <br />
-            <a href="mailto:tcolr@tengizchevroil.com"
-              >tcolr@tengizchevroil.com</a
-            >
+            <span class="email">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                  stroke="#00B0F0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 6L12 13L2 6"
+                  stroke="#00B0F0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <a href="mailto:tcolr@tengizchevroil.com"
+                >tcolr@tengizchevroil.com</a
+              >
+            </span>
           </p>
           <p>
             {{ $t('relation.block_4.p_2') }}
@@ -227,6 +251,12 @@ export default {
   flex-direction: column;
   padding: 80px 0;
   padding-right: calc(50% + 69px);
+  .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
   @include tablet() {
     padding: 20px 16px 40px !important;
     min-height: unset;

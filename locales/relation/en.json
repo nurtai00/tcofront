@@ -1,8 +1,5 @@
 {
-  "breadcrumbs": [
-    "Home",
-    "Lender Relations"
-  ],
+  "breadcrumbs": ["Home", "Lender Relations"],
   "title": "Lender Relations",
   "block_1": {
     "title": "FGP-WPMP External Lender Relations",
@@ -34,38 +31,23 @@
     "items": [
       {
         "title": "Rating agency",
-        "items": [
-          "Standard & Poor’s",
-          "Moody’s"
-        ]
+        "items": ["Standard & Poor’s", "Moody’s"]
       },
       {
         "title": "Latest revision",
-        "items": [
-          "07/10/2022",
-          "30/06/2021"
-        ]
+        "items": ["07/10/2022", "09/12/2022"]
       },
       {
         "title": "Global rating",
-        "items": [
-          "BB+",
-          "Baa2"
-        ]
+        "items": ["BB+", "Baa2"]
       },
       {
         "title": "Outlook",
-        "items": [
-          "Negative",
-          "Stable"
-        ]
+        "items": ["Negative", "Stable"]
       },
       {
         "title": "Webpage",
-        "items": [
-          "S & P",
-          "Moody's"
-        ]
+        "items": ["S & P", "Moody's"]
       }
     ]
   }
