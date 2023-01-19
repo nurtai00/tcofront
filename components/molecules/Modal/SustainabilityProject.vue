@@ -13,7 +13,7 @@
         :is-open="item.isShow"
         filled
         withTable
-        @click="item.isShow = !item.isShow"
+        @click="onClickAccordion(item)"
       >
         <template #title>
           <AtomsHeading type="h4">{{ item.title }}</AtomsHeading>
@@ -30,21 +30,21 @@
             </thead>
             <tbody class="table__body">
               <tr
-                v-for="collapseItem of item.collapseItems"
-                :key="collapseItem.year"
+                v-for="project of item.items"
+                :key="project.project"
                 class="table__row"
               >
                 <td data-label="Год" class="table__body-item">
-                  {{ collapseItem.year }}
+                  {{ item.year }}
                 </td>
                 <td data-label="Проект" class="table__body-item">
-                  <span>{{ collapseItem.project }}</span>
+                  <span>{{ project.project }}</span>
                 </td>
                 <td data-label="Тип" class="table__body-item">
-                  {{ collapseItem.type }}
+                  {{ project.type }}
                 </td>
                 <td data-label="Населенный пункт" class="table__body-item">
-                  {{ collapseItem.place }}
+                  {{ project.settlement }}
                 </td>
               </tr>
             </tbody>
@@ -66,26 +66,22 @@ export default {
   data() {
     return {
       accordion: false,
-      accordions: Array.from({ length: 24 }, (_, index) => ({
+      accordions: this.payload.projects.map((item, index) => ({
         id: index + 1,
-        title: `Проекты за ${1999 + index}`,
+        title: `Проекты за ${item.year}`,
         isShow: false,
-        collapseItems: [
-          {
-            year: 1999 + index,
-            project: 'Реконструкция моста через р. Урал в г. Атырау',
-            type: 'Прочая инфраструктура',
-            place: 'г.Атырау',
-          },
-          {
-            year: 1999 + index + 1,
-            project: 'Реконструкция моста через р. Урал в г. Атырау',
-            type: 'Прочая инфраструктура',
-            place: 'г.Атырау',
-          },
-        ],
+        ...item,
       })),
     }
+  },
+  methods: {
+    onClickAccordion(item) {
+      this.accordions = this.accordions.map((accordion) => {
+        return accordion.id === item.id && !item.isShow
+          ? { ...accordion, isShow: true }
+          : { ...accordion, isShow: false }
+      })
+    },
   },
 }
 </script>
