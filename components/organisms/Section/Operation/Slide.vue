@@ -1,6 +1,6 @@
 <template>
   <div
-    class="slide"
+    class="slide container"
     :class="{ side, background: data.background, reverse: isReverse }"
   >
     <div
@@ -136,7 +136,7 @@ export default {
 }
 .slide {
   display: flex;
-  position: relative;
+  justify-content: space-between;
   text-align: left;
   &.reverse {
     flex-direction: row-reverse;
@@ -145,11 +145,9 @@ export default {
     }
   }
   &__content {
-    min-width: 50%;
-    padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
-    &.reverse {
-      padding: 80px calc((var(--width-container) - 100vw) / 2) 80px 60px;
-    }
+    padding-top: 60px;
+    margin-right: 60px;
+    padding-bottom: 60px;
     &.slided {
       .slide {
         &__arrow {
@@ -199,7 +197,8 @@ export default {
     flex-direction: row-reverse;
 
     .slide__content {
-      padding: 80px calc((100vw - var(--width-container)) / 2) 80px 60px;
+      margin-left: 40px;
+      margin-right: 0;
     }
   }
 
@@ -260,7 +259,7 @@ export default {
   &__image {
     min-width: 50%;
     position: relative;
-
+    min-height: 600px;
     img {
       width: 100%;
       height: 100%;

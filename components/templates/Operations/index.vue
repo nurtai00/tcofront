@@ -210,6 +210,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
 .operations {
   font-family: Roboto, sans-serif;
   font-weight: 400;
