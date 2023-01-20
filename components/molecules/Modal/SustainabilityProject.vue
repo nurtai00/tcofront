@@ -22,10 +22,18 @@
           <table class="table">
             <thead class="table__header">
               <tr class="table__row">
-                <th class="table__header-item">Год</th>
-                <th class="table__header-item">Проект</th>
-                <th class="table__header-item">Тип</th>
-                <th class="table__header-item">Населенный пункт</th>
+                <th class="table__header-item">
+                  {{ $t('suistainability.project.popup.year') }}
+                </th>
+                <th class="table__header-item">
+                  {{ $t('suistainability.project.popup.project') }}
+                </th>
+                <th class="table__header-item">
+                  {{ $t('suistainability.project.popup.type') }}
+                </th>
+                <th class="table__header-item">
+                  {{ $t('suistainability.project.popup.settlement') }}
+                </th>
               </tr>
             </thead>
             <tbody class="table__body">
@@ -68,7 +76,9 @@ export default {
       accordion: false,
       accordions: this.payload.projects.map((item, index) => ({
         id: index + 1,
-        title: `Проекты за ${item.year}`,
+        title: this.$t('suistainability.project.popup.title', {
+          year: item.year,
+        }),
         isShow: false,
         ...item,
       })),

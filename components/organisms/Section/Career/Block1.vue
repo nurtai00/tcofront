@@ -32,7 +32,7 @@ export default {}
   h3 {
     position: absolute;
     margin: auto;
-    left: 1000px;
+    left: 50%;
     bottom: 100px;
     text-align: center;
     line-height: 46px;
@@ -43,8 +43,17 @@ export default {}
       max-width: 780px;
       padding: 0 16px;
       bottom: 20px;
-      left: 0;
-      right: 0;
+      left: 25%;
+    }
+    @media only screen and (max-width: 1700px) {
+      padding: 0 16px;
+      bottom: 20px;
+      left: 40%;
+    }
+    @media only screen and (max-width: 1400px) {
+      padding: 0 16px;
+      bottom: 20px;
+      left: 25%;
     }
     @include tablet() {
       left: 0;
