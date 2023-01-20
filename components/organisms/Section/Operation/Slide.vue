@@ -1,6 +1,6 @@
 <template>
   <div
-    class="slide"
+    class="slide container"
     :class="{ side, background: data.background, reverse: isReverse }"
   >
     <div
@@ -138,8 +138,8 @@ export default {
   display: flex;
   justify-content: space-between;
   text-align: left;
-  width: 1400px;
-  margin: 0 0 0 0;
+  max-width: 1400px;
+  margin: 0 auto;
   &.reverse {
     flex-direction: row-reverse;
     @include tablet {
@@ -150,7 +150,6 @@ export default {
     padding-top: 60px;
     margin-right: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
     width: 50%;
     &.slided {
       .slide {
