@@ -1,35 +1,37 @@
 <template>
-  <section id="company_year" class="company_year">
-    <div class="container">
-      <AtomsTitle small :point="false">
-        {{ $t('company.slider_3_title') }}
-      </AtomsTitle>
-    </div>
-    <div class="tco__yearcircle"></div>
-    <div class="double-block">
-      <div class="tco__year">
-        <h2
-          v-for="(year, year_index) in year_list"
-          :id="'year' + year.id"
-          :key="year.text + ' ' + year_index"
-          :class="{ active: active === year.text, small: year.small }"
-          v-text="year.text"
-        ></h2>
+  <div id="wrapper">
+    <section id="company_year" class="company_year">
+      <div class="container">
+        <AtomsTitle small :point="false">
+          {{ $t('company.slider_3_title') }}
+        </AtomsTitle>
       </div>
-      <div class="tco__year-text">
-        <div
-          v-for="(text, text_index) in text_list"
-          :id="'text' + text.id"
-          :key="text_index"
-          class="tco__story"
-        >
-          <h4 v-text="text.title"></h4>
-          <img v-if="text.image" :src="text.image" alt="image1" />
-          <p v-text="text.text"></p>
+      <div class="tco__yearcircle"></div>
+      <div class="double-block">
+        <div class="tco__year">
+          <h2
+            v-for="(year, year_index) in year_list"
+            :id="'year' + year.id"
+            :key="year.text + ' ' + year_index"
+            :class="{ active: active === year.text, small: year.small }"
+            v-text="year.text"
+          ></h2>
+        </div>
+        <div class="tco__year-text">
+          <div
+            v-for="(text, text_index) in text_list"
+            :id="'text' + text.id"
+            :key="text_index"
+            class="tco__story"
+          >
+            <h4 v-text="text.title"></h4>
+            <img v-if="text.image" :src="text.image" alt="image1" />
+            <p v-text="text.text"></p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -286,7 +288,9 @@ export default {
           .addEventListener('touchend', this.touchEndHandler)
       })
     } else {
-      document.addEventListener('scroll', this.scrollHandler)
+      document.body
+        .querySelector('#wrapper')
+        .addEventListener('scroll', this.scrollHandler)
     }
   },
   beforeDestroy() {
@@ -298,7 +302,9 @@ export default {
         .querySelector('#company_year .double-block')
         .removeEventListener('touchend', this.touchEndHandler)
     } else {
-      document.removeEventListener('scroll', this.scrollHandler)
+      document.body
+        .querySelector('#wrapper')
+        .removeEventListener('scroll', this.scrollHandler)
     }
   },
   methods: {
@@ -634,7 +640,7 @@ export default {
   }
   &__yearcircle {
     position: absolute;
-    left: 29vw;
+    left: 25vw;
     top: 32vh;
     width: 32.6vh; // 20vw;
     height: 32.6vh; // 20vw;
@@ -655,12 +661,18 @@ export default {
   }
   &__yearcircle-fixed {
     position: sticky;
-    left: 28vw;
+    left: 10vw;
     top: 32vh;
     opacity: 0.4;
   }
 }
 .company_year {
   position: relative;
+}
+#wrapper {
+  height: 600px;
+  overflow: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 </style>
