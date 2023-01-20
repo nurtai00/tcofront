@@ -194,11 +194,11 @@ export default {
             this.$t('kazContent.supportOriginBusiness.description'),
           ],
           desciptionSolo: true,
-          image: 'kazakhstani/kazakhstani2.png',
+          image: 'operation/program/img-1.png',
         },
         {
           title: this.$t('kazContent.nationalCarProgram.title'),
-          image: 'operation/operations6.png',
+          image: 'operation/program/img-2.png',
         },
         {
           title: '',
@@ -206,7 +206,7 @@ export default {
         },
         {
           title: this.$t('kazContent.motivations.title'),
-          image: 'operation/operations7.png',
+          image: 'operation/program/img-4.png',
         },
       ],
       cards: [
@@ -626,11 +626,10 @@ export default {
       }
     }
     .slide::v-deep {
-
       .slide {
-
         &__contentt {
-          ul li, p {
+          ul li,
+          p {
             font-size: 16px;
             line-height: 22px;
           }

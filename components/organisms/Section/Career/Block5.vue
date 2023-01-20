@@ -1,11 +1,15 @@
 <template>
   <div class="personal_career">
     <div class="container">
-      <AtomsHeading type="h3" color="main"> {{ $t('career.block5_header') }} </AtomsHeading>
       <div class="personal_career_header">
-        <p>
-          {{ $t('career.block5_description') }}
-        </p>
+        <div>
+          <AtomsHeading type="h3" color="main">
+            {{ $t('career.block5_header') }}
+          </AtomsHeading>
+          <p>
+            {{ $t('career.block5_description') }}
+          </p>
+        </div>
         <img src="@/assets/img/career/personal_img.png" alt="" />
       </div>
       <div class="personal_career_blocks">
@@ -13,7 +17,7 @@
           v-for="(personal, idx) in personal_list"
           :key="idx"
           class="blocks_content"
-          :class="{ reverse: idx % 2 == 1 }"
+          :class="{ reverse: idx % 2 === 1 }"
         >
           <div class="blocks_content__info">
             <h3>{{ personal.title }}</h3>
@@ -38,17 +42,25 @@ export default {
         },
         {
           title: this.$t('career.block5_title')[1],
-          text: `<p style="margin-bottom:8px">${this.$t('career.block5_list')[1]}</p>`,
+          text: `<p style="margin-bottom:8px">${
+            this.$t('career.block5_list')[1]
+          }</p>`,
           img: require('@/assets/img/career/personal2.png'),
         },
         {
           title: this.$t('career.block5_title')[2],
-          text: `<p style="margin-bottom:8px">${this.$t('career.block5_list')[2]}</p>`,
+          text: `<p style="margin-bottom:8px">${
+            this.$t('career.block5_list')[2]
+          }</p>`,
           img: require('@/assets/img/career/personal3.png'),
         },
         {
           title: this.$t('career.block5_title')[3],
-          text: `<p style="margin-bottom:8px">${this.$t('career.block5_list')[3]}</p><ul type="disc"><li>${this.$t('career.block5_list')[4]}</li><li>${this.$t('career.block5_list')[5]}</li></ul>`,
+          text: `<p style="margin-bottom:8px">${
+            this.$t('career.block5_list')[3]
+          }</p><ul type="disc"><li>${
+            this.$t('career.block5_list')[4]
+          }</li><li>${this.$t('career.block5_list')[5]}</li></ul>`,
           img: require('@/assets/img/career/personal4.png'),
         },
         {
@@ -58,7 +70,9 @@ export default {
         },
         {
           title: this.$t('career.block5_title')[5],
-          text: `<p style="margin-bottom:8px">${this.$t('career.block5_list')[7]}</p><p>${this.$t('career.block5_list')[8]}</p>`,
+          text: `<p style="margin-bottom:8px">${
+            this.$t('career.block5_list')[7]
+          }</p><p>${this.$t('career.block5_list')[8]}</p>`,
           img: require('@/assets/img/career/personal6.png'),
         },
       ],
@@ -97,6 +111,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 40px;
     @include tablet() {
       flex-direction: column-reverse;
@@ -108,7 +123,7 @@ export default {
     }
     img {
       width: 270px;
-      height: 246px;
+      max-height: 400px;
       margin-left: 10px;
       @include tablet() {
         width: 162.44px;
