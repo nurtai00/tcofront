@@ -6,7 +6,7 @@
           <div class="tco__partners-wrapper">
             <h1>{{ $t('company.slider_6[0].title') }}</h1>
             <div class="underline"></div>
-            <span style="font-weight: bolder" v-text="slide.title"></span>
+            <span v-text="slide.title"></span>
             <p v-text="slide.text"></p>
           </div>
           <img :style="options.style" :src="slide.imgSrc" />
@@ -97,7 +97,6 @@ export default {
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      gap: 25px;
       text-align: left;
       @media (max-width: 1200px) {
         padding: 15px;
@@ -109,6 +108,7 @@ export default {
         gap: 15px;
       }
       .underline {
+        margin-top: 20px;
         display: block;
         position: relative;
         width: 80%;
@@ -143,12 +143,15 @@ export default {
         }
       }
       span {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 38px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
         line-height: 42px;
         color: #015467;
+        margin-top: 40px;
+        @include tablet {
+          margin-top: 20px;
+        }
         @media (orientation: portrait) {
           font-weight: 700;
           font-size: 16px;
@@ -156,6 +159,11 @@ export default {
         }
       }
       p {
+        display: inline-block;
+        margin-top: 10px;
+        @include tablet {
+          margin-top: 10px;
+        }
         @media (orientation: portrait) {
           font-size: 16px;
           line-height: 22px;

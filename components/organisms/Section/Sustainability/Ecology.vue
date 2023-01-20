@@ -70,7 +70,6 @@ export default {
           modal: 'Default',
           title: item.title,
           text: item.popupText,
-          imgSrc: item.bgSrc,
         },
       })
     },
