@@ -23,10 +23,7 @@ export default {
       slides: [
         {
           title: this.$t('suistainability.landScaping.title'),
-          description: [
-            this.$t('suistainability.landScaping.description'),
-            this.$t('suistainability.landScaping.description2'),
-          ],
+          description: this.$t('suistainability.landScaping.description'),
           image: 'sustainability/block-3.png',
         },
       ],

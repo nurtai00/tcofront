@@ -504,6 +504,7 @@ export default {
   }
 
   .slide::v-deep {
+    background-color: $c-tco33;
     .slide_text {
       margin-top: 20px;
 
@@ -513,8 +514,6 @@ export default {
     }
 
     .slide__content {
-      background-color: $c-tco33;
-
       .slide__title {
         color: $c-tco3;
       }

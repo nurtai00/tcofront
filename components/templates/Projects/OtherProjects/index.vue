@@ -28,6 +28,7 @@
     <OrganismsSectionOperationSlide
       v-for="(item, key) in slide"
       :key="'first' + key"
+      class="content"
       :side="!!(key % 2)"
       :data="item"
     />
@@ -302,5 +303,8 @@ export default {
       background-color: $c-tco33;
     }
   }
+}
+.content {
+  background-color: $c-tco33;
 }
 </style>

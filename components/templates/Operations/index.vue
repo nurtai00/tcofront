@@ -23,6 +23,7 @@
     <OrganismsSectionOperationSlide
       v-for="(item, key) in textSlide"
       :key="key"
+      class="content"
       :side="!!(key % 2)"
       :data="item"
       :class="`slide${key}`"
@@ -122,31 +123,25 @@ export default {
       textSlide: [
         {
           title: this.$t('operation.textSlide')[0].title,
-          description: [
-            this.$t('operation.textSlide')[0].description[0],
-            this.$t('operation.textSlide')[0].description[1],
-          ],
+          description: this.$t('operation.textSlide')[0].description,
           image: 'operation/operations1.png',
           style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[1].title,
-          description: [
-            this.$t('operation.textSlide')[1].description[0],
-            this.$t('operation.textSlide')[1].description[1],
-          ],
+          description: this.$t('operation.textSlide')[1].description,
           image: 'operation/operations2.png',
           style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[2].title,
-          description: [this.$t('operation.textSlide')[2].description],
+          description: this.$t('operation.textSlide')[2].description,
           image: 'operation/operations3.png',
           style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[3].title,
-          description: [this.$t('operation.textSlide')[3].description],
+          description: this.$t('operation.textSlide')[3].description,
           image: 'operation/operations4.png',
           style: 'width:50vw;max-width:50vw',
         },
@@ -154,7 +149,7 @@ export default {
       textSlide2: [
         {
           title: this.$t('operation.textSlide2')[0].title,
-          description: [this.$t('operation.textSlide2')[0].description],
+          description: this.$t('operation.textSlide2')[0].description,
           image: 'operation/operations5.png',
           link: () => {
             this.$store.commit('side/open', {
@@ -166,13 +161,13 @@ export default {
         },
         {
           title: this.$t('operation.textSlide2')[1].title,
-          description: [this.$t('operation.textSlide2')[1].description],
+          description: this.$t('operation.textSlide2')[1].description,
           image: 'operation/operations6.png',
           style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide2')[2].title,
-          description: [this.$t('operation.textSlide2')[2].description],
+          description: this.$t('operation.textSlide2')[2].description,
           image: 'operation/operations7.png',
           background: true,
           style: 'width:50vw;max-width:50vw',
@@ -321,6 +316,11 @@ export default {
       margin-bottom: 8px;
       width: calc((100% - 9px) / 2);
     }
+  }
+}
+.content::v-deep {
+  .slide__description {
+    height: 280px !important;
   }
 }
 </style>
