@@ -218,11 +218,19 @@ export default {
       &-one {
         width: 100%;
         margin: auto 0;
+        justify-content: center;
+        .content {
+          padding: 80px 0;
+        }
       }
       &-two {
+        display: flex;
         width: 100%;
-        & .content {
-          //padding-left: 60px;
+        justify-content: center;
+        .content {
+          display: flex;
+          flex-direction: column;
+          padding: 80px 40px;
         }
       }
     }

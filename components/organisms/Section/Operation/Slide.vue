@@ -1,51 +1,55 @@
 <template>
-  <div
-    class="slide container"
-    :class="{ side, background: data.background, reverse: isReverse }"
-  >
+  <div class="slide">
     <div
-      class="slide__content container"
-      :class="{ slided: slide, reverse: isReverse }"
-      :style="data.style"
+      class="container slide__wrapper"
+      :class="{ side, background: data.background, reverse: isReverse }"
     >
-      <AtomsHeading v-if="data.title" type="h3" class="slide__title title">
-        {{ data.title }}
-      </AtomsHeading>
-      <div
-        v-if="data.description"
-        class="slide__description"
-        :class="{ reverse: isReverse, solo: data.desciptionSolo }"
-      >
+      <div class="slide__content">
         <div
-          v-for="(text, key) in data.description"
-          :key="key"
-          class="slide__description_item"
+          class="slide__content-wrapper"
+          :class="{ slided: slide, reverse: isReverse, side }"
         >
-          {{ text }}
+          <AtomsHeading v-if="data.title" type="h3" class="slide__title title">
+            {{ data.title }}
+          </AtomsHeading>
+          <div
+            v-if="data.description"
+            class="slide__description"
+            :class="{ reverse: isReverse, solo: data.desciptionSolo }"
+          >
+            <div
+              v-for="(text, key) in data.description"
+              :key="key"
+              class="slide__description_item"
+              :style="{ transform: `translateX(-${slide}%)` }"
+            >
+              {{ text }}
+            </div>
+          </div>
+          <template v-else>
+            <slot />
+          </template>
+          <template v-if="data.description">
+            <div v-if="data.description.length > 1" class="slide__arrow">
+              <div role="button" class="arrow__left" @click="onSlide('prev')">
+                <img alt="arrow" src="@/assets/icons/arrowDown.png" />
+              </div>
+              <div role="button" class="arrow__right" @click="onSlide('next')">
+                <img alt="arrow" src="@/assets/icons/arrowDown.png" />
+              </div>
+            </div>
+          </template>
+          <template v-if="data.link">
+            <div class="slide__link" @click="data.link()">
+              <span>{{ $t('products.more') }}</span>
+              <img src="@/assets/img/operation/arrow_next.png" />
+            </div>
+          </template>
         </div>
       </div>
-      <template v-else>
-        <slot />
-      </template>
-      <template v-if="data.description">
-        <div v-if="data.description.length > 1" class="slide__arrow">
-          <div role="button" class="arrow__left" @click="onSlide(false)">
-            <img alt="arrow" src="@/assets/icons/arrowDown.png" />
-          </div>
-          <div role="button" class="arrow__right" @click="onSlide(true)">
-            <img alt="arrow" src="@/assets/icons/arrowDown.png" />
-          </div>
-        </div>
-      </template>
-      <template v-if="data.link">
-        <div class="slide__link" @click="data.link()">
-          <span>{{ $t('products.more') }}</span>
-          <img src="@/assets/img/operation/arrow_next.png" />
-        </div>
-      </template>
-    </div>
-    <div class="slide__image">
-      <img :src="require(`@/assets/img/${data.image}`)" :alt="data.title" />
+      <div class="slide__image">
+        <img :src="require(`@/assets/img/${data.image}`)" :alt="data.title" />
+      </div>
     </div>
   </div>
 </template>
@@ -68,11 +72,23 @@ export default {
     },
   },
   data: () => ({
-    slide: false,
+    slide: 0,
+    index: 1,
+    percent: 0,
   }),
+  watch: {
+    slide(value) {
+      if (this.data.description.length * 100 === value) {
+        this.slide = 0
+      }
+    },
+  },
   methods: {
-    onSlide(type) {
-      this.slide = type
+    onSlide(direction) {
+      if (direction === 'prev' && this.slide === 0) {
+        return
+      }
+      this.slide = direction === 'prev' ? this.slide - 100 : this.slide + 100
     },
   },
 }
@@ -135,50 +151,64 @@ export default {
   }
 }
 .slide {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  max-width: 1400px;
-  margin: 0 auto;
-  &.reverse {
-    flex-direction: row-reverse;
-    gap: 60px;
-    @include tablet {
-      flex-direction: column-reverse;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0 auto;
+    &.reverse {
+      flex-direction: row-reverse;
+      gap: 60px;
+      @include tablet {
+        flex-direction: column-reverse;
+      }
+    }
+    &.side {
+      flex-direction: row-reverse;
+      .slide__content {
+        margin-left: 0px;
+        margin-right: 0;
+      }
+    }
+    &.background {
+      background-color: $c-tco33;
     }
   }
+
   &__content {
-    padding-top: 60px;
-    margin-right: 60px;
-    padding-bottom: 60px;
-    width: 50%;
-    &.slided {
-      .slide {
-        &__arrow {
-          i:first-child {
-            cursor: pointer;
-            background-color: white;
+    width: 50% !important;
+    &-wrapper {
+      padding-top: 60px;
+      width: 80%;
+      &.side {
+        transform: translateX(60px);
+      }
+      &.slided {
+        .slide {
+          &__arrow {
+            i:first-child {
+              cursor: pointer;
+              background-color: white;
+            }
+
+            i:last-child {
+              cursor: default;
+              background-color: $c-tco33;
+            }
           }
 
-          i:last-child {
-            cursor: default;
-            background-color: $c-tco33;
-          }
-        }
+          &__description {
+            max-height: 400px;
 
-        &__description {
-          &_item {
-            transform: translateX(-100%);
-            font-family: Roboto, sans-serif;
-            font-weight: 400;
+            &_item {
+              transform: translateX(-100%);
+              font-family: Roboto, sans-serif;
+              font-weight: 400;
+            }
           }
         }
       }
     }
-  }
-
-  &.background {
-    background-color: $c-tco33;
   }
 
   &__link {
@@ -197,14 +227,6 @@ export default {
     }
   }
 
-  &.side {
-    flex-direction: row-reverse;
-    .slide__content {
-      margin-left: 40px;
-      margin-right: 0;
-    }
-  }
-
   &__title {
     margin-bottom: 40px;
   }
@@ -214,8 +236,9 @@ export default {
     display: flex;
     overflow: hidden;
     color: $c-tco1;
-
+    height: 350px;
     &.solo {
+      height: auto;
       margin-bottom: 0;
     }
     &.reverse {
@@ -260,8 +283,8 @@ export default {
   }
 
   &__image {
+    height: 600px;
     width: 50%;
-    max-height: 600px;
     @include tablet {
       min-height: 200px;
     }

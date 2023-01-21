@@ -53,26 +53,38 @@
     },
     {
       "title": "Sour Gas Injection – SGI",
-      "description": "SGI re-injects one third of produced sour gas back into the Tengiz reservoir at very high pressures to maintain reservoir pressure. The injection compressor is like no other compressor in the world and represents the state of the art in sour gas injection technology. SGI enables about 25% of total TCO oil production as well as pressure maintenance to reservoir."
+      "description": [
+        "SGI re-injects one third of produced sour gas back into the Tengiz reservoir at very high pressures to maintain reservoir pressure. The injection compressor is like no other compressor in the world and represents the state of the art in sour gas injection technology. SGI enables about 25% of total TCO oil production as well as pressure maintenance to reservoir."
+      ]
     },
     {
       "title": "Products",
-      "description": "Tengizchevroil produces liquefied petroleum gas (LPG), dry gas and sulfur in addition to crude oil."
+      "description": [
+        "Tengizchevroil produces liquefied petroleum gas (LPG), dry gas and sulfur in addition to crude oil."
+      ]
     }
   ],
   "textSlide2": [
     {
       "title": "Emergency Response and Oil Spill Readiness",
-      "description": "Tengizchevroil meets the highest standards of Product Stewardship practices through managing safe transportation and quality control for its sales. A dedicated team of professionals focus on assessment and mitigation of potential health, environmental, safety, and quality risks for the entire product life cycle. This team promotes use of industry product stewardship best practices with customers and service providers through safety and technical audits. The Caspian Pipeline Consortium (CPC) is the primary route for TCO’s oil production. The 1,500 km long pipeline connects TCO’s Tengiz field to CPC’s terminal on the Black Sea. TCO also maintains contingent pipeline access to the Baltic Pipeline System and rail access to an oil terminal in Odessa, Ukraine. All LPG and sulfur shipments are delivered to customers and terminals via rail transportation routes.",
+      "description": [
+        "Tengizchevroil meets the highest standards of Product Stewardship practices through managing safe transportation and quality control for its sales. A dedicated team of professionals focus on assessment and mitigation of potential health, environmental, safety, and quality risks for the entire product life cycle.",
+        "This team promotes use of industry product stewardship best practices with customers and service providers through safety and technical audits. The Caspian Pipeline Consortium (CPC) is the primary route for TCO’s oil production. The 1,500 km long pipeline connects TCO’s Tengiz field to CPC’s terminal on the Black Sea.",
+        "TCO also maintains contingent pipeline access to the Baltic Pipeline System and rail access to an oil terminal in Odessa, Ukraine. All LPG and sulfur shipments are delivered to customers and terminals via rail transportation routes."
+      ],
       "link": "In the event of an incident along the transportation routes of TCO's sales, the services of third party observers are utilized by TCO to liaise with the responsible parties and agencies where the incident occurred. Depending on the severity of the incident, TCO’s Crisis Management team may be activated to coordinate mitigation efforts and address any requests for supplementary support from external stakeholders. TCO’s Crisis Management team can access the experienced resources of Chevron’s World-Wide Emergency Response Team (WWERT). The WWERT is a team of very experienced personnel trained to support the management of global-level (Tier 3) incidents and are available to support any response. Team members are subject matter experts in emergency management and the development of incident action plans.\nIn addition, TCO retains membership in the OSPRI industry association (Oil Spill Preparedness Regional Initiative (Caspian Sea – Black Sea – Central Eurasia) through shareholder companies to stay current in developments and best practices in oil spill and emergency response."
     },
     {
       "title": "Working safely is a TCO core value and everyone’s responsibility",
-      "description": "In 2021, TCO employees and contractors worked over 123 million man-hours with 10 Days Away from Work incidents. While this is solid performance, TCO strives for zero workplace injuries and is continuously working to improve in this area. Living this commitment will ensure success in fatality prevention and process safety, the two cornerstones to incident-free construction and operations."
+      "description": [
+        "In 2021, TCO employees and contractors worked over 123 million man-hours with 10 Days Away from Work incidents. While this is solid performance, TCO strives for zero workplace injuries and is continuously working to improve in this area. Living this commitment will ensure success in fatality prevention and process safety, the two cornerstones to incident-free construction and operations."
+      ]
     },
     {
       "title": "Actions to prevent COVID-19 spread",
-      "description": "TCO stays vigilant, acts responsibly and is cautious about the health and hygiene of each person and uses preventive measures to keep the workforce safe. We continue to record additional DAFW/ Medical cases associated with COVID-19 outbreak.\nIn 2022, TCO started to return to the workplaces keeping the Rotational, 5/2 and Hybrid Working methods."
+      "description": [
+        "TCO stays vigilant, acts responsibly and is cautious about the health and hygiene of each person and uses preventive measures to keep the workforce safe. We continue to record additional DAFW/ Medical cases associated with COVID-19 outbreak.\nIn 2022, TCO started to return to the workplaces keeping the Rotational, 5/2 and Hybrid Working methods."
+      ]
     }
   ],
   "chart": "Safety",

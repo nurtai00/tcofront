@@ -63,10 +63,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .invest {
-  padding-bottom: 80px;
   &__wrapper {
     display: flex;
     gap: 72px;
+    align-items: center;
     //max-height: 650px;
   }
   &__content {
@@ -83,10 +83,8 @@ export default {
     }
   }
   &__img {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    min-width: 50%;
+    width: 50%;
+    height: 500px;
     img {
       width: 100%;
       height: 100%;
