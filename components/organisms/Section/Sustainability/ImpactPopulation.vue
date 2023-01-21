@@ -143,17 +143,19 @@ export default {
     min-width: 50%;
     padding-right: 20px;
     gap: 15px;
+    width: 50%;
   }
   &__img {
-    position: relative;
-    min-width: calc(50% + (100vw - var(--width-container)) / 2);
-    min-height: 100%;
-    overflow: hidden;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 600px;
     img {
-      object-fit: contain;
-      width: 100%;
-      position: absolute;
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
     }
   }
   @include tablet {
@@ -165,8 +167,7 @@ export default {
       flex-direction: column-reverse;
     }
     &__img {
-      left: calc((var(--width-container) - 100vw) / 2);
-      width: 100vw;
+      width: 100%;
       img {
         width: 100%;
         height: 100%;
@@ -175,7 +176,9 @@ export default {
       }
     }
     &__info {
-      margin-right: 0;
+      width: 100%;
+      padding-right: 0;
+      margin: 0 auto;
       &-description {
         font-size: 16px;
         font-weight: 400;

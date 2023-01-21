@@ -1,6 +1,6 @@
 <template>
-  <div class="gift">
-    <div class="container gift__content">
+  <div class="gift container">
+    <div class="gift__content">
       <AtomsHeading type="h3">
         {{ $t('suistainability.gift.title') }}
       </AtomsHeading>
@@ -65,9 +65,8 @@ export default {
 .gift {
   display: flex;
   background-color: $c-tco33;
+  justify-content: space-between;
   &__content {
-    min-width: 50%;
-    padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
   }
   &__description {
     margin-top: 40px;

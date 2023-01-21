@@ -8,28 +8,30 @@
         </AtomsHeading>
       </div>
       <div class="container">
-        <div class="information_content first">
-          <AtomsHeading type="h3" color="main" class="mb40">
-            {{ $t('relation.block_2.title') }}
-          </AtomsHeading>
-          <nuxt-link
-            v-for="(item, key) in links"
-            :key="key"
-            class="link"
-            :to="localePath(item.link)"
-          >
-            {{ item.title }}
-          </nuxt-link>
-          <a class="link">{{ $t('relation.block_2.links[4]') }}</a>
-          <a class="link">{{ $t('relation.block_2.links[5]') }}</a>
+        <div class="information__wrapper">
+          <div class="information_content first">
+            <AtomsHeading type="h3" color="main" class="mb40">
+              {{ $t('relation.block_2.title') }}
+            </AtomsHeading>
+            <nuxt-link
+              v-for="(item, key) in links"
+              :key="key"
+              class="link"
+              :to="localePath(item.link)"
+            >
+              {{ item.title }}
+            </nuxt-link>
+            <a class="link">{{ $t('relation.block_2.links[4]') }}</a>
+            <a class="link">{{ $t('relation.block_2.links[5]') }}</a>
+          </div>
+          <img
+            src="@/assets/img/relations/relations3.png"
+            alt=""
+            srcset=""
+            class="block_img"
+          />
         </div>
       </div>
-      <img
-        src="@/assets/img/relations/relations3.png"
-        alt=""
-        srcset=""
-        class="block_img"
-      />
     </div>
     <div class="information reverse">
       <div class="mobile">
@@ -39,19 +41,21 @@
         </AtomsHeading>
       </div>
       <div class="container">
-        <div class="information_content second">
-          <AtomsHeading type="h3" color="main" class="mb40">
-            {{ $t('relation.block_3.title') }}
-          </AtomsHeading>
-          <p v-html="$t('relation.block_3.text')" />
+        <div class="information__wrapper">
+          <img
+            src="@/assets/img/relations/relations2.png"
+            alt=""
+            srcset=""
+            class="block_img"
+          />
+          <div class="information_content second">
+            <AtomsHeading type="h3" color="main" class="mb40">
+              {{ $t('relation.block_3.title') }}
+            </AtomsHeading>
+            <p v-html="$t('relation.block_3.text')" />
+          </div>
         </div>
       </div>
-      <img
-        src="@/assets/img/relations/relations2.png"
-        alt=""
-        srcset=""
-        class="block_img"
-      />
     </div>
     <div class="information">
       <div class="mobile">
@@ -61,14 +65,46 @@
         </AtomsHeading>
       </div>
       <div class="container">
-        <div class="information_content third">
-          <AtomsHeading type="h3" color="main" class="mb40">
-            {{ $t('relation.block_4.title') }}
-          </AtomsHeading>
-          <p class="mb30">
-            {{ $t('relation.block_4.p_1') }}
-            <br />
-            <span class="email">
+        <div class="information__wrapper">
+          <div class="information_content third">
+            <AtomsHeading type="h3" color="main" class="mb40">
+              {{ $t('relation.block_4.title') }}
+            </AtomsHeading>
+            <p class="mb30">
+              {{ $t('relation.block_4.p_1') }}
+              <br />
+              <span class="email">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                    stroke="#00B0F0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 6L12 13L2 6"
+                    stroke="#00B0F0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <a href="mailto:tcolr@tengizchevroil.com"
+                  >tcolr@tengizchevroil.com</a
+                >
+              </span>
+            </p>
+            <p>
+              {{ $t('relation.block_4.p_2') }}
+            </p>
+            <div class="mb30">
               <svg
                 width="24"
                 height="24"
@@ -91,73 +127,43 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <a href="mailto:tcolr@tengizchevroil.com"
-                >tcolr@tengizchevroil.com</a
+              <a href="mailto:emea.at.debt@citi.com">emea.at.debt@citi.com</a>
+            </div>
+            <p>{{ $t('relation.block_4.p_3') }}</p>
+            <div>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-            </span>
-          </p>
-          <p>
-            {{ $t('relation.block_4.p_2') }}
-          </p>
-          <div class="mb30">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
-                stroke="#00B0F0"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M22 6L12 13L2 6"
-                stroke="#00B0F0"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <a href="mailto:emea.at.debt@citi.com">emea.at.debt@citi.com</a>
+                <path
+                  d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                  stroke="#00B0F0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 6L12 13L2 6"
+                  stroke="#00B0F0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <a href="mailto:agencyldn@mhcb.co.uk">agencyldn@mhcb.co.uk</a>
+            </div>
           </div>
-          <p>{{ $t('relation.block_4.p_3') }}</p>
-          <div>
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
-                stroke="#00B0F0"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M22 6L12 13L2 6"
-                stroke="#00B0F0"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <a href="mailto:agencyldn@mhcb.co.uk">agencyldn@mhcb.co.uk</a>
-          </div>
+          <img
+            src="@/assets/img/relations/relations1.png"
+            alt=""
+            srcset=""
+            class="block_img"
+          />
         </div>
       </div>
-      <img
-        src="@/assets/img/relations/relations1.png"
-        alt=""
-        srcset=""
-        class="block_img"
-      />
     </div>
   </div>
 </template>
@@ -199,13 +205,22 @@ export default {
 .information {
   position: relative;
   width: 100%;
+  &__wrapper {
+    display: flex;
+    gap: 60px;
+  }
   .block_img {
-    position: absolute;
+    display: flex;
     width: 50%;
     height: 100%;
     object-fit: cover;
-    top: 0;
-    right: 0;
+    justify-content: center;
+    align-items: center;
+    max-height: 600px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
     @include tablet() {
       display: none;
     }
@@ -222,8 +237,6 @@ export default {
     left: 0;
   }
   .information_content {
-    padding-right: 0;
-    padding-left: calc(50% + 80px);
   }
 }
 .mobile {
@@ -250,7 +263,6 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 80px 0;
-  padding-right: calc(50% + 69px);
   .email {
     display: flex;
     align-items: center;

@@ -6,7 +6,7 @@
       </AtomsTitle>
     </div>
     <div class="double-block tco__partners" style="justify-content: center">
-      <div class="tco__barrels-item">
+      <div class="tco__barrels-item first">
         <div class="tco__barrels-wrapper" style="width: 100%">
           <img src="@/assets/img/fees.png" />
           <div>
@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <div class="tco__barrels-item">
+      <div class="tco__barrels-item second">
         <div class="tco__barrels-wrapper" style="width: 100%">
           <img src="@/assets/img/fees2.png" />
           <div>
@@ -105,6 +105,13 @@ export default {
       @media (max-width: 450px) {
         padding: 15px !important;
         flex-direction: column;
+      }
+      &.first {
+        justify-content: flex-end;
+      }
+      &.second {
+        margin-left: 50px;
+        justify-content: flex-start;
       }
       &:last-of-type {
         padding: 40px 40px 40px 0;

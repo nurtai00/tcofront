@@ -598,8 +598,8 @@ export default {
       font-family: 'Roboto', sans-serif;
       font-style: normal;
       font-weight: 800;
-      font-size: 20.6vh; // 12.91vw; // 186px;
-      line-height: 24.88vh; // 15.55vw; // 224px;
+      font-size: 186px; // 12.91vw; // 186px;
+      line-height: 224px; // 15.55vw; // 224px;
       color: #015467;
       opacity: 0.08;
       transition: 0.5s all ease;
@@ -616,8 +616,8 @@ export default {
       opacity: 1;
     }
     .small {
-      font-size: 12.4vh; // 7.77vw; // 112px;
-      line-height: 24.88vh; // 15.55vw; // 224px;
+      font-size: 112px; // 7.77vw; // 112px;
+      line-height: 224px; // 15.55vw; // 224px;
       @media (orientation: portrait) {
         font-size: 13.23vw; // 51px
         line-height: 24vw; // 90px;
@@ -640,7 +640,7 @@ export default {
   }
   &__yearcircle {
     position: absolute;
-    left: 25vw;
+    left: 50px;
     top: 32vh;
     width: 32.6vh; // 20vw;
     height: 32.6vh; // 20vw;
@@ -661,8 +661,10 @@ export default {
   }
   &__yearcircle-fixed {
     position: sticky;
-    left: 10vw;
-    top: 32vh;
+    width: 224px;
+    height: 224px;
+    left: 250px;
+    top: 250px;
     opacity: 0.4;
   }
 }
@@ -670,7 +672,7 @@ export default {
   position: relative;
 }
 #wrapper {
-  height: 600px;
+  height: 800px;
   overflow: auto;
   max-width: 1200px;
   margin: 0 auto;

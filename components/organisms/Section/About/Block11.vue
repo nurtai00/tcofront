@@ -1,34 +1,39 @@
 <template>
-  <section style="padding: 0; position: relative">
-    <OrganismsSlider :options="options">
-      <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
-        <div class="double-block tco__partners">
-          <div class="tco__partners-wrapper">
-            <h1>{{ $t('company.slider_6[0].title') }}</h1>
-            <div class="underline"></div>
-            <span v-text="slide.title"></span>
-            <p v-text="slide.text"></p>
+  <section style="padding: 0; position: relative; background: #f2f6f7">
+    <div class="container">
+      <OrganismsSlider :options="options">
+        <MoleculesSlide
+          v-for="(slide, slide_index) in slides"
+          :key="slide_index"
+        >
+          <div class="double-block tco__partners">
+            <div class="tco__partners-wrapper">
+              <h1>{{ $t('company.slider_6[0].title') }}</h1>
+              <div class="underline"></div>
+              <span v-text="slide.title"></span>
+              <p v-text="slide.text"></p>
+            </div>
+            <img :style="options.style" :src="slide.imgSrc" />
           </div>
-          <img :style="options.style" :src="slide.imgSrc" />
-        </div>
-      </MoleculesSlide>
-    </OrganismsSlider>
+        </MoleculesSlide>
+      </OrganismsSlider>
 
-    <div class="main_b11_actions">
-      <img
-        class="main_b11_actions_prev"
-        src="../../../../assets/icons/small-chevron-left.png"
-        alt="small-chevron-left"
-        width="44px"
-        height="44px"
-      />
-      <img
-        class="main_b11_actions_next"
-        src="../../../../assets/icons/small-chevron-right.png"
-        alt="small-chevron-right"
-        width="44px"
-        height="44px"
-      />
+      <div class="main_b11_actions">
+        <img
+          class="main_b11_actions_prev"
+          src="../../../../assets/icons/small-chevron-left.png"
+          alt="small-chevron-left"
+          width="44px"
+          height="44px"
+        />
+        <img
+          class="main_b11_actions_next"
+          src="../../../../assets/icons/small-chevron-right.png"
+          alt="small-chevron-right"
+          width="44px"
+          height="44px"
+        />
+      </div>
     </div>
   </section>
 </template>
@@ -91,7 +96,8 @@ export default {
       flex-direction: column-reverse;
     }
     &-wrapper {
-      padding: 40px 40px 40px 0;
+      width: 50%;
+      padding: 40px;
       max-width: 590px;
       display: flex;
       flex-direction: column;
@@ -170,7 +176,6 @@ export default {
         }
       }
     }
-    background: #f2f6f7;
   }
 }
 .double-block {
@@ -178,6 +183,7 @@ export default {
     position: relative;
   }
   img {
+    width: 50%;
     @media (orientation: portrait) {
       height: 216px;
       object-fit: cover;
@@ -191,8 +197,8 @@ export default {
   display: flex;
   align-items: center;
   position: relative;
-  left: calc((100vw - 1176px) / 2);
-  top: -105px;
+  left: 400px;
+  top: -50px;
   @media (orientation: portrait) {
     left: 16px;
     position: absolute;

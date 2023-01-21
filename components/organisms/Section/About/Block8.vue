@@ -1,44 +1,49 @@
 <template>
   <div class="section--blue" style="padding: 0; position: relative">
-    <OrganismsSlider :options="options">
-      <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
-        <div
-          class="double-block tco__partners"
-          style="justify-content: flex-end"
+    <div class="container" style="position: relative">
+      <OrganismsSlider :options="options">
+        <MoleculesSlide
+          v-for="(slide, slide_index) in slides"
+          :key="slide_index"
         >
-          <div class="tco__partners-wrapper" style="max-height: 600px">
-            <h1 v-text="slide.title"></h1>
-            <div class="underline"></div>
-            <p v-text="slide.text"></p>
-            <div v-if="slide.pdf">
-              <img
-                src="@/assets/icons/pdf.png"
-                alt="pdf"
-                width="30"
-                height="40"
-              />
-              <span>{{ $t('company.slider_4[0].pdf') }}</span>
+          <div
+            class="double-block tco__partners"
+            style="justify-content: flex-end"
+          >
+            <div class="tco__partners-wrapper" style="max-height: 600px">
+              <h1 v-text="slide.title"></h1>
+              <div class="underline"></div>
+              <p v-text="slide.text"></p>
+              <div v-if="slide.pdf">
+                <img
+                  src="@/assets/icons/pdf.png"
+                  alt="pdf"
+                  width="30"
+                  height="40"
+                />
+                <span>{{ $t('company.slider_4[0].pdf') }}</span>
+              </div>
             </div>
+            <img :style="options.style" :src="slide.imgSrc" />
           </div>
-          <img :style="options.style" :src="slide.imgSrc" />
-        </div>
-      </MoleculesSlide>
-    </OrganismsSlider>
-    <div class="main_b8_actions">
-      <img
-        class="main_b8_actions_prev"
-        src="../../../../assets/icons/small-chevron-left.png"
-        alt="small-chevron-left"
-        width="44px"
-        height="44px"
-      />
-      <img
-        class="main_b8_actions_next"
-        src="../../../../assets/icons/small-chevron-right.png"
-        alt="small-chevron-right"
-        width="44px"
-        height="44px"
-      />
+        </MoleculesSlide>
+      </OrganismsSlider>
+      <div class="main_b8_actions">
+        <img
+          class="main_b8_actions_prev"
+          src="../../../../assets/icons/small-chevron-left.png"
+          alt="small-chevron-left"
+          width="44px"
+          height="44px"
+        />
+        <img
+          class="main_b8_actions_next"
+          src="../../../../assets/icons/small-chevron-right.png"
+          alt="small-chevron-right"
+          width="44px"
+          height="44px"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -50,7 +55,7 @@ export default {
   data() {
     return {
       options: {
-        interval: 3000,
+        interval: 1000,
         navigation: {
           previous: '.main_b8_actions_prev',
           next: '.main_b8_actions_next',
@@ -93,6 +98,8 @@ export default {
 <style lang="scss" v-deep scoped>
 .section--blue {
   // height: 650px;
+  position: relative;
+  background: #f2f6f7;
 }
 .double-block {
   @media (orientation: portrait) {
@@ -100,6 +107,7 @@ export default {
     position: relative;
   }
   img {
+    width: 50%;
     @media (orientation: portrait) {
       height: 220px;
       object-fit: cover;
@@ -114,8 +122,8 @@ export default {
 .tco {
   &__partners {
     &-wrapper {
-      padding: 40px 40px 60px 0;
-      max-width: 590px;
+      padding: 40px 40px 60px 40px;
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -220,7 +228,6 @@ export default {
         }
       }
     }
-    background: #f2f6f7;
   }
 }
 ::v-deep .slider-wrapper {
@@ -230,8 +237,8 @@ export default {
   display: flex;
   align-items: center;
   position: absolute;
-  left: calc((100vw - 1176px) / 2);
-  bottom: 140px;
+  left: 400px;
+  bottom: 20px;
   @media (orientation: portrait) {
     left: 16px;
     position: absolute;

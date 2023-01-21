@@ -7,7 +7,7 @@
     </div>
     <div class="selection__step">
       <div class="selection__step-one" @click="openPopup(popups.one)">
-        <div class="container content">
+        <div class="content">
           <div class="content__title">
             <AtomsHeading type="h4" color="white">01</AtomsHeading>
             <AtomsHeading type="h4" color="white">
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="selection__step-two" @click="openPopup(popups.two)">
-        <div class="container content">
+        <div class="content">
           <div>
             <AtomsHeading type="h4" color="white">02</AtomsHeading>
             <AtomsHeading type="h4" color="white">
@@ -197,13 +197,18 @@ export default {
     display: flex;
     &-one {
       background-color: #015467;
-      width: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      & .content {
+        padding: 80px 280px 130px 0;
+      }
     }
     &-two {
+      width: 100%;
       background-color: #347685;
-      width: 50%;
       & .content {
-        left: calc(100vw - (var(--width-container)) / 2);
+        padding: 80px 0 130px 280px;
       }
     }
   }
@@ -224,13 +229,12 @@ export default {
   }
 }
 .content {
-  padding: 80px 280px 130px calc((100vw - var(--width-container)) / 2);
   display: flex;
   flex-direction: column;
   gap: 40px;
   cursor: pointer;
   @include tablet {
-    padding: 40px 280px 40px calc((100vw - var(--width-container)) / 2);
+    padding: 40px 280px 40px 0;
   }
   @include phone {
     padding: 40px;

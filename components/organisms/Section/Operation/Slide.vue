@@ -142,6 +142,7 @@ export default {
   margin: 0 auto;
   &.reverse {
     flex-direction: row-reverse;
+    gap: 60px;
     @include tablet {
       flex-direction: column-reverse;
     }
@@ -198,7 +199,6 @@ export default {
 
   &.side {
     flex-direction: row-reverse;
-
     .slide__content {
       margin-left: 40px;
       margin-right: 0;
@@ -260,9 +260,11 @@ export default {
   }
 
   &__image {
-    min-width: 50%;
-    position: relative;
-    min-height: 600px;
+    width: 50%;
+    max-height: 600px;
+    @include tablet {
+      min-height: 200px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -275,11 +277,6 @@ export default {
       display: flex;
       align-items: center;
       overflow: hidden;
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
     }
   }
 
@@ -292,7 +289,7 @@ export default {
 
     &__image {
       width: 100%;
-      height: 50%;
+      max-height: 600px;
       display: flex;
       align-items: center;
 

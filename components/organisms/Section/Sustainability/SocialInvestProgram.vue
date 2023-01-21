@@ -1,6 +1,6 @@
 <template>
-  <div class="program">
-    <div class="container program__content">
+  <div class="program container">
+    <div class="program__content">
       <AtomsFlatHeading
         :title="$t('suistainability.socialInvestProgram.title')"
         @click="$router.push(localePath(`/sustainability/igilik`))"
@@ -20,10 +20,10 @@
 <style lang="scss" scoped>
 .program {
   display: flex;
-  position: relative;
+  gap: 60px;
+  height: 100%;
   &__content {
-    min-width: 50%;
-    padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
+    width: 50%;
   }
   &__description {
     margin-top: 40px;
@@ -38,14 +38,13 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    min-width: 50%;
-    position: relative;
+    justify-content: center;
+    max-height: 600px;
+    width: 50%;
     img {
       width: 100%;
       height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
+      flex-shrink: 1;
     }
   }
 

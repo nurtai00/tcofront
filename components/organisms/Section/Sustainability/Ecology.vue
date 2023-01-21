@@ -1,7 +1,7 @@
 <template>
   <div class="ecology">
-    <div class="ecology__wrapper">
-      <div class="container ecology__content">
+    <div class="ecology__wrapper container">
+      <div class="ecology__content">
         <AtomsHeading class="ecology__title-desktop" type="h3" color="white">
           {{ $t('suistainability.ecology.title') }}
         </AtomsHeading>
@@ -83,10 +83,12 @@ export default {
   &__wrapper {
     display: flex;
     gap: 60px;
+    justify-content: space-between;
+    align-items: flex-end;
   }
   &__content {
-    min-width: 50%;
-    padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
+    padding-top: 80px;
+    width: 50%;
   }
   &__description {
     margin-top: 40px;
@@ -99,14 +101,12 @@ export default {
     display: flex;
     align-items: center;
     overflow: hidden;
-    min-width: 50%;
-    position: relative;
+    width: 50%;
+    height: 100%;
+    max-height: 650px;
     img {
       width: 100%;
       height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
     }
   }
   &__title-mobile {
@@ -130,6 +130,7 @@ export default {
     }
 
     &__content {
+      width: 100%;
       padding: 20px 16px;
     }
     &__description {
@@ -138,9 +139,8 @@ export default {
     }
     &__img {
       width: 100%;
-      position: relative;
-      max-width: calc(var(--width-container) - 50%);
-      right: 0;
+      display: flex;
+      flex-direction: column-reverse;
       img {
         width: 100%;
         height: 100%;
@@ -148,10 +148,11 @@ export default {
     }
     &__title {
       &-desktop {
-        display: none;
+        display: block;
+        margin-bottom: 20px;
       }
       &-mobile {
-        display: block;
+        display: none;
         position: relative;
         top: 50px;
         margin-left: 20px;

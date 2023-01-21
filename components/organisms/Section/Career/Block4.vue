@@ -1,13 +1,21 @@
 <template>
   <div class="programm_career">
-    <img :src="content.imgSrc" alt="" class="desc_img" />
-    <div class="mobile">
-      <img :src="content.imgSrc" alt="" />
-      <AtomsHeading type="h3" color="white"> {{ content.title }} </AtomsHeading>
-    </div>
-    <div class="programm_career_info" :class="{ background: background }">
-      <AtomsHeading type="h3" color="main"> {{ content.title }} </AtomsHeading>
-      <div v-html="content.text"></div>
+    <div class="wrapper container">
+      <div class="programm_career-img">
+        <img :src="content.imgSrc" alt="" class="desc_img" />
+      </div>
+      <div class="mobile">
+        <img :src="content.imgSrc" alt="" />
+        <AtomsHeading type="h3" color="white">
+          {{ content.title }}
+        </AtomsHeading>
+      </div>
+      <div class="programm_career_info" :class="{ background: background }">
+        <AtomsHeading type="h3" color="main">
+          {{ content.title }}
+        </AtomsHeading>
+        <div class="description" v-html="content.text"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -29,25 +37,37 @@ export default {
 
 <style lang="scss" scoped>
 .programm_career {
+  background: #f2f6f7 !important;
+}
+.wrapper {
   width: 100%;
   display: flex;
+  gap: 30px;
   @include tablet() {
     flex-direction: column;
     .desc_img {
       display: none;
     }
   }
-  img {
+  &-img {
     width: 50%;
-    height: 570px;
-    object-fit: cover;
-    @include tablet() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 600px;
+    img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include tablet() {
+        width: 100%;
+      }
     }
   }
   &_info {
     width: 50%;
-    padding: 80px 40px;
+    padding: 80px 0;
     @include tablet() {
       width: 100%;
       padding: 20px 16px;
@@ -63,7 +83,6 @@ export default {
   }
 }
 .background {
-  background: #f2f6f7 !important;
 }
 .mobile {
   position: relative;

@@ -59,7 +59,7 @@ export default {
 }
 
 .slider-wrapper {
-  height: 400px;
+  height: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -67,7 +67,6 @@ export default {
   animation: 0.5s;
   @media (orientation: portrait) {
     align-items: flex-start;
-    max-height: auto !important;
   }
 }
 

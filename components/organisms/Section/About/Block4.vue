@@ -1,5 +1,5 @@
 <template>
-  <section style="padding: 0; position: relative">
+  <section class="container" style="padding: 0; position: relative">
     <OrganismsSlider :options="options">
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
         <div class="double-block" style="justify-content: flex-end">
@@ -100,6 +100,7 @@ export default {
     position: relative;
   }
   img {
+    width: 50%;
     @media (orientation: portrait) {
       height: 220px;
       object-fit: cover;
@@ -109,6 +110,7 @@ export default {
 .tco {
   &__partners {
     &-wrapper {
+      width: 50%;
       padding: 40px 40px 40px 0;
       max-width: 590px;
       display: flex;
@@ -203,8 +205,8 @@ export default {
   display: flex;
   align-items: center;
   position: relative;
-  left: calc((100vw - 1176px) / 2);
-  top: -140px;
+  left: 400px;
+  top: -160px;
   @media (orientation: portrait) {
     left: 16px;
     position: absolute;
@@ -249,7 +251,7 @@ export default {
   align-items: center;
   gap: 2px;
   position: relative;
-  left: calc((100vw - 1176px) / 2);
+  left: 50px;
   top: -30px;
   z-index: 999;
   display: none;

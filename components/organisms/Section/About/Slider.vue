@@ -46,25 +46,35 @@ export default {
 
 <template>
   <div class="slider-cont">
-    <OrganismsSlider :options="options">
-      <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
-        <div class="double-block tco__partners">
-          <div class="tco__partners-wrapper">
-            <h3>{{ $t('company.slider_1[0].title') }}</h3>
-            <h3 v-text="slide.company"></h3>
-            <h1 v-text="slide.percent"></h1>
+    <div class="container">
+      <OrganismsSlider :options="options">
+        <MoleculesSlide
+          v-for="(slide, slide_index) in slides"
+          :key="slide_index"
+        >
+          <div class="double-block tco__partners">
+            <div class="tco__partners-wrapper">
+              <h3>{{ $t('company.slider_1[0].title') }}</h3>
+              <h3 v-text="slide.company"></h3>
+              <h1 v-text="slide.percent"></h1>
+            </div>
+            <img :src="slide.img" alt="kazmunaylogo" />
           </div>
-          <img :src="slide.img" alt="kazmunaylogo" />
-        </div>
-      </MoleculesSlide>
-    </OrganismsSlider>
-    <div class="steps">
-      <span v-for="line in 4" :key="line"></span>
+        </MoleculesSlide>
+      </OrganismsSlider>
+      <div class="steps">
+        <span v-for="line in 4" :key="line"></span>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+.slider-cont {
+  position: relative;
+  overflow: hidden;
+  background: #f2f6f7;
+}
 .tco {
   &__partners {
     justify-content: flex-end;
@@ -72,7 +82,8 @@ export default {
       flex-direction: column-reverse;
     }
     &-wrapper {
-      padding: 40px 40px 40px 0;
+      width: 50%;
+      padding: 40px;
       max-width: 590px;
       display: flex;
       flex-direction: column;
@@ -129,7 +140,10 @@ export default {
         }
       }
     }
-    background: #f2f6f7;
+
+    img {
+      width: 50%;
+    }
   }
 }
 .steps {
@@ -137,9 +151,8 @@ export default {
   align-items: center;
   gap: 2px;
   position: relative;
-  left: calc((100vw - 1176px) / 2);
-  top: -30px;
-  z-index: 999;
+  bottom: 20px;
+  left: 20px;
   @media (orientation: portrait) {
     left: 16px;
     top: -20px;
