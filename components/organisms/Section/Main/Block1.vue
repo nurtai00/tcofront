@@ -54,7 +54,7 @@ export default {
 </script>
 
 <template>
-  <div class="slider-cont">
+  <div class="slider-cont container">
     <OrganismsSlider :options="options">
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
         <div class="double-block tco__partners">
@@ -84,6 +84,9 @@ export default {
     @media (orientation: portrait) {
       flex-direction: column-reverse;
     }
+    img {
+      width: 50%;
+    }
     &-wrapper {
       padding: 40px 40px 60px 0;
       max-width: 590px;
@@ -93,6 +96,7 @@ export default {
       justify-content: center;
       gap: 25px;
       text-align: left;
+      width: 50%;
       @media (max-width: 1200px) {
         padding: 15px;
       }

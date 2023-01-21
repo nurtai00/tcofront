@@ -2,12 +2,13 @@
   <section class="about">
     <div class="container">
       <AtomsTitle class=""> {{ $t('company.breadcrumbs[1]') }} </AtomsTitle>
+
+      <img
+        class="player__preview"
+        style="height: 565px"
+        src="@/assets/img/player-prev.png"
+      />
     </div>
-    <img
-      class="player__preview"
-      style="height: 565px"
-      src="@/assets/img/player-prev.png"
-    />
     <div class="container block">
       <p class="mt40 mb40">
         {{ $t('company.p_1') }}

@@ -1,7 +1,7 @@
 <template>
   <div class="invest">
-    <div class="invest__wrapper">
-      <div class="container invest__content">
+    <div class="invest__wrapper container">
+      <div class="invest__content">
         <AtomsFlatHeading
           :title="$t('suistainability.socialProgrammingInvest.title')"
           @click="$router.push(localePath('/sustainability/psi'))"
@@ -70,8 +70,7 @@ export default {
     //max-height: 650px;
   }
   &__content {
-    min-width: 50%;
-    padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
+    width: 50%;
   }
   &__description {
     margin-top: 40px;
@@ -88,13 +87,9 @@ export default {
     align-items: center;
     overflow: hidden;
     min-width: 50%;
-    position: relative;
     img {
       width: 100%;
       height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
     }
   }
   &__cards {
@@ -110,6 +105,7 @@ export default {
       gap: 15px;
     }
     &__content {
+      width: 100%;
       padding: 40px 16px;
     }
     &__description {

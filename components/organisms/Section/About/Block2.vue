@@ -9,7 +9,7 @@
       </p>
     </div>
     <div class="double-block tco__partners">
-      <div class="tco__barrels-item">
+      <div class="tco__barrels-item first">
         <div class="tco__barrels-wrapper" style="width: 100%">
           <img src="@/assets/img/barrels.png" />
           <div>
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="tco__barrels-item">
+      <div class="tco__barrels-item second">
         <div class="tco__barrels-wrapper" style="width: 100%">
           <img src="@/assets/img/barrels.png" />
           <div>
@@ -197,7 +197,13 @@ section {
       justify-content: center;
       padding: 40px 0 40px 40px;
       background: rgba(1, 84, 103, 0.1);
-
+      &.first {
+        justify-content: flex-end;
+      }
+      &.second {
+        margin-left: 200px;
+        justify-content: flex-start;
+      }
       @media (max-width: 450px) {
         padding: 15px !important;
         flex-direction: column;
