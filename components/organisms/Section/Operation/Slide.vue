@@ -156,6 +156,7 @@ export default {
     justify-content: space-between;
     text-align: left;
     margin: 0 auto;
+    //height: 400px;
     &.reverse {
       flex-direction: row-reverse;
       gap: 60px;
@@ -178,6 +179,7 @@ export default {
   &__content {
     width: 50% !important;
     &-wrapper {
+      height: 100%;
       padding-top: 60px;
       width: 80%;
       &.side {
@@ -186,6 +188,7 @@ export default {
       &.slided {
         .slide {
           &__arrow {
+            margin-bottom: 10px;
             i:first-child {
               cursor: pointer;
               background-color: white;
@@ -198,8 +201,6 @@ export default {
           }
 
           &__description {
-            max-height: 400px;
-
             &_item {
               transform: translateX(-100%);
               font-family: Roboto, sans-serif;
@@ -232,11 +233,10 @@ export default {
   }
 
   &__description {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     overflow: hidden;
     color: $c-tco1;
-    height: 350px;
     &.solo {
       height: auto;
       margin-bottom: 0;
@@ -283,15 +283,12 @@ export default {
   }
 
   &__image {
-    height: 600px;
     width: 50%;
     @include tablet {
       min-height: 200px;
     }
     img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
       @include tablet {
         max-height: 250px;
       }

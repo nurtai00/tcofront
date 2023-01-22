@@ -16,7 +16,11 @@
     <OrganismsSectionCareerBlock4 :content="content1" />
     <OrganismsSectionCareerBlock5 />
     <OrganismsSectionCareerBlock6 />
-    <OrganismsSectionCareerBlock4 :content="content2" :background="true" />
+    <OrganismsSectionCareerBlock4
+      class="future__tco"
+      :content="content2"
+      :background="true"
+    />
     <OrganismsSectionCareerBlock7 />
     <OrganismsSectionCareerBlock8 />
   </div>
@@ -60,3 +64,10 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.future__tco::v-deep {
+  .programm_career_info {
+    padding: 60px 0 0 0;
+  }
+}
+</style>
