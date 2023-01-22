@@ -39,6 +39,9 @@ export default {
 .programm_career {
   background: #f2f6f7 !important;
 }
+.programm_career_info {
+  padding-top: 0;
+}
 .wrapper {
   width: 100%;
   display: flex;

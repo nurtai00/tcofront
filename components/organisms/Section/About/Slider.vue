@@ -13,7 +13,7 @@ export default {
           count: 2,
           company: this.$t('company.slider_1[1].text'),
           percent: '50%',
-          img: require('@/assets/img/company/chevron.png'),
+          img: require('@/assets/img/chevron-desktop.jpg'),
         },
         {
           count: 4,
@@ -25,7 +25,7 @@ export default {
           count: 5,
           company: this.$t('company.slider_1[3].text'),
           percent: '5%',
-          img: require('@/assets/img/company/uk.png'),
+          img: require('@/assets/img/Lukoil_final.jpg'),
         },
       ],
       options: {

@@ -23,10 +23,9 @@
     <OrganismsSectionOperationSlide
       v-for="(item, key) in textSlide"
       :key="key"
-      class="content"
       :side="!!(key % 2)"
       :data="item"
-      :class="`slide${key}`"
+      :class="`slide slide${key}`"
     />
     <OrganismsSectionOperationSvg
       ref="security"
@@ -39,7 +38,7 @@
       :key="'second' + key"
       :side="!(key % 2)"
       :data="item"
-      :class="`slide2${key}`"
+      :class="`slide slide2${key}`"
     />
     <OrganismsSectionOperationSvg
       class="operations__production-security chesm"
@@ -318,9 +317,15 @@ export default {
     }
   }
 }
-.content::v-deep {
-  .slide__description {
-    height: 280px !important;
+.slide::v-deep {
+  .slide__wrapper {
+    height: 400px;
   }
+}
+.slide20::v-deep {
+  background: #f2f6f7;
+}
+.slide22 {
+  background: #f2f6f7;
 }
 </style>

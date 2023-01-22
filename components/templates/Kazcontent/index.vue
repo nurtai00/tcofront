@@ -1083,6 +1083,14 @@ export default {
   }
 
   .slide::v-deep {
+    .slide__content-wrapper {
+      padding-top: 60px;
+    }
+    .slide__wrapper {
+      padding: 30px 0 0 0;
+      //max-height: 700px;
+      align-items: start;
+    }
     &.gray {
       background: $c-tco33;
     }

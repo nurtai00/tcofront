@@ -70,7 +70,7 @@
     <OrganismsSectionOperationSlide
       :side="false"
       :data="slide2"
-      class="slide"
+      class="slide last"
     />
     <div class="protocols">
       <div class="container">
@@ -93,7 +93,11 @@
         </div>
       </div>
     </div>
-    <OrganismsSectionOperationSlide :side="false" :data="slide3" class="slide">
+    <OrganismsSectionOperationSlide
+      :side="false"
+      :data="slide3"
+      class="slide slide__last"
+    >
       <p class="mb20">
         {{ $t('project.block_4.text') }}
       </p>
@@ -417,7 +421,6 @@ export default {
 
   &__title {
     margin-bottom: 36px;
-
     &.protocol::v-deep {
       align-items: center;
 
@@ -524,6 +527,25 @@ export default {
     font-size: 18px;
     text-decoration: underline;
     color: #0da9d7;
+  }
+}
+
+.slide::v-deep {
+  .slide__wrapper {
+    height: auto;
+  }
+  .slide__content-wrapper {
+    padding-top: 0;
+  }
+}
+.last::v-deep {
+  .slide__content-wrapper {
+    padding-top: 60px;
+  }
+  .slide__wrapper {
+    padding: 30px 0 0 0;
+    //max-height: 700px;
+    align-items: start;
   }
 }
 </style>
