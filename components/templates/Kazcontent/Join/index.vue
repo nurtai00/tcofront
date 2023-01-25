@@ -20,7 +20,11 @@
     </div>
     <div class="gray">
       <div class="container">
-        <OrganismsSectionOperationSvg class="join__svg" :data="sideSvg[0]" />
+        <OrganismsSectionOperationSvg class="join__svg" :data="sideSvg[0]">
+          <template #description="{ description }">
+            <p>{{ description }}</p>
+          </template>
+        </OrganismsSectionOperationSvg>
       </div>
     </div>
     <div class="container">
@@ -37,7 +41,11 @@
         </div>
       </div>
     </div>
-    <OrganismsSectionOperationSlide :data="slide[0]" class="slide gray" />
+    <OrganismsSectionOperationSlide :data="slide[0]" class="slide gray">
+      <template #description="{ description }">
+        <p>{{ description }}</p>
+      </template>
+    </OrganismsSectionOperationSlide>
     <div class="container">
       <div class="join__content">
         <div class="join__subtitle">{{ $t('kazContent.results.title') }}</div>
@@ -54,62 +62,64 @@
       </div>
     </div>
     <OrganismsSectionOperationSlide :data="slide[1]" class="slide gray">
-      <div class="slide__contentt">
-        <p>
-          {{ $t('kazContent.nationalCarProgram.title') }}
-        </p>
-        <ul class="bold">
-          <li
-            v-for="item of $t('kazContent.nationalCarProgram.list')"
-            :key="item"
-          >
-            {{ item }}
-          </li>
-        </ul>
-        <p>
-          {{ $t('kazContent.nationalCarProgram.link') }}
-          <a href="https://www.imbc.kz/">https://www.imbc.kz/</a>
-        </p>
-      </div>
+      <template #description>
+        <div class="slide__contentt">
+          <ul class="bold">
+            <li
+              v-for="item of $t('kazContent.nationalCarProgram.list')"
+              :key="item"
+            >
+              {{ item }}
+            </li>
+          </ul>
+          <p>
+            {{ $t('kazContent.nationalCarProgram.link') }}
+            <a href="https://www.imbc.kz/">https://www.imbc.kz/</a>
+          </p>
+        </div>
+      </template>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSlide side :data="slide[2]" class="slide gray">
-      <div class="slide__dropdown">
-        <div
-          v-for="(dropdown, key) in $t('kazContent.accordions')"
-          :key="key"
-          class="slide__dropdown_item"
-          :class="{ active: dropdownActive === key }"
-        >
-          <div class="slide__dropdown_header">
-            {{ dropdown.title }}
-            <div
-              @click="
-                () => {
-                  dropdownActive = dropdownActive === key ? null : key
-                }
-              "
-            >
-              <img src="@/assets/icons/arrowDown.png" alt="icon" />
+      <template #description>
+        <div class="slide__dropdown">
+          <div
+            v-for="(dropdown, key) in $t('kazContent.accordions')"
+            :key="key"
+            class="slide__dropdown_item"
+            :class="{ active: dropdownActive === key }"
+          >
+            <div class="slide__dropdown_header">
+              {{ dropdown.title }}
+              <div
+                @click="
+                  () => {
+                    dropdownActive = dropdownActive === key ? null : key
+                  }
+                "
+              >
+                <img src="@/assets/icons/arrowDown.png" alt="icon" />
+              </div>
+            </div>
+            <div class="slide__dropdown_text">
+              {{ dropdown.text }}
             </div>
           </div>
-          <div class="slide__dropdown_text">
-            {{ dropdown.text }}
-          </div>
         </div>
-      </div>
+      </template>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSlide :data="slide[3]" class="slide">
-      <div class="slide__contentt">
-        <p class="bold">{{ $t('kazContent.motivations.title') }}</p>
-        <ul>
-          <li v-for="item of $t('kazContent.motivations.list')" :key="item">
-            {{ item }}
-          </li>
-        </ul>
-        <p class="bold">
-          {{ $t('kazContent.motivations.instructions') }}
-        </p>
-      </div>
+      <template #description>
+        <div class="slide__contentt">
+          <ul>
+            <li v-for="item of $t('kazContent.motivations.list')" :key="item">
+              {{ item }}
+            </li>
+          </ul>
+          <p class="bold">
+            {{ $t('kazContent.motivations.instructions') }}
+          </p>
+        </div>
+      </template>
     </OrganismsSectionOperationSlide>
     <div class="gray">
       <div class="container">
@@ -190,9 +200,7 @@ export default {
       slide: [
         {
           title: this.$t('kazContent.supportOriginBusiness.title'),
-          description: [
-            this.$t('kazContent.supportOriginBusiness.description'),
-          ],
+          description: this.$t('kazContent.supportOriginBusiness.description'),
           desciptionSolo: true,
           image: 'operation/program/img-1.png',
         },

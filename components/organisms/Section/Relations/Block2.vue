@@ -24,12 +24,14 @@
             <a class="link">{{ $t('relation.block_2.links[4]') }}</a>
             <a class="link">{{ $t('relation.block_2.links[5]') }}</a>
           </div>
-          <img
-            src="@/assets/img/relations/relations3.png"
-            alt=""
-            srcset=""
-            class="block_img"
-          />
+          <div class="information_content-img">
+            <img
+              src="@/assets/img/relations/relations3.png"
+              alt=""
+              srcset=""
+              class="block_img"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -42,12 +44,14 @@
       </div>
       <div class="container">
         <div class="information__wrapper">
-          <img
-            src="@/assets/img/relations/relations2.png"
-            alt=""
-            srcset=""
-            class="block_img"
-          />
+          <div class="information_content-img">
+            <img
+              src="@/assets/img/relations/relations2.png"
+              alt=""
+              srcset=""
+              class="block_img"
+            />
+          </div>
           <div class="information_content second">
             <AtomsHeading type="h3" color="main" class="mb40">
               {{ $t('relation.block_3.title') }}
@@ -156,12 +160,14 @@
               <a href="mailto:agencyldn@mhcb.co.uk">agencyldn@mhcb.co.uk</a>
             </div>
           </div>
-          <img
-            src="@/assets/img/relations/relations1.png"
-            alt=""
-            srcset=""
-            class="block_img"
-          />
+          <div class="information_content-img">
+            <img
+              src="@/assets/img/relations/relations1.png"
+              alt=""
+              srcset=""
+              class="block_img"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -207,23 +213,7 @@ export default {
   width: 100%;
   &__wrapper {
     display: flex;
-    gap: 60px;
-  }
-  .block_img {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    max-height: 600px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-    @include tablet() {
-      display: none;
-    }
+    height: 500px;
   }
   @include tablet() {
     .container {
@@ -233,10 +223,8 @@ export default {
   }
 }
 .reverse {
-  .block_img {
-    left: 0;
-  }
   .information_content {
+    width: 50%;
   }
 }
 .mobile {
@@ -258,16 +246,26 @@ export default {
   }
 }
 .information_content {
-  width: 100%;
+  width: 50%;
   // min-height: 706px;
   display: flex;
   flex-direction: column;
-  padding: 80px 0;
+  padding: 80px 60px 80px 0;
   .email {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+  }
+  &-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
   }
   @include tablet() {
     padding: 20px 16px 40px !important;
@@ -297,6 +295,8 @@ export default {
   }
 }
 .second {
+  padding-left: 60px;
+  padding-right: 0;
   p {
     margin-bottom: 12px;
     &:last-child {

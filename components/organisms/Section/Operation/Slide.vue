@@ -1,53 +1,40 @@
 <template>
-  <div class="slide">
+  <div class="wrapper">
     <div
-      class="container slide__wrapper"
-      :class="{ side, background: data.background, reverse: isReverse }"
+      class="slide container"
+      :class="{
+        slide__left: side,
+      }"
     >
       <div class="slide__content">
-        <div
-          class="slide__content-wrapper"
-          :class="{ slided: slide, reverse: isReverse, side }"
-        >
-          <AtomsHeading v-if="data.title" type="h3" class="slide__title title">
+        <div class="slide__content-wrapper">
+          <AtomsHeading
+            v-if="data.title"
+            type="h3"
+            class="slide__title title slide__title-desktop"
+          >
             {{ data.title }}
           </AtomsHeading>
-          <div
-            v-if="data.description"
-            class="slide__description"
-            :class="{ reverse: isReverse, solo: data.desciptionSolo }"
-          >
-            <div
-              v-for="(text, key) in data.description"
-              :key="key"
-              class="slide__description_item"
-              :style="{ transform: `translateX(-${slide}%)` }"
+          <div class="slide__description">
+            <slot :description="slicedDescription" name="description"> </slot>
+            <button
+              v-if="isLongDescription"
+              class="button-more"
+              @click.prevent="openPopup"
             >
-              {{ text }}
-            </div>
+              Читать дальше
+            </button>
           </div>
-          <template v-else>
-            <slot />
-          </template>
-          <template v-if="data.description">
-            <div v-if="data.description.length > 1" class="slide__arrow">
-              <div role="button" class="arrow__left" @click="onSlide('prev')">
-                <img alt="arrow" src="@/assets/icons/arrowDown.png" />
-              </div>
-              <div role="button" class="arrow__right" @click="onSlide('next')">
-                <img alt="arrow" src="@/assets/icons/arrowDown.png" />
-              </div>
-            </div>
-          </template>
-          <template v-if="data.link">
-            <div class="slide__link" @click="data.link()">
-              <span>{{ $t('products.more') }}</span>
-              <img src="@/assets/img/operation/arrow_next.png" />
-            </div>
-          </template>
         </div>
       </div>
       <div class="slide__image">
+        <AtomsHeading
+          v-if="data.title"
+          type="h3"
+          class="slide__title title slide__title-mobile"
+        >
+          {{ data.title }}
+        </AtomsHeading>
         <img :src="require(`@/assets/img/${data.image}`)" :alt="data.title" />
       </div>
     </div>
@@ -70,145 +57,88 @@ export default {
       type: Boolean,
       default: false,
     },
+    shouldBeDescriptionSlice: {
+      type: Boolean,
+      default: true,
+    },
+    hasEmit: {
+      type: Boolean,
+      default: false,
+    },
+    sliceWordLength: {
+      type: Number,
+      default: 150,
+    },
   },
-  data: () => ({
-    slide: 0,
-    index: 1,
-    percent: 0,
-  }),
-  watch: {
-    slide(value) {
-      if (this.data.description.length * 100 === value) {
-        this.slide = 0
-      }
+  computed: {
+    isLongDescription() {
+      return (
+        this.data?.description?.length >= this.sliceWordLength &&
+        this.shouldBeDescriptionSlice
+      )
+    },
+    slicedDescription() {
+      return this.isLongDescription
+        ? `${this.data.description.slice(0, this.sliceWordLength)}...`
+        : this.data.description
     },
   },
   methods: {
-    onSlide(direction) {
-      if (direction === 'prev' && this.slide === 0) {
+    openPopup() {
+      if (this.hasEmit) {
+        this.$emit('popup')
         return
       }
-      this.slide = direction === 'prev' ? this.slide - 100 : this.slide + 100
+      this.$modal.add({
+        title: 'Default',
+        payload: {
+          modal: 'Default',
+          title: this.data.title,
+          text: this.data.description,
+        },
+      })
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.arrow {
-  &__left {
-    cursor: pointer;
-    border-radius: 50%;
-    transform: rotate(90deg);
-    border: 1px solid $c-tco3;
-    margin-right: 10px;
-    height: 44px;
-    width: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover {
-      background-color: #e6eef0;
-    }
-    transition: background-color 0.3s linear;
-    img {
-      height: 11px;
-      width: 18px;
-    }
-    @include tablet {
-      border: transparent;
-      background-color: #fff;
-      height: 32px;
-      width: 32px;
-      z-index: 100;
-    }
-  }
-  &__right {
-    cursor: pointer;
-    border-radius: 50%;
-    transform: rotate(-90deg);
-    border: 1px solid $c-tco3;
-    height: 44px;
-    width: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover {
-      background-color: #e6eef0;
-    }
-    transition: background-color 0.3s linear;
-    img {
-      height: 10px;
-      width: 18px;
-    }
-    @include tablet {
-      background-color: #fff;
-      border: transparent;
-      height: 32px;
-      width: 32px;
-      z-index: 100;
-    }
-  }
-}
 .slide {
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    margin: 0 auto;
-    //height: 400px;
-    &.reverse {
-      flex-direction: row-reverse;
-      gap: 60px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0 auto;
+  height: 100%;
+  max-height: 460px;
+  &__left {
+    flex-direction: row-reverse;
+    .slide__content-wrapper {
+      padding: rem(80) 0 rem(40) rem(40);
       @include tablet {
-        flex-direction: column-reverse;
+        padding: rem(20) 0 rem(20) rem(20);
+      }
+      @include phone {
+        padding: 5px 0;
       }
     }
-    &.side {
-      flex-direction: row-reverse;
-      .slide__content {
-        margin-left: 0px;
-        margin-right: 0;
+    .slide__image {
+      width: 50%;
+      position: relative;
+      @include small-laptop {
       }
-    }
-    &.background {
-      background-color: $c-tco33;
+      @include tablet {
+        width: 100%;
+      }
     }
   }
-
   &__content {
-    width: 50% !important;
+    width: 50%;
     &-wrapper {
-      height: 100%;
-      padding-top: 60px;
-      width: 80%;
-      &.side {
-        transform: translateX(60px);
-      }
-      &.slided {
-        .slide {
-          &__arrow {
-            margin-bottom: 10px;
-            i:first-child {
-              cursor: pointer;
-              background-color: white;
-            }
-
-            i:last-child {
-              cursor: default;
-              background-color: $c-tco33;
-            }
-          }
-
-          &__description {
-            &_item {
-              transform: translateX(-100%);
-              font-family: Roboto, sans-serif;
-              font-weight: 400;
-            }
-          }
-        }
-      }
+      padding: rem(80) rem(40) rem(40) 0;
+    }
+    @include tablet {
+      width: 100%;
+      padding: rem(20) rem(20) rem(20) 0;
     }
   }
 
@@ -229,84 +159,79 @@ export default {
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    font-size: rem(28) !important;
+    line-height: rem(32);
+    &-mobile {
+      display: none;
+    }
+    @include laptop {
+      font-size: rem(24) !important;
+    }
+    @include tablet {
+      &-mobile {
+        display: block;
+        position: absolute;
+        color: white;
+        top: 20px;
+        left: 15px;
+      }
+    }
   }
 
   &__description {
-    margin-bottom: 20px;
     display: flex;
     overflow: hidden;
     color: $c-tco1;
-    &.solo {
-      height: auto;
-      margin-bottom: 0;
-    }
-    &.reverse {
-      margin-right: 60px;
-    }
-    &_item {
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
       font-family: Roboto, sans-serif;
       font-weight: 400;
       min-width: 100%;
       height: 100%;
-      font-size: 20px;
+      font-size: rem(20);
       line-height: 28px;
-      white-space: pre-line;
-      transition: 0.6s ease-in-out;
+      max-width: 500px;
     }
   }
-
-  &__arrow {
-    display: flex;
-    align-items: center;
-
-    i {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid $c-grey;
-      transform: rotate(90deg);
-      transform-origin: center;
-      font-size: 11px;
-      background-color: $c-tco33;
-
-      &:last-child {
-        transform: rotate(-90deg);
-        margin-left: 24px;
-        cursor: pointer;
-        background: white;
-      }
-    }
-  }
-
   &__image {
     width: 50%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
     @include tablet {
       min-height: 200px;
-    }
-    img {
       width: 100%;
-      @include tablet {
-        max-height: 250px;
-      }
+      display: flex;
+      flex-direction: column;
     }
-    @media (min-width: 1600px) {
+    @include middle-laptop {
+      width: 50%;
+    }
+    @include laptop {
       display: flex;
       align-items: center;
       overflow: hidden;
     }
+    img {
+      width: 100%;
+      object-fit: cover;
+      @include tablet {
+        max-height: 250px;
+      }
+    }
   }
 
   @include tablet {
+    margin-top: 80px;
     flex-direction: column-reverse;
 
-    &.side {
+    &__left {
       flex-direction: column-reverse;
     }
-
     &__image {
       width: 100%;
       max-height: 600px;
@@ -318,62 +243,41 @@ export default {
         height: auto;
       }
     }
-
     &__content {
       max-width: 100% !important;
       padding: 20px 16px;
     }
-
-    &.slide {
-      .slide__content {
+    &__left {
+      &__content {
         width: 100% !important;
         padding: 20px 16px;
       }
     }
-
-    &__title {
-      position: absolute;
-      top: 20px;
-      color: white !important;
-      width: 70%;
-      z-index: 1;
-    }
-
-    &__arrow {
-      position: absolute;
-      top: 320px;
+    &__title-desktop {
+      display: none;
     }
   }
-
   @include phone {
+    margin-top: 0;
+    max-height: 100%;
+    &__content-wrapper {
+      padding: 5px 0;
+    }
     &__image {
       height: auto;
     }
-
     &__title {
       width: 70%;
     }
-
-    &__arrow {
-      top: 157px;
-
-      i {
-        width: 24px;
-        height: 24px;
-        font-size: 6px;
-
-        &:last-child {
-          margin-left: 16px;
-        }
-      }
-    }
-
-    &__description {
-      &_item {
-        font-size: 16px;
-        line-height: 20px;
-      }
-    }
   }
+}
+.button-more {
+  cursor: pointer;
+  margin-top: 20px;
+  width: max-content;
+  color: #00b0f0;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
 }
 </style>

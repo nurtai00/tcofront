@@ -6,35 +6,17 @@
           v-for="(slide, slide_index) in slides"
           :key="slide_index"
         >
-          <div
-            class="double-block tco__partners"
-            style="justify-content: flex-start"
+          <OrganismsSectionOperationSlide
+            side
+            class="slide"
+            :data="{ ...slide, image: slide.imgSrc, description: slide.text }"
           >
-            <img :style="options.style" :src="slide.imgSrc" />
-            <div class="tco__partners-wrapper">
-              <h1 v-text="slide.title"></h1>
-              <div class="underline"></div>
-              <p v-text="slide.text"></p>
-            </div>
-          </div>
+            <template #description="{ description }">
+              <p>{{ description }}</p>
+            </template>
+          </OrganismsSectionOperationSlide>
         </MoleculesSlide>
       </OrganismsSlider>
-      <div class="main_b9_actions">
-        <img
-          class="main_b9_actions_prev"
-          src="../../../../assets/icons/small-chevron-left.png"
-          alt="small-chevron-left"
-          width="44px"
-          height="44px"
-        />
-        <img
-          class="main_b9_actions_next"
-          src="../../../../assets/icons/small-chevron-right.png"
-          alt="small-chevron-right"
-          width="44px"
-          height="44px"
-        />
-      </div>
     </div>
   </div>
 </template>
@@ -46,194 +28,65 @@ export default {
   data() {
     return {
       options: {
-        navigation: {
-          previous: '.main_b9_actions_prev',
-          next: '.main_b9_actions_next',
-        },
+        interval: 1000,
         loop: true,
         slidesPerView: 1,
         id: 'main_b9',
-        slide: this.slideTo,
-        style: 'max-height: 600px',
       },
       slides: [
         {
           title: this.$t('company.slider_5[0].title'),
           text: this.$t('company.slider_5[0].text'),
-          imgSrc: require('~/assets/img/company/slide_3_1.png'),
+          imgSrc: 'company/slide_3_1.png',
         },
         {
           title: this.$t('company.slider_5[1].title'),
           text: this.$t('company.slider_5[1].text'),
-          imgSrc: require('~/assets/img/company/slide_3_2.png'),
+          imgSrc: 'company/slide_3_2.png',
         },
         {
           title: this.$t('company.slider_5[2].title'),
           text: this.$t('company.slider_5[2].text'),
-          imgSrc: require('~/assets/img/company/slide_3_3.png'),
+          imgSrc: 'company/slide_3_3.png',
         },
         {
           title: this.$t('company.slider_5[3].title'),
           text: this.$t('company.slider_5[3].text'),
-          imgSrc: require('~/assets/img/company/slide_3_4.png'),
+          imgSrc: 'company/slide_3_4.png',
         },
         {
           title: this.$t('company.slider_5[4].title'),
           text: this.$t('company.slider_5[4].text'),
-          imgSrc: require('~/assets/img/company/slide_3_5.png'),
+          imgSrc: 'company/slide_3_5.png',
         },
         {
           title: this.$t('company.slider_5[5].title'),
           text: this.$t('company.slider_5[5].text'),
-          imgSrc: require('~/assets/img/company/slide_3_6.png'),
+          imgSrc: 'company/slide_3_6.png',
         },
       ],
     }
   },
 
   mounted() {},
-
-  methods: {
-    slideTo() {},
-  },
 }
 </script>
 
-<style lang="scss" v-deep scoped>
+<style lang="scss" scoped>
 .main {
   background: #f2f6f7;
+
+  height: 460px;
 }
-.slider-wrapper {
-  height: 700px;
-}
-.tco {
-  &__partners {
-    &-wrapper {
-      padding: 40px 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 30px;
-      text-align: left;
-      margin-bottom: 70px;
-      width: 50%;
-      @media (max-width: 1200px) {
-        padding: 15px;
-      }
-      @media (max-width: 886px) {
-        max-width: inherit;
-      }
-      .underline {
-        display: block;
-        position: relative;
-        width: 80%;
-        border: 1px solid #8c9fa6;
-        @media (orientation: portrait) {
-          display: none;
-        }
-      }
-      .line {
-        display: block;
-        position: relative;
-        width: 80vw;
-        border: 1px solid #8c9fa6;
-      }
-      h1 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 38px;
-        line-height: 46px;
-        color: #015467;
-        @media (max-width: 385px) {
-          font-size: 32px;
-        }
-        @media (orientation: portrait) {
-          font-size: 20px;
-          line-height: 26px;
-          color: #ffffff;
-          position: absolute;
-          left: 16px;
-          top: 40px;
-        }
-      }
-      span {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 38px;
-        line-height: 42px;
-        color: #015467;
-      }
-      p {
-        @media (orientation: portrait) {
-          font-size: 16px;
-          line-height: 22px;
-        }
-      }
-    }
-  }
+::v-deep .slide__content-wrapper {
+  padding-top: 80px !important;
 }
 ::v-deep .slider-wrapper {
-  height: auto;
+  height: 460px !important;
 }
-.double-block {
-  @media (orientation: portrait) {
-    position: relative;
-  }
-  img {
-    width: 50%;
-    @media (orientation: portrait) {
-      height: 216px;
-      object-fit: cover;
-    }
-  }
+.slide {
 }
 section {
   position: relative;
-}
-.main_b9_actions {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 650px;
-  bottom: 50px;
-  @media (orientation: portrait) {
-    left: 16px;
-    position: absolute;
-    top: 175px;
-    bottom: auto;
-  }
-  img {
-    padding: 12px 18px 12px 14px;
-    border: 1px solid #8c9fa6;
-    border-radius: 50%;
-    margin-right: 24px;
-    cursor: pointer;
-    pointer-events: auto;
-    touch-action: auto;
-    background: rgba(1, 84, 103, 0.1);
-    @media (orientation: portrait) {
-      padding: 7px 10px 7px 8px;
-      margin-right: 12px;
-      width: 26px;
-      height: 26px;
-      background: #ffffff;
-    }
-  }
-  img:last-child {
-    padding: 12px 14px 12px 18px;
-    @media (orientation: portrait) {
-      padding: 7px 8px 7px 10px;
-      margin-right: 12px;
-    }
-  }
-  // .disabled {
-  //   cursor: not-allowed;
-  //   pointer-events: none;
-  //   touch-action: none;
-  //   background: #ffffff;
-  // }
 }
 </style>

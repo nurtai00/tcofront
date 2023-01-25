@@ -234,23 +234,30 @@
       </div>
     </div>
 
-    <OrganismsSectionOperationSlide :data="slide[0]" class="slide gray">
-      <div class="slide__body">
-        <hr />
-        <p class="subtitle">{{ $t('kazContent.cooperationTco.subtitle') }}</p>
-        <p>
-          {{ $t('kazContent.cooperationTco.description') }}
-        </p>
-        <AtomsFile
-          :file="contractsPlanLink"
-          :text="$t('kazContent.cooperationTco.files')[0]"
-          icon="xls"
-        />
-        <AtomsFile
-          :file="updatesContractsPlanLink"
-          :text="$t('kazContent.cooperationTco.files')[1]"
-          icon="xls"
-        />
+    <OrganismsSectionOperationSlide
+      :data="slide[0]"
+      class="gray full"
+      :should-be-description-slice="false"
+    >
+      <template #description="{ description }">
+        <div class="slide__body">
+          <hr />
+          <p class="subtitle">{{ $t('kazContent.cooperationTco.subtitle') }}</p>
+          <p>
+            {{ description }}
+          </p>
+          <AtomsFile
+            style="margin-top: 20px"
+            :file="contractsPlanLink"
+            :text="$t('kazContent.cooperationTco.files')[0]"
+            icon="xls"
+          />
+          <AtomsFile
+            :file="updatesContractsPlanLink"
+            :text="$t('kazContent.cooperationTco.files')[1]"
+            icon="xls"
+          />
+        </div>
         <div class="slide__content_more">
           <div v-if="more" class="slide__content_more__text">
             {{ $t('kazContent.cooperationTco.accordion.description') }}
@@ -278,7 +285,7 @@
             $t('kazContent.cooperationTco.providerInterest.descriptions.second')
           }}
         </p>
-      </div>
+      </template>
     </OrganismsSectionOperationSlide>
     <div class="container">
       <div class="kazakhstani__content">
@@ -303,9 +310,14 @@
     </div>
     <OrganismsSectionOperationSlide
       :side="true"
+      :should-be-description-slice="false"
       :data="slide[1]"
       class="slide gray"
-    />
+    >
+      <template #description="{ description }">
+        <p>{{ description }}</p>
+      </template>
+    </OrganismsSectionOperationSlide>
     <div class="container">
       <div class="kazakhstani__working">
         <div>
@@ -365,20 +377,36 @@
         </div>
       </div>
     </div>
-    <OrganismsSectionOperationSlide :data="slide[2]" class="slide" />
-    <OrganismsSectionOperationSlide :side="true" :data="slide[3]" class="slide">
-      <div class="slide__body">
-        <hr />
+    <OrganismsSectionOperationSlide
+      :data="slide[2]"
+      class="slide"
+      :should-be-description-slice="false"
+    >
+      <template #description="{ description }">
         <p>
-          {{ $t('kazContent.rightWay.description') }}
+          {{ description }}
         </p>
-        <p class="subtitle">
-          {{ $t('kazContent.rightWay.link')[0] }}
-          <a href="mailto:kcdsearch@tengizchevroil.com">{{
-            $t('kazContent.rightWay.link')[1]
-          }}</a>
-        </p>
-      </div>
+      </template>
+    </OrganismsSectionOperationSlide>
+    <OrganismsSectionOperationSlide
+      :side="true"
+      :data="slide[3]"
+      class="slide last"
+    >
+      <template #description="{ description }">
+        <div class="slide__body">
+          <hr />
+          <p>
+            {{ description }}
+          </p>
+          <p class="subtitle">
+            {{ $t('kazContent.rightWay.link')[0] }}
+            <a href="mailto:kcdsearch@tengizchevroil.com">{{
+              $t('kazContent.rightWay.link')[1]
+            }}</a>
+          </p>
+        </div>
+      </template>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionCareerBlock8 />
   </div>
@@ -475,27 +503,24 @@ export default {
       },
       slide: [
         {
-          style: 'width: 50vw; max-width:50vw',
           title: this.$t('kazContent.cooperationTco.title'),
           image: 'kazakhstani/kazakhstani1.png',
+          description: this.$t('kazContent.cooperationTco.description'),
         },
         {
-          style: 'width: 50vw; max-width:50vw',
           title: this.$t('kazContent.localeSuppliers.title'),
-          description: [this.$t('kazContent.localeSuppliers.description')],
+          description: this.$t('kazContent.localeSuppliers.description'),
           image: 'kazakhstani/kazakhstani2.png',
         },
         {
-          style: 'width: 50vw; max-width:50vw',
           title: this.$t('kazContent.foreignTools.title'),
-          description: [this.$t('kazContent.foreignTools.description')],
-          desciptionSolo: true,
+          description: this.$t('kazContent.foreignTools.description'),
           image: 'kazakhstani/kazakhstani3.png',
         },
         {
-          style: 'width: 50vw; max-width:50vw',
           title: this.$t('kazContent.rightWay.title'),
           image: 'kazakhstani/kazakhstani4.png',
+          description: this.$t('kazContent.rightWay.description'),
         },
       ],
       times: [
@@ -1081,15 +1106,19 @@ export default {
   &__news {
     background: #f2f6f7;
   }
-
+  .slide {
+    .full {
+      max-height: 100% !important;
+    }
+  }
   .slide::v-deep {
     .slide__content-wrapper {
-      padding-top: 60px;
+      //padding-top: 60px;
     }
     .slide__wrapper {
-      padding: 30px 0 0 0;
-      //max-height: 700px;
-      align-items: start;
+      //padding: 30px 0 0 0;
+      ////max-height: 700px;
+      //align-items: start;
     }
     &.gray {
       background: $c-tco33;
@@ -1101,37 +1130,37 @@ export default {
       }
 
       &__content {
-        &_more {
-          position: relative;
-          &__text {
-            position: absolute;
-            bottom: 25px;
-            background: white;
-            padding: 12px 20px;
-            border-radius: 4px;
-            font-size: 14px;
-            width: 100%;
-          }
-
-          &__link {
-            color: $c-tco5;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            margin-bottom: 40px;
-
-            i {
-              margin-left: 10px;
-              font-size: 22px;
-              transform-origin: center;
-              transform: rotate(-90deg);
-
-              &.more {
-                transform: rotate(90deg);
-              }
-            }
-          }
-        }
+        //&_more {
+        //  //position: relative;
+        //  &__text {
+        //    position: absolute;
+        //    bottom: 25px;
+        //    background: white;
+        //    padding: 12px 20px;
+        //    border-radius: 4px;
+        //    font-size: 14px;
+        //    width: 100%;
+        //  }
+        //
+        //  &__link {
+        //    color: $c-tco5;
+        //    display: flex;
+        //    align-items: center;
+        //    cursor: pointer;
+        //    margin-bottom: 40px;
+        //
+        //    i {
+        //      margin-left: 10px;
+        //      font-size: 22px;
+        //      transform-origin: center;
+        //      transform: rotate(-90deg);
+        //
+        //      &.more {
+        //        transform: rotate(90deg);
+        //      }
+        //    }
+        //  }
+        //}
       }
     }
 
@@ -1144,13 +1173,11 @@ export default {
       color: $c-tco1;
       font-size: 24px;
       line-height: 28px;
-      margin-bottom: 20px;
       font-weight: 700;
     }
 
     p {
-      margin-bottom: 40px;
-
+      padding-bottom: 20px;
       a {
         color: $c-tco5;
         text-decoration: underline;
@@ -1176,7 +1203,15 @@ export default {
     }
   }
 }
-
+.full::v-deep {
+  max-height: 100%;
+  .slide {
+    max-height: 100%;
+  }
+  .wrapper {
+    max-height: 100% !important;
+  }
+}
 .cards {
   display: flex;
   justify-content: space-between;
@@ -1200,5 +1235,8 @@ export default {
       width: calc((100% - 9px) / 2);
     }
   }
+}
+.subtitle {
+  padding-bottom: 0 !important;
 }
 </style>

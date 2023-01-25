@@ -7,9 +7,13 @@
           v-for="(slide, index) of slides"
           :key="index + 'key'"
           is-reverse
-          :side="!!(index % 2)"
+          side
           :data="slide"
-        />
+        >
+          <template #description="{ description }">
+            <p>{{ description }}</p>
+          </template>
+        </OperationSlide>
       </div>
     </div>
   </div>

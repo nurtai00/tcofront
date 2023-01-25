@@ -50,8 +50,8 @@ a {
 }
 
 .container {
-  --width-container: #{$lg};
-  max-width: $lg;
+  --width-container: #{$xlg};
+  max-width: $xlg;
   width: 100%;
   margin: 0 auto;
   @include laptop {

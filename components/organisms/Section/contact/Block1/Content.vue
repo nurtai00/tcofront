@@ -62,6 +62,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .contact__office {
+  height: 460px;
   margin-top: 40px;
   background-color: #f2f6f7;
   @include phone() {
@@ -71,10 +72,15 @@ export default {
   }
   &-info {
     display: flex;
+    h3 {
+      font-size: rem(28);
+      line-height: rem(32);
+    }
     @include middle-laptop() {
       flex-direction: column-reverse;
     }
     & .photo {
+      height: 460px;
       position: relative;
       bottom: 0;
       right: calc((1174px - 100vw) / 2);
@@ -125,10 +131,11 @@ export default {
     }
   }
   &__list {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     width: auto;
+    gap: 20px;
     @include phone() {
       margin-top: 0;
     }
@@ -136,7 +143,6 @@ export default {
       &__item {
         width: auto;
         font-family: Roboto, sans-serif;
-        margin-top: 14px;
         .withIcon {
           display: flex;
           align-items: center;

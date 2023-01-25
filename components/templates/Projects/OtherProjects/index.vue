@@ -31,7 +31,12 @@
       class="content"
       :side="!!(key % 2)"
       :data="item"
-    />
+      :shouldBeDescriptionSlice="false"
+    >
+      <template #description="{ description }">
+        <p>{{ description }}</p>
+      </template>
+    </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationHistory />
     <!-- <OrganismsSectionCareerBlock8 class="projects__news" /> -->
   </div>
@@ -62,12 +67,12 @@ export default {
       slide: [
         {
           title: this.$t('project.other.projects[0].title'),
-          description: [this.$t('project.other.projects[0].text')],
+          description: this.$t('project.other.projects[0].text'),
           image: 'projects/projects1.png',
         },
         {
           title: this.$t('project.other.projects[1].title'),
-          description: [this.$t('project.other.projects[0].text')],
+          description: this.$t('project.other.projects[0].text'),
           image: 'projects/projects2.png',
           link: () => {
             this.$store.commit('side/open', {
@@ -77,7 +82,7 @@ export default {
         },
         {
           title: this.$t('project.other.projects[2].title'),
-          description: [this.$t('project.other.projects[0].text')],
+          description: this.$t('project.other.projects[0].text'),
           image: 'projects/projects1.png',
         },
       ],

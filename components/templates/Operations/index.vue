@@ -26,12 +26,20 @@
       :side="!!(key % 2)"
       :data="item"
       :class="`slide slide${key}`"
-    />
+    >
+      <template #description="{ description }">
+        <p>{{ description }}</p>
+      </template>
+    </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSvg
       ref="security"
       class="operations__production-security"
       :data="sideSvg[1]"
-    />
+    >
+      <template #description="{ description }">
+        <p>{{ description }}</p>
+      </template>
+    </OrganismsSectionOperationSvg>
     <OrganismsSectionOperationChart />
     <OrganismsSectionOperationSlide
       v-for="(item, key) in textSlide2"
@@ -39,7 +47,18 @@
       :side="!(key % 2)"
       :data="item"
       :class="`slide slide2${key}`"
-    />
+    >
+      <template #description="{ description, showLinkButton, openPopup }">
+        <p>{{ description }}</p>
+        <button
+          v-if="showLinkButton"
+          class="operations__button-more"
+          @click="openPopup"
+        >
+          Читать дальше
+        </button>
+      </template>
+    </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSvg
       class="operations__production-security chesm"
       :data="sideSvg[2]"
@@ -57,6 +76,7 @@
           <OrganismsSectionOperationCard
             v-for="(item, key) in cards"
             :key="key"
+            :class="`slide-grey-${key}`"
             :content="item"
           />
         </div>
@@ -124,25 +144,21 @@ export default {
           title: this.$t('operation.textSlide')[0].title,
           description: this.$t('operation.textSlide')[0].description,
           image: 'operation/operations1.png',
-          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[1].title,
           description: this.$t('operation.textSlide')[1].description,
           image: 'operation/operations2.png',
-          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[2].title,
           description: this.$t('operation.textSlide')[2].description,
           image: 'operation/operations3.png',
-          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide')[3].title,
           description: this.$t('operation.textSlide')[3].description,
           image: 'operation/operations4.png',
-          style: 'width:50vw;max-width:50vw',
         },
       ],
       textSlide2: [
@@ -155,21 +171,16 @@ export default {
               description: this.$t('operation.textSlide2')[0].link,
             })
           },
-          background: true,
-          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide2')[1].title,
           description: this.$t('operation.textSlide2')[1].description,
           image: 'operation/operations6.png',
-          style: 'width:50vw;max-width:50vw',
         },
         {
           title: this.$t('operation.textSlide2')[2].title,
           description: this.$t('operation.textSlide2')[2].description,
           image: 'operation/operations7.png',
-          background: true,
-          style: 'width:50vw;max-width:50vw',
         },
       ],
     }
@@ -204,10 +215,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  max-width: 1200px;
-  width: 100%;
-}
 .operations {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -222,7 +229,6 @@ export default {
   &__tags {
     margin-bottom: 32px;
   }
-
   .svg1::v-deep {
     .block__icon {
       img {
@@ -244,24 +250,11 @@ export default {
       @include tablet() {
         padding: 0;
       }
-    }
-  }
-  .slide0::v-deep {
-    h3 {
-      max-width: 270px;
-      margin-bottom: 0px;
-    }
-  }
-  .slide1::v-deep {
-    h3 {
-      width: 565px;
-      margin-bottom: 0px;
-      @media (max-width: 1350px) {
-        width: auto;
+      @include phone {
+        width: 100% !important;
       }
     }
   }
-
   &__production-security.block {
     padding: 80px 0;
 
@@ -273,13 +266,6 @@ export default {
       padding: 20px 0;
     }
   }
-
-  .slide22::v-deep {
-    h3 {
-      margin-bottom: 0px;
-    }
-  }
-
   .chesm {
     background: white;
   }
@@ -321,6 +307,9 @@ export default {
   .slide__wrapper {
     height: 400px;
   }
+}
+.slide-grey-0 {
+  background: #f2f6f7;
 }
 .slide20::v-deep {
   background: #f2f6f7;

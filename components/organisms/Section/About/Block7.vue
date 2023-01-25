@@ -605,7 +605,7 @@ export default {
       transition: 0.5s all ease;
       text-align: right;
       padding-right: 3.2vw;
-      top: 15.6vw;
+      top: rem(200px);
       @media (orientation: portrait) {
         font-size: 22vw; // 86px;
         line-height: 24vw; // 90px;
