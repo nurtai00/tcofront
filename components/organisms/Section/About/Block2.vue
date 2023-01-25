@@ -20,6 +20,7 @@
         </div>
       </div>
       <div class="tco__barrels-item second">
+        <div />
         <div class="tco__barrels-wrapper" style="width: 100%">
           <img src="@/assets/img/barrels.png" />
           <div>
@@ -201,7 +202,6 @@ section {
         justify-content: flex-end;
       }
       &.second {
-        margin-left: 200px;
         justify-content: flex-start;
       }
       @media (max-width: 450px) {

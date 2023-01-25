@@ -31,10 +31,10 @@ export default {
       options: {
         pagination: '.steps span',
         loop: true,
+        interval: 1000,
         slidesPerView: 1,
         id: 'main-slider',
         slide: this.slideTo,
-        style: 'max-height: 560px;',
       },
     }
   },
@@ -72,12 +72,19 @@ export default {
 <style scoped lang="scss">
 .slider-cont {
   position: relative;
-  overflow: hidden;
   background: #f2f6f7;
+  height: 410px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  @include tablet {
+    height: 100%;
+  }
 }
 .tco {
   &__partners {
     justify-content: flex-end;
+
     @media (orientation: portrait) {
       flex-direction: column-reverse;
     }
@@ -108,15 +115,15 @@ export default {
       h1 {
         font-weight: 700;
         font-size: 56px;
-        line-height: 64px;
+        line-height: 24px;
         @media (orientation: portrait) {
           font-size: 24px;
         }
       }
       h3 {
         font-weight: 700;
-        font-size: 38px;
-        line-height: 46px;
+        font-size: 28px;
+        line-height: 32px;
         @media (orientation: portrait) {
           font-size: 20px;
           line-height: 26px;
@@ -132,7 +139,7 @@ export default {
       h3:nth-child(2) {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        margin-top: 80px;
+        margin-top: 0px;
         margin-bottom: 20px;
         @media (orientation: portrait) {
           margin: 0px;
@@ -151,8 +158,8 @@ export default {
   align-items: center;
   gap: 2px;
   position: relative;
-  bottom: 20px;
-  left: 20px;
+  bottom: 180px;
+  left: 130px;
   @media (orientation: portrait) {
     left: 16px;
     top: -20px;

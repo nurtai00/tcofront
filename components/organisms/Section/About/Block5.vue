@@ -77,8 +77,8 @@ export default {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
-        font-size: 38px;
-        line-height: 46px;
+        font-size: rem(28);
+        line-height: rem(32);
         color: #015467;
         @media (max-width: 385px) {
           font-size: 20px;

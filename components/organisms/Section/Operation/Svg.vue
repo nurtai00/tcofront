@@ -54,6 +54,9 @@ export default {
   &__content {
     padding-right: 40px;
     width: 70%;
+    @include phone {
+      width: 100%;
+    }
     &_icon {
       display: none;
       font-size: 240px;

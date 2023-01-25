@@ -39,39 +39,53 @@
     <OrganismsSectionOperationSlide
       id="projectSlide"
       side
+      style="padding-bottom: 20px"
       :data="slide"
       class="slide"
     >
-      <div class="projects__slide" style="width: 600px; max-width: 600px">
-        <div class="left">
-          <div
-            v-for="(item, key) in slider.left"
-            :key="key"
-            :class="{
-              active: key === animationProgress,
-              inactive: key < animationProgress,
-            }"
-            @click="animationProgress = key"
-          >
-            {{ item }}
+      <template #description>
+        <div class="projects__slide" style="width: 600px; max-width: 600px">
+          <div class="left">
+            <div
+              v-for="(item, key) in slider.left"
+              :key="key"
+              :class="{
+                active: key === animationProgress,
+                inactive: key < animationProgress,
+              }"
+              @click="animationProgress = key"
+            >
+              {{ item }}
+            </div>
+          </div>
+          <div class="right">
+            <div
+              v-for="(item, key) in slider.right"
+              :key="key"
+              :class="{ active: key === animationProgress }"
+            >
+              {{ item }}
+            </div>
           </div>
         </div>
-        <div class="right">
-          <div
-            v-for="(item, key) in slider.right"
-            :key="key"
-            :class="{ active: key === animationProgress }"
-          >
-            {{ item }}
-          </div>
-        </div>
-      </div>
+      </template>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSlide
       :side="false"
       :data="slide2"
       class="slide last"
-    />
+    >
+      <template #description="{ description, showLinkButton }">
+        <p>{{ description }}</p>
+        <button
+          v-if="showLinkButton"
+          class="operations__button-more"
+          @click="slide2.link()"
+        >
+          Читать дальше
+        </button>
+      </template>
+    </OrganismsSectionOperationSlide>
     <div class="protocols">
       <div class="container">
         <div class="projects__protocols">
@@ -98,19 +112,26 @@
       :data="slide3"
       class="slide slide__last"
     >
-      <p class="mb20">
-        {{ $t('project.block_4.text') }}
-      </p>
-      <AtomsFile
-        :file="docPubr"
-        :text="$t('project.block_4.pdf_1')"
-        icon="pdf"
-      />
-      <AtomsFile
-        file="@/assets/files/statistics.pdf"
-        :text="$t('project.block_4.pdf_2')"
-        icon="pdf"
-      />
+      <template #description="{ description, showLinkButton, openPopup }">
+        <p>{{ description }}</p>
+        <button
+          v-if="showLinkButton"
+          class="operations__button-more"
+          @click="openPopup"
+        >
+          Читать дальше
+        </button>
+        <AtomsFile
+          :file="docPubr"
+          :text="$t('project.block_4.pdf_1')"
+          icon="pdf"
+        />
+        <AtomsFile
+          file="@/assets/files/statistics.pdf"
+          :text="$t('project.block_4.pdf_2')"
+          icon="pdf"
+        />
+      </template>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationHistory />
   </div>
@@ -151,9 +172,8 @@ export default {
         image: 'projects/projects1.png',
       },
       slide2: {
-        style: 'width:50vw;max-width:50vw',
         title: this.$t('project.block_3.title'),
-        description: [this.$t('project.block_3.text')],
+        description: this.$t('project.block_3.text'),
         image: 'projects/projects2.png',
         link: () => {
           this.$store.commit('side/open', {
@@ -171,32 +191,32 @@ export default {
         },
       },
       slide3: {
-        style: 'width:50vw;max-width:50vw',
         title: this.$t('project.block_4.title'),
         image: 'projects/projects3.png',
+        description: this.$t('project.block_4.text'),
         link: () => {
           this.$store.commit('side/open', {
             name: this.$t('project.block_4.title'),
             html: `<p>${this.$t('project.block_4.big_text')}</p>
             <ul>
-<li>${this.$t('project.block_4.li_1')}</li>
-<li>${this.$t('project.block_4.li_2')}</li>
-<li>${this.$t('project.block_4.li_3')}</li>
-<li>${this.$t('project.block_4.li_4')}</li>
-<li>${this.$t('project.block_4.li_5')}</li>
-<li>${this.$t('project.block_4.li_6')}</li>
-<li>${this.$t('project.block_4.li_7')}</li>
-<li>${this.$t('project.block_4.li_8')}</li>
-<li>${this.$t('project.block_4.li_9')}</li>
-<li>${this.$t('project.block_4.li_10')}</li>
-<li>${this.$t('project.block_4.li_11')}</li>
-<li>${this.$t('project.block_4.li_12')}</li>
-<li>${this.$t('project.block_4.li_13')}</li>
-<li>${this.$t('project.block_4.li_14')}</li>
-<li>${this.$t('project.block_4.li_15')}</li>
-</ul>
+              <li>${this.$t('project.block_4.li_1')}</li>
+              <li>${this.$t('project.block_4.li_2')}</li>
+              <li>${this.$t('project.block_4.li_3')}</li>
+              <li>${this.$t('project.block_4.li_4')}</li>
+              <li>${this.$t('project.block_4.li_5')}</li>
+              <li>${this.$t('project.block_4.li_6')}</li>
+              <li>${this.$t('project.block_4.li_7')}</li>
+              <li>${this.$t('project.block_4.li_8')}</li>
+              <li>${this.$t('project.block_4.li_9')}</li>
+              <li>${this.$t('project.block_4.li_10')}</li>
+              <li>${this.$t('project.block_4.li_11')}</li>
+              <li>${this.$t('project.block_4.li_12')}</li>
+              <li>${this.$t('project.block_4.li_13')}</li>
+              <li>${this.$t('project.block_4.li_14')}</li>
+              <li>${this.$t('project.block_4.li_15')}</li>
+            </ul>
 
-<p>${this.$t('project.block_4.last_text')}</p>
+            <p>${this.$t('project.block_4.last_text')}</p>
 `,
           })
         },
@@ -243,7 +263,9 @@ export default {
   mounted() {
     this.tags[0].offsetTop = this.$refs?.pbr?.$el?.offsetTop
     const element = document.getElementById('projectSlide')
-    if (window.innerWidth > 500) {
+    console.log(element)
+    if (window.innerWidth > 500 && element) {
+      console.log(element)
       element.style.height = element.offsetHeight + 'px'
     }
     element.addEventListener('wheel', (e) => {
@@ -268,6 +290,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.operations__button-more {
+  cursor: pointer;
+  margin-top: 20px;
+  width: max-content;
+  color: #00b0f0;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+}
 .projects {
   &__breadcrumbs {
     margin: 42px 0 22px;
@@ -362,8 +393,6 @@ export default {
   &__slide {
     display: flex;
     overflow: hidden;
-    gap: 20px;
-
     .left {
       width: 270px;
       font-size: 48px;
