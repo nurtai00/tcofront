@@ -2,9 +2,6 @@
   <div class="projects">
     <div class="container">
       <MoleculesBreadcrumbs class="projects__breadcrumbs">
-        <AtomsBreadOption to="/">
-          {{ $t('project.breadcrumbs_1[0]') }}
-        </AtomsBreadOption>
         <AtomsBreadOption to="/projects">
           {{ $t('project.breadcrumbs_1[1]') }}
         </AtomsBreadOption>
@@ -24,7 +21,15 @@
         />
       </div>
     </div>
-    <OrganismsSectionOperationSvg class="svgs" :data="sideSvg[0]" />
+    <OrganismsSectionOperationSvg class="svgs" :data="sideSvg[0]">
+      <template #description>
+        <p>{{ $t('project.other.descriprtion') }}</p>
+        <strong
+          style="font-style: italic; margin-top: 15px; display: inline-block"
+          >"{{ $t('project.other.author') }}"</strong
+        >
+      </template>
+    </OrganismsSectionOperationSvg>
     <OrganismsSectionOperationSlide
       v-for="(item, key) in slide"
       :key="'first' + key"
@@ -62,7 +67,6 @@ export default {
       sideSvg: [
         {
           title: this.$t('project.breadcrumbs_1[3]'),
-          description: this.$t('project.other.descriprtion'),
           icon: require('@/assets/icons/other-projects.png'),
         },
       ],

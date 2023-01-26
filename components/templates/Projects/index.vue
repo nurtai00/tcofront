@@ -488,8 +488,11 @@ export default {
   }
 
   .svgs {
-    &::v-deep .block__icon i {
-      font-size: 260px;
+    &::v-deep .block__icon {
+      max-height: 350px;
+      img {
+        height: 100%;
+      }
     }
 
     .file::v-deep a {
