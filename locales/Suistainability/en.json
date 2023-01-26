@@ -2,7 +2,7 @@
   "title": "Sustainability",
   "breadcrumbs": {
     "main": "Home",
-    "igilik": "project Игилик",
+    "igilik": "project Egilik",
     "psi": "project CIP"
   },
   "invest": "Social Investments",
@@ -213,7 +213,8 @@
       "card2": "Zhylyoi district",
       "card3": "Isatay district",
       "card4": "Makhambet district",
-      "card5": "Inderskiy district"
+      "card5": "Inderskiy district",
+      "card6": "Makat district"
     },
     "popup": {
       "title": "Projects for {year}",

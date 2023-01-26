@@ -409,8 +409,11 @@ export default {
   &__svg::v-deep {
     padding-bottom: 80px;
 
-    .block__icon i {
-      font-size: 300px;
+    .block__icon {
+      max-height: 420px;
+      img {
+        height: 100%;
+      }
     }
   }
 

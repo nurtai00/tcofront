@@ -95,7 +95,7 @@ export default {
               projects: this.$t('suistainability.project.lists.card5'),
             },
             {
-              id: 5,
+              id: 6,
               title: this.$t('suistainability.project.cardPlaces.card6'),
               modal: 'SustainabilityProject',
               projects: this.$t('suistainability.project.lists.card6'),

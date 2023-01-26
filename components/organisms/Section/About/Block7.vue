@@ -664,7 +664,7 @@ export default {
     width: 240px;
     height: 240px;
     left: 260px;
-    top: 310px;
+    top: 12vh;
     opacity: 0.4;
   }
 }
