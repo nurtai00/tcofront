@@ -60,10 +60,6 @@ export default {
       show_nav: false,
       routes: [
         {
-          name: this.$t('header.header_links[0]'),
-          link: this.localePath('/'),
-        },
-        {
           name: this.$t('header.header_links[1]'),
           link: this.localePath('/about'),
         },
@@ -118,10 +114,6 @@ export default {
   watch: {
     '$route.path'() {
       this.routes = [
-        {
-          name: this.$t('header.header_links[0]'),
-          link: this.localePath('/'),
-        },
         {
           name: this.$t('header.header_links[1]'),
           link: this.localePath('/about'),

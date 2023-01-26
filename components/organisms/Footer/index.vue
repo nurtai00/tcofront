@@ -2,11 +2,11 @@
   <footer>
     <div class="container">
       <NuxtLink to="/" class="mobile_logo">
-        <img src="@/assets/img/logo.png" />
+        <img src="@/assets/img/logo-footer.png" />
       </NuxtLink>
       <div class="footer_content">
         <NuxtLink to="/" class="logo">
-          <img src="@/assets/img/logo.png" />
+          <img src="@/assets/img/logo-footer.png" />
         </NuxtLink>
         <div class="block">
           <nuxt-link :to="localePath('/')">
@@ -98,8 +98,8 @@ footer {
     flex-direction: row;
   }
   .logo {
-    width: 120px;
-    height: 70px;
+    width: 180px;
+    height: 110px;
     img {
       width: 100%;
       height: 100%;
