@@ -661,10 +661,10 @@ export default {
   }
   &__yearcircle-fixed {
     position: sticky;
-    width: 224px;
-    height: 224px;
-    left: 250px;
-    top: 250px;
+    width: 240px;
+    height: 240px;
+    left: 260px;
+    top: 310px;
     opacity: 0.4;
   }
 }

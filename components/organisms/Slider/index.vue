@@ -41,7 +41,7 @@ export default {
     //   const slider = new Slide(this.options)
     // })
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    this.slider = new Slide(this.options)
+    this.slider = new Slide({ ...this.options })
   },
   beforeDestroy() {
     if (this.options.loop) {

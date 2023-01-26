@@ -259,15 +259,17 @@
     ]
   },
   "other": {
-    "descriprtion": "Будет небольшое введение или описани. Будет небольшое введение или описани. Будет небольшое введение или описани. Будет небольшое введение или описани. Будет небольшое введение или описани. Будет небольшое введение или описани. Будет небольшое введение или описани.",
+    "descriprtion": "“I truly believe that people are the greatest strength of this company, and our ability to overcome challenges and deliver results is a direct reflection of the amazing TCO organization” \nMick Kraly, FGP-WPMP Project director",
     "projects": [
       {
-        "title": "Project 1",
-        "text": "Будет описание проекта. Будет описание проекта. Будет описание проекта.Будет описание проекта. Будет описание проекта. Будет описание проекта.Будет описание проекта. Будет описание проекта. Будет описание проекта.Будет описание проекта. Будет описание проекта. Будет описание проекта.Будет описание проекта. Будет описание проекта. Будет описание проекта."
+        "title": "KTL Switchgear Upgrade (KSU)",
+        "text": "Existing Electrical Substations at TCO KTL plant have experienced multiple Arc Flash events causing several significant near misses, serious switchboard damage and reduced operations reliability leading to significant Loss of Production Opportunity (LPO) for the plants.",
+        "popupText": "The KTL Switchgear Upgrade (KSU) Project objectives are to eliminate Arc Flash hazards thereby creating a safe working environment for Operations and Maintenance personnel while minimizing process shutdowns and LPO risks mitigating high consequence reliability threats.\nKSU Project scope includes two new Substations and 32x Transformers installed at KTL-1 and KTL-2; Central Distribution Substation (CDS) upgraded to supply the power to the new Substations via 35/10 kV transformers; new sections of cable racks constructed from CDS to KTL-1 and KTL-2 areas; approximately 2000x cutovers performed within the live facilities to re-connect the process areas consumers to the new reliable equipment.\nKSU Project is the key Major Capital Project within TCOs portfolio which provides safe facilities for long term operation, improves overall TCO power grid reliability and will help maintain TCO production delivering long term value to TCO, Stakeholders and the Republic of Kazakhstan"
       },
       {
-        "title": "Project 2",
-        "text": "Будет описание проекта. Будет описание проекта. Будет описание проекта.Будет описание проекта. Будет описание проекта. Будет описание проекта.Будет описание проекта. Будет описание проекта. Будет описание проекта.Будет описание проекта. Будет описание проекта. Будет описание проекта.Будет описание проекта. Будет описание проекта. Будет описание проекта."
+        "title": "KLPE Gas Separation Unit (GSU) Project",
+        "text": "The Government of the Republic of Kazakhstan, together with its partners, is working on the development of an integrated gas-chemical complex to produce Polyethylene in the Atyrau region of the Republic of Kazakhstan.",
+        "popupText": "As part of this development KLPE is implementing the design and construction of a Gas Separation Unit (GSU) close to the feedstock source - Tengiz oil and gas field. GSU facility is planned to be located in the territory of TCO allowing for integration with the Tengiz existing facilities.\nThe design and construction of the GSU facility includes an Ethane Recovery Unit of a licensor vendor. The overall KLPE GSU project objective is to recover and export ethane and propane product from the dry gas supplied by TCO to GSU and the return of lean gas to TCO.\nTCO supports the GSU project based on the guiding principles, that GSU operates safely and reliably with no impact to Base Operations and GSU has no impact to TCO’s cash flow."
       },
       {
         "title": "Project 3",

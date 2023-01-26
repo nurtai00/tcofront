@@ -25,6 +25,7 @@ const webpack = require('webpack')
 const build =
   process.env.NODE_ENV === 'production'
     ? {
+        transpile: ['swiper'],
         extend(config, ctx) {
           if (ctx && ctx.isClient) {
             // config.optimization.splitChunks.maxSize = 4096
@@ -86,7 +87,7 @@ const build =
         //   minimize: true,
         // },
       }
-    : {}
+    : { transpile: ['swiper'] }
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -249,7 +250,9 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build,
+  build: {
+    transpile: ['swiper'],
+  },
   // extend(config, { isClient }) {
   //   if (isClient) {
   //     console.log(config.entry) // { app: [ "path/to/client.js", "eventsource-polyfill", "etc..." ] } (currently undefined)

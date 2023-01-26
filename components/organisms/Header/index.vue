@@ -37,9 +37,9 @@
       </div>
     </div>
     <div
+      ref="links_container"
       class="links container"
       :class="{ show_nav: show_nav }"
-      ref="links_container"
     >
       <div v-for="(route, idx) in routes" :key="idx">
         <NuxtLink
@@ -211,7 +211,7 @@ header {
     display: none;
   }
   .logo {
-    width: 70px;
+    width: 120px;
     height: 70px;
     margin-right: 36px;
     img {

@@ -79,7 +79,11 @@
         </div>
       </template>
     </OrganismsSectionOperationSlide>
-    <OrganismsSectionOperationSlide side :data="slide[2]" class="slide gray">
+    <OrganismsSectionOperationSlide
+      side
+      :data="slide[2]"
+      class="slide gray dropdown"
+    >
       <template #description>
         <div class="slide__dropdown">
           <div
@@ -512,7 +516,7 @@ export default {
           justify-content: space-between;
           font-size: 24px;
           font-weight: 700;
-          padding: 40px 0 24px;
+          padding: 40px 0;
           border-bottom: 1px solid rgba(48, 69, 78, 0.2);
 
           div {
@@ -692,6 +696,14 @@ export default {
         margin-bottom: 20px;
       }
     }
+  }
+}
+.dropdown::v-deep {
+  &.slide {
+    max-height: 600px;
+  }
+  .slide {
+    max-height: 600px;
   }
 }
 </style>

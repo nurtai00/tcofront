@@ -7,16 +7,13 @@
           @click="$router.push(localePath('/sustainability/psi'))"
         />
         <div class="invest__description">
-          <p>
-            {{ $t('suistainability.socialProgrammingInvest.description') }}
-          </p>
-          <p>
-            <!--            В рамках данной программы в 2010-2021 гг. было реализовано 94-->
-            <!--            проекта на общую сумму около 11,1 млн. долл. США. Бюджет ПСИ в 2022-->
-            <!--            году составляет 2,3 миллиона долларов США. Бенефициарами проектов,-->
-            <!--            реализуемых НПО являются дети, взрослые люди, пенсионеры,-->
-            <!--            малообеспеченные семьи, многодетные семьи, дети-инвалиды и многие-->
-            <!--            другие представители населения Атырауской области. s-->
+          <p
+            v-for="text of $t(
+              'suistainability.socialProgrammingInvest.description'
+            )"
+            :key="text"
+          >
+            {{ text }}
           </p>
         </div>
       </div>
@@ -66,20 +63,20 @@ export default {
   &__wrapper {
     display: flex;
     gap: 72px;
-    align-items: center;
     //max-height: 650px;
   }
   &__content {
+    padding-top: 60px;
     width: 50%;
   }
   &__description {
-    margin-top: 40px;
+    margin-top: 30px;
     color: $c-text;
     font-size: 20px;
     font-weight: 400;
     font-family: Roboto, sans-serif;
     p:not(:first-child) {
-      margin-top: 20px;
+      margin-top: 10px;
     }
   }
   &__img {

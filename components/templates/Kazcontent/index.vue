@@ -242,7 +242,9 @@
       <template #description="{ description }">
         <div class="slide__body">
           <hr />
-          <p class="subtitle">{{ $t('kazContent.cooperationTco.subtitle') }}</p>
+          <p class="subtitle">
+            {{ $t('kazContent.cooperationTco.subtitle') }}
+          </p>
           <p>
             {{ description }}
           </p>
@@ -1237,6 +1239,10 @@ export default {
   }
 }
 .subtitle {
+  display: inline-block;
+  font-size: rem(24);
+  font-weight: 700 !important;
+  margin: 20px 0 !important;
   padding-bottom: 0 !important;
 }
 </style>

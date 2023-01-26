@@ -99,7 +99,10 @@
   },
   "socialProgrammingInvest": {
     "title": "Community Investment Program (CIP)",
-    "description": "TCO’s Community Investment Program was launched in 2010. It is aimed at supporting education, healthcare, involvement of the population in the volunteer movement and economic development.\nWithin the framework of this program, 94 projects were implemented in 2010-2021 for a total amount of about $11.1 million. The CIP budget in 2022 is $2.3 million. Beneficiaries of projects implemented by NGOs are children, adults, pensioners, low-income families, large families, disabled children and many other representatives of the population of Atyrau Oblast.",
+    "description": [
+      "TCO’s Community Investment Program was launched in 2010. It is aimed at supporting education, healthcare, involvement of the population in the volunteer movement and economic development.\nWithin the framework of this program, 94 projects were implemented in 2010-2021 for a total amount of about $11.1 million.",
+      "The CIP budget in 2022 is $2.3 million. Beneficiaries of projects implemented by NGOs are children, adults, pensioners, low-income families, large families, disabled children and many other representatives of the population of Atyrau Oblast."
+    ],
     "cards": [
       {
         "title": "2,3 (in million US dollars)",
@@ -218,6 +221,757 @@
       "year": "Year",
       "project": "Projects",
       "settlement": "Locality"
+    },
+    "lists": {
+      "card1": [
+        {
+          "year": 1999,
+          "items": [
+            {
+              "project": "Ural River Bridge Reconstruction, Atyrau",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Residences Buildings Reconstruction, Atyrau",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2000,
+          "items": [
+            {
+              "project": "Atyrau University Extension",
+              "type": "School",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Ural Riverside Improvement, Atyrau",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Buildings Refacing, Atyrau",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2001,
+          "items": [
+            {
+              "project": "Renovation of Dom Byta pump station in Atyrau",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Pave and upgrade public areas in Atyrau",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            },
+            {
+              "year": 2001,
+              "project": "Radio/TV Transmitters Purchase and Installation ",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            },
+            {
+              "year": 2001,
+              "project": "Закупка и установка радио и ТВ передатчиков",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2002,
+          "items": [
+            {
+              "project": "Avangard 4 district 1200-seat School No. 30 Construction in Atyrau ",
+              "type": "School",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Atyrau Housing Basement Utilities Repair ",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2003,
+          "items": [
+            {
+              "project": "Atyrau district 624-seat School Construction in Atyrau",
+              "type": "School",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Atyrau Water Supply Line Repair ",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Atyrau Gas Infrastructure ",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Atyrau Oil&Gas Institute Refacing ",
+              "type": "School",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2004,
+          "items": [
+            {
+              "project": "53 Low Cost Apartments Construction in Atyrau ",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2006,
+          "items": [
+            {
+              "project": "Gas Infrastructure of SMP-136, Leskhoz, Chernaya Rechka, Selstroy 2",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Garbage Trucks, Ambulance Cars and Other Public Utilities Equipment",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2008,
+          "items": [
+            {
+              "project": "Equipment Purchase for Atyrau Su Arnasy",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2010,
+          "items": [
+            {
+              "project": "Atyrau Filtration Station № 3 External Power Supply Construction",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Atyrau Filtration Station № 3 Chlorinating Station Construction and Power Supply",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2011,
+          "items": [
+            {
+              "project": "Atyrau Filtration Station № 3 Reconstruction",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Chlorinating Station Construction",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2012,
+          "items": [
+            {
+              "project": "Atyrau Electrification",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Zhumysker Substation Construction",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2016,
+          "items": [
+            {
+              "project": "Atyrau 280-seat Kindergarten Construction",
+              "type": "Kindergarten",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Atyrau 320-seat National Gifted Children School Construction ",
+              "type": "School",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2017,
+          "items": [
+            {
+              "project": "Atyrau Retro Park Construction",
+              "type": "Park",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Atyrau 624-seat Technical School (STG) Construction ",
+              "type": "School",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2018,
+          "items": [
+            {
+              "project": "Purchase of 50 buses for Atyrau and Kulsary",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "items": [
+            {
+              "project": "Zhuldyz 624-seat Secondary School Construction in Atyrau",
+              "type": "School",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2020,
+          "items": [
+            {
+              "project": "Atyrau 100-seat Dormitory for Energy andConstruction College",
+              "type": "Dormitory",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Flagpole in Atyrau",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Vodnikovo 280-seat Kindergarten Construction",
+              "type": "Kindergarten",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "items": [
+            {
+              "project": "Rakusha 280-seat Kindergarten Construction",
+              "type": "Kindergarten",
+              "settlement": "Atyrau"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "items": [
+            {
+              "project": "Kindergarten 160-seat in mcr Koktem, Atyrau",
+              "type": "Kindergarten",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Kindergarten 160-seat in mcr Zhuldyz, Atyrau",
+              "type": "Kindergarten",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Purchase of medical equipment for Atyrau region",
+              "type": "Healthcare",
+              "settlement": "Atyrau"
+            }
+          ]
+        }
+      ],
+      "card2": [
+        {
+          "year": 2000,
+          "items": [
+            {
+              "project": "Kulsary Roads Repair",
+              "type": "Other infrastructure",
+              "settlement": "Kulsary"
+            }
+          ]
+        },
+        {
+          "year": 2001,
+          "items": [
+            {
+              "project": "Kulsary Canal Redevelopment - engineering and construction ",
+              "type": "Other infrastructure",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary Water Supply & Sewerage Upgrade ",
+              "type": "Utility",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary Potable Water Costs Compensation ",
+              "type": "Other infrastructure",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary High-Rise Buildings Heating Repair",
+              "type": "Utility",
+              "settlement": "Kulsary"
+            }
+          ]
+        },
+        {
+          "year": 2002,
+          "items": [
+            {
+              "project": "Kulsary Housing Basement Utilities Repair ",
+              "type": "Utility",
+              "settlement": "Atyrau"
+            },
+            {
+              "project": "Akkiztogay Gas Infrastructure",
+              "type": "Utility",
+              "settlement": "Akkiztogay"
+            },
+            {
+              "project": "Karagay Gas Infrastructure",
+              "type": "Utility",
+              "settlement": "Karagay"
+            },
+            {
+              "project": "Kulsary Hospital Equipment",
+              "type": "Healthcare",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary Boiler House and Heating System Repair ",
+              "type": "Utility",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary Public Landscaping and Paving ",
+              "type": "Other infrastructure",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary 75-bed Hospital Construction",
+              "type": "Healthcare",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary High-Rise Buildings Roofing and Refacing ",
+              "type": "Other infrastructure",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Repair of water supply system in Kulsary",
+              "type": "Utility",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Zhylyoi Highway Repairs",
+              "type": "Other infrastructure",
+              "settlement": "Zhylyoi"
+            }
+          ]
+        },
+        {
+          "year": 2003,
+          "items": [
+            {
+              "project": "Mini Boilers Installation in Zhylyoi Region ",
+              "type": "Utility",
+              "settlement": "Zhylyoi"
+            }
+          ]
+        },
+        {
+          "year": 2004,
+          "items": [
+            {
+              "project": "Kulsary School Equipment and Sewage Pump Station",
+              "type": "School",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Zhylyoi Regional Roads Repair ",
+              "type": "Other infrastructure",
+              "settlement": "Zhylyoi"
+            },
+            {
+              "project": "Kulsary Water Supply Line Repair ",
+              "type": "Utility",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary High-Rise Buildings Roofing and Refacing ",
+              "type": "Other infrastructure",
+              "settlement": "Kulsary"
+            }
+          ]
+        },
+        {
+          "year": 2005,
+          "items": [
+            {
+              "project": "Kulsary Roads Repair",
+              "type": "Other infrastructure",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary Hospital Power Supply",
+              "type": "Healthcare",
+              "settlement": "Kulsary"
+            }
+          ]
+        },
+        {
+          "year": "2006",
+          "items": [
+            {
+              "project": "Gas Infrastructure of Maikomgen",
+              "type": "Utility",
+              "settlement": "Maikomgen"
+            },
+            {
+              "project": "Kulsary Water Supply Line and Materials",
+              "type": "Utility",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary Power Supply Line",
+              "type": "Utility",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Zhana Karaton Wastewater Treatment ",
+              "type": "Utility",
+              "settlement": "Zhana Karaton"
+            },
+            {
+              "project": "Zhana Karaton Outpatient Clinic Construction ",
+              "type": "Healthcare",
+              "settlement": "Zhana Karaton"
+            },
+            {
+              "project": "Cтроительство рынка в с.Тургызба",
+              "type": "Other infrastructure",
+              "settlement": "Turgyzba"
+            },
+            {
+              "project": "Kulsary 5 Housing Buildings Repair and Painting ",
+              "type": "Other infrastructure",
+              "settlement": "Kulsary"
+            }
+          ]
+        },
+        {
+          "year": "2007",
+          "items": [
+            {
+              "project": "Kulsary Electrification ",
+              "type": "Utility",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Akkiztogay Rural Outpatient Clinic Construction",
+              "type": "Healthcare",
+              "settlement": "Akkiztogay"
+            },
+            {
+              "project": "Zhylyoi region - others (Kulsary School Equipment)",
+              "type": "School",
+              "settlement": "Kulsary"
+            }
+          ]
+        },
+        {
+          "year": 2008,
+          "items": [
+            {
+              "project": "Kulsary Roads Reconstruction",
+              "type": "Other infrastructure",
+              "settlement": "Kulsary"
+            }
+          ]
+        },
+        {
+          "year": 2009,
+          "items": [
+            {
+              "project": "Zhylyoi Regional Clinic Equipment Purchase",
+              "type": "Healthcare",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary Vocational School #6 Construction",
+              "type": "School",
+              "settlement": "Kulsary"
+            }
+          ]
+        },
+        {
+          "year": 2014,
+          "items": [
+            {
+              "project": "Kulsary Dostyk district Public Park Upgrade",
+              "type": "Park",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary Zhansaya district Public Park Upgrade",
+              "type": "Park",
+              "settlement": "Kulsary"
+            }
+          ]
+        },
+        {
+          "year": 2015,
+          "items": [
+            {
+              "project": "Kulsary Water Supply System",
+              "type": "Utility",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Shokpartogay 160-seat Kindergarten Construction",
+              "type": "Kindergarten",
+              "settlement": "Shokpartogay"
+            }
+          ]
+        },
+        {
+          "year": 2016,
+          "items": [
+            {
+              "project": "Akiiztogay 160-seat Kindergarten Construction",
+              "type": "Kindergarten",
+              "settlement": "Akkiztogay"
+            },
+            {
+              "project": "Technical water pipeline for park in Koschagyl",
+              "type": "Park",
+              "settlement": "Koschagyl"
+            }
+          ]
+        },
+        {
+          "year": 2017,
+          "items": [
+            {
+              "project": "Zhana Karaton 280-seat Kindergarten Construction",
+              "type": "Kindergarten",
+              "settlement": "Zhana Karaton"
+            },
+            {
+              "project": "Turgyzba 160-seat Kindergarten Construction",
+              "type": "Kindergarten",
+              "settlement": "Turgyzba"
+            },
+            {
+              "project": "Kosshagyl 160-seat Kindergarten Construction",
+              "type": "Kindergarten",
+              "settlement": "Koschagyl"
+            },
+            {
+              "project": "Akkiztogay Health & Fitness Center Construction ",
+              "type": "Sport",
+              "settlement": "Akkiztogay"
+            },
+            {
+              "project": "Shokpartogay Health & Fitness Center Construction ",
+              "type": "Sport",
+              "settlement": "Shokpartogay"
+            },
+            {
+              "project": "Zhana Karaton Health & Fitness Center Construction ",
+              "type": "Sport",
+              "settlement": "Zhana Karaton"
+            }
+          ]
+        },
+        {
+          "year": 2018,
+          "items": [
+            {
+              "project": "Kulsary 290-seat Kindergarten #1 Construction",
+              "type": "Kindergarten",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary 290-seat Kindergarten #2 Construction",
+              "type": "Kindergarten",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Purchase of 50 buses for Atyrau and Kulsary",
+              "type": "Healthcare",
+              "settlement": "Zhylyoi"
+            },
+            {
+              "project": "Purchase of medical equipment for Zhylyoi district hospital",
+              "type": "Other infrastructure",
+              "settlement": "Atyrau и Kulsary"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "items": [
+            {
+              "project": "Maikomgen 100-seat Kindergarten Construction",
+              "type": "Kindergarten",
+              "settlement": "Maikomgen"
+            },
+            {
+              "project": "Maikomgen Health & Fitness Centre Construction",
+              "type": "Sport",
+              "settlement": "Maikomgen"
+            },
+            {
+              "project": "Kursay River Embankment Landscaping",
+              "type": "Other infrastructure",
+              "settlement": "Kulsary и Zhylyoi"
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "items": [
+            {
+              "project": "Kulsary 580-seat School #6 Construction",
+              "type": "School",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Kulsary Hospital Complex 200-beds Turnkey Construction",
+              "type": "Healthcare",
+              "settlement": "Kulsary"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "items": [
+            {
+              "project": "Central Stadium in Kulsary",
+              "type": "Healthcare",
+              "settlement": "Kulsary"
+            },
+            {
+              "project": "Additional medical equipment 200-bed Hospital Complex",
+              "type": "Healthcare",
+              "settlement": "Kulsary"
+            }
+          ]
+        }
+      ],
+      "card3": [
+        {
+          "year": 2015,
+          "items": [
+            {
+              "project": "Akkistau 400-seat Community Center Construction",
+              "type": "Culture",
+              "settlement": "Akkistau"
+            }
+          ]
+        },
+        {
+          "year": 2001,
+          "items": [
+            {
+              "project": "Akkistau Housing Construction",
+              "type": "Other infastructure",
+              "settlement": "Akkistau"
+            }
+          ]
+        }
+      ],
+      "card4": [
+        {
+          "year": 2016,
+          "items": [
+            {
+              "project": "Makhambet 280-seat Kindergarten Construction",
+              "type": "Kindergarten",
+              "settlement": "Makhambet"
+            }
+          ]
+        }
+      ],
+      "card5": [
+        {
+          "year": 2016,
+          "items": [
+            {
+              "project": "Inderbor 400-seat Community Center Construction",
+              "type": "Culture",
+              "settlement": "Inderbor"
+            }
+          ]
+        },
+        {
+          "year": 2017,
+          "items": [
+            {
+              "project": "Yntymak 120-seat School Construction",
+              "type": "School",
+              "settlement": "Yntymak"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "items": [
+            {
+              "project": "Bodene 200-seat Community Center Construction",
+              "type": "Culture",
+              "settlement": "Bodene"
+            },
+            {
+              "project": "Yesbol 300-seat Community Center Construction",
+              "type": "Culture",
+              "settlement": "Culture"
+            }
+          ]
+        }
+      ],
+      "card6": [
+        {
+          "year": 2019,
+          "items": [
+            {
+              "project": "Dossor 280-seat Kindergarten Construction and Landscaping of the adjacent area",
+              "type": "Kindergarten",
+              "settlement": "Dossor"
+            }
+          ]
+        }
+      ]
     }
   },
   "psi": [
