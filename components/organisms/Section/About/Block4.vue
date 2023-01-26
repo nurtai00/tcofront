@@ -56,6 +56,7 @@ export default {
         },
         loop: true,
         slidesPerView: 1,
+        interval: 3000,
         id: 'main_b4',
         slide: this.slideTo,
         style: 'height: 780px',
@@ -205,7 +206,7 @@ export default {
   display: flex;
   align-items: center;
   position: relative;
-  left: 400px;
+  left: 100px;
   top: -160px;
   @media (orientation: portrait) {
     left: 16px;

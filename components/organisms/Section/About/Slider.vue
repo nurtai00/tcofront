@@ -31,7 +31,7 @@ export default {
       options: {
         pagination: '.steps span',
         loop: true,
-        interval: 1000,
+        interval: 3000,
         slidesPerView: 1,
         id: 'main-slider',
         slide: this.slideTo,

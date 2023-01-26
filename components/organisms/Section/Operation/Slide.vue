@@ -20,7 +20,7 @@
             <button
               v-if="isLongDescription"
               class="button-more"
-              @click.prevent="openPopup"
+              @click.stop="openPopup"
             >
               Читать дальше
             </button>
@@ -160,8 +160,8 @@ export default {
 
   &__title {
     margin-bottom: 20px;
-    font-size: rem(28) !important;
-    line-height: rem(32);
+    font-size: rem(38) !important;
+    line-height: rem(42);
     &-mobile {
       display: none;
     }

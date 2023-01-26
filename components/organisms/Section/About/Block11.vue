@@ -4,37 +4,39 @@
     style="padding: 0; position: relative; background: #f2f6f7"
   >
     <div class="container">
-      <OrganismsSlider :options="options">
-        <MoleculesSlide
-          v-for="(slide, slide_index) in slides"
-          :key="slide_index"
-        >
-          <OrganismsSectionOperationSlide
-            class="slide"
-            :data="{ ...slide, image: slide.imgSrc, description: slide.text }"
+      <div ref="swiper3" class="swiper">
+        <div class="swiper-wrapper">
+          <div
+            v-for="(slide, slide_index) in slides"
+            :key="slide_index"
+            class="swiper-slide"
+            has-emit
+            @popup="openPopup(slide)"
           >
-            <template #description="{ description }">
-              <p>{{ description }}</p>
-            </template>
-          </OrganismsSectionOperationSlide>
-        </MoleculesSlide>
-      </OrganismsSlider>
+            <OrganismsSectionOperationSlide
+              class="slide"
+              :data="{ ...slide, image: slide.imgSrc, description: slide.text }"
+            >
+              <template #description="{ description }">
+                <p>{{ description }}</p>
+              </template>
+            </OrganismsSectionOperationSlide>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
+import Swiper from 'swiper/swiper-bundle.min'
+import { Autoplay } from 'swiper'
+import 'swiper/swiper-bundle.min.css'
 export default {
   name: 'TcoFrontBlock11',
 
   data() {
     return {
-      options: {
-        interval: 1000,
-        loop: true,
-        slidesPerView: 1,
-        id: 'main_b11',
-      },
       slides: [
         {
           title: this.$t('company.slider_6[0].title_1'),
@@ -58,6 +60,30 @@ export default {
         },
       ],
     }
+  },
+  async mounted() {
+    await this.$nextTick()
+    // eslint-disable-next-line no-new
+    new Swiper(this.$refs.swiper3, {
+      modules: [Autoplay],
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      slidesPerView: 1,
+    })
+  },
+  methods: {
+    openPopup(item) {
+      this.$modal.add({
+        title: 'Default',
+        payload: {
+          modal: 'Default',
+          title: item.title,
+          text: item.description,
+        },
+      })
+    },
   },
 }
 </script>

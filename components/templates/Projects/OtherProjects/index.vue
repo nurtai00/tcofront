@@ -31,7 +31,9 @@
       class="content"
       :side="!!(key % 2)"
       :data="item"
-      :shouldBeDescriptionSlice="false"
+      has-emit
+      :slice-word-length="item.description.length"
+      @popup="openPopup(item)"
     >
       <template #description="{ description }">
         <p>{{ description }}</p>
@@ -69,21 +71,18 @@ export default {
           title: this.$t('project.other.projects[0].title'),
           description: this.$t('project.other.projects[0].text'),
           image: 'projects/projects1.png',
+          popupText: this.$t('project.other.projects[0].popupText'),
         },
         {
           title: this.$t('project.other.projects[1].title'),
-          description: this.$t('project.other.projects[0].text'),
+          description: this.$t('project.other.projects[1].text'),
           image: 'projects/projects2.png',
+          popupText: this.$t('project.other.projects[1].popupText'),
           link: () => {
             this.$store.commit('side/open', {
               html: this.$t('project.other.projects[0].text'),
             })
           },
-        },
-        {
-          title: this.$t('project.other.projects[2].title'),
-          description: this.$t('project.other.projects[0].text'),
-          image: 'projects/projects1.png',
         },
       ],
     }
@@ -91,6 +90,16 @@ export default {
   methods: {
     onTag() {
       console.log('works')
+    },
+    openPopup(item) {
+      this.$modal.add({
+        title: 'Default',
+        payload: {
+          modal: 'Default',
+          title: item.title,
+          text: item.popupText,
+        },
+      })
     },
   },
 }

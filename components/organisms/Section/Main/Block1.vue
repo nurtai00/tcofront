@@ -39,6 +39,7 @@ export default {
       options: {
         pagination: '.steps span',
         loop: true,
+        interval: 50000000,
         slidesPerView: 1,
         id: 'main-slider-a1',
         slide: this.slideTo,
@@ -81,12 +82,16 @@ export default {
 .tco {
   &__partners {
     justify-content: flex-end;
+
+    align-items: center;
     @media (orientation: portrait) {
       flex-direction: column-reverse;
     }
     img {
       width: 50%;
+      height: 100%;
     }
+
     &-wrapper {
       padding: 40px 40px 60px 0;
       max-width: 590px;

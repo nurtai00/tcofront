@@ -49,38 +49,45 @@
         />
       </div>
     </div>
-    <OrganismsSectionOperationSlide :side="false" :data="slide1" class="slide">
-      <ul class="products__list_num">
-        <li v-for="item of $t('products.slide1list')" :key="item">
-          {{ item }}
-        </li>
-      </ul>
-      <AtomsFile
-        :file="skgBuisinessAnket"
-        :text="$t('products.file1')"
-        icon="xls"
-      />
-      <AtomsFile
-        :file="commercialSurveyLink"
-        :text="$t('products.slide1File1')"
-        icon="doc"
-      />
-      <AtomsFile
-        :file="technicalSurveyLink"
-        :text="$t('products.slide1File2')"
-        icon="doc"
-      />
-      <AtomsFile
-        :file="skgListRegisterDocs"
-        :text="$t('products.file2')"
-        icon="doc"
-      />
-      <p class="slide_text">
-        {{ $t('products.slide_text') }}
-        <a href="mailto:mtadmin@tengizchevroil.com"
-          >mtadmin@tengizchevroil.com</a
-        >
-      </p>
+    <OrganismsSectionOperationSlide
+      :side="false"
+      :data="slide1"
+      class="slide"
+      style="max-height: 100%"
+    >
+      <template #description>
+        <ul class="products__list_num">
+          <li v-for="item of $t('products.slide1list')" :key="item">
+            {{ item }}
+          </li>
+        </ul>
+        <AtomsFile
+          :file="skgBuisinessAnket"
+          :text="$t('products.file1')"
+          icon="xls"
+        />
+        <AtomsFile
+          :file="commercialSurveyLink"
+          :text="$t('products.slide1File1')"
+          icon="doc"
+        />
+        <AtomsFile
+          :file="technicalSurveyLink"
+          :text="$t('products.slide1File2')"
+          icon="doc"
+        />
+        <AtomsFile
+          :file="skgListRegisterDocs"
+          :text="$t('products.file2')"
+          icon="doc"
+        />
+        <p class="slide_text">
+          {{ $t('products.slide_text') }}
+          <a href="mailto:mtadmin@tengizchevroil.com"
+            >mtadmin@tengizchevroil.com</a
+          >
+        </p>
+      </template>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSvg
       ref="natureGas"
@@ -96,31 +103,38 @@
         />
       </div>
     </div>
-    <OrganismsSectionOperationSlide :side="false" :data="slide2" class="slide">
-      <ul class="products__list_num">
-        <li>
-          {{ $t('products.list_num1') }}
-        </li>
-        <li>
-          {{ $t('products.list_num2') }}
-        </li>
-      </ul>
-      <AtomsFile
-        :file="buisinessAnket"
-        :text="$t('products.file1')"
-        icon="xls"
-      />
-      <AtomsFile
-        :file="listRegisterDocs"
-        :text="$t('products.file2')"
-        icon="doc"
-      />
-      <p class="slide_text">
-        {{ $t('products.slide_text') }}
-        <a href="mailto:mtadmin@tengizchevroil.com"
-          >mtadmin@tengizchevroil.com</a
-        >
-      </p>
+    <OrganismsSectionOperationSlide
+      :side="false"
+      :data="slide2"
+      class="slide"
+      style="max-height: 100%"
+    >
+      <template #description>
+        <ul class="products__list_num">
+          <li>
+            {{ $t('products.list_num1') }}
+          </li>
+          <li>
+            {{ $t('products.list_num2') }}
+          </li>
+        </ul>
+        <AtomsFile
+          :file="buisinessAnket"
+          :text="$t('products.file1')"
+          icon="xls"
+        />
+        <AtomsFile
+          :file="listRegisterDocs"
+          :text="$t('products.file2')"
+          icon="doc"
+        />
+        <p class="slide_text">
+          {{ $t('products.slide_text') }}
+          <a href="mailto:mtadmin@tengizchevroil.com"
+            >mtadmin@tengizchevroil.com</a
+          >
+        </p>
+      </template>
     </OrganismsSectionOperationSlide>
     <OrganismsSectionOperationSvg
       ref="sulfur"
@@ -141,30 +155,33 @@
         :side="false"
         :data="slide3"
         class="slide"
+        style="max-height: 100%"
       >
-        <ul class="products__list_num">
+        <template #description>
           <ul class="products__list_num">
-            <li v-for="item of $t('products.slide3list')" :key="item">
-              {{ item }}
-            </li>
+            <ul class="products__list_num">
+              <li v-for="item of $t('products.slide3list')" :key="item">
+                {{ item }}
+              </li>
+            </ul>
           </ul>
-        </ul>
-        <AtomsFile
-          :file="buisinessAnket"
-          :text="$t('products.file1')"
-          icon="xls"
-        />
-        <AtomsFile
-          :file="listRegisterDocs"
-          :text="$t('products.file2')"
-          icon="doc"
-        />
-        <p class="slide_text">
-          {{ $t('products.slide_text') }}
-          <a href="mailto:mtadmin@tengizchevroil.com"
-            >mtadmin@tengizchevroil.com</a
-          >
-        </p>
+          <AtomsFile
+            :file="buisinessAnket"
+            :text="$t('products.file1')"
+            icon="xls"
+          />
+          <AtomsFile
+            :file="listRegisterDocs"
+            :text="$t('products.file2')"
+            icon="doc"
+          />
+          <p class="slide_text">
+            {{ $t('products.slide_text') }}
+            <a href="mailto:mtadmin@tengizchevroil.com"
+              >mtadmin@tengizchevroil.com</a
+            >
+          </p>
+        </template>
       </OrganismsSectionOperationSlide>
     </div>
 
@@ -530,11 +547,18 @@ ${this.$t('products.cards2.1.description3')}`,
     }
 
     .slide__content {
-      background-color: $c-tco33;
     }
   }
 }
-
+.slide::v-deep {
+  max-height: 100%;
+  & .slide__content-wrapper {
+    padding-top: 20px;
+  }
+  & .slide {
+    max-height: 100%;
+  }
+}
 .cards {
   display: flex;
   flex-wrap: wrap;

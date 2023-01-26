@@ -110,7 +110,7 @@ export default {
   &_header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 150px;
     align-items: center;
     margin-bottom: 40px;
     @include tablet() {

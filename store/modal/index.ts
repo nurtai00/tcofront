@@ -1,6 +1,6 @@
 import { MutationTree } from 'vuex'
 import { IModal, ModalType } from 'models/modal'
-
+// @ts-ignore
 export const state = () => ({
   modals: [] as IModal[],
   type: ModalType.Default,
