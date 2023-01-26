@@ -61,6 +61,7 @@ export default {
         loop: true,
         slidesPerView: 1,
       },
+      swiper: null,
       slides: [
         {
           title: this.$t('company.slider_4[0].title'),
@@ -84,7 +85,7 @@ export default {
   async mounted() {
     await this.$nextTick()
     // eslint-disable-next-line no-new
-    new Swiper(this.$refs.swiper, {
+    this.swiper = new Swiper(this.$refs.swiper, {
       modules: [Autoplay],
       loop: true,
       autoplay: {
@@ -95,6 +96,7 @@ export default {
   },
   methods: {
     openPopup(item) {
+      this.swiper.autoplay.pause()
       this.$modal.add({
         title: 'Default',
         payload: {

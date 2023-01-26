@@ -46,6 +46,7 @@ export default {
   width: 100%;
   display: flex;
   gap: 30px;
+  justify-content: space-between;
   @include tablet() {
     flex-direction: column;
     .desc_img {

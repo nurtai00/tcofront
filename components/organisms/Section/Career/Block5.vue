@@ -110,7 +110,7 @@ export default {
   &_header {
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
     @include tablet() {
@@ -136,7 +136,7 @@ export default {
   &_blocks {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 376px);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 24px;
     @media only screen and (max-width: 1170px) {
       overflow-x: scroll;
