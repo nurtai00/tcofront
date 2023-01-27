@@ -56,6 +56,7 @@ export default {
         margin-bottom: 12px;
         &:last-child {
           margin-bottom: 0;
+          text-align: justify;
         }
         @include tablet() {
           font-size: 16px;
