@@ -22,7 +22,7 @@
               class="button-more"
               @click.stop="openPopup"
             >
-              Читать дальше
+              {{ $t('operation.more') }}
             </button>
           </div>
         </div>
