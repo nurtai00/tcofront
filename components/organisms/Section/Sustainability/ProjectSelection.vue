@@ -74,28 +74,12 @@ export default {
           title: 'КРИТЕРИИ ОТБОРА ПРОЕКТОВ (ЭТАП 1):',
           modal: 'SelectionProject',
           list: this.$t('suistainability.projectSelection.section.right.list'),
-          // list: [
-          //   'Проект не для индивидуальных лиц',
-          //   'Проект не поддерживает конкретный коммерческий бизнес',
-          //   'Проект не подразумевает спонсорство спортивных команд',
-          //   'НПО не является военной, политической или религиозной организацией',
-          //   'Проект планируется в пределах географии ПСИ - если только этот проект не имеет национального значения',
-          //   'Проект планируется в рамках одной из тем ПСИ',
-          //   'Бюджет не охватывает только поездки или сборы за участие в соревнованиях',
-          //   'Объем проекта не покрывает обычные операционные расходы для государственных учреждений',
-          //   'Проект не планируется для строительства объектов инфраструктуры, которые могут быть охвачены в рамках программы Игилик',
-          //   'Объем работ проекта и бюджет не подразумевают только приобретение чего-либо',
-          //   'Основная часть бюджета не закладывается для проведения капитального ремонта',
-          // ],
         },
         two: {
           id: '02',
           title: 'ПРИМЕРЫ КРИТЕРИЕВ ОТБОРА ПРОЕКТОВ (ЭТАП 2):',
           modal: 'SelectionProject',
           list: this.$t('suistainability.projectSelection.section.left.list'),
-          // list: [
-
-          // ],
         },
       },
       markers: [
@@ -198,18 +182,10 @@ export default {
     &-one {
       background-color: #015467;
       width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      & .content {
-        padding: 80px 280px 130px 0;
-      }
     }
     &-two {
       width: 100%;
       background-color: #347685;
-      & .content {
-        padding: 80px 0 130px 280px;
-      }
     }
   }
   @include tablet {
@@ -217,37 +193,24 @@ export default {
       flex-direction: column;
       &-one {
         width: 100%;
-        margin: auto 0;
         justify-content: center;
-        .content {
-          padding: 80px 0;
-        }
       }
       &-two {
-        display: flex;
         width: 100%;
         justify-content: center;
-        .content {
-          display: flex;
-          flex-direction: column;
-          padding: 80px 40px;
-        }
       }
     }
   }
 }
 .content {
   display: flex;
+  max-width: 400px;
   flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
   gap: 40px;
   cursor: pointer;
-  @include tablet {
-    padding: 40px 280px 40px 0;
-  }
-  @include phone {
-    padding: 40px;
-    gap: 10px;
-  }
+  padding: 80px 0;
 }
 .project {
   padding: 80px 0 40px 0;
@@ -262,7 +225,6 @@ export default {
     display: flex;
     align-items: center;
     position: relative;
-    left: -100px;
     @include middle-laptop {
       margin-top: 20px;
       flex-direction: column;
@@ -276,6 +238,9 @@ export default {
 .marker {
   width: 100%;
   $p: &;
+  @include phone {
+    font-size: rem(14);
+  }
   &:nth-child(1) {
     #{$p}__arrow {
       position: relative;
@@ -369,7 +334,7 @@ export default {
       content: attr(data-label);
       position: absolute;
       top: 80px;
-      right: -100px;
+      right: 0px;
       color: $c-text;
       width: 270px;
       height: 32px;
@@ -390,6 +355,9 @@ export default {
       color: $c-text;
       width: 270px;
       height: 32px;
+      @include middle-laptop {
+        display: none;
+      }
     }
   }
   &:nth-child(8) {
