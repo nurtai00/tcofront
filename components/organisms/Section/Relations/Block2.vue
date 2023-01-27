@@ -189,7 +189,7 @@ export default {
           title: this.$t('relation.block_2.links[1]'),
         },
         {
-          link: this.localePath('/'),
+          link: this.localePath('/about/figures'),
           title: this.$t('relation.block_2.links[2]'),
         },
         {
