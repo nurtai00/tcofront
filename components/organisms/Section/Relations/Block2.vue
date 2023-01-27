@@ -301,6 +301,7 @@ export default {
     margin-bottom: 12px;
     &:last-child {
       margin-bottom: 0px;
+      text-align: justify;
     }
     @include tablet() {
       font-size: 16px;
