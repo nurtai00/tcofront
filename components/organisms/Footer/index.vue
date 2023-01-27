@@ -63,10 +63,16 @@
         <div>
           <h6>{{ $t('header.footer.mobile') }}</h6>
           <div class="links">
-            <a href="/">
+            <a
+              href="https://apps.apple.com/kz/app/tco-news/id1536992766"
+              target="_blank"
+            >
               <img src="@/assets/img/appstore.png" />
             </a>
-            <a href="/">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.chevron.tconews&hl=ru&gl=US"
+              target="_blank"
+            >
               <img src="@/assets/img/playmarket.png" />
             </a>
           </div>

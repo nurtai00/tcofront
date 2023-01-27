@@ -105,13 +105,11 @@ export default {
   margin-bottom: 20px;
 }
 .news_cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
   grid-gap: 24px;
   &_item {
     width: 100%;
-    max-width: 362px;
   }
 }
 </style>

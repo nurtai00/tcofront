@@ -90,6 +90,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+::v-deep {
+  .slide {
+    max-height: 600px;
+  }
+}
 .gift {
   background-color: $c-tco33;
   &__wrapper {
