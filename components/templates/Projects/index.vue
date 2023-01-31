@@ -35,13 +35,12 @@
         />
       </template>
     </OrganismsSectionOperationSvg>
-
     <OrganismsSectionOperationSlide
       id="projectSlide"
       side
       style="padding-bottom: 20px"
       :data="slide"
-      class="slide"
+      class="slide slide1"
     >
       <template #description>
         <div class="projects__slide" style="width: 600px; max-width: 600px">
@@ -262,19 +261,6 @@ export default {
   },
   mounted() {
     this.tags[0].offsetTop = this.$refs?.pbr?.$el?.offsetTop
-    const element = document.getElementById('projectSlide')
-    console.log(element)
-    if (window.innerWidth > 500 && element) {
-      console.log(element)
-      element.style.height = element.offsetHeight + 'px'
-    }
-    element.addEventListener('wheel', (e) => {
-      if (e.wheelDelta > 0 && this.animationProgress !== 0) {
-        this.animationProgress -= 1
-      } else if (e.wheelDelta < 0 && this.animationProgress !== 2) {
-        this.animationProgress += 1
-      }
-    })
   },
   methods: {
     onTag(offsetTop) {
@@ -392,7 +378,6 @@ export default {
 
   &__slide {
     display: flex;
-    overflow: hidden;
     .left {
       width: 270px;
       font-size: 48px;
@@ -403,7 +388,6 @@ export default {
         margin-bottom: 46px;
         cursor: pointer;
         transition: 0.2s ease-in-out;
-        max-height: 300px;
 
         &:not(.active) {
           color: #30454e;
@@ -411,9 +395,6 @@ export default {
         }
 
         &.inactive {
-          max-height: 0;
-          margin-bottom: 0;
-          opacity: 0;
         }
       }
 
@@ -570,6 +551,7 @@ export default {
     padding-top: 0;
   }
 }
+
 .last::v-deep {
   .slide__content-wrapper {
     padding-top: 60px;
@@ -578,6 +560,13 @@ export default {
     padding: 30px 0 0 0;
     //max-height: 700px;
     align-items: start;
+  }
+}
+.slide1::v-deep {
+  .slide__left {
+    .slide__content-wrapper {
+      padding-top: 0px;
+    }
   }
 }
 </style>

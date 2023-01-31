@@ -1,17 +1,11 @@
 <template>
   <div class="personal_career">
     <div class="container">
-      <div class="personal_career_header">
-        <div>
-          <AtomsHeading type="h3" color="main">
-            {{ $t('career.block5_header') }}
-          </AtomsHeading>
-          <p>
-            {{ $t('career.block5_description') }}
-          </p>
-        </div>
-        <img src="@/assets/img/career/personal_img.png" alt="" />
-      </div>
+      <OperationSlide :data="education_personal" class="person">
+        <template #description="{ description }">
+          <p>{{ description }}</p>
+        </template>
+      </OperationSlide>
       <div class="personal_career_blocks">
         <div
           v-for="(personal, idx) in personal_list"
@@ -31,9 +25,16 @@
 </template>
 
 <script>
+import OperationSlide from 'organisms/Section/Operation/Slide'
 export default {
+  components: { OperationSlide },
   data() {
     return {
+      education_personal: {
+        title: this.$t('career.block5_header'),
+        description: this.$t('career.block5_description'),
+        image: 'career/personal_img.png',
+      },
       personal_list: [
         {
           title: this.$t('career.block5_title')[0],
@@ -146,6 +147,15 @@ export default {
       grid-template-columns: repeat(3, 317px);
       grid-gap: 16px;
     }
+  }
+}
+.person::v-deep {
+  .slide__image {
+    width: auto;
+    display: block;
+  }
+  .slide__content {
+    width: 100%;
   }
 }
 .reverse {

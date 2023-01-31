@@ -29,6 +29,6 @@
     </div>
     <!-- <OrganismsSectionVacancyBlock5 />
     <OrganismsSectionVacancyBlock6 /> -->
-    <OrganismsSectionVacancyBlock7 />
+    <!--    <OrganismsSectionVacancyBlock7 />-->
   </div>
 </template>

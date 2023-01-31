@@ -17,7 +17,7 @@
         />
         <div class="info_block" @click="navVacancy">
           <img src="@/assets/icons/vacancy.png" alt="" />
-          <AtomsHeading type="h5" color="main">
+          <AtomsHeading style="cursor: pointer" type="h5" color="main">
             {{ $t('career.block2_heading') }}
           </AtomsHeading>
           <p>{{ $t('career.block2_heading_description') }}</p>
@@ -28,13 +28,12 @@
 </template>
 
 <script>
-
 export default {
   methods: {
     navVacancy() {
       this.$router.push(this.localePath('/vacancy'))
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -5,19 +5,19 @@
         <AtomsTitle small :point="false">
           {{ $t('company.block_4.title') }}
         </AtomsTitle>
-        <nuxt-link :to="localePath('/about/figures')">{{
-          $t('home.block_3.link')
-        }}</nuxt-link>
+        <nuxt-link :to="localePath('/about/figures')">
+          {{ $t('home.block_3.link') }}
+        </nuxt-link>
       </div>
       <div class="tco__files">
         <a class="item" :href="links[$i18n.locale][0].link" target="_blank">
           <img :width="95" src="@/assets/img/pdf.png" />
           {{ $t('company.block_4.items[0]') }}
         </a>
-        <a class="item" :href="links[$i18n.locale][1].link" target="_blank">
-          <img :width="55" src="@/assets/img/pdf.png" />
-          {{ $t('company.block_4.items[1]') }}
-        </a>
+        <!--        <a class="item" :href="links[$i18n.locale][1].link" target="_blank">-->
+        <!--          <img :width="55" src="@/assets/img/pdf.png" />-->
+        <!--          {{ $t('company.block_4.items[1]') }}-->
+        <!--        </a>-->
         <a class="item" :href="links[$i18n.locale][2].link" target="_blank">
           <img :width="55" src="@/assets/img/pdf.png" />
           {{ $t('company.block_4.items[2]') }}

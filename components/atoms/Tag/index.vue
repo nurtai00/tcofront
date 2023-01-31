@@ -1,11 +1,9 @@
 <template>
-  <div
-    v-if="tag"
-    class="tag"
-    :class="{ tag_selected: tag.selected }"
-    @click="clickedTag"
-  >
-    <span v-text="tag.text"></span>
+  <div v-if="tag" class="tag" :class="{ tag_selected: tag.selected }">
+    <nuxt-link v-if="!!tag.url" :to="tag.url" target="_blank">
+      {{ tag.text }}
+    </nuxt-link>
+    <span v-else @click="clickedTag" v-text="tag.text"></span>
     <svg
       v-if="tag.url"
       width="18"
@@ -44,10 +42,6 @@ export default {
     clickedTag() {
       if (!this.tag.url) {
         this.$emit('click', this.tag)
-      } else if (this.tag.source) {
-        window.location = this.tag.url
-      } else {
-        this.$router.push(this.localePath(this.tag.url))
       }
     },
   },
@@ -69,6 +63,11 @@ export default {
   margin-bottom: 8px;
   cursor: pointer;
   transition: 0.3s;
+
+  a {
+    color: #015467;
+    text-decoration: none;
+  }
   svg {
     margin-left: 10px;
   }

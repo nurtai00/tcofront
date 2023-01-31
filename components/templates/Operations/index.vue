@@ -208,7 +208,10 @@ export default {
   },
   methods: {
     onTitleClick(url) {
-      this.$router.push(url)
+      const targetUrl = `${window.location.origin}${
+        window.location.pathname
+      }#${url.slice(1)}`
+      window.open(targetUrl, '_blank')
     },
     onTag(id) {
       const mapOfScrollsTo = {

@@ -46,16 +46,19 @@
             {{ $t('header.footer.phone') }}
           </nuxt-link>
           <div class="socials">
-            <a href="http://">
+            <a target="_blank" href="https://www.facebook.com/tenizkuaty">
               <img src="@/assets/img/facebook.png" />
             </a>
-            <a href="http://">
+            <a target="_blank" href="http://">
               <img src="@/assets/img/instagram.png" />
             </a>
-            <a href="http://">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/tengizchevroil/"
+            >
               <img src="@/assets/img/linked.png" />
             </a>
-            <a href="http://">
+            <a target="_blank" href="https://youtube.com/@user-ki8xd7dr8r">
               <img src="@/assets/img/youtube.png" />
             </a>
           </div>
