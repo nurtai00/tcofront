@@ -1,5 +1,5 @@
 <template>
-  <component :is="type.toLowerCase()" :class="color">
+  <component :is="type.toLowerCase()" :class="color" @click="$emit('click')">
     <!--
       @slot slot for type of component
     -->

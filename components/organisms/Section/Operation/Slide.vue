@@ -12,6 +12,8 @@
             v-if="data.title"
             type="h3"
             class="slide__title title slide__title-desktop"
+            :class="{ pointer: !!data.url }"
+            @click="onTitleClick"
           >
             {{ data.title }}
           </AtomsHeading>
@@ -84,6 +86,11 @@ export default {
     },
   },
   methods: {
+    onTitleClick() {
+      if (this.data?.url) {
+        this.$emit('on-title-click', this.data.url)
+      }
+    },
     openPopup() {
       if (this.hasEmit) {
         this.$emit('popup')
@@ -279,5 +286,8 @@ export default {
   text-decoration: underline;
   border: none;
   background-color: transparent;
+}
+.pointer {
+  cursor: pointer;
 }
 </style>

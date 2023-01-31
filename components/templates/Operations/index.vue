@@ -15,7 +15,7 @@
           v-for="(tag, index) of tags"
           :key="index"
           :tag="tag"
-          @click="onTag"
+          @click="onTag(tag.id)"
         />
       </div>
     </div>
@@ -23,9 +23,11 @@
     <OrganismsSectionOperationSlide
       v-for="(item, key) in textSlide"
       :key="key"
+      :ref="!!item.ref ? item.ref : ''"
       :side="!!(key % 2)"
       :data="item"
       :class="`slide slide${key}`"
+      @on-title-click="onTitleClick"
     >
       <template #description="{ description }">
         <p>{{ description }}</p>
@@ -94,7 +96,6 @@ export default {
         {
           id: 1,
           text: this.$t('operation.products'),
-          url: this.localePath('/products'),
         },
         {
           id: 2,
@@ -159,6 +160,8 @@ export default {
           title: this.$t('operation.textSlide')[3].title,
           description: this.$t('operation.textSlide')[3].description,
           image: 'operation/operations4.png',
+          ref: 'production',
+          url: this.localePath('/products'),
         },
       ],
       textSlide2: [
@@ -204,11 +207,23 @@ export default {
     },
   },
   methods: {
-    onTag() {
-      window.scrollTo({
-        top: this.$refs.security.$el.offsetTop,
-        behavior: 'smooth',
-      })
+    onTitleClick(url) {
+      this.$router.push(url)
+    },
+    onTag(id) {
+      const mapOfScrollsTo = {
+        1: () =>
+          window.scrollTo({
+            top: this.$refs.production[0].$el.offsetTop,
+            behavior: 'smooth',
+          }),
+        2: () =>
+          window.scrollTo({
+            top: this.$refs.security.$el.offsetTop,
+            behavior: 'smooth',
+          }),
+      }
+      mapOfScrollsTo[id]()
     },
   },
 }
