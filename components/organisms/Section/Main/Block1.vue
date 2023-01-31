@@ -81,7 +81,7 @@ export default {
 <style scoped lang="scss">
 .tco {
   &__partners {
-    justify-content: flex-end;
+    justify-content: space-between;
 
     align-items: center;
     @media (orientation: portrait) {
