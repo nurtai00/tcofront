@@ -11,13 +11,27 @@
           v-for="(personal, idx) in personal_list"
           :key="idx"
           class="blocks_content"
-          :class="{ reverse: idx % 2 === 1 }"
+          :class="{
+            reverse: idx % 2 === 1,
+            hasPaddingBottom: personal.text.length <= 137,
+          }"
         >
           <div class="blocks_content__info">
             <h3>{{ personal.title }}</h3>
-            <div v-html="personal.text"></div>
+            <div
+              class="description"
+              v-html="slicedDescription(personal.text)"
+            ></div>
+            <button
+              v-if="personal.text.length > 137"
+              @click="openModal(personal)"
+            >
+              Читать дальше
+            </button>
           </div>
-          <img :src="personal.img" alt="" />
+          <div class="blocks_content-img">
+            <img :src="personal.img" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -79,6 +93,22 @@ export default {
       ],
     }
   },
+  methods: {
+    slicedDescription(text) {
+      console.log(text.length)
+      return text.length > 137 ? `${text.slice(0, 137)}...` : text
+    },
+    openModal(data) {
+      this.$modal.add({
+        title: 'Default',
+        payload: {
+          modal: 'Default',
+          title: data.title,
+          text: data.text,
+        },
+      })
+    },
+  },
 }
 </script>
 
@@ -100,7 +130,7 @@ export default {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: rem(24);
     line-height: 28px;
     color: #30454e;
     @include tablet() {
@@ -160,20 +190,31 @@ export default {
 }
 .reverse {
   flex-direction: column-reverse !important;
-  justify-content: flex-end !important;
   @include tablet() {
     flex-direction: column !important;
     justify-content: flex-start !important;
+  }
+  .blocks_content__info {
+    padding-bottom: 20px;
+    button {
+      margin-bottom: 0;
+    }
+  }
+}
+.hasPaddingBottom {
+  .blocks_content__info {
+    padding-bottom: 20px;
   }
 }
 .blocks_content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   filter: drop-shadow(0px 6px 30px rgba(48, 69, 78, 0.1));
   border-radius: 4px;
+  background-color: white;
   &__info {
-    padding: 20px 30px;
+    padding: 20px 30px 0;
     background: #ffffff;
     @include tablet() {
       padding: 20px 16px;
@@ -191,11 +232,26 @@ export default {
         line-height: 24px;
       }
     }
+    button {
+      margin: 15px 0;
+      background-color: transparent;
+      border: none;
+      text-decoration: underline;
+      color: #00b0f0;
+      cursor: pointer;
+    }
   }
-  img {
-    width: 100%;
+  &-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     height: 100%;
-    object-fit: cover;
+    max-height: 350px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 </style>

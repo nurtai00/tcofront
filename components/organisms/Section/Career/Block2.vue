@@ -9,6 +9,7 @@
       </p>
       <div class="info">
         <AtomsTag
+          class="info_tag"
           :tag="{
             text: $t('career.block2_tag'),
             url: '/about',
@@ -109,6 +110,11 @@ export default {
       font-size: 16px;
       line-height: 22px;
     }
+  }
+}
+.info_tag::v-deep {
+  a {
+    color: white;
   }
 }
 </style>
