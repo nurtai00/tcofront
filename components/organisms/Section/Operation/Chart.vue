@@ -9,6 +9,7 @@
           class="chart__item"
           :options="chartOptions"
           :series="series"
+          height="500"
         />
       </client-only>
       <div class="chart__description">
@@ -32,12 +33,13 @@ export default {
         },
         {
           name: this.$t('operation.chart2'),
-          data: [0.15, 0.091, 0.097, 0.11, 0.1, 0.103, 0.137, 0.106, 0.143, 0.119],
+          data: [
+            0.15, 0.091, 0.097, 0.11, 0.1, 0.103, 0.137, 0.106, 0.143, 0.119,
+          ],
         },
       ],
       chartOptions: {
         chart: {
-          height: 200,
           type: 'line',
           toolbar: {
             show: false,
@@ -87,7 +89,6 @@ export default {
 <style lang="scss" scoped>
 .chart {
   padding: 80px 0;
-
   &__title {
     margin-bottom: 40px;
   }
