@@ -97,8 +97,8 @@
             </nuxt-link>
           </div>
           <div class="projects__protocols_body">
-            <OrganismsSectionOperationCard
-              v-for="(item, key) in cards"
+            <OrganismsSectionProtocolCard
+              v-for="(item, key) in lastProtocols"
               :key="key"
               :content="item"
             />
@@ -250,6 +250,10 @@ export default {
     }
   },
   computed: {
+    lastProtocols() {
+      const protocols = this.$t('project.protocols.items')
+      return protocols.filter((protocol) => +protocol.year === 2018).slice(0, 3)
+    },
     docPubr() {
       const mapOfFileLink = {
         ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=f9483194%2D7bb6%2D4908%2D8b29%2D50f1341a70da',
