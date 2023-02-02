@@ -1,6 +1,11 @@
 <template>
   <div v-if="tag" class="tag" :class="{ tag_selected: tag.selected }">
-    <nuxt-link v-if="!!tag.url" :to="tag.url" target="_blank">
+    <a v-if="tag.source" :href="tag.url" target="_blank">{{ tag.text }}</a>
+    <nuxt-link
+      v-else-if="!!tag.url && !tag.source"
+      :to="tag.url"
+      target="_blank"
+    >
       {{ tag.text }}
     </nuxt-link>
     <span v-else @click="clickedTag" v-text="tag.text"></span>
