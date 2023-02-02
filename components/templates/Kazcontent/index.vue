@@ -439,7 +439,7 @@ export default {
       tags: [
         {
           id: 0,
-          text: 'Мероприятия',
+          text: this.$t('kazContent.section1.tags')[4],
         },
         {
           id: 1,

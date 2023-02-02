@@ -12,7 +12,8 @@
       "Development of potential TCO suppliers",
       "How to become a supplier",
       "Creation of electronic catalog and invoice upload",
-      "Benefits  "
+      "Benefits",
+      "Events"
     ],
     "chartInfo": "With cumulative spent of over 39.3 billion US dollars on sourcing goods and services locally TCO remains a leading contributor into Kazakhstani content development"
   },
@@ -320,9 +321,7 @@
     },
     {
       "name": "Kostanay region",
-      "content": [
-        "MEDICAL EQUIPMENT/ CONSUMABLES"
-      ]
+      "content": ["MEDICAL EQUIPMENT/ CONSUMABLES"]
     },
     {
       "name": "Mangistau region",
