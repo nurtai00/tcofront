@@ -68,7 +68,7 @@ $Mob_hs: ('Montserrat' 24px 700 32px), ('Montserrat' 22px 700 28px),
   // }
 }
 .main {
-  color: $c-main;
+  color: #015467;
 }
 .base {
   color: $c-base;

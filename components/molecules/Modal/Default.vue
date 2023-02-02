@@ -1,6 +1,6 @@
 <template>
   <div class="career_motivation_popup">
-    <AtomsHeading type="h4" color="id_popup">
+    <AtomsHeading type="h4">
       {{ payload.id }}
     </AtomsHeading>
     <AtomsHeading type="h3" color="text">

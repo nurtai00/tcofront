@@ -101,6 +101,7 @@
               v-for="(item, key) in lastProtocols"
               :key="key"
               :content="item"
+              @click="onProtocolCardClick"
             />
           </div>
         </div>
@@ -267,6 +268,9 @@ export default {
     this.tags[0].offsetTop = this.$refs?.pbr?.$el?.offsetTop
   },
   methods: {
+    onProtocolCardClick(link) {
+      window.open(link, '_blank')
+    },
     onTag(offsetTop) {
       if (offsetTop) {
         window.scrollTo({

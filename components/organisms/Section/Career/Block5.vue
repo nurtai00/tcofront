@@ -26,7 +26,7 @@
               v-if="personal.text.length > 137"
               @click="openModal(personal)"
             >
-              Читать дальше
+              {{ $t('operation.more') }}
             </button>
           </div>
           <div class="blocks_content-img">
