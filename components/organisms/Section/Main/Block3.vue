@@ -174,6 +174,18 @@ export default {
   }
 }
 .organismsSectionMainBlock3 {
+  .card {
+    .file {
+      display: flex !important;
+      background: rgba(1, 84, 103, 0.15);
+      padding: 16px;
+      font-family: 'Montserrat', sans-serif !important;
+      color: #015467 !important;
+      text-decoration: none;
+      align-items: center;
+      margin-top: 0 !important;
+    }
+  }
   @media (orientation: portrait) {
     .tco__numbers {
       gap: 0px;
@@ -197,17 +209,9 @@ export default {
       display: none !important;
     }
     .card .file {
-      display: flex !important;
-      background: rgba(1, 84, 103, 0.15);
-      padding: 16px;
-      font-family: 'Montserrat', sans-serif !important;
       font-weight: 700;
       font-size: 20px;
       line-height: 26px;
-      color: #015467 !important;
-      text-decoration: none;
-      align-items: center;
-      margin-top: 0px !important;
       img {
         width: 26vw;
         height: 14vh;
