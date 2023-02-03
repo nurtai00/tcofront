@@ -35,12 +35,11 @@ export default {}
     align-items: center;
     margin: auto;
     width: 100%;
-    transform: translateX(50%);
-    bottom: 100px;
+    transform: translate(50%, -50%);
+    top: 50%;
     text-align: center;
     line-height: 46px;
     max-width: 900px;
-    width: 100%;
     color: #fff;
     @media only screen and (max-width: 1025px) {
       max-width: 780px;
