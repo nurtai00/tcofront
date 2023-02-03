@@ -10,6 +10,18 @@
     <template v-if="!!payload.imgSrc && payload.imgSrc.length">
       <img :src="require(`@/assets/img/${payload.imgSrc}`)" alt="img" />
     </template>
+    <template v-if="!!payload.videoUrl">
+      <iframe
+        width="700"
+        height="380"
+        style="margin-top: 20px"
+        :src="payload.videoUrl"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </template>
   </div>
 </template>
 

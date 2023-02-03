@@ -59,7 +59,7 @@ export default {
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card1'
           ),
-          bgSrc: 'popup-1.png',
+          type: 'gaz',
         },
         {
           id: 2,
@@ -86,7 +86,7 @@ export default {
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card4'
           ),
-          bgSrc: 'popup-1.png',
+          videoUrl: 'https://www.youtube.com/embed/PjxueFd3QWc',
         },
       ],
     }
@@ -109,16 +109,27 @@ export default {
       }
       return mapOfFileLink[this.$i18n.locale]
     },
+    gazUtilizationUrl() {
+      const mapOfUrls = {
+        kk: 'https://www.youtube.com/embed/EpDzU9V7J_Q',
+        ru: 'https://www.youtube.com/embed/368HYzkPlOY',
+        en: 'https://www.youtube.com/embed/9NvcN9A7GsA',
+      }
+      return mapOfUrls[this.$i18n.locale]
+    },
   },
   methods: {
     openPopup(item) {
+      const videoUrl =
+        item?.type === 'gaz' ? this.gazUtilizationUrl : item.videoUrl
       this.$modal.add({
         title: 'Default',
         payload: {
           title: item.title,
           modal: 'Default',
           text: item.popupText,
-          imgSrc: `sustainability/${item.bgSrc}`,
+          imgSrc: item?.bgSrc,
+          videoUrl,
         },
       })
     },
