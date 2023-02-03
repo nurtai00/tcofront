@@ -11,32 +11,32 @@
       <img src="@/assets/img/career/blue.png" alt="" class="blue" />
       <img src="@/assets/img/career/yellow.png" alt="" class="yellow" />
       <img src="@/assets/img/career/golub.png" alt="" class="golub" />
-      <img src="@/assets/img/career/grey.png" alt="" class="grey" />
-      <img src="@/assets/img/career/grey.png" alt="" class="grey2" />
+      <img src="@/assets/img/career/thai.png" alt="" class="grey" />
+      <img src="@/assets/img/career/aust.png" alt="" class="grey2" />
     </div>
     <div class="statistic">
       <div class="statistic_info">
-        <p>
+        <p class="aust">
           {{ $t('career.Australia') }} – 0.03 %<br />
           3 {{ $t('career.employee') }}
         </p>
-        <p>
+        <p class="us">
           {{ $t('career.USA') }} – 0.23 %<br />
           21 {{ $t('career.employee') }}
         </p>
       </div>
       <div class="statistic_info">
-        <p>
+        <p class="uk">
           {{ $t('career.UK') }} – 0.37 %<br />
           34 {{ $t('career.employee') }}
         </p>
-        <p style="margin-top: 24px">
+        <p class="kz" style="margin-top: 24px">
           {{ $t('career.KZ') }} – 99.35 %<br />
           9071 {{ $t('career.employee') }}
         </p>
       </div>
       <div class="statistic_info">
-        <p>
+        <p class="thai">
           {{ $t('career.Tailand') }} – 0.01 %<br />
           1 {{ $t('career.employee') }}
         </p>
@@ -107,7 +107,7 @@ export default {}
   }
   .blue {
     top: 34%;
-    left: 20%;
+    left: 15%;
   }
   .yellow {
     top: 28.5%;
@@ -119,10 +119,10 @@ export default {}
   }
   .grey {
     top: 49.5%;
-    left: 75.5%;
+    left: 71.9%;
   }
   .grey2 {
-    top: 75.5%;
+    top: 72.5%;
     left: 80.5%;
   }
 }
@@ -172,11 +172,7 @@ export default {}
         order: 0;
         margin-bottom: 20px;
       }
-      p:first-of-type {
-        color: #015467;
-      }
       p:last-of-type {
-        color: #ffc000;
         margin-top: 24px;
         @include tablet() {
           margin-top: 0px;
@@ -187,11 +183,7 @@ export default {}
       @include tablet() {
         order: 1;
       }
-      p:first-of-type {
-        color: #00b0f0;
-      }
       p:last-of-type {
-        color: #8c9fa6;
         @include tablet() {
           margin-top: 0px;
         }
@@ -244,5 +236,20 @@ export default {}
       }
     }
   }
+}
+.kz {
+  color: #00b0f0;
+}
+.uk {
+  color: #ffc000;
+}
+.thai {
+  color: #01bf89;
+}
+.aust {
+  color: #b24e8d;
+}
+.us {
+  color: #015467;
 }
 </style>
