@@ -12,26 +12,33 @@
       <img src="@/assets/img/career/yellow.png" alt="" class="yellow" />
       <img src="@/assets/img/career/golub.png" alt="" class="golub" />
       <img src="@/assets/img/career/grey.png" alt="" class="grey" />
+      <img src="@/assets/img/career/grey.png" alt="" class="grey2" />
     </div>
     <div class="statistic">
       <div class="statistic_info">
         <p>
-          {{ $t('career.USA') }} – 51,5 %<br />
-          1000 {{ $t('career.employee') }}
+          {{ $t('career.Australia') }} – 0.03 %<br />
+          3 {{ $t('career.employee') }}
         </p>
         <p>
-          {{ $t('career.UK') }} – 12,9 %<br />
-          1000 {{ $t('career.employee') }}
+          {{ $t('career.USA') }} – 0.23 %<br />
+          21 {{ $t('career.employee') }}
         </p>
       </div>
       <div class="statistic_info">
         <p>
-          {{ $t('career.KZ') }} – 32,2 %<br />
-          1000 {{ $t('career.employee') }}
+          {{ $t('career.UK') }} – 0.37 %<br />
+          34 {{ $t('career.employee') }}
         </p>
+        <p style="margin-top: 24px">
+          {{ $t('career.KZ') }} – 99.35 %<br />
+          9071 {{ $t('career.employee') }}
+        </p>
+      </div>
+      <div class="statistic_info">
         <p>
-          {{ $t('career.Tailand') }} – 3,2 %<br />
-          1000 {{ $t('career.employee') }}
+          {{ $t('career.Tailand') }} – 0.01 %<br />
+          1 {{ $t('career.employee') }}
         </p>
       </div>
       <div class="statistic_gender">
@@ -78,7 +85,8 @@ export default {}
   .blue,
   .yellow,
   .golub,
-  .grey {
+  .grey,
+  .grey2 {
     position: absolute;
     animation: pulse 2.5s linear infinite;
     @include tablet() {
@@ -100,6 +108,10 @@ export default {}
   .grey {
     top: 49.5%;
     left: 75.5%;
+  }
+  .grey2 {
+    top: 75.5%;
+    left: 80.5%;
   }
 }
 @keyframes pulse {
@@ -168,7 +180,6 @@ export default {}
       }
       p:last-of-type {
         color: #8c9fa6;
-        margin-top: 24px;
         @include tablet() {
           margin-top: 0px;
         }
