@@ -30,7 +30,7 @@
           {{ $t('career.UK') }} – 0.37 %<br />
           34 {{ $t('career.employee') }}
         </p>
-        <p class="kz" style="margin-top: 24px">
+        <p class="kz">
           {{ $t('career.KZ') }} – 99.35 %<br />
           9071 {{ $t('career.employee') }}
         </p>
@@ -45,14 +45,14 @@
         <div class="blue statistic_gender-info">
           <img src="@/assets/img/career/muzh.png" alt="" />
           <div class="blue-text text">
-            <span>Мужчины</span>
+            <span>{{ $t('career.male') }}</span>
             <span>76%</span>
           </div>
         </div>
         <div class="purple statistic_gender-info">
           <img src="@/assets/img/career/zhen.png" alt="" />
           <div class="purple-text text">
-            <span>Женщины</span>
+            <span>{{ $t('career.female') }}</span>
             <span>24%</span>
           </div>
         </div>
@@ -148,6 +148,7 @@ export default {}
   z-index: 111;
   @include tablet() {
     flex-direction: column;
+    align-items: center;
     margin-top: 0;
   }
   p {
@@ -161,11 +162,15 @@ export default {}
   &_info {
     width: 100%;
     max-width: 376px;
+    p {
+      min-width: 160px;
+    }
     @include tablet() {
       max-width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
+      gap: 30px;
     }
     &:first-of-type {
       @include tablet() {
@@ -238,13 +243,20 @@ export default {}
   }
 }
 .kz {
+  margin-top: 24px;
   color: #00b0f0;
+  @include tablet {
+    margin-top: 0;
+  }
 }
 .uk {
   color: #ffc000;
 }
 .thai {
   color: #01bf89;
+  @include tablet {
+    margin-top: 24px;
+  }
 }
 .aust {
   color: #b24e8d;

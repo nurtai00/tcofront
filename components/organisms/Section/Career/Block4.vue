@@ -98,6 +98,9 @@ export default {
   }
   @include tablet() {
     display: flex;
+    img {
+      width: 100%;
+    }
   }
 }
 </style>

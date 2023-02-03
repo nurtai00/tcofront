@@ -13,10 +13,10 @@ export default {}
 
 <style lang="scss" scoped>
 .about_career {
-  position: relative;
   display: flex;
   margin-top: 32px;
   overflow: hidden;
+  position: relative;
   @include phone {
     flex-direction: column-reverse;
   }
@@ -33,10 +33,11 @@ export default {}
     position: absolute;
     display: flex;
     align-items: center;
-    margin: auto;
+    justify-content: center;
     width: 100%;
-    transform: translate(50%, -50%);
     top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
     text-align: center;
     line-height: 46px;
     max-width: 900px;
@@ -55,14 +56,13 @@ export default {}
       bottom: 20px;
     }
     @include tablet() {
-      left: 0;
-      right: 0;
-      font-size: 26px;
-      line-height: 20px;
+      font-size: 22px;
+      line-height: 25px;
       max-width: 560px;
     }
     @include phone {
       position: static;
+      transform: translateX(0);
       font-size: 18px;
       line-height: 28px;
       max-width: 560px;
