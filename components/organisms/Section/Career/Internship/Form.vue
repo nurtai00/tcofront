@@ -2,13 +2,13 @@
   <div class="form">
     <div class="mobile">
       <img src="@/assets/img/career/programm_mobile.png" alt="" />
-      <AtomsHeading type="h3" color="white">
+      <AtomsHeading v-if="withOutTitle" type="h3" color="white">
         {{ $t('career.form_header') }}
       </AtomsHeading>
     </div>
     <div class="container">
       <div class="form_content">
-        <AtomsHeading type="h3" color="main">
+        <AtomsHeading v-if="!withOutTitle" type="h3" color="main">
           {{ $t('career.form_header') }}
         </AtomsHeading>
         <div>
@@ -44,6 +44,12 @@
 
 <script>
 export default {
+  props: {
+    withOutTitle: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       checked: false,

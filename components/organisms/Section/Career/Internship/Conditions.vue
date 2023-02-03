@@ -30,6 +30,12 @@
         <li>{{ $t('career.conditions_info')[2] }}</li>
         <li>{{ $t('career.conditions_info')[3] }}</li>
       </ul>
+      <a
+        class="link"
+        target="_blank"
+        href="https://norsecdeltaprojects-my.sharepoint.com/:w:/g/personal/n_nudiyev_norsec_kz/ETF4ZF_UwChGp-4QATQYf1IBLidPgR3I2dk6aaWwTIZ__Q?e=xvV3xo"
+        >{{ $t('career.intern.link') }}</a
+      >
     </div>
   </div>
 </template>
@@ -41,20 +47,20 @@ export default {
       conditions: [
         {
           id: '01',
-          title: this.$t('career.conditions_title')[0],
-          text: `<ol><li>${this.$t('career.conditions_list')[0][0]}</li><li>${this.$t('career.conditions_list')[0][1]} <br/>${this.$t('career.conditions_list')[0][2]}</li><li>${this.$t('career.conditions_list')[0][3]}</li></ol>`,
+          title: this.$t('career.conditions_title')[1],
+          text: `<ol><li>${this.$t('career.conditions_list')[1][0]}</li><li>${
+            this.$t('career.conditions_list')[1][1]
+          }</li><li>${this.$t('career.conditions_list')[1][2]}</li><li>${
+            this.$t('career.conditions_list')[1][3]
+          }</li><li>${this.$t('career.conditions_list')[1][4]}</li></ol>`,
           modal: 'Default',
         },
         {
           id: '02',
-          title: this.$t('career.conditions_title')[1],
-          text: `<ol><li>${this.$t('career.conditions_list')[1][0]}</li><li>${this.$t('career.conditions_list')[1][1]}</li><li>${this.$t('career.conditions_list')[1][2]}</li><li>${this.$t('career.conditions_list')[1][3]}</li><li>${this.$t('career.conditions_list')[1][4]}</li></ol>`,
-          modal: 'Default',
-        },
-        {
-          id: '03',
           title: this.$t('career.conditions_title')[2],
-          text: `<ol><li>${this.$t('career.conditions_list')[2][0]}</li> <li>${this.$t('career.conditions_list')[2][1]}</li> <li>${this.$t('career.conditions_list')[2][2]}</li></ol>`,
+          text: `<ol><li>${this.$t('career.conditions_list')[2][0]}</li> <li>${
+            this.$t('career.conditions_list')[2][1]
+          }</li> <li>${this.$t('career.conditions_list')[2][2]}</li></ol>`,
           modal: 'Default',
         },
       ],
@@ -147,6 +153,12 @@ export default {
         line-height: 20px;
       }
     }
+  }
+  .link {
+    margin-top: 15px;
+    display: inline-block;
+    color: #30454e;
+    text-decoration: underline;
   }
 }
 </style>

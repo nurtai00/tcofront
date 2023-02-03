@@ -147,6 +147,19 @@
   ],
   "intern": {
     "title": "Internship",
-    "step": "Step"
+    "step": "Step",
+    "link": "Application for an internship",
+    "quiz": {
+      "title": "Check for eligibility",
+      "yes": "Yes",
+      "no": "No",
+      "citizen": "Are you a citizen of the Republic of Kazakhstan?",
+      "age": "Are you over 18 years old?",
+      "student": "Are you a university student who has completed two full academic years?",
+      "GPA": "Is your GPA 3.0 or higher?",
+      "send": "Send",
+      "error": "Sorry, you didn't meet the criteria.",
+      "success": "Congratulations, you met the criteria, you can apply!"
+    }
   }
 }

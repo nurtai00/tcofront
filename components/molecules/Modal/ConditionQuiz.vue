@@ -1,10 +1,10 @@
 <template>
   <div class="condition_quiz">
     <AtomsHeading type="h3" color="main">
-      Проверить на соответствие критериям
+      {{ $t('career.intern.quiz.title') }}
     </AtomsHeading>
     <MoleculesForm :onSubmit="onSubmit">
-      <p>1. Вы гражданин Республики Казахстан?</p>
+      <p>1. {{ $t('career.intern.quiz.citizen') }}</p>
       <div>
         <AtomsRadio
           id="yes_citizen"
@@ -13,7 +13,7 @@
           val="yes"
           class="radio"
         >
-          Да
+          {{ $t('career.intern.quiz.yes') }}
         </AtomsRadio>
         <AtomsRadio
           id="no_citizen"
@@ -22,10 +22,10 @@
           val="no"
           class="radio"
         >
-          Нет
+          {{ $t('career.intern.quiz.no') }}
         </AtomsRadio>
       </div>
-      <p>2. Ваш возраст выше 18 лет?</p>
+      <p>2. {{ $t('career.intern.quiz.age') }}</p>
       <div>
         <AtomsRadio
           id="yes_age"
@@ -34,7 +34,7 @@
           val="yes"
           class="radio"
         >
-          Да
+          {{ $t('career.intern.quiz.yes') }}
         </AtomsRadio>
         <AtomsRadio
           id="no_age"
@@ -43,13 +43,10 @@
           val="no"
           class="radio"
         >
-          Нет
+          {{ $t('career.intern.quiz.no') }}
         </AtomsRadio>
       </div>
-      <p>
-        3. Вы студент Высшего учебного заведения закончивший два полноценных
-        учебных года?
-      </p>
+      <p>3. {{ $t('career.intern.quiz.student') }}</p>
       <div>
         <AtomsRadio
           id="yes_student"
@@ -58,7 +55,7 @@
           val="yes"
           class="radio"
         >
-          Да
+          {{ $t('career.intern.quiz.yes') }}
         </AtomsRadio>
         <AtomsRadio
           id="no_student"
@@ -67,10 +64,10 @@
           val="no"
           class="radio"
         >
-          Нет
+          {{ $t('career.intern.quiz.no') }}
         </AtomsRadio>
       </div>
-      <p>4. Ваш средний балл (GPA) 3.0 и выше?</p>
+      <p>4. {{ $t('career.intern.quiz.GPA') }}</p>
       <div>
         <AtomsRadio
           id="yes_gpa"
@@ -79,7 +76,7 @@
           val="yes"
           class="radio"
         >
-          Да
+          {{ $t('career.intern.quiz.yes') }}
         </AtomsRadio>
         <AtomsRadio
           id="no_gpa"
@@ -88,7 +85,7 @@
           val="no"
           class="radio"
         >
-          Нет
+          {{ $t('career.intern.quiz.no') }}
         </AtomsRadio>
       </div>
       <AtomsButton
@@ -97,7 +94,7 @@
         :disabled="disabled"
         class="btn"
       >
-        Отправить
+        {{ $t('career.intern.quiz.send') }}
       </AtomsButton>
       <p v-else class="message" :style="{ color: message.color }">
         {{ message.text }}
@@ -135,12 +132,12 @@ export default {
     onSubmit() {
       if (Object.values(this.model).includes('no')) {
         this.message = {
-          text: 'К сожалению, вы не соответствовали критериям.',
+          text: this.$t('career.intern.quiz.error'),
           color: '#D01D12',
         }
       } else {
         this.message = {
-          text: 'Поздравляем, вы соответствовали критериям, можете оставить заявку!',
+          text: this.$t('career.intern.quiz.success'),
           color: '#015467',
         }
       }
