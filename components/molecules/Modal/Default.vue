@@ -3,7 +3,7 @@
     <AtomsHeading type="h4">
       {{ payload.id }}
     </AtomsHeading>
-    <AtomsHeading type="h3" color="text">
+    <AtomsHeading type="h3" color="main">
       {{ payload.title }}
     </AtomsHeading>
     <p class="default_modal_text" v-html="payload.text"></p>
