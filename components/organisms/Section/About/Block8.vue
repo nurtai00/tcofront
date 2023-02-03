@@ -67,7 +67,7 @@ export default {
           title: this.$t('company.slider_4[0].title'),
           description: this.$t('company.slider_4[0].text'),
           pdf: true,
-          image: 'photo.png',
+          image: `photo${this.$i18n.locale}.png`,
         },
         {
           title: this.$t('company.slider_4[1].title'),
