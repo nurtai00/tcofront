@@ -2,7 +2,7 @@
   <client-only>
     <div class="section--blue" style="padding: 0; position: relative">
       <div class="container" style="position: relative">
-        <div ref="swiper" class="swiper">
+        <div class="swiper swiper1">
           <div class="swiper-wrapper">
             <div
               v-for="slide of slides"
@@ -30,6 +30,20 @@
                   </div>
                 </template>
               </OrganismsSectionOperationSlide>
+              <div class="main_b4_actions">
+                <img
+                  class="main_b4_actions_prev"
+                  src="../../../../assets/icons/small-chevron-left.png"
+                  alt="small-chevron-left"
+                  @click="prevEl"
+                />
+                <img
+                  class="main_b4_actions_next"
+                  src="../../../../assets/icons/small-chevron-right.png"
+                  alt="small-chevron-right"
+                  @click="nextEl"
+                />
+              </div>
               <!--          <div-->
               <!--            class="double-block tco__partners"-->
               <!--            style="justify-content: flex-end"-->
@@ -85,16 +99,27 @@ export default {
   async mounted() {
     await this.$nextTick()
     // eslint-disable-next-line no-new
-    this.swiper = new Swiper(this.$refs.swiper, {
+    this.swiper = new Swiper('.swiper1', {
       modules: [Autoplay],
       loop: true,
       autoplay: {
         delay: 3000,
       },
+      navigation: {
+        nextEl: '.main_b4_actions_next',
+        prevEl: '.main_b4_actions_prev',
+      },
       slidesPerView: 1,
     })
+    console.log(this.swiper)
   },
   methods: {
+    nextEl() {
+      this.swiper.slideNext()
+    },
+    prevEl() {
+      this.swiper.slidePrev()
+    },
     openPopup(item) {
       this.swiper.autoplay.pause()
       this.$modal.add({
@@ -128,5 +153,61 @@ export default {
 }
 ::v-deep .slider-wrapper {
   height: 460px !important;
+  position: relative;
+}
+.swiper-button-next {
+  left: 45%;
+  bottom: 10%;
+  background-color: #8c9fa6;
+  padding: 25px;
+  border-radius: 50%;
+  border: none;
+}
+.main_b4_actions {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  //position: relative;
+  //left: 100px;
+  //top: -160px;
+  @media (orientation: portrait) {
+    left: 16px;
+    position: absolute;
+    top: 175px;
+  }
+  img {
+    padding: 12px 18px 12px 14px;
+    border: 1px solid #8c9fa6;
+    border-radius: 50%;
+    margin-right: 24px;
+    cursor: pointer;
+    pointer-events: auto;
+    touch-action: auto;
+    background: rgba(1, 84, 103, 0.1);
+    @media (orientation: portrait) {
+      padding: 7px 10px 7px 8px;
+      margin-right: 12px;
+      width: 26px;
+      height: 26px;
+      background: #ffffff;
+    }
+  }
+  img:last-child {
+    padding: 12px 14px 12px 18px;
+    @media (orientation: portrait) {
+      padding: 7px 8px 7px 10px;
+      margin-right: 12px;
+    }
+  }
+  section {
+    position: relative;
+  }
+  // .disabled {
+  //   cursor: not-allowed;
+  //   pointer-events: none;
+  //   touch-action: none;
+  //   background: #ffffff;
+  // }
 }
 </style>

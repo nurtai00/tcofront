@@ -8,29 +8,9 @@
     </div>
     <div class="container">
       <div class="form_content">
-        <AtomsHeading v-if="!withOutTitle" type="h3" color="main">
-          {{ $t('career.form_header') }}
-        </AtomsHeading>
-        <div>
-          <p>
-            {{ $t('career.form_description') }}
-          </p>
-          <AtomsCheckbox
-            id="checked"
-            :value="checked"
-            class="checkbox"
-            @change="
-              (val) => {
-                checked = val
-              }
-            "
-          >
-            {{ $t('career.form_agreement') }}
-          </AtomsCheckbox>
-          <AtomsButton :disabled="disabled">
-            {{ $t('career.form_save') }}
-          </AtomsButton>
-        </div>
+        <p v-for="text of $t('career.form_description')" :key="text">
+          {{ text }}
+        </p>
       </div>
     </div>
     <img
@@ -108,6 +88,7 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   padding: 80px 0;
   padding-right: calc(50% + 20px);
   @include tablet() {
