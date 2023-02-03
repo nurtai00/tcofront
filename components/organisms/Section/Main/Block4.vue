@@ -27,9 +27,7 @@ export default {
           </p>
           <AtomsButton @click="nav">
             {{ $t('home.block_4.button') }}
-            <img
-              src="@/assets/img/right-Arrow.png"
-            />
+            <img src="@/assets/img/right-Arrow.png" />
           </AtomsButton>
         </div>
       </div>
@@ -39,7 +37,8 @@ export default {
 
 <style scoped lang="scss">
 .double-block {
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 30px;
   @include tablet() {
     justify-content: flex-start;
   }
