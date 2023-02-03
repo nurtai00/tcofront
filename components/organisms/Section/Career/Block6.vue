@@ -42,8 +42,20 @@
         </p>
       </div>
       <div class="statistic_gender">
-        <img src="@/assets/img/career/muzh.png" alt="" />
-        <img src="@/assets/img/career/zhen.png" alt="" />
+        <div class="blue statistic_gender-info">
+          <img src="@/assets/img/career/muzh.png" alt="" />
+          <div class="blue-text text">
+            <span>Мужчины</span>
+            <span>76%</span>
+          </div>
+        </div>
+        <div class="purple statistic_gender-info">
+          <img src="@/assets/img/career/zhen.png" alt="" />
+          <div class="purple-text text">
+            <span>Женщины</span>
+            <span>24%</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -193,9 +205,33 @@ export default {}
       order: -1;
       margin-bottom: 20px;
     }
-    img {
+    &-info {
       width: 130px;
       height: 130px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          font-size: 16px;
+          font-family: Roboto, sans-serif;
+        }
+      }
+      .blue-text {
+        color: $c-tco5;
+      }
+      .purple-text {
+        color: #b24e8d;
+      }
       @include tablet() {
         width: 83px;
         height: 83px;

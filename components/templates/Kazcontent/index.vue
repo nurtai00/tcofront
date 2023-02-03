@@ -794,6 +794,7 @@ export default {
 
   &__tags {
     margin-bottom: 40px;
+    max-width: 70%;
   }
 
   .gray {
