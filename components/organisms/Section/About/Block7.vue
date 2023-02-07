@@ -676,5 +676,8 @@ export default {
   overflow: auto;
   max-width: 1200px;
   margin: 0 auto;
+  @include phone {
+    height: 800px;
+  }
 }
 </style>

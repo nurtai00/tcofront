@@ -213,7 +213,8 @@ export default {
   width: 100%;
   &__wrapper {
     display: flex;
-    height: 500px;
+    max-height: 500px;
+    height: 100%;
   }
   @include tablet() {
     .container {
@@ -225,6 +226,9 @@ export default {
 .reverse {
   .information_content {
     width: 50%;
+    @include phone {
+      width: 100%;
+    }
   }
 }
 .mobile {
@@ -251,6 +255,9 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 80px 60px 80px 0;
+  @include phone {
+    width: 100%;
+  }
   .email {
     display: flex;
     align-items: center;
@@ -263,6 +270,9 @@ export default {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    @include phone {
+      display: none;
+    }
     img {
       width: 100%;
     }

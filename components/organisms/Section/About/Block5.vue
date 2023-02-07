@@ -110,7 +110,7 @@ export default {
         justify-content: flex-end;
       }
       &.second {
-        margin-left: 50px;
+        margin-left: 0;
         justify-content: flex-start;
       }
       &:last-of-type {

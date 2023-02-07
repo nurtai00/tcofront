@@ -31,7 +31,7 @@ export default {
       options: {
         pagination: '.steps span',
         loop: true,
-        interval: 3000,
+        interval: 1000000000,
         slidesPerView: 1,
         id: 'main-slider',
         slide: this.slideTo,
@@ -47,7 +47,7 @@ export default {
 <template>
   <div class="slider-cont">
     <div class="container">
-      <OrganismsSlider :options="options">
+      <OrganismsSlider class="slider" :options="options">
         <MoleculesSlide
           v-for="(slide, slide_index) in slides"
           :key="slide_index"
@@ -58,7 +58,9 @@ export default {
               <h3 v-text="slide.company"></h3>
               <h1 v-text="slide.percent"></h1>
             </div>
-            <img :src="slide.img" alt="kazmunaylogo" />
+            <div class="tco__partners-img">
+              <img :src="slide.img" alt="kazmunaylogo" />
+            </div>
           </div>
         </MoleculesSlide>
       </OrganismsSlider>
@@ -73,7 +75,7 @@ export default {
 .slider-cont {
   position: relative;
   background: #f2f6f7;
-  height: 410px;
+  max-height: 410px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -84,9 +86,11 @@ export default {
 .tco {
   &__partners {
     justify-content: flex-end;
-
     @media (orientation: portrait) {
+      padding-top: 20px;
       flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
     }
     &-wrapper {
       width: 50%;
@@ -105,8 +109,14 @@ export default {
         max-width: inherit;
       }
       @media (orientation: portrait) {
-        padding-top: 0px;
-        gap: 0px;
+        align-self: flex-start;
+        padding-top: 0;
+        gap: 0;
+        width: 100%;
+        h3 {
+          top: 0;
+          color: #015467;
+        }
       }
       h1,
       h3 {
@@ -131,9 +141,10 @@ export default {
       }
       h3:nth-child(1) {
         @media (orientation: portrait) {
-          color: #ffffff;
+          color: #015467;
+          font-size: rem(20);
           position: relative;
-          top: -285px;
+          top: 0;
         }
       }
       h3:nth-child(2) {
@@ -148,8 +159,22 @@ export default {
       }
     }
 
-    img {
+    &-img {
       width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      @media (orientation: portrait) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        max-height: 250px;
+        height: 100%;
+      }
     }
   }
 }
@@ -162,7 +187,7 @@ export default {
   left: 130px;
   @media (orientation: portrait) {
     left: 16px;
-    top: -20px;
+    top: -10px;
     width: calc(100vw - 32px);
   }
   span {

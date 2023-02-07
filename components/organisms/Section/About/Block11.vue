@@ -116,9 +116,18 @@ export default {
 <style lang="scss" v-deep scoped>
 .section {
   height: 460px;
+  @include phone {
+    height: auto;
+  }
 }
 ::v-deep .slide__content-wrapper {
-  padding-top: 80px !important;
+  padding-top: 80px;
+  @include phone {
+    padding-top: 20px;
+  }
+}
+::v-deep .button-more {
+  margin-top: 0 !important;
 }
 ::v-deep .slider-wrapper {
   height: 460px !important;
@@ -132,9 +141,9 @@ export default {
   //left: 100px;
   //top: -160px;
   @media (orientation: portrait) {
-    left: 16px;
+    right: 20px;
     position: absolute;
-    top: 175px;
+    bottom: 20px;
   }
   img {
     padding: 12px 18px 12px 14px;

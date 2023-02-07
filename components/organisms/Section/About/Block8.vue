@@ -44,17 +44,6 @@
                   @click="nextEl"
                 />
               </div>
-              <!--          <div-->
-              <!--            class="double-block tco__partners"-->
-              <!--            style="justify-content: flex-end"-->
-              <!--          >-->
-              <!--            <div class="tco__partners-wrapper" style="max-height: 600px">-->
-              <!--              <h1 v-text="slide.title"></h1>-->
-              <!--              <div class="underline"></div>-->
-              <!--              <p v-text="slide.text"></p>-->
-              <!--            </div>-->
-              <!--            <img :style="options.style" :src="slide.imgSrc" />-->
-              <!--          </div>-->
             </div>
           </div>
         </div>
@@ -136,9 +125,17 @@ export default {
 </script>
 
 <style lang="scss" v-deep scoped>
+.section--blue {
+  @media (orientation: portrait) {
+    margin-top: 20px;
+  }
+}
 .slide::v-deep {
   .slide__content-wrapper {
     padding-top: 80px;
+    @include phone {
+      padding-top: 20px;
+    }
   }
   & {
     max-height: 500px;
@@ -151,9 +148,11 @@ export default {
   position: relative;
   background: #f2f6f7;
 }
-::v-deep .slider-wrapper {
-  height: 460px !important;
-  position: relative;
+::v-deep {
+  &.slider-wrapper {
+    height: 460px !important;
+    position: relative;
+  }
 }
 .swiper-button-next {
   left: 45%;
@@ -172,9 +171,9 @@ export default {
   //left: 100px;
   //top: -160px;
   @media (orientation: portrait) {
-    left: 16px;
+    right: 20px;
     position: absolute;
-    top: 175px;
+    bottom: 20px;
   }
   img {
     padding: 12px 18px 12px 14px;

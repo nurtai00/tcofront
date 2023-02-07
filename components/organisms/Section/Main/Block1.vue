@@ -91,7 +91,6 @@ export default {
       width: 50%;
       height: 100%;
     }
-
     &-wrapper {
       padding: 40px 40px 60px 0;
       max-width: 590px;
@@ -109,8 +108,9 @@ export default {
         max-width: inherit;
       }
       @media (orientation: portrait) {
-        padding-top: 0px;
-        gap: 0px;
+        padding-top: 0;
+        gap: 10px;
+        align-items: center;
       }
       h1,
       h3 {
@@ -161,16 +161,23 @@ export default {
     &-title {
       font-family: 'Montserrat', sans-serif !important;
       font-weight: 700 !important;
-      margin: 20px 0 !important;
+      margin: 20px 0;
     }
     &-text {
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
-      font-size: 20px;
+      font-size: rem(20);
       line-height: 28px;
       color: #30454e;
     }
     background: #ffffff;
+    @include phone {
+      img {
+        width: 100%;
+      }
+      &-text {
+      }
+    }
   }
 }
 @media (orientation: portrait) {
@@ -211,8 +218,8 @@ export default {
   top: -30px;
   z-index: 999;
   @media (orientation: portrait) {
-    left: 16px;
-    top: -20px;
+    left: 30px;
+    top: -10px;
     width: calc(100vw - 32px);
   }
   span {

@@ -124,18 +124,30 @@ export default {
   background: #f2f6f7;
 
   height: 460px;
+  @include phone {
+    height: auto;
+  }
 }
 ::v-deep .slide__content-wrapper {
-  padding-top: 80px !important;
+  padding-top: 80px;
+  @media (orientation: portrait) {
+    padding-top: 20px;
+  }
 }
 ::v-deep .slider-wrapper {
-  height: 460px !important;
+  height: 460px;
   position: relative;
+  @include phone {
+    height: auto;
+  }
 }
 .slide {
 }
 section {
   position: relative;
+}
+::v-deep .button-more {
+  margin-top: 0 !important;
 }
 .main_b2_actions {
   display: flex;
@@ -147,9 +159,9 @@ section {
   //left: 100px;
   //top: -160px;
   @media (orientation: portrait) {
-    left: 16px;
+    left: 75%;
     position: absolute;
-    top: 175px;
+    bottom: 20px;
   }
   img {
     padding: 12px 18px 12px 14px;

@@ -2,7 +2,10 @@
   <section class="container" style="padding: 0; position: relative">
     <OrganismsSlider :options="options">
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
-        <div class="double-block" style="justify-content: flex-end">
+        <div
+          class="double-block tco__partners"
+          style="justify-content: flex-end"
+        >
           <div class="tco__partners-wrapper">
             <h1 v-text="slide.title"></h1>
             <div class="amount">
@@ -56,7 +59,7 @@ export default {
         },
         loop: true,
         slidesPerView: 1,
-        interval: 3000,
+        interval: 10000000,
         id: 'main_b4',
         slide: this.slideTo,
         style: 'height: 780px',
@@ -104,6 +107,7 @@ export default {
     width: 50%;
     @media (orientation: portrait) {
       height: 220px;
+      width: 100%;
       object-fit: cover;
     }
   }
@@ -195,12 +199,21 @@ export default {
           }
         }
       }
+      @include phone {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
     }
     background: #f2f6f7;
   }
 }
 ::v-deep .slider-wrapper {
   height: auto;
+  @include phone {
+    height: auto !important;
+  }
 }
 .main_b4_actions {
   display: flex;
