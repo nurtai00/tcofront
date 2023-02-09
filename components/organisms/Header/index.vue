@@ -287,8 +287,8 @@ header {
     border-bottom: 1px solid #8c9fa6;
   }
   .logo {
-    width: 70px;
-    height: 40px;
+    width: 160px;
+    height: 60px;
     margin-right: auto;
     img {
       width: 100%;

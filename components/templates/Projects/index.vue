@@ -108,15 +108,11 @@
       :data="slide2"
       class="slide last"
     >
-      <template #description="{ description, showLinkButton }">
+      <template #description="{ description }">
         <p>{{ description }}</p>
-        <button
-          v-if="showLinkButton"
-          class="operations__button-more"
-          @click="slide2.link()"
-        >
-          Читать дальше
-        </button>
+        <!--        <button class="operations__button-more" @click="slide2.link()">-->
+        <!--          Читать дальше-->
+        <!--        </button>-->
       </template>
     </OrganismsSectionOperationSlide>
     <div class="protocols">
@@ -334,6 +330,12 @@ export default {
     this.tags[0].offsetTop = this.$refs?.pbr?.$el?.offsetTop
   },
   methods: {
+    nextEl() {
+      this.swiper.slideNext()
+    },
+    prevEl() {
+      this.swiper.slidePrev()
+    },
     onProtocolCardClick(link) {
       window.open(link, '_blank')
     },
@@ -702,6 +704,7 @@ export default {
   //position: relative;
   //left: 100px;
   //top: -160px;
+  z-index: 60;
   @media (orientation: portrait) {
     position: absolute;
     bottom: 0;

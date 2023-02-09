@@ -493,19 +493,10 @@ export default {
         plotOptions: {
           bar: {
             horizontal: !!window.matchMedia('(max-width: 600px)').matches,
-            columnWidth: '50%',
             endingShape: 'rounded',
             borderRadius: 4,
-            barHeight: 120,
-          },
-        },
-        grid: {
-          show: true,
-          padding: {
-            top: 20,
-            right: 0,
-            bottom: 20,
-            left: 0,
+            columnWidth: '50%',
+            barHeight: '100%',
           },
         },
         dataLabels: {
@@ -513,7 +504,7 @@ export default {
         },
         stroke: {
           show: true,
-          width: 2,
+          width: 4,
           colors: ['transparent'],
         },
         xaxis: {

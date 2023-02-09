@@ -119,8 +119,8 @@ footer {
   }
   .mobile_logo {
     display: none;
-    width: 48px;
-    height: 48px;
+    width: 130px;
+    height: 65px;
     margin-right: 19px;
     img {
       width: 100%;
