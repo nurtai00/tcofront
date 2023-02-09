@@ -74,7 +74,7 @@ export default {
     padding: 80px 0;
     @include tablet() {
       width: 100%;
-      padding: 20px 16px;
+      padding: 20px 16px !important;
     }
     h3 {
       width: 100%;

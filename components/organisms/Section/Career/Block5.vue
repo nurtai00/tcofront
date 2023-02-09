@@ -117,7 +117,7 @@ export default {
   background: #f2f6f7;
   padding: 80px 0;
   @include tablet() {
-    padding: 40px 0;
+    padding: 20px 0;
   }
   h3 {
     margin-bottom: 36px;
@@ -182,8 +182,8 @@ export default {
   .slide__image {
     width: auto;
     display: block;
+    height: 390px;
     @include phone {
-      margin: 0 auto;
       display: flex;
       h3 {
         width: 100%;
@@ -193,6 +193,9 @@ export default {
       img {
         height: 100%;
         max-height: 100%;
+        width: 100%;
+        object-fit: none;
+        object-position: top;
       }
     }
   }
