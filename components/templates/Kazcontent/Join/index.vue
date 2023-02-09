@@ -578,7 +578,6 @@ export default {
 
   .contacts {
     padding-bottom: 80px;
-
     &__title {
       font-size: 24px;
       font-weight: 700;
@@ -701,12 +700,40 @@ export default {
     }
   }
 }
+.dropdown {
+  @include phone {
+    margin-top: 40px !important;
+  }
+}
 .dropdown::v-deep {
   &.slide {
     max-height: 600px;
+    @include phone;
   }
   .slide {
     max-height: 600px;
+  }
+}
+.gray::v-deep {
+  @include phone {
+    .slide__image {
+      h3 {
+        color: white;
+      }
+    }
+  }
+}
+.slide::v-deep {
+  @include phone {
+    .slide__image {
+      img {
+        filter: brightness(0.6);
+      }
+      h3 {
+        z-index: 20;
+        color: white;
+      }
+    }
   }
 }
 </style>

@@ -102,5 +102,15 @@ export default {
       width: 100%;
     }
   }
+  @include phone {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    h3 {
+      left: 10px;
+    }
+    img {
+      filter: brightness(0.6);
+    }
+  }
 }
 </style>

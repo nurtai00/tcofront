@@ -110,7 +110,6 @@ export default {
       @media (orientation: portrait) {
         padding-top: 0;
         gap: 10px;
-        align-items: center;
       }
       h1,
       h3 {
@@ -182,7 +181,7 @@ export default {
 }
 @media (orientation: portrait) {
   .double-block div {
-    width: 90%;
+    width: 100%;
   }
 }
 .slide {

@@ -43,7 +43,10 @@
       class="slide slide1"
     >
       <template #description>
-        <div class="projects__slide" style="width: 600px; max-width: 600px">
+        <div
+          class="projects__slide desktop"
+          style="width: 600px; max-width: 600px"
+        >
           <div class="left">
             <div
               v-for="(item, key) in slider.left"
@@ -64,6 +67,37 @@
               :class="{ active: key === animationProgress }"
             >
               {{ item }}
+            </div>
+          </div>
+        </div>
+        <div
+          class="projects__slide mobile"
+          style="width: 600px; max-width: 600px"
+        >
+          <div :ref="swiper" class="swiper">
+            <div class="swiper-wrapper">
+              <div
+                v-for="item of slider.mobile"
+                :key="item.title"
+                class="swiper-slide"
+              >
+                <h3>{{ item.title }}</h3>
+                <span>{{ item.description }}</span>
+              </div>
+            </div>
+            <div class="main_b4_actions">
+              <img
+                class="main_b4_actions_prev"
+                src="~/assets/icons/small-chevron-left.png"
+                alt="small-chevron-left"
+                @click="prevEl"
+              />
+              <img
+                class="main_b4_actions_next"
+                src="~/assets/icons/small-chevron-right.png"
+                alt="small-chevron-right"
+                @click="nextEl"
+              />
             </div>
           </div>
         </div>
@@ -138,10 +172,14 @@
 </template>
 
 <script>
+import Swiper from 'swiper/swiper-bundle.min'
+import 'swiper/swiper-bundle.min.css'
 export default {
   data() {
     return {
+      swiper: null,
       animationProgress: 0,
+      isMobile: false,
       tags: [
         {
           id: 1,
@@ -247,13 +285,29 @@ export default {
           this.$t('project.block_2[1].text'),
           this.$t('project.block_2[2].text'),
         ],
+        mobile: [
+          {
+            title: this.$t('project.block_2[0].title'),
+            description: this.$t('project.block_2[0].text'),
+          },
+          {
+            title: this.$t('project.block_2[1].title'),
+            description: this.$t('project.block_2[1].text'),
+          },
+          {
+            title: this.$t('project.block_2[2].title'),
+            description: this.$t('project.block_2[2].text'),
+          },
+        ],
       },
     }
   },
   computed: {
     lastProtocols() {
       const protocols = this.$t('project.protocols.items')
-      return protocols.filter((protocol) => +protocol.year === 2018).slice(0, 3)
+      return protocols
+        .filter((protocol) => +protocol.year === 2018)
+        .slice(0, this.isMobile ? 2 : 3)
     },
     docPubr() {
       const mapOfFileLink = {
@@ -264,7 +318,19 @@ export default {
       return mapOfFileLink[this.$i18n.locale]
     },
   },
-  mounted() {
+  async mounted() {
+    await this.$nextTick()
+    // eslint-disable-next-line no-new
+    this.isMobile = window.matchMedia('(max-width: 600px)').matches
+    this.swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.main_b4_actions_next',
+        prevEl: '.main_b4_actions_prev',
+      },
+      slidesPerView: 1,
+    })
+    console.log(this.swiper)
     this.tags[0].offsetTop = this.$refs?.pbr?.$el?.offsetTop
   },
   methods: {
@@ -386,6 +452,40 @@ export default {
 
   &__slide {
     display: flex;
+    &.desktop {
+      @include phone {
+        display: none;
+      }
+    }
+    &.mobile {
+      display: none;
+      @include phone {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        z-index: 20;
+        overflow: hidden;
+        .swiper {
+          height: 370px;
+        }
+        h3 {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 26px;
+          color: #ffffff;
+        }
+        span {
+          font-family: 'Roboto';
+          color: #ffffff;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
     .left {
       width: 270px;
       font-size: 48px;
@@ -563,18 +663,81 @@ export default {
 .last::v-deep {
   .slide__content-wrapper {
     padding-top: 60px;
+    @include phone {
+      padding-top: 20px;
+    }
   }
   .slide__wrapper {
     padding: 30px 0 0 0;
     //max-height: 700px;
     align-items: start;
   }
+  .slide__image {
+    @include phone {
+      img {
+        filter: brightness(0.6);
+      }
+      h3 {
+        z-index: 20;
+      }
+    }
+  }
+}
+.slide1 {
+  overflow: hidden;
 }
 .slide1::v-deep {
   .slide__left {
+    position: relative;
     .slide__content-wrapper {
       padding-top: 0px;
     }
   }
+}
+.main_b4_actions {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  //position: relative;
+  //left: 100px;
+  //top: -160px;
+  @media (orientation: portrait) {
+    position: absolute;
+    bottom: 0;
+  }
+  img {
+    padding: 12px 18px 12px 14px;
+    border: 1px solid #8c9fa6;
+    border-radius: 50%;
+    margin-right: 24px;
+    cursor: pointer;
+    pointer-events: auto;
+    touch-action: auto;
+    background: rgba(1, 84, 103, 0.1);
+    @media (orientation: portrait) {
+      padding: 7px 10px 7px 8px;
+      margin-right: 12px;
+      width: 26px;
+      height: 26px;
+      background: #ffffff;
+    }
+  }
+  img:last-child {
+    padding: 12px 14px 12px 18px;
+    @media (orientation: portrait) {
+      padding: 7px 8px 7px 10px;
+      margin-right: 12px;
+    }
+  }
+  section {
+    position: relative;
+  }
+  // .disabled {
+  //   cursor: not-allowed;
+  //   pointer-events: none;
+  //   touch-action: none;
+  //   background: #ffffff;
+  // }
 }
 </style>

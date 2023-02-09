@@ -61,12 +61,9 @@ export default {}
       max-width: 560px;
     }
     @include phone {
-      position: static;
-      transform: translateX(0);
       font-size: 18px;
       line-height: 28px;
       max-width: 560px;
-      color: $c-tco1;
       padding-bottom: 20px;
     }
   }

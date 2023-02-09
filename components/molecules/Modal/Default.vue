@@ -12,7 +12,7 @@
     </template>
     <template v-if="!!payload.videoUrl">
       <iframe
-        width="700"
+        class="iframe"
         height="380"
         style="margin-top: 20px"
         :src="payload.videoUrl"
@@ -37,6 +37,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.iframe {
+  max-width: 700px;
+  width: 100%;
+  @include phone {
+    height: 200px;
+  }
+}
 .career_motivation_popup {
   width: 100%;
   max-width: 696px;

@@ -54,7 +54,9 @@ export default {
         >
           <div class="double-block tco__partners">
             <div class="tco__partners-wrapper">
-              <h3>{{ $t('company.slider_1[0].title') }}</h3>
+              <h3 class="tco__partners-wrapper-title">
+                {{ $t('company.slider_1[0].title') }}
+              </h3>
               <h3 v-text="slide.company"></h3>
               <h1 v-text="slide.percent"></h1>
             </div>
@@ -102,6 +104,7 @@ export default {
       justify-content: center;
       gap: 25px;
       text-align: left;
+      position: relative;
       @media (max-width: 1200px) {
         padding: 15px;
       }
@@ -113,21 +116,16 @@ export default {
         padding-top: 0;
         gap: 0;
         width: 100%;
-        h3 {
-          top: 0;
-          color: #015467;
-        }
       }
       h1,
-      h3 {
-        color: #015467;
-      }
       h1 {
+        color: #015467;
         font-weight: 700;
         font-size: 56px;
         line-height: 24px;
         @media (orientation: portrait) {
           font-size: 24px;
+          margin-bottom: 10px;
         }
       }
       h3 {
@@ -139,21 +137,25 @@ export default {
           line-height: 26px;
         }
       }
-      h3:nth-child(1) {
+      &-title {
+        color: #015467;
         @media (orientation: portrait) {
-          color: #015467;
-          font-size: rem(20);
-          position: relative;
-          top: 0;
+          position: absolute;
+          top: -200px;
+          color: white;
+          font-size: rem(24);
+          z-index: 10;
         }
       }
       h3:nth-child(2) {
+        display: inline-block;
         font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        margin-top: 0px;
+        font-weight: 700;
+        color: #015467;
+        margin-top: 0;
         margin-bottom: 20px;
         @media (orientation: portrait) {
-          margin: 0px;
+          margin: 10px 0;
           font-size: 18px;
         }
       }
@@ -174,6 +176,9 @@ export default {
         margin-left: -16px;
         max-height: 250px;
         height: 100%;
+        img {
+          filter: brightness(0.6);
+        }
       }
     }
   }

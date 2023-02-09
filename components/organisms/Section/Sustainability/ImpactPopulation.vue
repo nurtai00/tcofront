@@ -68,7 +68,7 @@ export default {
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card2'
           ),
-          bgSrc: 'popup-2.png',
+          bgSrc: 'sustainability/popup-2.png',
         },
         {
           id: 3,
@@ -77,7 +77,7 @@ export default {
           popupText: this.$t(
             'suistainability.impactPopulation.popupText.card3'
           ),
-          bgSrc: 'popup-3.png',
+          bgSrc: 'sustainability/popup-3.png',
         },
         {
           id: 4,

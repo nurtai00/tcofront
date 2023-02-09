@@ -95,7 +95,6 @@ export default {
   },
   methods: {
     slicedDescription(text) {
-      console.log(text.length)
       return text.length > 137 ? `${text.slice(0, 137)}...` : text
     },
     openModal(data) {
@@ -183,6 +182,16 @@ export default {
   .slide__image {
     width: auto;
     display: block;
+    @include phone {
+      margin: 0 auto;
+      display: flex;
+      h3 {
+        width: 100%;
+      }
+      img {
+        height: 100%;
+      }
+    }
   }
   .slide__content {
     width: 100%;

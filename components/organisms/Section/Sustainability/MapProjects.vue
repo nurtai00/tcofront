@@ -331,7 +331,9 @@ export default {
     position: relative;
     align-self: center;
     width: 70%;
-
+    @include phone {
+      width: 100%;
+    }
     .img-marker {
       cursor: pointer;
       position: absolute;

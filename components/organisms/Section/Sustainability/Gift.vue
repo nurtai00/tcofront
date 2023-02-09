@@ -93,6 +93,20 @@ export default {
 ::v-deep {
   .slide {
     max-height: 600px;
+    @include phone {
+      max-height: 100%;
+    }
+  }
+  .slide__image {
+    @include phone {
+      img {
+        max-height: 400px;
+        filter: brightness(0.6);
+      }
+      h3 {
+        z-index: 10;
+      }
+    }
   }
 }
 .gift {

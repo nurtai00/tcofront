@@ -66,6 +66,7 @@ export default {
   margin-top: 40px;
   background-color: #f2f6f7;
   @include phone() {
+    height: 100%;
     .container {
       padding: 0;
     }
@@ -80,7 +81,8 @@ export default {
       flex-direction: column-reverse;
     }
     & .photo {
-      height: 460px;
+      max-height: 460px;
+      height: 100%;
       position: relative;
       bottom: 0;
       right: calc((1174px - 100vw) / 2);
@@ -88,13 +90,12 @@ export default {
         display: none;
         position: absolute;
         top: 20%;
-        color: white !important;
+        color: white;
         margin-left: 20px;
       }
       @include phone() {
         .mobile__title {
           display: block;
-          color: black;
         }
       }
       @include middle-laptop() {
@@ -125,7 +126,7 @@ export default {
   @include phone() {
     width: auto;
     padding: 0 16px 40px;
-    margin: 0;
+    margin: 20px 0 0;
     h3 {
       display: none;
     }

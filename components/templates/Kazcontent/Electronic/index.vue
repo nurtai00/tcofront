@@ -37,7 +37,7 @@
         </div>
         <div class="content__video">
           <iframe
-            width="1160"
+            class="iframe"
             height="455"
             :src="uploadElectronicCatalogUrl"
             title="YouTube video player"
@@ -56,7 +56,7 @@
           </div>
           <div class="content__video">
             <iframe
-              width="1160"
+              class="iframe"
               height="455"
               :src="createElectroniclCatalogUrl"
               title="YouTube video player"
@@ -128,7 +128,9 @@ export default {
 
     &__video {
       width: 100%;
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
       img {
         width: 100%;
       }
@@ -149,6 +151,13 @@ export default {
         line-height: 26px;
       }
     }
+  }
+}
+.iframe {
+  width: 1160px;
+  @include phone {
+    width: 100%;
+    height: 300px;
   }
 }
 </style>

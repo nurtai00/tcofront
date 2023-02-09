@@ -222,6 +222,11 @@ export default {}
           font-size: 16px;
           font-family: Roboto, sans-serif;
         }
+        @include phone {
+          span {
+            font-size: 10px;
+          }
+        }
       }
       .blue-text {
         color: $c-tco5;

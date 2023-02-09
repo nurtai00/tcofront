@@ -211,6 +211,9 @@ export default {
   gap: 40px;
   cursor: pointer;
   padding: 80px 0;
+  @include phone {
+    padding: 50px;
+  }
 }
 .project {
   padding: 80px 0 40px 0;

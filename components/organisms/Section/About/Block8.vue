@@ -143,6 +143,16 @@ export default {
       height: 100%;
     }
   }
+  .slide__image {
+    @include phone {
+      h3 {
+        z-index: 10;
+      }
+      img {
+        filter: brightness(0.6);
+      }
+    }
+  }
 }
 .section--blue {
   position: relative;
@@ -166,14 +176,14 @@ export default {
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   //position: relative;
   //left: 100px;
   //top: -160px;
   @media (orientation: portrait) {
-    right: 20px;
+    left: 30px;
     position: absolute;
-    bottom: 20px;
+    top: 200px;
   }
   img {
     padding: 12px 18px 12px 14px;

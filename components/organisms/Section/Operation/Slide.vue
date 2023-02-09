@@ -136,6 +136,11 @@ export default {
       @include tablet {
         width: 100%;
       }
+      @include phone {
+        img {
+          filter: brightness(0.6);
+        }
+      }
     }
   }
   &__content {
@@ -182,6 +187,7 @@ export default {
         color: white;
         top: 20px;
         left: 15px;
+        z-index: 20;
       }
     }
   }

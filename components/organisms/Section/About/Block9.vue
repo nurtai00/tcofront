@@ -141,6 +141,16 @@ export default {
     height: auto;
   }
 }
+::v-deep .slide__image {
+  @include phone {
+    h3 {
+      z-index: 10;
+    }
+    img {
+      filter: brightness(0.6);
+    }
+  }
+}
 .slide {
 }
 section {
@@ -159,9 +169,9 @@ section {
   //left: 100px;
   //top: -160px;
   @media (orientation: portrait) {
-    left: 75%;
+    left: 10%;
     position: absolute;
-    bottom: 20px;
+    top: -30px;
   }
   img {
     padding: 12px 18px 12px 14px;

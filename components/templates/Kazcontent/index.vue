@@ -22,8 +22,8 @@
       </div>
       <div class="kazakhstani__chart">
         <VueApexCharts
-          type="line"
-          height="350"
+          type="bar"
+          :height="chartHeight"
           :options="chartOptions"
           :series="series"
         />
@@ -48,8 +48,8 @@
           {{ $t('kazContent.contributionTco') }}
         </div>
         <svg
+          class="map__svg"
           width="1100"
-          height="700"
           viewBox="0 0 978 537"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -475,7 +475,7 @@ export default {
         },
         {
           name: 'KC %',
-          type: 'line',
+          type: 'bar',
           data: [
             11, 22, 20, 28, 24, 19, 25, 34, 36, 37, 42, 35, 42, 58, 54, 61, 51,
             68, 65, 60, 59, 50, 51, 40, 34, 36, 41, 53, 68, 71,
@@ -484,8 +484,7 @@ export default {
       ],
       chartOptions: {
         chart: {
-          type: 'line',
-          height: 350,
+          type: 'bar',
           toolbar: {
             show: false,
           },
@@ -493,9 +492,20 @@ export default {
         },
         plotOptions: {
           bar: {
-            // horizontal: false,
-            columnWidth: '55%',
+            horizontal: !!window.matchMedia('(max-width: 600px)').matches,
+            columnWidth: '50%',
             endingShape: 'rounded',
+            borderRadius: 4,
+            barHeight: 120,
+          },
+        },
+        grid: {
+          show: true,
+          padding: {
+            top: 20,
+            right: 0,
+            bottom: 20,
+            left: 0,
           },
         },
         dataLabels: {
@@ -746,6 +756,9 @@ export default {
     }
   },
   computed: {
+    chartHeight() {
+      return window.matchMedia('(max-width: 600px)').matches ? 900 : 350
+    },
     contractsPlanLink() {
       const mapOfFileLink = {
         en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=c19df8e6%2Daf88%2D4b99%2Dbe5b%2D84c762e8d899',
@@ -1268,6 +1281,13 @@ export default {
         }
       }
     }
+  }
+}
+.kazakhstani__map {
+  @include phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 </style>
