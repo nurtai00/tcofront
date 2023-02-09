@@ -187,9 +187,12 @@ export default {
       display: flex;
       h3 {
         width: 100%;
+        position: static;
+        color: #015467;
       }
       img {
         height: 100%;
+        max-height: 100%;
       }
     }
   }
