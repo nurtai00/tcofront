@@ -42,7 +42,7 @@ export default {
       ],
       content1: {
         title: this.$t('career.content1'),
-        text: `<p>${this.$t('career.content1_description')}</p>'`,
+        text: `<p>${this.$t('career.content1_description')}</p>`,
         imgSrc: require('~/assets/img/career/programm_left.png'),
       },
       content2: {
