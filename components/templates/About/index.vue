@@ -2,12 +2,12 @@
   <div>
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption to="/">{{
-          $t('company.breadcrumbs[0]')
-        }}</AtomsBreadOption>
-        <AtomsBreadOption to="/about">{{
-          $t('company.breadcrumbs[1]')
-        }}</AtomsBreadOption>
+        <AtomsBreadOption to="/">
+          {{ $t('company.breadcrumbs[0]') }}
+        </AtomsBreadOption>
+        <AtomsBreadOption to="/about">
+          {{ $t('company.breadcrumbs[1]') }}
+        </AtomsBreadOption>
       </MoleculesBreadcrumbs>
     </div>
     <OrganismsSectionAboutBlock1 />
@@ -21,7 +21,7 @@
     <OrganismsSectionAboutBlock8 />
     <OrganismsSectionAboutBlock9 />
     <OrganismsSectionAboutBlock11 />
-    <OrganismsSectionMainBlock2 white />
+    <OrganismsSectionNewsNewList />
     <section class="section--blue">
       <div class="container">
         <OrganismsSectionNewsPublicationsBlock />

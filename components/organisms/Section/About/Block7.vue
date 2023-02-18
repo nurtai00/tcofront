@@ -664,7 +664,7 @@ export default {
     width: 240px;
     height: 240px;
     left: 260px;
-    top: 20%;
+    top: 40%;
     opacity: 0.4;
   }
 }
@@ -672,7 +672,7 @@ export default {
   position: relative;
 }
 #wrapper {
-  height: 1000px;
+  height: 700px;
   overflow: auto;
   max-width: 1200px;
   margin: 0 auto;

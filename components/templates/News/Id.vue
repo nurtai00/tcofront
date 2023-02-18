@@ -3,10 +3,13 @@ import json from '@/components/templates/News/json_data.json'
 export default {
   data() {
     return {
-      data: json
+      data: json,
     }
   },
   computed: {
+    hasImg() {
+      return !!this.news[this.lang]?.img
+    },
     id() {
       return this.$route.params.id
     },
@@ -22,38 +25,38 @@ export default {
           text: this.$t('news.tags[0]'),
           value: '',
           selected: false,
-          color: '#D92D20'
+          color: '#D92D20',
         },
         {
           text: this.$t('news.tags[1]'),
           value: '',
           selected: false,
-          color: '#FFC000'
+          color: '#FFC000',
         },
         {
           text: this.$t('news.tags[2]'),
           value: '',
           selected: false,
-          color: '#53389E'
+          color: '#53389E',
         },
         {
           text: this.$t('news.tags[3]'),
           value: '',
           selected: false,
-          color: '#D92D20'
+          color: '#D92D20',
         },
         {
           text: this.$t('news.tags[4]'),
           value: '',
           selected: false,
-          color: '#00B0F0'
+          color: '#00B0F0',
         },
         {
           text: this.$t('news.tags[5]'),
           value: '',
           selected: false,
-          color: '#D92D20'
-        }
+          color: '#D92D20',
+        },
       ]
     },
   },
@@ -81,7 +84,20 @@ export default {
         class="tag"
       />
       <p class="content_date">{{ news[lang].date }}</p>
-      <img :src="require(`@/assets/img/new/` + news[lang].img)" />
+      <template v-if="hasImg">
+        <img :src="require(`@/assets/img/new/` + news[lang].img || '')" />
+      </template>
+
+      <iframe
+        v-if="news[lang].videoHref"
+        width="900"
+        height="600"
+        :src="news[lang].videoHref"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      />
       <p class="content_text">
         {{ news[lang].body }}
       </p>

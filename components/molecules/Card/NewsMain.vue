@@ -3,30 +3,34 @@
     class="n_card"
     :class="{
       n_card_left: [1, 4, 5, 0, 7, 10, 13, 16, 19].includes(index),
-      n_card_right: [2, 3, 6, 8, 9,11,12, 14, 15, 17, 18].includes(index),
+      n_card_right: [2, 3, 6, 8, 9, 11, 12, 14, 15, 17, 18].includes(index),
       n_card_mobile_img: ![1, 2].includes(index),
     }"
     @click="navigateNew"
   >
     <img
       v-if="[2, 3, 6].includes(index)"
-      :src="require('@/assets/img/new/' + item[lang].img)"
+      :src="require('@/assets/img/new/' + item[lang].img || '')"
       alt="news_card"
       class="n_card_desktop"
     />
     <img
       v-if="![1, 2].includes(index)"
       class="n_card_mobile"
-      :src="require('@/assets/img/new/' + item[lang].img)"
+      :src="require('@/assets/img/new/' + item[lang].img || '')"
       alt="news_card"
     />
     <div class="n_card_content">
       <div class="n_card_header">
-        <p :style="{color: tags[item[lang].category].color }">#{{ tags[item[lang].category].text }}</p>
+        <p :style="{ color: tags[item[lang].category].color }">
+          #{{ tags[item[lang].category].text }}
+        </p>
         <p class="n_card_date">{{ item[lang].date }}</p>
       </div>
       <AtomsHeading type="h6" color="main">
-        <span v-if="item[lang].title.length > 70">{{ item[lang].title.slice(0, 70) }}...</span>
+        <span v-if="item[lang].title.length > 70"
+          >{{ item[lang].title.slice(0, 70) }}...</span
+        >
         <span v-else>{{ item[lang].title }}</span>
       </AtomsHeading>
       <p
@@ -35,7 +39,7 @@
           '-webkit-line-clamp': [2, 3].includes(index) ? 2 : index == 6 ? 1 : 3,
         }"
       >
-        <span>{{ item[lang].body.slice(0,50) }}...</span>
+        <span>{{ item[lang].body.slice(0, 50) }}...</span>
       </p>
     </div>
   </div>
@@ -46,21 +50,21 @@ export default {
   props: {
     index: {
       type: Number,
-      default: 0
+      default: 0,
     },
     item: {
       type: Object,
-      default: () => {}
+      default: () => {},
     },
     tags: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   computed: {
     lang() {
       return this.$i18n.locale
-    }
+    },
   },
   methods: {
     navigateNew() {

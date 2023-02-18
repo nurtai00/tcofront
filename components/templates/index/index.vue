@@ -1,7 +1,7 @@
 <template>
   <div>
     <OrganismsSectionMainBlock1 />
-    <OrganismsSectionMainBlock2 />
+    <OrganismsSectionNewsNewList />
     <OrganismsSectionMainBlock3 />
     <OrganismsSectionMainBlock32 />
     <OrganismsSectionMainBlock4 />

@@ -1,6 +1,8 @@
 <template>
   <div class="news_card" @click="navNew">
-    <img :src="news.img" alt="" />
+    <template v-if="news.img">
+      <img :src="news.img || ''" alt="" />
+    </template>
     <div class="mobile">
       <div class="date">
         <p :style="{ color: news.tag.color }">{{ news.tag.text }}</p>
