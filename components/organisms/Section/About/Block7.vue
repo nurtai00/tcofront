@@ -342,10 +342,10 @@ export default {
             }
           })
         document.querySelector('.tco__year-text').style.left = `calc(-${
-          this.scrolledIndex * 83
+          this.scrolledIndex * 50
         }vw + ${34 * this.scrolledIndex}px)`
         document.querySelector('.tco__year-text').style.width = `calc(100vw + ${
-          this.scrolledIndex * 83
+          this.scrolledIndex * 50
         }vw - ${34 * this.scrolledIndex}px)`
 
         event.preventDefault()
@@ -664,7 +664,7 @@ export default {
     width: 240px;
     height: 240px;
     left: 260px;
-    top: 40%;
+    top: 20%;
     opacity: 0.4;
   }
 }
@@ -672,7 +672,7 @@ export default {
   position: relative;
 }
 #wrapper {
-  height: 800px;
+  height: 1000px;
   overflow: auto;
   max-width: 1200px;
   margin: 0 auto;

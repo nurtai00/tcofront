@@ -176,7 +176,7 @@ export default {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   //position: relative;
   //left: 100px;
   //top: -160px;

@@ -206,7 +206,7 @@ export default {
           products: require('./locales/Products/ru.json'),
           header: require('./locales/header/ru.json'),
           project: require('./locales/project/ru.json'),
-          privacy: require('./locales/privacy/en.json'),
+          privacy: require('./locales/privacy/ru.json'),
           vacancy: require('./locales/vacancy/ru.json'),
         },
         en: {

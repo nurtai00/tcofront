@@ -198,7 +198,7 @@ export default {
         },
         {
           title: this.$t('kazContent.offerEnterprise.title'),
-          icon: require('@/assets/icons/sheep.png'),
+          icon: require('@/assets/icons/sheep.webp'),
         },
       ],
       slide: [
