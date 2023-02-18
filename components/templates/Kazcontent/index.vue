@@ -424,7 +424,7 @@
         </div>
       </template>
     </OrganismsSectionOperationSlide>
-    <OrganismsSectionCareerBlock8 />
+    <OrganismsSectionNewsNewList />
   </div>
 </template>
 

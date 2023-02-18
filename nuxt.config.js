@@ -94,7 +94,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'frontend-template',
+    title: 'Tengizchevroil',
     htmlAttrs: {
       lang: 'en',
     },

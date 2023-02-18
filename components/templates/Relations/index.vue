@@ -14,7 +14,7 @@
     <OrganismsSectionRelationsBlock1 />
     <OrganismsSectionRelationsBlock2 />
     <OrganismsSectionRelationsBlock3 />
-    <OrganismsSectionCareerBlock8 />
+    <OrganismsSectionNewsNewList />
   </div>
 </template>
 

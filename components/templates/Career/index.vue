@@ -22,7 +22,7 @@
       :background="true"
     />
     <OrganismsSectionCareerBlock7 />
-    <OrganismsSectionCareerBlock8 />
+    <OrganismsSectionNewsNewList />
   </div>
 </template>
 
