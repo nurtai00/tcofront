@@ -45,6 +45,12 @@ export default {
       ],
     }
   },
+  computed: {
+    mappedNews() {
+      // eslint-disable-next-line vue/no-side-effects-in-computed-properties
+      return this.news.reverse()
+    },
+  },
 }
 </script>
 
@@ -69,7 +75,7 @@ export default {
         />
         <div class="news_cards">
           <MoleculesCardNews
-            v-for="(item, idx) in news"
+            v-for="(item, idx) in mappedNews"
             :key="idx"
             :news="item"
             class="news_cards_item"
