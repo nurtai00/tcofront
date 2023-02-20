@@ -172,7 +172,7 @@ section {
   @media (orientation: portrait) {
     left: 10%;
     position: absolute;
-    bottom: 220px;
+    bottom: 230px;
   }
   img {
     padding: 12px 18px 12px 14px;

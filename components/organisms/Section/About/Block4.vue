@@ -206,7 +206,6 @@ export default {
         }
       }
     }
-    background: #f2f6f7;
   }
 }
 ::v-deep .slider-wrapper {
