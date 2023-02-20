@@ -3,14 +3,10 @@
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
         <AtomsBreadOption to="/">
-          {{
-            $t('news.breadcrumbs_1[0]')
-          }}
+          {{ $t('news.breadcrumbs_1[0]') }}
         </AtomsBreadOption>
         <AtomsBreadOption to="/news">
-          {{
-            $t('news.breadcrumbs_1[1]')
-          }}
+          {{ $t('news.breadcrumbs_1[1]') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20"> {{ $t('news.breadcrumbs_1[1]') }} </AtomsTitle>
@@ -20,11 +16,11 @@
         :tag="tag"
         @click="
           (val) => {
-            val.selected = !val.selected;
+            val.selected = !val.selected
             if (val.selected) {
               selected.push(val.id)
             } else {
-              selected = selected.filter(item => item !== val.id)
+              selected = selected.filter((item) => item !== val.id)
             }
           }
         "
@@ -42,7 +38,9 @@
             :tags="tags"
           />
         </div>
-        <AtomsButton type="submit" @click="iteration = iteration + 1"> {{ $t('news.button'), }}</AtomsButton>
+        <AtomsButton type="submit" @click="iteration = iteration + 1">
+          {{ $t('news.button'), }}</AtomsButton
+        >
       </div>
     </div>
     <div class="news_publications">
@@ -53,6 +51,8 @@
 
 <script>
 import json from '@/components/templates/News/json_data.json'
+
+console.log(json.length)
 export default {
   data() {
     return {
@@ -62,54 +62,54 @@ export default {
           value: '',
           selected: false,
           color: '#D92D20',
-          id: 0
+          id: 0,
         },
         {
           text: this.$t('news.tags[1]'),
           value: '',
           selected: false,
           color: '#FFC000',
-          id: 1
+          id: 1,
         },
         {
           text: this.$t('news.tags[2]'),
           value: '',
           selected: false,
           color: '#53389E',
-          id: 2
+          id: 2,
         },
         {
           text: this.$t('news.tags[3]'),
           value: '',
           selected: false,
           color: '#D92D20',
-          id: 3
+          id: 3,
         },
         {
           text: this.$t('news.tags[4]'),
           value: '',
           selected: false,
           color: '#00B0F0',
-          id: 4
+          id: 4,
         },
         {
           text: this.$t('news.tags[5]'),
           value: '',
           selected: false,
           color: '#D92D20',
-          id: 5
+          id: 5,
         },
       ],
       selected: [],
       data: json,
       allData: json,
-      iteration: 0
+      iteration: 0,
     }
   },
   computed: {
     lang() {
       return this.$i18n.locale
-    }
+    },
   },
   watch: {
     tags: {
@@ -117,12 +117,14 @@ export default {
         if (this.selected.length === 0) {
           this.data = this.allData
         } else {
-          this.data = this.allData.filter(item => this.selected.includes(item[this.lang].category))
+          this.data = this.allData.filter((item) =>
+            this.selected.includes(item[this.lang].category)
+          )
         }
       },
-      deep: true
-    }
-  }
+      deep: true,
+    },
+  },
 }
 </script>
 

@@ -9,7 +9,7 @@ export default {
           date: this.$t('home.block_11[0].date'),
           button: this.$t('home.block_11[0].button'),
           img: require('@/assets/img/banner_bg.png'),
-          link: 'https://tengizchevroil.com/en/about/media/tconews/item/tco-stories/2021/12/15/a-new-kindergarten-for-280-places-has-been-opened-in-atyrau',
+          link: this.localePath('/news/23'),
         },
         {
           title: this.$t('home.block_11[1].title'),
@@ -17,7 +17,7 @@ export default {
           date: this.$t('home.block_11[1].date'),
           button: this.$t('home.block_11[1].button'),
           img: require('@/assets/img/banner_bg_2.png'),
-          link: 'https://tengizchevroil.com/en/about/media/tconews/item/tco-stories/2022/02/23/tengizchevroil-announces-2021-results',
+          link: this.localePath('/news/24'),
         },
         {
           title: this.$t('home.block_11[2].title'),
@@ -25,7 +25,7 @@ export default {
           date: this.$t('home.block_11[2].date'),
           button: this.$t('home.block_11[2].button'),
           img: require('@/assets/img/banner_bg_3.png'),
-          link: 'https://tengizchevroil.com/en/about/media/tconews/item/tco-stories/2022/03/01/ministry-of-ecology-i-believe-that-perfection-knows-no-limits',
+          link: this.localePath('/news/25'),
         },
         {
           title: this.$t('home.block_11[3].title'),
@@ -33,7 +33,7 @@ export default {
           date: this.$t('home.block_11[3].date'),
           button: this.$t('home.block_11[3].button'),
           img: require('@/assets/img/banner_bg_4.png'),
-          link: 'https://tengizchevroil.com/en/about/media/tconews/item/tco-stories/2022/09/26/central_stadium_kulsary',
+          link: this.localePath('/news/26'),
         },
       ],
       options: {
@@ -63,10 +63,10 @@ export default {
             <p class="tco__partners-date" v-text="slide.date"></p>
             <h3 class="tco__partners-title" v-text="slide.title"></h3>
             <p class="tco__partners-text" v-text="slide.text"></p>
-            <a class="slide__link" :href="slide.link" target="_blank">
+            <nuxt-link class="slide__link" :to="slide.link" target="_blank">
               <span>{{ slide.button }}</span>
               <img src="@/assets/img/right-Arrow.png" />
-            </a>
+            </nuxt-link>
           </div>
           <div class="tco__partners-image">
             <img :src="slide.img" alt="kazmunaylogo" />
