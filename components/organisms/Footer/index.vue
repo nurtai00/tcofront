@@ -58,7 +58,7 @@
             >
               <img src="@/assets/img/linked.png" />
             </a>
-            <a target="_blank" href="https://youtube.com/@user-ki8xd7dr8r">
+            <a target="_blank" href="https://youtube.com/@TenizQuaty">
               <img src="@/assets/img/youtube.png" />
             </a>
           </div>

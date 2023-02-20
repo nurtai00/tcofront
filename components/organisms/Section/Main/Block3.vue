@@ -9,6 +9,9 @@ export default {
       }
       return mapOfFileLinkUrl[this.$i18n.locale]
     },
+    aboutLink() {
+      return this.localePath('/about')
+    },
   },
 }
 </script>
@@ -26,9 +29,9 @@ export default {
               <AtomsTitle class="atoms_title mb20 mobile" small>
                 {{ $t('home.block_3.title_mobile_1') }}
               </AtomsTitle>
-              <a :href="localePath('/#/about')" class="mb20">{{
-                $t('home.block_3.link')
-              }}</a>
+              <nuxt-link :to="localePath('/about')" class="mb20">
+                {{ $t('home.block_3.link') }}
+              </nuxt-link>
             </div>
             <div class="line">
               <div>
@@ -57,12 +60,12 @@ export default {
             <p>
               {{ $t('home.block_3.right.text') }}
             </p>
-            <a
-              :href="localePath('/#/projects')"
+            <nuxt-link
+              :to="localePath('/#/projects')"
               style="font-family: Roboto, sans-serif"
             >
               {{ $t('home.block_3.right.link_1') }}
-            </a>
+            </nuxt-link>
             <a
               class="file"
               style="font-family: Roboto, sans-serif"

@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="container">
-      <NuxtLink to="/" class="logo">
+      <NuxtLink :to="localePath('/')" class="logo">
         <img src="@/assets/img/logo.png" />
       </NuxtLink>
       <MoleculesSearchBar />

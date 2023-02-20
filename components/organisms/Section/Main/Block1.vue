@@ -97,7 +97,7 @@ export default {
       }
     }
     &-wrapper {
-      padding: 0px 40px 20px 0;
+      padding: 0px 40px 0px 0;
       max-width: 590px;
       display: flex;
       flex-direction: column;
@@ -190,6 +190,7 @@ export default {
 }
 .slide {
   &__link {
+    transform: translateY(-10px);
     display: flex;
     align-items: center;
     background: #015467;
