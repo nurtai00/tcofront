@@ -30,23 +30,23 @@
                   </div>
                 </template>
               </OrganismsSectionOperationSlide>
-              <div class="main_b4_actions">
-                <img
-                  class="main_b4_actions_prev"
-                  src="../../../../assets/icons/small-chevron-left.png"
-                  alt="small-chevron-left"
-                  @click="prevEl"
-                />
-                <img
-                  class="main_b4_actions_next"
-                  src="../../../../assets/icons/small-chevron-right.png"
-                  alt="small-chevron-right"
-                  @click="nextEl"
-                />
-              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="main_b4_actions">
+        <img
+          class="main_b4_actions_prev"
+          src="../../../../assets/icons/small-chevron-left.png"
+          alt="small-chevron-left"
+          @click="prevEl"
+        />
+        <img
+          class="main_b4_actions_next"
+          src="../../../../assets/icons/small-chevron-right.png"
+          alt="small-chevron-right"
+          @click="nextEl"
+        />
       </div>
     </div>
   </client-only>
@@ -177,13 +177,15 @@ export default {
   align-items: center;
   position: absolute;
   bottom: 10px;
+  left: 14%;
   //position: relative;
   //left: 100px;
   //top: -160px;
+  z-index: 20;
   @media (orientation: portrait) {
-    left: 30px;
+    left: 10%;
     position: absolute;
-    top: 200px;
+    bottom: 320px;
   }
   img {
     padding: 12px 18px 12px 14px;

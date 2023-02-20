@@ -234,6 +234,7 @@ export default {
       object-fit: cover;
       @include tablet {
         max-height: 250px;
+        height: 100%;
       }
     }
   }
