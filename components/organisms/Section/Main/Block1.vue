@@ -68,7 +68,9 @@ export default {
               <img src="@/assets/img/right-Arrow.png" />
             </a>
           </div>
-          <img :src="slide.img" alt="kazmunaylogo" />
+          <div class="tco__partners-image">
+            <img :src="slide.img" alt="kazmunaylogo" />
+          </div>
         </div>
       </MoleculesSlide>
     </OrganismsSlider>
@@ -82,17 +84,20 @@ export default {
 .tco {
   &__partners {
     justify-content: space-between;
-
-    align-items: center;
+    align-items: flex-start;
     @media (orientation: portrait) {
       flex-direction: column-reverse;
     }
-    img {
+    &-image {
+      max-height: 700px;
       width: 50%;
-      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
     &-wrapper {
-      padding: 40px 40px 60px 0;
+      padding: 0px 40px 20px 0;
       max-width: 590px;
       display: flex;
       flex-direction: column;
@@ -142,7 +147,6 @@ export default {
       h3:nth-child(2) {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        margin-top: 80px;
         margin-bottom: 20px;
         @media (orientation: portrait) {
           margin: 0px;
@@ -160,23 +164,23 @@ export default {
     &-title {
       font-family: 'Montserrat', sans-serif !important;
       font-weight: 700 !important;
+      font-size: 36px;
+      min-height: 136px;
       margin: 20px 0;
+      @include phone {
+        min-height: auto;
+      }
     }
     &-text {
+      flex-grow: 3;
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
+      min-height: 140px;
       font-size: rem(20);
       line-height: 28px;
       color: #30454e;
     }
     background: #ffffff;
-    @include phone {
-      img {
-        width: 100%;
-      }
-      &-text {
-      }
-    }
   }
 }
 @media (orientation: portrait) {
