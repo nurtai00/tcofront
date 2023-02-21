@@ -58,655 +58,655 @@ export default {
         en: {
           2011: [
             {
-              name: '1h2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2011%2F1h2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2011',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2011/1q2011.pdf?sfvrsn=3908c55c_2',
             },
             {
-              name: '2h2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2011%2F1q2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2011',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2011/3q2011.pdf?sfvrsn=2708c55c_2',
             },
             {
-              name: '3h2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2011%2F3q2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2011',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2011/3q2011.pdf?sfvrsn=2708c55c_2',
             },
             {
-              name: '4h2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2011%2F4q2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2011',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2011/4q2011.pdf?sfvrsn=3a08c55c_2',
             },
           ],
           2012: [
             {
-              name: '1h2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2012%2F1q2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2012',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2012/1q2012.pdf?sfvrsn=5308c55c_2',
             },
             {
-              name: '2h2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2012%2F2q2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2012',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2012/2q2012.pdf?sfvrsn=5608c55c_2',
             },
             {
-              name: '3h2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2012%2F3q2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2012',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2012/3q2012.pdf?sfvrsn=5508c55c_2',
             },
             {
-              name: '4h2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2012%2F4q2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2012',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2012/4q2012.pdf?sfvrsn=5408c55c_2',
             },
           ],
           2013: [
             {
-              name: '1h2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2013%2F1h2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2013',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2013/1q2013.pdf?sfvrsn=cf09c55c_2',
             },
             {
-              name: '2h2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2013%2F1q2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2013',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2013/1h2013.pdf?sfvrsn=c209c55c_2',
             },
             {
-              name: '3h2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2013%2F3q2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2013',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2013/3q2013.pdf?sfvrsn=c109c55c_2',
             },
             {
-              name: '4h2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2013%2F4q2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2013',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2013/4q2013.pdf?sfvrsn=c009c55c_2',
             },
           ],
           2014: [
             {
-              name: '1h2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2014%2F1h2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2014',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2014/1q2014.pdf?sfvrsn=7e09c55c_2',
             },
             {
-              name: '2h2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2014%2F1q2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2014',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2014/1h2014.pdf?sfvrsn=7c09c55c_2',
             },
             {
-              name: '3h2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2014%2F3q%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2014',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2014/3q-2014.pdf?sfvrsn=7b09c55c_2',
             },
             {
-              name: '4h2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2014%2F4q%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2014',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2014/4q-2014.pdf?sfvrsn=7d09c55c_2',
             },
           ],
           2015: [
             {
-              name: '1h2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2015%2F1h%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2015',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2015/1q-2015.pdf?sfvrsn=ea0ec55c_2',
             },
             {
-              name: '2h2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2015%2F1q%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2015',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2015/1h-2015.pdf?sfvrsn=970ec55c_2',
             },
             {
-              name: '3h2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2015%2F3q%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2015',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2015/3q-2015.pdf?sfvrsn=e80ec55c_2',
             },
             {
-              name: '4h2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2015%2F4q%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2015',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2015/4q-2015.pdf?sfvrsn=e90ec55c_2',
             },
           ],
           2016: [
             {
-              name: '1h2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2016',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2016/1q-2016.pdf?sfvrsn=30ec55c_2',
             },
             {
-              name: '2h2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2016%2F1q%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2016',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2016/1h2016.pdf?sfvrsn=50ec55c_2',
             },
             {
-              name: '3h2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2016%2F3q%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2016',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2016/3q-2016.pdf?sfvrsn=40ec55c_2',
             },
             {
-              name: '4h2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2016%2F4q2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2016',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2016/4q2016.pdf?sfvrsn=60ec55c_2',
             },
           ],
           2017: [
             {
-              name: '1h2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2017%2F1h%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2017',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2017/1q2017.pdf?sfvrsn=b10fc55c_2',
             },
             {
-              name: '2h2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2017%2F1q2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2017',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2017/1h-2017.pdf?sfvrsn=b20fc55c_2',
             },
             {
-              name: '3h2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2017%2F3q%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2017',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2017/3q-2017.pdf?sfvrsn=bf0fc55c_2',
             },
             {
-              name: '4h2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2017%2F4q%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2017',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2017/4q-2017.pdf?sfvrsn=b00fc55c_2',
             },
           ],
           2018: [
             {
-              name: '1h2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2018%2Ftco%2Dfact%2Dsheet%2D1q%2D2018%5Fe%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2018',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2018/tco-fact-sheet-1q-2018_e.pdf?sfvrsn=2d0fc55c_2',
             },
             {
-              name: '2h2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2018%2F2nd%2Dquarter%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2018',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2018/2nd-quarter.pdf?sfvrsn=2e0fc55c_2',
             },
             {
-              name: '3h2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2018%2F3rd%2Dquarter%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2018',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2018/3rd-quarter.pdf?sfvrsn=2c0fc55c_2',
             },
             {
-              name: '4h2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2018%2F4th%2Dquarter%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2018',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2018/4th-quarter.pdf?sfvrsn=2b0fc55c_2',
             },
           ],
           2019: [
             {
-              name: '1h2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2019%2F1%2Dquarter%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2019',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2019/1-quarter.pdf?sfvrsn=470fc55c_2',
             },
             {
-              name: '2h2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2019%2F2%2Dquarter%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2019',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2019/2-quarter.pdf?sfvrsn=580fc55c_2',
             },
             {
-              name: '3h2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2019%2F3%2Dquarter%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2019',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2019/3-quarter-(1).pdf?sfvrsn=5a0fc55c_2',
             },
             {
-              name: '4h2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2019%2F4%2Dquarter%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2019',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2019/4-quarter.pdf?sfvrsn=590fc55c_2',
             },
           ],
           2020: [
             {
-              name: '1h2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2020%2Ftco%2Dfact%2Dsheet%2D1q%2D2020%5Fe%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2020',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2020/tco-fact-sheet-1q-2020_e.pdf?sfvrsn=f30cc55c_2',
             },
             {
-              name: '2h2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2020%2F2%2Dquarter%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2020',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2020/2-quarter-(1).pdf?sfvrsn=f50cc55c_2',
             },
             {
-              name: '3h2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2020%2F3%2Dquarter%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2020',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2020/3-quarter-(2).pdf?sfvrsn=f60cc55c_2',
             },
             {
-              name: '4h2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2020%2F4%2Dquarter%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2020',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2020/4-quarter-(1).pdf?sfvrsn=f40cc55c_2',
             },
           ],
           2021: [
             {
-              name: '1h2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2021%2F1%2Dquarter%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2021',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2021/1-quarter-(1).pdf?sfvrsn=610cc55c_2',
             },
             {
-              name: '2h2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2021%2F2%2Dquarter%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2021',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2021/2-quarter-(2).pdf?sfvrsn=6f0cc55c_2',
             },
             {
-              name: '3h2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2021%2F3%2Dquarter%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2021',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2021/3-quarter-(3).pdf?sfvrsn=620cc55c_2',
             },
             {
-              name: '4h2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2021%2F4%2Dquarter%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2021',
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2021/4-quarter-(2).pdf?sfvrsn=600cc55c_2',
             },
           ],
           2022: [
             {
-              name: '1h2022.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2022%2F1%2Dquarter%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2022',
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2022/1-quarter-(2).pdf?sfvrsn=9b0dc55c_2',
             },
             {
-              name: '2h2022.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2022%2F2%2Dquarter%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2022',
+              name: '2 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2022/2-quarter-(3).pdf?sfvrsn=9d0dc55c_2',
             },
             {
-              name: '3h2022.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2022%2F3%2Dquarter%20%284%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FEN%2F2022',
+              name: '3 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2022/3-quarter-(4).pdf?sfvrsn=9c0dc55c_2',
             },
-            // {
-            //   name: '4h2022.pdf',
-            //   link: '',
-            // },
+            {
+              name: '4 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2022/tco-fact-sheet-4q-2022_final_e.pdf?sfvrsn=2ee1c55c_2',
+            },
           ],
         },
         kk: {
           2011: [
             {
-              name: 'қантар---наурыз-2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011',
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2011/қантар---наурыз-2011.pdf?sfvrsn=3807c55c_2',
             },
             {
-              name: 'қантар---маусым-2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2011/қантар---маусым-2011.pdf?sfvrsn=2507c55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2011/қантар---қыркүйек-2011.pdf?sfvrsn=2607c55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2011',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2011/қантар---желтоқсан-2011.pdf?sfvrsn=2707c55c_2',
+            },
           ],
           2012: [
-            {
-              name: 'қантар---наурыз-2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012',
+             {
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2012/қантар---наурыз-2012.pdf?sfvrsn=5407c55c_2',
             },
             {
-              name: 'қантар---маусым-2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2012/қантар---маусым-2012.pdf?sfvrsn=5307c55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2012/қантар---қыркүйек-2012.pdf?sfvrsn=5107c55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2012',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2012/қантар---желтоқсан-2012.pdf?sfvrsn=5207c55c_2',
+            },
           ],
           2013: [
             {
-              name: 'қантар---наурыз-2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013',
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2013/қантар---наурыз-2013.pdf?sfvrsn=cd04c55c_2',
             },
             {
-              name: 'қантар---маусым-2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2013/қантар---маусым-2013.pdf?sfvrsn=cf04c55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2013/қантар---қыркүйек-2013.pdf?sfvrsn=c004c55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2013',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2013/қантар---желтоқсан-2013.pdf?sfvrsn=ce04c55c_2',
+            },
           ],
           2014: [
             {
-              name: 'қантар---наурыз-2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014',
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2014/қантар---наурыз-2014.pdf?sfvrsn=7c04c55c_2',
             },
             {
-              name: 'қантар---маусым-2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2014/қантар---маусым-2014.pdf?sfvrsn=7b04c55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2014/қантар---қыркүйек-2014.pdf?sfvrsn=7904c55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2014',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2014/қантар---желтоқсан-2014.pdf?sfvrsn=7a04c55c_2',
+            },
           ],
           2015: [
             {
-              name: 'қантар---наурыз-2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015',
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2015/қантар---наурыз-2015.pdf?sfvrsn=9705c55c_2',
             },
             {
-              name: 'қантар---маусым-2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2015/қантар---маусым-2015.pdf?sfvrsn=e805c55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2015/қантар---қыркүйек-2015.pdf?sfvrsn=9605c55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2015',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2015/қантар---желтоқсан-2015.pdf?sfvrsn=9505c55c_2',
+            },
           ],
           2016: [
             {
-              name: 'қантар---наурыз-2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016',
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2016/қантар---наурыз-2016.pdf?sfvrsn=405c55c_2',
             },
             {
-              name: 'қантар---маусым-2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2016/қантар---маусым-2016.pdf?sfvrsn=205c55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2016/қантар---қыркүйек-2016.pdf?sfvrsn=305c55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2016',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2016/қантар---желтоқсан-2016.pdf?sfvrsn=105c55c_2',
+            },
           ],
           2017: [
             {
-              name: 'қантар---наурыз-2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BD%D0%B0%D1%83%D1%80%D1%8B%D0%B7%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017',
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2017/қантар---наурыз-2017.pdf?sfvrsn=bd0ac55c_2',
             },
             {
-              name: 'қантар---маусым-2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%BC%D0%B0%D1%83%D1%81%D1%8B%D0%BC%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2017/қантар---маусым-2017.pdf?sfvrsn=be0ac55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D2%9B%D1%8B%D1%80%D0%BA%D2%AF%D0%B9%D0%B5%D0%BA%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2017/қантар---қыркүйек-2017.pdf?sfvrsn=b00ac55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017%2F%D2%9B%D0%B0%D0%BD%D1%82%D0%B0%D1%80%2D%2D%2D%D0%B6%D0%B5%D0%BB%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2017',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2017/қантар---желтоқсан-2017.pdf?sfvrsn=bf0ac55c_2',
+            },
           ],
           2018: [
-            {
-              name: 'қантар---наурыз-2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018%2Ftco%2Dfact%2Dsheet%2D1q%2D2018%5Fk%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018',
+             {
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2018/tco-fact-sheet-1q-2018_k.pdf?sfvrsn=2a0ac55c_2',
             },
             {
-              name: 'қантар---маусым-2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018%2F2%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2018/2-ші-тоқсан.pdf?sfvrsn=2b0ac55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018%2F3%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2018/3-ші-тоқсан-(1).pdf?sfvrsn=290ac55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018%2F4%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2018',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2018/4-ші-тоқсан.pdf?sfvrsn=2c0ac55c_2',
+            },
           ],
           2019: [
             {
-              name: 'қантар---наурыз-2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019%2F1%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019',
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2019/1-ші-тоқсан.pdf?sfvrsn=450ac55c_2',
             },
             {
-              name: 'қантар---маусым-2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019%2Ftco%2Dfact%2Dsheet%2D1h%2D2019%5Fk%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2019/tco-fact-sheet-1h-2019_k.pdf?sfvrsn=460ac55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019%2F3%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2019/3-ші-тоқсан-(2).pdf?sfvrsn=470ac55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019%2F4%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2019',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2019/4-ші-тоқсан-(1).pdf?sfvrsn=580ac55c_2',
+            },
           ],
           2020: [
             {
-              name: 'қантар---наурыз-2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020%2F1%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020',
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2020/1-ші-тоқсан-(1).pdf?sfvrsn=f30bc55c_2',
             },
             {
-              name: 'қантар---маусым-2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020%2F2%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2020/2-ші-тоқсан-(1).pdf?sfvrsn=f20bc55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020%2F3%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2020/3-ші-тоқсан-(3).pdf?sfvrsn=f40bc55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020%2F4%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2020',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2020/4-ші-тоқсан-(2).pdf?sfvrsn=f10bc55c_2',
+            },
           ],
           2021: [
             {
-              name: 'қантар---наурыз-2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021%2F1%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021',
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2021/1-ші-тоқсан-(2).pdf?sfvrsn=6d0bc55c_2',
             },
             {
-              name: 'қантар---маусым-2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021%2F2%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2021/2-ші-тоқсан-(2).pdf?sfvrsn=6e0bc55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021%2F3%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%284%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2021/3-ші-тоқсан-(4).pdf?sfvrsn=6f0bc55c_2',
             },
             {
-              name: 'қантар---желтоқсан-2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021%2F4%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2021',
-            }
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2021/4-ші-тоқсан-(3).pdf?sfvrsn=600bc55c_2',
+            },
           ],
           2022: [
             {
-              name: 'қантар---наурыз-2022.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022%2F1%2D%D1%88i%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022',
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2022/1-шi-тоқсан.pdf?sfvrsn=9908c55c_2',
             },
             {
-              name: 'қантар---маусым-2022.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022%2F2%2D%D1%88i%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022',
+              name: '2-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2022/2-шi-тоқсан.pdf?sfvrsn=9b08c55c_2',
             },
             {
-              name: 'қантар---қыркүйек-2022.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022%2F3%2D%D1%88%D1%96%2D%D1%82%D0%BE%D2%9B%D1%81%D0%B0%D0%BD%20%285%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FKAZ%2F2022',
+              name: '3-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2022/3-ші-тоқсан-(5).pdf?sfvrsn=9a08c55c_2',
             },
-            // {
-            //   name: 'қантар---желтоқсан-2022.pdf',
-            //   link: '',
-            // }
+            {
+              name: '4-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2022/tco-fact-sheet-4q-2022_final_k.pdf?sfvrsn=c3e1c55c_2',
+            },
           ]
         },
         ru: {
           2011: [
             {
-              name: 'январь--март-2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---март-2011.pdf?sfvrsn=2402c55c_2'
             },
             {
-              name: 'январь--июнь-2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---июнь-2011.pdf?sfvrsn=2602c55c_2'
             },
             {
-              name: 'январь--сентябрь-2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---сентябрь-2011.pdf?sfvrsn=2502c55c_2'
             },
             {
-              name: 'январь--декабрь-2011.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2011%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2011'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---декабрь-2011.pdf?sfvrsn=2302c55c_2'
             },
           ],
           2012: [
             {
-              name: 'январь--март-2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---март-2012.pdf?sfvrsn=5202c55c_2'
             },
             {
-              name: 'январь--июнь-2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---июнь-2012.pdf?sfvrsn=5102c55c_2'
             },
             {
-              name: 'январь--сентябрь-2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---сентябрь-2012.pdf?sfvrsn=5f02c55c_2'
             },
             {
-              name: 'январь--декабрь-2012.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2012%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2012'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---декабрь-2012.pdf?sfvrsn=5002c55c_2'
             },
           ],
           2013: [
             {
-              name: 'январь--март-2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---март-2013.pdf?sfvrsn=cd03c55c_2'
             },
             {
-              name: 'январь--июнь-2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---июнь-2013.pdf?sfvrsn=ce03c55c_2'
             },
             {
-              name: 'январь--сентябрь-2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---сентябрь-2013.pdf?sfvrsn=cc03c55c_2'
             },
             {
-              name: 'январь--декабрь-2013.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2013%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2013'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---декабрь-2013.pdf?sfvrsn=cb03c55c_2'
             },
           ],
           2014: [
             {
-              name: 'январь--март-2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---март-2014.pdf?sfvrsn=7a03c55c_2'
             },
             {
-              name: 'январь--июнь-2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---июнь-2014.pdf?sfvrsn=7803c55c_2'
             },
             {
-              name: 'январь--сентябрь-2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---сентябрь-2014.pdf?sfvrsn=7903c55c_2'
             },
             {
-              name: 'январь--декабрь-2014.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2014%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2014'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---декабрь-2014.pdf?sfvrsn=6703c55c_2'
             },
           ],
           2015: [
             {
-              name: 'январь--март-2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---март-2015.pdf?sfvrsn=9600c55c_2'
             },
             {
-              name: 'январь--июнь-2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---июнь-2015.pdf?sfvrsn=9300c55c_2'
             },
             {
-              name: 'январь--сентябрь-2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---сентябрь-2015.pdf?sfvrsn=9500c55c_2'
             },
             {
-              name: 'январь--декабрь-2015.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2015%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2015'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---декабрь-2015.pdf?sfvrsn=9400c55c_2'
             },
           ],
           2016: [
             {
-              name: 'январь--март-2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---март-2016.pdf?sfvrsn=100c55c_2'
             },
             {
-              name: 'январь--июнь-2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---июнь-2016.pdf?sfvrsn=200c55c_2'
             },
             {
-              name: 'январь--сентябрь-2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---сентябрь-2016.pdf?sfvrsn=f00c55c_2'
             },
             {
-              name: 'январь--декабрь-2016.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2016%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2016'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---декабрь-2016.pdf?sfvrsn=c55c_2'
             },
           ],
           2017: [
             {
-              name: 'январь--март-2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%BC%D0%B0%D1%80%D1%82%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---март-2017.pdf?sfvrsn=be01c55c_2'
             },
             {
-              name: 'январь--июнь-2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B8%D1%8E%D0%BD%D1%8C%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---июнь-2017.pdf?sfvrsn=bd01c55c_2'
             },
             {
-              name: 'январь--сентябрь-2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8C%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---сентябрь-2017.pdf?sfvrsn=bc01c55c_2'
             },
             {
-              name: 'январь--декабрь-2017.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017%2F%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C%2D%2D%2D%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C%2D2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2017'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---декабрь-2017.pdf?sfvrsn=bb01c55c_2'
             },
           ],
           2018: [
             {
-              name: 'январь--март-2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018%2Ftco%2Dfact%2Dsheet%2D1q%2D2018%5Fr%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/tco-fact-sheet-1q-2018_r.pdf?sfvrsn=2901c55c_2'
             },
             {
-              name: 'январь--июнь-2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018%2F2%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/2-квартал.pdf?sfvrsn=2a01c55c_2'
             },
             {
-              name: 'январь--сентябрь-2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018%2F3%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/3-квартал-(1).pdf?sfvrsn=d701c55c_2'
             },
             {
-              name: 'январь--декабрь-2018.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018%2F4%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2018'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/4-квартал.pdf?sfvrsn=2801c55c_2'
             },
           ],
           2019: [
             {
-              name: 'январь--март-2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019%2F1%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/1-квартал.pdf?sfvrsn=4601c55c_2'
             },
             {
-              name: 'январь--июнь-2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019%2F1%2D%D0%BF%D0%BE%D0%BB%D1%83%D0%B3%D0%BE%D0%B4%D0%B8%D0%B5%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/1-полугодие.pdf?sfvrsn=4401c55c_2'
             },
             {
-              name: 'январь--сентябрь-2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019%2F3%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/3-квартал-(2).pdf?sfvrsn=4501c55c_2'
             },
             {
-              name: 'январь--декабрь-2019.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019%2F4%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2019'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/4-квартал-(1).pdf?sfvrsn=4301c55c_2'
             },
           ],
           2020: [
             {
-              name: 'январь--март-2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020%2F1%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/1-квартал-(1).pdf?sfvrsn=f006c55c_2'
             },
             {
-              name: 'январь--июнь-2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020%2F2%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/2-квартал-(1).pdf?sfvrsn=f106c55c_2'
             },
             {
-              name: 'январь--сентябрь-2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020%2F3%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/3-квартал-(3).pdf?sfvrsn=ff06c55c_2'
             },
             {
-              name: 'январь--декабрь-2020.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020%2F4%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2020'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/4-квартал-(2).pdf?sfvrsn=f206c55c_2'
             },
           ],
           2021: [
             {
-              name: 'январь--март-2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021%2F1%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/1-квартал-(2).pdf?sfvrsn=6b06c55c_2'
             },
             {
-              name: 'январь--июнь-2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021%2F2%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/2-квартал-(2).pdf?sfvrsn=6c06c55c_2'
             },
             {
-              name: 'январь--сентябрь-2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021%2F3%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%284%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/3-квартал-(4).pdf?sfvrsn=6e06c55c_2'
             },
             {
-              name: 'январь--декабрь-2021.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021%2F4%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2021'
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/4-квартал-(3).pdf?sfvrsn=6d06c55c_2'
             },
           ],
           2022: [
             {
-              name: 'январь--март-2022.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022%2F1%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022'
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/1-квартал-(3).pdf?sfvrsn=9807c55c_2'
             },
             {
-              name: 'январь--июнь-2022.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022%2F2%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022'
+              name: '2 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/2-квартал-(3).pdf?sfvrsn=9907c55c_2'
             },
             {
-              name: 'январь--сентябрь-2022.pdf',
-              link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022%2F3%2D%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%20%285%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FFacts%20and%20Figures%2FRU%2F2022'
+              name: '3 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/3-квартал-(5).pdf?sfvrsn=8707c55c_2'
             },
-            // {
-            //   name: 'январь--декабрь-2022.pdf',
-            //   link: ''
-            // },
+            {
+              name: '4 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/tco-fact-sheet-4q-2022_final_r.pdf?sfvrsn=f8e1c55c_2'
+            },
           ],
         }
       },
