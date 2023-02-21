@@ -1,6 +1,6 @@
 <script>
 import jsonData from '~/components/templates/News/json_data.json'
-const data = jsonData[jsonData.length - 1]
+const data = jsonData[2]
 console.log(data)
 export default {
   props: {
@@ -43,7 +43,7 @@ export default {
           },
           date: data[this.$i18n.locale].date,
           title: data[this.$i18n.locale].title,
-          text: data[this.$i18n.locale].body,
+          text: data[this.$i18n.locale].body[1],
         },
       ],
     }
