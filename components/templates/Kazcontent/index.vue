@@ -752,17 +752,17 @@ export default {
     },
     contractsPlanLink() {
       const mapOfFileLink = {
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=c19df8e6%2Daf88%2D4b99%2Dbe5b%2D84c762e8d899',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=381bab88%2Da2fc%2D44d7%2Db530%2D5b6fb7c860df',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=3dd1e1b4%2D2413%2D4bad%2Da056%2D7f3454423116',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/kazakhstani-content-page/en/updated-tco-contracting-and-procurement-plan-2022-(2).xlsx?sfvrsn=730dc55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/kazakhstani-content-page/ru/updated-tco-contracting-and-procurement-plan-2022.xlsx?sfvrsn=d0dc55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/kazakhstani-content-page/kk/updated-tco-contracting-and-procurement-plan-2022-(1).xlsx?sfvrsn=b8f2c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
     updatesContractsPlanLink() {
       const mapOfFileLink = {
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=7cf30800%2D9a7f%2D42bc%2Dbfa8%2D5990f6209e72',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=e7b228eb%2D3a6a%2D4a71%2Db447%2D6464374c6c17',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1003a4ab%2Dbdcb%2D41c9%2Db0da%2Ddff2b3ebb0b5',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/kazakhstani-content-page/en/tco-contracting-and-procurement-plan-2023-(2).xlsx?sfvrsn=720dc55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/kazakhstani-content-page/ru/tco-contracting-and-procurement-plan-2023.xlsx?sfvrsn=c0dc55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/kazakhstani-content-page/kk/tco-contracting-and-procurement-plan-2023-(1).xlsx?sfvrsn=b9f2c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },

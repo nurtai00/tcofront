@@ -376,49 +376,49 @@ ${this.$t('products.cards2.1.description3')}`,
   computed: {
     listRegisterDocs() {
       const mapOfFileLink = {
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=dfcbbe20%2De708%2D4d85%2Da26a%2D16a085ee6986',
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=227bec33%2Db2f4%2D42f5%2Dbdf2%2Df2ba224c2a80',
-        kz: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=cc5f5966%2D8428%2D47b1%2D8bb7%2D61d6678c059c',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/ru/природный-газ/список-регистрационных-документов-(1).docx?sfvrsn=edf3c55c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/en/natural-gas-sales/customer-credit-checklist-(1).docx?sfvrsn=98f1c55c_2',
+        kz: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/kk/табиғи-газ/іскерлік-сұраунама-(орысша).xlsx?sfvrsn=b7f0c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
     buisinessAnket() {
       const mapOfFileLink = {
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=68f6d113%2Da138%2D432a%2D9b00%2D770c21f5c4db',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=870b2035%2Ddc5b%2D41a9%2Da73b%2Daa97e84fbd09',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=ea83244f%2D675b%2D44eb%2Da5d7%2Dbe83d00598eb',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/en/natural-gas-sales/updated-business-questionnaire-for-customers-(5).xlsx?sfvrsn=99f1c55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/ru/природный-газ/updated-business-questionnaire-for-customers-(2).xlsx?sfvrsn=eef3c55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/kk/табиғи-газ/тіркелуі-туралы-құжаттар-тізімі-(орысша)_kaz.docx?sfvrsn=b6f0c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
     skgBuisinessAnket() {
       const mapOfFileLink = {
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=949f3388%2D4f61%2D424f%2Da37e%2De72d0f627e83',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=e9b32230%2D255e%2D4277%2Dabb0%2D4a74bf6932db',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=ea83244f%2D675b%2D44eb%2Da5d7%2Dbe83d00598eb',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/en/lpg/commercial-questionnaire90eca252577266428434ff0000af314c.doc?sfvrsn=c1f1c55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/ru/суг/бизнес-анкета.xlsx?sfvrsn=19f3c55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/kk/сұйытылған-көмірсутек-газ/коммерциялық-сауалнама.doc?sfvrsn=f0f0c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
     skgListRegisterDocs() {
       const mapOfFileLink = {
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=10a60ce2%2Dec00%2D4ff8%2Da3b7%2Dd590e3e0672b',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=abd22284%2D4f74%2D4af4%2Db562%2D15e681f524d6',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=cc5f5966%2D8428%2D47b1%2D8bb7%2D61d6678c059c',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/en/lpg/customer-credit-checklist.docx?sfvrsn=c0f1c55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/ru/суг/список-регистрационных-документов.docx?sfvrsn=1bf3c55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/kk/сұйытылған-көмірсутек-газ/тіркелуі-туралы-құжаттар-тізімі.docx?sfvrsn=fdf0c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
     commercialSurveyLink() {
       const mapOfFileLink = {
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1505ae45%2D2971%2D44e9%2D9c9d%2D56a229d600c2',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=50b1eb71%2D4deb%2D432e%2Da6ba%2Da687f8f727f4',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=c1a79473%2D72cd%2D40ea%2Da1f0%2Dd627bd9bc3c3',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/en/lpg/updated-business-questionnaire-for-customers-(4).xlsx?sfvrsn=c2f1c55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/ru/суг/технический-опросник.doc?sfvrsn=1af3c55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/kk/сұйытылған-көмірсутек-газ/іскерлік-сұраунама.xlsx?sfvrsn=fff0c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
     technicalSurveyLink() {
       const mapOfFileLink = {
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=b27cfe43%2D3ba4%2D43a3%2D8348%2D756b16d54fde',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=db73de8f%2D0fe6%2D4a16%2D876b%2Defabd6b4b69a',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1284695c%2D910a%2D47bb%2D88ff%2Db6d917e44b81',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/en/lpg/technical-questionnaire.doc?sfvrsn=cff1c55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/ru/суг/коммерческий-опрос.doc?sfvrsn=1cf3c55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/products-page/kk/сұйытылған-көмірсутек-газ/техникалық-сауалнама.doc?sfvrsn=fef0c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },

@@ -191,17 +191,17 @@ export default {
   computed: {
     chesmLink() {
       const mapOfFileLink = {
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=37e24b81%2Dfb28%2D4a5b%2Db259%2D16451578adb7',
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=86125821%2Df8d4%2D442a%2Da4ff%2D3cdceda972ab',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=17dc2880%2Df4fe%2D43a4%2D95af%2D683d2d863c42',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/operations-page/ru/chesm-qualification-questionnaire.xls?sfvrsn=34f2c55c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/operations-page/en/chesm-qualification-questionnaire-(5).xls?sfvrsn=a1f3c55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/operations-page/kk/chesm-qualification-questionnaire-(4).xls?sfvrsn=7bf2c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
     tbStatisticLink() {
       const mapOfFileLink = {
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=56254fd9%2Db133%2D44d2%2Dbd55%2D5262eaf49bed',
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=8a89f2c9%2D5733%2D447b%2Da28c%2D976dbaac79e7',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=882bc44e%2De528%2D4deb%2Dab4b%2D6aec461c3b8f',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/operations-page/ru/rates-and-definitions.pdf?sfvrsn=35f2c55c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/operations-page/en/safety-statistics-definitions-and-rates_eng.pdf?sfvrsn=a0f3c55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/operations-page/kk/rates-and-definitions-(1).pdf?sfvrsn=7af2c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },

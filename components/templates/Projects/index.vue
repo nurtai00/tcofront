@@ -307,9 +307,9 @@ export default {
     },
     docPubr() {
       const mapOfFileLink = {
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=f9483194%2D7bb6%2D4908%2D8b29%2D50f1341a70da',
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=06386e07%2Dae83%2D4e3e%2Da6b0%2D61c0bb0d2348',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=69605ed9%2D5d36%2D4936%2Da897%2D6c88732a408d',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/projects-page/ru/feedback-management-process-flyer-(3).pdf?sfvrsn=70f1c55c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/projects-page/en/feedback-management-process-flyer-(3).pdf?sfvrsn=a6f6c55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/projects-page/kk/feedback-management-process-flyer-(3).pdf?sfvrsn=5bf1c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },

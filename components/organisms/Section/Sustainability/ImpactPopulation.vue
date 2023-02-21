@@ -98,18 +98,18 @@ export default {
   computed: {
     keyEnvironmentalIndicators() {
       const mapOfFileLink = {
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=062a4a18%2D5429%2D4ea9%2Dbaa1%2Da0df4ba3d946',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=1b498f48%2D94e5%2D408e%2D8cb7%2D3f7a43425bba',
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=00bf1b5c%2D5e9a%2D4864%2D948c%2D99a17f6fa156',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/kk/2021-жылғы-негізгі-экологиялық-көрсеткіштері-(1).pdf?sfvrsn=10fdc55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/ru/основные-экологические-показатели-за-2021-год-(1).pdf?sfvrsn=35fdc55c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/en/environmental-brochure-eng-(1).pdf?sfvrsn=7bfdc55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
 
     landScapingHref() {
       const mapOfFileLink = {
-        kk: 'https://drive.google.com/file/d/1isVDfSVS7MB_KkDXGV0aIkdOGUJ8_r3b/view',
-        ru: 'https://drive.google.com/file/d/1-fEfxsDS7326dTpMHyPexPabrF3L7awJ/view?usp=share_link',
-        en: 'https://drive.google.com/file/d/1WJenbR2GFMgy8f95Ih2AnWYr_VmojzGN/view',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/biotopes/kk/тенгиз-биотоптарының-қысқаша-анықтамалығы.pdf?sfvrsn=a5e2c55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/biotopes/ru/краткий-справочник-биотопов-тенгиза.pdf?sfvrsn=5afdc55c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/biotopes/en/tengiz-biotopes-field-handbook.pdf?sfvrsn=80e2c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },

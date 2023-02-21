@@ -33,7 +33,7 @@
       <a
         class="link"
         target="_blank"
-        href="https://norsecdeltaprojects-my.sharepoint.com/:w:/g/personal/n_nudiyev_norsec_kz/ETF4ZF_UwChGp-4QATQYf1IBLidPgR3I2dk6aaWwTIZ__Q?e=xvV3xo"
+        href="https://tengizchevroil.com/docs/default-source/tcodocuments/career/заявление-на-прохождение-учебной-практики.docx?sfvrsn=9de1c55c_2"
         >{{ $t('career.intern.link') }}</a
       >
     </div>

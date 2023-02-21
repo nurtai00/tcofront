@@ -78,9 +78,9 @@ export default {
   data() {
     return {
       link: {
-        en: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FContacts%20page%2FEN%2Ffeedback%2Dmanagement%2Dprocess%2Dflyer%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FContacts%20page%2FEN',
-        kk: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FContacts%20page%2FKAZ%2Ffeedback%2Dmanagement%2Dprocess%2Dflyer%20%283%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FContacts%20page%2FKAZ',
-        ru: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FContacts%20page%2FRU',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/contacts-page/en/feedback-management-process-flyer-(3).pdf?sfvrsn=6e1ac55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/contacts-page/kk/feedback-management-process-flyer-(3).pdf?sfvrsn=21ac55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/contacts-page/ru/feedback-management-process-flyer-(3).pdf?sfvrsn=261ac55c_2',
       },
     }
   },
