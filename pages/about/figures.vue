@@ -733,19 +733,13 @@ export default {
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
         <AtomsBreadOption :to="localePath('/')">
-          {{
-            $t('company.breadcrumbs[0]')
-          }}
+          {{ $t('company.breadcrumbs[0]') }}
         </AtomsBreadOption>
         <AtomsBreadOption :to="localePath('/about')">
-          {{
-            $t('company.breadcrumbs[1]')
-          }}
+          {{ $t('company.breadcrumbs[1]') }}
         </AtomsBreadOption>
         <AtomsBreadOption :to="localePath('/about/figures')">
-          {{
-            $t('company.figures_title')
-          }}
+          {{ $t('company.figures_title') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <div class="kazakhstani__tags">

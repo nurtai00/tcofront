@@ -41,9 +41,7 @@ export default {
       <div class="container">
         <div class="news_title">
           <AtomsTitle class="atoms_title" small>
-            {{
-              $t('project.block_5.title')
-            }}
+            {{ $t('project.block_5.title') }}
           </AtomsTitle>
           <!--          <nuxt-link :to="localePath('/projects/other-projects')">{{-->
           <!--            $t('project.block_5.all')-->

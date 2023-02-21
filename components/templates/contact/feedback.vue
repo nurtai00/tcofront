@@ -4,18 +4,14 @@
       <MoleculesBreadcrumbs class="mt40 mb20">
         <AtomsBreadOption to="/">{{ $t('contact.main') }}</AtomsBreadOption>
         <AtomsBreadOption to="/contact">
-          {{
-            $t('contact.contact')
-          }}
+          {{ $t('contact.contact') }}
         </AtomsBreadOption>
         <AtomsBreadOption to="/contact/feedback">
           {{ $t('contact.feedback.feedback') }}
         </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <AtomsTitle class="mb20">
-        {{
-          $t('contact.feedback.feedback_text')
-        }}
+        {{ $t('contact.feedback.feedback_text') }}
       </AtomsTitle>
       <div class="feedback__content">
         <p>

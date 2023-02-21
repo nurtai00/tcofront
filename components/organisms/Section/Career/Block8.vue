@@ -6,9 +6,7 @@
           {{ $t('career.news') }}
         </AtomsTitle>
         <nuxt-link :to="localePath('/news')">
-          {{
-            $t('career.all-news')
-          }}
+          {{ $t('career.all-news') }}
         </nuxt-link>
       </div>
       <AtomsTag
