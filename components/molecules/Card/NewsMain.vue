@@ -9,15 +9,15 @@
     @click="navigateNew"
   >
     <img
-      v-if="[2, 3, 6].includes(index)"
-      :src="require('@/assets/img/new/' + item[lang].img || '')"
+      v-if="[2, 3, 6].includes(index) && !!item[lang].img"
+      :src="require('@/assets/img/new/' + item[lang].img || 'new_1.jpg')"
       alt="news_card"
       class="n_card_desktop"
     />
     <img
       v-if="![1, 2].includes(index)"
       class="n_card_mobile"
-      :src="require('@/assets/img/new/' + item[lang].img || '')"
+      :src="require('@/assets/img/new/' + item[lang].img || 'new_1.jpg')"
       alt="news_card"
     />
     <div class="n_card_content">
@@ -28,7 +28,9 @@
         <p class="n_card_date">{{ item[lang].date }}</p>
       </div>
       <AtomsHeading type="h6" color="main">
-        <span v-if="item[lang].title.length > 70">{{ item[lang].title.slice(0, 70) }}...</span>
+        <span v-if="item[lang].title.length > 70"
+          >{{ item[lang].title.slice(0, 70) }}...</span
+        >
         <span v-else>{{ item[lang].title }}</span>
       </AtomsHeading>
       <p
@@ -37,7 +39,12 @@
           '-webkit-line-clamp': [2, 3].includes(index) ? 2 : index == 6 ? 1 : 3,
         }"
       >
-        <span>{{ item[lang].body.slice(0, 50) }}...</span>
+        <span
+          v-if="bodyIsArray"
+          v-html="item[lang].body[0].slice(0, 60) + '...'"
+        >
+        </span>
+        <span v-else>{{ item[lang].body.slice(0, 50) }}...</span>
       </p>
     </div>
   </div>
@@ -60,9 +67,15 @@ export default {
     },
   },
   computed: {
+    bodyIsArray() {
+      return Array.isArray(this.item[this.lang].body)
+    },
     lang() {
       return this.$i18n.locale
     },
+  },
+  mounted() {
+    console.log(this.item[this.lang])
   },
   methods: {
     navigateNew() {

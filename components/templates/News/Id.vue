@@ -7,6 +7,9 @@ export default {
     }
   },
   computed: {
+    isDescriptionArray() {
+      return Array.isArray(this.news[this.$i18n.locale].body)
+    },
     hasImg() {
       return !!this.news[this.lang]?.img
     },
@@ -98,7 +101,16 @@ export default {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       />
-      <p class="content_text">
+      <template v-if="isDescriptionArray">
+        <p
+          v-for="text of news[lang].body"
+          :key="text"
+          class="content_text"
+          style="margin-top: 20px; display: inline-block"
+          v-html="text"
+        ></p>
+      </template>
+      <p v-else class="content_text">
         {{ news[lang].body }}
       </p>
     </div>
