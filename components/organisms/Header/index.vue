@@ -11,8 +11,7 @@
           :key="item.code"
           :class="{ active_link: $i18n.locale === item.code }"
           @click="selectLang(item)"
-          >{{ item.label }}</a
-        >
+        >{{ item.label }}</a>
       </div>
     </header>
     <div class="mobile-nav">

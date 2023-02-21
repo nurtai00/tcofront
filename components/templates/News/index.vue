@@ -39,8 +39,8 @@
           />
         </div>
         <AtomsButton type="submit" @click="iteration = iteration + 1">
-          {{ $t('news.button'), }}</AtomsButton
-        >
+          {{ $t('news.button'), }}
+        </AtomsButton>
       </div>
     </div>
     <div class="news_publications">

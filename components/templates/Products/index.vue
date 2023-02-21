@@ -83,9 +83,7 @@
         />
         <p class="slide_text">
           {{ $t('products.slide_text') }}
-          <a href="mailto:tcolpgt@tengizchevroil.com"
-            >tcolpgt@tengizchevroil.com</a
-          >
+          <a href="mailto:tcolpgt@tengizchevroil.com">tcolpgt@tengizchevroil.com</a>
         </p>
       </template>
     </OrganismsSectionOperationSlide>
@@ -130,9 +128,7 @@
         />
         <p class="slide_text">
           {{ $t('products.slide_text') }}
-          <a href="mailto:mtadmin@tengizchevroil.com"
-            >mtadmin@tengizchevroil.com</a
-          >
+          <a href="mailto:mtadmin@tengizchevroil.com">mtadmin@tengizchevroil.com</a>
         </p>
       </template>
     </OrganismsSectionOperationSlide>
@@ -177,9 +173,7 @@
           />
           <p class="slide_text">
             {{ $t('products.slide_text') }}
-            <a href="mailto:tcosst@tengizchevroil.com"
-              >tcosst@tengizchevroil.com</a
-            >
+            <a href="mailto:tcosst@tengizchevroil.com">tcosst@tengizchevroil.com</a>
           </p>
         </template>
       </OrganismsSectionOperationSlide>

@@ -126,7 +126,7 @@ export default {
     &__num {
       font-size: 22px;
       line-height: 28px;
-      left: 0
+      left: 0;
     }
 
     &__title {

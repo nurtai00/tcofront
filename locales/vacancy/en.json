@@ -1,9 +1,5 @@
 {
-  "breadcrumbs": [
-    "Home",
-    "Career",
-    "Vacancy"
-  ],
+  "breadcrumbs": ["Home", "Career", "Vacancy"],
   "block_1": {
     "title": "List of available vacancies",
     "text": "You can search and apply for available positions at this page. If you meet the criteria we are looking for, please proceed to “Apply” to submit your details and CV by completing the application form.<br>For technical support please contact us via rectechsup@tengizchevroil.com<br><strong>ATTENTION!</strong> If you have @mail.ru, bk.ru, list.ru and other .ru accounts linked to your profile, we recommend recreating your profile with another .com mail service (gmail; yahoo etc.) to avoid technical issues with logging into your profile."

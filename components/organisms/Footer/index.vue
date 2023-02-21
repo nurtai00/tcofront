@@ -39,9 +39,7 @@
           <a href="tel:+7 712 227 1212">+7 712 227 1212</a>
           <a href="tel:+7 712 302 6000">+7 712 302 6000</a>
           <a style="color: #fff">{{ $t('header.footer.address') }}</a>
-          <a href="mailto:tcoinfo@tengizchevroil.com"
-            >tcoinfo@tengizchevroil.com</a
-          >
+          <a href="mailto:tcoinfo@tengizchevroil.com">tcoinfo@tengizchevroil.com</a>
           <nuxt-link :to="localePath('/contact')" class="with_underline">
             {{ $t('header.footer.phone') }}
           </nuxt-link>

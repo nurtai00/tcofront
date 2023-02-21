@@ -100,9 +100,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                <a href="mailto:tcolr@tengizchevroil.com"
-                  >tcolr@tengizchevroil.com</a
-                >
+                <a href="mailto:tcolr@tengizchevroil.com">tcolr@tengizchevroil.com</a>
               </span>
             </p>
             <p>

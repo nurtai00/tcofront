@@ -37,8 +37,7 @@
       style="margin-top: 20px; display: inline-block"
       :href="payload.link"
       target="_blank"
-      >{{ payload.link }}</a
-    >
+    >{{ payload.link }}</a>
   </div>
 </template>
 

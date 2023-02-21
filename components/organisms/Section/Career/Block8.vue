@@ -2,8 +2,14 @@
   <div class="news_career">
     <div class="container">
       <div class="news_title">
-        <AtomsTitle class="atoms_title" small> {{ $t('career.news') }} </AtomsTitle>
-        <nuxt-link :to="localePath('/news')">{{ $t('career.all-news') }}</nuxt-link>
+        <AtomsTitle class="atoms_title" small>
+          {{ $t('career.news') }}
+        </AtomsTitle>
+        <nuxt-link :to="localePath('/news')">
+          {{
+            $t('career.all-news')
+          }}
+        </nuxt-link>
       </div>
       <AtomsTag
         :tag="{

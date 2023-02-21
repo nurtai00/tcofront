@@ -34,8 +34,7 @@
         class="link"
         target="_blank"
         href="https://tengizchevroil.com/docs/default-source/tcodocuments/career/заявление-на-прохождение-учебной-практики.docx?sfvrsn=9de1c55c_2"
-        >{{ $t('career.intern.link') }}</a
-      >
+      >{{ $t('career.intern.link') }}</a>
     </div>
   </div>
 </template>

@@ -293,7 +293,7 @@ export default {
             },
           ],
           2012: [
-             {
+            {
               name: '1-шi тоқсан (pdf)',
               link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2012/қантар---наурыз-2012.pdf?sfvrsn=5407c55c_2',
             },
@@ -401,7 +401,7 @@ export default {
             },
           ],
           2018: [
-             {
+            {
               name: '1-шi тоқсан (pdf)',
               link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2018/tco-fact-sheet-1q-2018_k.pdf?sfvrsn=2a0ac55c_2',
             },
@@ -489,226 +489,226 @@ export default {
               name: '4-шi тоқсан (pdf)',
               link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2022/tco-fact-sheet-4q-2022_final_k.pdf?sfvrsn=c3e1c55c_2',
             },
-          ]
+          ],
         },
         ru: {
           2011: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---март-2011.pdf?sfvrsn=2402c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---март-2011.pdf?sfvrsn=2402c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---июнь-2011.pdf?sfvrsn=2602c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---июнь-2011.pdf?sfvrsn=2602c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---сентябрь-2011.pdf?sfvrsn=2502c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---сентябрь-2011.pdf?sfvrsn=2502c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---декабрь-2011.pdf?sfvrsn=2302c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2011/январь---декабрь-2011.pdf?sfvrsn=2302c55c_2',
             },
           ],
           2012: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---март-2012.pdf?sfvrsn=5202c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---март-2012.pdf?sfvrsn=5202c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---июнь-2012.pdf?sfvrsn=5102c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---июнь-2012.pdf?sfvrsn=5102c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---сентябрь-2012.pdf?sfvrsn=5f02c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---сентябрь-2012.pdf?sfvrsn=5f02c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---декабрь-2012.pdf?sfvrsn=5002c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2012/январь---декабрь-2012.pdf?sfvrsn=5002c55c_2',
             },
           ],
           2013: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---март-2013.pdf?sfvrsn=cd03c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---март-2013.pdf?sfvrsn=cd03c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---июнь-2013.pdf?sfvrsn=ce03c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---июнь-2013.pdf?sfvrsn=ce03c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---сентябрь-2013.pdf?sfvrsn=cc03c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---сентябрь-2013.pdf?sfvrsn=cc03c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---декабрь-2013.pdf?sfvrsn=cb03c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2013/январь---декабрь-2013.pdf?sfvrsn=cb03c55c_2',
             },
           ],
           2014: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---март-2014.pdf?sfvrsn=7a03c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---март-2014.pdf?sfvrsn=7a03c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---июнь-2014.pdf?sfvrsn=7803c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---июнь-2014.pdf?sfvrsn=7803c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---сентябрь-2014.pdf?sfvrsn=7903c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---сентябрь-2014.pdf?sfvrsn=7903c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---декабрь-2014.pdf?sfvrsn=6703c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2014/январь---декабрь-2014.pdf?sfvrsn=6703c55c_2',
             },
           ],
           2015: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---март-2015.pdf?sfvrsn=9600c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---март-2015.pdf?sfvrsn=9600c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---июнь-2015.pdf?sfvrsn=9300c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---июнь-2015.pdf?sfvrsn=9300c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---сентябрь-2015.pdf?sfvrsn=9500c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---сентябрь-2015.pdf?sfvrsn=9500c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---декабрь-2015.pdf?sfvrsn=9400c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2015/январь---декабрь-2015.pdf?sfvrsn=9400c55c_2',
             },
           ],
           2016: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---март-2016.pdf?sfvrsn=100c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---март-2016.pdf?sfvrsn=100c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---июнь-2016.pdf?sfvrsn=200c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---июнь-2016.pdf?sfvrsn=200c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---сентябрь-2016.pdf?sfvrsn=f00c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---сентябрь-2016.pdf?sfvrsn=f00c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---декабрь-2016.pdf?sfvrsn=c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2016/январь---декабрь-2016.pdf?sfvrsn=c55c_2',
             },
           ],
           2017: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---март-2017.pdf?sfvrsn=be01c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---март-2017.pdf?sfvrsn=be01c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---июнь-2017.pdf?sfvrsn=bd01c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---июнь-2017.pdf?sfvrsn=bd01c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---сентябрь-2017.pdf?sfvrsn=bc01c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---сентябрь-2017.pdf?sfvrsn=bc01c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---декабрь-2017.pdf?sfvrsn=bb01c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2017/январь---декабрь-2017.pdf?sfvrsn=bb01c55c_2',
             },
           ],
           2018: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/tco-fact-sheet-1q-2018_r.pdf?sfvrsn=2901c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/tco-fact-sheet-1q-2018_r.pdf?sfvrsn=2901c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/2-квартал.pdf?sfvrsn=2a01c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/2-квартал.pdf?sfvrsn=2a01c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/3-квартал-(1).pdf?sfvrsn=d701c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/3-квартал-(1).pdf?sfvrsn=d701c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/4-квартал.pdf?sfvrsn=2801c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2018/4-квартал.pdf?sfvrsn=2801c55c_2',
             },
           ],
           2019: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/1-квартал.pdf?sfvrsn=4601c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/1-квартал.pdf?sfvrsn=4601c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/1-полугодие.pdf?sfvrsn=4401c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/1-полугодие.pdf?sfvrsn=4401c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/3-квартал-(2).pdf?sfvrsn=4501c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/3-квартал-(2).pdf?sfvrsn=4501c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/4-квартал-(1).pdf?sfvrsn=4301c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2019/4-квартал-(1).pdf?sfvrsn=4301c55c_2',
             },
           ],
           2020: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/1-квартал-(1).pdf?sfvrsn=f006c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/1-квартал-(1).pdf?sfvrsn=f006c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/2-квартал-(1).pdf?sfvrsn=f106c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/2-квартал-(1).pdf?sfvrsn=f106c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/3-квартал-(3).pdf?sfvrsn=ff06c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/3-квартал-(3).pdf?sfvrsn=ff06c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/4-квартал-(2).pdf?sfvrsn=f206c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2020/4-квартал-(2).pdf?sfvrsn=f206c55c_2',
             },
           ],
           2021: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/1-квартал-(2).pdf?sfvrsn=6b06c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/1-квартал-(2).pdf?sfvrsn=6b06c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/2-квартал-(2).pdf?sfvrsn=6c06c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/2-квартал-(2).pdf?sfvrsn=6c06c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/3-квартал-(4).pdf?sfvrsn=6e06c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/3-квартал-(4).pdf?sfvrsn=6e06c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/4-квартал-(3).pdf?sfvrsn=6d06c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2021/4-квартал-(3).pdf?sfvrsn=6d06c55c_2',
             },
           ],
           2022: [
             {
               name: '1 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/1-квартал-(3).pdf?sfvrsn=9807c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/1-квартал-(3).pdf?sfvrsn=9807c55c_2',
             },
             {
               name: '2 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/2-квартал-(3).pdf?sfvrsn=9907c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/2-квартал-(3).pdf?sfvrsn=9907c55c_2',
             },
             {
               name: '3 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/3-квартал-(5).pdf?sfvrsn=8707c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/3-квартал-(5).pdf?sfvrsn=8707c55c_2',
             },
             {
               name: '4 квартал (pdf)',
-              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/tco-fact-sheet-4q-2022_final_r.pdf?sfvrsn=f8e1c55c_2'
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/tco-fact-sheet-4q-2022_final_r.pdf?sfvrsn=f8e1c55c_2',
             },
           ],
-        }
+        },
       },
     }
   },
@@ -732,15 +732,21 @@ export default {
   <div>
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
-        <AtomsBreadOption :to="localePath('/')">{{
-          $t('company.breadcrumbs[0]')
-        }}</AtomsBreadOption>
-        <AtomsBreadOption :to="localePath('/about')">{{
-          $t('company.breadcrumbs[1]')
-        }}</AtomsBreadOption>
-        <AtomsBreadOption :to="localePath('/about/figures')">{{
-          $t('company.figures_title')
-        }}</AtomsBreadOption>
+        <AtomsBreadOption :to="localePath('/')">
+          {{
+            $t('company.breadcrumbs[0]')
+          }}
+        </AtomsBreadOption>
+        <AtomsBreadOption :to="localePath('/about')">
+          {{
+            $t('company.breadcrumbs[1]')
+          }}
+        </AtomsBreadOption>
+        <AtomsBreadOption :to="localePath('/about/figures')">
+          {{
+            $t('company.figures_title')
+          }}
+        </AtomsBreadOption>
       </MoleculesBreadcrumbs>
       <div class="kazakhstani__tags">
         <AtomsTag
@@ -752,7 +758,7 @@ export default {
       </div>
       <div class="figures_list">
         <div v-for="file in files[$i18n.locale][selected_tag]" :key="file.link">
-          <img src="@/assets/img/pdf.png" alt="pdf" width="30" height="40">
+          <img src="@/assets/img/pdf.png" alt="pdf" width="30" height="40" />
           <a :href="file.link" target="_blank" v-text="file.name"></a>
         </div>
       </div>
@@ -982,7 +988,7 @@ export default {
     }
   }
 }
-.figures_list{
+.figures_list {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   align-items: center;

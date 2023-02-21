@@ -3,9 +3,11 @@
     <div class="container">
       <MoleculesBreadcrumbs class="mt40 mb20">
         <AtomsBreadOption to="/">{{ $t('contact.main') }}</AtomsBreadOption>
-        <AtomsBreadOption to="/contact">{{
-          $t('contact.contact')
-        }}</AtomsBreadOption>
+        <AtomsBreadOption to="/contact">
+          {{
+            $t('contact.contact')
+          }}
+        </AtomsBreadOption>
         <AtomsBreadOption to="/contact/feedback">
           {{ $t('contact.reports.feedback') }}
         </AtomsBreadOption>

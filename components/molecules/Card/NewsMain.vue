@@ -28,9 +28,7 @@
         <p class="n_card_date">{{ item[lang].date }}</p>
       </div>
       <AtomsHeading type="h6" color="main">
-        <span v-if="item[lang].title.length > 70"
-          >{{ item[lang].title.slice(0, 70) }}...</span
-        >
+        <span v-if="item[lang].title.length > 70">{{ item[lang].title.slice(0, 70) }}...</span>
         <span v-else>{{ item[lang].title }}</span>
       </AtomsHeading>
       <p

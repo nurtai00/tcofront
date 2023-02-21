@@ -22,8 +22,7 @@
                   v-if="list.type === 'link'"
                   class="list__item-link"
                   :href="list.href"
-                  >{{ list.text }}</a
-                >
+                >{{ list.text }}</a>
                 <p v-else class="list__item-description">{{ list.text }}</p>
               </div>
             </li>

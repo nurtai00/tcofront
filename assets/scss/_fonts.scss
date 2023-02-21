@@ -23,7 +23,7 @@ $fontLinks2: Regular 400 normal, Bold 700 normal, Medium 500 normal;
     font-weight: #{nth($font2, 2)};
     font-style: #{nth($font2, 3)};
     src: local($font-family2), local(#{$font-family2}-#{nth($font2, 1)}),
-    url('~/assets/fonts/#{$font-family2}-#{nth($font2, 1)}.ttf')
-    format('truetype');
+      url('~/assets/fonts/#{$font-family2}-#{nth($font2, 1)}.ttf')
+        format('truetype');
   }
 }

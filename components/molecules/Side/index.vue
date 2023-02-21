@@ -1,5 +1,5 @@
 <template>
-  <div class="side" v-if="isOpen">
+  <div v-if="isOpen" class="side">
     <div class="side__closing" @click="close" />
     <div class="side__content">
       <div class="side__content_header">

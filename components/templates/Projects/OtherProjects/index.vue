@@ -26,8 +26,7 @@
         <p>{{ $t('project.other.descriprtion') }}</p>
         <strong
           style="font-style: italic; margin-top: 15px; display: inline-block"
-          >"{{ $t('project.other.author') }}"</strong
-        >
+        >"{{ $t('project.other.author') }}"</strong>
       </template>
     </OrganismsSectionOperationSvg>
     <OrganismsSectionOperationSlide

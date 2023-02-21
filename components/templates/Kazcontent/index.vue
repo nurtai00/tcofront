@@ -293,8 +293,7 @@
           <a href="#">
             {{
               $t('kazContent.cooperationTco.providerInterest.descriptions.link')
-            }}</a
-          >
+            }}</a>
         </p>
         <p>
           {{
@@ -347,8 +346,7 @@
             <p>
               {{ $t('kazContent.cooperationInterest.link')[0] }}
               <a href="mailto:kcdsearch@tengizchevroil.com">
-                {{ $t('kazContent.cooperationInterest.link')[1] }}</a
-              >
+                {{ $t('kazContent.cooperationInterest.link')[1] }}</a>
             </p>
           </div>
           <div class="kazakhstani__working_cards">
