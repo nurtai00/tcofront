@@ -23,7 +23,7 @@
             {{ $t('kazContent.electricCatalog.description') }}
           </p>
           <AtomsFile
-            file="https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/download.aspx?UniqueId=a9630768%2Da362%2D4cf9%2Da09c%2Dabab83a77b20"
+            file="https://tengizchevroil.com/docs/default-source/tcodocuments/kazakhstani-content-page/electronic-catalog/manuals.zip?sfvrsn=210dc55c_2"
             :text="$t('kazContent.electricCatalog.file')"
             icon="zip"
           />
