@@ -5,6 +5,7 @@
         {{ $t('company.block_1.title') }}
       </AtomsTitle>
       <p class="mt20 mb40">
+
         {{ $t('company.block_1.p_1') }}
       </p>
     </div>

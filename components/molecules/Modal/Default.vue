@@ -6,7 +6,17 @@
     <AtomsHeading type="h3" color="main">
       {{ payload.title }}
     </AtomsHeading>
-    <p class="default_modal_text" v-html="payload.text"></p>
+    <template v-if="withWhiteSpaces">
+      <p
+        v-for="text of payload.text"
+        :key="text"
+        class="default_modal_text"
+        style="padding-top: 15px"
+      >
+        {{ text }}
+      </p>
+    </template>
+    <p v-else class="default_modal_text" v-html="payload.text"></p>
     <template v-if="!!payload.imgSrc && payload.imgSrc.length">
       <img :src="require(`@/assets/img/${payload.imgSrc}`)" alt="img" />
     </template>
@@ -22,6 +32,13 @@
         allowfullscreen
       ></iframe>
     </template>
+    <a
+      v-if="!!payload.link"
+      style="margin-top: 20px; display: inline-block"
+      :href="payload.link"
+      target="_blank"
+      >{{ payload.link }}</a
+    >
   </div>
 </template>
 
@@ -31,6 +48,11 @@ export default {
     payload: {
       type: Object,
       required: true,
+    },
+  },
+  computed: {
+    withWhiteSpaces() {
+      return Array.isArray(this.$props.payload.text)
     },
   },
 }

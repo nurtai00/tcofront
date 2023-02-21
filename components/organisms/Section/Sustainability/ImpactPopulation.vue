@@ -6,8 +6,12 @@
       </AtomsHeading>
       <div class="impact__content">
         <div class="impact__info">
-          <p class="impact__info-description">
-            {{ $t('suistainability.impactPopulation.description') }}
+          <p
+            v-for="text of $t('suistainability.impactPopulation.description')"
+            :key="text"
+            class="impact__info-description"
+          >
+            {{ text }}
           </p>
           <div class="mt40">
             <AtomsPdfFile

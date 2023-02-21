@@ -37,6 +37,7 @@ export default {
           imgSrc: 'ecology/card-1.png',
           popupText: this.$t('suistainability.ecology.popupText.card1'),
           bgSrc: 'sustainability/ecology/photo-1.jpg',
+          link: 'http://ecodata.kz:3838/app_dem_visual/',
         },
         {
           id: 2,
@@ -70,6 +71,7 @@ export default {
           modal: 'Default',
           title: item.title,
           text: item.popupText,
+          link: item.link,
         },
       })
     },
