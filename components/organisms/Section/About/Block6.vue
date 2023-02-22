@@ -37,7 +37,7 @@ export default {
         ru: [
           {
             name: '2021-отчет-о-корпоративной-ответственности.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/ru/3-квартал.pdf?sfvrsn=3f15c55c_2',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/tco-fact-sheet-4q-2022_final_r.pdf?sfvrsn=f8e1c55c_2',
           },
           {
             name: '3-квартал.pdf',
@@ -51,7 +51,7 @@ export default {
         en: [
           {
             name: '2021-corporate-responsibility-report.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/en/3-quarter.pdf?sfvrsn=4115c55c_2',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2022/tco-fact-sheet-4q-2022_final_e.pdf?sfvrsn=2ee1c55c_2',
           },
           {
             name: '3-quarter.pdf',
@@ -65,7 +65,7 @@ export default {
         kk: [
           {
             name: '2021-корпоративтік-жауапкершілік-туралы-есеп.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/kk/3-ші-тоқсан.pdf?sfvrsn=931ac55c_2',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2022/tco-fact-sheet-4q-2022_final_k.pdf?sfvrsn=c3e1c55c_2',
           },
           {
             name: '3-ші-тоқсан.pdf',
