@@ -22,8 +22,8 @@
     "items": [
       {
         "title": "Tengiz field",
-        "count": "3,2 billion tonnes",
-        "p": "(25,5 billion barrels)"
+        "count": "3,1 billion tonnes",
+        "p": "(25 billion barrels)"
       },
       {
         "title": "Korolev field",
@@ -37,22 +37,22 @@
     "title": "Production and sales:",
     "items": [
       {
-        "title": "21,5 million",
+        "title": "29,2 million",
         "p_1": "Crude",
         "p_2": "(in tonnes)"
       },
       {
-        "title": "0,85 million",
+        "title": "1,19 million",
         "p_1": "LPG",
         "p_2": "(in tonnes)"
       },
       {
-        "title": "7,6 billion",
+        "title": "9,7 billion",
         "p_1": "Dry gas",
         "p_2": "(in m3)"
       },
       {
-        "title": "1,8 million",
+        "title": "2,4 million",
         "p_1": "Sulfur",
         "p_2": "(in tonnes)"
       }
@@ -64,14 +64,14 @@
       "items": [
         {
           "title": "2,6 billion (in US dollars)",
-          "text": "Incl. FGP-WPMP spending of"
+          "text": "Including FGP-WPMP spending of"
         },
         {
           "title": "3,8 billion (in US dollars)",
           "text": "Goods and services spending"
         },
         {
-          "title": ">42,6 billion (in US dollars)",
+          "title": ">43,6 billion (in US dollars)",
           "text": "Total spending since 1993"
         }
       ]
@@ -80,15 +80,15 @@
       "title": "Contribution to the social sphere:",
       "items": [
         {
-          "title": "2,3 million (in US dollars)",
-          "text": "CIP* budget"
+          "title": "2,5 million (in US dollars)",
+          "text": "2023 CIP* budget"
         },
         {
-          "title": "30 million (in US dollars)",
-          "text": "Egilik Program budget"
+          "title": "25 million (in US dollars)",
+          "text": "2023 Egilik Program budget"
         },
         {
-          "title": ">2,6 billion (in US dollars)",
+          "title": ">2,7 billion (in US dollars)",
           "text": "Total social investments since 1993"
         }
       ]
@@ -99,12 +99,12 @@
     "items": [
       {
         "title": "Direct payments in 2022",
-        "p_1": "10,9 billion",
+        "p_1": "14,5 billion",
         "p_2": "(in US dollars)"
       },
       {
         "title": "Total payments since 1993",
-        "p_1": "172 billion",
+        "p_1": "176 billion",
         "p_2": "(in US dollars)"
       }
     ],
@@ -113,7 +113,7 @@
   "block_4": {
     "title": "2022 Key Figures",
     "items": [
-      "3 quarter",
+      "4 quarter",
       "Facts and Figures",
       "The Corporate Responsibility Report for 2021 y"
     ]
