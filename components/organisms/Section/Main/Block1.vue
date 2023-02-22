@@ -21,14 +21,6 @@ export default {
           img: require('@/assets/img/banner_bg.png'),
           link: this.localePath('/news/23'),
         },
-        // {
-        //   title: this.$t('home.block_11[1].title') + '12312321',
-        //   text: this.$t('home.block_11[1].text'),
-        //   date: this.$t('home.block_11[1].date'),
-        //   button: this.$t('home.block_11[1].button'),
-        //   img: require('@/assets/img/banner_bg_2.png'),
-        //   link: this.localePath('/news/24'),
-        // },
         {
           title: this.$t('home.block_11[2].title'),
           text: this.$t('home.block_11[2].text'),
@@ -53,7 +45,6 @@ export default {
         slidesPerView: 1,
         id: 'main-slider-a1',
         slide: this.slideTo,
-        style: 'max-height: 700px',
       },
     }
   },
@@ -66,17 +57,22 @@ export default {
 
 <template>
   <div class="slider-cont container">
-    <OrganismsSlider :options="options">
+    <OrganismsSlider class="my-slider" :options="options">
       <MoleculesSlide v-for="(slide, slide_index) in slides" :key="slide_index">
         <div class="double-block tco__partners">
           <div class="tco__partners-wrapper">
             <p class="tco__partners-date" v-text="slide.date"></p>
             <h3 class="tco__partners-title" v-text="slide.title"></h3>
             <p class="tco__partners-text" v-text="slide.text"></p>
-            <nuxt-link class="slide__link" :to="slide.link" target="_blank">
-              <span>{{ slide.button }}</span>
-              <img src="@/assets/img/right-Arrow.png" />
-            </nuxt-link>
+            <div class="tco__partners-footer">
+              <nuxt-link class="slide__link" :to="slide.link" target="_blank">
+                <span>{{ slide.button }}</span>
+                <img src="@/assets/img/right-Arrow.png" />
+              </nuxt-link>
+              <div class="steps">
+                <span v-for="line in 4" :key="line"></span>
+              </div>
+            </div>
           </div>
           <div class="tco__partners-image">
             <img :src="slide.img" alt="kazmunaylogo" />
@@ -84,9 +80,6 @@ export default {
         </div>
       </MoleculesSlide>
     </OrganismsSlider>
-    <div class="steps">
-      <span v-for="line in 4" :key="line"></span>
-    </div>
   </div>
 </template>
 
@@ -95,7 +88,7 @@ export default {
   &__partners {
     justify-content: space-between;
     align-items: flex-start;
-    @media (orientation: portrait) {
+    @include wide-tablet {
       flex-direction: column-reverse;
     }
     &-image {
@@ -104,6 +97,9 @@ export default {
       img {
         width: 100%;
         height: 100%;
+      }
+      @include wide-tablet {
+        width: 100%;
       }
     }
     &-wrapper {
@@ -122,9 +118,11 @@ export default {
       @media (max-width: 886px) {
         max-width: inherit;
       }
-      @media (orientation: portrait) {
+      @include wide-tablet {
+        max-width: 100%;
         padding-top: 0;
         gap: 10px;
+        width: 100%;
       }
       h1,
       h3 {
@@ -190,6 +188,16 @@ export default {
       line-height: 28px;
       color: #30454e;
     }
+    &-footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      @include wide-tablet {
+        justify-content: normal;
+        gap: 30px;
+      }
+    }
     background: #ffffff;
   }
 }
@@ -227,15 +235,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 2px;
-  position: relative;
-  left: calc((100vw - 1176px) / 2);
-  top: -30px;
-  z-index: 999;
-  @media (orientation: portrait) {
-    left: 30px;
-    top: -10px;
-    width: calc(100vw - 32px);
-  }
+  width: auto;
   span {
     display: block;
     width: 40px;
@@ -250,5 +250,6 @@ export default {
 }
 ::v-deep .slider-wrapper {
   height: 100% !important;
+  max-height: 100%;
 }
 </style>

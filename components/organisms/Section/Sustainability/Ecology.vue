@@ -13,7 +13,7 @@
         <AtomsHeading class="ecology__title-mobile" type="h3" color="white">
           {{ $t('suistainability.ecology.title') }}
         </AtomsHeading>
-        <img src="@/assets/img/sustainability/block-2.png" alt="block" />
+        <img src="@/assets/img/sustainability/block-2.jpg" alt="block" />
       </div>
     </div>
     <div class="container ecology__cards">
