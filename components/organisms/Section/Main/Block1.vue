@@ -1,8 +1,18 @@
 <script>
+import jsonData from '~/components/templates/News/json_data.json'
+const data = jsonData[0]
 export default {
   data() {
     return {
       slides: [
+        {
+          title: data[this.$i18n.locale].title,
+          text: data[this.$i18n.locale].body,
+          date: data[this.$i18n.locale].date,
+          button: this.$t('home.block_11[0].button'),
+          img: require('@/assets/img/new/new_28.jpg'),
+          link: this.localePath('/news/3'),
+        },
         {
           title: this.$t('home.block_11[0].title'),
           text: this.$t('home.block_11[0].text'),
@@ -11,14 +21,14 @@ export default {
           img: require('@/assets/img/banner_bg.png'),
           link: this.localePath('/news/23'),
         },
-        {
-          title: this.$t('home.block_11[1].title'),
-          text: this.$t('home.block_11[1].text'),
-          date: this.$t('home.block_11[1].date'),
-          button: this.$t('home.block_11[1].button'),
-          img: require('@/assets/img/banner_bg_2.png'),
-          link: this.localePath('/news/24'),
-        },
+        // {
+        //   title: this.$t('home.block_11[1].title') + '12312321',
+        //   text: this.$t('home.block_11[1].text'),
+        //   date: this.$t('home.block_11[1].date'),
+        //   button: this.$t('home.block_11[1].button'),
+        //   img: require('@/assets/img/banner_bg_2.png'),
+        //   link: this.localePath('/news/24'),
+        // },
         {
           title: this.$t('home.block_11[2].title'),
           text: this.$t('home.block_11[2].text'),

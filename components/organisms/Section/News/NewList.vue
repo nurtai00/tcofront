@@ -1,6 +1,6 @@
 <script>
 import jsonData from '~/components/templates/News/json_data.json'
-const data = jsonData[2]
+const data = jsonData[3]
 console.log(data)
 export default {
   props: {
@@ -13,7 +13,7 @@ export default {
     return {
       news: [
         {
-          id: 0,
+          id: 1,
           img: require('@/assets/img/new/new_21.jpg'),
           tag: {
             text: this.$t('home.block_2.items[2].tag'),
@@ -24,7 +24,7 @@ export default {
           text: this.$t('news.new_8.text'),
         },
         {
-          id: 3,
+          id: 4,
           img: require('@/assets/img/new/new_22.jpg'),
           tag: {
             text: this.$t('home.block_2.items[0].tag'),
@@ -35,15 +35,15 @@ export default {
           text: this.$t('news.new_9.text'),
         },
         {
-          id: 2,
+          id: 3,
           img: require('@/assets/img/new/new_27.jpg'),
           tag: {
-            text: this.$t('home.block_2.items[2].tag'),
+            text: this.$t('home.block_2.items[0].tag'),
             color: '#EDA210',
           },
           date: data[this.$i18n.locale].date,
           title: data[this.$i18n.locale].title,
-          text: data[this.$i18n.locale].body[1],
+          text: data[this.$i18n.locale].body[2].text,
         },
       ],
     }

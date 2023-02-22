@@ -102,13 +102,18 @@ export default {
         allowfullscreen
       />
       <template v-if="isDescriptionArray">
-        <p
-          v-for="text of news[lang].body"
-          :key="text"
-          class="content_text"
-          style="margin-top: 20px; display: inline-block"
-          v-html="text"
-        ></p>
+        <div v-for="item of news[lang].body" :key="item">
+          <p
+            class="content_text"
+            style="margin-top: 20px; display: inline-block"
+            v-html="item.text"
+          ></p>
+          <img
+            v-if="!!item.image"
+            style="margin-top: 20px"
+            :src="require(`@/assets/img/new/` + item.image)"
+          />
+        </div>
       </template>
       <p v-else class="content_text">
         {{ news[lang].body }}
