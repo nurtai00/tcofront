@@ -31,17 +31,17 @@ export default {
         },
         {
           img: require('@/assets/icons/statistic2.png'),
-          title: '94,7%',
+          title: '94,8%',
           text: this.$t('career.block3_static2'),
         },
         {
           img: require('@/assets/icons/statistic3.png'),
-          title: '89,9%',
+          title: '90,5%',
           text: this.$t('career.block3_static3'),
         },
         {
           img: require('@/assets/icons/statistic4.png'),
-          title: '76,6%',
+          title: '77,2%',
           text: this.$t('career.block3_static4'),
         },
       ],
