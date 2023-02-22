@@ -124,8 +124,8 @@
     },
     "cards": {
       "card1": {
-        "title": "30 (in million US dollars)",
-        "description": "2022 Budget of Egilik program"
+        "title": "25 (in million US dollars)",
+        "description": "2023 Budget of Egilik program"
       },
       "card2": {
         "title": "Over 100",
@@ -136,16 +136,16 @@
   "socialProgrammingInvest": {
     "title": "Community Investment Program (CIP)",
     "description": [
-      "TCO’s Community Investment Program was launched in 2010. It is aimed at supporting education, healthcare, involvement of the population in the volunteer movement and economic development.\nWithin the framework of this program, 94 projects were implemented in 2010-2021 for a total amount of about $11.1 million.",
+      "TCO’s Community Investment Program was launched in 2010. It is aimed at supporting education, healthcare, involvement of the population in the volunteer movement and economic development.\nWithin the framework of this program, 108 projects were implemented in 2010-2021 for a total amount of about $11.1 million.",
       "The CIP budget in 2022 is $2.3 million. Beneficiaries of projects implemented by NGOs are children, adults, pensioners, low-income families, large families, disabled children and many other representatives of the population of Atyrau Oblast."
     ],
     "cards": [
       {
-        "title": "2,3 (in million US dollars)",
-        "description": "The CIP budget in 2022"
+        "title": "2,5 (in million US dollars)",
+        "description": "The CIP budget in 2023"
       },
       {
-        "title": "94 projects",
+        "title": "108 projects",
         "description": "Were implemented in 2010-2021"
       }
     ]
