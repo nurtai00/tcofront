@@ -6,23 +6,32 @@
     <AtomsHeading type="h3" color="main">
       {{ payload.title }}
     </AtomsHeading>
-    <p v-for="text of payload.listTitle" :key="text" class="text">
+    <p v-for="text of payload.listTitle" :key="text" class="default-text">
       {{ text }}
     </p>
     <ul class="list">
-      <li v-for="list of payload.list" :key="list" class="list-item text">
+      <li
+        v-for="list of payload.list"
+        :key="list"
+        style="list-style-type: disc"
+        class="list-item default-text"
+      >
         {{ list }}
       </li>
     </ul>
-    <p v-for="text of payload.listDescription" :key="text" class="text">
+    <p v-for="text of payload.listDescription" :key="text" class="default-text">
       {{ text }}
     </p>
     <ul class="list">
-      <li v-for="list2 of payload.list2" :key="list2" class="list-item text">
+      <li
+        v-for="list2 of payload.list2"
+        :key="list2"
+        class="list-item default-text"
+      >
         {{ list2 }}
       </li>
     </ul>
-    <p class="text">
+    <p class="default-text">
       {{ payload.list2Description }}
     </p>
   </div>
@@ -39,7 +48,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .iframe {
   max-width: 700px;
   width: 100%;
@@ -62,15 +71,15 @@ export default {
   }
 }
 .list {
-  margin-left: 20px;
   &-item {
-    list-style: disc !important;
+    margin-left: 40px;
   }
 }
-.text {
-  font-size: 16px;
-  display: inline-block;
+.default-text {
+  font-size: 20px;
+  list-style: disc;
   margin-top: 15px;
-  color: $c-main;
+  font-family: Roboto, sans-serif;
+  color: #30454e;
 }
 </style>
