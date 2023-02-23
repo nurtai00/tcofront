@@ -24,154 +24,154 @@ export default {
     return {
       publications_list: {
         ru: [
-          {
-            name: '2017-csrr-rus.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2F2017%2Dcsrr%2Drus%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: '2017-year-in-review_erk_final (1).pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2F2017%2Dyear%2Din%2Dreview%5Ferk%5Ffinal%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: '2018-corporate-responsibility-report (2).pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2F2018%2Dcorporate%2Dresponsibility%2Dreport%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: '2021-отчет-о-корпоративной-ответственности.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2F2021%2D%D0%BE%D1%82%D1%87%D0%B5%D1%82%2D%D0%BE%2D%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9%2D%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: 'feedback-management-process-flyer (2).pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2Ffeedback%2Dmanagement%2Dprocess%2Dflyer%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: 'iv_kazcont_rus_2017.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2Fiv%5Fkazcont%5Frus%5F2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: 'tco_2015_2016_corporate-responsibility-report_r.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2Ftco%5F2015%5F2016%5Fcorporate%2Dresponsibility%2Dreport%5Fr%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: 'брошюра-игилик (1).pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2F%D0%B1%D1%80%D0%BE%D1%88%D1%8E%D1%80%D0%B0%2D%D0%B8%D0%B3%D0%B8%D0%BB%D0%B8%D0%BA%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: 'итоги-2018-года.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2F%D0%B8%D1%82%D0%BE%D0%B3%D0%B8%2D2018%2D%D0%B3%D0%BE%D0%B4%D0%B0%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: 'итоги-2019-года.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2F%D0%B8%D1%82%D0%BE%D0%B3%D0%B8%2D2019%2D%D0%B3%D0%BE%D0%B4%D0%B0%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: 'основные-экологические-показатели-за-2021-год.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2F%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%2D%D1%8D%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%2D%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B8%2D%D0%B7%D0%B0%2D2021%2D%D0%B3%D0%BE%D0%B4%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
-          {
-            name: 'отчет-о-корпоративной-ответственности-за-2019-20-гг.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU%2F%D0%BE%D1%82%D1%87%D0%B5%D1%82%2D%D0%BE%2D%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9%2D%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8%2D%D0%B7%D0%B0%2D2019%2D20%2D%D0%B3%D0%B3%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FRU',
-          },
+                        {
+                            name: 'Отчет о корпоративной ответственности за 2019-20 гг (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/ru/%D0%BE%D1%82%D1%87%D0%B5%D1%82-%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B7%D0%B0-2019-20-%D0%B3%D0%B3.pdf?sfvrsn=a9e2c45c_2',
+                        },
+                        {
+                            name: 'Итоги 2019 года (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/ru/%D0%B8%D1%82%D0%BE%D0%B3%D0%B8-2019-%D0%B3%D0%BE%D0%B4%D0%B0.pdf?sfvrsn=644dc45c_2',
+                        },
+                        {
+                            name: 'Отчет по корпоративной ответственности за 2018 г. (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/ru/2018-corporate-responsibility-report.pdf?sfvrsn=8372c45c_4',
+                        },
+                        {
+                            name: 'Итоги 2018 года (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/ru/%D0%B8%D1%82%D0%BE%D0%B3%D0%B8-2018-%D0%B3%D0%BE%D0%B4%D0%B0.pdf?sfvrsn=3ecfc75c_2',
+                        },
+                        {
+                            name: '2021 Отчет о корпоративной ответственности (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/ru/2021-%D0%BE%D1%82%D1%87%D0%B5%D1%82-%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B85e0fa352577266428434ff0000af314c.pdf?sfvrsn=fe7dc55c_2',
+                        },
+                        {
+                            name: 'Основные экологические показатели за 2021 год (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/ru/%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D1%8D%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B8-%D0%B7%D0%B0-2021-%D0%B3%D0%BE%D0%B4.pdf?sfvrsn=44a5c45c_2',
+                        },
+                        {
+                            name: 'Отчет по корпоративной социальной ответственности за 2017 г. (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/ru/2017-csrr-rus.pdf?sfvrsn=531dc75c_4',
+                        },
+                        {
+                            name: 'Буклет о процессе управления обратной связью (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/erk/feedback-management-process-flyer.pdf?sfvrsn=422c75c_12',
+                        },
+                        {
+                            name: 'Брошюра «Игилик» (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/ru/%D0%B1%D1%80%D0%BE%D1%88%D1%8E%D1%80%D0%B0-%D0%B8%D0%B3%D0%B8%D0%BB%D0%B8%D0%BA.pdf?sfvrsn=ce2ec65c_4',
+                        },
+                        {
+                            name: 'Развитие казахстанского содержания в ТШО (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/ru/iv_kazcont_rus_2017.pdf?sfvrsn=4e4bc65c_4',
+                        },
+                        {
+                            name: 'Отчет по корпоративной ответственности за 2015-16 гг. (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/ru/tco_2015_2016_corporate-responsibility-report_r.pdf?sfvrsn=4a4bc65c_4',
+                        },
+                        {
+                            name: 'Обзор деятельности в 2017 г. (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/erk/2017-year-in-review_erk_final.pdf?sfvrsn=b94bc65c_8',
+                        },        
         ],
         en: [
           {
-            name: '2017-year-in-review_erk_final.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2F2017%2Dyear%2Din%2Dreview%5Ferk%5Ffinal%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: '2018-corporate-responsibility-report.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2F2018%2Dcorporate%2Dresponsibility%2Dreport%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: '2018-year-in-review.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2F2018%2Dyear%2Din%2Dreview%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: '2019-20-corporate-responsibility-report.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2F2019%2D20%2Dcorporate%2Dresponsibility%2Dreport%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: '2019-year-in-review.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2F2019%2Dyear%2Din%2Dreview%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: '2021-corporate-responsibility-report.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2F2021%2Dcorporate%2Dresponsibility%2Dreport%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: 'egilik-brochure.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2Fegilik%2Dbrochure%20%282%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: 'environmental-brochure-eng.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2Fenvironmental%2Dbrochure%2Deng%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: 'feedback-management-process-flyer.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2Ffeedback%2Dmanagement%2Dprocess%2Dflyer%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: 'iv_kazcont_eng_2017.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2Fiv%5Fkazcont%5Feng%5F2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: 'tco_2015_2016_corporate-responsibility-report.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2Ftco%5F2015%5F2016%5Fcorporate%2Dresponsibility%2Dreport%5Fe%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
-          {
-            name: 'tco-2017-corporate-responsibility-report.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN%2Ftco%2D2017%2Dcorporate%2Dresponsibility%2Dreport%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FEN',
-          },
+                            name: '2019-20 Corporate Responsibility Report (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/eng/2019-20-corporate-responsibility-report.pdf?sfvrsn=44fdc45c_2',
+                        },
+                        {
+                            name: '2019 Year in Review (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/eng/2019-year-in-review.pdf?sfvrsn=1e4dc45c_2',
+                        },
+                        {
+                            name: '2018 Corporate Responsibility Report (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/eng/2018-corporate-responsibility-report.pdf?sfvrsn=a272c45c_4',
+                        },
+                        {
+                            name: '2018 Year in Review (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/eng/2018-year-in-review.pdf?sfvrsn=d9cfc75c_4',
+                        },
+                        {
+                            name: '2021 Corporate Responsibility Report (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/eng/2021-corporate-responsibility-reportddf2a252577266428434ff0000af314c.pdf?sfvrsn=7080c45c_2',
+                        },
+                        {
+                            name: '2021 Environmental Performance (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/eng/environmental-brochure-eng.pdf?sfvrsn=12a5c45c_8',
+                        },
+                        {
+                            name: 'TCO 2017 Corporate Responsibility Report (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/eng/tco-2017-corporate-responsibility-report.pdf?sfvrsn=bc26c75c_4',
+                        },
+                        {
+                            name: 'Feedback Management Process flyer (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/erk/feedback-management-process-flyer.pdf?sfvrsn=422c75c_12',
+                        },
+                        {
+                            name: 'Egilik Brochure (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/eng/egilik-brochure.pdf?sfvrsn=2f2ec65c_4',
+                        },
+                        {
+                            name: 'Kazakhstani Content Development in TCO (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/eng/iv_kazcont_eng_2017.pdf?sfvrsn=2b4bc65c_4',
+                        },
+                        {
+                            name: 'TCO 2015-16 Corporate Responsibility Report (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/eng/tco_2015_2016_corporate-responsibility-report_e.pdf?sfvrsn=2c4bc65c_6',
+                        },
+                        {
+                            name: '2017 Year in Review (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/erk/2017-year-in-review_erk_final.pdf?sfvrsn=b94bc65c_8',
+                        },
         ],
         kk: [
           {
-            name: '2017-csrr-kz.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2F2017%2Dcsrr%2Dkz%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: '2017-жыл-қорытындылары.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2F2017%2D%D0%B6%D1%8B%D0%BB%2D%D2%9B%D0%BE%D1%80%D1%8B%D1%82%D1%8B%D0%BD%D0%B4%D1%8B%D0%BB%D0%B0%D1%80%D1%8B%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: '2018-corporate-responsibility-report (1).pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2F2018%2Dcorporate%2Dresponsibility%2Dreport%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: '2018-жыл-қорытындылары.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2F2018%2D%D0%B6%D1%8B%D0%BB%2D%D2%9B%D0%BE%D1%80%D1%8B%D1%82%D1%8B%D0%BD%D0%B4%D1%8B%D0%BB%D0%B0%D1%80%D1%8B%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: '2019-20-жылдарындағы-корпоративтік-жауапкершілік-туралы-есеп.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2F2019%2D20%2D%D0%B6%D1%8B%D0%BB%D0%B4%D0%B0%D1%80%D1%8B%D0%BD%D0%B4%D0%B0%D2%93%D1%8B%2D%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D1%82%D1%96%D0%BA%2D%D0%B6%D0%B0%D1%83%D0%B0%D0%BF%D0%BA%D0%B5%D1%80%D1%88%D1%96%D0%BB%D1%96%D0%BA%2D%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8B%2D%D0%B5%D1%81%D0%B5%D0%BF%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: '2019-жылдың-қорытындылары.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2F2019%2D%D0%B6%D1%8B%D0%BB%D0%B4%D1%8B%D2%A3%2D%D2%9B%D0%BE%D1%80%D1%8B%D1%82%D1%8B%D0%BD%D0%B4%D1%8B%D0%BB%D0%B0%D1%80%D1%8B%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: '2021-жылғы-негізгі-экологиялық-көрсеткіштері.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2F2021%2D%D0%B6%D1%8B%D0%BB%D2%93%D1%8B%2D%D0%BD%D0%B5%D0%B3%D1%96%D0%B7%D0%B3%D1%96%2D%D1%8D%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%D0%BB%D1%8B%D2%9B%2D%D0%BA%D3%A9%D1%80%D1%81%D0%B5%D1%82%D0%BA%D1%96%D1%88%D1%82%D0%B5%D1%80%D1%96%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: '2021-корпоративтік-жауапкершілік-туралы-есеп.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2F2021%2D%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D1%82%D1%96%D0%BA%2D%D0%B6%D0%B0%D1%83%D0%B0%D0%BF%D0%BA%D0%B5%D1%80%D1%88%D1%96%D0%BB%D1%96%D0%BA%2D%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8B%2D%D0%B5%D1%81%D0%B5%D0%BF%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: 'egilik_kz_2016_for_web (1).pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2Fegilik%5Fkz%5F2016%5Ffor%5Fweb%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: 'feedback-management-process-flyer (1).pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2Ffeedback%2Dmanagement%2Dprocess%2Dflyer%20%281%29%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: 'iv_kazcont_kaz_2017.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2Fiv%5Fkazcont%5Fkaz%5F2017%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
-          {
-            name: 'tco_2015_2016_corporate-responsibility-report_k.pdf',
-            link: 'https://norsecdeltaprojects-my.sharepoint.com/personal/n_nudiyev_norsec_kz/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ%2Ftco%5F2015%5F2016%5Fcorporate%2Dresponsibility%2Dreport%5Fk%2Epdf&parent=%2Fpersonal%2Fn%5Fnudiyev%5Fnorsec%5Fkz%2FDocuments%2F%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB%2FTCOntent%2FAll%20Publications%20page%2FKAZ',
-          },
+                            name: '2019-20 жылдарындағы корпоративтік жауапкершілік туралы есеп (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/2019-20-%D0%B6%D1%8B%D0%BB%D0%B4%D0%B0%D1%80%D1%8B%D0%BD%D0%B4%D0%B0%D2%93%D1%8B-%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D1%82%D1%96%D0%BA-%D0%B6%D0%B0%D1%83%D0%B0%D0%BF%D0%BA%D0%B5%D1%80%D1%88%D1%96%D0%BB%D1%96%D0%BA-%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8B-%D0%B5%D1%81%D0%B5%D0%BF.pdf?sfvrsn=7ffdc45c_2',
+                        },
+                        {
+                            name: '2019 жылдың қорытындылары (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/2019-%D0%B6%D1%8B%D0%BB%D0%B4%D1%8B%D2%A3-%D2%9B%D0%BE%D1%80%D1%8B%D1%82%D1%8B%D0%BD%D0%B4%D1%8B%D0%BB%D0%B0%D1%80%D1%8B.pdf?sfvrsn=4e4dc45c_2',
+                        },
+                        {
+                            name: '2018 ж. корпоративтік жауапкершілік туралы есеп (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/2018-corporate-responsibility-report.pdf?sfvrsn=c272c45c_4',
+                        },
+                        {
+                            name: '2018 жыл қорытындылары (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/2018-%D0%B6%D1%8B%D0%BB-%D2%9B%D0%BE%D1%80%D1%8B%D1%82%D1%8B%D0%BD%D0%B4%D1%8B%D0%BB%D0%B0%D1%80%D1%8B.pdf?sfvrsn=2cfc75c_2',
+                        },
+                        {
+                            name: '2021 Корпоративтік жауапкершілік туралы есеп (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/2021-%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D1%82%D1%96%D0%BA-%D0%B6%D0%B0%D1%83%D0%B0%D0%BF%D0%BA%D0%B5%D1%80%D1%88%D1%96%D0%BB%D1%96%D0%BA-%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8B-%D0%B5%D1%81%D0%B5%D0%BF.pdf?sfvrsn=4780c45c_2',
+                        },
+                        {
+                            name: '2021 жылғы негізгі экологиялық көрсеткіштері (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/2021-%D0%B6%D1%8B%D0%BB%D2%93%D1%8B-%D0%BD%D0%B5%D0%B3%D1%96%D0%B7%D0%B3%D1%96-%D1%8D%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%D0%BB%D1%8B%D2%9B-%D0%BA%D3%A9%D1%80%D1%81%D0%B5%D1%82%D0%BA%D1%96%D1%88%D1%82%D0%B5%D1%80%D1%96.pdf?sfvrsn=7fa5c45c_2',
+                        },
+                        {
+                            name: 'Корпоративтік жауапкершілік туралы 2017 жыл бойынша есеп (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/2017-csrr-kz.pdf?sfvrsn=3907c75c_4',
+                        },
+                        {
+                            name: 'Кері байланысты басқару үдерісі туралы буклеті (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/erk/feedback-management-process-flyer.pdf?sfvrsn=422c75c_12',
+                        },
+                        {
+                            name: '«Игілік» бағдарламасының брошюрасы (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/egilik_kz_2016_for_web.pdf?sfvrsn=192ec65c_4',
+                        },
+                        {
+                            name: 'ТШО-дағы қазақстандық қамтуды дамыту (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/iv_kazcont_kaz_2017.pdf?sfvrsn=e84bc65c_4',
+                        },
+                        {
+                            name: 'Корпоративтік жауапкершілік жөніндегі 2015-2016 жылдарға арналған есебі (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/tco_2015_2016_corporate-responsibility-report_k.pdf?sfvrsn=e94bc65c_4',
+                        },
+                        {
+                            name: '2017 жыл қорытындылары (pdf)',
+                            link: 'https://tengizchevroil.com/docs/default-source/publications/erk/2017-%D0%B6%D1%8B%D0%BB-%D2%9B%D0%BE%D1%80%D1%8B%D1%82%D1%8B%D0%BD%D0%B4%D1%8B%D0%BB%D0%B0%D1%80%D1%8B.pdf?sfvrsn=b94bc65c_8',
+                        },
         ],
       },
     }
