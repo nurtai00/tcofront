@@ -1,7 +1,6 @@
 <script>
 import jsonData from '~/components/templates/News/json_data.json'
 const data = jsonData[3]
-console.log(data)
 export default {
   props: {
     white: {

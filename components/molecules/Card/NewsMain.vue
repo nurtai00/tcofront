@@ -8,12 +8,22 @@
     }"
     @click="navigateNew"
   >
-    <img
-      v-if="[2, 3, 6].includes(index) && !!item[lang].img"
-      :src="require('@/assets/img/new/' + item[lang].img || 'new_1.jpg')"
-      alt="news_card"
-      class="n_card_desktop"
-    />
+    <template v-if="[2, 3, 6].includes(index)">
+      <img
+        v-if="!!item[lang].img"
+        :src="require('@/assets/img/new/' + item[lang].img || 'new_1.jpg')"
+        alt="news_card"
+        class="n_card_desktop"
+      />
+      <iframe
+        v-else
+        width="450px"
+        height="210px"
+        :src="item[lang].videoHref"
+        frameborder="0"
+      ></iframe>
+    </template>
+
     <img
       v-if="![1, 2].includes(index)"
       class="n_card_mobile"
@@ -28,7 +38,9 @@
         <p class="n_card_date">{{ item[lang].date }}</p>
       </div>
       <AtomsHeading type="h6" color="main">
-        <span v-if="item[lang].title.length > 70">{{ item[lang].title.slice(0, 70) }}...</span>
+        <span v-if="item[lang].title.length > 70"
+          >{{ item[lang].title.slice(0, 70) }}...</span
+        >
         <span v-else>{{ item[lang].title }}</span>
       </AtomsHeading>
       <p
@@ -39,7 +51,7 @@
       >
         <span
           v-if="bodyIsArray"
-          v-html="item[lang].body[0].slice(0, 60) + '...'"
+          v-html="item[lang].body[0].text.slice(0, 60) + '...'"
         >
         </span>
         <span v-else>{{ item[lang].body.slice(0, 50) }}...</span>
