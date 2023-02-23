@@ -69,9 +69,6 @@ export default {
                 <span>{{ slide.button }}</span>
                 <img src="@/assets/img/right-Arrow.png" />
               </nuxt-link>
-              <div class="steps">
-                <span v-for="line in 4" :key="line"></span>
-              </div>
             </div>
           </div>
           <div class="tco__partners-image">
@@ -79,6 +76,9 @@ export default {
           </div>
         </div>
       </MoleculesSlide>
+      <div class="steps">
+        <span v-for="line in 4" :key="line"></span>
+      </div>
     </OrganismsSlider>
   </div>
 </template>
@@ -235,7 +235,14 @@ export default {
   display: flex;
   align-items: center;
   gap: 2px;
+  position: absolute;
+  bottom: 25px;
+  left: 300px;
   width: auto;
+  @include phone {
+    left: 25px;
+    bottom: 50px;
+  }
   span {
     display: block;
     width: 40px;
