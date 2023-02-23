@@ -17,8 +17,7 @@
       />
       <iframe
         v-else
-        width="450px"
-        height="210px"
+        class="iframe"
         :src="item[lang].videoHref"
         frameborder="0"
       ></iframe>
@@ -190,6 +189,20 @@ export default {
     @include tablet() {
       display: block !important;
     }
+  }
+}
+.iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 210px;
+  @include phone {
+    height: 210px;
+    transform: translateY(-16px);
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    padding-top: 0;
+    border-radius: 5px;
   }
 }
 </style>
