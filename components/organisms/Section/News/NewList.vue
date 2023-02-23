@@ -26,7 +26,7 @@ export default {
           id: 4,
           img: require('@/assets/img/new/new_22.jpg'),
           tag: {
-            text: this.$t('home.block_2.items[0].tag'),
+            text: this.$t('home.block_2.items[1].tag'),
             color: '#0DA9D7',
           },
           date: this.$t('news.new_9.date'),
