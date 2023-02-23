@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <div class="mobile">
-      <img src="@/assets/img/career/programm_mobile.png" alt="" />
+      <img src="@/assets/img/career/form.png" alt="" />
       <AtomsHeading v-if="withOutTitle" type="h3" color="white">
         {{ $t('career.form_header') }}
       </AtomsHeading>
@@ -78,7 +78,7 @@ export default {
     width: 100%;
     height: auto;
     min-height: 200px;
-    object-fit: cover;
+    object-fit: contain;
   }
   @include tablet() {
     display: flex;
