@@ -2,9 +2,6 @@
   <div class="form">
     <div class="mobile">
       <img src="@/assets/img/career/form.png" alt="" />
-      <AtomsHeading v-if="withOutTitle" type="h3" color="white">
-        {{ $t('career.form_header') }}
-      </AtomsHeading>
     </div>
     <div class="container">
       <div class="form_content">
@@ -69,11 +66,6 @@ export default {
 .mobile {
   position: relative;
   display: none;
-  h3 {
-    position: absolute;
-    top: 40px;
-    left: 16px;
-  }
   img {
     width: 100%;
     height: auto;
