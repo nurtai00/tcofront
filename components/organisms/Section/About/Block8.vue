@@ -19,7 +19,16 @@
                   <p>
                     {{ description }}
                   </p>
-                  <div v-if="slide.pdf">
+                  <div
+                    v-if="slide.pdf"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      cursor: pointer;
+                    "
+                    @click.stop="openLink"
+                  >
                     <img
                       src="@/assets/icons/pdf.png"
                       alt="pdf"
@@ -85,6 +94,16 @@ export default {
       ],
     }
   },
+  computed: {
+    tcoWayPdfLink() {
+      const mapOfLocalesLink = {
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/kk/tco-way_kaz.pdf?sfvrsn=941ac55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/ru/tco-way_rus.pdf?sfvrsn=3115c55c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/en/tco-way_eng.pdf?sfvrsn=4315c55c_2',
+      }
+      return mapOfLocalesLink[this.$i18n.locale]
+    },
+  },
   async mounted() {
     await this.$nextTick()
     // eslint-disable-next-line no-new
@@ -103,6 +122,9 @@ export default {
     console.log(this.swiper)
   },
   methods: {
+    openLink() {
+      window.open(this.tcoWayPdfLink, '_blank')
+    },
     nextEl() {
       this.swiper.slideNext()
     },
