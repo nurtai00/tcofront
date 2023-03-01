@@ -38,7 +38,7 @@ export default {
           id: 1,
           img: require('@/assets/img/new/new_30.jpg'),
           tag: {
-            text: this.$t('home.block_2.items[0].tag'),
+            text: `#${this.$t('news.tags[3]')}`,
             color: '#EDA210',
           },
           date: data2[this.$i18n.locale].date,

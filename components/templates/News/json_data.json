@@ -24,7 +24,7 @@
   },
   {
     "ru": {
-      "category": 0,
+      "category": 3,
       "img": "new_30.jpg",
       "title": "Тенгизшевройл продолжает поиск казахстанских поставщиков",
       "date": "27 февраля 2023",
@@ -54,7 +54,7 @@
       ]
     },
     "kk": {
-      "category": 0,
+      "category": 3,
       "img": "new_30.jpg",
       "title": "Теңізшевройл қазақстандық жеткізушілерді іздеуді жалғастыруда\n",
       "date": "27 ақпан 2023",
@@ -84,7 +84,7 @@
       ]
     },
     "en": {
-      "category": 0,
+      "category": 3,
       "img": "new_30.jpg",
       "title": "Tengizchevroil keeps searching for Kazakhstani suppliers\n",
       "date": "27 february 2023",
@@ -120,21 +120,60 @@
       "img": "new_21.jpg",
       "title": "Тенгизшевройл признан лучшим налогоплательщиком Казахстана",
       "date": "15 декабря 2022",
-      "body": "Организаторы отметили не только достижения добросовестного налогоплательщика и влияние ТШО на экономический рост Казахстана, но и пример честного, прозрачного и грамотного ведения бизнеса. Статуэтка и диплом «Лучший налогоплательщик страны» была вручена генеральному менеджеру по финансам ТШО Замзагуль Бековой.\n\n«Мы гордимся тем, что вносим вклад в экономический рост страны и в ее будущее. Мы осуществляем свою деятельность с высоким чувством ответственности, достигаем результатов правильным путем и всегда стремимся быть лучшими в усовершенствовании своих показателей», - подчеркнула Замзагуль Бекова.\n\nС 1993 года, с момента основания компании, прямые финансовые выплаты ТШО Республике Казахстан составили более 172 миллиардов долларов США. Только за три квартала 2022 года прямые выплаты РК составили 10,9 миллиарда долларов США."
+      "body": [
+        {
+          "text": "В преддверии Дня Независимости РК в Комитете государственных доходов Министерства финансов Республики Казахстан наградили лучших налогоплательщиков по 18 номинациям и отраслям. Тенгизшевройл (ТШО) признан лучшим налогоплательщиком страны в номинации «Недропользователь»."
+        },
+        {
+          "text": "Организаторы отметили не только достижения добросовестного налогоплательщика и влияние ТШО на экономический рост Казахстана, но и пример честного, прозрачного и грамотного ведения бизнеса. Статуэтка и диплом «Лучший налогоплательщик страны» была вручена генеральному менеджеру по финансам ТШО Замзагуль Бековой."
+        },
+        {
+          "text": "<i>«Мы гордимся тем, что вносим вклад в экономический рост страны и в ее будущее. Мы осуществляем свою деятельность с высоким чувством ответственности, достигаем результатов правильным путем и всегда стремимся быть лучшими в усовершенствовании своих показателей»,<i/>  - подчеркнула Замзагуль Бекова."
+        },
+        {
+          "text": "С 1993 года, с момента основания компании, прямые финансовые выплаты ТШО Республике Казахстан составили более 172 миллиардов долларов США. Только за три квартала 2022 года прямые выплаты РК составили 10,9 миллиарда долларов США."
+        }
+      ]
     },
     "kk": {
       "category": 0,
       "img": "new_21.jpg",
       "title": "Теңізшевройл Қазақстанның ең үздік салық төлеушісі атанды",
       "date": "15 желтоқсан 2022",
-      "body": "Ұйымдастырушылар адал салық төлеушілердің жетістіктері туралы айтып ғана қоймай, ТШО-ның Қазақстанның экономикалық дамуына әсері мен бизнесті сауатты, ашық және адал жүргізетінін үлгі етті. Дәстүрлі мүсінше және диплом ТШО-ның қаржы жөніндегі бас менеджері Зәмзәгүл Бековаға табысталды.\n\n«Біз еліміздің экономикалық өсуі мен болашағына өз үлесімізді қосып жатқанымызға қуаныштымыз. Өз қызметімізді жоғары жауапкершілікті сезініп жүргіземіз және дұрыс жолмен нәтижелерге қол жеткізіп, көрсеткіштерімізді жетілдіруде үздік болуға тырысамыз», - деп атап өтті Зәмзәгүл Бекова.\n\n1993 жылдан бастап 2022 жылдың үшінші тоқсаны аралығындағы ТШО-ның Қазақстан Республикасына тікелей қаржылай салымы 172 миллиардтан астам АҚШ долларын құрады. 2022 жылдың тоғыз айында ТШО-ның Қазақстанға төлеген тікелей қаржы көлемі 10,9 миллиард АҚШ долларын құрады."
+      "body": [
+        {
+          "text": "Тәуелсіздік күні қарсаңында Мемлекеттік кірістер комитеті үздік компанияларды 18 аталым және сала бойынша марапаттады. Теңізшевройл (ТШО) “Жер қойнауын пайдаланушы” аталымында үздік деп танылды."
+        },
+        {
+          "text": "Ұйымдастырушылар адал салық төлеушілердің жетістіктері туралы айтып ғана қоймай, ТШО-ның Қазақстанның экономикалық дамуына әсері мен бизнесті сауатты, ашық және адал жүргізетінін үлгі етті. Дәстүрлі мүсінше және диплом ТШО-ның қаржы жөніндегі бас менеджері Зәмзәгүл Бековаға табысталды."
+        },
+        {
+          "text": "<i> «Біз еліміздің экономикалық өсуі мен болашағына өз үлесімізді қосып жатқанымызға қуаныштымын. Өз қызметімізді жоғары жауапкершілікті сезініп жүргіземіз және дұрыс жолмен нәтижелерге қол жеткізіп, көрсеткіштерімізді жетілдіруде үздік болуға тырысамыз»,</i>  - деп атап өтті Зәмзәгүл Бекова."
+        },
+        {
+          "text": "1993 жылдан бастап 2022 жылдың үшінші тоқсаны аралығындағы ТШО-ның Қазақстан Республикасына тікелей қаржылай салымы 172 миллиардтан астам АҚШ долларын құрады. 2022 жылдың тоғыз айында ТШО-ның Қазақстанға төлеген тікелей қаржы көлемі 10,9 миллиард АҚШ долларын құрады."
+        }
+      ]
     },
     "en": {
       "category": 0,
       "img": "new_21.jpg",
       "title": "Tengizchevroil recognized as the best taxpayer in Kazakhstan\n",
       "date": "15 December 2022",
-      "body": "The organizers noted not only the achievements of a conscientious taxpayer and the impact of TCO on the economic growth of Kazakhstan, but an example of a fair, transparent and competent business. The statuette and diploma of \"The Best Taxpayer of the Country\" were presented to Zamzagul Bekova, TCO Finance General Manager.\n\n“We are proud to contribute to the economic growth of the country and its future. We carry out our business with a high sense of responsibility, achieve results in the right way and always strive to be the best in improving our performance,” said Zamzagul Bekova.\n\nSince 1993, the year of foundation of the company, TCO's direct financial payments to the Republic of Kazakhstan have amounted to more than 172 billion US dollars. In just three quarters of 2022, direct payments to the Republic of Kazakhstan amounted to $10.9 billion"
+      "body": [
+        {
+          "text": "On the eve of the Independence Day of the Republic of Kazakhstan, the State Revenue Committee of the Ministry of Finance of the Republic of Kazakhstan awarded the best taxpayers in 18 nominations and industries. Tengizchevroil (TCO) has been recognized as the country's best taxpayer in the Subsoil User nomination."
+        },
+        {
+          "text": "The organizers noted not only the achievements of a conscientious taxpayer and the impact of TCO on the economic growth of Kazakhstan, but an example of a fairn honest, transparent and competent business. The statuette and diploma of \"The Best Taxpayer of the Country\" were presented to Zamzagul Bekova, TCO Finance General Manager."
+        },
+        {
+          "text": "<i>\n“We are proud to contribute to the economic growth of the country and its future. We carry outperform our businessactivities with a high sense of responsibility, achieve results in the right way and always strive to be the best in improving our performance,”</i> said Zamzagul Bekova."
+        },
+        {
+          "text": "Since 1993, the year of foundation of the company, TCO's direct financial payments to the Republic of Kazakhstan have amounted to more than 172 billion US dollars. In just three quarters of 2022, direct payments to the Republic of Kazakhstan amounted to $10.9 billion."
+        }
+      ]
     }
   },
   {
