@@ -24,7 +24,7 @@
     </template>
 
     <img
-      v-if="![1, 2].includes(index)"
+      v-if="![1, 2].includes(index) && !!item[lang].img"
       class="n_card_mobile"
       :src="require('@/assets/img/new/' + item[lang].img || 'new_1.jpg')"
       alt="news_card"
@@ -45,7 +45,11 @@
       <p
         class="n_card_text"
         :style="{
-          '-webkit-line-clamp': [2, 3].includes(index) ? 2 : index == 6 ? 1 : 3,
+          '-webkit-line-clamp': [2, 3].includes(index)
+            ? 2
+            : index === 6
+            ? 1
+            : 3,
         }"
       >
         <span

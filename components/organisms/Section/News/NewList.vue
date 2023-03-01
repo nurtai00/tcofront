@@ -1,6 +1,7 @@
 <script>
 import jsonData from '~/components/templates/News/json_data.json'
-const data = jsonData[3]
+const data = jsonData[4]
+const data2 = jsonData[1]
 export default {
   props: {
     white: {
@@ -12,7 +13,7 @@ export default {
     return {
       news: [
         {
-          id: 1,
+          id: 2,
           img: require('@/assets/img/new/new_21.jpg'),
           tag: {
             text: this.$t('home.block_2.items[2].tag'),
@@ -24,17 +25,6 @@ export default {
         },
         {
           id: 4,
-          img: require('@/assets/img/new/new_22.jpg'),
-          tag: {
-            text: this.$t('home.block_2.items[1].tag'),
-            color: '#0DA9D7',
-          },
-          date: this.$t('news.new_9.date'),
-          title: this.$t('news.new_9.title'),
-          text: this.$t('news.new_9.text'),
-        },
-        {
-          id: 3,
           img: require('@/assets/img/new/new_27.jpg'),
           tag: {
             text: this.$t('home.block_2.items[0].tag'),
@@ -43,6 +33,17 @@ export default {
           date: data[this.$i18n.locale].date,
           title: data[this.$i18n.locale].title,
           text: data[this.$i18n.locale].body[2].text,
+        },
+        {
+          id: 1,
+          img: require('@/assets/img/new/new_30.jpg'),
+          tag: {
+            text: this.$t('home.block_2.items[0].tag'),
+            color: '#EDA210',
+          },
+          date: data2[this.$i18n.locale].date,
+          title: data2[this.$i18n.locale].title,
+          text: data2[this.$i18n.locale].body[2].text,
         },
       ],
     }
