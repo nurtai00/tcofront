@@ -21,10 +21,18 @@
     <!--    <OrganismsSectionVacancyBlock4 />-->
     <div class="container">
       <iframe
+        v-if="isEngLang"
         height="850"
         width="100%"
         style="border: medium none; padding-top: 20px"
         src="https://tengizchevroil.amris.com/wizards_v2/tengiz/vacancySearch.php"
+      ></iframe>
+      <iframe
+        v-if="isRussianLang"
+        height="850"
+        width="100%"
+        style="border: medium none; padding-top: 20px"
+        src="https://tengizchevroil.amris.com/wizards_v2/tengiz/ru/vacancySearch.php"
       ></iframe>
     </div>
     <!-- <OrganismsSectionVacancyBlock5 />
@@ -32,3 +40,16 @@
     <!--    <OrganismsSectionVacancyBlock7 />-->
   </div>
 </template>
+<script>
+export default {
+  computed: {
+    isRussianLang() {
+      const availableLang = ['ru', 'kk']
+      return availableLang.includes(this.$i18n.locale)
+    },
+    isEngLang() {
+      return this.$i18n.locale === 'en'
+    },
+  },
+}
+</script>
