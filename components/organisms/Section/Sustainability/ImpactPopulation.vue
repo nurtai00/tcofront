@@ -98,9 +98,9 @@ export default {
   computed: {
     keyEnvironmentalIndicators() {
       const mapOfFileLink = {
-        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/kk/2021-жылғы-негізгі-экологиялық-көрсеткіштері-(1).pdf?sfvrsn=10fdc55c_2',
-        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/ru/основные-экологические-показатели-за-2021-год-(1).pdf?sfvrsn=35fdc55c_2',
-        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/en/environmental-brochure-eng-(1).pdf?sfvrsn=7bfdc55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/kk/тшо-экологическая-брошюра-2022г_kz-new_03-16.pdf?sfvrsn=ede7c55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/ru/тшо-экологическая-брошюра-2022г_ru-new-text.pdf?sfvrsn=82e7c55c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/en/тшо-экологическая-брошюра-2022г_en_new.pdf?sfvrsn=c8e7c55c_2',
       }
       return mapOfFileLink[this.$i18n.locale]
     },
