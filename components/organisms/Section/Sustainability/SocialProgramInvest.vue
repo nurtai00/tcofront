@@ -53,7 +53,7 @@ export default {
             'suistainability.socialProgrammingInvest.cards'
           )[1].description,
           img: 'sustainability/map-projects/document.png',
-          link: this.localePath('/about/figures'),
+          link: this.localePath('/sustainability/cip-reports'),
         },
       ],
     }
