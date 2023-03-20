@@ -46,6 +46,12 @@ export default {
           text: this.$t('suistainability.invest'),
           offsetTop: null,
         },
+        {
+          id: 3,
+          text: this.$t('suistainability.reportsCIP'),
+          offsetTop: null,
+          url: this.localePath('/sustainability/cip-reports'),
+        },
       ],
     }
   },

@@ -26,6 +26,7 @@
         v-for="card of cards"
         :key="card.id"
         :card="card"
+        @click="onClickCard(card.link)"
       />
     </div>
   </div>
@@ -52,9 +53,18 @@ export default {
             'suistainability.socialProgrammingInvest.cards'
           )[1].description,
           img: 'sustainability/map-projects/document.png',
+          link: this.localePath('/about/figures'),
         },
       ],
     }
+  },
+  methods: {
+    onClickCard(link) {
+      if (!link) {
+        return
+      }
+      this.$router.push(link)
+    },
   },
 }
 </script>

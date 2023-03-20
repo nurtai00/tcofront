@@ -6,7 +6,7 @@
     "psi": "Проекты ПСИ"
   },
   "invest": "Социальные инвестиции",
-
+  "reportsCIP": "Отчеты по ПСИ",
   "ecologyText": "Экология",
   "impactPopulation": {
     "title": "Охрана окружающей среды",
@@ -1062,6 +1062,43 @@
       "title": "ОЮЛ «Petrocouncil»",
       "title_2": "Обучение предпринимателей по улучшению ведения бизнеса в период пандемии, а также обучение безработных стартап- предпринимательству",
       "text": "Оказать содействию 120 предпринимателям (обучение, сопровождение/консалтинг ИП, ТОО) кто пострадал от КОВИД кризиса, а также обучить 200 безработных ведению своего начального бизнеса (в группах)."
+    }
+  ],
+  "cipReports": [
+    {
+      "year": 2018,
+      "text": "Отчет за 2018 год (Атырау)",
+      "link": "https://tengizchevroil.com/docs/default-source/cip-reports/2018/cip-reports-2018.pdf?sfvrsn=86a4c45c_2"
+    },
+    {
+      "year": 2019,
+      "text": "Отчет за 2019 год (Атырау)",
+      "link": "https://tengizchevroil.com/docs/default-source/cip-reports/2019/report-2019_atyrau-oblast_kre.pdf?sfvrsn=baa4c45c_2"
+    },
+    {
+      "year": 2019,
+      "text": "Отчет за 2019 год (Мангыстау)",
+      "link": "https://tengizchevroil.com/docs/default-source/cip-reports/2019/web-report-2019_mangystau-oblast_r.pdf?sfvrsn=e1a4c45c_2"
+    },
+    {
+      "year": 2020,
+      "text": "Отчет за 2020 год (Атырау)",
+      "link": " https://tengizchevroil.com/docs/default-source/cip-reports/2020/a_reports-year-end-2020_r.pdf?sfvrsn=69a7c45c_"
+    },
+    {
+      "year": 2020,
+      "text": "Отчет за 2020 год (Мангыстау)",
+      "link": ": https://tengizchevroil.com/docs/default-source/cip-reports/2020/m_reports-year-end-2020_r.pdf?sfvrsn=33a4c45c_2"
+    },
+    {
+      "year": 2021,
+      "text": "Отчет за 2021 год (Атырау)",
+      "link": " https://tengizchevroil.com/docs/default-source/cip-reports/2021/cip-2021_year-end-report_r.pdf?sfvrsn=e3a7c45c_2"
+    },
+    {
+      "year": 2022,
+      "text": "Отчет за 2022 год (Атырау)",
+      "link": "https://tengizchevroil.com/docs/default-source/cip-reports/2022/00-cip-ye2022-report_r.pdf?sfvrsn=b810c55c_2"
     }
   ]
 }

@@ -23,7 +23,16 @@
           >
             <div class="history">
               <h1 class="history__title">{{ slide.title }}</h1>
-              <img v-if="!!slide.image" :src="slide.image" alt="photo" />
+              <template v-if="!!slide.image && isArray(slide.image)">
+                <img
+                  v-for="img of slide.image"
+                  :key="img"
+                  class="history__img"
+                  :src="img"
+                  alt="photo"
+                />
+              </template>
+              <img v-else-if="!!slide.image" :src="slide.image" alt="photo" />
               <p>{{ slide.text }}</p>
               <div class="history__divider"></div>
             </div>
@@ -140,6 +149,35 @@ export default {
         {
           text: '2018',
           id: '2018',
+        },
+        {
+          text: '2019',
+          id: '2019',
+        },
+        {
+          text: '2019',
+          id: '2019',
+        },
+        {
+          text: '2020',
+          id: '2020',
+        },
+        {
+          text: '2020/21',
+          id: '2020-2021',
+          small: true,
+        },
+        {
+          text: '2021',
+          id: '2021',
+        },
+        {
+          text: '2021',
+          id: '2021',
+        },
+        {
+          text: '2022',
+          id: '2022',
         },
       ],
       active: '1979',
@@ -267,6 +305,49 @@ export default {
           image: require('@/assets/img/year/image8.png'),
           id: '2018',
         },
+        {
+          title: this.$t('company.slider_3[23].title'),
+          text: this.$t('company.slider_3[23].text'),
+          id: '2019',
+        },
+        {
+          title: this.$t('company.slider_3[24].title'),
+          text: this.$t('company.slider_3[24].text'),
+          id: '2019',
+        },
+        {
+          title: this.$t('company.slider_3[25].title'),
+          text: this.$t('company.slider_3[25].text'),
+          image: [
+            require('@/assets/img/year/image9.png'),
+            require('@/assets/img/year/image10.png'),
+          ],
+          id: '2020',
+        },
+        {
+          title: this.$t('company.slider_3[26].title'),
+          text: this.$t('company.slider_3[26].text'),
+          image: require('@/assets/img/year/image11.png'),
+          id: '2020-2021',
+        },
+        {
+          title: this.$t('company.slider_3[27].title'),
+          text: this.$t('company.slider_3[27].text'),
+          image: require('@/assets/img/year/image12.png'),
+          id: '2021',
+        },
+        {
+          title: this.$t('company.slider_3[28].title'),
+          text: this.$t('company.slider_3[28].text'),
+          image: require('@/assets/img/year/image13.png'),
+          id: '2021',
+        },
+        {
+          title: this.$t('company.slider_3[29].title'),
+          text: this.$t('company.slider_3[29].text'),
+          image: require('@/assets/img/year/image14.png'),
+          id: '2022',
+        },
       ],
     }
   },
@@ -324,6 +405,11 @@ export default {
   beforeDestroy() {
     this.textSwiper.destroy()
   },
+  methods: {
+    isArray(value) {
+      return Array.isArray(value)
+    },
+  },
 }
 </script>
 
@@ -336,6 +422,10 @@ export default {
   justify-content: center;
   gap: 20px;
   max-width: 600px;
+  &__img {
+    max-height: 200px;
+    height: 100%;
+  }
   &-title {
     font-family: 'Montserrat';
     font-style: normal;
