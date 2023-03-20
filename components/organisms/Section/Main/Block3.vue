@@ -29,7 +29,7 @@ export default {
               <AtomsTitle class="atoms_title mb20 mobile" small>
                 {{ $t('home.block_3.title_mobile_1') }}
               </AtomsTitle>
-              <nuxt-link :to="localePath('/about')" class="mb20">
+              <nuxt-link :to="localePath('/about/figures')" class="mb20">
                 {{ $t('home.block_3.link') }}
               </nuxt-link>
             </div>
