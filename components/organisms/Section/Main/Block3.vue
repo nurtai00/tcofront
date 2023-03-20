@@ -9,9 +9,6 @@ export default {
       }
       return mapOfFileLinkUrl[this.$i18n.locale]
     },
-    aboutLink() {
-      return this.localePath('/about')
-    },
   },
 }
 </script>
