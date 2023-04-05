@@ -60,6 +60,18 @@ export default {
           selected: false,
           color: '#D92D20',
         },
+        {
+          text: this.$t('news.tags[6]'),
+          value: '',
+          selected: false,
+          color: '#D92D20',
+        },
+        {
+          text: this.$t('news.tags[7]'),
+          value: '',
+          selected: false,
+          color: '#00B0F0',
+        },
       ]
     },
   },

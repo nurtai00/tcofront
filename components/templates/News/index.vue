@@ -39,7 +39,7 @@
           />
         </div>
         <AtomsButton type="submit" @click="iteration = iteration + 1">
-          {{ $t('news.button'), }}
+          {{ $t('news.button') }}
         </AtomsButton>
       </div>
     </div>
@@ -97,6 +97,20 @@ export default {
           value: '',
           selected: false,
           color: '#D92D20',
+          id: 5,
+        },
+        {
+          text: this.$t('news.tags[6]'),
+          value: '',
+          selected: false,
+          color: '#D92D20',
+          id: 5,
+        },
+        {
+          text: this.$t('news.tags[7]'),
+          value: '',
+          selected: false,
+          color: '#00B0F0',
           id: 5,
         },
       ],
