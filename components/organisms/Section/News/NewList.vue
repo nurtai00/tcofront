@@ -2,7 +2,7 @@
 import jsonData from '~/components/templates/News/json_data.json'
 const data = jsonData[3]
 const data2 = jsonData[2]
-const data3 = jsonData[1]
+const data3 = jsonData[4]
 export default {
   props: {
     white: {
@@ -14,10 +14,10 @@ export default {
     return {
       news: [
         {
-          id: 1,
-          img: require('@/assets/img/new/new_30.jpg'),
+          id: 4,
+          img: require('@/assets/img/new/new_32.jpg'),
           tag: {
-            text: `#${this.$t('news.tags[3]')}`,
+            text: this.$t('home.block_2.items[2].tag'),
             color: '#EDA210',
           },
           date: data3[this.$i18n.locale].date,
@@ -26,7 +26,7 @@ export default {
         },
         {
           id: 3,
-          img: require('@/assets/img/new/new_32.jpg'),
+          img: require('@/assets/img/new/new_37.jpg'),
           tag: {
             text: this.$t('home.block_2.items[2].tag'),
             color: '#EDA210',
@@ -37,7 +37,7 @@ export default {
         },
         {
           id: 2,
-          img: require('@/assets/img/new/new_37.jpg'),
+          img: require('@/assets/img/new/new_43.jpg'),
           tag: {
             text: this.$t('home.block_2.items[2].tag'),
             color: '#EDA210',
