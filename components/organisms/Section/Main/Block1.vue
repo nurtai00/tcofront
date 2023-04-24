@@ -6,28 +6,20 @@ export default {
     return {
       slides: [
         {
+          title: this.$t('home.block_11[0].title'),
+          text: this.$t('home.block_11[0].text'),
+          date: this.$t('home.block_11[0].date'),
+          button: this.$t('home.block_11[0].button'),
+          img: require('@/assets/img/news_img.png'),
+          link: this.localePath('/news/4'),
+        },
+        {
           title: data[this.$i18n.locale].title,
           text: data[this.$i18n.locale].body,
           date: data[this.$i18n.locale].date,
           button: this.$t('home.block_11[0].button'),
           img: require('@/assets/img/new/new_28.jpg'),
-          link: this.localePath('/news/3'),
-        },
-        {
-          title: this.$t('home.block_11[0].title'),
-          text: this.$t('home.block_11[0].text'),
-          date: this.$t('home.block_11[0].date'),
-          button: this.$t('home.block_11[0].button'),
-          img: require('@/assets/img/banner_bg.png'),
-          link: this.localePath('/news/23'),
-        },
-        {
-          title: this.$t('home.block_11[2].title'),
-          text: this.$t('home.block_11[2].text'),
-          date: this.$t('home.block_11[2].date'),
-          button: this.$t('home.block_11[2].button'),
-          img: require('@/assets/img/banner_bg_3.png'),
-          link: this.localePath('/news/25'),
+          link: this.localePath('/news/0'),
         },
         {
           title: this.$t('home.block_11[3].title'),
@@ -36,6 +28,14 @@ export default {
           button: this.$t('home.block_11[3].button'),
           img: require('@/assets/img/banner_bg_4.png'),
           link: this.localePath('/news/26'),
+        },
+        {
+          title: this.$t('home.block_11[2].title'),
+          text: this.$t('home.block_11[2].text'),
+          date: this.$t('home.block_11[2].date'),
+          button: this.$t('home.block_11[2].button'),
+          img: require('@/assets/img/banner_bg_3.png'),
+          link: this.localePath('/news/25'),
         },
       ],
       options: {
@@ -236,12 +236,11 @@ export default {
   align-items: center;
   gap: 2px;
   position: absolute;
-  bottom: 25px;
+  bottom: 10px;
   left: 300px;
   width: auto;
   @include phone {
     left: 25px;
-    bottom: 50px;
   }
   span {
     display: block;

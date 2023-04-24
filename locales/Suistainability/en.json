@@ -15,7 +15,7 @@
       "Below is a brochure about TCO’s 2022 Environmental Activities and Performance. In addition, to raise awareness of local flora and fauna, TCO has developed a first-of-its-kind illustrated trilingual handbook demonstrating the diversity of flora and fauna in its area of operations. You can read the handbook using link below. "
     ],
     "files": {
-      "file1": "2022 TCO Ecological brochure",
+      "file1": "Tengizchevroil: Overview of 2022 Environmental Activities and Performance",
       "file2": "Quick Guide to Tengiz Biotopes"
     },
     "cards": {
@@ -47,7 +47,7 @@
   },
   "ecology": {
     "title": "Environmental Monitoring",
-    "description": "TCO conducts a comprehensive system of continuous environmental monitoring within its area of operations. Environmental monitoring includes atmospheric air, water and soil samples that are collected and analyzed in TCO’s environmental laboratory against specified thresholds and background conditions to track and proactively manage potential impacts on the environment. \n<br/>\nTCO’s environmental laboratory is certified and has been operating since 2016 equipped with state-of-the-art technology and equipment.",
+    "description": "TCO conducts a comprehensive system of continuous environmental monitoring within its area of operations. Environmental monitoring includes atmospheric air, water and soil samples that are collected and analyzed in TCO’s environmental laboratory against specified thresholds and background conditions to track and proactively manage potential impacts on the environment. \nTCO’s environmental laboratory is certified and has been operating since 2016 equipped with state-of-the-art technology and equipment.",
     "cards": {
       "card1": "Air Monitoring",
       "card2": "Groundwater monitoring",
@@ -1107,7 +1107,7 @@
     },
     {
       "year": 2020,
-      "text": "2019 Year-end Results (Mangystau)",
+      "text": "2020 Year-end Results (Mangystau)",
       "link": "https://tengizchevroil.com/docs/default-source/cip-reports/2020/m_reports-year-end-2020_e.pdf?sfvrsn=32a4c45c_2"
     },
     {

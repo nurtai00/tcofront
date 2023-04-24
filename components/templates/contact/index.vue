@@ -81,7 +81,12 @@ export default {
             {
               id: 12,
               iconName: 'phone.png',
-              text: '+7 712 227 1212 +7 712 302 6000',
+              text: '+7 712 227 1212',
+            },
+            {
+              id: 12,
+              iconName: 'phone.png',
+              text: '+7 712 302 6000',
             },
             {
               id: 13,
@@ -158,6 +163,11 @@ export default {
               text: 'tcoinfo@tengizchevroil.com',
               iconName: 'mail.png',
             },
+            {
+              id: 20,
+              text: 'press@tengizchevroil.com',
+              iconName: 'mail.png',
+            },
           ],
         },
         {
@@ -232,5 +242,8 @@ export default {
       padding: 0 16px;
     }
   }
+}
+.list__item{
+  list-style-type: none;
 }
 </style>

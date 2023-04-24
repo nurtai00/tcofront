@@ -3,9 +3,9 @@ export default {
   computed: {
     fileLink() {
       const mapOfFileLinkUrl = {
-        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/main-page/2021-отчет-о-корпоративной-ответственности.pdf?sfvrsn=e1f2c55c_2',
-        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/main-page/2021-корпоративтік-жауапкершілік-туралы-есеп.pdf?sfvrsn=eff2c55c_2',
-        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/main-page/2021-corporate-responsibility-report.pdf?sfvrsn=e0f2c55c_2',
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/ru/verstka_rus_min.pdf?sfvrsn=22e4c55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/kk/verstka_kaz_min.pdf?sfvrsn=de4c55c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/en/verstka_eng_min.pdf?sfvrsn=68e4c55c_2',
       }
       return mapOfFileLinkUrl[this.$i18n.locale]
     },

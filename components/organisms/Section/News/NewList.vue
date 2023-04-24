@@ -28,7 +28,7 @@ export default {
           id: 3,
           img: require('@/assets/img/new/new_37.jpg'),
           tag: {
-            text: this.$t('home.block_2.items[2].tag'),
+            text: this.$t('home.block_2.items[1].tag'),
             color: '#EDA210',
           },
           date: data[this.$i18n.locale].date,

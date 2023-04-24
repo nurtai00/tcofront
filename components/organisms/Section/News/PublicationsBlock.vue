@@ -25,6 +25,10 @@ export default {
       publications_list: {
         ru: [
           {
+            name: 'Отчет о корпоративной ответственности за 2022 г (pdf)',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/ru/verstka_rus_min.pdf?sfvrsn=22e4c55c_2',
+          },
+          {
             name: 'Отчет о корпоративной ответственности за 2019-20 гг (pdf)',
             link: 'https://tengizchevroil.com/docs/default-source/publications/ru/%D0%BE%D1%82%D1%87%D0%B5%D1%82-%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B7%D0%B0-2019-20-%D0%B3%D0%B3.pdf?sfvrsn=a9e2c45c_2',
           },
@@ -75,6 +79,10 @@ export default {
         ],
         en: [
           {
+            name: '2022 Corporate Responsibility Report (pdf)',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/en/verstka_eng_min.pdf?sfvrsn=68e4c55c_2',
+          },
+          {
             name: '2019-20 Corporate Responsibility Report (pdf)',
             link: 'https://tengizchevroil.com/docs/default-source/publications/eng/2019-20-corporate-responsibility-report.pdf?sfvrsn=44fdc45c_2',
           },
@@ -124,6 +132,10 @@ export default {
           },
         ],
         kk: [
+          {
+            name: '2022 ж. корпоративтік жауапкершілік туралы есеп (pdf)',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/kk/verstka_kaz_min.pdf?sfvrsn=de4c55c_2',
+          },
           {
             name: '2019-20 жылдарындағы корпоративтік жауапкершілік туралы есеп (pdf)',
             link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/2019-20-%D0%B6%D1%8B%D0%BB%D0%B4%D0%B0%D1%80%D1%8B%D0%BD%D0%B4%D0%B0%D2%93%D1%8B-%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D1%82%D1%96%D0%BA-%D0%B6%D0%B0%D1%83%D0%B0%D0%BF%D0%BA%D0%B5%D1%80%D1%88%D1%96%D0%BB%D1%96%D0%BA-%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8B-%D0%B5%D1%81%D0%B5%D0%BF.pdf?sfvrsn=7ffdc45c_2',

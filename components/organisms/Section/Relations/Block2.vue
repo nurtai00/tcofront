@@ -21,8 +21,16 @@
             >
               {{ item.title }}
             </nuxt-link>
-            <a class="link">{{ $t('relation.block_2.links[4]') }}</a>
-            <a class="link">{{ $t('relation.block_2.links[5]') }}</a>
+            <a
+              class="link"
+              target="_blank"
+              :href="fileLink"
+            >{{ $t('relation.block_2.links[4]') }}</a>
+            <a
+              class="link"
+              target="_blank"
+              :href="fileLink2"
+            >{{ $t('relation.block_2.links[5]') }}</a>
           </div>
           <div class="information_content-img">
             <img
@@ -198,8 +206,21 @@ export default {
     }
   },
   computed: {
-    disabled() {
-      return !this.checked
+    fileLink() {
+      const mapOfFileLinkUrl = {
+        ru: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/ru/verstka_rus_min.pdf?sfvrsn=22e4c55c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/kk/verstka_kaz_min.pdf?sfvrsn=de4c55c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/en/verstka_eng_min.pdf?sfvrsn=68e4c55c_2',
+      }
+      return mapOfFileLinkUrl[this.$i18n.locale]
+    },
+    fileLink2() {
+      const mapOfFileLinkUrl = {
+        ru: 'https://tengizchevroil.com/docs/default-source/publications/ru/%D0%B8%D1%82%D0%BE%D0%B3%D0%B8-2019-%D0%B3%D0%BE%D0%B4%D0%B0.pdf?sfvrsn=644dc45c_2',
+        kk: 'https://tengizchevroil.com/docs/default-source/publications/kaz/2019-%D0%B6%D1%8B%D0%BB%D0%B4%D1%8B%D2%A3-%D2%9B%D0%BE%D1%80%D1%8B%D1%82%D1%8B%D0%BD%D0%B4%D1%8B%D0%BB%D0%B0%D1%80%D1%8B.pdf?sfvrsn=4e4dc45c_2',
+        en: 'https://tengizchevroil.com/docs/default-source/publications/eng/2019-year-in-review.pdf?sfvrsn=1e4dc45c_2',
+      }
+      return mapOfFileLinkUrl[this.$i18n.locale]
     },
   },
 }

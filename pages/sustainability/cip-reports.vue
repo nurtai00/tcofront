@@ -319,7 +319,7 @@ export default {
   a {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 28px;
     text-decoration-line: underline;
     color: #181716;

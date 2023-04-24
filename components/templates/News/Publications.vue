@@ -32,6 +32,10 @@ export default {
       publications_list: {
         ru: [
           {
+            name: 'Отчет о корпоративной ответственности за 2022 г (pdf)',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/ru/verstka_rus_min.pdf?sfvrsn=22e4c55c_2',
+          },
+          {
             name: '2021 Отчет о корпоративной ответственности (pdf)',
             link: 'https://tengizchevroil.com/docs/default-source/publications/ru/2021-%D0%BE%D1%82%D1%87%D0%B5%D1%82-%D0%BE-%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B85e0fa352577266428434ff0000af314c.pdf?sfvrsn=fe7dc55c_2',
           },
@@ -82,6 +86,10 @@ export default {
         ],
         en: [
           {
+            name: '2022 Corporate Responsibility Report (pdf)',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/en/verstka_eng_min.pdf?sfvrsn=68e4c55c_2',
+          },
+          {
             name: '2021 Corporate Responsibility Report (pdf)',
             link: 'https://tengizchevroil.com/docs/default-source/publications/eng/2021-corporate-responsibility-reportddf2a252577266428434ff0000af314c.pdf?sfvrsn=7080c45c_2',
           },
@@ -131,6 +139,10 @@ export default {
           },
         ],
         kk: [
+          {
+            name: '2022 ж. корпоративтік жауапкершілік туралы есеп (pdf)',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/kk/verstka_kaz_min.pdf?sfvrsn=de4c55c_2',
+          },
           {
             name: '2021 Корпоративтік жауапкершілік туралы есеп (pdf)',
             link: 'https://tengizchevroil.com/docs/default-source/publications/kaz/2021-%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D1%82%D1%96%D0%BA-%D0%B6%D0%B0%D1%83%D0%B0%D0%BF%D0%BA%D0%B5%D1%80%D1%88%D1%96%D0%BB%D1%96%D0%BA-%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8B-%D0%B5%D1%81%D0%B5%D0%BF.pdf?sfvrsn=4780c45c_2',
