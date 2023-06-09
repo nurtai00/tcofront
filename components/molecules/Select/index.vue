@@ -171,7 +171,7 @@ $select-grey: #e4e4e4;
 $select-error: 1px solid rgba(255, 87, 110, 0.5);
 $select-border: 1px solid blue;
 .select {
-  width: 100%;
+  width: 100% !important;
   position: relative;
 
   &.has-error.show-error &__head {

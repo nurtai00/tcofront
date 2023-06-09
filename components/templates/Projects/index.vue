@@ -108,8 +108,8 @@
       :data="slide2"
       class="slide last"
     >
-      <template #description="{ description }">
-        <p>{{ description }}</p>
+      <template #description="{ description, description_open }">
+        <p>{{ description }} {{ description_open }}</p>
         <!--        <button class="operations__button-more" @click="slide2.link()">-->
         <!--          Читать дальше-->
         <!--        </button>-->
@@ -207,11 +207,9 @@ export default {
       },
       slide2: {
         title: this.$t('project.block_3.title'),
-        description: this.$t('project.block_3.text'),
-        image: 'projects/projects2.png',
-        link: () => {
-          this.$store.commit('side/open', {
-            html: `<p>${this.$t('project.block_3.texts[0]')}</p>
+        // description: this.$t('project.block_3.text'),
+        description: `${this.$t('project.block_3.text')}
+<p>${this.$t('project.block_3.texts[0]')}</p>
 <img src="${require('@/assets/img/projects/projects-process1.png')}">
 <img src="${require('@/assets/img/projects/projects-process2.png')}">
 <p>${this.$t('project.block_3.texts[1]')}</p>
@@ -219,19 +217,14 @@ export default {
 <p>${this.$t('project.block_3.texts[2]')}</p>
 <img src="${require('@/assets/img/projects/projects-process4.png')}">
 <img src="${require('@/assets/img/projects/projects-process5.png')}">
-<p>${this.$t('project.block_3.texts[3]')}</p>
-`,
-          })
-        },
+<p>${this.$t('project.block_3.texts[3]')}</p>`,
+        image: 'projects/projects2.png',
       },
       slide3: {
         title: this.$t('project.block_4.title'),
         image: 'projects/projects3.png',
-        description: this.$t('project.block_4.text'),
-        link: () => {
-          this.$store.commit('side/open', {
-            name: this.$t('project.block_4.title'),
-            html: `<p>${this.$t('project.block_4.big_text')}</p>
+        description: `${this.$t('project.block_4.text')}
+        <p>${this.$t('project.block_4.big_text')}</p>
             <ul>
               <li>${this.$t('project.block_4.li_1')}</li>
               <li>${this.$t('project.block_4.li_2')}</li>
@@ -249,11 +242,7 @@ export default {
               <li>${this.$t('project.block_4.li_14')}</li>
               <li>${this.$t('project.block_4.li_15')}</li>
             </ul>
-
-            <p>${this.$t('project.block_4.last_text')}</p>
-`,
-          })
-        },
+            <p>${this.$t('project.block_4.last_text')}</p>`,
       },
       cards: [
         {

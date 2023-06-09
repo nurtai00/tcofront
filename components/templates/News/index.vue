@@ -82,7 +82,7 @@ export default {
           text: this.$t('news.tags[3]'),
           value: '',
           selected: false,
-          color: '#D92D20',
+          color: '#d96f28',
           id: 3,
         },
         {
@@ -103,7 +103,7 @@ export default {
           text: this.$t('news.tags[6]'),
           value: '',
           selected: false,
-          color: '#D92D20',
+          color: '#5ed920',
           id: 5,
         },
         {

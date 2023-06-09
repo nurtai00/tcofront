@@ -18,9 +18,6 @@
             </template>
           </div>
         </div>
-        <div class="block__icon">
-          <img :src="data.icon" alt="icon" />
-        </div>
       </div>
     </div>
     <div class="container footer">

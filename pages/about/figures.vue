@@ -52,6 +52,10 @@ export default {
           id: 12,
           text: 2022,
         },
+        {
+          id: 13,
+          text: 2023,
+        },
       ],
       selected_tag: 2011,
       files: {
@@ -272,6 +276,12 @@ export default {
               link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2022/tco-fact-sheet-4q-2022_final_e.pdf?sfvrsn=2ee1c55c_2',
             },
           ],
+          2023: [
+            {
+              name: '1 quarter (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2023/tco-fact-sheet-1q-2023_e_final.pdf?sfvrsn=4ebc55c_2',
+            },
+          ],
         },
         kk: {
           2011: [
@@ -490,6 +500,12 @@ export default {
               link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2022/tco-fact-sheet-4q-2022_final_k.pdf?sfvrsn=c3e1c55c_2',
             },
           ],
+          2023: [
+            {
+              name: '1-шi тоқсан (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2023/tco-fact-sheet-1q-2023_k_final.pdf?sfvrsn=38ebc55c_2',
+            },
+          ],
         },
         ru: {
           2011: [
@@ -706,6 +722,12 @@ export default {
             {
               name: '4 квартал (pdf)',
               link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/tco-fact-sheet-4q-2022_final_r.pdf?sfvrsn=f8e1c55c_2',
+            },
+          ],
+          2023: [
+            {
+              name: '1 квартал (pdf)',
+              link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2023/tco-fact-sheet-1q-2023_r_final.pdf?sfvrsn=dcebc55c_2',
             },
           ],
         },

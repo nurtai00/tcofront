@@ -2,8 +2,8 @@
   <div
     class="n_card"
     :class="{
-      n_card_left: [1, 4, 5, 0, 7, 10, 13, 16, 19].includes(index),
-      n_card_right: [2, 3, 6, 8, 9, 11, 12, 14, 15, 17, 18].includes(index),
+      n_card_left: [1, 4, 5, 0, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40, 43, 46, 49, 52].includes(index),
+      n_card_right: [2, 3, 6, 8, 9, 11, 12, 14, 15, 17, 18, 20, 21, 23, 24, 26, 27, 29, 30, 32, 33, 35, 36, 38, 39, 41, 42, 44, 45, 47, 48, 50, 51].includes(index),
       n_card_mobile_img: ![1, 2].includes(index),
     }"
     @click="navigateNew"
@@ -131,7 +131,7 @@ export default {
   }
   &_right {
     .n_card_content {
-      padding: 12px 20px 20px 20px;
+      padding: 20px;
       @include tablet() {
         padding: 0px;
       }

@@ -66,7 +66,6 @@ export default {
     }
   }
   img {
-    margin-top: 20px;
     max-width: 100%;
   }
 }

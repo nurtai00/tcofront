@@ -3,12 +3,15 @@
     <div class="container">
       <AtomsTitle class=""> {{ $t('company.breadcrumbs[1]') }} </AtomsTitle>
     </div>
-    <img
-      class="player__preview"
-      style="height: 565px"
-      src="@/assets/img/player-prev.png"
-    />
     <div class="container block">
+      <iframe
+        :src="$t('company.video_url')"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        modestbranding="0"
+        allowfullscreen
+      ></iframe>
       <p class="mt40 mb40">
         {{ $t('company.p_1') }}
       </p>
@@ -28,6 +31,15 @@ export default {
 </script>
 
 <style lang="scss" v-deep scoped>
+iframe{
+  width: 1360px;
+  height: 515px;
+  @media (max-width: 560px){
+    width: 358px;
+    height: 215px;
+  }
+}
+
 .about {
   padding-top: 0;
 }

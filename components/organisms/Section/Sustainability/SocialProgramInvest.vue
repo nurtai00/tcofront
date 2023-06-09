@@ -53,6 +53,15 @@ export default {
             'suistainability.socialProgrammingInvest.cards'
           )[1].description,
           img: 'sustainability/map-projects/document.png',
+        },
+        {
+          id: 3,
+          text: this.$t('suistainability.socialProgrammingInvest.cards')[2]
+            .title,
+          description: this.$t(
+            'suistainability.socialProgrammingInvest.cards'
+          )[2].description,
+          img: 'sustainability/map-projects/document.png',
           link: this.localePath('/sustainability/cip-reports'),
         },
       ],

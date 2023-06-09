@@ -1,8 +1,8 @@
 <script>
 import jsonData from '~/components/templates/News/json_data.json'
-const data = jsonData[3]
-const data2 = jsonData[2]
-const data3 = jsonData[4]
+const data = jsonData[6]
+const data2 = jsonData[3]
+const data3 = jsonData[2]
 export default {
   props: {
     white: {
@@ -14,38 +14,39 @@ export default {
     return {
       news: [
         {
-          id: 4,
-          img: require('@/assets/img/new/new_32.jpg'),
+          id: 6,
+          img: require('@/assets/img/new/new_109.JPG'),
           tag: {
-            text: this.$t('home.block_2.items[2].tag'),
-            color: '#EDA210',
+            text: this.$t('home.tags[7]'),
+            color: '#00B0F0',
+          },
+          date: data[this.$i18n.locale].date,
+          title: data[this.$i18n.locale].title,
+          text: data[this.$i18n.locale].body[0].text,
+        },
+        {
+          id: 3,
+          // img: require('@/assets/img/new/new_120.JPG'),
+          img: data3[this.$i18n.locale].img.replace('new_', '_nuxt/assets/img/new/new_'),
+          tag: {
+            text: this.$t('home.tags[7]'),
+            color: '#00B0F0',
+          },
+          date: data2[this.$i18n.locale].date,
+          title: data2[this.$i18n.locale].title,
+          text: data2[this.$i18n.locale].body[0].text,
+        },
+        {
+          id: 2,
+          img: require('@/assets/img/new/new_120.JPG'),
+          tag: {
+            text: this.$t('home.tags[0]'),
+            color: '#D92D20',
           },
           date: data3[this.$i18n.locale].date,
           title: data3[this.$i18n.locale].title,
           text: data3[this.$i18n.locale].body[0].text,
-        },
-        {
-          id: 3,
-          img: require('@/assets/img/new/new_37.jpg'),
-          tag: {
-            text: this.$t('home.block_2.items[1].tag'),
-            color: '#EDA210',
-          },
-          date: data[this.$i18n.locale].date,
-          title: data[this.$i18n.locale].title,
-          text: data[this.$i18n.locale].body[2].text,
-        },
-        {
-          id: 2,
-          img: require('@/assets/img/new/new_43.jpg'),
-          tag: {
-            text: this.$t('home.block_2.items[2].tag'),
-            color: '#EDA210',
-          },
-          date: data2[this.$i18n.locale].date,
-          title: data2[this.$i18n.locale].title,
-          text: data2[this.$i18n.locale].body[2].text,
-        },
+        }
       ],
     }
   },
@@ -53,6 +54,9 @@ export default {
     mappedNews() {
       // eslint-disable-next-line vue/no-side-effects-in-computed-properties
       return this.news.reverse()
+    },
+    lang() {
+      return this.$i18n.locale
     },
   },
 }

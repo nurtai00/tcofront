@@ -135,7 +135,7 @@ export default {
               id: 16,
               type: 'link',
               text: this.$t('contact.contents.3.text2'),
-              href: this.localePath('/#/vacancy'),
+              href: this.$t('contact.contents.link.1'),
             },
             {
               id: 17,

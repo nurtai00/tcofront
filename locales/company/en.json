@@ -1,4 +1,5 @@
 {
+  "video_url": "https://www.youtube.com/embed/7qQ0yx0zFDI",
   "breadcrumbs": ["Home", "Company"],
   "p_1": "Tengizchevroil is a leading company in Kazakhstan that produces oil, gas and associated products that fuels the modern economy. Our history is closely interlinked with the rise of an independent Kazakhstan.We safely and reliably produce products that heat homes, fuel cars, support businesses and benefit society.Our primary purpose is to create value for the Republic of Kazakhstan, our four shareholders, the communities where we live and operate and ourselves. We are proud to contribute to the country’s economic progress and future.",
   "slider_1": [
@@ -37,22 +38,22 @@
     "title": "Production and sales:",
     "items": [
       {
-        "title": "29,2 million",
+        "title": "7,35 million",
         "p_1": "Crude",
         "p_2": "(in tonnes)"
       },
       {
-        "title": "1,19 million",
+        "title": "307 thousand",
         "p_1": "LPG",
         "p_2": "(in tonnes)"
       },
       {
-        "title": "9,7 billion",
+        "title": "288 million",
         "p_1": "Dry gas",
         "p_2": "(in m3)"
       },
       {
-        "title": "2,4 million",
+        "title": "733 thousand",
         "p_1": "Sulfur",
         "p_2": "(in tonnes)"
       }
@@ -63,15 +64,15 @@
       "title": "Kazakhstani content:",
       "items": [
         {
-          "title": "15,6 billion (in US dollars)",
+          "title": "16,3 billion (in US dollars)",
           "text": "Including FGP-WPMP spending of"
         },
         {
-          "title": "Increased by 70%",
+          "title": "972 млн (US dollars)",
           "text": "Goods and services spending"
         },
         {
-          "title": ">43,6 billion (in US dollars)",
+          "title": ">44,6 billion (in US dollars)",
           "text": "Total spending since 1993"
         }
       ]
@@ -88,8 +89,8 @@
           "text": "2023 Egilik Program budget"
         },
         {
-          "title": ">2,7 billion (in US dollars)",
-          "text": "Total social investments since 1993"
+          "title": ">120 projects",
+          "text": "Realised by \"Egilik\" program since 1993"
         }
       ]
     }
@@ -99,23 +100,23 @@
     "items": [
       {
         "title": "Direct payments in 2022",
-        "p_1": "14,5 billion",
+        "p_1": "3,8 billion",
         "p_2": "(in US dollars)"
       },
       {
         "title": "Total payments since 1993",
-        "p_1": "176 billion",
+        "p_1": "180 billion",
         "p_2": "(in US dollars)"
       }
     ],
     "text": "Direct financial payments include Kazakhstani employees’ salaries, purchases of Kazakhstani goods and services, tariffs and fees paid to state-owned companies, profit distributions to Kazakhstani shareholder and taxes and royalties paid to the government."
   },
   "block_4": {
-    "title": "2022 Key Figures",
+    "title": "2023 Key Figures",
     "items": [
-      "4 quarter",
+      "1 quarter",
       "Facts and Figures",
-      "The Corporate Responsibility Report for 2021 y"
+      "The Corporate Responsibility Report for 2022"
     ]
   },
   "slider_3_title": "History of the Company",

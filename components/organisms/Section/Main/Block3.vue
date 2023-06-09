@@ -58,7 +58,7 @@ export default {
               {{ $t('home.block_3.right.text') }}
             </p>
             <nuxt-link
-              :to="localePath('/#/projects')"
+              :to="localePath('/projects')"
               style="font-family: Roboto, sans-serif"
             >
               {{ $t('home.block_3.right.link_1') }}

@@ -71,16 +71,18 @@ export default {
       popups: {
         one: {
           id: '01',
-          title: 'КРИТЕРИИ ОТБОРА ПРОЕКТОВ (ЭТАП 1):',
+          title: this.$t('suistainability.projectSelection.section.right.subtitle'),
           modal: 'SelectionProject',
-          list: this.$t('suistainability.projectSelection.section.right.list'),
+          list: this.$t('suistainability.projectSelection.section.right.list')
         },
         two: {
           id: '02',
-          title: 'ПРИМЕРЫ КРИТЕРИЕВ ОТБОРА ПРОЕКТОВ (ЭТАП 2):',
+          title: this.$t('suistainability.projectSelection.section.left.subtitle'),
           modal: 'SelectionProject',
           list: this.$t('suistainability.projectSelection.section.left.list'),
-        },
+          fileLink: this.$t('suistainability.projectSelection.section.left.fileLink[0]'),
+          fileLink2: this.$t('suistainability.projectSelection.section.left.fileLink2[0]')
+        }
       },
       markers: [
         {

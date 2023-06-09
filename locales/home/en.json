@@ -1,4 +1,14 @@
 {
+  "tags": [
+    "#Production",
+    "#Ecology",
+    "#Social projects",
+    "#Kazakhstani content",
+    "#Career",
+    "#FGP-WPMP",
+    "#Economy",
+    "#TCO"
+  ],
   "block_11": [
     {
       "title": "Tengizchevroil marks 30 Years of Performance in Kazakhstan",
@@ -7,10 +17,10 @@
       "date": "05 april 2023"
     },
     {
-      "title": "Tengizchevroil Announces 2021 Results",
-      "text": "In 2021, TCO remained the largest contributor to the national economy, with over $9 billion in direct payments to the Republic of Kazakhstan",
+      "title": "Tengizchevroil Announces 2022 Performance",
+      "text": "Tengizchevroil LLP (TCO) today announced a strong set of business performance results for 2022, including increasing its crude oil production by 10% compared to the previous year, as well as making direct financial payments of $14.5 billion to Kazakhstan.",
       "button": "Read More",
-      "date": "22 February 2022"
+      "date": "21 February 2022"
     },
     {
       "title": "Ministry of Ecology: I believe that perfection knows no limits",
@@ -63,9 +73,9 @@
     ]
   },
   "block_3": {
-    "title": "Report and figures for 2022",
+    "title": "Report and figures for 2023",
     "title_mobile_1": "Report",
-    "title_mobile_2": "Figures for 2022",
+    "title_mobile_2": "Figures for 2023",
     "link": "More",
     "right": {
       "text": "With over 35 000 workers engaged, FGP-WPMP project will make significant contributions to the Republic of Kazakhstan in many years to come.",
@@ -74,15 +84,15 @@
     },
     "items": [
       {
-        "title": "Increased by 70%",
+        "title": "972 млн (US dollars)",
         "text": "Kazakhstani Goods & Services spent"
       },
       {
-        "title": "14,5 billion (US dollars)",
+        "title": "3,8 billion (US dollars)",
         "text": "Direct payments to Kazakhstan"
       },
       {
-        "title": "29,2 million (tonnes)",
+        "title": "7,35 million (tonnes)",
         "text": "Crude production"
       }
     ]

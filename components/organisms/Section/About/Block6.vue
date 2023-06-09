@@ -36,44 +36,44 @@ export default {
       links: {
         ru: [
           {
-            name: '2021-отчет-о-корпоративной-ответственности.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2022/tco-fact-sheet-4q-2022_final_r.pdf?sfvrsn=f8e1c55c_2',
-          },
-          {
-            name: '3-квартал.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/ru/tco-way_rus.pdf?sfvrsn=3115c55c_2',
+            name: '1 квартал',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/ru/2023/tco-fact-sheet-1q-2023_r_final.pdf?sfvrsn=dcebc55c_2',
           },
           {
             name: 'tco-way_rus.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/ru/2021-отчет-о-корпоративной-ответственности.pdf?sfvrsn=3015c55c_2',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/ru/tco-way_rus.pdf?sfvrsn=3115c55c_2',
+          },
+          {
+            name: 'Отчет о корпоративной ответственности',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/ru/verstka_rus_min.pdf?sfvrsn=22e4c55c_2',
           },
         ],
         en: [
           {
-            name: '2021-corporate-responsibility-report.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2022/tco-fact-sheet-4q-2022_final_e.pdf?sfvrsn=2ee1c55c_2',
-          },
-          {
-            name: '3-quarter.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/en/tco-way_eng.pdf?sfvrsn=4315c55c_2',
+            name: '1 quarter',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/en/2023/tco-fact-sheet-1q-2023_e_final.pdf?sfvrsn=4ebc55c_2',
           },
           {
             name: 'tco-way_eng.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/en/2021-corporate-responsibility-report.pdf?sfvrsn=4215c55c_2',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/en/tco-way_eng.pdf?sfvrsn=4315c55c_2',
+          },
+          {
+            name: 'The Corporate Responsibility Report for 2022',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/en/verstka_eng_min.pdf?sfvrsn=68e4c55c_2',
           },
         ],
         kk: [
           {
-            name: '2021-корпоративтік-жауапкершілік-туралы-есеп.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2022/tco-fact-sheet-4q-2022_final_k.pdf?sfvrsn=c3e1c55c_2',
-          },
-          {
-            name: '3-ші-тоқсан.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/kk/tco-way_kaz.pdf?sfvrsn=941ac55c_2',
+            name: '1-ші тоқсан',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/facts-and-figures/kk/2023/tco-fact-sheet-1q-2023_k_final.pdf?sfvrsn=38ebc55c_2',
           },
           {
             name: 'tco-way_kaz.pdf',
-            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/kk/2021-корпоративтік-жауапкершілік-туралы-есеп.pdf?sfvrsn=951ac55c_2',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/company-page/kk/tco-way_kaz.pdf?sfvrsn=941ac55c_2',
+          },
+          {
+            name: '2022 ж. корпоративтік жауапкершілік туралы есеп',
+            link: 'https://tengizchevroil.com/docs/default-source/tcodocuments/publications/kk/verstka_kaz_min.pdf?sfvrsn=de4c55c_2',
           },
         ],
       },

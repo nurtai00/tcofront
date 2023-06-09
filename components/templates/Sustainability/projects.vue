@@ -51,14 +51,13 @@ export default {
   computed: {
     cardItems() {
       const psiItems = []
-      for (let i = 0; i < 14; i++) {
+      for (let i = 0; i < 22; i++) {
         psiItems.push({
           id: i + 1,
           title: this.$t(`suistainability.psi[${i}].title`),
           title_2: this.$t(`suistainability.psi[${i}].title_2`),
           text: this.$t(`suistainability.psi[${i}].text`),
           modal: 'SustainabilityPsi',
-          imgSrc: `sustainability/psi/image_${i + 1}.png`,
         })
       }
       return this.$route.params.projects === 'psi'
@@ -99,7 +98,7 @@ export default {
               title: this.$t('suistainability.project.cardPlaces.card6'),
               modal: 'SustainabilityProject',
               projects: this.$t('suistainability.project.lists.card6'),
-            },
+            }
           ]
     },
     title() {

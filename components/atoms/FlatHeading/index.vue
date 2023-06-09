@@ -27,24 +27,25 @@ export default {
   justify-content: space-between;
   padding: 16px;
   max-width: 600px;
-  background-color: #fff;
-  background-color: $c-tco3;
+  background-color: #015467;
   border-radius: 5px;
   cursor: pointer;
   &__title {
     word-wrap: break-word;
+    padding: 10px;
   }
   img {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
+    margin-top: 5px;
   }
   @include phone {
     &__title {
       //width: 277px;
     }
     img {
-      width: 24px;
-      height: 24px;
+      width: 30px;
+      height: 30px;
     }
   }
 }

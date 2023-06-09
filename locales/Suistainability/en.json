@@ -129,7 +129,7 @@
         "description": "2023 Budget of Egilik program"
       },
       "card2": {
-        "title": "Over 100",
+        "title": "Over 120",
         "description": "Objects built within the framework of the Egilik program (schools, kindergartens, sport facilities, etc.)"
       }
     }
@@ -148,6 +148,10 @@
       {
         "title": "108 projects",
         "description": "Were implemented in 2010-2021"
+      },
+      {
+        "title": "CIP reports",
+        "description": "Archive of CIP reports"
       }
     ]
   },
@@ -193,6 +197,14 @@
           "Justification",
           "Demonstrating high potential to achieve success",
           "Focus on innovation and ability to implement project remotely (online format)"
+        ],
+        "fileLink": [
+          "https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/en/04-proposal-template.docx?sfvrsn=dce9c55c_2",
+          "Proposal Template"
+        ],
+        "fileLink2": [
+          "https://tengizchevroil.com/docs/default-source/tcodocuments/sustainability-page/05-tco-grant-budget-template_erk.xlsx?sfvrsn=27e9c55c_2",
+          "Budget table template"
         ]
       }
     },
@@ -1014,74 +1026,114 @@
   },
   "psi": [
     {
-      "title": "Kazakhstan Association of Family Physicians (KAFP)",
-      "title_2": "Strengthening primary care services and access in Zhylyoi",
-      "text": "<strong>Goal</strong>: Strengthening primary care services and access in Zhylyoi.<br><br><strong>Objectives:</strong><br><br>1. To help primary care providers to increase their capacity, capability and responsibility for clinical quality improvement.<br><br>2. To promote health and disease prevention among general public<br><br>The project will include: (a) the refurbishing and upgrade of PHC centers; (b) training for personnel at all levels; (c) introducing population mapping and data driven decision making; (d) campaign and advocacy to improve and expand health, basic sanitation and nutrition education;"
+      "title": "PF \"Bilim Barine\"",
+      "title_2": "Scientific exhibition \"Atyrau EcoFair 2023\"",
+      "text": "Goal: The purpose of the project: promotion of environmental protection and the application of green innovative technologies in Atyrau oblast"
     },
     {
-      "title": "Eurasian Foundation of Central Asia (EFCA)",
-      "title_2": "Public Spaces in Zhylyoi district and Borankul",
-      "text": "The proposed program sets the following objective: local communities have increased participation in delivering better public spaces and addressing local problems.<br><br>The team expects to achieve the following outcomes:<br><br>1. Local citizens enjoy improved public spaces;<br><br>2. Trained local community initiative groups improved cooperation with local authorities to solve wider community problems."
+      "title": "PF \"Ecologica\"",
+      "title_2": "Green School",
+      "text": "Goal: The purpose of the project: to instill environmental behavior skills in children aged 9 to 14 years and their parents through the author's innovative program \"Green School\"."
     },
     {
-      "title": "Eurasian Foundation of Central Asia (EFCA)",
-      "title_2": "Public Spaces in Atyrau",
-      "text": "The proposed program sets the following objective: local communities have increased participation in delivering better public spaces and addressing local problems.<br><br>The team expects to achieve the following outcomes:<br><br>1. Local citizens enjoy improved public spaces;<br><br>2. Trained local community initiative groups improved cooperation with local authorities to solve wider community problems."
-    },
-    {
-      "title": "Bizde Adambyz",
+      "title": "PF \"Biz de adambyz\"",
       "title_2": "Effective rehabilitation of people with disabilities",
-      "text": "To improve the quality of life of people with disabilities who move in wheelchairs in Atyrau region, their adaptation to society, to keep their psychological state under control, to implement their rehabilitation process quickly and effectively.<br><br>Objective No. 1 Integration of wheelchair users into society through independent living skills training;<br><br>Objective No. 2 Creating a pool of instructors of independent living skills from among the project graduates;<br><br>Objective No. 3 Public awareness of the problems of people with disabilities, psychological support and motivation of people with disabilities."
+      "text": "Goal: Improving the quality of life of people with disabilities moving in wheelchairs and living in the Atyrau oblast. Assistance in their adaptation in society, support in the control of the psychological and emotional state, rapid and effective implementation of the process of their rehabilitation."
     },
     {
-      "title": "Atyrau. Little Country",
-      "title_2": "Horse is the best friend",
-      "text": "Goal: to support people in achieving motorial, psychological freedom and help a person to adapt to new changing circumstances. <br><br>Objectives:<br><br>- teaching children horseback riding to influence their physical, psycho-emotional and personal rehabilitation and adaptation;<br><br>- helping to recover motor functions and lost skills by conducting regular therapeutic horseback riding sessions;<br><br>- having an educational impact on children, introducing them to wildlife with the help of horses (to establish nature-friendly culture, mutual assistance; to explore the environment increasing knowledge about the nature of their region, to acquire new knowledge on how the most enthusiastic children can explore the environment);<br><br>- creating the necessary conditions for children with disabilities to become more integrated in society;<br><br>- to motivate and encourage children to live an active life;<br><br>- helping families with children who have health limitations and impaired posture, general speech underdevelopment and psycho-emotional disorders using recreational activities."
+      "title": "NGO \"Atyrau. Little country\"",
+      "title_2": "At muratka zhetkizu",
+      "text": "The purpose of the project is to help people with musculoskeletal disorders achieve physical and psychological independence, to enable them to adapt to new, changing circumstances."
     },
     {
-      "title": "Eurasian Foundation of Central Asia (EFCA)",
-      "title_2": "“Zharkyra” Social entrepreneurship program in partnership with Social programs and innovations fund",
-      "text": "Promote innovative social initiatives aimed at providing sustainable business solutions to social, economic and environmental problems of the community in the city of Atyrau and in the Atyrau region."
+      "title": "NGO \"Atyrau. Little country\"",
+      "title_2": "At muratka zhetkizu",
+      "text": "The purpose of the project is to help people with musculoskeletal disorders achieve physical and psychological independence, to enable them to adapt to new, changing circumstances."
     },
     {
-      "title": "SEZUAL",
-      "title_2": "Braille-alphabetical simulator",
-      "text": "Assistance in the educational process when teaching Kazakh, English and Russian languages, using an electronic technical tool developed by us for blind and visually impaired people"
+      "title": "Kazakhstan Association of Family Physicians (KAFP)",
+      "title_2": "Improving treatment and raising awareness of non-communicable diseases in Zhylyoi",
+      "text": "The purpose of the project: improving treatment and raising awareness about non-communicable diseases in Zhylyoi"
     },
     {
-      "title": "Private Fund named after academician Z. Kabdolov",
-      "title_2": "Kazaksha Saira!",
-      "text": "Goal: further increase in the coverage of the audience, including teachers to teach Kazakh language and promote high-quality production of the project's products based on innovative technologies.<br><br><br>  <br><br>Project objectives:<br><br>- Implementation of effective and proven technologies for the state language study.<br><br>- Production of unique bilingual e-books, video and audio products, filling Kabdolov's website with new materials in its headings 'Customs and traditions of Kazakh people', 'Educational materials', 'Poetry and music', 'Proverbs and sayings of Kazakh people'<br><br>- Placement of products on social networks."
+      "title": "PF \"BolashakK\"",
+      "title_2": "Implementation of \"Early Intervention Program\" in Atyrau oblast",
+      "text": "The purpose of the project: implementing an \"early intervention\" program in Atyrau oblast to minimize childhood disability, improve the quality of life and promote the social integration of children with neuro-psycho-motor disorders and their families."
     },
     {
-      "title": "Public Foundation “Personal Growth Integrity”",
-      "title_2": "Vocational Counseling - Conscious Choice of Profession",
-      "text": "Goal <br> <br>Identification and development of each child's individual abilities to choose a future profession and to form independent life skills. <br> <br>This goal includes the tasks below:<br><br>- Vocational testing and counseling.<br><br>- Social skills training - communication, teamwork, leadership, emotional intelligence.<br><br>- Management skills training - time management and goal setting, problem solving<br><br>- Life-skills training - financial and legal literacy, introduction to labor market, responsibility and discipline.<br><br>- Information Literacy - effective learning, creative and critical thinking, information search and analysis.<br><br>- Financial literacy - setting a financial goal and planning to achieve it, managing income and expenses, economics.<br><br>- Legal literacy - basics of paperwork, contracts, government relations, employment and labor relations.<br><br>- Communication skills - communication in personal and business relationships, teamwork, public speaking, presentation skills."
+      "title": "PF \"BolashakK\"",
+      "title_2": "Improving the potential of specialists in the rehabilitation field of Atyrau oblast",
+      "text": "The purpose of the project: to increase the capacity of local medical personnel in Atyrau oblast in the field of rehabilitation and actively involve parents and relatives of patients in the rehabilitation process to achieve effective treatment results."
     },
     {
-      "title": "Atyrau. Little Country",
-      "title_2": "Hippotherapy in Kulsary",
-      "text": "Goal: to support people in achieving motorial, psychological freedom and help a person to adapt to new changing circumstances.<br><br>Objectives:<br><br>- teaching children horseback riding to influence their physical, psycho-emotional and personal rehabilitation and adaptation;<br><br>- helping to recover motor functions and lost skills by conducting regular therapeutic horseback riding sessions;<br><br>- having an educational impact on children, introducing them to wildlife with the help of horses (to establish nature-friendly culture, mutual assistance; to explore the environment increasing knowledge about the nature of their region, to acquire new knowledge on how the most enthusiastic children can explore the environment);<br><br>- creating the necessary conditions for children with disabilities to become more integrated in society;<br><br>- to motivate and encourage children to live an active life;<br><br>- helping families with children who have health limitations and impaired posture, general speech underdevelopment and psycho-emotional disorders using recreational activities."
+      "title": "PFD \"Sezual\"",
+      "title_2": "Electronic Braille Alphabet Trainer for Music",
+      "text": "The purpose of the project: promoting quality education, improving literacy, exercising labor rights and social rehabilitation of young people with visual impairments."
     },
     {
-      "title": "Public Association of psychologists 'Oi-Sana'",
-      "title_2": "Opening of the Montessori Special Education Center for children with special needs",
-      "text": "Through the opening of 'Montessori' Special education center to provide special training and education (free education, adaptation to social life, providing new opportunities for self-development, correction) for 200 children with special needs"
+      "title": "PF \"Personal growth Integrity\"",
+      "title_2": "Vocational guidance - a conscious choice of profession",
+      "text": "The purpose of the project: to identify and develop the individual abilities of each child to choose a profession and develop independent living skills in children"
     },
     {
-      "title": "Yntymak Atyrau NGO",
-      "title_2": "Community Development Program 'Yntymak'",
-      "text": "Development and implementation of corporate volunteeringa"
+      "title": "PF \"Personal growth Integrity\"",
+      "title_2": "School of the new generation",
+      "text": "The purpose of the project: to create an educational environment in the schools of the oblast (the city of Atyrau and the Zhylyoi district of the Atyrau oblast) for generations Z and alpha"
     },
     {
-      "title": "Eurasian Foundation of Central Asia (EFCA)",
-      "title_2": "NGO School",
-      "text": "Goal: strengthening the potential of NGOs of the Atyrau region in solving social problems of communities and building civil society, through training and experience exchange.<br><br>Objectives:<br><br>- Improve the institutional development indicators of NGOs in the region through exchange of experience;<br><br>- Local trainers are enabled to train rural NGOs."
+      "title": "Public association of psychologists \"Oi-sana\"",
+      "title_2": "Scientific and methodological support for teachers in inclusive education",
+      "text": "The purpose of the project: the formation and improvement of the professional competence of 125 teachers of inclusive education through scientific and methodological support during 2023."
     },
     {
-      "title": "Petrocouncil",
-      "title_2": "Training for entrepreneurs on how to do business better during a pandemic, as well as training for unemployed on start-ups",
-      "text": "Assisting 120 entrepreneurs (training, support/consulting of sole proprietors, LLP) who suffered from the COVID crisis, as well as training 200 unemployed people to run their own start-up business (in groups)."
+      "title": "CF \"Caravan of knowledge\"",
+      "title_2": "Development of STEAM education",
+      "text": "The purpose of the project: implementation of a set of measures for the development of STEAM education in the district. "
+    },
+    {
+      "title": "Eurasia Foundation of Central Asia (EFCA)",
+      "title_2": "Public spaces in Zhylyoi district and Borankul village",
+      "text": "The purpose of the project: local action groups address larger community infrastructure issues in partnership with government agencies."
+    },
+    {
+      "title": "Eurasia Foundation of Central Asia (EFCA)",
+      "title_2": "Public spaces in Atyrau",
+      "text": "The purpose of the project: active citizens of Atyrau improve public spaces for the general population in partnership with the authorities."
+    },
+    {
+      "title": "PF \"Biz de adambyz\"",
+      "title_2": "Atyrau without barriers",
+      "text": "The purpose of the project: to raise awareness of people with limited mobility (for example, people with disabilities, parents with small children moving in a wheelchair, children under 7 years old, temporarily injured, elderly and pregnant women), experts and all active citizens about the problem of accessibility of social facilities and possible ways to solve it."
+    },
+    {
+      "title": "PF \"Zhurekten zhurekke\"",
+      "title_2": "Development of corporate volunteering",
+      "text": "The purpose of the project: development and implementation of corporate volunteering and social responsibility of Tengizchevroil."
+    },
+    {
+      "title": "PF \"Fund for Social Programs and Innovations\"",
+      "title_2": "\"Zharkyra\" - a program for the development of social entrepreneurship in Atyrau oblast",
+      "text": "The purpose of the project: promotion of innovative social initiatives aimed at providing a sustainable business solution to the social, economic, and environmental problems of the community in the city of Atyrau and Atyrau oblast."
+    },
+    {
+      "title": "PF \"Zeyin-Atyrau\"",
+      "title_2": "\"Qadam\" – a project to support women and their business orientation",
+      "text": "The purpose of the project: to improve the quality of life of families from a socially vulnerable group and strengthen their economic independence."
+    },
+    {
+      "title": "PF \"Talaptan\" ",
+      "title_2": "Zhas kasipker - zhalynda",
+      "text": "The purpose of the project: to teach the youth and high school students of Akkiiztogai village the basic principles of entrepreneurship and assist them in implementing their business ideas using new technologies."
+    },
+    {
+      "title": "PF \"Janasha\"",
+      "title_2": "Shektelme",
+      "text": "The purpose of the project: to help the youth of Zhylyoi district at the age of 14-29 adapt to changes in the labor market and master modern professions."
+    },
+    {
+      "title": "PF \"Ainalayyn Baladan\"",
+      "title_2": "\"Shabyt\" School of Crafts and Arts",
+      "text": "The purpose of the project: to develop creative skills in children from 5 to 18 years old in Makat district and adapt them to the craft."
     }
   ],
   "cipReports": [

@@ -52,21 +52,9 @@
 export default {
   data() {
     return {
-      tags: [
-        // {
-        //   id: 1,
-        //   text: this.$t('project.tags_1[0]'),
-        //   url: '/projects',
-        // },
-        {
-          id: 2,
-          text: this.$t('project.tags_1[1]'),
-        },
-      ],
       sideSvg: [
         {
           title: this.$t('project.breadcrumbs_1[3]'),
-          icon: require('@/assets/icons/other-projects.png'),
         },
       ],
       slide: [
@@ -256,17 +244,6 @@ export default {
 
   .grey {
     background-color: $c-tco33;
-  }
-
-  .svgs {
-    &::v-deep .block__icon {
-      img {
-        padding: 80px 60px 80px calc((100vw - var(--width-container)) / 2);
-      }
-    }
-    &::v-deep .block__icon i {
-      font-size: 260px;
-    }
   }
 
   &__news {
