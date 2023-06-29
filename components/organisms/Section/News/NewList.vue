@@ -1,23 +1,36 @@
 <script>
 import jsonData from '~/components/templates/News/json_data.json'
-const data = jsonData[6]
+const data = jsonData[2]
 const data2 = jsonData[3]
-const data3 = jsonData[2]
+const data3 = jsonData[6]
 export default {
   props: {
     white: {
       type: Boolean,
       default: false,
     },
+    index: {
+      type: Number,
+      default: 0,
+    },
+    item: {
+      type: Object,
+      default: () => {},
+    },
+    tags: {
+      type: Array,
+      default: () => [],
+    },
   },
   data() {
     return {
       news: [
         {
-          id: 6,
-          img: require('@/assets/img/new/new_109.JPG'),
+          id: 2,
+          // img: require('@/assets/img/new/new_123.JPG'),
+          img: require('@/assets/img/new/' + data[this.$i18n.locale].img),
           tag: {
-            text: this.$t('home.tags[7]'),
+            text: this.$t('home.tags[4]'),
             color: '#00B0F0',
           },
           date: data[this.$i18n.locale].date,
@@ -27,33 +40,34 @@ export default {
         {
           id: 3,
           // img: require('@/assets/img/new/new_120.JPG'),
-          img: data3[this.$i18n.locale].img.replace('new_', '_nuxt/assets/img/new/new_'),
+          img: require('@/assets/img/new/' + data2[this.$i18n.locale].img),
           tag: {
-            text: this.$t('home.tags[7]'),
-            color: '#00B0F0',
+            text: this.$t('home.tags[0]'),
+            color: '#D92D20',
           },
           date: data2[this.$i18n.locale].date,
           title: data2[this.$i18n.locale].title,
           text: data2[this.$i18n.locale].body[0].text,
         },
         {
-          id: 2,
-          img: require('@/assets/img/new/new_120.JPG'),
+          id: 6,
+          // img: require('@/assets/img/new/new_109.JPG'),
+          img: require('@/assets/img/new/' + data3[this.$i18n.locale].img),
           tag: {
-            text: this.$t('home.tags[0]'),
-            color: '#D92D20',
+            text: this.$t('home.tags[7]'),
+            color: '#00B0F0',
           },
           date: data3[this.$i18n.locale].date,
           title: data3[this.$i18n.locale].title,
           text: data3[this.$i18n.locale].body[0].text,
-        }
+        },
       ],
     }
   },
   computed: {
     mappedNews() {
       // eslint-disable-next-line vue/no-side-effects-in-computed-properties
-      return this.news.reverse()
+      return this.news
     },
     lang() {
       return this.$i18n.locale

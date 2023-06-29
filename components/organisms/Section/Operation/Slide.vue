@@ -8,8 +8,13 @@
     >
       <div class="slide__content">
         <div class="slide__content-wrapper">
+          <AtomsFlatHeading
+            v-if="isNoLongDescription"
+            :title="$t('operation.textSlide[3].title')"
+            @click="$router.push(localePath(`/products`))"
+          />
           <AtomsHeading
-            v-if="isLongDescription"
+            v-else
             type="h3"
             class="slide__title title slide__title-desktop"
             :class="{ pointer: !!data.url }"
@@ -17,11 +22,6 @@
           >
             {{ data.title }}
           </AtomsHeading>
-          <AtomsFlatHeading
-            v-if="isNoLongDescription"
-            :title="$t('operation.textSlide[3].title')"
-            @click="$router.push(localePath(`/products`))"
-          />
           <div class="slide__description">
             <slot :description="slicedDescription" name="description"> </slot>
             <button
@@ -86,8 +86,7 @@ export default {
     },
     isNoLongDescription() {
       return (
-        this.data?.description?.length <= this.sliceWordLength &&
-        this.shouldBeDescriptionSlice
+        this.data?.description?.length <= 106
       )
     },
     slicedDescription() {

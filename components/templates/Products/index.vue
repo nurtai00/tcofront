@@ -234,15 +234,17 @@ export default {
         {
           id: 1,
           text: this.$t('products.tags.1'),
-          selected: true,
+          selected: false,
         },
         {
           id: 2,
           text: this.$t('products.tags.2'),
+          selected: false,
         },
         {
           id: 3,
           text: this.$t('products.tags.3'),
+          selected: false,
         },
       ],
       sideSvg: [

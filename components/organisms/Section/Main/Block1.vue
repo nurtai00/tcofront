@@ -11,7 +11,7 @@ export default {
           date: this.$t('home.block_11[0].date'),
           button: this.$t('home.block_11[0].button'),
           img: require('@/assets/img/news_img.png'),
-          link: this.localePath('/news/0'),
+          link: this.localePath('/news/4'),
         },
         {
           title: this.$t('home.block_11[1].title'),
@@ -19,7 +19,7 @@ export default {
           date: data[this.$i18n.locale].date,
           button: this.$t('home.block_11[0].button'),
           img: require('@/assets/img/new/new_28.jpg'),
-          link: this.localePath('/news/5'),
+          link: this.localePath('/news/7'),
         },
         {
           title: this.$t('home.block_11[3].title'),
@@ -27,7 +27,7 @@ export default {
           date: this.$t('home.block_11[3].date'),
           button: this.$t('home.block_11[3].button'),
           img: require('@/assets/img/banner_bg_4.png'),
-          link: this.localePath('/news/14'),
+          link: this.localePath('/news/15'),
         },
         {
           title: this.$t('home.block_11[2].title'),
@@ -35,7 +35,7 @@ export default {
           date: this.$t('home.block_11[2].date'),
           button: this.$t('home.block_11[2].button'),
           img: require('@/assets/img/banner_bg_3.png'),
-          link: this.localePath('/news/29'),
+          link: this.localePath('/news/30'),
         },
       ],
       options: {
