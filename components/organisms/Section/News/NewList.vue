@@ -30,8 +30,8 @@ export default {
           // img: require('@/assets/img/new/new_123.JPG'),
           img: require('@/assets/img/new/' + data[this.$i18n.locale].img),
           tag: {
-            text: this.$t('home.tags[4]'),
-            color: '#00B0F0',
+            text: this.$t('home.tags[3]'),
+            color: '#d96f28',
           },
           date: data[this.$i18n.locale].date,
           title: data[this.$i18n.locale].title,
@@ -42,8 +42,8 @@ export default {
           // img: require('@/assets/img/new/new_120.JPG'),
           img: require('@/assets/img/new/' + data2[this.$i18n.locale].img),
           tag: {
-            text: this.$t('home.tags[0]'),
-            color: '#D92D20',
+            text: this.$t('home.tags[4]'),
+            color: '#00B0F0',
           },
           date: data2[this.$i18n.locale].date,
           title: data2[this.$i18n.locale].title,
@@ -54,8 +54,8 @@ export default {
           // img: require('@/assets/img/new/new_109.JPG'),
           img: require('@/assets/img/new/' + data3[this.$i18n.locale].img),
           tag: {
-            text: this.$t('home.tags[7]'),
-            color: '#00B0F0',
+            text: this.$t('home.tags[0]'),
+            color: '#D92D20',
           },
           date: data3[this.$i18n.locale].date,
           title: data3[this.$i18n.locale].title,

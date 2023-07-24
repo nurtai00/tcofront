@@ -86,6 +86,18 @@ export default {
   &_selected {
     background: #015467;
     color: #fff;
+    display: inline-flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 6px 10px;
+    border: 1px solid #015467;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.3s;
     svg {
       path {
         stroke: white;
